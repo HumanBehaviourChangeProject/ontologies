@@ -18,7 +18,7 @@ robotWrapper.processImportsFromExcel(importsFileName='../Upper Level BCIO/inputs
 
 #PARSE UPPER LEVEL DEFS FILE
 
-masterDefsFile = "../Upper Level BCIO/inputs/BCIO_Upper_Defs_v1.4.xlsx"
+masterDefsFile = "../Upper Level BCIO/inputs/BCIO_Upper_Defs.xlsx"
 robotWrapper = RobotTemplateWrapper(robotcmd='robot')
 
 robotWrapper.processClassInfoFromExcel(masterDefsFile)
@@ -29,7 +29,7 @@ robotWrapper.processClassInfoFromExcel(masterDefsFile)
 # Relations definitions and relation parents -- prepare a ROBOT template for creation
 # and for relabelling of relations.
 
-masterRelsFile = "../Upper Level BCIO/inputs/BCIO_Upper_Rels_v1.4.xlsx"
+masterRelsFile = "../Upper Level BCIO/inputs/BCIO_Upper_Rels.xlsx"
 robotWrapper.processRelInfoFromExcel(masterRelsFile)
 
 csvFileName = 'rel-create-template.csv'
@@ -46,7 +46,7 @@ robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PR
 
 # The actual relation declarations for the upper level entities come from LucidChart.
 
-LucidChartCsvFileName = "../Upper Level BCIO/inputs/BCIO Upper level v1.4-LucidChart.csv"
+LucidChartCsvFileName = "../Upper Level BCIO/inputs/BCIO_Upper_level-LucidChart.csv"
 
 parser = ParseLucidChartCsv()
 (entities, relations) = parser.parseCsvEntityData(LucidChartCsvFileName)
@@ -56,7 +56,7 @@ robotWrapper.mergeRelInfoFromLucidChart(entities,relations)
 
 # Create ROBOT template spreadsheet file ready for ExcelToOWL
 
-excelFileName = "BCIO_Upper_Level_Merged_v1.4.xlsx"
+excelFileName = "BCIO_Upper_Level_Merged.xlsx"
 robotWrapper.createMergedSpreadsheet(excelFileName)
 csvFileName = robotWrapper.processClassInfoFromExcel(excelFileName)
 
