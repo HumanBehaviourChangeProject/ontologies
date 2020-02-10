@@ -9,7 +9,7 @@ from ontoutils.lucid_chart import *
 # Get the imports and create the bcio_external.owl file
 
 robotWrapper = RobotImportsWrapper(robotcmd='robot')
-robotWrapper.processImportsFromExcel(importsFileName='../inputs/upperlevel/BCIO_External_Imports.xlsx',
+robotWrapper.processImportsFromExcel(importsFileName='../Upper Level BCIO/inputs/BCIO_External_Imports.xlsx',
                                         importsOWLURI='http://humanbehaviourchange.org/ontology/bcio_external.owl',
                                         importsOWLFileName = 'bcio_external.owl',
                                         ontologyName = 'BCIO')
@@ -18,7 +18,7 @@ robotWrapper.processImportsFromExcel(importsFileName='../inputs/upperlevel/BCIO_
 
 #PARSE UPPER LEVEL DEFS FILE
 
-masterDefsFile = "../inputs/upperlevel/BCIO_Upper_Defs_v1.4.xlsx"
+masterDefsFile = "../Upper Level BCIO/inputs/BCIO_Upper_Defs_v1.4.xlsx"
 robotWrapper = RobotTemplateWrapper(robotcmd='robot')
 
 robotWrapper.processClassInfoFromExcel(masterDefsFile)
@@ -29,7 +29,7 @@ robotWrapper.processClassInfoFromExcel(masterDefsFile)
 # Relations definitions and relation parents -- prepare a ROBOT template for creation
 # and for relabelling of relations.
 
-masterRelsFile = "../inputs/upperlevel/BCIO_Upper_Rels_v1.4.xlsx"
+masterRelsFile = "../Upper Level BCIO/inputs/BCIO_Upper_Rels_v1.4.xlsx"
 robotWrapper.processRelInfoFromExcel(masterRelsFile)
 
 csvFileName = 'rel-create-template.csv'
@@ -46,7 +46,7 @@ robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PR
 
 # The actual relation declarations for the upper level entities come from LucidChart.
 
-LucidChartCsvFileName = "../inputs/upperlevel/BCIO Upper level v1.4-LucidChart.csv"
+LucidChartCsvFileName = "../Upper Level BCIO/inputs/BCIO Upper level v1.4-LucidChart.csv"
 
 parser = ParseLucidChartCsv()
 (entities, relations) = parser.parseCsvEntityData(LucidChartCsvFileName)
