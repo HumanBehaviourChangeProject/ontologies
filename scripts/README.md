@@ -26,7 +26,7 @@ Once the input template has been prepared, the script should be executed using
 
 python ExcelToOWL.py -i <input excel file name> -o <output owl file name> -d <owl dependencies>
   
-Typically, when building the individual ontologies, the dependencies will be bcio_external.owl,bcio_upper_level.owl
+where -i indicates that the Excel filename will follow, -o indicates that the output OWL filename will follow, and -d specifies that a list of dependency OWL files will follow. Typically, when building the individual ontologies, the dependencies will be bcio_external.owl,bcio_upper_level.owl. Note that there are no spaces between dependency file names, just a comma. 
 
 
 ### 2. ParseBCIOUpperLevel.py
