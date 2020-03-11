@@ -5,7 +5,7 @@ from ontoutils.core import *
 from ontoutils.robot_wrapper import *
 from ontoutils.lucid_chart import *
 
-
+# os.chdir("/Users/hastingj/Work/Onto/HBCP/ontologies/scripts")
 # Get the imports and create the bcio_external.owl file
 
 robotWrapper = RobotImportsWrapper(robotcmd='robot')

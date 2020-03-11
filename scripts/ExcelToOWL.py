@@ -7,7 +7,9 @@ import sys
 import argparse
 import subprocess
 
-from robot_wrapper import *
+from ontoutils.core import *
+from ontoutils.robot_wrapper import *
+from ontoutils.lucid_chart import *
 
 
 ## PROGRAM EXECUTION --- required arguments: input and output file names, and optional dependencies
