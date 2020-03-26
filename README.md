@@ -8,7 +8,6 @@ Here you will find files of completed ontologies within the overarching BCIO.
 To date, completed ontology files include: 
 Upper-Level BCIO:  Overall structure of the Behaviour Change Intervention Ontology 
 Setting: An aggregate of entities that form the environment in which a BCI is provided 
-Modes of Delivery: An attribute of a BCI delivery that is the physical or informational medium through which a BCI is provided.
 
 You can also find the scripts used to generate OWL files for each ontology [scripts folder]. 
 
