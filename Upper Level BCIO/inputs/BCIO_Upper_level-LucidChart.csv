@@ -33,36 +33,38 @@ study plan"
 29,Connector,Flowchart Shapes,1,,,,,,,BCI study investigator
 30,Connector,Flowchart Shapes,1,,,,,,,BCI physical setting
 31,Connector,Flowchart Shapes,1,,,,,,,BCI social setting
-32,Line,,1,,,13,2,Arrow,None,is about
-33,Line,,1,,,3,4,Arrow,None,output of
-34,Line,,1,,,5,6,None,Arrow,has process part
-35,Line,,1,,,5,7,None,Arrow,has process part
-36,Line,,1,,,5,11,None,Arrow,has process part
-37,Line,,1,,,5,8,None,Arrow,has process part
-38,Line,,1,,,7,9,None,Arrow,has process part
-39,Line,,1,,,10,5,Arrow,None,has BCI context
-40,Line,,1,,,13,3,Arrow,None,subclass of
-41,Line,,1,,,16,14,None,Arrow,has process attribute
-42,Line,,1,,,16,15,None,Arrow,has BCI source
-43,Line,,1,,,7,16,None,Arrow,has process part
-44,Line,,1,,,17,5,Arrow,None,realises
-45,Line,,1,,,18,10,Arrow,None,has part
-46,Line,,1,,,19,16,Arrow,None,has process attribute
-47,Line,,1,,,13,20,Arrow,None,output of
-48,Line,,1,,,20,4,Arrow,None,subclass of
-49,Line,,1,,,13,5,None,Arrow,evaluates
-50,Line,,1,,,3,5,None,Arrow,comparatively evaluates (2+)
-51,Line,,1,,,21,20,None,Arrow,subclass of
-52,Line,,1,,,9,22,None,Arrow,has process attribute
-53,Line,,1,,,9,23,None,Arrow,has process part
-54,Line,,1,,,7,24,None,Arrow,has process attribute
-55,Line,,1,,,5,26,Arrow,None,is about
-56,Line,,1,,,13,25,None,Arrow,realises
-57,Line,,1,,,13,12,None,Arrow,has study sample
-58,Line,,1,,,13,28,Arrow,None,is about
-59,Line,,1,,,13,29,None,Arrow,has study investigator
-60,Line,,1,,,27,30,None,Arrow,has part
-61,Line,,1,,,27,31,None,Arrow,has part
-62,Line,,1,,,10,27,None,Arrow,has part
-63,Line,,1,,,21,6,None,Arrow,is about
-64,Line,,1,,,4,21,None,Arrow,Difference between (2)
+32,Connector,Flowchart Shapes,1,,,,,,,BCI style of delivery
+33,Line,,1,,,13,2,Arrow,None,is about
+34,Line,,1,,,3,4,Arrow,None,output of
+35,Line,,1,,,5,6,None,Arrow,has process part
+36,Line,,1,,,5,7,None,Arrow,has process part
+37,Line,,1,,,5,11,None,Arrow,has process part
+38,Line,,1,,,5,8,None,Arrow,has process part
+39,Line,,1,,,7,9,None,Arrow,has process part
+40,Line,,1,,,10,5,Arrow,None,has BCI context
+41,Line,,1,,,13,3,Arrow,None,subclass of
+42,Line,,1,,,16,14,None,Arrow,has process attribute
+43,Line,,1,,,16,15,None,Arrow,has BCI source
+44,Line,,1,,,7,16,None,Arrow,has process part
+45,Line,,1,,,17,5,Arrow,None,realises
+46,Line,,1,,,18,10,Arrow,None,has part
+47,Line,,1,,,19,16,Arrow,None,has process attribute
+48,Line,,1,,,13,20,Arrow,None,output of
+49,Line,,1,,,20,4,Arrow,None,subclass of
+50,Line,,1,,,13,5,None,Arrow,evaluates
+51,Line,,1,,,3,5,None,Arrow,comparatively evaluates (2+)
+52,Line,,1,,,21,20,None,Arrow,subclass of
+53,Line,,1,,,9,22,None,Arrow,has process attribute
+54,Line,,1,,,9,23,None,Arrow,has process part
+55,Line,,1,,,7,24,None,Arrow,has process attribute
+56,Line,,1,,,5,26,Arrow,None,is about
+57,Line,,1,,,13,25,None,Arrow,realises
+58,Line,,1,,,13,12,None,Arrow,has study sample
+59,Line,,1,,,13,28,Arrow,None,is about
+60,Line,,1,,,13,29,None,Arrow,has study investigator
+61,Line,,1,,,27,30,None,Arrow,has part
+62,Line,,1,,,27,31,None,Arrow,has part
+63,Line,,1,,,10,27,None,Arrow,has part
+64,Line,,1,,,21,6,None,Arrow,is about
+65,Line,,1,,,4,21,None,Arrow,Difference between (2)
+66,Line,,1,,,16,32,None,Arrow,has process attribute
