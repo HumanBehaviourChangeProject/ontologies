@@ -5,7 +5,6 @@ from ontoutils.core import *
 from ontoutils.robot_wrapper import *
 from ontoutils.lucid_chart import *
 
-# os.chdir("/Users/hastingj/Work/Onto/HBCP/ontologies/scripts")
 # Get the imports and create the bcio_external.owl file
 
 robotWrapper = RobotImportsWrapper(robotcmd='robot')
@@ -48,8 +47,7 @@ robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PR
 
 LucidChartCsvFileName = "../Upper Level BCIO/inputs/BCIO_Upper_level-LucidChart.csv"
 
-parser = ParseLucidChartCsv()
-(entities, relations) = parser.parseCsvEntityData(LucidChartCsvFileName)
+(entities, relations) = ParseLucidChartCsv.parseCsvEntityData(LucidChartCsvFileName)
 
 robotWrapper.mergeRelInfoFromLucidChart(entities,relations)
 
