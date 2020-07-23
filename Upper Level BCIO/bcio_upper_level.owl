@@ -33,37 +33,37 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000005"/>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000004"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_005000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_028000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_002000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -91,19 +91,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_032000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_032000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Involves use of products, services, activities, rules or environmental objects.</obo:IAO_0000112>
@@ -120,13 +120,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_014000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -156,13 +156,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_022000"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_022000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consists of BCTs that can be classified using a BCT taxonomy.</obo:IAO_0000112>
@@ -179,25 +179,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000004"/>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000003"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_009000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -261,13 +261,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_029000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -296,7 +296,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_018000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000007"/>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000006"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_001000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -314,7 +314,13 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_023000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000007"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_025000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_016000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -332,25 +338,25 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_038000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000002"/>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000001"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_031000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000003"/>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000002"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_030000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000006"/>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000005"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_001000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_024000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -367,7 +373,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_018000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -384,7 +390,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_018000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -414,7 +420,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_035000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_018000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -442,7 +448,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_023000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_002000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -471,7 +477,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_001000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
