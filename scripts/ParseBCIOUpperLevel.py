@@ -7,7 +7,9 @@ from ontoutils.lucid_chart import *
 
 # Get the imports and create the bcio_external.owl file
 
-robotWrapper = RobotImportsWrapper(robotcmd='robot')
+# os.chdir('/Users/hastingj/Work/Onto/HBCP/ontologies/scripts')
+
+robotWrapper = RobotImportsWrapper(robotcmd='~/Work/Onto/robot/robot')
 robotWrapper.processImportsFromExcel(importsFileName='../Upper Level BCIO/inputs/BCIO_External_Imports.xlsx',
                                         importsOWLURI='http://humanbehaviourchange.org/ontology/bcio_external.owl',
                                         importsOWLFileName = 'bcio_external.owl',
@@ -18,7 +20,7 @@ robotWrapper.processImportsFromExcel(importsFileName='../Upper Level BCIO/inputs
 #PARSE UPPER LEVEL DEFS FILE
 
 masterDefsFile = "../Upper Level BCIO/inputs/BCIO_Upper_Defs.xlsx"
-robotWrapper = RobotTemplateWrapper(robotcmd='robot')
+robotWrapper = RobotTemplateWrapper(robotcmd='~/Work/Onto/robot/robot')
 
 robotWrapper.processClassInfoFromExcel(masterDefsFile)
 
