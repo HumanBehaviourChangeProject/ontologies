@@ -804,30 +804,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- NCIT:C53536 -->
-
-    <owl:Class rdf:about="NCIT:C53536">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A place designed and staffed to house and treat individuals that need assistance with mental dysfunctions&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;NCI Thesaurus OBO Edition&apos;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C53536</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychiatric facility</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- PDRO:0000074 -->
-
-    <owl:Class rdf:about="PDRO:0000074">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A health care facility whose function is to store, prepare, dispense, and monitor the usage of pharmaceutical drugs among patients in a given area or encountered in a given health care provider organization&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;The Prescription of Drugs Ontology&apos;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDRO:0000074</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pharmacy facility</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_001000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_001000">
@@ -4726,6 +4702,18 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C53536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C53536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A place designed and staffed to house and treat individuals that need assistance with mental dysfunctions&apos;</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;NCI Thesaurus OBO Edition&apos;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C53536</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychiatric facility</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
@@ -4963,6 +4951,18 @@ for now.</obo:IAO_0000116>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE:00000191</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">residential facility</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residential facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PDRO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A health care facility whose function is to store, prepare, dispense, and monitor the usage of pharmaceutical drugs among patients in a given area or encountered in a given health care provider organization&apos;</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;The Prescription of Drugs Ontology&apos;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDRO:0000074</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pharmacy facility</rdfs:label>
     </owl:Class>
     
 
