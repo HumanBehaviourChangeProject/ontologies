@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/bcio_setting.owl#"
-     xml:base="http://humanbehaviourchange.org/ontology/bcio_setting.owl"
+<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl#"
+     xml:base="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,9 +9,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_setting.owl">
+    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_relations.owl"/>
     </owl:Ontology>
     
 
