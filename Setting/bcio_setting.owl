@@ -11,7 +11,6 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_setting.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_relations.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
     
@@ -28,37 +27,13 @@
     
 
 
-    <!-- NCIT:C53536 -->
-
-    <owl:Class rdf:about="NCIT:C53536">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A place designed and staffed to house and treat individuals that need assistance with mental dysfunctions&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;NCI Thesaurus OBO Edition&apos;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C53536</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychiatric facility</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- PDRO:0000074 -->
-
-    <owl:Class rdf:about="PDRO:0000074">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A health care facility whose function is to store, prepare, dispense, and monitor the usage of pharmaceutical drugs among patients in a given area or encountered in a given health care provider organization&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;The Prescription of Drugs Ontology&apos;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDRO:0000074</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pharmacy facility</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_026001 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;United Kingdom&apos;</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A geographical location of a country where the intervention takes place.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Spain</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United Kingdom</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geographical location of a country where the intervention takes place.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">country of intervention</rdfs:label>
     </owl:Class>
     
@@ -68,13 +43,13 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;New York&apos;</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">City</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> City</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> New York</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Rotterdam</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> State</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Town</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotterdam</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">State</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Town</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A geographical location within a country where the intervention takes place.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geographical location within a country where the intervention takes place.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">within-country location</rdfs:label>
     </owl:Class>
     
@@ -90,7 +65,7 @@
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Features of a given location, such as social and economic characteristics.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Features of a given location, such as social and economic characteristics.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attribute of location</rdfs:label>
     </owl:Class>
     
@@ -100,10 +75,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026004">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026003"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;World Bank Classifications&apos;</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;crime rates&apos;</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;disadvantaged area&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An attribute of location describing the overall socioeconomic state of a location.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> World Bank Classifications</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> crime rates</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disadvantaged area</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of location describing the overall socioeconomic state of a location.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">area social and economic condition</rdfs:label>
     </owl:Class>
     
@@ -113,8 +88,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026005">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;developing country&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An area social and economic condition described to have a low-income, whether at a country or within-country level.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing country</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area social and economic condition described to have a low-income, whether at a country or within-country level.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-income area</rdfs:label>
     </owl:Class>
     
@@ -124,8 +99,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026006">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;developed country&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An area social and economic condition described to have a high-income, whether at a country or within-country level.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developed country</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area social and economic condition described to have a high-income, whether at a country or within-country level.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high-income area</rdfs:label>
     </owl:Class>
     
@@ -135,7 +110,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026007">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An attribute of location describing the density of an area, in terms of people and resources within it.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of location describing the density of an area, in terms of people and resources within it.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population and resource density</rdfs:label>
     </owl:Class>
     
@@ -145,7 +120,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026008">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An area on the edge of a large town or city where a proportion of those who work in the town or city live.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area on the edge of a large town or city where a proportion of those who work in the town or city live.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suburban area</rdfs:label>
     </owl:Class>
     
@@ -155,7 +130,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000191"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility where an individual is living alone or with one or more person. The individuals do not have to be related.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility where an individual is living alone or with one or more person. The individuals do not have to be related.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">household residence</rdfs:label>
     </owl:Class>
     
@@ -166,7 +141,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000191"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bedsit</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility where an individual lives with many others that may be collected according to a social structure such as education or disability.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility where an individual lives with many others that may be collected according to a social structure such as education or disability.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple occupancy residence</rdfs:label>
     </owl:Class>
     
@@ -176,8 +151,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026011">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026010"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;student hall&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A multiple occupancy residence where many students live.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">student hall</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multiple occupancy residence where many students live.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">student residence</rdfs:label>
     </owl:Class>
     
@@ -187,8 +162,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026012">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026010"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;retirement home&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A multiple occupancy residence where multiple vulnerable people live&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retirement home</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multiple occupancy residence where multiple vulnerable people live</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residential care or assisted living</rdfs:label>
     </owl:Class>
     
@@ -198,8 +173,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000191"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;an architectural structure for which an individual does not have a legal right to stay&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A residential facility where an individual is living that is not stable and secure.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an architectural structure for which an individual does not have a legal right to stay</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A residential facility where an individual is living that is not stable and secure.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homeless setting</rdfs:label>
     </owl:Class>
     
@@ -209,10 +184,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000191"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;emergency accomnodation&apos;</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B&amp;B</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> B&amp;B</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> emergency accomnodation</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hostels</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A residential facility where individuals are in a transitional state of housing and not staying for a prolonged period.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A residential facility where individuals are in a transitional state of housing and not staying for a prolonged period.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temporary residence</rdfs:label>
     </owl:Class>
     
@@ -222,7 +197,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000063"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A hospital facility to treat patients without them staying overnight, often after a hospital visit.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hospital facility to treat patients without them staying overnight, often after a hospital visit.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospital outpatient clinic facility</rdfs:label>
     </owl:Class>
     
@@ -232,9 +207,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;doctor surgery&apos;</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;general practitioners surgery&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A healthcare facility led by doctors.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> doctor surgery</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general practitioners surgery</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare facility led by doctors.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doctor-led primary care facility</rdfs:label>
     </owl:Class>
     
@@ -244,7 +219,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A healthcare facility that is run by a care home organization and is the bearer of a care home function.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare facility that is run by a care home organization and is the bearer of a care home function.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">care home facility</rdfs:label>
     </owl:Class>
     
@@ -254,7 +229,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000106"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A rehabilitation facility to assist the recovery of people with drug or alcohol addiction.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A rehabilitation facility to assist the recovery of people with drug or alcohol addiction.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug or alcohol rehabilitation facility</rdfs:label>
     </owl:Class>
     
@@ -265,7 +240,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyclinic</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A clinic providing healthcare services to people in a certain area&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinic providing healthcare services to people in a certain area</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">community healthcare facility</rdfs:label>
     </owl:Class>
     
@@ -275,7 +250,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026020">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A healthcare facility to treat patients in the community without them staying overnight.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare facility to treat patients in the community without them staying overnight.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">community outpatient clinic facility</rdfs:label>
     </owl:Class>
     
@@ -285,7 +260,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A healthcare facility where dental healthcare is provided.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare facility where dental healthcare is provided.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dentist facility</rdfs:label>
     </owl:Class>
     
@@ -295,7 +270,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility in which formal education is provided to a student population.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility in which formal education is provided to a student population.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">educational facility</rdfs:label>
     </owl:Class>
     
@@ -305,8 +280,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026023">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026022"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;nursery school&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An educational facility in which pre-school education is provided.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nursery school</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An educational facility in which pre-school education is provided.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early years facility</rdfs:label>
     </owl:Class>
     
@@ -316,7 +291,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000064"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A school facility for younger children, typically aged between five and eleven.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A school facility for younger children, typically aged between five and eleven.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary school</rdfs:label>
     </owl:Class>
     
@@ -326,7 +301,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000064"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A school facility providing education between primary and secondary school.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A school facility providing education between primary and secondary school.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">middle school</rdfs:label>
     </owl:Class>
     
@@ -336,8 +311,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000064"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;high school&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A school facility for older children and teenagers, typically aged between eleven and eighteen.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high school</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A school facility for older children and teenagers, typically aged between eleven and eighteen.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary school</rdfs:label>
     </owl:Class>
     
@@ -347,7 +322,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026027">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026022"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An educational facility providing practically based, occupationally-specific teaching.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An educational facility providing practically based, occupationally-specific teaching.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vocational facility</rdfs:label>
     </owl:Class>
     
@@ -357,7 +332,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026028">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026022"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An educational facility in which students study for degrees and academic research is done.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An educational facility in which students study for degrees and academic research is done.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">university facility</rdfs:label>
     </owl:Class>
     
@@ -367,9 +342,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;food bank&apos;</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;recycling centre&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility used by a group of people living in the same place or having a particular characteristic in common.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> recycling centre</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">food bank</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility used by a group of people living in the same place or having a particular characteristic in common.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">community facility</rdfs:label>
     </owl:Class>
     
@@ -379,11 +354,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026030">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026029"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;swimming pool&apos;</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;tennis court&apos;</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> stadium</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> swimming pool</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> tennis court</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gym</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stadium</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A community facility used for exercising.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A community facility used for exercising.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sport and exercise facility</rdfs:label>
     </owl:Class>
     
@@ -393,9 +368,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026031">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026029"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;working mens club&apos;</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> working mens club</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YMCA</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A community facility used for socialising by those living in a given area.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A community facility used for socialising by those living in a given area.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social centre or Community Hall facility</rdfs:label>
     </owl:Class>
     
@@ -405,7 +380,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026032">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026029"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A community facility containing a collection of books and learning resources for loan.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A community facility containing a collection of books and learning resources for loan.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">library facility</rdfs:label>
     </owl:Class>
     
@@ -415,10 +390,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026033">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026029"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">church</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> church</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> temple</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mosque</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temple</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A community facility where individuals or a group of people come to perform acts of devotion and veneration.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A community facility where individuals or a group of people come to perform acts of devotion and veneration.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">religious facility</rdfs:label>
     </owl:Class>
     
@@ -428,11 +403,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026034">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026029"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bar</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> bar</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> pub</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> restaurant</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diner</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pub</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">restaurant</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A community facility used to serve food.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A community facility used to serve food.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospitality and catering facility</rdfs:label>
     </owl:Class>
     
@@ -442,10 +417,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026035">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026029"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> disco</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> theatre</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cinema</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disco</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theatre</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A community facility designed to entertain or amuse.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A community facility designed to entertain or amuse.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arts and entertainment facility</rdfs:label>
     </owl:Class>
     
@@ -455,10 +430,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;shopping centre&apos;</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">market</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> market</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> shopping centre</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">supermarket</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility used as an outlet for shopping.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility used as an outlet for shopping.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retail facility</rdfs:label>
     </owl:Class>
     
@@ -468,7 +443,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility of a room, set of rooms, or building used as a place for commercial, professional, or bureaucratic work.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility of a room, set of rooms, or building used as a place for commercial, professional, or bureaucratic work.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">office facility</rdfs:label>
     </owl:Class>
     
@@ -479,7 +454,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prison</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility where individuals are being reprimanded, detained or imprisoned.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility where individuals are being reprimanded, detained or imprisoned.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">criminal justice facility</rdfs:label>
     </owl:Class>
     
@@ -489,7 +464,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility of a building or group of buildings where goods are manufactured or assembled chiefly by machine&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility of a building or group of buildings where goods are manufactured or assembled chiefly by machine</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">factory facility</rdfs:label>
     </owl:Class>
     
@@ -499,10 +474,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;air force&apos;</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> air force</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> navy</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">army</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">navy</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility relating to or characteristic of soldiers or armed forces&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility relating to or characteristic of soldiers or armed forces</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">military facility</rdfs:label>
     </owl:Class>
     
@@ -512,8 +487,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Methods of traveling from one place to another.&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;NCI Thesaurus OBO Edition&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods of traveling from one place to another.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI Thesaurus OBO Edition</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT_C141286</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transportation</rdfs:label>
     </owl:Class>
@@ -524,11 +499,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026042">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026041"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> plane</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> train</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bus</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plane</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">train</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Forms of transportation that run on fixed routes and are available to the public, usually for a set fare&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;NCI Thesaurus OBO Edition&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forms of transportation that run on fixed routes and are available to the public, usually for a set fare</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI Thesaurus OBO Edition</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C141287</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public transportation</rdfs:label>
     </owl:Class>
@@ -539,10 +514,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026043">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026041"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bicycle</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> bicycle</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> motorbike</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">car</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motorbike</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A form of transportation owned by an individual for individual or group use.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form of transportation owned by an individual for individual or group use.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">private transportation</rdfs:label>
     </owl:Class>
     
@@ -552,8 +527,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026044">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026041"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;mobile van&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A form of transportation delivering interventions in transient locations.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mobile van</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form of transportation delivering interventions in transient locations.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mobile intervention venue</rdfs:label>
     </owl:Class>
     
@@ -563,7 +538,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026045">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026041"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A form of transporation which can transport patients for health treatment, and in some instances will also provide out-of-hospital healthcare to the patient.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form of transporation which can transport patients for health treatment, and in some instances will also provide out-of-hospital healthcare to the patient.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ambulance</rdfs:label>
     </owl:Class>
     
@@ -573,7 +548,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A site which is an outdoor location outside of a building.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A site which is an outdoor location outside of a building.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outdoor environment</rdfs:label>
     </owl:Class>
     
@@ -583,7 +558,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026047">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An outdoor environment set in an expanse of water.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An outdoor environment set in an expanse of water.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</rdfs:label>
     </owl:Class>
     
@@ -593,7 +568,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026048">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An outdoor environment for the passage of persons or cyclists on land&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An outdoor environment for the passage of persons or cyclists on land</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">path or pavement</rdfs:label>
     </owl:Class>
     
@@ -603,7 +578,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026049">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026048"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A path or pavement for the passage of persons only on land.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A path or pavement for the passage of persons only on land.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">path or pavement for pedestrians</rdfs:label>
     </owl:Class>
     
@@ -613,8 +588,20 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026050">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026048"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A path or pavement for the passage of people using bicycles only on land.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A path or pavement for the passage of people using bicycles only on land.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">path or pavement for cyclists</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_026051 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A place designed and staffed to house and treat individuals that need assistance with mental dysfunctions</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI Thesaurus OBO Edition</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C53536</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychiatric facility</rdfs:label>
     </owl:Class>
     
 
@@ -623,8 +610,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A three-dimensional immaterial entity that is  bounded by a material entity or it is a three-dimensional immaterial part thereof.&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Basic Formal Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A three-dimensional immaterial entity that is  bounded by a material entity or it is a three-dimensional immaterial part thereof.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic Formal Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO_0000029</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">site</rdfs:label>
     </owl:Class>
@@ -635,8 +622,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000064">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An open way for the passage of vehicles, persons, or animals on land&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Environment Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An open way for the passage of vehicles, persons, or animals on land</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000064</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</rdfs:label>
     </owl:Class>
@@ -647,8 +634,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000091">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of wate&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Environment Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of wate</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000091</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beach</rdfs:label>
     </owl:Class>
@@ -659,8 +646,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000106">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An area in which grasses  are a significant component of the vegetation&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Environment Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area in which grasses  are a significant component of the vegetation</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000106</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grassland</rdfs:label>
     </owl:Class>
@@ -671,8 +658,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000111">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An area with a high density of trees. A small forest may be called a wood&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Environment Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area with a high density of trees. A small forest may be called a wood</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000111</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">forest</rdfs:label>
     </owl:Class>
@@ -683,9 +670,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;research lab&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Environment Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research lab</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000469</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research facility</rdfs:label>
     </owl:Class>
@@ -696,8 +683,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000562">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A bounded area of land, or water, usually in its natural or semi-natural  state and set aside for some purpose, usually to do with recreation or conservation&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Environment Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bounded area of land, or water, usually in its natural or semi-natural  state and set aside for some purpose, usually to do with recreation or conservation</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000562</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">park</rdfs:label>
     </owl:Class>
@@ -708,8 +695,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000772">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An area which is outside of a town, city, or urban area. Rural areas are primarily used for agriculture or pastoralism and may contain rural settlements&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Environment Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area which is outside of a town, city, or urban area. Rural areas are primarily used for agriculture or pastoralism and may contain rural settlements</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000772</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rural area</rdfs:label>
     </owl:Class>
@@ -720,8 +707,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000856">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Incorporated populated place&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Environment Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incorporated populated place</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000856</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urban area</rdfs:label>
     </owl:Class>
@@ -732,8 +719,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A reference to a place on the Earth, by its name or by its geographical location&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Gazeteer Ontology&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reference to a place on the Earth, by its name or by its geographical location</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gazeteer Ontology</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAZ:00000448</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</rdfs:label>
     </owl:Class>
@@ -744,8 +731,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;An architectural structure that bears some function3&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Ontology of Medically Related Social Entities&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An architectural structure that bears some function3</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE:00000062</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">facility</rdfs:label>
     </owl:Class>
@@ -756,8 +743,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility that is run by a hospital organization, such as emergency departments, outpatient clinics and rehabilitation and is the bearer of a hospital function&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Ontology of Medically Related Social Entities&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility that is run by a hospital organization, such as emergency departments, outpatient clinics and rehabilitation and is the bearer of a hospital function</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE:00000063</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospital facility</rdfs:label>
     </owl:Class>
@@ -768,8 +755,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000064">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026022"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility that is run by a school organization and is the bearer of a school function&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Ontology of Medically Related Social Entities&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility that is run by a school organization and is the bearer of a school function</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE:00000064</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">school facility</rdfs:label>
     </owl:Class>
@@ -780,8 +767,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility thats administered by a health care organisation for the purpose of providing health care to a patient population&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Ontology of Medically Related Social Entities&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility thats administered by a health care organisation for the purpose of providing health care to a patient population</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE:00000102</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare facility</rdfs:label>
     </owl:Class>
@@ -792,9 +779,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A health care facility that bears a function to provide healthcare to the sick or terminally ill&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Ontology of Medically Related Social Entities&apos;</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;contacted ontology authors to add definition&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A health care facility that bears a function to provide healthcare to the sick or terminally ill</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> contacted ontology authors to add definition</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE:00000104</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospice facility</rdfs:label>
     </owl:Class>
@@ -805,9 +792,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility to assist in physical or addiction recovery&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Ontology of Medically Related Social Entities&apos;</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;contacted ontology authors to add definition&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility to assist in physical or addiction recovery</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> contacted ontology authors to add definition</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE:00000106</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rehabilitation facility</rdfs:label>
     </owl:Class>
@@ -818,7 +805,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000114">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000063"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A health care facility that bears a function to provide emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance&apos;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A health care facility that bears a function to provide emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE_00000114</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE:00000114</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emergency department facility</rdfs:label>
@@ -830,11 +817,23 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;A facility that has at least one housing unit as part in which a person or persons live&apos;</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Ontology of Medically Related Social Entities&apos;</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;contacted ontology authors to add definition&apos;</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility that has at least one housing unit as part in which a person or persons live</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> contacted ontology authors to add definition</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMRSE:00000191</rdfs:isDefinedBy>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residential facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PDRO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A health care facility whose function is to store, prepare, dispense, and monitor the usage of pharmaceutical drugs among patients in a given area or encountered in a given health care provider organization</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Prescription of Drugs Ontology</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDRO:0000074</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pharmacy facility</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
