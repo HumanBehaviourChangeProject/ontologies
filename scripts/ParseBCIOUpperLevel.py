@@ -9,7 +9,7 @@ from ontoutils.lucid_chart import *
 
 # os.chdir('/Users/hastingj/Work/Onto/HBCP/ontologies/scripts')
 
-robotWrapper = RobotImportsWrapper(robotcmd='~/Work/Onto/robot/robot')
+robotWrapper = RobotImportsWrapper(robotcmd='~/Work/Onto/robot/robot',cleanup=False)
 robotWrapper.processImportsFromExcel(importsFileName='../Upper Level BCIO/inputs/BCIO_External_Imports.xlsx',
                                         importsOWLURI='http://humanbehaviourchange.org/ontology/bcio_external.owl',
                                         importsOWLFileName = 'bcio_external.owl',
@@ -68,3 +68,9 @@ ONTOLOGY_IRI = BCIO_IRI_PREFIX+"bcio_upper_level.owl"
 dependency = "bcio_relations.owl,bcio_external.owl"
 
 robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PREFIX, BCIO_ID_PREFIX, ONTOLOGY_IRI,owlFileName)
+
+
+
+# Create a single merged file:
+
+# robot merge --input bcio_upper_level.owl --input bcio_setting.owl --input ../MoD/bcio_mode_of_delivery.owl annotate --annotation rdfs:comment "The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting and Mode of Delivery. Additional modules will be added soon." --ontology-iri "http://humanbehaviourchange.org/ontology/bcio.owl" --version-iri "http://humanbehaviourchange.org/ontology/bcio.owl/2020-12-15" --output bcio.owl
