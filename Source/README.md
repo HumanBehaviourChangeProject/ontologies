@@ -1,8 +1,8 @@
-# Welcome to the repository for the Intervention Source Ontology of the Behaviour Change Intervention Ontology (BCIO)
+# Welcome to the repository for the Intervention Source Ontology of the Behaviour Change Intervention Ontology (BCIO)
 
 This contains ontology files describing the people, populations or organisations that provide behaviour change interventions.
 
-## Instructions for downloading ontology files
+## Instructions for downloading ontology files
 
 There are 2 ways of accessing and viewing the Intervention Source Ontology:
 
