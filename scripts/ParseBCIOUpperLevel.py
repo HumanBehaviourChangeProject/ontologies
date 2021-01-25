@@ -71,6 +71,6 @@ robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PR
 
 
 
-# Create a single merged file:
+# Create a single merged file for OLS:
 
-# robot merge --input bcio_upper_level.owl --input bcio_setting.owl --input ../MoD/bcio_mode_of_delivery.owl annotate --annotation rdfs:comment "The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting and Mode of Delivery. Additional modules will be added soon." --ontology-iri "http://humanbehaviourchange.org/ontology/bcio.owl" --version-iri "http://humanbehaviourchange.org/ontology/bcio.owl/2020-12-15" --output bcio.owl
+# robot merge --input bcio_upper_level.owl --input ../Setting/bcio_setting.owl --input ../MoD/bcio_mode_of_delivery.owl --input bcio_source.owl annotate --annotation rdfs:comment "The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting and Mode of Delivery. Additional modules will be added soon." --ontology-iri "http://humanbehaviourchange.org/ontology/bcio.owl" --version-iri "http://humanbehaviourchange.org/ontology/bcio.owl/2021-01-25" --output bcio.owl
