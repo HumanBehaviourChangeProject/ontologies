@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2021-01-25"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting and Mode of Delivery. Additional modules will be added soon.</rdfs:comment>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2021-01-28"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery and Source. Additional modules will be added soon.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -2994,7 +2994,6 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011025">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves communication by email.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of email to be drawn from authoritative source.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email mode of delivery</rdfs:label>
     </owl:Class>
     
@@ -3005,7 +3004,6 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011026">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves the intervention recipient playing a computer game.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of computer game to be drawn from authoritative source.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video game mode of delivery</rdfs:label>
     </owl:Class>
     
@@ -3016,7 +3014,6 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011027">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves the intervention recipient interacting with a website.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of website to be drawn from authoritative source.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Website mode of delivery</rdfs:label>
     </owl:Class>
     
@@ -3027,7 +3024,7 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011028">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves the intervention recipient interacting with a mobile application.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definitionof  mobile application to be drawn from authoritative source. The distinction between websites and mobile applications has become blurred with the advent of webapps.</obo:IAO_0000232>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The distinction between websites and mobile applications has become blurred with the advent of webapps.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mobile application mode of delivery</rdfs:label>
     </owl:Class>
     
@@ -3038,7 +3035,6 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011029">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves the intervention recipient being given access to an e-book.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of e-book to be drawn from authoritative source.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E-book mode of delivery</rdfs:label>
     </owl:Class>
     
