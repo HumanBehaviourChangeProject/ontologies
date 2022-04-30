@@ -40,8 +40,10 @@ if __name__ == '__main__':
 
     BCIO_IRI_PREFIX = 'http://humanbehaviourchange.org/ontology/'
     BCIO_ID_PREFIX = '\"BCIO: '+BCIO_IRI_PREFIX+'BCIO_\"'
+    ADDICTO_ID_PREFIX = '\"ADDICTO: http://addictovocab.org/ADDICTO_\"'
+
     ONTOLOGY_IRI = BCIO_IRI_PREFIX+owlFileName
 
 
-    robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PREFIX, BCIO_ID_PREFIX, ONTOLOGY_IRI,owlFileName)
+    robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PREFIX, [BCIO_ID_PREFIX,ADDICTO_ID_PREFIX], ONTOLOGY_IRI,owlFileName)
 

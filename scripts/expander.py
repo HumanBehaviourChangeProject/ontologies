@@ -11,11 +11,8 @@ import subprocess
 import io
 
 def generate_unique_id(base_id, id_list, num):
-    # print("id_list is: ", id_list)
     num_list = []
-    # print("base_id is: ", base_id)
     split_base = base_id.split(":")
-    # print("split_base[1] is: ", split_base[1])
     split_base_num = int(split_base[1]) + num
 
     for id in id_list:
@@ -23,20 +20,12 @@ def generate_unique_id(base_id, id_list, num):
         split_id_num = int(split_id[1])
         num_list.append(split_id_num)
     num_list.sort()
-    # print("num_list is: ", num_list)
     if split_base_num in num_list:
-        # print("generate next id")
         return split_id[0] + ":" + str(num_list[-1]).zfill(6)
     else: 
-        # print("use this id: ", split_base_num)
         return split_id[0] + ":" + str(split_base_num).zfill(6)
-    
-        
-
-
 
 def add_extra_values(header, row, aggregate, id_list):
-    # print("aggregate is: ", aggregate)
     aggregate_list = aggregate.split(";")
     extra_rows = []
     i = 0
@@ -49,17 +38,16 @@ def add_extra_values(header, row, aggregate, id_list):
                 extra_values[key] = agg + " " + str(cell.value)
                 name = str(cell.value)
             elif key == "Parent":
-                extra_values[key] = name #agg + " " + str(cell.value)
+                extra_values[key] = name 
             elif key == "ID": 
                 new_id = generate_unique_id(cell.value, id_list, i)
-                extra_values[key] = new_id # str(cell.value) #todo: need a function to check available ID's
+                extra_values[key] = new_id 
             elif key == "Definition":
                 extra_values[key] = "The " + agg + " of " + name
             else:
-                extra_values[key] = "" #str(cell.value) #todo: should these be blank?
+                extra_values[key] = "" 
         if any(extra_values.values()):
             extra_rows.append(extra_values)
-            # print("extra_values: ", extra_values.values())
     return extra_rows
 
 
@@ -81,13 +69,13 @@ if __name__ == '__main__':
     basename = str(Path(inputFileName).stem)
     suffix = str(Path(inputFileName).suffix)
     
-    wb = openpyxl.load_workbook(inputFileName) #call with full path and filename? Much better
+    wb = openpyxl.load_workbook(inputFileName) 
     sheet = wb.active
     data = sheet.rows
     rows = []
     aggregate_list = ["Mean", "Minimum", "Maximum", "Median"]
     header = [i.value for i in next(data)]
-    # print("got header: ", header)
+    
     #build ID list:
     id_list = []
     for row in sheet[2:sheet.max_row]:
@@ -97,7 +85,6 @@ if __name__ == '__main__':
             values[key] = cell.value
             if key == "ID" and cell.value != None:
                 id_list.append(cell.value)
-    # print("id_list is: ", id_list)
 
     for row in sheet[2:sheet.max_row]:
         values = {}
@@ -108,24 +95,13 @@ if __name__ == '__main__':
                 extra_rows = add_extra_values(header, row, cell.value, id_list)
         if any(values.values()):
             rows.append(values)
-            # print("values: ", values.values())
         for extra_row in extra_rows:
-            # print("got extra row")
             rows.append(extra_row)
         
-            
-        
-    
-    # print("reached rows ", rows)
     for r in range(len(rows)):
         row = [v for v in rows[r].values()]
         if "Aggregate" in header:
-            cell = row[header.index("Aggregate")]
-            # print("cell is: ", cell)
-            # rows.insert(3, row)
-            # rows.insert(r, row) #test insert
-            #todo: split by ";" and create new rows
-    
+            cell = row[header.index("Aggregate")]    
 
     #new sheet to save:
 
