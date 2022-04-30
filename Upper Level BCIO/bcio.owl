@@ -1425,7 +1425,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A belief about the nature of the immediate physical and social settings in which people live, including  culture and the people and institutions with whom they interact.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about ones environment</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about one&apos;s environment</rdfs:label>
     </owl:Class>
     
 
@@ -2501,7 +2501,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006145">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006029"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A belief about the aspects of one&apos;s immediate social settings in which people live, including culture and the people and institutions with whom they interact.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about ones social environment</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about one&apos;s social environment</rdfs:label>
     </owl:Class>
     
 
@@ -7557,7 +7557,7 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050225">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006029"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A belief about parts of one&apos;s environment that do not involve people or organisations.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about ones physical environment</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about one&apos;s physical environment</rdfs:label>
     </owl:Class>
     
 
