@@ -1065,7 +1065,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process in which a BCI is applied in a given context, including BCI engagement and outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI scenario</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention scenario</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention scenario</rdfs:label>
     </owl:Class>
     
@@ -1076,7 +1075,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_002000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_042000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human behavior that is an intervention outcome.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outcome behaviour</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outcome behaviour</rdfs:label>
     </owl:Class>
     
@@ -1107,7 +1105,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Involves use of products, services, activities, rules or environmental objects.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention that has the aim of influencing human behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention</rdfs:label>
     </owl:Class>
     
@@ -1132,7 +1129,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes as part BCI population and BCI setting. Use of the word may conveys a non-zero probability given available information.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aggregate of entities that are not dependent on the intervention but may influence the effect of a BCI on its outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI context</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention context</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention context</rdfs:label>
     </owl:Class>
     
@@ -1142,10 +1138,8 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process that is causally active in the relationship between a BCI and its outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process that is causally active in the relationship between a BCI scenario and its outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI mechanism of action</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mechanism of action</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention mechanism of action</rdfs:label>
     </owl:Class>
     
@@ -2826,7 +2820,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_046000"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
@@ -2840,10 +2833,8 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consists of BCTs that can be classified using a BCT taxonomy.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that is part of a BCI and is intended to be causally active in influencing the outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention content that is part of a behaviour change intervention.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI content</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention content</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention content</rdfs:label>
     </owl:Class>
     
@@ -2853,7 +2844,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_045000"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000003"/>
@@ -2878,10 +2868,8 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A part of a BCI that is the process by which BCI content is delivered.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention delivery in which the intervention is a behaviour change intervention.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI delivery</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention delivery</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention delivery</rdfs:label>
     </owl:Class>
     
@@ -2894,7 +2882,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes the start and end of the BCI and its parts.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a BCI that involves its temporal organisation.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI schedule of delivery</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention schedule of delivery</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention schedule of delivery</rdfs:label>
     </owl:Class>
     
@@ -2908,7 +2895,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role played by a person, population or organisation that provides a BCI.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI source</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI source</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention source</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention source</rdfs:label>
     </owl:Class>
     
@@ -4607,7 +4593,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a BCI delivery that is the physical or informational medium through which a BCI is provided.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI mode of delivery</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mode of delivery</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention mode of delivery</rdfs:label>
     </owl:Class>
     
@@ -5301,7 +5286,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes mental activities and behaviours.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual human activity that enables a BCI to influence the outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI engagement</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention engagement</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention engagement</rdfs:label>
     </owl:Class>
     
@@ -5326,7 +5310,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes as parts social setting and physical setting.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aggregate of entities that form the environment in which a BCI is provided.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI setting</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention setting</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention setting</rdfs:label>
     </owl:Class>
     
@@ -5338,7 +5321,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aggregate of people who are exposed to a BCI.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI population</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention population</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention population</rdfs:label>
     </owl:Class>
     
@@ -5368,7 +5350,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparison involves identifying differences between the entities in the scenarios.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A BCI evaluation study that involves comparison between two or more BCI scenarios to produce one or more BCI effect estimates.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI comparison evaluation study</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention comparison evaluation study</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention comparison evaluation study</rdfs:label>
     </owl:Class>
     
@@ -5393,7 +5374,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This includes the following subclasses: 1) BCI effect estimate type -the type of statistic used to represent the difference , 2) BCI effect estimate value  the datum that represents the difference , 3)  BCI effect estimate uncertainty type  the type of statistic used to represent the range of uncertainty of the value , and 4) the BCI effect estimate uncertainty value  - the datum representing the uncertainty .</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A BCI evaluation finding that characterises the difference between BCI outcome estimates of two BCI scenarios.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI effect estimate</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention effect estimate</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention effect estimate</rdfs:label>
     </owl:Class>
     
@@ -5429,7 +5409,6 @@ workplace, and safety of processes for the production of goods and services. The
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention evaluation study of a BCI scenario.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI evaluation study</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention evaluation study</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention evaluation study</rdfs:label>
     </owl:Class>
     
@@ -5447,7 +5426,6 @@ workplace, and safety of processes for the production of goods and services. The
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information content entity that is about the likelihood of the BCI evaluation finding misrepresenting the outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI study risk of bias or error</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention evaluation study risk of bias or error</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention evaluation study risk of bias or error</rdfs:label>
     </owl:Class>
     
@@ -5466,7 +5444,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes entities that stand in direct relation to the study e.g. authors, findings, funding, aims.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A report that is a description of a BCI evaluation study.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI evaluation report</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention evaluation report</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention evaluation report</rdfs:label>
     </owl:Class>
     
@@ -5479,7 +5456,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a disjunctive class that is not currently fully defined because specific BCI content instances may vary in intensity and amount in different ways.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of BCI content that is its amount or intensity.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI dose</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention dose</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention dose</rdfs:label>
     </owl:Class>
     
@@ -5497,7 +5473,6 @@ workplace, and safety of processes for the production of goods and services. The
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evaluation finding that is the output of a BCI evaluation study.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI evaluation finding</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention evaluation finding</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention evaluation finding</rdfs:label>
     </owl:Class>
     
@@ -5509,7 +5484,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plan for a BCI evaluation study.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI evaluation study plan</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention evaluation study plan</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention evaluation study plan</rdfs:label>
     </owl:Class>
     
@@ -5528,7 +5502,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This includes as subclasses 1) type of outcome estimate , 2) value of outcome estimate , 3) uncertainty estimate type , and 4) uncertainty estimate value .</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A BCI evaluation finding that is about an outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI outcome estimate</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention outcome estimate</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention outcome estimate</rdfs:label>
     </owl:Class>
     
@@ -5540,7 +5513,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physical environment in which a BCI is delivered.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI physical setting</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention physical setting</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention physical setting</rdfs:label>
     </owl:Class>
     
@@ -6137,7 +6109,6 @@ workplace, and safety of processes for the production of goods and services. The
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A report that describes a BCI scenario.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI scenario report</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention scenario report</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention scenario report</rdfs:label>
     </owl:Class>
     
@@ -6149,7 +6120,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plan that is realized in a BCI scenario process.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI scenario plan</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention scenario plan</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention scenario plan</rdfs:label>
     </owl:Class>
     
@@ -6161,7 +6131,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aggregate of people with whom a BCI population interacts.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI social setting</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention social setting</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention social setting</rdfs:label>
     </owl:Class>
     
@@ -6174,7 +6143,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What counts as substantively is subject to judgement. The level and nature of the contribution can be defined using the CReDiT taxonomy .</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role played by a person that contributes substantively to production or reporting of a BCI evaluation study.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI study investigator</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention study investigator</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention study investigator</rdfs:label>
     </owl:Class>
     
@@ -6186,7 +6154,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A population whose behaviour is studied in a BCI evaluation study.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI study sample</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention study sample</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention study sample</rdfs:label>
     </owl:Class>
     
@@ -6199,7 +6166,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It includes static tailoring that is based on characteristics of a member of a BCI population or BCI context at a single point in time and dynamic tailoring that can change as a function of characteristics assessed at multiple time points.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a BCI that relates to selection or modification of the BCI according to attributes of members of the BCI population or BCI context.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI tailoring</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention tailoring</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention tailoring</rdfs:label>
     </owl:Class>
     
@@ -6211,7 +6177,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCT</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change technique</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change technique</rdfs:label>
     </owl:Class>
     
@@ -6223,7 +6188,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aggregate of individual human behaviours of members of a population.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human behaviour</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Population behaviour</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population behaviour</rdfs:label>
     </owl:Class>
     
@@ -6233,9 +6197,7 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_035000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Also referred to in definitions as human behaviour or just behaviour.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that is the output of an intervention evaluation study.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evaluation finding</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evaluation finding</rdfs:label>
     </owl:Class>
     
@@ -6250,7 +6212,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual human activity that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human behaviour</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual human behaviour</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human behaviour</rdfs:label>
     </owl:Class>
     
@@ -7425,7 +7386,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples of interventions are putting health warnings on cigarette packets, providing free stop smoking services and banning smoking in public places.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that has the aim of influencing an outcome.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intervention</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention</rdfs:label>
     </owl:Class>
     
@@ -7436,7 +7396,6 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_038000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000125"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A research study that aims to assess attributes of an intervention with regards to their positive or negative value.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intervention evaluation study</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention evaluation study</rdfs:label>
     </owl:Class>
     
@@ -7448,7 +7407,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes individual human behaviour, mental activity and physiological activity. Also includes undesirable outcomes, such as treatment side effects, and unintended negative consequences of the intervention.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process that is influenced by an intervention.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intervention outcome</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention outcome</rdfs:label>
     </owl:Class>
     
@@ -7459,7 +7417,6 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_040000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process that is produced by a person.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual human activity</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human activity</rdfs:label>
     </owl:Class>
     
@@ -7470,7 +7427,6 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_041000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aggregate of people</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human population</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human population</rdfs:label>
     </owl:Class>
     
@@ -7487,9 +7443,7 @@ workplace, and safety of processes for the production of goods and services. The
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual human behaviour or population behaviour</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human behaviour</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human behaviour</rdfs:label>
     </owl:Class>
     
@@ -7500,7 +7454,6 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a process</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process attribute</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process attribute</rdfs:label>
     </owl:Class>
     
@@ -7513,7 +7466,6 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An example is cold and distant vs. warm and accepting.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of BCI delivery that encompasses the characteristics of how BCI content is communicated.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI style of delivery</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention style of delivery</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention style of delivery</rdfs:label>
     </owl:Class>
     
@@ -7940,11 +7892,8 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050268 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050268">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050269"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily process that modulates the frequency, rate or extent of a response to external or internal stimuli and that is instigated by the person.</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobacco smoking cessation in which the form of tobacco smoking is cigarette smoking.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cigarette smoking cessation</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-regulation process</rdfs:label>
     </owl:Class>
     
@@ -7976,6 +7925,16 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036017"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A learning function that involves improving a person&apos;s knowledge.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knowledge development function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050311 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050311">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050269"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobacco smoking cessation in which the form of tobacco smoking is cigarette smoking.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cigarette smoking cessation</rdfs:label>
     </owl:Class>
     
 
