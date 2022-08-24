@@ -8,10 +8,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/"
+     xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_mode_of_delivery.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_relations.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
     
@@ -34,7 +35,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a BCI delivery that is the physical or informational medium through which a BCI is provided.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI mode of delivery</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -45,7 +46,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves intentional transmission of a representation of the world to an intervention recipient with the aim of changing that person&apos;s representation of the world.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This includes delivery of rewards, prompts, and cues that result in learning and information about the environment and environmental contingencies.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informational mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">informational mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -55,7 +56,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011002">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informational mode of delivery that involves a person as intervention source who interacts with an intervention recipient in real time.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human interactional mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human interactional mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -65,7 +66,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011003">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human interactional mode of delivery that involves an intervention source and recipient being together in the same location and communicating directly.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Face to face mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">face to face mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -75,7 +76,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011004">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human interactional mode of delivery that involves an intervention source and recipient being in different locations and communicating through a communication channel.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">At-a-distance mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">at-a-distance mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -86,7 +87,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informational mode of delivery that involves use of printed material.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Can include paper, acetate, text, diagrams and photographic images.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Printed material mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">printed material mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -96,7 +97,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011006">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011005"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Printed material mode of delivery that involves a letter or postcard that can be sent through the post or handed directly to the recipient</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Letter mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">letter mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -106,7 +107,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011007">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011005"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Printed material mode of delivery that involves display of a poster, sign or notice in a public location.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public notice mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public notice mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -117,7 +118,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011005"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Printed material mode of delivery that involves use of of a printed publication.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes leaflets, brochures, newspapers, newsletter, booklets, mazazines, manuals or worksheets.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Printed publication mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">printed publication mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -127,7 +128,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011009">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011005"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Printed material mode of delivery that involves information printed on a product or its packaging, or a label attached to or included with, a product or its packaging, and aims to convey information about that product.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Labelling mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">labelling mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -138,7 +139,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informational mode of delivery that involves electronic technology in the presentation of information to an intervention recipient.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic has been used rather than digital because not all of the content may involve digital encoding - some may be analogue. Also, it is the electronic nature that is central not the means of encoding.</obo:IAO_0000232>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronic mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -149,7 +150,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves presentation of information that is broadcast and displayed by television.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes internet and satellite television.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Television mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">television mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -159,7 +160,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011012">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves presentation of information by a handheld mobile digital device that can store, retrieve and process data.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mobile digital device mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mobile digital device mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -169,7 +170,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011013">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves presentation of information by a desktop or laptop computer.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computer mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -179,7 +180,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011014">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves presentation of information by an electronic screen positioned in a public location.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic billboard mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronic billboard mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -190,7 +191,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves presentation of information by an electronic device that is worn or carried on the body.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes a watch, clip-on device, spectacles, in-ear devfice, vibrating device.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wearable electronic device mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wearable electronic device mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -201,7 +202,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves an electronic device positioned in the environment of the intervention recipient that can gather information and respond to commands.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes robots, and &apos;internet of things&apos;.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic environmental object mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronic environmental object mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -222,7 +223,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011018">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves use of virtual reality through a virtual reality headset and optionally body movement sensors.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Virtual reality mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">virtual reality mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -233,7 +234,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves presentation of information stored on an object that is inserted into a playing device.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes cassettes, video tapes, DVDs, CDs.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Playable electronic storage mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">playable electronic storage mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -244,7 +245,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves presentation of audio information that is broadcast and received by a radio receiver.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes digital radio and audio that is streamed as a podcast.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radio broadcast mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio broadcast mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -255,7 +256,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves a communication process in which a signal is sent by a caller to a recipient to alert them of the communication intent, giving the recipient the opportunity to enage with the communication.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Added in order to be able to capture the concept of a &apos;call&apos;.</obo:IAO_0000232>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Call mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">call mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -266,7 +267,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011021"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Call mode of delivery that involves only audio information in the communication.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes automated calls and audio messaging.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audio call mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio call mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -276,7 +277,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011023">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011021"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Call mode of delivery that involves video and audio information in the communication.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video call mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video call mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -287,7 +288,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011021"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Call mode of delivery that involves textual information in the communication.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Text message can include emojis, and additional audio and pictorial material. Includes SMS, WhatsApp and other messaging services.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Messaging mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">messaging mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -297,7 +298,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011025">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves communication by email.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">email mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -307,7 +308,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011026">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves the intervention recipient playing a computer game.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video game mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video game mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -317,7 +318,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011027">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves the intervention recipient interacting with a website.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Website mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">website mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -328,7 +329,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves the intervention recipient interacting with a mobile application.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The distinction between websites and mobile applications has become blurred with the advent of webapps.</obo:IAO_0000232>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mobile application mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mobile application mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -338,7 +339,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011029">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic mode of delivery that involves the intervention recipient being given access to an e-book.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E-book mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-book mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -348,7 +349,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011030">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informational mode of delivery that involves sound.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audio informational mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio informational mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -358,7 +359,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011031">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informational mode of delivery that involves visual images.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual informational mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual informational mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -368,7 +369,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011032">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informational mode of delivery that involves written text.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Textual mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -380,7 +381,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves changing the physical shape, size, structure or appearance of objects in the environment of the intervention recipient.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a very heterogeneous class that will need to be further subdivided.</obo:IAO_0000232>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This does not include use of textual or pictorial information. It includes lighting, speed humps, use of music, shape and size of containers of consumables.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental change mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental change mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -391,7 +392,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves devices or substances that alter bodily processes or structure.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is intended to be disjoint from informational mode of delivery.</obo:IAO_0000232>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Somatic mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">somatic mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -401,7 +402,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011035">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Somatic mode of delivery that involves ingestion of a chemical into the body.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingestion mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ingestion mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -411,7 +412,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011036">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingestion mode of delivery that involves ingestion of a chemical through the skin.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transdermal mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transdermal mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -421,7 +422,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011037">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Somatic mode of delivery that involves ingestion of a chemical through the stomach or intestine.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alimentary mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alimentary mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -431,7 +432,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011038">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011037"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alimentary mode of delivery that involves swallowing of a pill or oral capsule.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pill mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pill mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -441,7 +442,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011039">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011037"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alimentary mode of delivery that involves swallowing of a liquid.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingestable liquid mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ingestable liquid mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -451,7 +452,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011040">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingestion mode of delivery that involves absorption of a chemical through the lining of the buccal cavity.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buccal mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buccal mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -461,7 +462,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011041">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingestion mode of delivery that involves absorption of a chemical through  the upper airways or lungs by inspiration.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inhalation mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inhalation mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -471,7 +472,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011042">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingestion mode of delivery that involves a chemical being introduced into body tissue through a hollow needle that punctures the skin.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Injection mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injection mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -481,7 +482,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011043">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011042"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Injection mode of delivery in which the tissue receiving the chemical is subcutaneous tissue.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subcutaneous injection mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subcutaneous injection mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -491,7 +492,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011044">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011042"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Injection mode of delivery in which the tissue receiving the chemical is venous blood.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intravenous injection mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intravenous injection mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -501,7 +502,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011045">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011042"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Injection mode of delivery in which the tissue receiving the chemical is muscle.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intramuscular injection mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intramuscular injection mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -512,7 +513,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingestion mode of delivery that involves a device that is worn on the body.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes insulin pump.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wearable ingestion mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wearable ingestion mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -523,7 +524,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingestion mode of delivery that involves chewing of a soft material.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This includes chewing gum. often involves ingestion of a chemical that is released by chewing and absorbed through the lining of the buccal cavity, but this is not necessary.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chewable substance mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chewable substance mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -533,7 +534,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011048">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mode of delivery that involves application of a physical stimulus to the body.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical stimulus mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical stimulus mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -544,7 +545,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011048"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical stimulus mode of delivery that involves exposure of light to the body</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes photo therapy</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light exposure mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light exposure mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -554,7 +555,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011050">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011048"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical stimulius mode of delivery that involves application of heat or cold to the body.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -564,7 +565,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011051">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011048"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical stimulus mode of delivery that involves application of electrical stimulation to the body.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical stimulation mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrical stimulation mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -575,7 +576,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011048"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical stimulus mode of delivery that involves application of physical pressure to the outside of the body.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes massage.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical pressure mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical pressure mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -585,7 +586,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011053">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011048"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical stimulus mode of delivery that involves a device that is worn on the body.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wearable stimulus mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wearable stimulus mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -596,7 +597,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of of delivery that involves modifying the structure of the body of the recipient of the intervention.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes surgery.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Somatic alteration mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">somatic alteration mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -608,7 +609,7 @@
         <owl:disjointWith rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011056"/>
         <owl:disjointWith rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011057"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves one recipient in the location where the intervention is delivered.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual-based mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual-based mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -619,7 +620,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <owl:disjointWith rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011057"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves two recipients in the location where the intervention is delivered who have an interpersonal relationship.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pair-based mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pair-based mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -629,7 +630,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011057">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves three or more people in the location where the intervention is delivered.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group-based mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group-based mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -640,7 +641,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <owl:disjointWith rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011059"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery in which the only causal influence is from the intervention source to the recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uni-directional mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uni-directional mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -650,7 +651,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011059">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery in which there is causal influence from the intervention source to the recipient and from the recipient to the source.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interactional mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactional mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -661,7 +662,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <owl:disjointWith rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011061"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves delivery and receipt of the intervention or its components occurring at the same time or very close in time.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synchronous mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synchronous mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -671,7 +672,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011061">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves receipt of the intervention or its components taking place a significant period of time after delivery.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asynchronous mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asynchronous mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -682,7 +683,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <owl:disjointWith rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011063"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that is not dependent on actions on the part of the intervention recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Push mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">push mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -692,7 +693,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011063">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that requires some action on the part of the recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pull mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pull mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -704,7 +705,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves application of typical elements of game playing  to other areas of activity, typically as an online marketing technique to encourage engagement with a product or service.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.lexico.com/en/definition/gamification</obo:IAO_0000119>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes point scoring, competition with others, and rules of play.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamification mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamification mode of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -715,11 +716,11 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of delivery that involves application of creativity on the part of the intervention recipient.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes art therapy, music therapy, dance and acting.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arts feature mode of delivery</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arts feature mode of delivery</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 

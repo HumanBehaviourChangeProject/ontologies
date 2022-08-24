@@ -8,10 +8,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/"
+     xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_relations.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
     
@@ -28,16 +29,6 @@
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_000008 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process enacted by a person.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human behaviour pattern</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_000009 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_000009">
@@ -51,8 +42,8 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human activity that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human behaviour</rdfs:label>
     </owl:Class>
     
@@ -110,8 +101,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Storing, Littering, Installing, Assembling, Disassembling, Repairing, Designing, Servicing, Washing, Cleaning, Composting, Planting, Pruning, Farming, Cooking, Harvesting, Growing food, Recycling, Waste management, Planting trees, Picking up litter</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environment management behaviour that has an object management function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">object management behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environment management function behaviour that fulfils to some degree an object management function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">object management function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -127,8 +118,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical distancing to reduce disease transmission, Contact tracing</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environment management behaviour that has a protection function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protection behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environment management function behaviour that fulfils to some degree a protection function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protection function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -144,8 +135,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doing housework, Cleaning, Gardening</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that has the function of environment management.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environment management behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that fulfils to some degree an environment management function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environment management function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -161,8 +152,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studying, Active learning, Problem-based learning, Collaborative learning, Online learning</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that has the function of learning.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">learning behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that fulfils to some degree a learning function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">learning function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -177,8 +168,8 @@
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that has the function of life enhancement.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life enhancement behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that fulfils to some degree a life enhancement function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life enhancement function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -193,8 +184,8 @@
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that has the function of life maintenance.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life maintenance behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that fulfils to some degree a life maintenance function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life maintenance function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -210,8 +201,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cooperation</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual behaviour that has the function of social integration.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social integration behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that fulfils to some degree a social integration function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social integration function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -272,7 +263,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036017">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human function that involves a person improving their psychological capability.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human function that involves increasing knowledge or skill.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">learning function</rdfs:label>
     </owl:Class>
     
@@ -329,7 +320,7 @@
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that fulfils a human function.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that fulfils to some degree a human function.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">functional behaviour</rdfs:label>
     </owl:Class>
     
@@ -511,8 +502,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036039">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036008"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Training, Behavioural practice/rehearsal</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A learning behaviour with the function of skill development.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skill development behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A learning function behaviour that fulfils to some degree a skill development function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skill development function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -532,8 +523,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036041">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036009"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yoga, Taichi</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement behaviour that has a mind-body function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mind-body behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement function behaviour that fulfils to some degree a mind-body function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mind-body function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -543,8 +534,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036042">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036009"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Running, Swimming, Engaging in regular physical activity, Exercising, Playing recreational sport</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement behaviour that has a physical fitness function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical fitness behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement function behaviour that fulfils to some degree a physical fitness function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical fitness function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -573,8 +564,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036045">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement behaviour that has an aesthetics creation function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aesthetic creation behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement function behaviour that fulfils to some degree an aesthetics creation function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aesthetic creation function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -594,8 +585,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036047">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036009"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Playing</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement behaviour that has a recreation function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recreation behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement function behaviour that fulfils to some degree a recreation function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recreation function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -655,8 +646,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036054">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036010"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urinating, Defecating, Vomiting</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance behaviour that has a excretion fuction.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">excretion behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance behaviour that fulfils to some degree an excretion function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">excretion function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -664,10 +655,10 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036055 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036055">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036061"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036010"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food consumption</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consumption behaviour that has a nutrition function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutrition behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance function behaviour that fulfils to some degree a nutrition function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutrition function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -677,8 +668,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036056">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036010"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fertility preservation</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance behaviour that has a reproductive function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance function behaviour that fulfils to some degree a reproductive function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -688,8 +679,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036057">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036010"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breathing, Inhaling, Snuffing</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance behaviour that has a respiration function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiration behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance function behaviour that fulfils to some degree a respiration function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiration function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -699,8 +690,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036058">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036010"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sleep</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance behaviour that has a rest function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rest behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance function behaviour that fulfils to some degree a rest function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rest function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -709,8 +700,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036059">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance behaviour that has a travel function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">travel behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life maintenance function behaviour that fulfils to some degree a travel function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">travel function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -966,8 +957,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036084">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036011"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engaging in community life, Engaging in civic involvement</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration behaviour that has an affiliation function</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affiliation behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration function behaviour that fulfils to some degree an affiliation function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affiliation function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -976,8 +967,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036085">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration behaviour that has a dominance function</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dominance behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration function behaviour that fulfils to some degree a dominance function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dominance function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -987,8 +978,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036086">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036011"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comforting</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration behaviour that has the function of nurturing</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nurture behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration function behaviour that fulfils to some degree a nurture function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nurture function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -997,8 +988,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036087">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration behaviour that has an ownership function</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ownership behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration function behaviour that fulfils to some degree an ownership function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ownership function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -1007,8 +998,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036088">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration behaviour that has a social organisation function</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social organisation behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social integration function behaviour that fulfils to some degree a social organisation function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social organisation function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -1058,11 +1049,25 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036100 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036100">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036107"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process aggregate that is an aggregate of a class of individual human behaviours repeated over time.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition refers to a &apos;class&apos; of behaviours repeated over time to make it clear that it need not be the exact same behaviour with all its attributes, but specifically a class . Guidance on use of BFO indicates that any class can have a class aggregate even though it does not specifically prefer to process aggregates.</obo:IAO_0000232>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050267"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A uniform process aggregate whose process aggregate member parts are all instances of some descendant of behaviour such that  none of those instances occupy the same spatiotemporal region, and  there is some human being, s, that is participant_in each of those instances.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour pattern</obo:IAO_0000118>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+- For any x and y in P where x  does not equal y, if x occupies_spatiotemporal_region s, then y occupies_spatiotemporal_region t and s does not equal t</obo:IAO_0000232>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+- s is instance_of human being</obo:IAO_0000232>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 
+- For any pi in P, pi is instance_of X</obo:IAO_0000232>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 
+- For any pi in P, s is participant_in pi</obo:IAO_0000232>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 
+- X is subtype_of behaviour</obo:IAO_0000232>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">  
+- P is the set {p1, ... pn} of process aggregate member parts of b</obo:IAO_0000232>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b is a behaviour pattern means:
+- b is instance_of uniform process aggregate</obo:IAO_0000232>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class is intended to include behaviours that can usefully be characterised in terms of frequency and pattern of enactment with a temporal start and end of the series. This means that the series can be terminated , interrupted , and changed in frequency .</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour pattern</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human behaviour pattern</rdfs:label>
     </owl:Class>
     
 
@@ -1081,8 +1086,9 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036102 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036102">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036100"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour pattern that involves tobacco use.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050211"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A substance use behaviour pattern that involves tobacco use.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use behaviour pattern</rdfs:label>
     </owl:Class>
     
@@ -1092,7 +1098,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036103">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036114"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco use behaviour in which use involves inhaling smoke from a combustible tobacco-containing product.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco use behaviour that involves setting light to a combustible tobacco product and ingesting the tobacco smoke that is produced.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smoking</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco smoking behaviour</rdfs:label>
     </owl:Class>
@@ -1102,8 +1108,8 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036104 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036104">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036100"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour pattern that involves tobacco smoking.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036102"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco use behaviour pattern that involves tobacco smoking behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco smoking behaviour pattern</rdfs:label>
     </owl:Class>
     
@@ -1113,7 +1119,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036105">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036103"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco smoking behaviour in which the product is a cigarette.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco smoking behaviour that involves setting light to one end of a cigarette, putting the other end to the lips and sucking in order to ingest cigarette smoke.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cigarette smoking behaviour</rdfs:label>
     </owl:Class>
     
@@ -1123,7 +1129,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036106">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036104"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco smoking behaviour pattern in which the behaviour is cigarette smoking</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco smoking behaviour pattern that involves cigarette smoking behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cigarette smoking behaviour pattern</rdfs:label>
     </owl:Class>
     
@@ -1133,9 +1139,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A continuant that is an aggregate of processes.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1371/journal.pone.0018794</obo:IAO_0000119>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process aggregate extends BFO in the same way that object aggregate extends its coverage of material entities. It is required to be able to classify occurrents such as behaviour patterns that are repeated occurrences of classes of process that have properties such as average frequency of occurrence  and temporal patterning of occurrences.</obo:IAO_0000232>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An occurrent consisting exactly of a plurality of processes that are process_aggregate_member_parts_of that occurrent for all times at which it exists.</obo:IAO_0000115>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process aggregate extends BFO in the same way that object aggregate extends its coverage of material entities. It is required to be able to classify occurrents such as behaviour patterns that are repeated occurrences of classes of process that have properties such as average frequency of occurrence  and temporal patterning of occurrences.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process aggregate</rdfs:label>
     </owl:Class>
     
@@ -1177,8 +1182,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036112">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036009"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Praying</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement behaviour that has a spiritual function.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spiritual behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life enhancement function behaviour that fulfils to some degree a spiritual function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spiritual function behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -1201,6 +1206,138 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A substance use behaviour that involves ingesting constituents of a tobacco-containing product.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050207 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050207">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050209"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change that is a process part of a person&apos;s history in which a person who enacted a behaviour pattern until time t1 does not enact any member part of it for duration d1 after t1.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> cessation of a behaviour pattern</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioural cessation</obo:IAO_0000118>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change and process_part_of some  and has_process_part some  and after value t1 and before value t2))</obo:IAO_0000232>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition involves specification of a time point t1, a behaviour pattern that is enacted until t1 , a duration d1, and negation of the behaviour pattern for duration d1. This label applies when there have been occurrences of the behaviour at all during d1. Variants of behaviour pattern cessation allow different numbers and patterns of &apos;lapses&apos;. Eg. Russell Standard smoking cessation allows for up to 5 cigarette smoking episodes of up to 1 cigarette each during the period d1 as long as none of them occur within 1 week of the end of d1.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human behaviour pattern cessation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050208 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050208">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050207"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual human behaviour pattern cessation in which the behaviour pattern involved is tobacco use.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As with the parent class &apos;individual human behaviour pattern cessation&apos;  this class can only be identified after the duration for which cessation has occurred has elapsed and it is necessary to specify this period for the class to be meaningful.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use cessation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050209 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050209">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050212"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A causal process that results in a difference in enactment of some individual human behaviour or individual human behaviour pattern from what would have been the case otherwise, including non-enactment of a behaviour, cessation of a behaviour pattern, enactment of a behaviour, initiation of a behaviour pattern and change in attributes of a behaviour or behaviour pattern.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term &apos;change&apos; in behaviour change refers to change from what would have happened in the absence of a causal process. Thus a process that results in a behaviour  being maintained when otherwise it would have lapsed is included in the class, as is not taking up smoking as a result of some intervention. behaviour change can refer to individual behaviours  or behaviour patterns .</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human behaviour change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050210 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050210">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036100"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour pattern that involves consumption behaviour.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consumption behaviour pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050211 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050211">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050210"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consumption behaviour pattern that involves substance use behaviour.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">substance use behaviour pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050212 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process that involves a causal relation between entities.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class uses the relation class &apos;causal relation between entities&apos; .</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">causal process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050267 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050267">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036107"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process aggregate whose process aggregate member parts are all instances of X where X is some descendant of process.</obo:IAO_0000115>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">u is a uniform process aggregate means:
+	u instance_of process aggregate
+	P is the set {p1,pn} of process aggregate member parts of u
+	X is some descendant of process
+	Each of {p1,pn} in P is instance_of X</obo:IAO_0000232>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniform process aggregate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050268 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050268">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050269"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobacco smoking cessation in which the form of tobacco smoking is cigarette smoking.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cigarette smoking cessation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050269 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050269">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050208"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobacco use cessation in which the form of tobacco use is tobacco smoking.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco smoking cessation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050291 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050291">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036008"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A learning function behaviour that fulfils to some degree a knowledge development function.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knowledge development function behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050292 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050292">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A learning function that involves improving a person&apos;s knowledge.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knowledge development function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disposition that exists in virtue of the bearers physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution  or through intentional design , in order to realize processes of a certain sort.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function</rdfs:label>
     </owl:Class>
     
 
