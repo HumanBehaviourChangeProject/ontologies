@@ -1292,16 +1292,6 @@
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050268 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050268">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050269"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobacco smoking cessation in which the form of tobacco smoking is cigarette smoking.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cigarette smoking cessation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050269 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050269">
@@ -1328,6 +1318,16 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036017"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A learning function that involves improving a person&apos;s knowledge.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knowledge development function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050311 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050311">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050269"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobacco smoking cessation in which the form of tobacco smoking is cigarette smoking.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cigarette smoking cessation</rdfs:label>
     </owl:Class>
     
 
