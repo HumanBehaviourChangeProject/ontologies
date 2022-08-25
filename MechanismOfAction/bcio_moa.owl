@@ -21,23 +21,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -53,6 +36,69 @@
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">While &apos;addiction&apos; is a disposition relating to experience motivation to use a substance, &apos;substance dependence&apos; refers to &apos;disposition related to the impaired functioning in the absence of a substance&apos;.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disposition towards repeated episodes of abnormally high levels of motivation to engage in a behaviour, acquired as a result of engaging in the behaviour, where the behaviour results in risk or occurrence of serious net harm.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">addiction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000377 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A feeling involving positive affect associated with reduction in a feeling of need.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subjective need</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feeling of need satisfaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000381 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive representation of themselves by a person or group.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000399 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000399">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000381"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identity that a person has about themselves.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000511 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subjective affective feeling involving a strong desire or urge.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">craving</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000715 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000715">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000381"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing consideration regarding this class is whether a socially shared representation can be said to be purely cognitive.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identity that a group holds about itself.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001087 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001087">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Social identity&apos; can involve a sense of one&apos;s rank or status in reference to other groups.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which the representation involves a relation between the identity holder and another person or group.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social identity</rdfs:label>
     </owl:Class>
     
 
@@ -228,7 +274,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A belief about a factor could restrict or impede a person from engaging in a behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A belief about a factor that could restrict or impede a person from engaging in a behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about barriers to a behaviour</rdfs:label>
     </owl:Class>
     
@@ -365,7 +411,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A belief about the nature of the immediate physical and social settings in which people live, including  culture and the people and institutions with whom they interact.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about one&apos;s environment</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about ones environment</rdfs:label>
     </owl:Class>
     
 
@@ -423,9 +469,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006035">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006038"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-concept is used to form an evaluation of self.
-
-One&apos;s attributes can be evaluated as positive or negative.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One&apos;s attributes can be evaluated as positive or negative.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evaluative belief about one&apos;s attributes.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-concept</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evaluation of self</rdfs:label>
@@ -531,7 +575,7 @@ One&apos;s attributes can be evaluated as positive or negative.</obo:IAO_0000112
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006046">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006045"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive schema that when activate, guides a sequence of behaviours.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive schema that when activated, guides a sequence of behaviours.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">action script</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">action schema</rdfs:label>
     </owl:Class>
@@ -565,27 +609,6 @@ One&apos;s attributes can be evaluated as positive or negative.</obo:IAO_0000112
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive representation of an end state towards which one is striving.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">goal</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_006050 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive representation that a person has about themselves.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-identity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_006051 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006051">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006050"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Social identity&apos; can involve a sense of one&apos;s rank or status in reference to other groups.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which the representation involves a relation between the identity holder and another person or group.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social identity</rdfs:label>
     </owl:Class>
     
 
@@ -656,7 +679,7 @@ One&apos;s attributes can be evaluated as positive or negative.</obo:IAO_0000112
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disposition to evokes the representation of the sensory characteristics of objects or events when these are not immediately present to the senses.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disposition to evoke the representation of the sensory characteristics of objects or events when these are not immediately present to the senses.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental imagery disposition</rdfs:label>
     </owl:Class>
     
@@ -810,16 +833,6 @@ One&apos;s attributes can be evaluated as positive or negative.</obo:IAO_0000112
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_006075 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006075">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subjective affective feeling that involves experiencing anticipated relief or continued comfort by obtaining or maintaining a particular state.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subjective need</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006078 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006078">
@@ -876,7 +889,7 @@ One&apos;s attributes can be evaluated as positive or negative.</obo:IAO_0000112
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006085 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention could be used to rearrange objects in an environment, changing the location of a person relative to these objects and thereby increasing the likelihood of a behaviour.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatial quality that inheres in a bearer by virtue of its position relative to other entities.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</rdfs:label>
@@ -893,7 +906,7 @@ One&apos;s attributes can be evaluated as positive or negative.</obo:IAO_0000112
 The term &apos;facilitates&apos; is used to specify that &apos;behavioural opportunity&apos; will make the behaviour easier. Higher behavioural opportunity will increase the likelihood of behaviour across situations and people.
 
 The class &apos;environmental system&apos; relates to what is found in the physical and social environment , while the class &apos;behavioural opportunity&apos; is about the features of the environment and how they interact with the person .</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental disposition of that enables or facilitates a behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental disposition that enables or facilitates a behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioural opportunity</rdfs:label>
     </owl:Class>
     
@@ -972,23 +985,10 @@ The class &apos;environmental system&apos; relates to what is found in the physi
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_006094 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006094">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The striated muscles referred to do not ordinarily involve the cardiac muscles.
-
-Behaviour can be an MoA or outcome depending on how &apos;behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class  &apos;outcome behaviour&apos; , which would not be an MoA. When an intervention targets one behaviour to achieve an outcome behaviour , the former qualifies as an MoA.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006095 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006095">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006094"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Normative behaviour can be an MoA or outcome depending on how &apos;normative behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; , which would not be an MoA. When an intervention targets a normative behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that is commonly enacted by people that are part of a social environmental system.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normative behaviour</rdfs:label>
@@ -1198,7 +1198,7 @@ Behaviour can be an MoA or outcome depending on how &apos;behaviour&apos; is des
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">While associative learning is often defined as learning an association between a stimulus and response, the stimulus has to be perceived. Therefore, associative learning is between perceiving or processing information about a stimulus  and one or more other mental processes.
 
 The label &apos;associative learning&apos; is also used for a behaviour change technique  in the BCT Taxonomy v1 . The definition for this BCT reads as follows: &apos;Present a neutral stimulus jointly with a stimulus that already elicits the behavior repeatedly until the neutral stimulus elicits that behavior.&apos; As indicated by the definition, the BCT is the deliberate presentation of a stimulus, whereas the MoA is a learning process that occurs in the brain.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learning that involves changing strength of association between two or more mental processes.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learning that involves changing the strength of association between two or more mental processes.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">associative learning</rdfs:label>
     </owl:Class>
     
@@ -1441,7 +1441,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006145">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006029"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A belief about the aspects of one&apos;s immediate social settings in which people live, including culture and the people and institutions with whom they interact.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about one&apos;s social environment</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about ones social environment</rdfs:label>
     </owl:Class>
     
 
@@ -1562,7 +1562,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006158 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006158">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006094"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A learnt stimulus-behaviour co-occurrence can lead to activation or execution of a habitual behaviour.
 
 Habitual behaviour can be an MoA or outcome depending on how &apos;habitual behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; , which would not be an MoA. When an intervention targets a habitual behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</obo:IAO_0000112>
@@ -1579,16 +1579,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pleasure that is experienced as a result of engaging in a behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enjoyment of behaviour</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pleasure associated with behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_006160 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006160">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subjective affective feeling of desiring or needing something.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">craving</rdfs:label>
     </owl:Class>
     
 
@@ -1721,7 +1711,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006308">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006302"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autonomous motivation due to a behaviour being perceived to satisfy core psychological need.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autonomous motivation due to a behaviour being perceived to satisfy a core psychological need.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> integrated regulation</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integrated motivation</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fundamental need-based motivation</rdfs:label>
@@ -1750,10 +1740,20 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_036000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036025 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006094"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves an interaction between two or more people.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inter-personal behaviour</rdfs:label>
     </owl:Class>
@@ -1896,7 +1896,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050225">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006029"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A belief about parts of one&apos;s environment that do not involve people or organisations.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about one&apos;s physical environment</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about ones physical environment</rdfs:label>
     </owl:Class>
     
 
@@ -1935,7 +1935,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050229 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050229">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006050"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity that is associated with one&apos;s occupational role.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">professional identity</rdfs:label>
     </owl:Class>
@@ -2064,6 +2064,255 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily process that modulates the frequency, rate or extent of a response to external or internal stimuli and that is instigated by the person.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-regulation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050293 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050293">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between mechanism of action through bodily disposition and bodily disposition is labelled as through&apos;.
+
+The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+
+In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mechanism of action in which the causal influence affects a bodily disposition.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanism of action through bodily disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050294 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050294">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between mechanism of action through bodily process and bodily process is labelled as through&apos;.
+
+The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+
+In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mechanism of action in which the causal influence occurs in a bodily process.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanism of action through bodily process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050295 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050295">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between mechanism of action through &apos;cognitive representation&apos; and cognitive representation&apos; is labelled as &apos;through&apos;.
+
+The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+
+In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mechanism of action in which the causal influence affects a cognitive representation.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanism of action through cognitive representation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050296 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050296">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between mechanism of action through environmental disposition&apos; and environmental disposition&apos; is labelled as &apos;through&apos;.
+
+The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+
+In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mechanism of action in which the causal influence affects an environmental disposition.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanism of action through environmental disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050297 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050297">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between mechanism of action through location&apos; and location&apos; is labelled as &apos;through&apos;.
+
+The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+
+In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mechanism of action in which the causal influence shifts the location of people or objects.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanism of action through location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050298 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050298">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050306"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between mechanism of action through material entity and material entity is labelled asthrough.
+
+The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+
+In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mechanism of action in which the causal influence affects a material entity.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanism of action through material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050299 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050299">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006081"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between mechanism of action through personal role and personal role is labelled as through.
+
+The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+
+In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour change intervention mechanism of action in which the causal influence affects a personal role.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanism of action through personal role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050300 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes everything that can be said about a person: the most general class under which all other qualities, dispositions, roles etc belong.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specifically dependent continuant that inheres in a person.</obo:IAO_0000115>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The population ontology individuals branch defines many personal attributes</obo:IAO_0000232>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050301 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050301">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disposition that inheres in a person.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050302 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050302">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process attribute that is an attribute of a life process.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal life attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050303 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050303">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality that inheres in a person.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050304 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An affective process involving sensory experience of physiological stimuli.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily feeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050305 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050305">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality that inheres in some extended organism.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050306 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050306">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050307 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050307">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050305"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily quality that inheres in those structures of the extended organism that are essential for mental functioning.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050308 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050310 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">representation</rdfs:label>
     </owl:Class>
     
 
@@ -2536,7 +2785,7 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that &apos;feeling nervous&apos; is related to &apos;anxiety&apos; but is not identical with it. Feeling nervous is the subjective experience of nervousness, while anxiety is a full-blown emotion process. Subjective affective feelings are process parts of emotion processes.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that &apos;feeling nervous&apos; is related to &apos;anxiety&apos; but is not identical with it. Feeling nervous is the subjective experience of nervousness, while anxiety is a complete emotion process. Subjective affective feelings are process parts of emotion processes.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subjective affective feeling of being not at ease or agitated.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feeling nervous</rdfs:label>
     </owl:Class>
@@ -2560,16 +2809,6 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; . Valence ranges from negative to positive.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental process that has positive or negative valence.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affective process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM_000202 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000202">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An affective process involving sensory experience of physiological stimuli.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily feeling</rdfs:label>
     </owl:Class>
     
 
@@ -2715,20 +2954,10 @@ A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as men
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">representation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050310"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The use of the phrase an anatomical structure in the cognitive system in the formal definition means that a specific cognitive representation will depend on parts of the brain, rather than involving the whole brain.
 
 When a belief is activated, the content of that belief is a cognitive representation.</obo:IAO_0000112>
@@ -2805,26 +3034,6 @@ For instance, having a musical ability is ordinarily an ability that is positive
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000074 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000074">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality that inheres in some extended organism.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000075 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000075">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000074"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily quality that inheres in those structures of the extended organism that are essential for mental functioning.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental quality</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000083 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000083">
@@ -2856,20 +3065,10 @@ For instance, having a musical ability is ordinarily an ability that is positive
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050306"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity consisting of multiple components that are causally integrated.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">system</rdfs:label>
     </owl:Class>
@@ -2893,7 +3092,7 @@ An example for this class serving as a mechanism of action would be in an interv
     <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050306"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical entity that has mass.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material anatomical entity</rdfs:label>
     </owl:Class>
@@ -2901,5 +3100,5 @@ An example for this class serving as a mechanism of action would be in an interv
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 
