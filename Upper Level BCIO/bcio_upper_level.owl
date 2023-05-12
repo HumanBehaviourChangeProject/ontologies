@@ -85,7 +85,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_002000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_002000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_042000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_034000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human behavior that is an intervention outcome.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outcome behaviour</rdfs:label>
     </owl:Class>
@@ -151,6 +151,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process that is causally active in the relationship between a BCI scenario and its outcome behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> BCI MOA</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MOA</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI mechanism of action</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention mechanism of action</rdfs:label>
     </owl:Class>
@@ -245,6 +247,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a BCI delivery that is the physical or informational medium through which a BCI is provided.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> BCI MOD</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MOD</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI mode of delivery</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention mode of delivery</rdfs:label>
     </owl:Class>
@@ -386,7 +390,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information content entity that is about the likelihood of the BCI evaluation finding misrepresenting the outcome behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI study risk of bias or error</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI evaluation study risk of bias or error</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention evaluation study risk of bias or error</rdfs:label>
     </owl:Class>
     
@@ -414,8 +418,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_022000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a disjunctive class that is not currently fully defined because specific BCI content instances may vary in intensity and amount in different ways.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of BCI content that is its amount or intensity.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> the number of behaviour change techniques included in an intervention.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dose of an active ingredient in a pharmacological intervention</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of BCI content that is its amount.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI dose</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention dose</rdfs:label>
     </owl:Class>
@@ -545,8 +550,8 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_032000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It includes static tailoring that is based on characteristics of a member of a BCI population or BCI context at a single point in time and dynamic tailoring that can change as a function of characteristics assessed at multiple time points.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a BCI that relates to selection or modification of the BCI according to attributes of members of the BCI population or BCI context.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailoring the dose of pharmacotherapy for smoking cessation to the prior level of nicotine dependence of the smoker  or to the smokers&apos; current strength of urges to smoke during a quit attempt .</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process attribute of a behaviour change intervention or part of a behaviour change intervention in which the content or delivery of the intervention for a given member of the BCI population varies according to their characteristics or setting.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI tailoring</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention tailoring</rdfs:label>
     </owl:Class>
@@ -649,28 +654,12 @@
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_042000 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_042000">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_034000"/>
-                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual human behaviour or population behaviour</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a process</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is intended to provide a user-friendly way of representing the way in which processes are manifest. This is somewhat similar to, but not the same as, the class &apos;specifically dependent continuant&apos; in Basic Formal Ontology which provides a way of representing features of material entities such as age and size. It is formally equivalent to process profile in Basic Formal Ontology.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process profile that is an attribute of a process.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process attribute</rdfs:label>
     </owl:Class>
     
@@ -733,9 +722,30 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI temporal context event</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention temporal context event</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050315 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050315">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process attribute whose bearer is a behaviour change intervention.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention attribute</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050316 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A criterion that is a characteristics of some population or setting that is used to include them in the BCI population.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI selection criterion</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 
