@@ -12,7 +12,6 @@
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_moa.owl">
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
     
@@ -202,7 +201,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006009">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050215"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioural capability that involves a musculoskeletal process in its realisation.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioural capability that involves sensory or musculoskeletal abilities</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical behavioural capability</rdfs:label>
     </owl:Class>
     
@@ -710,7 +709,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006061">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006060"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disposition for motivation to be guided by a focus on the presence or absence of positive outcomes.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disposition for motivation to be guided by a focus on the presence or absence of negative outcomes.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prevention focused motivational orientation</rdfs:label>
     </owl:Class>
     
@@ -720,7 +719,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006062">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006060"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disposition for motivation to be guided by a focus on the presence or absence of negative outcomes.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disposition for motivation to be guided by a focus on the presence or absence of positive outcomes.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promotion focused motivational orientation</rdfs:label>
     </owl:Class>
     
@@ -901,12 +900,12 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term &apos;enables&apos; is used in the definition to specify that &apos;behavioural opportunity&apos; is a necessary condition for behaviour to occur. Although other MoAs will help bring behaviour about, there has to be a &apos;behavioural opportunity&apos; for behaviour to occur.
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The phrase required for is used in the definition to specify that &apos;behavioural opportunity&apos; is a necessary condition for behaviour to occur. Although other MoAs will help bring behaviour about, there has to be a &apos;behavioural opportunity&apos; for behaviour to occur.
 
 The term &apos;facilitates&apos; is used to specify that &apos;behavioural opportunity&apos; will make the behaviour easier. Higher behavioural opportunity will increase the likelihood of behaviour across situations and people.
 
 The class &apos;environmental system&apos; relates to what is found in the physical and social environment , while the class &apos;behavioural opportunity&apos; is about the features of the environment and how they interact with the person .</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental disposition that enables or facilitates a behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental disposition that is required for or facilitates a behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioural opportunity</rdfs:label>
     </owl:Class>
     
@@ -1272,7 +1271,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006126 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006126">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007613"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050319"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A memory process that deals with the receipt, storage, retrieval and modification of information regarding a set of entities associated with a particular object or event.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">associative memory</rdfs:label>
     </owl:Class>
@@ -1282,7 +1281,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006127 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006127">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007613"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050319"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A memory process that deals with the receipt, storage, retrieval and modification of information regarding a personally experienced event at a particular time or place.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">episodic memory</rdfs:label>
     </owl:Class>
@@ -1292,7 +1291,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006128 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006128">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007613"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050319"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A memory process that deals with the receipt, storage, retrieval and modification of information associated with meanings, understandings or conceptual facts about the world.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semantic memory</rdfs:label>
     </owl:Class>
@@ -1302,8 +1301,8 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006129 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006129">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007613"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A memory process that deals with the receipt, storage, retrieval and modification of information regarding how to perform a complex activity without conscious awareness.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050319"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A memory process that deals with the receipt, storage, retrieval and modification of information regarding performance of an activity.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">procedural memory</rdfs:label>
     </owl:Class>
     
@@ -1312,7 +1311,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006130 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006130">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007613"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050319"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A memory process that deals with the receipt, storage, retrieval and modification of information regarding a brief visual stimulus.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iconic memory</rdfs:label>
     </owl:Class>
@@ -1344,8 +1343,8 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006133">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental process that energises and directs behaviour.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motivation</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental process that energises and directs a behaviour.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioural motivation</rdfs:label>
     </owl:Class>
     
 
@@ -1354,7 +1353,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006134">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006133"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motivation that arises from emotions and impulses that result from associative learning or innate dispositions.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour motivation that arises from emotions and impulses that result from associative learning or innate dispositions.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automatic motivation</rdfs:label>
     </owl:Class>
     
@@ -1461,7 +1460,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006147">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006038"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evaluative belief about whether a behaviour is positive or negative.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evaluative belief about behaviour</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evaluative belief about a behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -1641,7 +1640,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006302">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006133"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motivation that is internally generated and based on a behaviour being interesting or valuable to an individual.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioural motivation that is internally generated and based on a behaviour being interesting or valuable to an individual.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous motivation</rdfs:label>
     </owl:Class>
     
@@ -1700,7 +1699,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006307">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006133"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motivation that is based on external rewards, punishments or pressure regarding a behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour motivation that is based on external rewards, punishments or pressure regarding a behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">controlled motivation</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extrinsic motivation</rdfs:label>
     </owl:Class>
@@ -1764,8 +1763,8 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036034">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inter-personal behaviour that involves the intentional transmission of information.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication behaviour</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inter-personal behaviour that involves the transmission of information.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human communication behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -2020,7 +2019,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050237">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036034"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Written language, spoken language and sign-language communication</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication behaviour in which the information that is communicated is encoded in language.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human communication behaviour in which the information that is communicated is encoded in language.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linguistic communication behaviour</rdfs:label>
     </owl:Class>
     
@@ -2031,7 +2030,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050238">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036034"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Communicating through bodily gestures, through pictograms and through sound</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication behaviour in which information is transmitted without being encoded in the meaning units of any language.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human communication behaviour in which information is transmitted without being encoded in the meaning units of any language.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linguistic communication behaviour</rdfs:label>
     </owl:Class>
     
@@ -2317,6 +2316,158 @@ In this definition, change refers to change from what would have been the case r
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050316 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subjective affective feeling that is an attraction to an imagined scenario involving anticipated relief from or avoidance of mental or physical discomfort.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subjective need</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050317 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subjective affective feeling that is an attraction to an imagined scenario involving anticipated pleasure or satisfaction.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subjective want</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050318 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050318">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006133"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioural motivation that involves reflective thinking.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reflective behavioural motivation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050319 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental information process that is the encoding, storing, and retrieval of informational stimuli.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">memory process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050320 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050320">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050322"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal interaction in which the goals are incompatible.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">goal conflict</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050321 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050321">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050322"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal interaction in which the goals a facilitatory.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">goal facilitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050322 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information content entity that is about the extent to which goals are compatible with each other.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">goal interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050323 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feeling ticklish, feeling tingling</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If a subjective feeling is valenced , the more granular class subjective affective feeling can be used to capture this feeling.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental process that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subjective feeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050324 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050324">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A belief about one&apos;s position in life in relation to one&apos;s goals, expectations, standards and concerns.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief about quality of life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050325 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050325">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050215"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The class psychological behavioural capability is the subclass of both behavioural capability and mental capability and refers to mental capabilities that are needed to realise a behaviour.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioural capability that involves psychological abilities.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological behavioural capability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050326 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The entity  that is the object of the attitude is usually referred to as the attitude object.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disposition to experience a subjective affective feeling about something.</obo:IAO_0000115>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition does not express the idea that the feeling is positive or negative because that is implied by the parent class.</obo:IAO_0000232>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affective attitude</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050327 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050327">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050326"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Affective attitude in which the entity that is the attitude object is a behaviour.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affective attitude towards a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050328 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The class attitude is logically defined as an effective attitude or evaluative belief, as the term attitude can be used to refer to either class.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disposition that is an affective attitude or an evaluative belief about something.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attitude</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050329 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050329">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050328"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attitude in which the entity that is the attitude object is a behaviour.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attitude towards a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254">
@@ -2349,16 +2500,6 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental system which includes both living and non-living components.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ecosystem</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0007613 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007613">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The activities involved in the mental information processing system that receives , modifies, stores, and retrieves informational stimuli.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">memory</rdfs:label>
     </owl:Class>
     
 
@@ -3008,7 +3149,7 @@ Bodily disposition would include features, such as a person&apos;s strength , bu
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The phrase &apos;ordinarily brings benefits to an organism or group of organism&apos; is used to explain that capabilities normally provide a benefit. 
 
 For instance, having a musical ability is ordinarily an ability that is positive for a person . However, in certain exceptional cases , the ability might not bring benefits.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily disposition whose realization ordinarily brings benefits to an organism or group of organisms, where &quot;ordinarily&quot; means within a typical  range or context.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily disposition whose realization ordinarily brings benefits to an organism or group of organisms, where &quot;ordinarily&quot; means within a typical range or context.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal capability</rdfs:label>
     </owl:Class>
     
@@ -3028,6 +3169,7 @@ For instance, having a musical ability is ordinarily an ability that is positive
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mental capabilities that are necessary to realise a behaviour are captured by the class psychological behavioural capability, which is a subclass of both mental capability and behavioural capability.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A personal capability that  includes mental processes in its realisation.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental capability</rdfs:label>
     </owl:Class>
