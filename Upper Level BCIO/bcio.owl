@@ -3030,7 +3030,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007001 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007001">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that sets or changes goals.</obo:IAO_0000115>
@@ -3190,7 +3190,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007017 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007017">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that involves gathering or using information about performance.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monitoring BCT</rdfs:label>
@@ -3314,7 +3314,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007028 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007028">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that involves taking steps to secure or deliver the support or aid of another person.</obo:IAO_0000115>
@@ -3495,7 +3495,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007050 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007050">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that provides guidance regarding how to perform the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise how to perform behaviour BCT</rdfs:label>
@@ -3539,7 +3539,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007054 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007054">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that advises on how to identify and test hypotheses about the behaviour, its causes and consequences.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conduct a behavioural experiment BCT</rdfs:label>
@@ -3616,7 +3616,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007062 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007062">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that draws attention to consequences of the behaviour in the normal course of events.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increase awareness of consequences BCT</rdfs:label>
@@ -3715,7 +3715,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007072 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007072">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a broad category. It can include both advising people on ways to change emotions and directly intervening to change emotions.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that increases awareness of what other people think, do, or feel.</obo:IAO_0000115>
@@ -3886,7 +3886,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007090 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007090">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that involves repeated pairing of a stimulus with another stimulus or with a behavioural outcome.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">associative learning BCT</rdfs:label>
@@ -3998,7 +3998,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007101 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007101">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The target of the mental process advised by this BCT will be an emotion. If a BCT suggests adopting a different cognitive perspective on behaviour, which then changes emotions, use &quot;suggest different perspective on behaviour BCT&quot; or one of its child classes.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that alters the consequences or promised consequences for the behaviour.</obo:IAO_0000115>
@@ -4090,7 +4090,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007136 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007136">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that alters the structure or functioning of the person&apos;s body.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">change the body BCT</rdfs:label>
@@ -4181,7 +4181,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007144 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007144">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique promoting medicines or other drugs.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promote pharmacological support BCT</rdfs:label>
@@ -4215,7 +4215,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007147 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007147">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that suggests a method to alter emotions.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise to change emotions BCT</rdfs:label>
@@ -4226,7 +4226,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007150 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007150">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feedback is provision of data about some aspect of behaviour without an evaluation . Where feedback includes reward or punishment, see behavioural consequence BCT, outcome consequence BCT and their child classes.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that alters the environment in which the behaviour is, or would have been, performed in a way that facilitates or impedes the behaviour.</obo:IAO_0000115>
@@ -4307,7 +4307,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007157 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007157">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that prompts the person to focus on their mental representation of themself.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prompt focus on self-identity BCT</rdfs:label>
@@ -4356,17 +4356,6 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A prompt focus on self-identity BCT that promotes the adoption of a positive self-identity as someone who currently engages in the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adopt positive self-identity BCT</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_007162 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007162">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change technique</rdfs:label>
     </owl:Class>
     
 
@@ -4431,7 +4420,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007168 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007168">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that advises the person to perform a behaviour in a particular way to help change the target behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise specific behaviour BCT</rdfs:label>
@@ -4487,7 +4476,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007173 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007173">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that draws attention to the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increase awareness of behaviour BCT</rdfs:label>
@@ -4620,7 +4609,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007185 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007185">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that advises how to manage mental processes to facilitate the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manage mental processes BCT</rdfs:label>
@@ -4631,7 +4620,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007186 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007186">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that alters the consequences or promised consequences for an outcome that results from performing or not performing the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outcome consequence BCT</rdfs:label>
@@ -5226,7 +5215,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007239 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007239">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that prompts thinking relating to successful performance of the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prompt thinking related to successful performance BCT</rdfs:label>
@@ -5945,7 +5934,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007302 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007302">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that suggests the deliberate adoption of a new perspective on the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suggest different perspective on behaviour BCT</rdfs:label>
@@ -9304,6 +9293,8 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_033000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussed</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCT</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change technique</rdfs:label>
