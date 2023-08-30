@@ -14,6 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_relations.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
     
@@ -278,7 +279,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036033 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036033">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050334"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050397"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breast feeding, Nappy changing, Feeding, Nursing behaviour, Provide care</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social support behaviour that involves meeting another persons physical, psychological or social needs that this person is unable to fully meet themselves at a given moment.</obo:IAO_0000115>
@@ -330,7 +331,7 @@ The term &apos;production&apos; in the definition specifically refers to the &ap
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036037 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036037">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050335"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050398"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stalking, Victimization, Sexual misconduct, Insults, Threats</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harmful behaviour to others that entails intentionally targeting someone with a behaviour that has the effect of causing distress in the targeted person.</obo:IAO_0000115>
@@ -556,7 +557,7 @@ The classes &apos;travel behaviour&apos; and &apos;locomotive behaviour&apos; ha
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036073">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves taking defensive action in order to avoid stimuli judged as adversive by the person.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves taking defensive action in order to avoid stimuli judged as aversive by the person.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">avoidance behaviour</rdfs:label>
     </owl:Class>
     
@@ -1062,267 +1063,10 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050330 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050330">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050329"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-injecting consumption that involves administering liquids into ones veins.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intravenous self-injecting</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050331 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050331">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036061"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consumption behaviour that involves breathing in a material through the nose or mouth.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inhaling consumption</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050332 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050332">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050331"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inhaling consumption that involves breathing in a material through the nose.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sniffing consumption</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050333 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050333">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036061"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicotine patches, hormone patches, pain relief gels</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consumption behaviour that involves applying a material to the skin and ingesting this material into the circulation through the skin.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transdermal consumption</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050334 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050334">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inter-personal behaviour that involves providing physical, psychological or social assistance to another.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social support behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050335 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050335">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036075"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mistreatment, Sexual assault, Engaging in domestic violence, Physical attack, Abuse behaviour</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A harmful behaviour that involves interacting with another animal  and thereby causing harm to its health, wellbeing or social functioning.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term &apos;animal&apos; in the definition includes humans and other animals.
-
-Harmful behaviour to others will involve a direct interaction between the person performing the behaviour and the person or animal that is negatively affected.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harmful behaviour to others</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050336 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050336">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves interacting with a healthcare provider in order to assess, monitor, improve or maintain an aspect of one&apos;s health or wellbeing.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare provider can be a person or organisation</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">utilising healthcare</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050337 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050337">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050336"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilising healthcare that involves scheduling a time to interact with a person or organisation providing healthcare.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arranging a healthcare service appointment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050338 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050338">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050336"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood test to check for anaemia, psychological testing</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilising healthcare that involves participating in a healthcare procedure to assess or monitor an aspect of ones health or wellbeing.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Healthcare procedure is defined as a healthcare intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in healthcare testing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050339 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050339">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050338"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screen for breast cancer, screen for perinatal depression</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare testing to detect the presence of a health condition while asymptomatic for that condition.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in health screening</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050340 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050340">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050336"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilising healthcare that involves interacting with a healthcare provider to receive a vaccination to prevent or lower the risk of a disease.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaccination is defined as a medical intervention that involves in adding vaccine into a host  in vivo with the intent to invoke an adaptive immune response.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undergoing vaccination</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050341 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050341">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050336"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Undergoing surgery</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilising healthcare that involves interacting with a health professional to improve or maintain aspects of one&apos;s health or wellbeing.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in healthcare treatment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050342 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050342">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050341"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare treatment that involves advice, encouragement, or physical support to perform movements that remediate ones bodily impairments or promote mobility, function or quality of life.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in physical therapy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050343 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050343">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050341"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare treatment that uses communication or recommended tasks to assess and improve adaptive mental or behavioural functioning.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in psychological treatment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050344 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050344">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050343"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in psychological treatment that involves creative and expressive processes.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in creative arts therapy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050345 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050345">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050341"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare treatment that aims to enable people to participate in the activities of everyday life.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in occupational therapy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050346 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050346">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050341"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare treatment that aims to improve or restore communication, eating, drinking or swallowing.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in speech and language therapy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050347 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050347">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that uses a method to monitor and record an indicator of ones health or wellbeing.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-monitoring an aspect of health</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050348 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050348">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves protecting one&apos;s skin or eyes from the damaging effects of the sun.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sun protective behaviour is defined in terms of its goal  and can include very different behaviours, e.g., applying sunscreen and staying in the shade.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sun protective behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050349 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050349">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036061"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consumption behaviour that involves ingesting a medicine to treat or relieve symptoms of a health condition or maintain an aspect of health or wellbeing.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pharmacological consumption</obo:IAO_0000118>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medicine is defined as type of drug, i.e., any substance which when absorbed into a living organism may modify one or more of its functions.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication-taking</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050350 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050350">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves assessing, monitoring, improving or maintaining an aspect of another persons health or wellbeing.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">providing healthcare</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050351 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050351">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050350"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing healthcare that involves assessing symptoms and signs in order to detect the nature of a health condition.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symptoms are experienced or felt by the individual , while signs are observed or detected by the healthcare professional . There can be overlap between symptoms and signs, as some symptoms can be observed or detected by a healthcare professional.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic healthcare behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050352 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050352">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050350"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing a healthcare that involves a procedure to assess another persons health or wellbeing.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">providing healthcare testing</rdfs:label>
@@ -1344,7 +1088,7 @@ Harmful behaviour to others will involve a direct interaction between the person
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050354 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050354">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050350"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing healthcare that involves advising and authorising the use of a treatment to improve or maintain another person&apos;s health or wellbeing.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribing behaviour</rdfs:label>
@@ -1391,7 +1135,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050358 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050358">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050350"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing healthcare that involves assessing a person&apos;s health or wellbeing after a period of taking a prescribed medication and assessing whether the medication continues to be appropriate.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reviewing prescribed medication</rdfs:label>
@@ -1402,7 +1146,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050359 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050359">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050350"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing healthcare that involves administering a vaccination to prevent or lower the risk of a disease.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaccination is defined as a medical intervention that involves adding a vaccine into a host  in vivo with the intent to invoke an adaptive immune response.</rdfs:comment>
@@ -1414,7 +1158,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050360 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050360">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050350"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing healthcare that involves communicating guidance or recommendations to improve or maintain another persons health or wellbeing.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">providing healthcare advice</rdfs:label>
@@ -1425,7 +1169,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050361 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050361">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050350"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing healthcare that involves directing a person to another healthcare professional or organisation to assess, monitor, improve or maintain an aspect of this persons health or wellbeing.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">making a referral to another health care service</rdfs:label>
@@ -1436,7 +1180,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050362 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050362">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050350"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing healthcare that involves interacting with a person to improve or maintain aspects of this persons health or wellbeing.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">providing healthcare treatment</rdfs:label>
@@ -1626,10 +1370,267 @@ Prescribing medication can include advising and authorising to stop using a medi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050379 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050379">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050331"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050394"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inhaling consumption that involves using a device to consume an aerosol.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaping device use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050393 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050393">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050329"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-injecting consumption that involves administering liquids into ones veins.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intravenous self-injecting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050394 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050394">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036061"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consumption behaviour that involves breathing in a material through the nose or mouth.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inhaling consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050395 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050395">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050394"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inhaling consumption that involves breathing in a material through the nose.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sniffing consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050396 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050396">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036061"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicotine patches, hormone patches, pain relief gels</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consumption behaviour that involves applying a material to the skin and ingesting this material into the circulation through the skin.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transdermal consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050397 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050397">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inter-personal behaviour that involves providing physical, psychological or social assistance to another.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social support behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050398 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050398">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036075"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mistreatment, Sexual assault, Engaging in domestic violence, Physical attack, Abuse behaviour</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A harmful behaviour that involves interacting with another animal  and thereby causing harm to its health, wellbeing or social functioning.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term &apos;animal&apos; in the definition includes humans and other animals.
+
+Harmful behaviour to others will involve a direct interaction between the person performing the behaviour and the person or animal that is negatively affected.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harmful behaviour to others</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050399 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050399">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves interacting with a healthcare provider in order to assess, monitor, improve or maintain an aspect of one&apos;s health or wellbeing.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare provider can be a person or organisation</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">utilising healthcare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050400 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050400">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050399"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilising healthcare that involves scheduling a time to interact with a person or organisation providing healthcare.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arranging a healthcare service appointment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050401 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050401">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050399"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood test to check for anaemia, psychological testing</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilising healthcare that involves participating in a healthcare procedure to assess or monitor an aspect of ones health or wellbeing.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Healthcare procedure is defined as a healthcare intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in healthcare testing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050402 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050402">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050401"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screen for breast cancer, screen for perinatal depression</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare testing to detect the presence of a health condition while asymptomatic for that condition.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in health screening</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050403 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050403">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050399"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilising healthcare that involves interacting with a healthcare provider to receive a vaccination to prevent or lower the risk of a disease.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaccination is defined as a medical intervention that involves in adding vaccine into a host  in vivo with the intent to invoke an adaptive immune response.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undergoing vaccination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050404 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050404">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050399"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Undergoing surgery</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilising healthcare that involves interacting with a health professional to improve or maintain aspects of one&apos;s health or wellbeing.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in healthcare treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050405 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050405">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050404"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare treatment that involves advice, encouragement, or physical support to perform movements that remediate ones bodily impairments or promote mobility, function or quality of life.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in physical therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050406 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050406">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050404"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare treatment that uses communication or recommended tasks to assess and improve adaptive mental or behavioural functioning.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in psychological treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050407 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050407">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050406"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in psychological treatment that involves creative and expressive processes.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in creative arts therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050408 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050408">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050404"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare treatment that aims to enable people to participate in the activities of everyday life.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in occupational therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050409 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050409">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050404"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participating in healthcare treatment that aims to improve or restore communication, eating, drinking or swallowing.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participating in speech and language therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050410 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050410">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that uses a method to monitor and record an indicator of ones health or wellbeing.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-monitoring an aspect of health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050411 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050411">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves protecting one&apos;s skin or eyes from the damaging effects of the sun.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sun protective behaviour is defined in terms of its goal  and can include very different behaviours, e.g., applying sunscreen and staying in the shade.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sun protective behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050412 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050412">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036061"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A consumption behaviour that involves ingesting a medicine to treat or relieve symptoms of a health condition or maintain an aspect of health or wellbeing.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pharmacological consumption</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medicine is defined as type of drug, i.e., any substance which when absorbed into a living organism may modify one or more of its functions.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication-taking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050413 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050413">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves assessing, monitoring, improving or maintaining an aspect of another persons health or wellbeing.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">providing healthcare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050414 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050414">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Providing healthcare that involves assessing symptoms and signs in order to detect the nature of a health condition.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symptoms are experienced or felt by the individual , while signs are observed or detected by the healthcare professional . There can be overlap between symptoms and signs, as some symptoms can be observed or detected by a healthcare professional.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic healthcare behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -1638,7 +1639,7 @@ Prescribing medication can include advising and authorising to stop using a medi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disposition that exists in virtue of the bearers physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution  or through intentional design , in order to realize processes of a certain sort.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function</rdfs:label>
     </owl:Class>

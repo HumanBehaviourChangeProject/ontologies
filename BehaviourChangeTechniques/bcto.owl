@@ -14,6 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcto.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_relations.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
     
@@ -50,10 +51,10 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007001 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007001">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that sets or changes goals.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">goal directed BCT</rdfs:label>
     </owl:Class>
     
@@ -64,8 +65,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007002">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal directed BCT that sets goals.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">goal setting BCT</rdfs:label>
     </owl:Class>
     
@@ -76,8 +77,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007003">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007002"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;promises&quot; here means assuring someone that one will definitely do something or that something will happen.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal setting BCT that sets a goal for the behaviour to be achieved.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;promises&quot; here means assuring someone that one will definitely do something or that something will happen.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">set behaviour goal BCT</rdfs:label>
     </owl:Class>
     
@@ -99,8 +100,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007005">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007002"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should have been negatively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal setting BCT in which the goal is a positive outcome of performing the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should have been negatively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">set outcome goal BCT</rdfs:label>
     </owl:Class>
     
@@ -144,8 +145,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007011">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal directed BCT that reviews a behavioural goal and considers modifying the goal in light of progress toward the goal.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">review behaviour goal BCT</rdfs:label>
     </owl:Class>
     
@@ -167,8 +168,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007013">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should have been negatively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal directed BCT that reviews an outcome goal and considers modifying the goal in light of achievement.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should have been negatively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">review outcome goal BCT</rdfs:label>
     </owl:Class>
     
@@ -210,7 +211,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007017 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007017">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that involves gathering or using information about performance.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monitoring BCT</rdfs:label>
@@ -234,8 +235,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007019">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007017"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A monitoring BCT that documents current performance of the behaviour with the persons knowledge but without providing feedback about their behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">record behaviour without feedback BCT</rdfs:label>
     </owl:Class>
     
@@ -268,8 +269,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007022">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007017"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A monitoring BCT in which feedback about the behaviour is provided.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide feedback BCT</rdfs:label>
     </owl:Class>
     
@@ -291,8 +292,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007024">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007017"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A monitoring BCT in which the person uses a method to monitor and record their behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-monitor behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -334,10 +335,10 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007028 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007028">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that involves taking steps to secure or deliver the support or aid of another person.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social support BCT</rdfs:label>
     </owl:Class>
     
@@ -348,8 +349,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007029">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007028"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reducing a distraction to zero is equivalent to removing a distraction</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social support BCT that involves advising the person to seek support from another person.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reducing a distraction to zero is equivalent to removing a distraction</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise to seek support BCT</rdfs:label>
     </owl:Class>
     
@@ -393,8 +394,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007033">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007029"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advise to seek support BCT that suggests the person try to obtain support from another in terms of information that will aid in evaluating oneself or the situation.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise to seek appraisal support BCT</rdfs:label>
     </owl:Class>
     
@@ -405,8 +406,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007034">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007028"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The person witnessing the agreement can be the intervention source or another person who is present at the time</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social support BCT that organises support from another for the person.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The person witnessing the agreement can be the intervention source or another person who is present at the time</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arrange support BCT</rdfs:label>
     </owl:Class>
     
@@ -483,8 +484,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007041">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007039"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatic responses can include impulses, habits or emotions that lead to the unwanted behaviour.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A deliver support BCT that provides expressions of concern, caring and empathy.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatic responses can include impulses, habits or emotions that lead to the unwanted behaviour.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deliver emotional support BCT</rdfs:label>
     </owl:Class>
     
@@ -515,7 +516,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007050 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007050">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that provides guidance regarding how to perform the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guide how to perform behaviour BCT</rdfs:label>
@@ -559,7 +560,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007054 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007054">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that advises on how to identify and test hypotheses about the behaviour, its causes and consequences.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conduct a behavioural experiment BCT</rdfs:label>
@@ -636,7 +637,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007062 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007062">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that draws attention to consequences of the behaviour in the normal course of events.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increase awareness of consequences BCT</rdfs:label>
@@ -735,10 +736,10 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007072 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007072">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a broad category. It can include both advising people on ways to change emotions and directly intervening to change emotions.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that increases awareness of what other people think, do, or feel.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a broad category. It can include both advising people on ways to change emotions and directly intervening to change emotions.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">awareness of other peoples thoughts, feelings and actions BCT</rdfs:label>
     </owl:Class>
     
@@ -782,8 +783,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007076">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007072"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An awareness of other people&apos;s thoughts, feelings and actions BCT that involves sharing a view about what behaviour the person should do.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suggest to change behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -794,8 +795,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007077">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007072"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should be negatively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An awareness of other people&apos;s thoughts, feelings and actions BCT that involves telling the person to perform the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should be negatively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tell to change behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -906,7 +907,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007090 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007090">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that involves repeated pairing of a stimulus with another stimulus or with a behavioural outcome.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">associative learning BCT</rdfs:label>
@@ -1008,8 +1009,8 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007100">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should have been positively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal directed BCT that sets easy-to-perform tasks for the person, making them increasingly difficult, but achievable, until the behaviour is performed.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should have been positively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">set graded tasks BCT</rdfs:label>
     </owl:Class>
     
@@ -1018,10 +1019,10 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007101 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007101">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The target of the mental process advised by this BCT will be an emotion. If a BCT suggests adopting a different cognitive perspective on behaviour, which then changes emotions, use &quot;suggest different perspective on behaviour BCT&quot; or one of its child classes.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that alters the consequences or promised consequences for the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The target of the mental process advised by this BCT will be an emotion. If a BCT suggests adopting a different cognitive perspective on behaviour, which then changes emotions, use &quot;suggest different perspective on behaviour BCT&quot; or one of its child classes.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioural consequence BCT</rdfs:label>
     </owl:Class>
     
@@ -1032,8 +1033,8 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007118">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For the purposes of this BCT, preceding behaviour can be considered part of the context</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An increase awareness of consequences BCT that guides the person to imagine performing the unwanted behaviour in a real-life situation followed by experiencing an unpleasant consequence for performing that behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For the purposes of this BCT, preceding behaviour can be considered part of the context</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imagine punishment BCT</rdfs:label>
     </owl:Class>
     
@@ -1066,8 +1067,8 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007121">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An increase awareness of consequences BCT that prompts observation of another person being punished when they perform the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vicarious punishment BCT</rdfs:label>
     </owl:Class>
     
@@ -1078,8 +1079,8 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007122">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The goal being made public can be in terms of behaviour  or an outcome of behaviour</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal directed BCT that involves the person communicating their intention to achieve a goal.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The goal being made public can be in terms of behaviour  or an outcome of behaviour</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">make a goal public BCT</rdfs:label>
     </owl:Class>
     
@@ -1110,7 +1111,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007136 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007136">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that alters the structure or functioning of the person&apos;s body.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">change the body BCT</rdfs:label>
@@ -1145,8 +1146,8 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007139">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007239"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A prompt thinking related to successful performance BCT that prompts the person to think about previous successful performance of the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prompt focus on past success BCT</rdfs:label>
     </owl:Class>
     
@@ -1157,8 +1158,8 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007140">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007239"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A prompt thinking related to successful performance BCT that promotes the use of positive self-talk before or during the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prompt self-talk BCT</rdfs:label>
     </owl:Class>
     
@@ -1169,8 +1170,8 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007141">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal directed BCT that advises the person to find ways to remind themselves of their behavioural goal.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise to keep behaviour goal in mind BCT</rdfs:label>
     </owl:Class>
     
@@ -1201,7 +1202,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007144 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007144">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique promoting medicines or other drugs.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promote pharmacological support BCT</rdfs:label>
@@ -1214,8 +1215,8 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007145">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007144"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promote pharmacological support BCT that provides the person with medicines or other drugs.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide pharmacological support BCT</rdfs:label>
     </owl:Class>
     
@@ -1235,7 +1236,7 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007147 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007147">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that suggests a method to alter emotions.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise how to change emotions BCT</rdfs:label>
@@ -1246,10 +1247,10 @@ Example 3: Organisationwide use of red time notices that people can put on their
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007150 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007150">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feedback is provision of data about some aspect of behaviour without an evaluation . Where feedback includes reward or punishment, see behavioural consequence BCT, outcome consequence BCT and their child classes.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that alters the environment in which the behaviour is, or would have been, performed in a way that facilitates or impedes the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feedback is provision of data about some aspect of behaviour without an evaluation . Where feedback includes reward or punishment, see behavioural consequence BCT, outcome consequence BCT and their child classes.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">restructure the environment BCT</rdfs:label>
     </owl:Class>
     
@@ -1306,8 +1307,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007155">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should be negatively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A restructure the physical environment BCT that organises an alternative focus for attention for the person to avoid internal or external states or events associated with an unwanted behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should be negatively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide distraction BCT</rdfs:label>
     </owl:Class>
     
@@ -1327,7 +1328,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007157 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007157">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that prompts the person to focus on their mental representation of themself.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prompt focus on self-identity BCT</rdfs:label>
@@ -1340,8 +1341,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007158">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007157"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For the purposes of this BCT, preceding behaviour can be considered part of the context</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A prompt focus on self-identity BCT that informs the person that their behaviour may be an example to others.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For the purposes of this BCT, preceding behaviour can be considered part of the context</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identify self as role model BCT</rdfs:label>
     </owl:Class>
     
@@ -1380,17 +1381,6 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_007162 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007162">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change technique</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007163 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007163">
@@ -1418,8 +1408,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007165">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007147"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this BCT, the behaviour the person is advised to perform may not necessarily be the target behaviour, but performing the advised behaviour is thought to help change the targeted behaviour.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advise how to change emotions BCT that suggests the person perform a particular behaviour to change an emotion.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this BCT, the behaviour the person is advised to perform may not necessarily be the target behaviour, but performing the advised behaviour is thought to help change the targeted behaviour.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise behavioural ways to change emotions BCT</rdfs:label>
     </owl:Class>
     
@@ -1430,8 +1420,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007166">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007147"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Where an &quot;advise seeking support BCT&quot; is used together with an &quot;arrange seeking support BCT,&quot; this constitutes connecting to social support as used in social prescribing</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advise how to change emotions BCT that suggests the person deliberately use a particular mental process.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Where an &quot;advise seeking support BCT&quot; is used together with an &quot;arrange seeking support BCT,&quot; this constitutes connecting to social support as used in social prescribing</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise cognitive ways to change emotions BCT</rdfs:label>
     </owl:Class>
     
@@ -1451,7 +1441,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007168 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007168">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that advises the person to perform a behaviour in a particular way to help change the target behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advise specific behaviour BCT</rdfs:label>
@@ -1497,8 +1487,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007172">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007085"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For the purposes of this BCT, preceding behaviour can be considered part of the context</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An expose to stimulus BCT that involves gradually increasing exposure to an aversive stimulus to reduce the likelihood of the behaviour when encountering that stimulus.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For the purposes of this BCT, preceding behaviour can be considered part of the context</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gradually increase exposure to aversive stimulus BCT</rdfs:label>
     </owl:Class>
     
@@ -1507,7 +1497,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007173 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007173">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that draws attention to the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increase awareness of behaviour BCT</rdfs:label>
@@ -1531,8 +1521,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007175">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007173"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class concerns raising awareness of a novel behaviour that one might not have known was an option. If not a novel behaviour, consider &quot;suggest how to perform behaviour BCT&quot;.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An increase awareness of behaviour BCT that makes the possibility of performing the behaviour more distinctive or prominent.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class concerns raising awareness of a novel behaviour that one might not have known was an option. If not a novel behaviour, consider &quot;suggest how to perform behaviour BCT&quot;.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increase salience of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1640,7 +1630,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007185 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007185">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that advises how to manage mental processes to facilitate the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manage mental processes BCT</rdfs:label>
@@ -1651,7 +1641,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007186 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007186">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that alters the consequences or promised consequences for an outcome that results from performing or not performing the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outcome consequence BCT</rdfs:label>
@@ -1829,8 +1819,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007202">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007187"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reduction in frequency of cue presentation can be gradual or rapid. This BCT is concerned with reducing the frequency of cue presentation. In contrast, in &quot;reduce exposure to cues for the behaviour BCT&quot;, the cue frequency may remain unchanged but the person&apos;s exposure to the presentation of the cue is reduced.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise consequence for behaviour BCT where the consequence is positive.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reduction in frequency of cue presentation can be gradual or rapid. This BCT is concerned with reducing the frequency of cue presentation. In contrast, in &quot;reduce exposure to cues for the behaviour BCT&quot;, the cue frequency may remain unchanged but the person&apos;s exposure to the presentation of the cue is reduced.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise positive consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1841,8 +1831,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007203">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007188"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reduction in exposure can be gradual, as in the technique of &quot;fading&quot; or not so gradual. This BCT is concerned with reducing the person&apos;s exposure to the cue, while the cue frequency may remain unchanged. In contrast, &quot;reduce cue frequency BCT&quot; is concerned with a reduction in the number of times with which the cue is presented.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise to remove consequence for behaviour BCT where the consequence is positive.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reduction in exposure can be gradual, as in the technique of &quot;fading&quot; or not so gradual. This BCT is concerned with reducing the person&apos;s exposure to the cue, while the cue frequency may remain unchanged. In contrast, &quot;reduce cue frequency BCT&quot; is concerned with a reduction in the number of times with which the cue is presented.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise to remove positive consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1952,8 +1942,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007213">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007207"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-talk could be about the behaviour or the context of the behaviour. Self-talk does not need to be spoken aloud</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise positive consequence for incompatible behaviour BCT in which the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-talk could be about the behaviour or the context of the behaviour. Self-talk does not need to be spoken aloud</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise positive material consequence for incompatible behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1964,8 +1954,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007214">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007208"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state. The goal could be set for the self or another person.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise positive consequence for situation specific behaviour BCT in which the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state. The goal could be set for the self or another person.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise positive material consequence for situation specific behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1976,8 +1966,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007215">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007216"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioural goal might be set in general terms - e.g. &quot;to do more physical activity&quot; or in measurable terms - e.g. &quot;to do 30 minutes of physical activity five times a week&quot; or &quot;to walk 8000 steps a day.&quot; Use this class for measurable behaviour goals</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise positive consequence for outcome of behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioural goal might be set in general terms - e.g. &quot;to do more physical activity&quot; or in measurable terms - e.g. &quot;to do 30 minutes of physical activity five times a week&quot; or &quot;to walk 8000 steps a day.&quot; Use this class for measurable behaviour goals</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise positive material consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1988,8 +1978,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007216">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007200"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An outcome goal might be set in general terms - e.g. &quot;to lose weight&quot; or in measurable terms - e.g. &quot;to lose 5kg of weight&quot; or &quot;to lose 10% of my body weight&quot;. Use this class for measurable outcome goals</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise consequence for outcome of behaviour BCT where the consequence is positive</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An outcome goal might be set in general terms - e.g. &quot;to lose weight&quot; or in measurable terms - e.g. &quot;to lose 5kg of weight&quot; or &quot;to lose 10% of my body weight&quot;. Use this class for measurable outcome goals</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise positive consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2000,8 +1990,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007217">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007201"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state. The goal could be set for the self or another person.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise to remove consequence for outcome of behaviour BCT where the consequence is positive.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A goal is an explicit representation of a desired end state. The goal could be set for the self or another person.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise to remove positive consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2122,8 +2112,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007228">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007202"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should be positively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise positive consequence for behaviour BCT that promises to provide the consequence at increasingly less frequent intervals.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should be positively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise reduced frequency of positive consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2134,8 +2124,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007229">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007228"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise reduced frequency of positive consequence for behaviour BCT in which the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise reduced frequency of positive material consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2168,8 +2158,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007232">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007196"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise to remove negative consequence for outcome of behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise to remove negative material consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2202,8 +2192,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007235">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007203"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise to remove positive consequence for behaviour BCT in which the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise to remove positive material consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2236,8 +2226,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007238">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007217"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A promise to remove positive consequence for outcome of behaviour BCT where the consequence is an interpersonal process or a proxy interpersonal process.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promise to remove positive social consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2246,7 +2236,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007239 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007239">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that prompts thinking relating to successful performance of the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prompt thinking related to successful performance BCT</rdfs:label>
@@ -2259,8 +2249,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007240">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007101"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioural consequence BCT that provides a consequence for the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2271,8 +2261,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007241">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007240"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide consequence for behaviour BCT where the consequence is negative.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide negative consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2305,8 +2295,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007244">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007242"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide negative consequencefor situation specific behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide negative material consequence for situation specific behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2339,8 +2329,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007247">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007241"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should have been positively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide negative consequence for behaviour BCT where the consequence is an interpersonal process or a proxy interpersonal process.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should have been positively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide negative social consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2351,8 +2341,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007248">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007242"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide negative consequence for situation specific behaviour BCT where the consequence is an interpersonal process or a proxy interpersonal process.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide negative social consequence for situation specific behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2374,8 +2364,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007250">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007186"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should have been negatively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An outcome consequence BCT that provides a consequence for an outcome resulting from performing or not performing the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should have been negatively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2397,8 +2387,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007252">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007240"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;promises&quot; here means assuring someone that one will do something or that something will happen.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide consequence for behaviour BCT where the consequence is positive.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;promises&quot; here means assuring someone that one will do something or that something will happen.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide positive consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2409,8 +2399,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007253">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007252"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should be positively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide positive consequence for behaviour BCT where the consequence is provided for approximation to the behaviour, gradually rewarding only performance closer to the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should be positively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide positive consequence for approximating behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2421,8 +2411,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007254">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007252"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide positive consequence for behaviour BCT where the consequence is provided for performing the behaviour that is the final step of a sequence of behaviours, followed by adding behaviours that occur earlier in the sequence.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide positive consequence for completion of behavioural sequence BCT</rdfs:label>
     </owl:Class>
     
@@ -2455,8 +2445,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007257">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007252"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide positive consequence for behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide positive material consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2489,8 +2479,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007260">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007254"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide positive consequence for completion of behavioural sequence BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide positive material consequence for completion of behavioural sequence BCT</rdfs:label>
     </owl:Class>
     
@@ -2523,8 +2513,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007263">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007264"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide positive consequence for outcome of behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide positive material consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2557,8 +2547,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007266">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007251"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide positive consequence for alternative behaviour BCT where the consequence is an interpersonal process or a proxy interpersonal process.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide positive social consequence for alternative behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2591,8 +2581,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007269">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007255"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide positive consequence for incompatible behaviour BCT where the consequence is an interpersonal process or a proxy interpersonal process.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide positive social consequence for incompatible behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2625,8 +2615,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007272">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007281"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide reduced frequency of positive consequence for outcome of behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide reduced frequency of material consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2648,8 +2638,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007274">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007273"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should be negatively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide reduced frequency of negative consequence for behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should be negatively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide reduced frequency of negative material consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2660,8 +2650,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007275">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007276"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A provide reduced frequency of negative consequence for outcome of behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide reduced frequency of negative material consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2760,8 +2750,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007284">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A restructure the physical environment BCT that reduces an alternative focus for attention for the person to concentrate on internal or external states or events associated with the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reduce distraction BCT</rdfs:label>
     </owl:Class>
     
@@ -2772,8 +2762,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007285">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007101"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should be positively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioural consequence BCT that removes a previously provided consequence for performing the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should be positively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2784,8 +2774,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007286">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007285"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A remove consequence for behaviour BCT where the consequence is negative.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove negative consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2818,8 +2808,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007289">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007292"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A remove consequence for outcome of behaviour BCT in which the consequence is negative.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove negative consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2841,8 +2831,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007291">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007289"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should be negatively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A remove negative consequence for outcome of behaviour BCT in which the consequence is an interpersonal process or a proxy interpersonal process.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as negative, the consequence should be negatively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove negative social consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2853,8 +2843,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007292">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007186"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An outcome consequence BCT that removes a previously provided consequence for an outcome resulting from performing or not performing the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2887,8 +2877,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007295">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007296"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A remove positive consequence for outcome of behaviour BCT in which the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove positive material consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2921,8 +2911,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007298">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007296"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should have been positively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A remove positive consequence for outcome of behaviour BCT in which the consequence is an interpersonal process or a proxy interpersonal process.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should have been positively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove positive social consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2944,8 +2934,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007300">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007003"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set behaviour goal BCT that describes the behaviour to be achieved in terms of a measurable target.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proxy interpersonal process is where the person interacts with a chatbot, digital assistant, or similar computer program designed to simulate and process human communication</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">set measurable behaviour goal BCT</rdfs:label>
     </owl:Class>
     
@@ -2965,7 +2955,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007302 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007302">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007162"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change technique that suggests the deliberate adoption of a new perspective on the behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suggest different perspective on behaviour BCT</rdfs:label>
@@ -2978,9 +2968,20 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007303">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007050"/>
         <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should be positively valued by the person receiving it.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A guide how to perform behaviour BCT that provides a suggestion regarding how to perform the behaviour.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To qualify as positive, the consequence should be positively valued by the person receiving it.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suggest how to perform behaviour BCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_033000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_033000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000078 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</obo:IAO_0000078>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change technique</rdfs:label>
     </owl:Class>
     
 

@@ -76,7 +76,7 @@
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_047000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process in which a BCI is applied in a given context, including BCI engagement and outcome behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process in which a BCI is applied in a given context, including BCI engagement and outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI scenario</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention scenario</rdfs:label>
     </owl:Class>
@@ -222,9 +222,9 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_009000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_009000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes the start and end of the BCI and its parts.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a BCI that involves its temporal organisation.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A BCI attribute that involves its temporal organisation.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI schedule of delivery</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention schedule of delivery</rdfs:label>
     </owl:Class>
@@ -246,7 +246,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_011000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a BCI delivery that is the physical or informational medium through which a BCI is provided.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> BCI MOD</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> MOD</obo:IAO_0000118>
@@ -296,7 +296,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aggregate of people who are exposed to a BCI.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human population who are exposed to a BCI.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI population</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention population</rdfs:label>
     </owl:Class>
@@ -418,10 +418,10 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_022000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_022000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> the number of behaviour change techniques included in an intervention.</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dose of an active ingredient in a pharmacological intervention</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of BCI content that is its amount.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A BCI content attribute that is its amount.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI dose</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention dose</rdfs:label>
     </owl:Class>
@@ -550,9 +550,9 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_032000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_032000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailoring the dose of pharmacotherapy for smoking cessation to the prior level of nicotine dependence of the smoker  or to the smokers&apos; current strength of urges to smoke during a quit attempt .</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process attribute of a behaviour change intervention or part of a behaviour change intervention in which the content or delivery of the intervention for a given member of the BCI population varies according to their characteristics or setting.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A BCI attribute in which the content or delivery of a BCI for some member of the BCI population varies according to their characteristics or setting.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI tailoring</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention tailoring</rdfs:label>
     </owl:Class>
@@ -594,9 +594,9 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Also referred to in definitions as human behaviour or just behaviour.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual human activity that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human behaviour</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual human behaviour</rdfs:label>
     </owl:Class>
@@ -669,11 +669,31 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_044000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An example is cold and distant vs. warm and accepting.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of BCI delivery that encompasses the characteristics of how BCI content is communicated.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style that is an attribute of a BCI content communication process.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCI style of delivery</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention style of delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_044003 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044003">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a communication process</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication process attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_044004 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044004">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A particular manner of communicating aimed at inducing or avoiding certain kinds of responses in others, or demonstrating certain characteristics of the initiator.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication style</rdfs:label>
     </owl:Class>
     
 
@@ -682,7 +702,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_045000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process by which intervention content is delivered.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process by which intervention content is delivered.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention delivery</rdfs:label>
     </owl:Class>
     
