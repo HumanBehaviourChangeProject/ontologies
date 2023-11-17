@@ -7,7 +7,9 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
@@ -32,7 +34,7 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000001">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has study sample</rdfs:label>
+        <rdfs:label>has study sample</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -41,7 +43,7 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000002">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has study investigator</rdfs:label>
+        <rdfs:label>has study investigator</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -50,7 +52,7 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000003">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has BCI source</rdfs:label>
+        <rdfs:label>has BCI source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -59,7 +61,7 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000004">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has BCI context</rdfs:label>
+        <rdfs:label>has BCI context</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -68,7 +70,7 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000005">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evaluates</rdfs:label>
+        <rdfs:label>evaluates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -77,7 +79,7 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000006">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comparatively evaluates</rdfs:label>
+        <rdfs:label>comparatively evaluates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -86,7 +88,7 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000007">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">difference between</rdfs:label>
+        <rdfs:label>difference between</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -94,7 +96,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIOR_000008 -->
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000008">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">through</rdfs:label>
+        <rdfs:label>through</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -102,7 +104,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
+        <rdfs:label>has part</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -110,7 +112,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realised in</rdfs:label>
+        <rdfs:label>realised in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -118,15 +120,29 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realises</rdfs:label>
+        <rdfs:label>realises</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
+        <rdfs:label>occurs in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000108"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has process part</rdfs:label>
+        <rdfs:label>has process part</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -134,7 +150,24 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000119 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000119">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has process attribute</rdfs:label>
+        <rdfs:label>has process attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000133 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000133">
+        <rdfs:label>is process attribute of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000155 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000155">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+        <rdfs:label>occupies temporal region</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -142,7 +175,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is about</rdfs:label>
+        <rdfs:label>is about</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -150,7 +183,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is attribute of</rdfs:label>
+        <rdfs:label>is attribute of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -158,7 +191,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has attribute</rdfs:label>
+        <rdfs:label>has attribute</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -166,7 +199,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participates in</rdfs:label>
+        <rdfs:label>participates in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -174,7 +207,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000091 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000091">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has disposition</rdfs:label>
+        <rdfs:label>has disposition</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -182,7 +215,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">located in</rdfs:label>
+        <rdfs:label>located in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -190,7 +223,31 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002092 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002092">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">happens during</rdfs:label>
+        <rdfs:label>happens during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002222 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002222"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002223">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdfs:label>starts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002229 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002229">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdfs:label>ends</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -198,7 +255,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has output</rdfs:label>
+        <rdfs:label>has output</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -206,11 +263,26 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output of</rdfs:label>
+        <rdfs:label>output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002506 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002506"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002559 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002559">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002506"/>
+        <rdfs:label>causally influenced by</rdfs:label>
     </owl:ObjectProperty>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 
