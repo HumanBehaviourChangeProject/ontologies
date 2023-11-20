@@ -8,8 +8,11 @@ import argparse
 import subprocess
 
 from ontoutils.core import *
-from ontoutils.robot_wrapper import *
+from ontoutils import RobotTemplateWrapper
 from ontoutils.lucid_chart import *
+
+from logging_conf import setup_logging
+setup_logging()
 
 
 ## PROGRAM EXECUTION --- required arguments: input and output file names, and optional dependencies
@@ -33,7 +36,8 @@ if __name__ == '__main__':
 
     robotWrapper = RobotTemplateWrapper(robotcmd='robot')
 
-    csvFileName = robotWrapper.processClassInfoFromExcel(inputFileName)
+    csvFileName = inputFileName.replace(".xlsx", ".csv")
+    robotWrapper.add_classes_from_excel(inputFileName, csvFileName)
 
 
 ## EXECUTE THE ROBOT COMMAND AS A SUB-PROCESS
@@ -45,5 +49,7 @@ if __name__ == '__main__':
     ONTOLOGY_IRI = BCIO_IRI_PREFIX+owlFileName
 
 
-    robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PREFIX, [BCIO_ID_PREFIX,ADDICTO_ID_PREFIX], ONTOLOGY_IRI,owlFileName)
+    r = robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PREFIX, [BCIO_ID_PREFIX,ADDICTO_ID_PREFIX], ONTOLOGY_IRI,owlFileName)
+    if r != 0:
+        exit(r)
 
