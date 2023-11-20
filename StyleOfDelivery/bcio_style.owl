@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/bcio_style.owl#"
-     xml:base="http://humanbehaviourchange.org/ontology/bcio_style.owl"
+<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/../StyleOfDelivery/bcio_style.owl#"
+     xml:base="http://humanbehaviourchange.org/ontology/../StyleOfDelivery/bcio_style.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_style.owl">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
+    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/../StyleOfDelivery/bcio_style.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_relations.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
     
@@ -35,20 +36,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_045000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention delivery in which the intervention is a behaviour change intervention.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention delivery</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_036002 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036002">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050323"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">making a thumbs up sign, beckoning, pointing, nodding, head movements</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-linguistic communication behaviour using body language involving a deliberately chosen movement of the head, neck, torso, or limbs to express an idea or feeling.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gestures are deliberately chosen by the person to communicate some message.  The meaning of a gesture may differ across different cultures.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linguistic communication behaviour using gesture</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention delivery in which the intervention is a behaviour change intervention.</obo:IAO_0000115>
+        <rdfs:label>behaviour change intervention delivery</rdfs:label>
     </owl:Class>
     
 
@@ -57,8 +47,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour that involves an interaction between two or more people.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interpersonal behaviour</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that involves an interaction between two or more people.</obo:IAO_0000115>
+        <rdfs:label>inter-personal behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -67,8 +58,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036034">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interpersonal behaviour that involves the transmission of information.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human communication behaviour</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An interpersonal behaviour that involves the transmission of information.</obo:IAO_0000115>
+        <rdfs:label>human communication behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -77,9 +69,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style that is an attribute of a BCI content communication process.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">when a communication style is used as part of a BCI content communication process, then it qualifies as a BCI style of delivery</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention style of delivery</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style that is an attribute of a BCI content communication process.</obo:IAO_0000115>
+        <rdfs:comment>when a communication style is used as part of a BCI content communication process, then it qualifies as a BCI style of delivery</rdfs:comment>
+        <rdfs:label>behaviour change intervention style of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -88,9 +81,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044001">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication that transmits the content of an intervention</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that an intervention is a planned process with the aim of influencing some outcome whereas a behaviour change intervention is an intervention that aims to influence human behaviour as an outcome.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention content communication process</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication that transmits the content of an intervention</obo:IAO_0000115>
+        <rdfs:comment>Note that an intervention is a planned process with the aim of influencing some outcome whereas a behaviour change intervention is an intervention that aims to influence human behaviour as an outcome.</rdfs:comment>
+        <rdfs:label>intervention content communication process</rdfs:label>
     </owl:Class>
     
 
@@ -99,9 +93,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044002">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention content communication process that is about behaviour change intervention content</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behaviour change intervention is a planned process that aims to influence human behaviour.  In contrast, an intervention is a planned process with the aim of influencing some outcome.  This outcome may be other than human behaviour.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour change intervention content communication process</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention content communication process that is about behaviour change intervention content</obo:IAO_0000115>
+        <rdfs:comment>A behaviour change intervention is a planned process that aims to influence human behaviour.  In contrast, an intervention is a planned process with the aim of influencing some outcome.  This outcome may be other than human behaviour.</rdfs:comment>
+        <rdfs:label>behaviour change intervention content communication process</rdfs:label>
     </owl:Class>
     
 
@@ -116,9 +111,10 @@
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a communication process.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Communication processes can have a variety of attributes, such as their speed, how they are delivered, what language they take place in and the tone of voice in which they occur.  All these types of attributes and more are captured by &quot;communication process attribute&quot;</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication process attribute</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An attribute of a communication process.</obo:IAO_0000115>
+        <rdfs:comment>Communication processes can have a variety of attributes, such as their speed, how they are delivered, what language they take place in and the tone of voice in which they occur.  All these types of attributes and more are captured by &quot;communication process attribute&quot;</rdfs:comment>
+        <rdfs:label>communication process attribute</rdfs:label>
     </owl:Class>
     
 
@@ -127,8 +123,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044004">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A particular manner of communicating aimed at inducing or avoiding certain kinds of responses in others, or demonstrating certain characteristics of the initiator.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A particular manner of communicating aimed at inducing or avoiding certain kinds of responses in others, or demonstrating certain characteristics of the initiator.</obo:IAO_0000115>
+        <rdfs:label>communication style</rdfs:label>
     </owl:Class>
     
 
@@ -137,9 +134,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044005">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style that is an attribute of an intervention content communication process.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">when a communication style is used as part of an intervention content communication process, then it qualifies as an intervention style of delivery</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention style of delivery</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style that is an attribute of an intervention content communication process.</obo:IAO_0000115>
+        <rdfs:comment>when a communication style is used as part of an intervention content communication process, then it qualifies as an intervention style of delivery</rdfs:comment>
+        <rdfs:label>intervention style of delivery</rdfs:label>
     </owl:Class>
     
 
@@ -148,8 +146,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044006">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_045000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention delivery characterised by efforts by an intervention source to give a person the resources they need to manage their own life and make them an active participant in deciding how to move forward.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person-centred intervention delivery</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention delivery characterised by efforts by an intervention source to give a person the resources they need to manage their own life and make them an active participant in deciding how to move forward.</obo:IAO_0000115>
+        <rdfs:label>person-centred intervention delivery</rdfs:label>
     </owl:Class>
     
 
@@ -158,8 +157,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044007">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_045000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention delivery in which the participant takes the lead in determining the focus of the intervention.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participant-led intervention delivery</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention delivery in which the participant takes the lead in determining the focus of the intervention.</obo:IAO_0000115>
+        <rdfs:label>participant-led intervention delivery</rdfs:label>
     </owl:Class>
     
 
@@ -168,8 +168,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044008">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_045000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention delivery in which the intervention person source takes the lead in determining the focus of the intervention.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source-led intervention delivery</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention delivery in which the intervention person source takes the lead in determining the focus of the intervention.</obo:IAO_0000115>
+        <rdfs:label>source-led intervention delivery</rdfs:label>
     </owl:Class>
     
 
@@ -178,8 +179,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044009">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving one participant paying close attention to what is said by another, asking questions and reflecting as needed, in an attempt to fully understand what has been said.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">active listening</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving one participant paying close attention to what is said by another, asking questions and reflecting as needed, in an attempt to fully understand what has been said.</obo:IAO_0000115>
+        <rdfs:label>active listening</rdfs:label>
     </owl:Class>
     
 
@@ -188,10 +190,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044010">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Shows approval</obo:IAO_0000112>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making explicit statements of partnership or support</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving acknowledging another&apos;s strength or resilience in a given context or situation.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affirming communication</rdfs:label>
+        <obo:IAO_0000112> Shows approval</obo:IAO_0000112>
+        <obo:IAO_0000112>Making explicit statements of partnership or support</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving acknowledging another&apos;s strength or resilience in a given context or situation.</obo:IAO_0000115>
+        <rdfs:label>affirming communication</rdfs:label>
     </owl:Class>
     
 
@@ -200,9 +203,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044011">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which the initiator and one or more activity participants work together to determine a focus for the activity to be undertaken</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agenda mapping</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agenda-sharing communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which the initiator and one or more activity participants work together to determine a focus for the activity to be undertaken.</obo:IAO_0000115>
+        <obo:IAO_0000118>agenda mapping</obo:IAO_0000118>
+        <rdfs:label>agenda-sharing communication</rdfs:label>
     </owl:Class>
     
 
@@ -211,8 +215,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044012">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which some participant requests information from another participant</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asking questions</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which some participant requests information from another participant.</obo:IAO_0000115>
+        <rdfs:label>asking questions</rdfs:label>
     </owl:Class>
     
 
@@ -221,8 +226,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044013">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asking questions that can only be answered with a limited set of responses.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asking closed-ended questions</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Asking questions that can only be answered with a limited set of responses.</obo:IAO_0000115>
+        <rdfs:label>asking closed-ended questions</rdfs:label>
     </owl:Class>
     
 
@@ -231,8 +237,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044014">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asking questions designed to narrow discussion to focus on a particular aspect or topic.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asking focused questions</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Asking questions designed to narrow discussion to focus on a particular aspect or topic.</obo:IAO_0000115>
+        <rdfs:label>asking focused questions</rdfs:label>
     </owl:Class>
     
 
@@ -241,9 +248,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044015">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asking questions designed to prompt the questionee to answer in a specific, pre-determined manner.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asking directive questions</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asking leading questions</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Asking questions designed to prompt the questionee to answer in a specific, pre-determined manner.</obo:IAO_0000115>
+        <obo:IAO_0000118>asking directive questions</obo:IAO_0000118>
+        <rdfs:label>asking leading questions</rdfs:label>
     </owl:Class>
     
 
@@ -252,8 +260,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044016">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asking questions that cannot be answered with a simple yes or no, but instead require the questionee to elaborate on their points.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asking open-ended questions</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Asking questions that cannot be answered with a simple yes or no, but instead require the questionee to elaborate on their points.</obo:IAO_0000115>
+        <rdfs:label>asking open-ended questions</rdfs:label>
     </owl:Class>
     
 
@@ -262,9 +271,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044017">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving the exchange of light and teasing remarks intended to be playful.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that teasing is an essential part of the definition of banter. For amusing or enjoyable communication, but without the element of teasing, using entertaining or humourous communication style. Also, note that banter may not always be perceived as playful by the subject of the remarks</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">banter</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving the exchange of light and teasing remarks intended to be playful.</obo:IAO_0000115>
+        <rdfs:comment>Note that teasing is an essential part of the definition of banter. For amusing or enjoyable communication, but without the element of teasing, using entertaining or humourous communication style. Also, note that banter may not always be perceived as playful by the subject of the remarks</rdfs:comment>
+        <rdfs:label>banter</rdfs:label>
     </owl:Class>
     
 
@@ -273,11 +283,12 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044018">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change for Life, Time to Change, NHS Smokefree</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using a consistent style of text or graphics to identify and distinguish a product, service or intervention from other products, services or interventions.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> brand identity</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use of branding</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">branded communication</rdfs:label>
+        <obo:IAO_0000112>Change for Life, Time to Change, NHS Smokefree</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using a consistent style of text or graphics to identify and distinguish a product, service or intervention from other products, services or interventions.</obo:IAO_0000115>
+        <obo:IAO_0000118> brand identity</obo:IAO_0000118>
+        <obo:IAO_0000118>use of branding</obo:IAO_0000118>
+        <rdfs:label>branded communication</rdfs:label>
     </owl:Class>
     
 
@@ -286,9 +297,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044019">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving an extended exchange of utterances between an instigator and at least one other person.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An utterance is an uninterrupted stretch of speech or writing produced by an individual on a particular occasion. An utterance can range from a single word to a complete sentence.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discussion</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving an extended exchange of utterances between an instigator and at least one other person.</obo:IAO_0000115>
+        <rdfs:comment>An utterance is an uninterrupted stretch of speech or writing produced by an individual on a particular occasion. An utterance can range from a single word to a complete sentence.</rdfs:comment>
+        <rdfs:label>discussion</rdfs:label>
     </owl:Class>
     
 
@@ -297,8 +309,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044020">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A discussion led by the initiator in a manner typical of a teacher or lecturer.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classroom-style discussion</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A discussion led by the initiator in a manner typical of a teacher or lecturer.</obo:IAO_0000115>
+        <rdfs:label>classroom-style discussion</rdfs:label>
     </owl:Class>
     
 
@@ -307,8 +320,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044021">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050388"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication showing acknolwedgement conveying empathy or compassion towards a sub-optimal situation or concerns of a recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication acknowledging difficulties</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication showing acknolwedgement conveying empathy or compassion towards a sub-optimal situation or concerns of a recipient.</obo:IAO_0000115>
+        <rdfs:label>communication acknowledging difficulties</rdfs:label>
     </owl:Class>
     
 
@@ -317,9 +331,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044022">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using statements that add intensity to the content or emotion expressed by another person.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;overshooting&quot; in motivational interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication adding intensity to another&apos;s views</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using statements that add intensity to the content or emotion expressed by another person.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;overshooting&quot; in motivational interviewing</obo:IAO_0000118>
+        <rdfs:label>communication adding intensity to another&apos;s views</rdfs:label>
     </owl:Class>
     
 
@@ -328,9 +343,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044023">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Educate using ask-tell-ask rather than tell-ask-tell</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication which involves asking for approval before sharing knowledge and giving guidance.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication asking permission to provide information and advice</rdfs:label>
+        <obo:IAO_0000112>Educate using ask-tell-ask rather than tell-ask-tell</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication which involves asking for approval before sharing knowledge and giving guidance.</obo:IAO_0000115>
+        <rdfs:label>communication asking permission to provide information and advice</rdfs:label>
     </owl:Class>
     
 
@@ -339,8 +355,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044024">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication which aims to focus on the feelings of others without debating the truth or falsity of statements or ideas.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication avoiding argumentation</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication which aims to focus on the feelings of others without debating the truth or falsity of statements or ideas.</obo:IAO_0000115>
+        <rdfs:label>communication avoiding argumentation</rdfs:label>
     </owl:Class>
     
 
@@ -349,8 +366,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044026">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which the instigator asks questions to determine if the recipient has comprehended information that has been presented.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication checking for others&apos; understanding</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which the instigator asks questions to determine if the recipient has comprehended information that has been presented.</obo:IAO_0000115>
+        <rdfs:label>communication checking for others&apos; understanding</rdfs:label>
     </owl:Class>
     
 
@@ -359,9 +377,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044027">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clarifying what another has said</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which the instigator asks questions to determine if they have correctly comprehended the information presented by another.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication checking for own understanding</rdfs:label>
+        <obo:IAO_0000112>clarifying what another has said</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which the instigator asks questions to determine if they have correctly comprehended the information presented by another.</obo:IAO_0000115>
+        <rdfs:label>communication checking for own understanding</rdfs:label>
     </owl:Class>
     
 
@@ -370,9 +389,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044028">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which the initiator promotes an extended two-way discussion regarding a topic.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contrasts with a more one-way, didactic style</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication encouraging discussion</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which the initiator promotes an extended two-way discussion regarding a topic.</obo:IAO_0000115>
+        <rdfs:comment>Contrasts with a more one-way, didactic style</rdfs:comment>
+        <rdfs:label>communication encouraging discussion</rdfs:label>
     </owl:Class>
     
 
@@ -381,9 +401,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044029">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which the initiator attempts to elicit the recipients own thoughts and ideas about change rather than imposing the initiators own opinion.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evoking change talk in motivational interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication evoking another&apos;s ideas about change</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which the initiator attempts to elicit the recipients own thoughts and ideas about change rather than imposing the initiators own opinion.</obo:IAO_0000115>
+        <obo:IAO_0000118>evoking change talk in motivational interviewing</obo:IAO_0000118>
+        <rdfs:label>communication evoking another&apos;s ideas about change</rdfs:label>
     </owl:Class>
     
 
@@ -392,10 +413,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044030">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eliciting or seeking information</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication to better understand what a person thinks or feels about a topic or an experience.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This can include asking questions or prompting elaboration e.g &apos;Tell me more about that&apos;</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exploring communication</rdfs:label>
+        <obo:IAO_0000112>eliciting or seeking information</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication to better understand what a person thinks or feels about a topic or an experience.</obo:IAO_0000115>
+        <rdfs:comment>This can include asking questions or prompting elaboration e.g &apos;Tell me more about that&apos;</rdfs:comment>
+        <rdfs:label>exploring communication</rdfs:label>
     </owl:Class>
     
 
@@ -404,9 +426,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044034">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication pointing out a situation in which actions or propositions are inconsistent with each other.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The contradiction can be between two or more of a person&apos;s actions, or between a person&apos;s actions and beliefs, or between two or more beliefs a person holds</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication highlighting a contradiction</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication pointing out a situation in which actions or propositions are inconsistent with each other.</obo:IAO_0000115>
+        <rdfs:comment>The contradiction can be between two or more of a person&apos;s actions, or between a person&apos;s actions and beliefs, or between two or more beliefs a person holds</rdfs:comment>
+        <rdfs:label>communication highlighting a contradiction</rdfs:label>
     </owl:Class>
     
 
@@ -415,9 +438,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044035">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication seeking information about a person&apos;s responses to the  content presented.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asking for opinions</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication inviting reactions to content presented</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication seeking information about a person&apos;s responses to the  content presented.</obo:IAO_0000115>
+        <obo:IAO_0000118>asking for opinions</obo:IAO_0000118>
+        <rdfs:label>communication inviting reactions to content presented</rdfs:label>
     </owl:Class>
     
 
@@ -426,9 +450,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044036">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving accepting that the recipient has different beliefs to the initiator and continuing with the planned activities while allowing both views to exist.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Motivational Interviewing</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication involving acceptance that recipients views may be different to the initiator&apos;s views</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving accepting that the recipient has different beliefs to the initiator and continuing with the planned activities while allowing both views to exist.</obo:IAO_0000115>
+        <rdfs:comment>From Motivational Interviewing</rdfs:comment>
+        <rdfs:label>communication involving acceptance that recipients views may be different to the initiator&apos;s views</rdfs:label>
     </owl:Class>
     
 
@@ -437,8 +462,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044037">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which one participant concurs with the views stated by another.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication involving agreement</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which one participant concurs with the views stated by another.</obo:IAO_0000115>
+        <rdfs:label>communication involving agreement</rdfs:label>
     </owl:Class>
     
 
@@ -447,9 +473,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044038">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044037"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving agreement in which one participant concurs with the views stated by another and then points out an incongruent aspect of the situation under discussion.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;agreement with a twist&quot; in motivational interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication involving agreement followed by highlighting incongruent aspects</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving agreement in which one participant concurs with the views stated by another and then points out an incongruent aspect of the situation under discussion.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;agreement with a twist&quot; in motivational interviewing</obo:IAO_0000118>
+        <rdfs:label>communication involving agreement followed by highlighting incongruent aspects</rdfs:label>
     </owl:Class>
     
 
@@ -458,9 +485,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044039">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving the initiator rephrasing what a recipient says in a manner intended to confirm understanding of the recipient&apos;s situation rather than confront.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;coming alongside&quot; in Motivational Interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication involving confirmatory rephrasing</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving the initiator rephrasing what a recipient says in a manner intended to confirm understanding of the recipient&apos;s situation rather than confront.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;coming alongside&quot; in Motivational Interviewing</obo:IAO_0000118>
+        <rdfs:label>communication involving confirmatory rephrasing</rdfs:label>
     </owl:Class>
     
 
@@ -469,8 +497,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044040">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication further developing a declarative statement that has been made  by making it clearer, more precise, bringing out its consequences or giving a concrete example.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication involving elaboration of arguments</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication further developing a declarative statement that has been made  by making it clearer, more precise, bringing out its consequences or giving a concrete example.</obo:IAO_0000115>
+        <rdfs:label>communication involving elaboration of arguments</rdfs:label>
     </owl:Class>
     
 
@@ -479,8 +508,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044041">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving the initiator offering a range of options to the recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication offering choice</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving the initiator offering a range of options to the recipient.</obo:IAO_0000115>
+        <rdfs:label>communication offering choice</rdfs:label>
     </owl:Class>
     
 
@@ -489,9 +519,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044042">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using statements that diminish or understate the intensity of the content or emotion expressed by the other person.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;undershooting&quot; in motivational interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication understating intensity of person&apos;s views</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using statements that diminish or understate the intensity of the content or emotion expressed by the other person.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;undershooting&quot; in motivational interviewing</obo:IAO_0000118>
+        <rdfs:label>communication understating intensity of person&apos;s views</rdfs:label>
     </owl:Class>
     
 
@@ -500,9 +531,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044043">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication addressing a person using a certain name or title to refer to that person.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The child classes of this class are specific types of address, whereas this class is for a non-specific type of address.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using a particular form of address</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication addressing a person using a certain name or title to refer to that person.</obo:IAO_0000115>
+        <rdfs:comment>The child classes of this class are specific types of address, whereas this class is for a non-specific type of address.</rdfs:comment>
+        <rdfs:label>communication using a particular form of address</rdfs:label>
     </owl:Class>
     
 
@@ -511,8 +543,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044044">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044043"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication addressing a person using a formal, legal or official name or title to refer to that person.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using formal address</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication addressing a person using a formal, legal or official name or title to refer to that person.</obo:IAO_0000115>
+        <rdfs:label>communication using formal address</rdfs:label>
     </owl:Class>
     
 
@@ -521,8 +554,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044045">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044043"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication addressing a person using a casual or colloquial name or title to refer to that person.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using informal address</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication addressing a person using a casual or colloquial name or title to refer to that person.</obo:IAO_0000115>
+        <rdfs:label>communication using informal address</rdfs:label>
     </owl:Class>
     
 
@@ -531,9 +565,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044046">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044043"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depending on whether Suzie Jones prefers to be addressed formally, or by her given name, saying either &quot;Hello Mrs Jones&quot; or &quot;Hello Suzie&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication addressing a person using a name or title that the person has specified the instigator should use.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using preferred form of address</rdfs:label>
+        <obo:IAO_0000112>Depending on whether Suzie Jones prefers to be addressed formally, or by her given name, saying either &quot;Hello Mrs Jones&quot; or &quot;Hello Suzie&quot;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication addressing a person using a name or title that the person has specified the instigator should use.</obo:IAO_0000115>
+        <rdfs:label>communication using preferred form of address</rdfs:label>
     </owl:Class>
     
 
@@ -542,9 +577,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044047">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using statements that order or direct a person to think or behave in a certain way.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using imperatives</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using commands</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using statements that order or direct a person to think or behave in a certain way.</obo:IAO_0000115>
+        <obo:IAO_0000118>communication using imperatives</obo:IAO_0000118>
+        <rdfs:label>communication using commands</rdfs:label>
     </owl:Class>
     
 
@@ -553,10 +589,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044048">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">staying silent</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which the speaker purposely leaves gaps between or after their speech utterances.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pauses may be deliberately left to provide opportunities for others to speak or reflect, or to demonstrate non-directiveness.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using deliberate pauses</rdfs:label>
+        <obo:IAO_0000112>staying silent</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which the speaker purposely leaves gaps between or after their speech utterances.</obo:IAO_0000115>
+        <rdfs:comment>Pauses may be deliberately left to provide opportunities for others to speak or reflect, or to demonstrate non-directiveness.</rdfs:comment>
+        <rdfs:label>communication using deliberate pauses</rdfs:label>
     </owl:Class>
     
 
@@ -565,11 +602,12 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044049">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Words like &quot;interesting&quot;, &quot;yeah&quot;,&quot; mmhmm&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which one person uses brief interjections to signal that they are listening to what the other person is saying.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Back-channels&quot; or &quot;undertalk&quot; in the Roter Interaction Analysis System</obo:IAO_0000118>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interjection is a word, phrase or exclamation which is typically unconnected to a sentence and is used to express an emotion or reaction.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using interjections to signal attentiveness</rdfs:label>
+        <obo:IAO_0000112>Words like &quot;interesting&quot;, &quot;yeah&quot;,&quot; mmhmm&quot;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which one person uses brief interjections to signal that they are listening to what the other person is saying.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;Back-channels&quot; or &quot;undertalk&quot; in the Roter Interaction Analysis System</obo:IAO_0000118>
+        <rdfs:comment>An interjection is a word, phrase or exclamation which is typically unconnected to a sentence and is used to express an emotion or reaction.</rdfs:comment>
+        <rdfs:label>communication using interjections to signal attentiveness</rdfs:label>
     </owl:Class>
     
 
@@ -578,8 +616,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044050">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using certain vocabulary or phraseology.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using particular language</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using certain vocabulary or phraseology.</obo:IAO_0000115>
+        <rdfs:label>communication using particular language</rdfs:label>
     </owl:Class>
     
 
@@ -588,8 +627,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044051">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044050"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using language in a manner which does not demonstrate an opinion on a particular issue.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using neutral language</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using language in a manner which does not demonstrate an opinion on a particular issue.</obo:IAO_0000115>
+        <rdfs:label>communication using neutral language</rdfs:label>
     </owl:Class>
     
 
@@ -598,8 +638,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044052">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044050"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using language chosen to avoid coercing or persuading the recipient to think, feel or behave in a certain manner.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using non-pressurising language</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using language chosen to avoid coercing or persuading the recipient to think, feel or behave in a certain manner.</obo:IAO_0000115>
+        <rdfs:label>communication using non-pressurising language</rdfs:label>
     </owl:Class>
     
 
@@ -608,8 +649,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044053">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044050"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using informal language shared by members of a particular community.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using slang</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using informal language shared by members of a particular community.</obo:IAO_0000115>
+        <rdfs:label>communication using slang</rdfs:label>
     </owl:Class>
     
 
@@ -618,9 +660,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044054">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044050"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using words or expressions used by a profession or group that are difficult for others not in that profession or group to understand.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">using jargon</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using specialist language</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using words or expressions used by a profession or group that are difficult for others not in that profession or group to understand.</obo:IAO_0000115>
+        <obo:IAO_0000118>using jargon</obo:IAO_0000118>
+        <rdfs:label>communication using specialist language</rdfs:label>
     </owl:Class>
     
 
@@ -629,8 +672,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044055">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044050"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using language chosen by the instigator to avoid using words or phrases that could be perceived as rude or insulting.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication avoiding offensive language</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using language chosen by the instigator to avoid using words or phrases that could be perceived as rude or insulting.</obo:IAO_0000115>
+        <rdfs:label>communication avoiding offensive language</rdfs:label>
     </owl:Class>
     
 
@@ -639,8 +683,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044056">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044050"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication using occasional words chosen from a language spoken by both the instigator and the recipient that is not the main language.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using selected words from a second language</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication using occasional words chosen from a language spoken by both the instigator and the recipient that is not the main language.</obo:IAO_0000115>
+        <rdfs:label>communication using selected words from a second language</rdfs:label>
     </owl:Class>
     
 
@@ -649,8 +694,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044058">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication that involves the use of declarative propositions based on what the communicator believes to be logical.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication using rational arguments</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication that involves the use of declarative propositions based on what the communicator believes to be logical.</obo:IAO_0000115>
+        <rdfs:label>communication using rational arguments</rdfs:label>
     </owl:Class>
     
 
@@ -659,8 +705,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044059">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in a manner which clearly conveys the emotions of the initiator.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emotionally expressive communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in a manner which clearly conveys the emotions of the initiator.</obo:IAO_0000115>
+        <rdfs:label>emotionally expressive communication</rdfs:label>
     </owl:Class>
     
 
@@ -669,9 +716,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044060">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When a practitioner suggests to a patient &apos;Could you think about it like this...&apos;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication that involves suggesting adoption of certain beliefs, theories or lines of action by others.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guiding communication</rdfs:label>
+        <obo:IAO_0000112>When a practitioner suggests to a patient &apos;Could you think about it like this...&apos;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication that involves suggesting adoption of certain beliefs, theories or lines of action by others.</obo:IAO_0000115>
+        <rdfs:label>guiding communication</rdfs:label>
     </owl:Class>
     
 
@@ -680,8 +728,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044061">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which one person interjects before another has finished making their point.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interrupting</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which one person interjects before another has finished making their point.</obo:IAO_0000115>
+        <rdfs:label>interrupting</rdfs:label>
     </owl:Class>
     
 
@@ -690,8 +739,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044062">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which at least one participant endeavours to not interject before another participant has finished making their point.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication avoiding interrupting</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which at least one participant endeavours to not interject before another participant has finished making their point.</obo:IAO_0000115>
+        <rdfs:label>communication avoiding interrupting</rdfs:label>
     </owl:Class>
     
 
@@ -700,8 +750,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044064">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication describing the particulars of a person&apos;s life or a course of events in the style of telling a story.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">narrative communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication describing the particulars of a person&apos;s life or a course of events in the style of telling a story.</obo:IAO_0000115>
+        <rdfs:label>narrative communication</rdfs:label>
     </owl:Class>
     
 
@@ -710,8 +761,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044065">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving goal-oriented collaboration to arrive at an agreement or compromise on a matter of importance to the individuals involved.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negotiation</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving goal-oriented collaboration to arrive at an agreement or compromise on a matter of importance to the individuals involved.</obo:IAO_0000115>
+        <rdfs:label>negotiation</rdfs:label>
     </owl:Class>
     
 
@@ -720,10 +772,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044069">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">made reassuring statements</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication intended to provide hope and strength in times of anxiety, worry, confusion, grief, distress, or suffering.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">based on Roter Interactional Analysis System</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">offering reassurance</rdfs:label>
+        <obo:IAO_0000112>made reassuring statements</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication intended to provide hope and strength in times of anxiety, worry, confusion, grief, distress, or suffering.</obo:IAO_0000115>
+        <rdfs:comment>based on Roter Interactional Analysis System</rdfs:comment>
+        <rdfs:label>offering reassurance</rdfs:label>
     </owl:Class>
     
 
@@ -732,9 +785,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044070">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication in which one participant summarises what the other said.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class is different to &quot;communication involving confirmatory rephrasing&quot; as this class is simply about summarising what another person said.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paraphrasing</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication in which one participant summarises what the other said.</obo:IAO_0000115>
+        <rdfs:comment>This class is different to &quot;communication involving confirmatory rephrasing&quot; as this class is simply about summarising what another person said.</rdfs:comment>
+        <rdfs:label>paraphrasing</rdfs:label>
     </owl:Class>
     
 
@@ -743,8 +797,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044071">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication presenting a person&apos;s previously expressed thoughts and feelings back to them.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reflective communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication presenting a person&apos;s previously expressed thoughts and feelings back to them.</obo:IAO_0000115>
+        <rdfs:label>reflective communication</rdfs:label>
     </owl:Class>
     
 
@@ -753,9 +808,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044072">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044071"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reflective communication in which the instigator pulls together key points from a complex story told by the recipient in a succinct restatement.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;summarising reflection&quot; in Motivational Interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">summarising reflective communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A reflective communication in which the instigator pulls together key points from a complex story told by the recipient in a succinct restatement.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;summarising reflection&quot; in Motivational Interviewing</obo:IAO_0000118>
+        <rdfs:label>summarising reflective communication</rdfs:label>
     </owl:Class>
     
 
@@ -764,9 +820,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044073">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044071"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reflective communication in which the instigator aims to highlight both the positive and negative sides of an issue as previously expressed by the recipient.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;double-sided reflection&quot; in Motivational Interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">double-sided reflective communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A reflective communication in which the instigator aims to highlight both the positive and negative sides of an issue as previously expressed by the recipient.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;double-sided reflection&quot; in Motivational Interviewing</obo:IAO_0000118>
+        <rdfs:label>double-sided reflective communication</rdfs:label>
     </owl:Class>
     
 
@@ -775,9 +832,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044074">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044071"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reflective communication in which the instigator  replaces a word or phrase of the recipient&apos;s prior assertion with a figure of speech suggesting an analogy.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;metaphorical reflection&quot; in Motivational Interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metaphor-using reflective communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A reflective communication in which the instigator  replaces a word or phrase of the recipient&apos;s prior assertion with a figure of speech suggesting an analogy.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;metaphorical reflection&quot; in Motivational Interviewing</obo:IAO_0000118>
+        <rdfs:label>metaphor-using reflective communication</rdfs:label>
     </owl:Class>
     
 
@@ -786,9 +844,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044075">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044071"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reflective communication highlighting the emotional aspects of an issue as previously described by the recipient.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;reflection of feeling&quot; in Motivational Interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emotion-emphasising reflective communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A reflective communication highlighting the emotional aspects of an issue as previously described by the recipient.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;reflection of feeling&quot; in Motivational Interviewing</obo:IAO_0000118>
+        <rdfs:label>emotion-emphasising reflective communication</rdfs:label>
     </owl:Class>
     
 
@@ -797,9 +856,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044076">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044071"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reflective communication in which the instigator restates the recipient&apos;s prior assertation in a less credible way to prompt reconsideration of the assertion.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;amplified reflection&quot; in Motivational Interviewing</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">re-evaluation prompting reflective communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A reflective communication in which the instigator restates the recipient&apos;s prior assertation in a less credible way to prompt reconsideration of the assertion.</obo:IAO_0000115>
+        <obo:IAO_0000118>&quot;amplified reflection&quot; in Motivational Interviewing</obo:IAO_0000118>
+        <rdfs:label>re-evaluation prompting reflective communication</rdfs:label>
     </owl:Class>
     
 
@@ -808,9 +868,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044077">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication which follows a pre-written sequence of instructions that are interpreted or carried out by a person or by a program.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class involves tightly following a set of written instructions. It is different to structured communication style, which is a pre-planned style but not to the extent of using a written script.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">script-based communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication which follows a pre-written sequence of instructions that are interpreted or carried out by a person or by a program.</obo:IAO_0000115>
+        <rdfs:comment>This class involves tightly following a set of written instructions. It is different to structured communication style, which is a pre-planned style but not to the extent of using a written script.</rdfs:comment>
+        <rdfs:label>script-based communication</rdfs:label>
     </owl:Class>
     
 
@@ -819,8 +880,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044078">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication that involves altering the area of greatest attention during the delivery of information.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shifting focus of communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication that involves altering the area of greatest attention during the delivery of information.</obo:IAO_0000115>
+        <rdfs:label>shifting focus of communication</rdfs:label>
     </owl:Class>
     
 
@@ -829,8 +891,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044079">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style marked by fostering the involvement of the recipient as an engaged actor in the activity to be undertaken rather than as a passive recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">active participation encouraging communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style marked by fostering the involvement of the recipient as an engaged actor in the activity to be undertaken rather than as a passive recipient.</obo:IAO_0000115>
+        <rdfs:label>active participation encouraging communication style</rdfs:label>
     </owl:Class>
     
 
@@ -839,8 +902,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044081">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by a lack of empathy or compassion for the recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aloof communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by a lack of empathy or compassion for the recipient.</obo:IAO_0000115>
+        <rdfs:label>aloof communication style</rdfs:label>
     </owl:Class>
     
 
@@ -849,9 +913,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044082">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by the initiator fluently using language to express ideas.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluent</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">articulate communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by the initiator fluently using language to express ideas.</obo:IAO_0000115>
+        <obo:IAO_0000118>fluent</obo:IAO_0000118>
+        <rdfs:label>articulate communication style</rdfs:label>
     </owl:Class>
     
 
@@ -860,10 +925,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044083">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;listened carefully to what you had to say&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by purposeful consideration of another&apos;s statements.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This involves communicating in a manner that ensures the recipient knows that they are being heard</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attentive communication style</rdfs:label>
+        <obo:IAO_0000112>&quot;listened carefully to what you had to say&quot;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by purposeful consideration of another&apos;s statements.</obo:IAO_0000115>
+        <rdfs:comment>This involves communicating in a manner that ensures the recipient knows that they are being heard</rdfs:comment>
+        <rdfs:label>attentive communication style</rdfs:label>
     </owl:Class>
     
 
@@ -872,10 +938,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044084">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style which aims to promote the recipient&apos;s capacity to make their own decisions.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">needs-supportive communication style</obo:IAO_0000118>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from Self-Determination Theory interventions.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomy-supportive communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style which aims to promote the recipient&apos;s capacity to make their own decisions.</obo:IAO_0000115>
+        <obo:IAO_0000118>needs-supportive communication style</obo:IAO_0000118>
+        <rdfs:comment>from Self-Determination Theory interventions.</rdfs:comment>
+        <rdfs:label>autonomy-supportive communication style</rdfs:label>
     </owl:Class>
     
 
@@ -884,8 +951,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044085">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by a sense of the initiator and recipient working together, the initiator showing sensitivity to the others&apos; needs, in order to obtain an outcome desired by all.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collaborative communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by a sense of the initiator and recipient working together, the initiator showing sensitivity to the others&apos; needs, in order to obtain an outcome desired by all.</obo:IAO_0000115>
+        <rdfs:label>collaborative communication style</rdfs:label>
     </owl:Class>
     
 
@@ -894,8 +962,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044086">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style suggesting a lack of human interest or friendliness towards the recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cold communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style suggesting a lack of human interest or friendliness towards the recipient.</obo:IAO_0000115>
+        <rdfs:label>cold communication style</rdfs:label>
     </owl:Class>
     
 
@@ -904,8 +973,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044087">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style that conveys respect and regard for the recipient as an individual.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication style conveying acceptance</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style that conveys respect and regard for the recipient as an individual.</obo:IAO_0000115>
+        <rdfs:label>communication style conveying acceptance</rdfs:label>
     </owl:Class>
     
 
@@ -914,8 +984,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044089">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style demonstrating one perceives an unwanted circumstance for the recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication style conveying concern</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style demonstrating one perceives an unwanted circumstance for the recipient.</obo:IAO_0000115>
+        <rdfs:label>communication style conveying concern</rdfs:label>
     </owl:Class>
     
 
@@ -924,9 +995,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044090">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style which suggests one is acting in line with one&apos;s true values and beliefs.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sincerity</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication style conveying genuineness</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style which suggests one is acting in line with one&apos;s true values and beliefs.</obo:IAO_0000115>
+        <obo:IAO_0000118>sincerity</obo:IAO_0000118>
+        <rdfs:label>communication style conveying genuineness</rdfs:label>
     </owl:Class>
     
 
@@ -935,9 +1007,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044091">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style which imparts a feeling of optimism that a person will attain a desired outcome.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optimism, positivity</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication style conveying hopefulness</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style which imparts a feeling of optimism that a person will attain a desired outcome.</obo:IAO_0000115>
+        <obo:IAO_0000118>optimism, positivity</obo:IAO_0000118>
+        <rdfs:label>communication style conveying hopefulness</rdfs:label>
     </owl:Class>
     
 
@@ -946,8 +1019,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044092">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style which imparts a feeling that the instigator believes themselves to be higher in status than the recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication style conveying perceived superiority</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style which imparts a feeling that the instigator believes themselves to be higher in status than the recipient.</obo:IAO_0000115>
+        <rdfs:label>communication style conveying perceived superiority</rdfs:label>
     </owl:Class>
     
 
@@ -956,8 +1030,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044094">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style which imparts one&apos;s belief that the recipient can change.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication style conveying support for change</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style which imparts one&apos;s belief that the recipient can change.</obo:IAO_0000115>
+        <rdfs:label>communication style conveying support for change</rdfs:label>
     </owl:Class>
     
 
@@ -966,8 +1041,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044095">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style demonstrating acceptance of everything about the recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication style demonstrating positive regard</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style demonstrating acceptance of everything about the recipient.</obo:IAO_0000115>
+        <rdfs:label>communication style demonstrating positive regard</rdfs:label>
     </owl:Class>
     
 
@@ -976,8 +1052,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044096">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style which directly instructs the adoption of certain beliefs, theories or lines of action.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">controlling communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style which directly instructs the adoption of certain beliefs, theories or lines of action.</obo:IAO_0000115>
+        <rdfs:label>controlling communication style</rdfs:label>
     </owl:Class>
     
 
@@ -986,8 +1063,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044097">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style that is typical of interpersonal dialogue which encourages an interactive exchange of ideas and beliefs.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conversational communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style that is typical of interpersonal dialogue which encourages an interactive exchange of ideas and beliefs.</obo:IAO_0000115>
+        <rdfs:label>conversational communication style</rdfs:label>
     </owl:Class>
     
 
@@ -996,9 +1074,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044098">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gave a short lecture, conference presentation</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by the initiator addressing the recipient in the manner of a teacher or lecturer.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">didactic communication style</rdfs:label>
+        <obo:IAO_0000112>gave a short lecture, conference presentation</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by the initiator addressing the recipient in the manner of a teacher or lecturer.</obo:IAO_0000115>
+        <rdfs:label>didactic communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1007,10 +1086,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044099">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D037001</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style intended to play an active role in another person&apos;s decision making.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this class is different from direct communication style</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">directive communication style</rdfs:label>
+        <obo:IAO_0000112>http://purl.bioontology.org/ontology/MESH/D037001</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style intended to play an active role in another person&apos;s decision making.</obo:IAO_0000115>
+        <rdfs:comment>Note that this class is different from direct communication style</rdfs:comment>
+        <rdfs:label>directive communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1019,10 +1099,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044100">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">using non-technical language, using clear language, avoiding jargon</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by using language in a manner intended to be easily understandable to a recipient.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This can involve using plain and simple language</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">easily comprehended communication style</rdfs:label>
+        <obo:IAO_0000112>using non-technical language, using clear language, avoiding jargon</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by using language in a manner intended to be easily understandable to a recipient.</obo:IAO_0000115>
+        <rdfs:comment>This can involve using plain and simple language</rdfs:comment>
+        <rdfs:label>easily comprehended communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1031,9 +1112,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044101">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style which conveys an insightful awareness of the feelings and behaviours of the recipient.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensitivity, compassion</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">empathic communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style which conveys an insightful awareness of the feelings and behaviours of the recipient.</obo:IAO_0000115>
+        <obo:IAO_0000118>sensitivity, compassion</obo:IAO_0000118>
+        <rdfs:label>empathic communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1042,8 +1124,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044102">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by attempting to attract and maintain a recipient&apos;s interest or attention.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">engaging communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by attempting to attract and maintain a recipient&apos;s interest or attention.</obo:IAO_0000115>
+        <rdfs:label>engaging communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1052,9 +1135,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044103">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style intended to be amusing or enjoyable for the recipient.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fun</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entertaining communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style intended to be amusing or enjoyable for the recipient.</obo:IAO_0000115>
+        <obo:IAO_0000118>fun</obo:IAO_0000118>
+        <rdfs:label>entertaining communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1063,8 +1147,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044104">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by the use of traditional standards of correctness and etiquette and without casual, contracted, or colloquial forms of language.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">formal communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by the use of traditional standards of correctness and etiquette and without casual, contracted, or colloquial forms of language.</obo:IAO_0000115>
+        <rdfs:label>formal communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1073,8 +1158,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044105">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style conveying feelings of annoyance at time taken to understand or complete a process.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">impatient communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style conveying feelings of annoyance at time taken to understand or complete a process.</obo:IAO_0000115>
+        <rdfs:label>impatient communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1083,9 +1169,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044106">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by the use of casual or colloquial language rather than formal language.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Colloquial&quot; language is language that is typically used in ordinary conversation rather than in formal communication</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">informal communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by the use of casual or colloquial language rather than formal language.</obo:IAO_0000115>
+        <rdfs:comment>&quot;Colloquial&quot; language is language that is typically used in ordinary conversation rather than in formal communication</rdfs:comment>
+        <rdfs:label>informal communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1094,8 +1181,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044107">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by an emphasis on reasoning and promoting objective understanding.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intellectual communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by an emphasis on reasoning and promoting objective understanding.</obo:IAO_0000115>
+        <rdfs:label>intellectual communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1104,9 +1192,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044108">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive presentation</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by being responsive to the recipient&apos;s activity.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive communication style</rdfs:label>
+        <obo:IAO_0000112>interactive presentation</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by being responsive to the recipient&apos;s activity.</obo:IAO_0000115>
+        <rdfs:label>interactive communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1115,10 +1204,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044109">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by making a person feel that their perspective or emotions are legitimate.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">validating emotions</obo:IAO_0000118>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This entails a deliberate strategy to make the person feel their perspective is legitimate</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">legitimising communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by making a person feel that their perspective or emotions are legitimate.</obo:IAO_0000115>
+        <obo:IAO_0000118>validating emotions</obo:IAO_0000118>
+        <rdfs:comment>This entails a deliberate strategy to make the person feel their perspective is legitimate</rdfs:comment>
+        <rdfs:label>legitimising communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1127,8 +1217,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044110">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by suggesting the initiator is open to or able to accept criticism.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-defensive communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by suggesting the initiator is open to or able to accept criticism.</obo:IAO_0000115>
+        <rdfs:label>non-defensive communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1137,8 +1228,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044111">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by being diplomatic and avoiding conflict.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-confrontational communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by being diplomatic and avoiding conflict.</obo:IAO_0000115>
+        <rdfs:label>non-confrontational communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1147,8 +1239,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044112">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style that demonstrates that one is not assigning a positive or negative valence to another&apos;s views or behaviours.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-judgmental communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style that demonstrates that one is not assigning a positive or negative valence to another&apos;s views or behaviours.</obo:IAO_0000115>
+        <rdfs:label>non-judgmental communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1157,9 +1250,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044113">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;willing to listen&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style conveying willingness to take time to understand or complete a process.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patient communication style</rdfs:label>
+        <obo:IAO_0000112>&quot;willing to listen&quot;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style conveying willingness to take time to understand or complete a process.</obo:IAO_0000115>
+        <rdfs:label>patient communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1168,8 +1262,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044114">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style which aims to induce or urge the adoption of certain beliefs, theories or lines of action.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">persuasive communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style which aims to induce or urge the adoption of certain beliefs, theories or lines of action.</obo:IAO_0000115>
+        <rdfs:label>persuasive communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1178,8 +1273,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044115">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by courtesy.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polite communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by courtesy.</obo:IAO_0000115>
+        <rdfs:label>polite communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1188,9 +1284,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044116">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by a lack of tension or anxiety.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calm communication style</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relaxed communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by a lack of tension or anxiety.</obo:IAO_0000115>
+        <obo:IAO_0000118>calm communication style</obo:IAO_0000118>
+        <rdfs:label>relaxed communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1199,10 +1296,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044117">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;acknowledging the victim&apos;s feelings&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style suggesting an understanding of and regard for the feelings, wishes, or rights of others.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class involves showing regard for the feelings etc of others from the outset, but not necessarily adapting one&apos;s own communication based on what the other says.  In contrast, responsive communication style is adapting the response as a result of how another person is communicating.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respectful communication style</rdfs:label>
+        <obo:IAO_0000112>&quot;acknowledging the victim&apos;s feelings&quot;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style suggesting an understanding of and regard for the feelings, wishes, or rights of others.</obo:IAO_0000115>
+        <rdfs:comment>This class involves showing regard for the feelings etc of others from the outset, but not necessarily adapting one&apos;s own communication based on what the other says.  In contrast, responsive communication style is adapting the response as a result of how another person is communicating.</rdfs:comment>
+        <rdfs:label>respectful communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1211,9 +1309,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044118">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by adapting to the views and behaviours of the recipient.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class is adapting response as a result of how another person is communicating. In contrast, respectful communication style involves showing regard for the feelings etc of others from the outset, but not necessarily adapting one&apos;s own communication based on what the other says</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">responsive communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by adapting to the views and behaviours of the recipient.</obo:IAO_0000115>
+        <rdfs:comment>This class is adapting response as a result of how another person is communicating. In contrast, respectful communication style involves showing regard for the feelings etc of others from the outset, but not necessarily adapting one&apos;s own communication based on what the other says</rdfs:comment>
+        <rdfs:label>responsive communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1222,10 +1321,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044119">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using talking points, using conversation guides, having a list of topics to cover</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style involving the communication content having some constituent pre-planned parts but also being responsive to inputs.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organised communication style</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-structured communication style</rdfs:label>
+        <obo:IAO_0000112>Using talking points, using conversation guides, having a list of topics to cover</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style involving the communication content having some constituent pre-planned parts but also being responsive to inputs.</obo:IAO_0000115>
+        <obo:IAO_0000118>organised communication style</obo:IAO_0000118>
+        <rdfs:label>semi-structured communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1234,10 +1334,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044120">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style involving the communication content having constituent pre-planned parts.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standardised</obo:IAO_0000118>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class is pre-planned style but not to the extent of using a written script. In contrast, &quot;Script-based communication&quot; involves tightly following a set of written instructions.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">structured communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style involving the communication content having constituent pre-planned parts.</obo:IAO_0000115>
+        <obo:IAO_0000118>standardised</obo:IAO_0000118>
+        <rdfs:comment>This class is pre-planned style but not to the extent of using a written script. In contrast, &quot;Script-based communication&quot; involves tightly following a set of written instructions.</rdfs:comment>
+        <rdfs:label>structured communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1246,8 +1347,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044121">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style similar to that used for dramatic performance or the theatre.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theatrical communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style similar to that used for dramatic performance or the theatre.</obo:IAO_0000115>
+        <rdfs:label>theatrical communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1256,8 +1358,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044122">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by one participant having more control over a conversation than the other.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verbally dominant communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by one participant having more control over a conversation than the other.</obo:IAO_0000115>
+        <rdfs:label>verbally dominant communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1266,9 +1369,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044123">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style which demonstrates human interest and caring.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">friendly communication style</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">warm communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style which demonstrates human interest and caring.</obo:IAO_0000115>
+        <obo:IAO_0000118>friendly communication style</obo:IAO_0000118>
+        <rdfs:label>warm communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1277,9 +1381,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044124">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">offering contact, inviting patient to contact you in the event of difficulties or questions</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication aimed at building or managing aspects of the interpersonal relationship between an initiator and a recipient rather than focusing on delivering communication content.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship building</rdfs:label>
+        <obo:IAO_0000112>offering contact, inviting patient to contact you in the event of difficulties or questions</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication aimed at building or managing aspects of the interpersonal relationship between an initiator and a recipient rather than focusing on delivering communication content.</obo:IAO_0000115>
+        <rdfs:label>relationship building</rdfs:label>
     </owl:Class>
     
 
@@ -1288,8 +1393,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044125">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of an oral communication relating to the rhythm and pitch of what is said.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tone of voice</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An attribute of an oral communication relating to the rhythm and pitch of what is said.</obo:IAO_0000115>
+        <rdfs:label>tone of voice</rdfs:label>
     </owl:Class>
     
 
@@ -1298,8 +1404,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044126">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of an oral communication relating to the speed with which an individual speaks.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral communication pace</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An attribute of an oral communication relating to the speed with which an individual speaks.</obo:IAO_0000115>
+        <rdfs:label>oral communication pace</rdfs:label>
     </owl:Class>
     
 
@@ -1308,9 +1415,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044127">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colour scheme chosen for a website, style of images used for a booklet, brightly coloured reminder stickers</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of an object used in a communication process, concerning how information sensed with the eyes is presented, which may include colours/fonts/images/spacing/sizing.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">object visual style</rdfs:label>
+        <obo:IAO_0000112>colour scheme chosen for a website, style of images used for a booklet, brightly coloured reminder stickers</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An attribute of an object used in a communication process, concerning how information sensed with the eyes is presented, which may include colours/fonts/images/spacing/sizing.</obo:IAO_0000115>
+        <rdfs:label>object visual style</rdfs:label>
     </owl:Class>
     
 
@@ -1319,10 +1427,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044128">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health care professionals&apos; uniform to convey authority and knowledge, doctors not wearing white coats to speak to children</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of an intervention person source concerning how they appear to others.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may be purposefully chosen to convey certain attributes of the source</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source visual style</rdfs:label>
+        <obo:IAO_0000112>Health care professionals&apos; uniform to convey authority and knowledge, doctors not wearing white coats to speak to children</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An attribute of an intervention person source concerning how they appear to others.</obo:IAO_0000115>
+        <rdfs:comment>may be purposefully chosen to convey certain attributes of the source</rdfs:comment>
+        <rdfs:label>source visual style</rdfs:label>
     </owl:Class>
     
 
@@ -1331,10 +1440,11 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044129">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arrangement of chairs in the room for a group intervention, amount of space between blocks of text in a leaflet, arrangement of sections of a website</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of an object used in communication process, concerning how the object&apos;s components are arranged.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the arrangement of components can be deliberately chosen to help communicate intervention content</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">object layout</rdfs:label>
+        <obo:IAO_0000112>arrangement of chairs in the room for a group intervention, amount of space between blocks of text in a leaflet, arrangement of sections of a website</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An attribute of an object used in communication process, concerning how the object&apos;s components are arranged.</obo:IAO_0000115>
+        <rdfs:comment>the arrangement of components can be deliberately chosen to help communicate intervention content</rdfs:comment>
+        <rdfs:label>object layout</rdfs:label>
     </owl:Class>
     
 
@@ -1343,9 +1453,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044130">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">including adequate blank space and empty circles for the young people and their carers to record and review agenda items</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a text used in communication process, concerning the ease of understanding the wording or other qualitative aspects of the text that facilitate comprehension.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">readability</rdfs:label>
+        <obo:IAO_0000112>including adequate blank space and empty circles for the young people and their carers to record and review agenda items</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An attribute of a text used in communication process, concerning the ease of understanding the wording or other qualitative aspects of the text that facilitate comprehension.</obo:IAO_0000115>
+        <rdfs:label>readability</rdfs:label>
     </owl:Class>
     
 
@@ -1354,8 +1465,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044131">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by nervousness or unease.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anxious communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by nervousness or unease.</obo:IAO_0000115>
+        <rdfs:label>anxious communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1363,9 +1475,10 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_045000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_045000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process by which intervention content is delivered.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention delivery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process by which intervention content is delivered.</obo:IAO_0000115>
+        <rdfs:label>intervention delivery</rdfs:label>
     </owl:Class>
     
 
@@ -1374,49 +1487,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050237">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036034"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human communication behaviour in which the information that is communicated is encoded in language.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linguistic communication behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050238 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050238">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036034"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human communication behaviour in which information is transmitted without being encoded in the meaning units of any language.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linguistic communication behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050323 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050323">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050238"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">supportive touching</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-linguistic communication behaviour that involves expressing thoughts or feelings through bodily movement or posture.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linguistic communication behaviour using body language</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050324 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050324">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050323"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-linguistic communication behaviour using body language that involves movements of facial muscles to express thoughts or feelings.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linguistic communication behaviour using facial expression</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050373 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050373">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050238"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-linguistic communication behaviour using one&apos;s voice to produce sounds.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linguistic communication behaviour using vocalisations</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A human communication behaviour in which the information that is communicated is encoded in language.</obo:IAO_0000115>
+        <rdfs:label>linguistic communication behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -1425,18 +1498,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050374">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human behaviour showing an emotion such as mirth, joy, or scorn with a chuckle or explosive vocal sound.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laughing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050375 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050375">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050323"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-linguistic communication behaviour using body language characterised by the meeting of eyes with another individual</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linguistic communication behaviour using eye contact</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour showing an emotion such as mirth, joy, or scorn with a chuckle or explosive vocal sound.</obo:IAO_0000115>
+        <rdfs:label>laughing</rdfs:label>
     </owl:Class>
     
 
@@ -1445,8 +1509,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050380">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by aggression.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aggressive communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by aggression.</obo:IAO_0000115>
+        <rdfs:label>aggressive communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1455,8 +1520,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050381">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by anger.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angry communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by anger.</obo:IAO_0000115>
+        <rdfs:label>angry communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1465,8 +1531,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050382">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asking questions in order to better understand an issue.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asking clarifying questions</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Asking questions in order to better understand an issue.</obo:IAO_0000115>
+        <rdfs:label>asking clarifying questions</rdfs:label>
     </owl:Class>
     
 
@@ -1475,9 +1542,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050383">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044030"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elicit concerns, problems and reactions</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exploring communication focused on a person&apos;s affective responses to a matter.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication exploring a person&apos;s feelings about a topic</rdfs:label>
+        <obo:IAO_0000112>Elicit concerns, problems and reactions</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An exploring communication focused on a person&apos;s affective responses to a matter.</obo:IAO_0000115>
+        <rdfs:label>communication exploring a person&apos;s feelings about a topic</rdfs:label>
     </owl:Class>
     
 
@@ -1486,9 +1554,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050384">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process involving the exchange of information between two or more participants</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The participants in the communication process can be of a variety of types, e.g. a human talking to an automated chatbot system, two computer systems exchanging information, a person talking to a pet animal etc.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process involving the exchange of information between two or more participants</obo:IAO_0000115>
+        <rdfs:comment>The participants in the communication process can be of a variety of types, e.g. a human talking to an automated chatbot system, two computer systems exchanging information, a person talking to a pet animal etc.</rdfs:comment>
+        <rdfs:label>communication</rdfs:label>
     </owl:Class>
     
 
@@ -1497,9 +1566,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050385">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044030"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exploring communication focused on a person&apos;s affective responses to an experience.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An experience can be any situation or state a person encounters or undergoes</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication exploring a person&apos;s feelings about an experience</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An exploring communication focused on a person&apos;s affective responses to an experience.</obo:IAO_0000115>
+        <rdfs:comment>An experience can be any situation or state a person encounters or undergoes</rdfs:comment>
+        <rdfs:label>communication exploring a person&apos;s feelings about an experience</rdfs:label>
     </owl:Class>
     
 
@@ -1508,9 +1578,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050386">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044030"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clarifying what someone has said</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exploring communication focused on what a person thinks about a matter.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication exploring a person&apos;s thoughts about a topic</rdfs:label>
+        <obo:IAO_0000112>clarifying what someone has said</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An exploring communication focused on what a person thinks about a matter.</obo:IAO_0000115>
+        <rdfs:label>communication exploring a person&apos;s thoughts about a topic</rdfs:label>
     </owl:Class>
     
 
@@ -1519,9 +1590,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050387">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044030"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exploring communication focused on what a person thinks about an experience.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An experience can be any situation or state a person encounters or undergoes</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication exploring a person&apos;s thoughts about an experience</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An exploring communication focused on what a person thinks about an experience.</obo:IAO_0000115>
+        <rdfs:comment>An experience can be any situation or state a person encounters or undergoes</rdfs:comment>
+        <rdfs:label>communication exploring a person&apos;s thoughts about an experience</rdfs:label>
     </owl:Class>
     
 
@@ -1530,8 +1602,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050388">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication involving the expressed recognition of what another has expressed.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communication showing acknowledgement</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication involving the expressed recognition of what another has expressed.</obo:IAO_0000115>
+        <rdfs:label>communication showing acknowledgement</rdfs:label>
     </owl:Class>
     
 
@@ -1540,9 +1613,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050389">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by the explicit presentation of information.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this class is different from directive communication style</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by the explicit presentation of information.</obo:IAO_0000115>
+        <rdfs:comment>Note that this class is different from directive communication style</rdfs:comment>
+        <rdfs:label>direct communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1551,8 +1625,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050390">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style intended to amuse.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">humorous communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style intended to amuse.</obo:IAO_0000115>
+        <rdfs:label>humorous communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1561,8 +1636,9 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050391">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style characterised by not adapting to the views and behaviours of the recipient.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-responsive communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style characterised by not adapting to the views and behaviours of the recipient.</obo:IAO_0000115>
+        <rdfs:label>non-responsive communication style</rdfs:label>
     </owl:Class>
     
 
@@ -1571,12 +1647,13 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050392">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A communication style conveying information in a hurried way.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rushed communication style</rdfs:label>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A communication style conveying information in a hurried way.</obo:IAO_0000115>
+        <rdfs:label>rushed communication style</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 
