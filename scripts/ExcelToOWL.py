@@ -46,7 +46,7 @@ if __name__ == '__main__':
     BCIO_ID_PREFIX = '\"BCIO: '+BCIO_IRI_PREFIX+'BCIO_\"'
     ADDICTO_ID_PREFIX = '\"ADDICTO: http://addictovocab.org/ADDICTO_\"'
 
-    ONTOLOGY_IRI = BCIO_IRI_PREFIX+owlFileName
+    ONTOLOGY_IRI = BCIO_IRI_PREFIX+ os.path.basename(owlFileName)
 
 
     r = robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, BCIO_IRI_PREFIX, [BCIO_ID_PREFIX,ADDICTO_ID_PREFIX], ONTOLOGY_IRI,owlFileName)
