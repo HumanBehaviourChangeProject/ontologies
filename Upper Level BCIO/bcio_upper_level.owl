@@ -726,7 +726,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044003">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute of a communication process</obo:IAO_0000115>
         <rdfs:label>communication process attribute</rdfs:label>
     </owl:Class>
@@ -737,7 +737,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044004">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A particular manner of communicating aimed at inducing or avoiding certain kinds of responses in others, or demonstrating certain characteristics of the initiator.</obo:IAO_0000115>
         <rdfs:label>communication style</rdfs:label>
     </owl:Class>

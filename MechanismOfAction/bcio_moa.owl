@@ -2441,7 +2441,7 @@ In this definition, change refers to change from what would have been the case r
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050318">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006133"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behavioural motivation that involves reflective thinking.</obo:IAO_0000115>
         <rdfs:label>reflective behavioural motivation</rdfs:label>
     </owl:Class>
