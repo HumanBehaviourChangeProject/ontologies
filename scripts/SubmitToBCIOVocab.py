@@ -958,7 +958,7 @@ for id in id_list:
     data = {"id": id, "lowerLevelOntology": "behaviour change technique" }
 
     urlstring = BCIOVOCAB_API + PATCH_TERMS.format(id)
-    r = requests.patch(urlstring, json = data, headers=headers)
+    r = requests.patch(urlstring, json=data, headers=headers)
     status = r.status_code
     print(f"Set lower level ontology returned {r.status_code}, {r.reason}")
 

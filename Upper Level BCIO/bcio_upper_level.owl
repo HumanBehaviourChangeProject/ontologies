@@ -12,7 +12,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_relations.owl"/>
@@ -34,7 +35,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_001000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_001000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000004"/>
@@ -594,7 +595,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_033000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_033000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change.</obo:IAO_0000115>
         <obo:IAO_0000118>BCT</obo:IAO_0000118>
@@ -642,7 +643,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_037000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_037000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000112>Examples of interventions are putting health warnings on cigarette packets, providing free stop smoking services and banning smoking in public places.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process that has the aim of influencing an outcome.</obo:IAO_0000115>
@@ -725,7 +726,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044003">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute of a communication process</obo:IAO_0000115>
         <rdfs:label>communication process attribute</rdfs:label>
     </owl:Class>
@@ -736,7 +737,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044004">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044003"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A particular manner of communicating aimed at inducing or avoiding certain kinds of responses in others, or demonstrating certain characteristics of the initiator.</obo:IAO_0000115>
         <rdfs:label>communication style</rdfs:label>
     </owl:Class>
@@ -746,7 +747,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_045000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_045000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process by which intervention content is delivered.</obo:IAO_0000115>
         <rdfs:label>intervention delivery</rdfs:label>
@@ -757,7 +758,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_046000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_046000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process that is part of an intervention and is intended to be causally active in influencing the intervention outcome.</obo:IAO_0000115>
         <rdfs:label>intervention content</rdfs:label>
