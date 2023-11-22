@@ -1792,7 +1792,7 @@ Harmful behaviour to others will involve a direct interaction between the person
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050444">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A behavioural attribute in which the behaviour is a response to reflective motivation or thinking.</obo:IAO_0000115>
+        <obo:IAO_0000115>A behaviour attribute in which the behaviour is a response to reflective motivation or thinking.</obo:IAO_0000115>
         <rdfs:label>reflectiveness</rdfs:label>
     </owl:Class>
     

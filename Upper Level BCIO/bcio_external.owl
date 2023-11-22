@@ -542,6 +542,7 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
         <rdfs:label>database_cross_reference</rdfs:label>
+        <rdfs:label xml:lang="en">has database cross reference</rdfs:label>
     </owl:AnnotationProperty>
     
 

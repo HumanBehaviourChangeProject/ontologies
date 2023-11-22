@@ -1598,6 +1598,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006038"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An evaluative belief about whether a behaviour is positive or negative.</obo:IAO_0000115>
+        <rdfs:comment>For &apos;evaluative belief about the consequences of a behaviour&apos; see under parent class &apos;belief about the consequences of a behaviour&apos;.</rdfs:comment>
         <rdfs:label>evaluative belief about a behaviour</rdfs:label>
     </owl:Class>
     
@@ -1609,6 +1610,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006019"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about consequences of behaviour in terms of whether they are positive or negative.</obo:IAO_0000115>
+        <rdfs:comment>Note that while this has &apos;belief about the consequences of a behaviour&apos; as the parent, there is also a class &apos;evaluative belief&apos; that acts as a parent for other evaluative beliefs.</rdfs:comment>
         <rdfs:label>evaluative belief about the consequences of behaviour</rdfs:label>
     </owl:Class>
     
