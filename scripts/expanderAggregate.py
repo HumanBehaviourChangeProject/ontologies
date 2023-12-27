@@ -28,12 +28,15 @@ def generate_unique_id(base_id, id_list, num):
                 num_list.append(split_id_num)
     num_list.sort()
     
-    if split_base[0] == 'BCIO' and num < 5 and int(split_base[1])+num not in num_list: # First fill gaps 
+    new_num = max(num_list) + 1   # The default is the latest one
+    
+    if split_base[0] == 'BCIO':
         split_base_num = int(split_base[1])
-        new_num = split_base_num + num
-    else:   # Then get last ID and increment
-        new_num = max(num_list) + 1
-        id_list.append("BCIO:"+str(new_num).zfill(6))
+        if split_base_num > 15000 and split_base_num < 16000:
+            if split_base_num+num not in num_list: # First fill gaps 
+                new_num = split_base_num + num
+ 
+    id_list.append("BCIO:"+str(new_num).zfill(6))
     
     return id_list, "BCIO:"+str(new_num).zfill(6)
 
@@ -42,10 +45,11 @@ def add_extra_values(header, row, aggregate, id_list):#, num):
     aggregate = aggregate.lower()
     aggregate_list = aggregate.split(";")
     #add "aggregate" to beginning of aggregate_list
-    #aggregate_list.insert(0, "aggregate")    
+    aggregate_list.insert(0, "aggregate")    
     extra_rows = []
     i = 0#num
     for agg in aggregate_list:
+        agg = agg.strip()
         i = i+1
         extra_values = {}
         name = ""
@@ -54,12 +58,19 @@ def add_extra_values(header, row, aggregate, id_list):#, num):
                 extra_values[key] = agg + " " + str(cell.value)
                 name = str(cell.value)
             elif key == "Parent":
-                extra_values[key] = name 
+                if agg == "aggregate":
+                    extra_values[key] = 'data item'
+                else: 
+                    extra_values[key] = "aggregate "+name 
             elif key == "ID": 
                 id_list, new_id = generate_unique_id(cell.value, id_list, i)
                 extra_values[key] = new_id 
             elif key == "Definition":
-                extra_values[key] = "The " + agg + " of " + name
+                extra_values[key] = "The " + agg + " of " + name + " in a population."
+            elif key in ["Curation status","Sub-ontology"]:
+                extra_values[key] = str(cell.value)
+            elif key == "REL 'aggregate of'":
+                extra_values[key] = name
             else:
                 extra_values[key] = "" 
         if any(extra_values.values()):
