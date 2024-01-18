@@ -7,7 +7,7 @@ import argparse
 import sys
 
 dirpath = 'Work/Onto/HBCP/ontologies/'
-inputfile = 'MechanismOfAction/inputs/BCIO_MoA.xlsx'
+inputfile = 'MechanismOfAction/bcio_moa.xlsx'
 externalfile = 'Upper Level BCIO/inputs/BCIO_External_Imports.xlsx'
 
 external_tmp = []

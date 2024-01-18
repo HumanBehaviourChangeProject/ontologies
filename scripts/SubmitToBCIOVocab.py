@@ -77,13 +77,13 @@ def getCorrectFormForLabel(value):
 os.makedirs(out_path,exist_ok=True)   # shouldn't exist
 
 bcio_files = ['./Upper Level BCIO/inputs/BCIO_Upper_Level_Merged.xlsx',
-      './Source/inputs/BCIO_Source.xlsx',
-      './MechanismOfAction/inputs/BCIO_MoA.xlsx',
-      './Behaviour/BCIO_behaviour.xlsx',
-      './Setting/inputs/Setting.xlsx',
-      './ModeOfDelivery/inputs/MoD.xlsx',
-      './BehaviourChangeTechniques/inputs/BCIO_BehaviourChangeTechniques.xlsx',
-      './StyleOfDelivery/BCIO_StyleOfDelivery.xlsx']
+      './Source/bcio_source.xlsx',
+      './MechanismOfAction/bcio_moa.xlsx',
+      './Behaviour/bcio_behaviour.xlsx',
+      './Setting/bcio_setting.xlsx',
+      './ModeOfDelivery/bcio_mode_of_delivery.xlsx',
+      './BehaviourChangeTechniques/bcto.xlsx',
+      './StyleOfDelivery/bcio_style.xlsx']
 
 
 for file in bcio_files:
