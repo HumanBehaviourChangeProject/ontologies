@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
@@ -32,6 +33,17 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_034000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_034000">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036107"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An aggregate of individual human behaviours of members of a population.</obo:IAO_0000115>
+        <rdfs:label>population behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000">
@@ -44,14 +56,14 @@
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
-        <rdfs:comment> it is concerned with moving skeletal parts to which it is usually attached.&apos;</rdfs:comment>
+        <rdfs:comment> it is concerned with moving skeletal parts to which it is usually attached.&apos; (https://www.collinsdictionary.com/dictionary/english/striped-muscle)</rdfs:comment>
         <rdfs:comment>Striated muscles referred to in the definition do not ordinarily involve cardiac muscles.
 
 Behaviours are usually in response to an internal or external stimuli.
 
 Every behaviour is associated with mental processes, but not every mental process is associated with behaviour. For instance, a verbal communication behaviour will involve mental processes to produce speech. However, mental processes associated with listening can occur without a person performing a behaviour.
 
-&apos;behaviours&apos; can involve a series of activities .
+&apos;behaviours&apos; can involve a series of activities (e.g., more granular behaviours).
 
 &apos;A &apos;striated muscle&apos; can defined as &apos;a type of contractile tissue that is marked by transverse striations</rdfs:comment>
         <rdfs:label>individual human behaviour</rdfs:label>
@@ -63,12 +75,12 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <obo:IAO_0000112>Learning function , knowledge or skill maintenance, protection of self, others and the environment, aesthetics function, bodily health function, spiritual function, social organisation function,, excretion function, nutrition function, reproductive function, respiration function,, rest function, travel function, thermoregulation function</obo:IAO_0000112>
+        <obo:IAO_0000112>Learning function (e.g., knowledge development function and skill development function), knowledge or skill maintenance, protection of self, others and the environment, aesthetics function, bodily health function, spiritual function, social organisation function,, excretion function, nutrition function, reproductive function, respiration function,, rest function, travel function, thermoregulation function</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A function that inheres in a human being and is realised in processes that enable the human to survive and thrive.</obo:IAO_0000115>
         <rdfs:comment>There are complex sets of processes involved in the realisation of human life functions, only some which would behaviours. An example for a human life function that is not a behaviour function: human thermoregulation via sweating function. However, some behaviours can fulfil &apos;human life functions&apos;.
 
-The term &apos;survive&apos; refers to continuing one&apos;s existence , while &apos;thrive&apos; includes a wide range of processes that improve an animal&apos;s life, including physical and mental wellbeing and experiencing positive social interactions, as well as being able to reproduce. Many processes can contribute to a human surviving and thriving.</rdfs:comment>
+The term &apos;survive&apos; refers to continuing one&apos;s existence (e.g., staying alive), while &apos;thrive&apos; includes a wide range of processes that improve an animal&apos;s life, including physical and mental wellbeing and experiencing positive social interactions, as well as being able to reproduce. Many processes can contribute to a human surviving and thriving.</rdfs:comment>
         <rdfs:label>human life function</rdfs:label>
     </owl:Class>
     
@@ -94,7 +106,7 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence , while &
         <obo:IAO_0000112>Storing, Littering, Installing, Assembling, Disassembling, Repairing, Designing, Servicing, Washing, Composting, Planting, Pruning,  Cooking,  Growing food, Recycling, Planting trees, Picking up litter</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An environmental system management behaviour that involves creating, maintaining, adapting or destroying non-sentient objects.</obo:IAO_0000115>
-        <rdfs:comment>Objects can include engineered artifacts, organisms, grain of sand and/or molecules. The phrase non-sentient objects is used to refer to objects that do not have a central nervous system.</rdfs:comment>
+        <rdfs:comment>Objects can include engineered artifacts, organisms, grain of sand and/or molecules. The phrase ‘non-sentient objects’ is used to refer to objects that do not have a central nervous system.</rdfs:comment>
         <rdfs:label>object management behaviour</rdfs:label>
     </owl:Class>
     
@@ -107,7 +119,7 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence , while &
         <obo:IAO_0000112>Doing housework, Cleaning, Gardening, Farming, Harvesting</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A material-entity related behaviour that involves creating, maintaining, adapting or destroying aspects of the physical or social environment system.</obo:IAO_0000115>
-        <rdfs:comment>Environmental system is defined as &quot;A system which has the disposition to environ one or more material entities.&quot; . Accordingly, an environmental system is the social and physical environment surrounding a person.</rdfs:comment>
+        <rdfs:comment>Environmental system is defined as &quot;A system which has the disposition to environ one or more material entities.&quot; (http://purl.obolibrary.org/obo/ENVO_01000254). Accordingly, an environmental system is the social and physical environment surrounding a person.</rdfs:comment>
         <rdfs:label>environmental system management behaviour</rdfs:label>
     </owl:Class>
     
@@ -160,7 +172,7 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence , while &
         <obo:IAO_0000112>Expressive dancing, Singing, Playing Music</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An experience-related behaviour that involves consciously using some capability to create or shape an aspect of the environment to express an idea or emotion.</obo:IAO_0000115>
-        <rdfs:comment>An aspect of the environment includes both objects within it but also processes .</rdfs:comment>
+        <rdfs:comment>An aspect of the environment includes both objects within it but also processes (e.g., music performance or dancing).</rdfs:comment>
         <rdfs:label>creative expressive behaviour</rdfs:label>
     </owl:Class>
     
@@ -172,7 +184,7 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence , while &
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000112>Nail-cutting</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that attends ones own hygiene, comfort or appearance.</obo:IAO_0000115>
+        <obo:IAO_0000115>An individual human behaviour that attends one’s own hygiene, comfort or appearance.</obo:IAO_0000115>
         <rdfs:comment>Behaviour relating to supporting the personal care of others can be captured under the class &apos;social support behaviour&apos;.</rdfs:comment>
         <rdfs:label>personal bodily care behaviour</rdfs:label>
     </owl:Class>
@@ -258,7 +270,7 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence , while &
         <obo:IAO_0000112>Cyberbullying</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A harassment behaviour that involves targeting someone through deliberate misuse of power in a relationship to inflict physical, social or psychological harm.</obo:IAO_0000115>
-        <rdfs:comment>While bullying behaviours can be directed at anyone, they are often aimed at certain people because of their race, religion, gender or sexual orientation or any other aspect such as appearance or disability .</rdfs:comment>
+        <rdfs:comment>While bullying behaviours can be directed at anyone, they are often aimed at certain people because of their race, religion, gender or sexual orientation or any other aspect such as appearance or disability (https://www.ncab.org.au/bullying-advice/bullying-for-parents/definition-of-bullying/).</rdfs:comment>
         <rdfs:label>bullying behaviour</rdfs:label>
     </owl:Class>
     
@@ -270,7 +282,7 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence , while &
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050397"/>
         <obo:IAO_0000112>Breast feeding, Nappy changing, Feeding, Nursing behaviour, Provide care</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A social support behaviour that involves meeting another persons physical, psychological or social needs that this person is unable to fully meet themselves at a given moment.</obo:IAO_0000115>
+        <obo:IAO_0000115>A social support behaviour that involves meeting another person’s physical, psychological or social needs that this person is unable to fully meet themselves at a given moment.</obo:IAO_0000115>
         <rdfs:label>care-giving behaviour</rdfs:label>
     </owl:Class>
     
@@ -295,7 +307,7 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence , while &
         <obo:IAO_0000112>Spending, Purchasing, Selling, Investing, Renting, Gambling, Saving, Paying debts, Leasing</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A socially-related behaviour that involves the production, acquisition, distribution or exchange of money, goods or services.</obo:IAO_0000115>
-        <rdfs:comment>behaviours, such as economic behaviour, can involve a series of activities .
+        <rdfs:comment>behaviours, such as economic behaviour, can involve a series of activities (e.g., more granular behaviours).
 
 The term &apos;production&apos; in the definition specifically refers to the &apos;production of goods and services for value exchange&apos;</rdfs:comment>
         <rdfs:label>economic behaviour</rdfs:label>
@@ -568,7 +580,8 @@ The classes &apos;travel behaviour&apos; and &apos;locomotive behaviour&apos; ha
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036076">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A behavioural attribute in which the behaviour is a direct emotional, habitual or instinctive reaction to something.</obo:IAO_0000115>
+        <obo:IAO_0000115>A behavioural attribute that is to what extent the behaviour is a direct emotional, habitual or instinctive reaction to something.</obo:IAO_0000115>
+        <rdfs:comment>This class is a dimension and can be construed as the obverse of reflectiveness and so operationalised in terms of acting without thinking.</rdfs:comment>
         <rdfs:label>impulsiveness</rdfs:label>
     </owl:Class>
     
@@ -595,7 +608,7 @@ The classes &apos;travel behaviour&apos; and &apos;locomotive behaviour&apos; ha
         <obo:IAO_0000115>A socially-related behaviour that involves meeting the physical, psychological or social needs of another living being to promote its development.</obo:IAO_0000115>
         <rdfs:comment>The term &apos;animal&apos; in the definition includes humans and other animals.
 
-There can be different dimensions of nurturing, e.g., in some cases, nurturing can involve addressing someone&apos;s physical needs  but not emotional needs.</rdfs:comment>
+There can be different dimensions of nurturing, e.g., in some cases, nurturing can involve addressing someone&apos;s physical needs (e.g., feeding) but not emotional needs.</rdfs:comment>
         <rdfs:label>nurture behaviour</rdfs:label>
     </owl:Class>
     
@@ -609,6 +622,17 @@ There can be different dimensions of nurturing, e.g., in some cases, nurturing c
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A socially-related behaviour that aims to bring about or oppose political or social change.</obo:IAO_0000115>
         <rdfs:label>political behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_036092 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A function that inheres in an animal and is realised in processes that enable the animal to survive and thrive.</obo:IAO_0000115>
+        <rdfs:label>animal function</rdfs:label>
     </owl:Class>
     
 
@@ -634,9 +658,9 @@ There can be different dimensions of nurturing, e.g., in some cases, nurturing c
 - P is the set {p1, ... pn} of process aggregate member parts of b</obo:IAO_0000232>
         <obo:IAO_0000232>b is a behaviour pattern means:
 - b is instance_of uniform process aggregate</obo:IAO_0000232>
-        <rdfs:comment>The term &apos;pattern&apos; is used to refer to several processes  of the same type being repeated overtime.
+        <rdfs:comment>The term &apos;pattern&apos; is used to refer to several processes (individual human behaviours) of the same type being repeated overtime.
 
-This class is intended to include behaviours that can usefully be characterised in terms of frequency and pattern of enactment with a temporal start and end of the series. This means that the series can be terminated , interrupted , and changed in frequency .</rdfs:comment>
+This class is intended to include behaviours that can usefully be characterised in terms of frequency and pattern of enactment with a temporal start and end of the series. This means that the series can be terminated (e.g. stopping smoking), interrupted (e.g. abstaining from alcohol consumption for a month), and changed in frequency (e.g. cutting down on snacks).</rdfs:comment>
         <rdfs:label>individual human behaviour pattern</rdfs:label>
     </owl:Class>
     
@@ -705,7 +729,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occurrent consisting exactly of a plurality of processes that are process_aggregate_member_parts_of that occurrent for all times at which it exists.</obo:IAO_0000115>
-        <obo:IAO_0000232>Process aggregate extends BFO in the same way that object aggregate extends its coverage of material entities. It is required to be able to classify occurrents such as behaviour patterns that are repeated occurrences of classes of process that have properties such as average frequency of occurrence  and temporal patterning of occurrences.</obo:IAO_0000232>
+        <obo:IAO_0000232>Process aggregate extends BFO in the same way that object aggregate extends its coverage of material entities. It is required to be able to classify occurrents such as behaviour patterns that are repeated occurrences of classes of process that have properties such as average frequency of occurrence (not to be confused with frequency as a process profile) and temporal patterning of occurrences.</obo:IAO_0000232>
         <rdfs:label>process aggregate</rdfs:label>
     </owl:Class>
     
@@ -729,7 +753,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000112>Hiring, Firing, Suspending, Promoting, Demoting, Contracting, Working at a job</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An economic behaviour that involves a paid work agreement between an employer and an employee.</obo:IAO_0000115>
-        <rdfs:comment>behaviours&apos;, such as employment behaviour, can involve a series of activities .</rdfs:comment>
+        <rdfs:comment>behaviours&apos;, such as employment behaviour, can involve a series of activities (e.g., more granular behaviours).</rdfs:comment>
         <rdfs:label>employment behaviour</rdfs:label>
     </owl:Class>
     
@@ -772,6 +796,12 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050207 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050207">
@@ -780,7 +810,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000115>Individual human behaviour change that involves a person, who enacted a behaviour pattern until a specific timepoint, not performing this behaviour for a duration after that specific timepoint.</obo:IAO_0000115>
         <obo:IAO_0000118> cessation of a behaviour pattern</obo:IAO_0000118>
         <obo:IAO_0000118>behavioural cessation</obo:IAO_0000118>
-        <obo:IAO_0000232>behaviour change and process_part_of some  and has_process_part some  and after value t1 and before value t2))</obo:IAO_0000232>
+        <obo:IAO_0000232>behaviour change and process_part_of some (&apos;history&apos; and has_process_part some (&apos;behaviour pattern&apos; and before value t1) and has_process_part some ((not &apos;behaviour pattern&apos;) and after value t1 and before value t2))</obo:IAO_0000232>
         <rdfs:label>individual human behaviour pattern cessation</rdfs:label>
     </owl:Class>
     
@@ -791,7 +821,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050208">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050207"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Individual human behaviour pattern cessation in which the behaviour pattern involved is tobacco use.</obo:IAO_0000115>
+        <obo:IAO_0000115>Individual human behaviour pattern cessation in which the behaviour pattern is tobacco use.</obo:IAO_0000115>
         <rdfs:comment>As with the parent class &apos;individual human behaviour pattern cessation&apos;  this class can only be identified after the duration for which cessation has occurred has elapsed and it is necessary to specify this period for the class to be meaningful.</rdfs:comment>
         <rdfs:label>tobacco use cessation</rdfs:label>
     </owl:Class>
@@ -805,7 +835,8 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000112>Non-enactment of a behaviour, cessation of a behaviour pattern, enactment of a behaviour, initiation of a behaviour pattern and change in attributes of a behaviour or behaviour pattern.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process that results in a difference in enactment of some individual human behaviour or individual human behaviour pattern from what would have been the case otherwise.</obo:IAO_0000115>
-        <rdfs:comment>The term &apos;change&apos; in behaviour change refers to change from what would have happened in the absence of a causal process. Thus. a process that results in a behaviour  being maintained when otherwise it would have lapsed is included in the class, as is not taking up smoking as a result of some intervention. behaviour change can refer to individual behaviours  or behaviour patterns .</rdfs:comment>
+        <obo:IAO_0000118>behaviour change</obo:IAO_0000118>
+        <rdfs:comment>The term &apos;change&apos; in behaviour change refers to change from what would have happened in the absence of a causal process. Thus. a process that results in a behaviour (e.g. going to the gym) being maintained when otherwise it would have lapsed is included in the class, as is not taking up smoking as a result of some intervention. behaviour change can refer to individual behaviours (e.g. attending a breast cancer screening appointment) or behaviour patterns (e.g. regular consumption of alcoholic beverages).</rdfs:comment>
         <rdfs:label>individual human behaviour change</rdfs:label>
     </owl:Class>
     
@@ -862,10 +893,10 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process aggregate whose member parts are of the same type.</obo:IAO_0000115>
         <obo:IAO_0000232>u is a uniform process aggregate means:
-	u instance_of process aggregate
-	P is the set {p1,pn} of process aggregate member parts of u
-	X is some descendant of process
-	Each of {p1,pn} in P is instance_of X</obo:IAO_0000232>
+•	u instance_of process aggregate
+•	P is the set {p1,…pn} of process aggregate member parts of u
+•	X is some descendant of process
+•	Each of {p1,…pn} in P is instance_of X</obo:IAO_0000232>
         <rdfs:label>uniform process aggregate</rdfs:label>
     </owl:Class>
     
@@ -909,7 +940,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050352">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Providing a healthcare that involves a procedure to assess another persons health or wellbeing.</obo:IAO_0000115>
+        <obo:IAO_0000115>Providing a healthcare that involves a procedure to assess another person’s health or wellbeing.</obo:IAO_0000115>
         <rdfs:label>providing healthcare testing</rdfs:label>
     </owl:Class>
     
@@ -943,7 +974,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050354"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Prescribing behaviour that involves advising and authorising the use of a medicine.</obo:IAO_0000115>
-        <rdfs:comment>Medicine is defined as type of drug, i.e., any substance which when absorbed into a living organism may modify one or more of its functions. 
+        <rdfs:comment>Medicine is defined as type of drug, i.e., ‘any substance which when absorbed into a living organism may modify one or more of its functions.’ (http://purl.obolibrary.org/obo/CHEBI_23888)
 
 Prescribing medication can include advising and authorising to stop using a medicine.</rdfs:comment>
         <rdfs:label>prescribing medication</rdfs:label>
@@ -990,7 +1021,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Providing healthcare that involves administering a vaccination to prevent or lower the risk of a disease.</obo:IAO_0000115>
-        <rdfs:comment>Vaccination is defined as a medical intervention that involves adding a vaccine into a host  in vivo with the intent to invoke an adaptive immune response.</rdfs:comment>
+        <rdfs:comment>Vaccination is defined as “a medical intervention that involves adding a vaccine into a host (e.g., human, mouse) in vivo with the intent to invoke an adaptive immune response.” (http://purl.obolibrary.org/obo/VO_0000002)</rdfs:comment>
         <rdfs:label>administering vaccine</rdfs:label>
     </owl:Class>
     
@@ -1001,7 +1032,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050360">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Providing healthcare that involves communicating guidance or recommendations to improve or maintain another persons health or wellbeing.</obo:IAO_0000115>
+        <obo:IAO_0000115>Providing healthcare that involves communicating guidance or recommendations to improve or maintain another person’s health or wellbeing.</obo:IAO_0000115>
         <rdfs:label>providing healthcare advice</rdfs:label>
     </owl:Class>
     
@@ -1012,7 +1043,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050361">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Providing healthcare that involves directing a person to another healthcare professional or organisation to assess, monitor, improve or maintain an aspect of this persons health or wellbeing.</obo:IAO_0000115>
+        <obo:IAO_0000115>Providing healthcare that involves directing a person to another healthcare professional or organisation to assess, monitor, improve or maintain an aspect of this person’s health or wellbeing.</obo:IAO_0000115>
         <rdfs:label>making a referral to another health care service</rdfs:label>
     </owl:Class>
     
@@ -1023,7 +1054,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050362">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Providing healthcare that involves interacting with a person to improve or maintain aspects of this persons health or wellbeing.</obo:IAO_0000115>
+        <obo:IAO_0000115>Providing healthcare that involves interacting with a person to improve or maintain aspects of this person’s health or wellbeing.</obo:IAO_0000115>
         <rdfs:label>providing healthcare treatment</rdfs:label>
     </owl:Class>
     
@@ -1034,7 +1065,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050363">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050362"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Providing healthcare treatment that involves advising, encouraging or physically supporting, a person to perform movements that remediate this persons bodily impairments or promote mobility, function or quality of life.</obo:IAO_0000115>
+        <obo:IAO_0000115>Providing healthcare treatment that involves advising, encouraging or physically supporting, a person to perform movements that remediate this person’s bodily impairments or promote mobility, function or quality of life.</obo:IAO_0000115>
         <rdfs:label>providing physical therapy</rdfs:label>
     </owl:Class>
     
@@ -1045,7 +1076,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050364">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050362"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Providing healthcare treatment that uses communication or recommended tasks to assess and improve a persons adaptive mental or behavioural functioning.</obo:IAO_0000115>
+        <obo:IAO_0000115>Providing healthcare treatment that uses communication or recommended tasks to assess and improve a person’s adaptive mental or behavioural functioning.</obo:IAO_0000115>
         <rdfs:label>providing psychological treatment</rdfs:label>
     </owl:Class>
     
@@ -1225,7 +1256,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050393">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050415"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Self-injecting consumption that involves administering liquids into ones veins.</obo:IAO_0000115>
+        <obo:IAO_0000115>Self-injecting consumption that involves administering liquids into one’s veins.</obo:IAO_0000115>
         <rdfs:label>intravenous self-injecting</rdfs:label>
     </owl:Class>
     
@@ -1285,7 +1316,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000115>A harmful behaviour that involves interacting with another animal  and thereby causing harm to its health, wellbeing or social functioning.</obo:IAO_0000115>
         <rdfs:comment>The term &apos;animal&apos; in the definition includes humans and other animals.
 
-Harmful behaviour to others will involve a direct interaction between the person performing the behaviour and the person or animal that is negatively affected.</rdfs:comment>
+‘Harmful behaviour to others’ will involve a direct interaction between the person performing the behaviour and the person or animal that is negatively affected.</rdfs:comment>
         <rdfs:label>harmful behaviour to others</rdfs:label>
     </owl:Class>
     
@@ -1297,7 +1328,7 @@ Harmful behaviour to others will involve a direct interaction between the person
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050437"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health-related behaviour that involves interacting with a healthcare provider in order to assess, monitor, improve or maintain an aspect of one&apos;s health.</obo:IAO_0000115>
-        <rdfs:comment>A healthcare provider can be a person or organisation</rdfs:comment>
+        <rdfs:comment>A ‘healthcare provider’ can be a person or organisation</rdfs:comment>
         <rdfs:label>utilising healthcare</rdfs:label>
     </owl:Class>
     
@@ -1320,8 +1351,8 @@ Harmful behaviour to others will involve a direct interaction between the person
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050399"/>
         <obo:IAO_0000112>Blood test to check for anaemia, psychological testing</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Utilising healthcare that involves participating in a healthcare procedure to assess or monitor an aspect of ones health or wellbeing.</obo:IAO_0000115>
-        <rdfs:comment>Healthcare procedure is defined as a healthcare intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.</rdfs:comment>
+        <obo:IAO_0000115>Utilising healthcare that involves participating in a healthcare procedure to assess or monitor an aspect of one’s health or wellbeing.</obo:IAO_0000115>
+        <rdfs:comment>Healthcare procedure is defined as ‘a healthcare intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.’</rdfs:comment>
         <rdfs:label>participating in healthcare testing</rdfs:label>
     </owl:Class>
     
@@ -1345,7 +1376,7 @@ Harmful behaviour to others will involve a direct interaction between the person
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050399"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Utilising healthcare that involves interacting with a healthcare provider to receive a vaccination to prevent or lower the risk of a disease.</obo:IAO_0000115>
-        <rdfs:comment>Vaccination is defined as a medical intervention that involves in adding vaccine into a host  in vivo with the intent to invoke an adaptive immune response.</rdfs:comment>
+        <rdfs:comment>Vaccination is defined as “a medical intervention that involves in adding vaccine into a host (e.g., human, mouse) in vivo with the intent to invoke an adaptive immune response.” (http://purl.obolibrary.org/obo/VO_0000002)</rdfs:comment>
         <rdfs:label>undergoing vaccination</rdfs:label>
     </owl:Class>
     
@@ -1368,7 +1399,7 @@ Harmful behaviour to others will involve a direct interaction between the person
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050405">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050404"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Participating in healthcare treatment that involves advice, encouragement, or physical support to perform movements that remediate ones bodily impairments or promote mobility, function or quality of life.</obo:IAO_0000115>
+        <obo:IAO_0000115>Participating in healthcare treatment that involves advice, encouragement, or physical support to perform movements that remediate one’s bodily impairments or promote mobility, function or quality of life.</obo:IAO_0000115>
         <rdfs:label>participating in physical therapy</rdfs:label>
     </owl:Class>
     
@@ -1423,7 +1454,7 @@ Harmful behaviour to others will involve a direct interaction between the person
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050410">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050437"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A health-related behaviour that uses a method to monitor and record an indicator of ones health or wellbeing.</obo:IAO_0000115>
+        <obo:IAO_0000115>A health-related behaviour that uses a method to monitor and record an indicator of one’s health or wellbeing.</obo:IAO_0000115>
         <rdfs:label>self-monitoring an aspect of health</rdfs:label>
     </owl:Class>
     
@@ -1435,7 +1466,7 @@ Harmful behaviour to others will involve a direct interaction between the person
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036024"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A personal bodily care behaviour that involves protecting one&apos;s skin or eyes from the damaging effects of the sun.</obo:IAO_0000115>
-        <rdfs:comment>Sun protective behaviour is defined in terms of its goal  and can include very different behaviours, e.g., applying sunscreen and staying in the shade.</rdfs:comment>
+        <rdfs:comment>‘Sun protective behaviour’ is defined in terms of its goal (to protect oneself from the damaging effects of the sun) and can include very different behaviours, e.g., applying sunscreen and staying in the shade.</rdfs:comment>
         <rdfs:label>sun protective behaviour</rdfs:label>
     </owl:Class>
     
@@ -1448,7 +1479,7 @@ Harmful behaviour to others will involve a direct interaction between the person
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A consumption behaviour that involves ingesting a medicine to treat or relieve symptoms of a health condition or maintain an aspect of health or wellbeing.</obo:IAO_0000115>
         <obo:IAO_0000118>pharmacological consumption</obo:IAO_0000118>
-        <rdfs:comment>Medicine is defined as type of drug, i.e., any substance which when absorbed into a living organism may modify one or more of its functions.</rdfs:comment>
+        <rdfs:comment>Medicine is defined as type of drug, i.e., ‘any substance which when absorbed into a living organism may modify one or more of its functions.’ (http://purl.obolibrary.org/obo/CHEBI_23888)</rdfs:comment>
         <rdfs:label>medication-taking</rdfs:label>
     </owl:Class>
     
@@ -1459,7 +1490,7 @@ Harmful behaviour to others will involve a direct interaction between the person
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050413">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050437"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A health-related behaviour that involves assessing, monitoring, improving or maintaining an aspect of another persons health.</obo:IAO_0000115>
+        <obo:IAO_0000115>A health-related behaviour that involves assessing, monitoring, improving or maintaining an aspect of another person’s health.</obo:IAO_0000115>
         <rdfs:label>providing healthcare</rdfs:label>
     </owl:Class>
     
@@ -1471,7 +1502,7 @@ Harmful behaviour to others will involve a direct interaction between the person
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050413"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Providing healthcare that involves assessing symptoms and signs in order to detect the nature of a health condition.</obo:IAO_0000115>
-        <rdfs:comment>Symptoms are experienced or felt by the individual , while signs are observed or detected by the healthcare professional . There can be overlap between symptoms and signs, as some symptoms can be observed or detected by a healthcare professional.</rdfs:comment>
+        <rdfs:comment>Symptoms are experienced or felt by the individual (e.g., pain or a rash), while signs are observed or detected by the healthcare professional (e.g., low blood sugar). There can be overlap between symptoms and signs, as some symptoms can be observed or detected by a healthcare professional.</rdfs:comment>
         <rdfs:label>diagnostic healthcare behaviour</rdfs:label>
     </owl:Class>
     
@@ -1482,8 +1513,8 @@ Harmful behaviour to others will involve a direct interaction between the person
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050415">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036061"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A consumption behaviour that involves administering a liquid into ones body with a needle and a syringe.</obo:IAO_0000115>
-        <rdfs:comment>In the definition, a needle and a springe include both a standard needle and syringe but also an autoinjector.</rdfs:comment>
+        <obo:IAO_0000115>A consumption behaviour that involves administering a liquid into one’s body with a needle and a syringe.</obo:IAO_0000115>
+        <rdfs:comment>In the definition, ‘a needle and a springe’ include both a standard needle and syringe but also an autoinjector.</rdfs:comment>
         <rdfs:label>self-injecting consumption</rdfs:label>
     </owl:Class>
     
@@ -1506,7 +1537,7 @@ Harmful behaviour to others will involve a direct interaction between the person
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050417">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036061"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A consumption behaviour that involves putting a material into ones mouth and swallowing this material.</obo:IAO_0000115>
+        <obo:IAO_0000115>A consumption behaviour that involves putting a material into one’s mouth and swallowing this material.</obo:IAO_0000115>
         <rdfs:label>oral consumption</rdfs:label>
     </owl:Class>
     
@@ -1702,7 +1733,7 @@ Harmful behaviour to others will involve a direct interaction between the person
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050435">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <obo:IAO_0000112>physical performance behaviour has_behavioural_attribute behaviour attribute</obo:IAO_0000112>
+        <obo:IAO_0000112>physical performance behaviour has_behavioural_attribute behavioural attribute</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process attribute of an individual human behaviour.</obo:IAO_0000115>
         <rdfs:label>behavioural attribute</rdfs:label>
@@ -1726,7 +1757,7 @@ Harmful behaviour to others will involve a direct interaction between the person
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050438">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour relates to vital bodily functions.</obo:IAO_0000115>
+        <obo:IAO_0000115>An individual human behaviour related to vital bodily functions.</obo:IAO_0000115>
         <rdfs:label>life function-related behaviour</rdfs:label>
     </owl:Class>
     
@@ -1792,8 +1823,32 @@ Harmful behaviour to others will involve a direct interaction between the person
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050444">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A behaviour attribute in which the behaviour is a response to reflective motivation or thinking.</obo:IAO_0000115>
+        <obo:IAO_0000115>A behavioural attribute that is to what extent the behaviour is a response to reflective motivation or thinking.</obo:IAO_0000115>
+        <rdfs:comment>This class is a dimension and involves any conscious thought processes that lead to a behaviour in some way, even if those processes are themselves influenced by emotional processes and biases.</rdfs:comment>
         <rdfs:label>reflectiveness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050447 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050447">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural attribute that is the extent to which the behaviour is caused by a behavioural intention.</obo:IAO_0000115>
+        <rdfs:comment>This class is a dimension and is differentiated from reflectiveness because a behaviour may be fully intentional but involve little reflective thought, e.g., when driving carelessly. In this class the intention relates to the behaviour itself. If a person intends to do one thing but accidentally does something else it does not count as intentional in this class, e.g., if someone intends to injure someone else and ends up killing them, that would not count as intentionally killing them.</rdfs:comment>
+        <rdfs:label>intentionality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050448 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050448">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050267"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A uniform process aggregate whose members are individual behaviour patterns of a population.</obo:IAO_0000115>
+        <rdfs:label>population behaviour pattern</rdfs:label>
     </owl:Class>
     
 
@@ -1803,7 +1858,7 @@ Harmful behaviour to others will involve a direct interaction between the person
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition that exists in virtue of the bearers physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution  or through intentional design , in order to realize processes of a certain sort.</obo:IAO_0000115>
+        <obo:IAO_0000115>A disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])</obo:IAO_0000115>
         <rdfs:label>function</rdfs:label>
     </owl:Class>
 </rdf:RDF>
