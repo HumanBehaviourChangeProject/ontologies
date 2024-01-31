@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
@@ -62,7 +63,10 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007002"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal setting BCT that sets a goal for the behaviour to be achieved.</obo:IAO_0000115>
-        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving. The goal could be set for the self or another person.</rdfs:comment>
+        <rdfs:comment> if goal is a behavioural outcome, code &apos;set outcome goal BCT&apos;</rdfs:comment>
+        <rdfs:comment> if goal unspecified code &apos;goal setting BCT&apos;</rdfs:comment>
+        <rdfs:comment> if the goal defines a specific context, frequency, duration or intensity for the behaviour, also code &apos;action planning BCT&apos;.</rdfs:comment>
+        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving. The goal could be set for the self or another person. Only code if there is sufficient evidence that the goal is set as part of intervention</rdfs:comment>
         <rdfs:label>set behaviour goal BCT</rdfs:label>
     </owl:Class>
     
@@ -86,7 +90,9 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007002"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal setting BCT in which the goal is a positive outcome of performing the behaviour.</obo:IAO_0000115>
-        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving. The goal could be set for the self or another person.</rdfs:comment>
+        <rdfs:comment> if goal is a behaviour, code &apos;set behaviour goal BCT&apos;</rdfs:comment>
+        <rdfs:comment> if goal unspecified code &apos;goal setting BCT&apos;.</rdfs:comment>
+        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving. The goal could be set for the self or another person. Only code guidelines if set as a goal in an intervention context</rdfs:comment>
         <rdfs:label>set outcome goal BCT</rdfs:label>
     </owl:Class>
     
@@ -98,6 +104,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007002"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal setting BCT that involves the intervention source agreeing with the person on a goal which is a positive outcome of performing the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>objective setting</obo:IAO_0000118>
         <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving.</rdfs:comment>
         <rdfs:label>agree outcome goal BCT</rdfs:label>
     </owl:Class>
@@ -110,7 +117,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT in which the person analyses factors influencing the behaviour and generates, selects, or reviews strategies to increase facilitators and overcome barriers.</obo:IAO_0000115>
-        <obo:IAO_0000118>relapse prevention, coping planning</obo:IAO_0000118>
+        <obo:IAO_0000118>relapse prevention, coping planning, problem solving</obo:IAO_0000118>
+        <rdfs:comment>Barrier identification without strategies to increase facilitators is not sufficient.</rdfs:comment>
         <rdfs:label>goal strategising BCT</rdfs:label>
     </owl:Class>
     
@@ -122,6 +130,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT that involves making a detailed plan for the performance of the behaviour, which must include at least one of context, frequency, duration or intensity.</obo:IAO_0000115>
+        <rdfs:comment>Evidence of action planning does not necessarily imply goal setting, only code latter if sufficient evidence.</rdfs:comment>
         <rdfs:label>action planning BCT</rdfs:label>
     </owl:Class>
     
@@ -133,7 +142,10 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT that reviews a behavioural goal and considers modifying the goal in light of progress toward the goal.</obo:IAO_0000115>
-        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving.</rdfs:comment>
+        <rdfs:comment> if discrepancy created consider also &apos;attend to discrepancy between current behaviour and goal BCT&apos;</rdfs:comment>
+        <rdfs:comment> if goal unspecified, code &apos;review outcome goal BCT&apos;</rdfs:comment>
+        <rdfs:comment> if modifying the plan to achieve the goal consider also &apos;review behaviour goal plan BCT&apos;.</rdfs:comment>
+        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving. If goal specified in terms of behaviour, code this class</rdfs:comment>
         <rdfs:label>review behaviour goal BCT</rdfs:label>
     </owl:Class>
     
@@ -145,6 +157,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT that draws attention to discrepancies between a person&apos;s current behaviour and the person&apos;s outcome goal, behavioural goal or action plan.</obo:IAO_0000115>
+        <rdfs:comment> if feedback provided, also code &apos;provide feedback BCT&apos; or one of its child classes.</rdfs:comment>
+        <rdfs:comment>If discomfort is created only code &apos;draw attention to incompatible beliefs BCT&apos; and not this class. If goals are modified, also code &apos;review behaviour goal BCT&apos; and/or &apos;review outcome goal BCT&apos;</rdfs:comment>
         <rdfs:label>attend to discrepancy between current behaviour and goal BCT</rdfs:label>
     </owl:Class>
     
@@ -156,7 +170,9 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT that reviews an outcome goal and considers modifying the goal in light of achievement.</obo:IAO_0000115>
-        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving.</rdfs:comment>
+        <rdfs:comment> if discrepancy created consider also &apos;attend to discrepancy between current behaviour and goal BCT&apos;.</rdfs:comment>
+        <rdfs:comment> if goal unspecified, code this class</rdfs:comment>
+        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving. If goal specified in terms of behaviour, code &apos;review behaviour goal BCT&apos;</rdfs:comment>
         <rdfs:label>review outcome goal BCT</rdfs:label>
     </owl:Class>
     
@@ -169,7 +185,7 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT that creates a written specification of the behaviour to be performed, agreed on by the person, and witnessed by another person.</obo:IAO_0000115>
         <obo:IAO_0000118>behavioural contract</obo:IAO_0000118>
-        <rdfs:comment>the person witnessing the agreement can be the intervention source or another person who is present at the time</rdfs:comment>
+        <rdfs:comment>The person witnessing the agreement can be the intervention source or another person who is present at the time. Also code &apos;set behaviour goal BCT&apos;.</rdfs:comment>
         <rdfs:label>create behavioural contract BCT</rdfs:label>
     </owl:Class>
     
@@ -182,6 +198,7 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT that asks the person to affirm or reaffirm statements indicating commitment to change the behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>commitment</obo:IAO_0000118>
+        <rdfs:comment>If defined in terms of the behaviour to be achieved also code &apos;set behaviour goal BCT&apos;.</rdfs:comment>
         <rdfs:label>affirm commitment BCT</rdfs:label>
     </owl:Class>
     
@@ -215,9 +232,11 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007018">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007017"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A monitoring BCT that observes current performance of the behaviour with the persons knowledge but without providing feedback about their behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118>observation</obo:IAO_0000118>
-        <rdfs:comment>The monitoring agent can be a human or a technical device.</rdfs:comment>
+        <obo:IAO_0000115>A monitoring BCT that observes current performance of the behaviour with the person’s knowledge but without providing feedback about their behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>observation, performance monitoring</obo:IAO_0000118>
+        <rdfs:comment> if feedback given, code only &apos;provide feedback on behaviour BCT&apos; and not this class</rdfs:comment>
+        <rdfs:comment> if observing outcomes code &apos;observe outcome of behaviour without feedback BCT&apos;.</rdfs:comment>
+        <rdfs:comment>The monitoring agent can be a human or a technical device. If observation is part of a data collection procedure rather than a strategy aimed at changing behaviour, do not code</rdfs:comment>
         <rdfs:label>observe behaviour without feedback BCT</rdfs:label>
     </owl:Class>
     
@@ -228,9 +247,11 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007019">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007017"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A monitoring BCT that records current performance of the behaviour with the persons knowledge but without providing feedback about their behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A monitoring BCT that records current performance of the behaviour with the person’s knowledge but without providing feedback about their behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>monitoring</obo:IAO_0000118>
-        <rdfs:comment>The monitoring agent can be a human or a technical device.</rdfs:comment>
+        <rdfs:comment> if feedback given, code only &apos;provide feedback on behaviour BCT&apos; and not this class</rdfs:comment>
+        <rdfs:comment> if recording outcomes code &apos;record outcome of behaviour without feedback BCT&apos;.</rdfs:comment>
+        <rdfs:comment>The monitoring agent can be a human or a technical device. If recording is part of a data collection procedure rather than a strategy aimed at changing behaviour, do not code</rdfs:comment>
         <rdfs:label>record behaviour without feedback BCT</rdfs:label>
     </owl:Class>
     
@@ -241,8 +262,10 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007020">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007017"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A monitoring BCT that observes an outcome of performing the behaviour with the persons knowledge but without providing feedback about the outcome.</obo:IAO_0000115>
-        <rdfs:comment>The monitoring agent can be a human or a technical device.</rdfs:comment>
+        <obo:IAO_0000115>A monitoring BCT that observes an outcome of performing the behaviour with the person’s knowledge but without providing feedback about the outcome.</obo:IAO_0000115>
+        <rdfs:comment> if feedback given, code only &apos;provide feedback on outcome of behaviour BCT&apos; and not this class</rdfs:comment>
+        <rdfs:comment> if observing behaviour code &apos;observe behaviour without feedback BCT&apos;.</rdfs:comment>
+        <rdfs:comment>The monitoring agent can be a human or a technical device. If recording is part of a data collection procedure rather than a strategy aimed at changing behaviour, do not code</rdfs:comment>
         <rdfs:label>observe outcome of behaviour without feedback BCT</rdfs:label>
     </owl:Class>
     
@@ -254,7 +277,9 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007017"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A monitoring BCT that records an outcome of performing the behaviour with the person&apos;s knowledge but without providing feedback about the outcome.</obo:IAO_0000115>
-        <rdfs:comment>The monitoring agent can be a human or a technical device.</rdfs:comment>
+        <rdfs:comment> if feedback given, code only &apos;provide feedback on outcome of behaviour BCT&apos; and not this class</rdfs:comment>
+        <rdfs:comment> if recording behaviour code &apos;record behaviour without feedback BCT&apos;.</rdfs:comment>
+        <rdfs:comment>The monitoring agent can be a human or a technical device. If recording is part of a data collection procedure rather than a strategy aimed at changing behaviour, do not code</rdfs:comment>
         <rdfs:label>record outcome of behaviour without feedback BCT</rdfs:label>
     </owl:Class>
     
@@ -266,8 +291,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007017"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A monitoring BCT in which feedback about the behaviour is provided.</obo:IAO_0000115>
-        <obo:IAO_0000118>feedback</obo:IAO_0000118>
-        <rdfs:comment>Feedback is provision of data about some aspect of behaviour without an evaluation . Where feedback includes reward or punishment, see behavioural consequence BCT, outcome consequence BCT and their child classes.</rdfs:comment>
+        <obo:IAO_0000118>feedback, behavioural feedback</obo:IAO_0000118>
+        <rdfs:comment>Feedback is provision of data about some aspect of behaviour without an evaluation (positive or negative). Where feedback includes reward or punishment, see behavioural consequence BCT, outcome consequence BCT and their child classes. If there is no clear evidence that feedback was given, code &apos;observe behaviour without feedback BCT&apos; or &apos;record behaviour without feedback BCT&apos;.</rdfs:comment>
         <rdfs:label>provide feedback BCT</rdfs:label>
     </owl:Class>
     
@@ -291,6 +316,8 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A monitoring BCT in which the person uses a method to monitor and record their behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>self-monitoring</obo:IAO_0000118>
+        <rdfs:comment> if self-monitoring of outcome of behaviour, code &apos;self-monitor outcome of behaviour BCT&apos;.</rdfs:comment>
+        <rdfs:comment>If monitoring is part of a data collection procedure rather than a strategy aimed at changing behaviour, do not code</rdfs:comment>
         <rdfs:label>self-monitor behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -302,6 +329,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007017"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A monitoring BCT in which the person uses a method to monitor and record an outcome of their behaviour.</obo:IAO_0000115>
+        <rdfs:comment> if self-monitoring behaviour, code &apos;self-monitor behaviour BCT&apos;.</rdfs:comment>
+        <rdfs:comment>If monitoring is part of a data collection procedure rather than a strategy aimed at changing behaviour, do not code</rdfs:comment>
         <rdfs:label>self-monitor outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -337,6 +366,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behaviour change technique that involves taking steps to secure or deliver the support or aid of another person.</obo:IAO_0000115>
+        <rdfs:comment>Attending a group class and/or mention of ‘follow-up’ does not necessarily apply this BCT, support must be explicitly mentioned.</rdfs:comment>
         <rdfs:label>social support BCT</rdfs:label>
     </owl:Class>
     
@@ -348,7 +378,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007028"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A social support BCT that involves advising the person to seek support from another person.</obo:IAO_0000115>
-        <rdfs:comment>Where an &quot;advise to seek support BCT&quot; is used together with an &quot;arrange support BCT,&quot; this constitutes connecting to social support as used in social prescribing</rdfs:comment>
+        <rdfs:comment>Where an &quot;advise to seek support BCT&quot; is used together with an &quot;arrange support BCT,&quot; this constitutes connecting to social support as used in social prescribing. Attending a group class and/or mention of ‘follow-up’ does not necessarily apply this BCT, support must be explicitly mentioned</rdfs:comment>
         <rdfs:label>advise to seek support BCT</rdfs:label>
     </owl:Class>
     
@@ -404,7 +434,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007028"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A social support BCT that organises support from another for the person.</obo:IAO_0000115>
-        <rdfs:comment>Where an &quot;arrange support BCT&quot; is used together with an &quot;advise to seek support BCT&quot;, this constitutes &quot;connecting to support&quot; as used in social prescribing</rdfs:comment>
+        <rdfs:comment>Where an &quot;arrange support BCT&quot; is used together with an &quot;advise to seek support BCT&quot;, this constitutes &quot;connecting to support&quot; as used in social prescribing. Attending a group class and/or mention of ‘follow-up’ does not necessarily apply this BCT, support must be explicitly mentioned</rdfs:comment>
         <rdfs:label>arrange support BCT</rdfs:label>
     </owl:Class>
     
@@ -461,6 +491,7 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A social support BCT that directly provides support to the person.</obo:IAO_0000115>
         <obo:IAO_0000118>social support</obo:IAO_0000118>
+        <rdfs:comment>Attending a group class and/or mention of ‘follow-up’ does not necessarily apply this BCT, support must be explicitly mentioned</rdfs:comment>
         <rdfs:label>deliver support BCT</rdfs:label>
     </owl:Class>
     
@@ -542,7 +573,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007302"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A suggest different perspective on behaviour BCT that involves providing factual information to the person regarding triggers or influences that precede the initiation of the behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118>trigger recognition</obo:IAO_0000118>
+        <obo:IAO_0000118>trigger recognition, understanding of antecedents</obo:IAO_0000118>
         <rdfs:label>inform about antecedents BCT</rdfs:label>
     </owl:Class>
     
@@ -579,6 +610,8 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A guide how to perform behaviour BCT that provides an observable sample of the performance of the behaviour for the person to aspire to or imitate.</obo:IAO_0000115>
         <obo:IAO_0000118>modelling, observational learning</obo:IAO_0000118>
+        <rdfs:comment> If provided with instructions on how to perform, also code &apos;instruct how to perform behaviour BCT&apos;.</rdfs:comment>
+        <rdfs:comment>If advised to practice, also code &apos;practise behaviour BCT&apos;</rdfs:comment>
         <rdfs:label>demonstrate the behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -615,6 +648,7 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A guide how to perform behaviour BCT that involves telling the person how to perform the behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>skills training, instruction</obo:IAO_0000118>
+        <rdfs:comment>When the person attends classes such as exercise or cookery, code &apos;instruct how to perform behaviour BCT&apos;, &apos;practise behaviour BCT&apos;, and &apos;demonstrate the behaviour BCT&apos;.</rdfs:comment>
         <rdfs:label>instruct how to perform a behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -659,6 +693,9 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An increase awareness of consequences BCT that provides information about the physical or mental health consequences of performing or not performing the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>consequences for well-being, health effects, wellness outcomes</obo:IAO_0000118>
+        <rdfs:comment> emphasising importance of consequences is not sufficient.</rdfs:comment>
+        <rdfs:comment>Consequences can be for any target, not just the recipient(s) of the intervention</rdfs:comment>
         <rdfs:label>inform about health consequences BCT</rdfs:label>
     </owl:Class>
     
@@ -670,6 +707,9 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An increase awareness of consequences BCT that provides information about the social consequences of performing or not performing the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>social effects, community repercussions</obo:IAO_0000118>
+        <rdfs:comment> emphasising importance of consequences is not sufficient.</rdfs:comment>
+        <rdfs:comment>Consequences can be for any target, not just the recipient(s) of the intervention</rdfs:comment>
         <rdfs:label>inform about social consequences BCT</rdfs:label>
     </owl:Class>
     
@@ -681,6 +721,9 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An increase awareness of consequences BCT that provides information about the emotional consequences of performing or not performing the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>affective outcomes, emotional effects, consequences on emotions</obo:IAO_0000118>
+        <rdfs:comment> emphasising importance of consequences is not sufficient. Consequences can be related to emotional health disorders (e.g. depression, anxiety) and/or states of mind (e.g. low mood, stress).</rdfs:comment>
+        <rdfs:comment>Consequences can be for any target, not just the recipient(s) of the intervention</rdfs:comment>
         <rdfs:label>inform about emotional consequences BCT</rdfs:label>
     </owl:Class>
     
@@ -703,6 +746,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007065"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An inform about emotional consequences BCT that focuses on expectations of remorse after performing or not performing the behaviour.</obo:IAO_0000115>
+        <rdfs:comment>If suggests adoption of a perspective or new perspective in order to change cognitions also code &apos;suggest different perspective on behaviour BCT&apos; or one of its child classes</rdfs:comment>
         <rdfs:label>induce anticipated regret BCT</rdfs:label>
     </owl:Class>
     
@@ -714,6 +758,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An awareness of consequences BCT that changes behaviour by the source emphasising the consequences of performing a behaviour to the person in a way that makes them memorable.</obo:IAO_0000115>
+        <obo:IAO_0000118>significance of outcomes, importance of consequences, relevance of results</obo:IAO_0000118>
         <rdfs:comment>Consider also coding one of &quot;inform about health consequences&quot;, &quot;inform about emotional consequences&quot;,  &quot;inform about social consequences&quot;, or their child classes</rdfs:comment>
         <rdfs:label>increase salience of consequences BCT</rdfs:label>
     </owl:Class>
@@ -726,7 +771,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An increase awareness of consequences BCT that advises identification and comparison of the positive and negative consequences of performing or not performing the behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118>decisional balance, pros and cons</obo:IAO_0000118>
+        <obo:IAO_0000118>decisional balance, weighing pros and cons</obo:IAO_0000118>
         <rdfs:label>consider pros and cons BCT</rdfs:label>
     </owl:Class>
     
@@ -738,6 +783,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An increase awareness of consequences BCT that guides the person to imagine and compare the consequences of performing and not performing the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>imagining future results</obo:IAO_0000118>
         <rdfs:label>prompt comparative imagining of future outcomes BCT</rdfs:label>
     </owl:Class>
     
@@ -761,6 +807,7 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An awareness of other people&apos;s thoughts, feelings and actions BCT that draws attention to other people&apos;s behaviour and compares it with the person&apos;s own behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>social comparison</obo:IAO_0000118>
+        <rdfs:comment>Being in a group setting does not necessarily mean that social comparison is actually taking place</rdfs:comment>
         <rdfs:label>prompt social comparison BCT</rdfs:label>
     </owl:Class>
     
@@ -783,6 +830,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007072"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An awareness of other people&apos;s thoughts, feelings and actions BCT that presents information from a credible person or organisation to influence the behaviour.</obo:IAO_0000115>
+        <rdfs:comment>Code this BCT if influence generally agreed on as credible e.g., health professionals, celebrities or words used to indicate expertise or leader in field and if the communication has the aim of persuading</rdfs:comment>
         <rdfs:label>present information from credible influence BCT</rdfs:label>
     </owl:Class>
     
@@ -842,6 +890,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007079"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An alter external stimulus BCT that involves introducing an external stimulus to facilitate the behaviour for which an intention has previously been formed.</obo:IAO_0000115>
+        <obo:IAO_0000118>prompts</obo:IAO_0000118>
+        <rdfs:comment>When a stimulus is linked to a specific action in an if-then plan including one or more of frequency, duration or intensity also code &apos;action planning BCT&apos;</rdfs:comment>
         <rdfs:label>prompt intended action BCT</rdfs:label>
     </owl:Class>
     
@@ -853,6 +903,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007079"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An alter external stimulus BCT that introduces external information that is already associated with the behaviour in order to elicit that behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>cues</obo:IAO_0000118>
+        <rdfs:comment>When a stimulus is linked to a specific action in an if-then plan including one or more of frequency, duration or intensity also code &apos;action planning BCT&apos;</rdfs:comment>
         <rdfs:label>cue BCT</rdfs:label>
     </owl:Class>
     
@@ -923,7 +975,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behaviour change technique that involves repeated pairing of a stimulus with another stimulus or with a behavioural outcome.</obo:IAO_0000115>
-        <obo:IAO_0000118>Classical/Pavlovian conditioning</obo:IAO_0000118>
+        <obo:IAO_0000118>Classical conditioning, Pavlovian conditioning</obo:IAO_0000118>
+        <rdfs:comment>When this BCT involves reward or punishment, consider &apos;behavioural consequence BCT&apos; and its child classes</rdfs:comment>
         <rdfs:label>associative learning BCT</rdfs:label>
     </owl:Class>
     
@@ -935,7 +988,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007090"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An associative learning BCT that involves repeated pairing of a neutral stimulus with a stimulus that already elicits the behaviour until the neutral stimulus elicits the behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118>Classical conditioning</obo:IAO_0000118>
+        <obo:IAO_0000118>Classical conditioning, Pavlovian conditioning</obo:IAO_0000118>
         <rdfs:label>associative learning to elicit behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -947,7 +1000,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007090"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An associative learning BCT that stops the presentation of a reward for the behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118>extinction</obo:IAO_0000118>
+        <obo:IAO_0000118>extinction, elimination of reinforcement</obo:IAO_0000118>
         <rdfs:label>associative learning to extinguish behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -959,6 +1012,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007168"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An advise specific behaviour BCT that advises repetition of the behaviour in a way that has the function of increasing the skill in performing the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>skill practise, rehearsal</obo:IAO_0000118>
+        <rdfs:comment>If aiming to associate performance with the context, also code &apos;context-specific repetition of behaviour BCT&apos;</rdfs:comment>
         <rdfs:label>practise behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -970,6 +1025,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007168"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An advise specific behaviour BCT that advises the person to replace the unwanted behaviour with another behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>behaviour replacement, alternative response</obo:IAO_0000118>
+        <rdfs:comment>If this occurs regularly, also code &apos;context-specific repetition of alternative behaviour BCT&apos;</rdfs:comment>
         <rdfs:label>substitute behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -981,8 +1038,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007168"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An advise specific behaviour BCT that advises the person to repeat the behaviour in the same context.</obo:IAO_0000115>
-        <obo:IAO_0000118>habit formation</obo:IAO_0000118>
-        <rdfs:comment>For the purposes of this BCT, preceding behaviour can be considered part of the context</rdfs:comment>
+        <obo:IAO_0000118>habit formation, habit development</obo:IAO_0000118>
+        <rdfs:comment>For the purposes of this BCT, preceding behaviour can be considered part of the context. Also code &apos;practise behaviour BCT&apos;</rdfs:comment>
         <rdfs:label>context-specific repetition of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -994,8 +1051,8 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007168"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An advise specific behaviour BCT that advises the person to repeat an alternative behaviour consistently in a context that previously elicited an unwanted behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118>habit reversal</obo:IAO_0000118>
-        <rdfs:comment>For the purposes of this BCT, preceding behaviour can be considered part of the context</rdfs:comment>
+        <obo:IAO_0000118>habit reversal, breaking a habit, habit elimination</obo:IAO_0000118>
+        <rdfs:comment>For the purposes of this BCT, preceding behaviour can be considered part of the context. Also code &apos;substitute behaviour BCT&apos;</rdfs:comment>
         <rdfs:label>context-specific repetition of alternative behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1007,7 +1064,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007168"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An advise specific behaviour BCT that advises the person to repeat a wanted behaviour in an exaggerated way following performance of an unwanted behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118>overcorrection</obo:IAO_0000118>
+        <obo:IAO_0000118>overcorrection, remedial overcompensation</obo:IAO_0000118>
         <rdfs:label>overcorrect unwanted behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1019,6 +1076,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007168"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An advise specific behaviour BCT that advises the person to perform the behaviour which is already performed in a particular context, in a similar context.</obo:IAO_0000115>
+        <obo:IAO_0000118>universalisation of behaviour</obo:IAO_0000118>
         <rdfs:label>generalise behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1100,7 +1158,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT that involves the person communicating their intention to achieve a goal.</obo:IAO_0000115>
-        <rdfs:comment>The goal being made public can be in terms of behaviour  or an outcome of behaviour</rdfs:comment>
+        <rdfs:comment>The goal being made public can be in terms of behaviour (e.g. to walk for 30 minutes a day) or an outcome of behaviour (e.g. to lose 5kg of body weight)</rdfs:comment>
         <rdfs:label>make a goal public BCT</rdfs:label>
     </owl:Class>
     
@@ -1233,6 +1291,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behaviour change technique promoting medicines or other drugs.</obo:IAO_0000115>
+        <rdfs:comment>If pharmacological support to reduce negative emotions (i.e. anxiety) then also code &apos;advise how to reduce negative emotions BCT&apos;</rdfs:comment>
         <rdfs:label>promote pharmacological support BCT</rdfs:label>
     </owl:Class>
     
@@ -1289,9 +1348,9 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
         <obo:IAO_0000112>Example 1: Changing meal portion size to reduce the amount people eat at a sitting.
 Example 2: Removing unhealthy snacks from the till area in supermarkets to reduce impulse buying of these items.
-Example 3: Organisation wide use of red time notices that people can put on their door or desk to signal that they are not to be interrupted in order to increase productivity.</obo:IAO_0000112>
+Example 3: Organisation wide use of ‘red time’ notices that people can put on their door or desk to signal that they are not to be interrupted in order to increase productivity.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A restructure the physical environment BCT that changes the persons directly experienced environment at the time the behaviour is, or would have been, performed.</obo:IAO_0000115>
+        <obo:IAO_0000115>A restructure the physical environment BCT that changes the person’s directly experienced environment at the time the behaviour is, or would have been, performed.</obo:IAO_0000115>
         <rdfs:label>directly restructure the physical environment BCT</rdfs:label>
     </owl:Class>
     
@@ -1316,7 +1375,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007079"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An alter external stimulus BCT that reduces an external stimulus that signals the behaviour.</obo:IAO_0000115>
-        <rdfs:comment>The reduction in exposure can be gradual, as in the technique of &quot;fading&quot; or not so gradual. This BCT is concerned with reducing the person&apos;s exposure to the cue, while the cue frequency may remain unchanged. In contrast, &quot;reduce cue frequency BCT&quot; is concerned with a reduction in the number of times with which the cue is presented.</rdfs:comment>
+        <rdfs:comment>The reduction in exposure can be gradual, as in the technique of &quot;fading&quot; or not so gradual. This BCT is concerned with reducing the person&apos;s exposure to the cue, while the cue frequency may remain unchanged. In contrast, &quot;reduce cue frequency BCT&quot; is concerned with a reduction in the number of times with which the cue is presented. This BCT may also involve &apos;restructure the physical environment BCT&apos; and/or &apos;restructure the social environment BCT&apos;.</rdfs:comment>
         <rdfs:label>reduce exposure to cues for the behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1328,6 +1387,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007185"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An manage mental processes BCT that advises the person to find an alternative focus for attention in order to avoid internal or external states or events associated with an unwanted behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>attention shift</obo:IAO_0000118>
         <rdfs:label>advise distraction BCT</rdfs:label>
     </owl:Class>
     
@@ -1339,6 +1399,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A restructure the physical environment BCT that organises an alternative focus for attention for the person to avoid internal or external states or events associated with an unwanted behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>attention shift</obo:IAO_0000118>
         <rdfs:label>provide distraction BCT</rdfs:label>
     </owl:Class>
     
@@ -1350,6 +1411,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A restructure the physical environment BCT that adds objects to the person&apos;s physical surroundings.</obo:IAO_0000115>
+        <rdfs:comment>Provision of information (e.g. written, verbal, visual) in a booklet or leaflet is insufficient. If this is accompanied by social support, also code &apos;social support BCT&apos; or one of its child classes. If the environment is changed beyond the addition of objects, also code &apos;directly restructure the physical environment BCT&apos; and/or &apos;indirectly restructure the physical environment BCT&apos;.</rdfs:comment>
         <rdfs:label>add objects to the environment BCT</rdfs:label>
     </owl:Class>
     
@@ -1361,6 +1423,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behaviour change technique that prompts the person to focus on their mental representation of themself.</obo:IAO_0000115>
+        <obo:IAO_0000118>self-perception</obo:IAO_0000118>
         <rdfs:label>prompt focus on self-identity BCT</rdfs:label>
     </owl:Class>
     
@@ -1383,7 +1446,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007157"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A prompt focus on self-identity BCT that advises engagement in activities that affirm the person&apos;s valued attributes.</obo:IAO_0000115>
-        <obo:IAO_0000118>self-affirmation</obo:IAO_0000118>
+        <obo:IAO_0000118>self-affirmation, personal affirmation</obo:IAO_0000118>
         <rdfs:label>affirm valued self-identity BCT</rdfs:label>
     </owl:Class>
     
@@ -1416,7 +1479,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007163">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007156"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An add objects to the environment BCT that adds an object to the persons directly experienced environment at the time the behaviour is, or would have been, performed.</obo:IAO_0000115>
+        <obo:IAO_0000115>An add objects to the environment BCT that adds an object to the person’s directly experienced environment at the time the behaviour is, or would have been, performed.</obo:IAO_0000115>
         <rdfs:label>add objects to the directly experienced environment BCT</rdfs:label>
     </owl:Class>
     
@@ -1427,7 +1490,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007164">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007156"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An add objects to the environment BCT that adds an object to the persons environment at a time or location other than when and where the behaviour is performed.</obo:IAO_0000115>
+        <obo:IAO_0000115>An add objects to the environment BCT that adds an object to the person’s environment at a time or location other than when and where the behaviour is performed.</obo:IAO_0000115>
         <rdfs:label>add objects to the indirectly experienced environment BCT</rdfs:label>
     </owl:Class>
     
@@ -1572,6 +1635,9 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An increase awareness of consequences BCT that provides information about the environmental consequences of performing or not performing the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>environmental effects, ecological impacts</obo:IAO_0000118>
+        <rdfs:comment> emphasising importance of consequences is not sufficient.</rdfs:comment>
+        <rdfs:comment>Consequences can be for any target, not just the recipient(s) of the intervention</rdfs:comment>
         <rdfs:label>inform about environmental consequences BCT</rdfs:label>
     </owl:Class>
     
@@ -1717,7 +1783,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007187"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A promise consequence for behaviour BCT where the consequence is aversive.</obo:IAO_0000115>
-        <obo:IAO_0000118>threat</obo:IAO_0000118>
+        <obo:IAO_0000118>threat, warning, disincentive</obo:IAO_0000118>
         <rdfs:comment>To qualify as aversive, the consequence should be aversively valued by the person receiving it.</rdfs:comment>
         <rdfs:label>promise aversive consequence for behaviour BCT</rdfs:label>
     </owl:Class>
@@ -1789,7 +1855,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007200"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A promise consequence for outcome of behaviour BCT where the consequence is aversive.</obo:IAO_0000115>
-        <obo:IAO_0000118>threat</obo:IAO_0000118>
+        <obo:IAO_0000118>threat, warning, disincentive</obo:IAO_0000118>
         <rdfs:label>promise aversive consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -1875,7 +1941,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A promise consequence for behaviour BCT where the consequence is positive.</obo:IAO_0000115>
         <obo:IAO_0000118>incentive</obo:IAO_0000118>
-        <rdfs:comment>To qualify as positive, the consequence should be positively valued by the person receiving it.</rdfs:comment>
+        <rdfs:comment>To qualify as positive, the consequence should be positively valued by the person receiving it. If consequence is delivered, also code &apos;provide positive consequence for behaviour BCT&apos; or one of its child classes.</rdfs:comment>
         <rdfs:label>promise positive consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2490,7 +2556,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A provide consequence for behaviour BCT where the consequence is positive.</obo:IAO_0000115>
         <obo:IAO_0000118>positive reinforcement, reward</obo:IAO_0000118>
-        <rdfs:comment>To qualify as positive, the consequence should be positively valued by the person receiving it.</rdfs:comment>
+        <rdfs:comment>To qualify as positive, the consequence should be positively valued by the person receiving it. If informed of consequence in advance of rewarded behaviour, also code &apos;promise positive consequence for behaviour BCT&apos; or one of its child classses.</rdfs:comment>
         <rdfs:label>provide positive consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2552,7 +2618,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007252"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A provide positive consequence for behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
-        <obo:IAO_0000118>material reward</obo:IAO_0000118>
+        <obo:IAO_0000118>material reward, tangible reinforcement</obo:IAO_0000118>
         <rdfs:label>provide positive material consequence for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -2624,7 +2690,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007264"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A provide positive consequence for outcome of behaviour BCT where the consequence is money, vouchers or other valued objects.</obo:IAO_0000115>
-        <obo:IAO_0000118>material reward</obo:IAO_0000118>
+        <obo:IAO_0000118>material reward, tangible reinforcement</obo:IAO_0000118>
         <rdfs:label>provide positive material consequence for outcome of behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -3300,6 +3366,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An advise how to change emotions BCT suggesting a method to decrease negative emotions.</obo:IAO_0000115>
         <obo:IAO_0000118>stress management</obo:IAO_0000118>
+        <rdfs:comment>If includes analysing the behavioural problem, also code &apos;goal strategising BCT&apos;</rdfs:comment>
         <rdfs:label>advise how to reduce negative emotions BCT</rdfs:label>
     </owl:Class>
     
@@ -3344,6 +3411,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007150"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A restructure the environment BCT that alters the physical environment in which the behaviour is, or would have been, performed in a way that facilitates or impedes the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>physical space reorganisation, environmental modification</obo:IAO_0000118>
+        <rdfs:comment>This may also involve &apos;reduce exposure to cues for the behaviour BCT&apos;</rdfs:comment>
         <rdfs:label>restructure the physical environment BCT</rdfs:label>
     </owl:Class>
     
@@ -3357,6 +3426,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <obo:IAO_0000112>Instructing people in a smoking cessation group to sit in a circle rather than in rows</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A restructure the environment BCT that alters the social environment in which the behaviour is, or would have been, performed in a way that facilitates or impedes the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>interpersonal environment restructuring, social context modification</obo:IAO_0000118>
+        <rdfs:comment>This may also involve &apos;reduce exposure to cues for the behaviour BCT&apos;</rdfs:comment>
         <rdfs:label>restructure the social environment BCT</rdfs:label>
     </owl:Class>
     
@@ -3380,6 +3451,30 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An advise behavioural ways to change emotions BCT suggesting the person perform a particular behaviour to decrease positive emotions.</obo:IAO_0000115>
         <rdfs:label>advise behavioural ways to reduce positive emotions BCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050445 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050445">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A goal directed BCT that changes an existing goal for the behaviour to be achieved.</obo:IAO_0000115>
+        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving.</rdfs:comment>
+        <rdfs:label>change behaviour goal BCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050446 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050446">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A goal directed BCT that changes an existing goal for the outcome to be achieved.</obo:IAO_0000115>
+        <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving.</rdfs:comment>
+        <rdfs:label>change outcome goal BCT</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
