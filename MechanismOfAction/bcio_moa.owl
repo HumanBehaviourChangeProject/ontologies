@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
@@ -18,6 +19,23 @@
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000008 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
     
 
 
@@ -125,6 +143,12 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006001 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006001">
@@ -176,7 +200,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A mental capability that involves processes that modulate the frequency, rate or extent of a response to external or internal stimuli and that are instigated by the person themselves.</obo:IAO_0000115>
-        <rdfs:comment>&apos;Modulate refers to modifying or controlling influence on or change the strength and involves processes</rdfs:comment>
+        <rdfs:comment>&apos;Modulate’ refers to ‘modifying or controlling influence on or change the strength’ and involves processes</rdfs:comment>
         <rdfs:label>self-regulation capability</rdfs:label>
     </owl:Class>
     
@@ -290,7 +314,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A mental disposition to commit to enact or not enact a behaviour.</obo:IAO_0000115>
-        <rdfs:comment>The term plan can sometimes be used to refer to intention and sometimes for instructional plans.</rdfs:comment>
+        <rdfs:comment>The term ‘plan’ can sometimes be used to refer to intention and sometimes for instructional plans.</rdfs:comment>
         <rdfs:label>behavioural intention</rdfs:label>
     </owl:Class>
     
@@ -574,7 +598,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006039"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about whether key others think one should perform a behaviour.</obo:IAO_0000115>
-        <rdfs:comment>&apos;Key others&apos; can include &apos;people in ones social network</rdfs:comment>
+        <rdfs:comment>&apos;Key others&apos; can include &apos;people in one’s social network’</rdfs:comment>
         <rdfs:label>normative belief</rdfs:label>
     </owl:Class>
     
@@ -809,7 +833,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A mental disposition of a person to act to obtain or maintain a particular state due to this states importance to the persons wellbeing.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental disposition of a person to act to obtain or maintain a particular state due to this state’s importance to the person’s wellbeing.</obo:IAO_0000115>
         <rdfs:comment>Psychological needs can be satisfied or thwarted.</rdfs:comment>
         <rdfs:label>psychological need</rdfs:label>
     </owl:Class>
@@ -879,9 +903,9 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A mental plan that is realised in mental processes representing the steps to enact a behaviour and the conditions under which the behaviour will be enacted.</obo:IAO_0000115>
         <obo:IAO_0000118>Action plan</obo:IAO_0000118>
-        <rdfs:comment>The term plan can sometimes be used to refer to intention and sometimes for instructional plans.
+        <rdfs:comment>The term ‘plan’ can sometimes be used to refer to intention and sometimes for instructional plans.
 
-&apos;mental plan for a behaviour involves  plans for which details about the behaviour  are specified.</rdfs:comment>
+&apos;mental plan for a behaviour’ involves  plans for which details about the behaviour (when [specific times], where, how or with whom) are specified.</rdfs:comment>
         <rdfs:label>mental plan for a behaviour</rdfs:label>
     </owl:Class>
     
@@ -971,7 +995,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006085 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A spatial quality that inheres in a bearer by virtue of its position relative to other entities.</obo:IAO_0000115>
         <rdfs:comment>An intervention could be used to rearrange objects in an environment, changing the location of a person relative to these objects and thereby increasing the likelihood of a behaviour.</rdfs:comment>
@@ -986,11 +1010,11 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An environmental disposition that is required for or facilitates a behaviour.</obo:IAO_0000115>
-        <rdfs:comment>The phrase required for is used in the definition to specify that &apos;behavioural opportunity&apos; is a necessary condition for behaviour to occur. Although other MoAs will help bring behaviour about, there has to be a &apos;behavioural opportunity&apos; for behaviour to occur.
+        <rdfs:comment>The phrase ‘required for’ is used in the definition to specify that &apos;behavioural opportunity&apos; is a necessary condition for behaviour to occur. Although other MoAs will help bring behaviour about, there has to be a &apos;behavioural opportunity&apos; for behaviour to occur.
 
 The term &apos;facilitates&apos; is used to specify that &apos;behavioural opportunity&apos; will make the behaviour easier. Higher behavioural opportunity will increase the likelihood of behaviour across situations and people.
 
-The class &apos;environmental system&apos; relates to what is found in the physical and social environment , while the class &apos;behavioural opportunity&apos; is about the features of the environment and how they interact with the person .</rdfs:comment>
+The class &apos;environmental system&apos; relates to what is found in the physical and social environment (e.g., how many streets are there for you to walk on), while the class &apos;behavioural opportunity&apos; is about the features of the environment and how they interact with the person (e.g., whether an environment enables a person to take walks).</rdfs:comment>
         <rdfs:label>behavioural opportunity</rdfs:label>
     </owl:Class>
     
@@ -1002,7 +1026,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006089"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A physical behavioural opportunity that involves the person having sufficient financial resources.</obo:IAO_0000115>
-        <rdfs:comment>As &apos;financial behavioural opportunity&apos; will involve some physical monetary entity , it is a physical behavioural opportunity. While financial resources  have intrinsically social dimensions, the &apos;financial behavioural opportunity&apos; does not involve a social aspect.</rdfs:comment>
+        <rdfs:comment>As &apos;financial behavioural opportunity&apos; will involve some physical monetary entity (e.g., money borrowed from someone), it is a physical behavioural opportunity. While financial resources (e.g., money) have intrinsically social dimensions, the &apos;financial behavioural opportunity&apos; does not involve a social aspect.</rdfs:comment>
         <rdfs:label>financial behavioural opportunity</rdfs:label>
     </owl:Class>
     
@@ -1082,7 +1106,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An individual human behaviour that is commonly enacted by people that are part of a social environmental system.</obo:IAO_0000115>
-        <rdfs:comment>Normative behaviour can be an MoA or outcome depending on how &apos;normative behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; , which would not be an MoA. When an intervention targets a normative behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</rdfs:comment>
+        <rdfs:comment>Normative behaviour can be an MoA or outcome depending on how &apos;normative behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; (definition: Human behavior that is an intervention outcome.), which would not be an MoA. When an intervention targets a normative behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</rdfs:comment>
         <rdfs:label>normative behaviour</rdfs:label>
     </owl:Class>
     
@@ -1094,7 +1118,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A bodily process in which attempts are made to achieve a desired end state.</obo:IAO_0000115>
-        <rdfs:comment>&apos;Goal pursuit process&apos; is a bodily process, as it may involve more than just mental processes .</rdfs:comment>
+        <rdfs:comment>&apos;Goal pursuit process&apos; is a bodily process, as it may involve more than just mental processes (i.e., other processes in the body).</rdfs:comment>
         <rdfs:label>goal pursuit process</rdfs:label>
     </owl:Class>
     
@@ -1151,7 +1175,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006103"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Self-regulation of behaviour through the performance of a different behaviour.</obo:IAO_0000115>
-        <rdfs:comment>Behavioural self-regulation of behaviour can be an MoA or outcome depending on how &apos;behavioural self-regulation of behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; , which would not be an MoA. When an intervention targets behavioural self-regulation of behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</rdfs:comment>
+        <rdfs:comment>Behavioural self-regulation of behaviour can be an MoA or outcome depending on how &apos;behavioural self-regulation of behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; (definition: Human behavior that is an intervention outcome.), which would not be an MoA. When an intervention targets behavioural self-regulation of behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</rdfs:comment>
         <rdfs:label>behavioural self-regulation of behaviour</rdfs:label>
     </owl:Class>
     
@@ -1308,9 +1332,9 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050239"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Learning that involves changing the strength of association between two or more mental processes.</obo:IAO_0000115>
-        <rdfs:comment>While associative learning is often defined as learning an association between a stimulus and response, the stimulus has to be perceived. Therefore, associative learning is between perceiving or processing information about a stimulus  and one or more other mental processes.
+        <rdfs:comment>While associative learning is often defined as learning an association between a stimulus and response, the stimulus has to be perceived. Therefore, associative learning is between perceiving or processing information about a stimulus (a mental process) and one or more other mental processes.
 
-The label &apos;associative learning&apos; is also used for a behaviour change technique  in the BCT Taxonomy v1 . The definition for this BCT reads as follows: &apos;Present a neutral stimulus jointly with a stimulus that already elicits the behavior repeatedly until the neutral stimulus elicits that behavior.&apos; As indicated by the definition, the BCT is the deliberate presentation of a stimulus, whereas the MoA is a learning process that occurs in the brain.</rdfs:comment>
+The label &apos;associative learning&apos; is also used for a behaviour change technique (BCT) in the BCT Taxonomy v1 (Michie et al., 2013). The definition for this BCT reads as follows: &apos;Present a neutral stimulus jointly with a stimulus that already elicits the behavior repeatedly until the neutral stimulus elicits that behavior.&apos; As indicated by the definition, the BCT is the deliberate presentation of a stimulus, whereas the MoA is a learning process that occurs in the brain.</rdfs:comment>
         <rdfs:label>associative learning</rdfs:label>
     </owl:Class>
     
@@ -1344,9 +1368,9 @@ The label &apos;associative learning&apos; is also used for a behaviour change t
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006119"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Associative learning process in which the strength of a conditioned response is reduced because its conditioned stimulus is presented without being accompanied by the unconditioned stimulus.</obo:IAO_0000115>
-        <rdfs:comment>An unconditioned stimulus is &quot;a stimulus that elicits a reflexive or innate response  without prior learning.&quot; . EBOOK: Psychology: The Science of Mind and Behaviour, 4e. McGraw Hill.)
+        <rdfs:comment>An unconditioned stimulus is &quot;a stimulus that elicits a reflexive or innate response (the unconditioned response) without prior learning.&quot; (p., 280, Holt, N., Bremner, A., Sutherland, E., Vliek, M., Passer, M., and Smith, R. (2019). EBOOK: Psychology: The Science of Mind and Behaviour, 4e. McGraw Hill.)
 
-A conditioned stimulus is a stimulus that, through association with an unconditioned stimulus, comes to elicit a conditioned response similar to the original unconditioned response . EBOOK: Psychology: The Science of Mind and Behaviour, 4e. McGraw Hill.)</rdfs:comment>
+A conditioned stimulus is a stimulus that, through association with an unconditioned stimulus, comes to elicit a conditioned response similar to the original unconditioned response (Holt, N., Bremner, A., Sutherland, E., Vliek, M., Passer, M., and Smith, R. (2019). EBOOK: Psychology: The Science of Mind and Behaviour, 4e. McGraw Hill.)</rdfs:comment>
         <rdfs:label>extinction in classical conditioning</rdfs:label>
     </owl:Class>
     
@@ -1358,7 +1382,8 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006119"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Associative learning process in which the rate of behavioural response in the presence of a discriminative stimulus is reduced because the response is no longer followed by a reinforcer.</obo:IAO_0000115>
-        <rdfs:comment>Discriminative stimulus is &quot;a signal that a particular response will produce certain consequences.&quot; . EBOOK: Psychology: The Science of Mind and Behaviour, 4e. McGraw Hill.)</rdfs:comment>
+        <rdfs:comment> Holt, N., Bremner, A., Sutherland, E., Vliek, M., Passer, M., and Smith, R. (2019). EBOOK: Psychology: The Science of Mind and Behaviour, 4e. McGraw Hill.)</rdfs:comment>
+        <rdfs:comment>Discriminative stimulus is &quot;a signal that a particular response will produce certain consequences.&quot; (p. 291</rdfs:comment>
         <rdfs:label>extinction in operant learning</rdfs:label>
     </owl:Class>
     
@@ -1370,7 +1395,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006119"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Associative learning process in which prior learning that an antecedent stimulus signals certain consequences of behaviour spreads to a stimulus that differs in certain aspects from the original antecedent stimulus.</obo:IAO_0000115>
-        <rdfs:comment>The label &apos;Generalisation of target  behavior&apos; is used for a behaviour change technique  in the BCT Taxonomy v1 . The definition for this BCT reads as follows: &apos;Advise to perform the wanted behaviour,  which is already performed in a particular situation, in another situation.&apos; Therefore, the BCT is the advice to perform the behaviour, whereas the MoA is a learning process that occurs in the brain.</rdfs:comment>
+        <rdfs:comment>The label &apos;Generalisation of target  behavior&apos; is used for a behaviour change technique (BCT) in the BCT Taxonomy v1 (Michie et al., 2013). The definition for this BCT reads as follows: &apos;Advise to perform the wanted behaviour,  which is already performed in a particular situation, in another situation.&apos; Therefore, the BCT is the advice to perform the behaviour, whereas the MoA is a learning process that occurs in the brain.</rdfs:comment>
         <rdfs:label>generalisation in learning</rdfs:label>
     </owl:Class>
     
@@ -1507,8 +1532,8 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
         <obo:IAO_0000115>A mental process in which one observes one&apos;s own behaviour or mental processes.</obo:IAO_0000115>
         <rdfs:comment>There are behaviour change techniques labelled &apos;Self-monitoring of behaviour&apos; and &apos;Self-monitoring of outcome of behaviour&apos;. These are about establishing a method for monitoring states. In contrast, the MoA is the mental process of monitoring.
 
-&apos;Self-monitoring of behaviour&apos; is defined as &apos;Instruct self recording of specified behaviour/s  as part of a behaviour change strategy &apos; .
-&apos;Self-monitoring of outcome of behaviour&apos; is defined &quot;Establish a method for the person to monitor and record their behavior as part of a behavior change strategy&quot;  .</rdfs:comment>
+&apos;Self-monitoring of behaviour&apos; is defined as &apos;Instruct self recording of specified behaviour/s (with or without associated thoughts, emotions, situations) as part of a behaviour change strategy &apos; (Michie et al., 2013).
+&apos;Self-monitoring of outcome of behaviour&apos; is defined &quot;Establish a method for the person to monitor and record their behavior(s) as part of a behavior change strategy&quot;  (Michie et al., 2013).</rdfs:comment>
         <rdfs:label>self-monitoring</rdfs:label>
     </owl:Class>
     
@@ -1714,7 +1739,7 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
         <obo:IAO_0000115>A behaviour that results from a learnt stimulus-behaviour co-occurrence.</obo:IAO_0000115>
         <rdfs:comment>A learnt stimulus-behaviour co-occurrence can lead to activation or execution of a habitual behaviour.
 
-Habitual behaviour can be an MoA or outcome depending on how &apos;habitual behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; , which would not be an MoA. When an intervention targets a habitual behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</rdfs:comment>
+Habitual behaviour can be an MoA or outcome depending on how &apos;habitual behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; (definition: Human behavior that is an intervention outcome.), which would not be an MoA. When an intervention targets a habitual behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</rdfs:comment>
         <rdfs:label>habitual behaviour</rdfs:label>
     </owl:Class>
     
@@ -1936,6 +1961,12 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050213 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050213">
@@ -1952,7 +1983,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050214">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006005"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A self-regulation capability to modulate ones attention toward internal or external stimuli.</obo:IAO_0000115>
+        <obo:IAO_0000115>A self-regulation capability to modulate one’s attention toward internal or external stimuli.</obo:IAO_0000115>
         <rdfs:label>attentional self-regulation capability</rdfs:label>
     </owl:Class>
     
@@ -2221,7 +2252,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050238">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036034"/>
-        <obo:IAO_0000112>Communicating through bodily gestures, through pictograms and through sound</obo:IAO_0000112>
+        <obo:IAO_0000112>Communicating through bodily gestures, through pictograms and through sound (e.g. a siren going off communicates information about the presence of danger without the use of language)</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A human communication behaviour in which information is transmitted without being encoded in the meaning units of any language.</obo:IAO_0000115>
         <rdfs:label>non-linguistic communication behaviour</rdfs:label>
@@ -2235,7 +2266,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A mental process in which a lasting mental or behavioural change occurs as the result of experience.</obo:IAO_0000115>
-        <rdfs:comment>The class &apos;learning&apos; from the Gene Ontology was not reused but adapted for the Mechanism of Action  Ontology, as the Gene Ontology only focuses on learning adaptive behaviours in order to be relevant to all organisms.</rdfs:comment>
+        <rdfs:comment>The class &apos;learning&apos; from the Gene Ontology was not reused but adapted for the Mechanism of Action (MoA) Ontology, as the Gene Ontology only focuses on learning adaptive behaviours in order to be relevant to all organisms.</rdfs:comment>
         <rdfs:label>learning</rdfs:label>
     </owl:Class>
     
@@ -2275,11 +2306,11 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a bodily disposition.</obo:IAO_0000115>
-        <rdfs:comment>The relation between mechanism of action through bodily disposition and bodily disposition is labelled as through&apos;.
+        <rdfs:comment>The relation between ‘mechanism of action through bodily disposition’ and ‘bodily disposition’ is labelled as ‘through&apos;.
 
-The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+The ‘through’ relationship is defined as: ‘A relation that holds between an intervention’s mechanism of action and an entity x, in which the entity x (a) participates in or is part of the mechanism of action process and (b) is influenced by a BCI or its context such that there is some change in entity x.’ 
 
-In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
+In this definition, ‘change’ refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, ‘some change’ captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
         <rdfs:label>mechanism of action through bodily disposition</rdfs:label>
     </owl:Class>
     
@@ -2297,11 +2328,11 @@ In this definition, change refers to change from what would have been the case r
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence occurs in a bodily process.</obo:IAO_0000115>
-        <rdfs:comment>The relation between mechanism of action through bodily process and bodily process is labelled as through&apos;.
+        <rdfs:comment>The relation between ‘mechanism of action through bodily process’ and ‘bodily process’ is labelled as ‘through&apos;.
 
-The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+The ‘through’ relationship is defined as: ‘A relation that holds between an intervention’s mechanism of action and an entity x, in which the entity x (a) participates in or is part of the mechanism of action process and (b) is influenced by a BCI or its context such that there is some change in entity x.’ 
 
-In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
+In this definition, ‘change’ refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, ‘some change’ captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
         <rdfs:label>mechanism of action through bodily process</rdfs:label>
     </owl:Class>
     
@@ -2319,11 +2350,11 @@ In this definition, change refers to change from what would have been the case r
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a cognitive representation.</obo:IAO_0000115>
-        <rdfs:comment>The relation between mechanism of action through &apos;cognitive representation&apos; and cognitive representation&apos; is labelled as &apos;through&apos;.
+        <rdfs:comment>The relation between ‘mechanism of action through &apos;cognitive representation&apos; and cognitive representation&apos; is labelled as &apos;through&apos;.
 
-The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+The ‘through’ relationship is defined as: ‘A relation that holds between an intervention’s mechanism of action and an entity x, in which the entity x (a) participates in or is part of the mechanism of action process and (b) is influenced by a BCI or its context such that there is some change in entity x.’ 
 
-In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
+In this definition, ‘change’ refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, ‘some change’ captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
         <rdfs:label>mechanism of action through cognitive representation</rdfs:label>
     </owl:Class>
     
@@ -2341,11 +2372,11 @@ In this definition, change refers to change from what would have been the case r
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects an environmental disposition.</obo:IAO_0000115>
-        <rdfs:comment>The relation between mechanism of action through environmental disposition&apos; and environmental disposition&apos; is labelled as &apos;through&apos;.
+        <rdfs:comment>The relation between ‘mechanism of action through environmental disposition&apos; and ‘environmental disposition&apos; is labelled as &apos;through&apos;.
 
-The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+The ‘through’ relationship is defined as: ‘A relation that holds between an intervention’s mechanism of action and an entity x, in which the entity x (a) participates in or is part of the mechanism of action process and (b) is influenced by a BCI or its context such that there is some change in entity x.’ 
 
-In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
+In this definition, ‘change’ refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, ‘some change’ captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
         <rdfs:label>mechanism of action through environmental disposition</rdfs:label>
     </owl:Class>
     
@@ -2363,11 +2394,11 @@ In this definition, change refers to change from what would have been the case r
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence shifts the location of people or objects.</obo:IAO_0000115>
-        <rdfs:comment>The relation between mechanism of action through location&apos; and location&apos; is labelled as &apos;through&apos;.
+        <rdfs:comment>The relation between ‘mechanism of action through location&apos; and ‘location&apos; is labelled as &apos;through&apos;.
 
-The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+The ‘through’ relationship is defined as: ‘A relation that holds between an intervention’s mechanism of action and an entity x, in which the entity x (a) participates in or is part of the mechanism of action process and (b) is influenced by a BCI or its context such that there is some change in entity x.’ 
 
-In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
+In this definition, ‘change’ refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, ‘some change’ captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
         <rdfs:label>mechanism of action through location</rdfs:label>
     </owl:Class>
     
@@ -2385,11 +2416,11 @@ In this definition, change refers to change from what would have been the case r
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a material entity.</obo:IAO_0000115>
-        <rdfs:comment>The relation between mechanism of action through material entity and material entity is labelled asthrough.
+        <rdfs:comment>The relation between ‘mechanism of action through material entity’ and ‘material entity’ is labelled as‘through’.
 
-The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+The ‘through’ relationship is defined as: ‘A relation that holds between an intervention’s mechanism of action and an entity x, in which the entity x (a) participates in or is part of the mechanism of action process and (b) is influenced by a BCI or its context such that there is some change in entity x.’ 
 
-In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
+In this definition, ‘change’ refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, ‘some change’ captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
         <rdfs:label>mechanism of action through material entity</rdfs:label>
     </owl:Class>
     
@@ -2407,12 +2438,113 @@ In this definition, change refers to change from what would have been the case r
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a personal role.</obo:IAO_0000115>
-        <rdfs:comment>The relation between mechanism of action through personal role and personal role is labelled as through.
+        <rdfs:comment>The relation between ‘mechanism of action through personal role’ and ‘personal role’ is labelled as ‘through’.
 
-The through relationship is defined as: A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x. 
+The ‘through’ relationship is defined as: ‘A relation that holds between an intervention’s mechanism of action and an entity x, in which the entity x (a) participates in or is part of the mechanism of action process and (b) is influenced by a BCI or its context such that there is some change in entity x.’ 
 
-In this definition, change refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, some change captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
+In this definition, ‘change’ refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, ‘some change’ captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
         <rdfs:label>mechanism of action through personal role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050300 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A specifically dependent continuant that inheres in a person.</obo:IAO_0000115>
+        <obo:IAO_0000232>The population ontology individuals branch defines many personal attributes</obo:IAO_0000232>
+        <rdfs:comment>Includes everything that can be said about a person: the most general class under which all other qualities, dispositions, roles etc belong.</rdfs:comment>
+        <rdfs:label>personal attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050301 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050301">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A disposition that inheres in a person.</obo:IAO_0000115>
+        <rdfs:label>personal disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050302 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050302">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A process attribute that is an attribute of a life process.</obo:IAO_0000115>
+        <rdfs:label>personal life attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050303 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050303">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A quality that inheres in a person.</obo:IAO_0000115>
+        <rdfs:label>personal quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050304 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>An affective process involving sensory experience of physiological stimuli.</obo:IAO_0000115>
+        <rdfs:label>bodily feeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050305 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050305">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A quality that inheres in some extended organism.</obo:IAO_0000115>
+        <rdfs:label>bodily quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050307 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050307">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050305"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A bodily quality that inheres in those structures of the extended organism that are essential for mental functioning.</obo:IAO_0000115>
+        <rdfs:label>mental quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050308 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</obo:IAO_0000115>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050310 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
+        <rdfs:label>representation</rdfs:label>
     </owl:Class>
     
 
@@ -2507,7 +2639,7 @@ In this definition, change refers to change from what would have been the case r
         <obo:IAO_0000112>Feeling ticklish, feeling tingling</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A mental process that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
-        <rdfs:comment>If a subjective feeling is valenced , the more granular class subjective affective feeling can be used to capture this feeling.</rdfs:comment>
+        <rdfs:comment>If a subjective feeling is valenced (i.e., an affective process), the more granular class “subjective affective feeling” can be used to capture this feeling.</rdfs:comment>
         <rdfs:label>subjective feeling</rdfs:label>
     </owl:Class>
     
@@ -2530,7 +2662,7 @@ In this definition, change refers to change from what would have been the case r
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050215"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behavioural capability that involves psychological abilities.</obo:IAO_0000115>
-        <rdfs:comment>The class psychological behavioural capability is the subclass of both behavioural capability and mental capability and refers to mental capabilities that are needed to realise a behaviour.</rdfs:comment>
+        <rdfs:comment>The class ‘psychological behavioural capability’ is the subclass of both ‘behavioural capability’ and ‘mental capability’ and refers to mental capabilities that are needed to realise a behaviour.</rdfs:comment>
         <rdfs:label>psychological behavioural capability</rdfs:label>
     </owl:Class>
     
@@ -2543,7 +2675,7 @@ In this definition, change refers to change from what would have been the case r
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A mental disposition to experience a subjective affective feeling about something.</obo:IAO_0000115>
         <obo:IAO_0000232>The definition does not express the idea that the feeling is positive or negative because that is implied by the parent class.</obo:IAO_0000232>
-        <rdfs:comment>The entity  that is the object of the attitude is usually referred to as the attitude object.</rdfs:comment>
+        <rdfs:comment>The entity (‘something’) that is the object of the attitude is usually referred to as the ‘attitude object’.</rdfs:comment>
         <rdfs:label>affective attitude</rdfs:label>
     </owl:Class>
     
@@ -2566,7 +2698,7 @@ In this definition, change refers to change from what would have been the case r
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A mental disposition that is an affective attitude or an evaluative belief about something.</obo:IAO_0000115>
-        <rdfs:comment>The class attitude is logically defined as an effective attitude or evaluative belief, as the term attitude can be used to refer to either class.</rdfs:comment>
+        <rdfs:comment>The class “attitude” is logically defined as an “effective attitude” or “evaluative belief”, as the term “attitude” can be used to refer to either class.</rdfs:comment>
         <rdfs:label>attitude</rdfs:label>
     </owl:Class>
     
@@ -2578,7 +2710,7 @@ In this definition, change refers to change from what would have been the case r
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050328"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attitude in which the entity that is the attitude object is a behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000232>The class attitude towards a behaviour is logically defined as an affective attitude towards a behaviour or evaluative belief about a behaviour, as the term attitude towards a behaviour can be used to refer to either class.</obo:IAO_0000232>
+        <obo:IAO_0000232>The class “attitude towards a behaviour” is logically defined as an “affective attitude towards a behaviour” or “evaluative belief about a behaviour”, as the term “attitude towards a behaviour” can be used to refer to either class.</obo:IAO_0000232>
         <rdfs:label>attitude towards a behaviour</rdfs:label>
     </owl:Class>
     
@@ -2603,7 +2735,7 @@ In this definition, change refers to change from what would have been the case r
         <obo:IAO_0000115>A system which has the disposition to surround and interact with one or more material entities.</obo:IAO_0000115>
         <rdfs:comment>&apos;The term &apos;disposition&apos; is used to describe that an environmental system can surround and interact with one or more material entities. This conditionality is important, as an entity does not necessarily have to be in an specific environment system at all times.
 
-The class &apos;environmental system&apos; relates to what is found in the physical and social environment , while the class &apos;opportunity&apos; is about the features of the environment and how they interact with the person .
+The class &apos;environmental system&apos; relates to what is found in the physical and social environment (e.g., how many streets are there for you to walk on), while the class &apos;opportunity&apos; is about the features of the environment and how they interact with the person (e.g., whether an environment enables a person to take walks).
 
 &apos;environmental system&apos; includes physical and social aspects of the environment. As all subclasses of &apos;environmental system&apos; will have physical aspects, a separate subclass for &apos;physical environmental system&apos; would not capture a unique aspect of its parent class.</rdfs:comment>
         <rdfs:label>environmental system</rdfs:label>
@@ -2695,11 +2827,11 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An affective process that is a synchronized aggregate of constituent mental processes, including an appraisal process, which is valenced, has an object, and gives rise to an action tendency.</obo:IAO_0000115>
-        <rdfs:comment>There is no intended sequence of the entities that are part of the emotion process . 
+        <rdfs:comment>There is no intended sequence of the entities that are part of the emotion process (e.g., an appraisal process does not necessarily precede a physiological process part of the emotion process). 
 
-Emotion processes are distinguished from other affective processes  by having an object. Even if an emotion is experienced due to physiological reasons, they would be felt as being about something or someone. For instance, a person might be angry at a situation that they would normally not be angry at, because they are hungry. However, that person would still be angry at a specific situation. 
+Emotion processes are distinguished from other affective processes (e.g., mood) by having an object. Even if an emotion is experienced due to physiological reasons, they would be felt as being about something or someone. For instance, a person might be angry at a situation that they would normally not be angry at, because they are hungry. However, that person would still be angry at a specific situation. 
 
-Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; . Valence ranges from negative to positive.</rdfs:comment>
+Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; (https://dictionary.apa.org/valence). Valence ranges from negative to positive.</rdfs:comment>
         <rdfs:label>emotion process</rdfs:label>
     </owl:Class>
     
@@ -2721,7 +2853,7 @@ Valence refers to the &apos;the subjective value of an event, object, person, or
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A bodily process that encompasses all the neurophysiological changes accompanying an emotion, which take place in the central nervous system , neuro-endocrine system  and autonomous nervous system .</obo:IAO_0000115>
+        <obo:IAO_0000115>A bodily process that encompasses all the neurophysiological changes accompanying an emotion, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</obo:IAO_0000115>
         <rdfs:label>physiological process involved in an emotion</rdfs:label>
     </owl:Class>
     
@@ -2733,11 +2865,11 @@ Valence refers to the &apos;the subjective value of an event, object, person, or
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A cognitive representation of the emotional relevance of an object or event to the organism.</obo:IAO_0000115>
-        <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to oneself. Appraisal captures the aboutness of an emotion process.
+        <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to oneself. Appraisal captures the ‘aboutness’ of an emotion process.
 
-For instance, a stimulus  can produce different emotion processes depending on how the relevance of this stimulus is evaluated. The image of a tiger on TV would not be evaluated as dangerous. However, the image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, the appraisal of the dangerousness of the tiger would be part of the emotion process &apos;fear&apos;.
+For instance, a stimulus (the image of a tiger) can produce different emotion processes depending on how the relevance of this stimulus is evaluated. The image of a tiger on TV would not be evaluated as dangerous. However, the image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, the appraisal of the dangerousness of the tiger would be part of the emotion process &apos;fear&apos;.
 
-There is no intended sequence of the entities that are part of the emotion process .</rdfs:comment>
+There is no intended sequence of the entities that are part of the emotion process (e.g., an appraisal does not necessarily precede a physiological process part of the emotion process).</rdfs:comment>
         <rdfs:label>appraisal</rdfs:label>
     </owl:Class>
     
@@ -2754,9 +2886,9 @@ There is no intended sequence of the entities that are part of the emotion proce
         <obo:IAO_0000118>Feeling calm</obo:IAO_0000118>
         <rdfs:comment>&apos;Subjective affective feeling can have greater or weaker physiological or mental components. The bodily process that are experienced will usually involve some mental process.
 
-Bodily sensation and the experiences of emotions  would both qualify as examples of &apos;subjective affective feeling&apos;.
+Bodily sensation and the experiences of emotions (e.g., feeling calm) would both qualify as examples of &apos;subjective affective feeling&apos;.
 
-As a subclass of &apos;affective process&apos;, subjective affective feelings have valence. Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; . Valence ranges from negative to positive.</rdfs:comment>
+As a subclass of &apos;affective process&apos;, subjective affective feelings have valence. Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; (https://dictionary.apa.org/valence). Valence ranges from negative to positive.</rdfs:comment>
         <rdfs:label>subjective affective feeling</rdfs:label>
     </owl:Class>
     
@@ -2802,7 +2934,7 @@ As a subclass of &apos;affective process&apos;, subjective affective feelings ha
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000019"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>Disgust elicited by &quot;contaminated&quot; food substances: rotten food, culturally variable &quot;bad&quot; food, certain animals associated with rotten food , and every body product except tears.</obo:IAO_0000115>
+        <obo:IAO_0000115>Disgust elicited by &quot;contaminated&quot; food substances: rotten food, culturally variable &quot;bad&quot; food, certain animals associated with rotten food (maggots, rats), and every body product except tears.</obo:IAO_0000115>
         <rdfs:label>core disgust</rdfs:label>
     </owl:Class>
     
@@ -3120,7 +3252,7 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A mental process that has positive or negative valence.</obo:IAO_0000115>
-        <rdfs:comment>Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; . Valence ranges from negative to positive.</rdfs:comment>
+        <rdfs:comment>Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; (https://dictionary.apa.org/valence). Valence ranges from negative to positive.</rdfs:comment>
         <rdfs:label>affective process</rdfs:label>
     </owl:Class>
     
@@ -3131,7 +3263,7 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A subjective affective feeling in an organism S, involving two integrated levels:  activation of the nociceptive system and associated emotion generating brain components of S, and  a simultaneous aversive sensory and emotional experience on the part of S, where  is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.</obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling in an organism S, involving two integrated levels: (a) activation of the nociceptive system and associated emotion generating brain components of S, and (b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.</obo:IAO_0000115>
         <rdfs:label>pain</rdfs:label>
     </owl:Class>
     
@@ -3283,10 +3415,10 @@ A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as men
     <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050310"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
-        <rdfs:comment>The use of the phrase an anatomical structure in the cognitive system in the formal definition means that a specific cognitive representation will depend on parts of the brain, rather than involving the whole brain.
+        <rdfs:comment>The use of the phrase ‘an anatomical structure in the cognitive system’ in the formal definition means that a specific cognitive representation will depend on parts of the brain, rather than involving the whole brain.
 
 When a belief is activated, the content of that belief is a cognitive representation.</rdfs:comment>
         <rdfs:label>cognitive representation</rdfs:label>
@@ -3300,9 +3432,9 @@ When a belief is activated, the content of that belief is a cognitive representa
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A disposition that inheres in some extended organism.</obo:IAO_0000115>
-        <rdfs:comment>Extended organism refers to an organism and its microbiome 
+        <rdfs:comment>Extended organism refers to an organism and its microbiome (e.g., the bacteria that live in one&apos;s digestive system)
 
-Bodily disposition would include features, such as a person&apos;s strength , but not weight. A person would have a certain weight independent of most circumstances they are in.</rdfs:comment>
+Bodily disposition would include features, such as a person&apos;s strength (which can be used in a specific context), but not weight. A person would have a certain weight independent of most circumstances they are in.</rdfs:comment>
         <rdfs:label>bodily disposition</rdfs:label>
     </owl:Class>
     
@@ -3339,7 +3471,7 @@ Bodily disposition would include features, such as a person&apos;s strength , bu
         <obo:IAO_0000115>A bodily disposition whose realization ordinarily brings benefits to an organism or group of organisms, where &quot;ordinarily&quot; means within a typical range or context.</obo:IAO_0000115>
         <rdfs:comment>The phrase &apos;ordinarily brings benefits to an organism or group of organism&apos; is used to explain that capabilities normally provide a benefit. 
 
-For instance, having a musical ability is ordinarily an ability that is positive for a person . However, in certain exceptional cases , the ability might not bring benefits.</rdfs:comment>
+For instance, having a musical ability is ordinarily an ability that is positive for a person (e.g., they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits.</rdfs:comment>
         <rdfs:label>personal capability</rdfs:label>
     </owl:Class>
     
@@ -3362,7 +3494,7 @@ For instance, having a musical ability is ordinarily an ability that is positive
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A personal capability that  includes mental processes in its realisation.</obo:IAO_0000115>
-        <rdfs:comment>Mental capabilities that are necessary to realise a behaviour are captured by the class psychological behavioural capability, which is a subclass of both mental capability and behavioural capability.</rdfs:comment>
+        <rdfs:comment>Mental capabilities that are necessary to realise a behaviour are captured by the class ‘psychological behavioural capability’, which is a subclass of both ‘mental capability’ and ‘behavioural capability’.</rdfs:comment>
         <rdfs:label>mental capability</rdfs:label>
     </owl:Class>
     
@@ -3396,7 +3528,7 @@ For instance, having a musical ability is ordinarily an ability that is positive
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A process in which at least one bodily component of an organism participates.</obo:IAO_0000115>
-        <rdfs:comment>The phrase &apos;bodily component of an organism in the definition refers to a part of the body.</rdfs:comment>
+        <rdfs:comment>The phrase &apos;bodily component of an organism’ in the definition refers to ‘a part of the body’.</rdfs:comment>
         <rdfs:label>bodily process</rdfs:label>
     </owl:Class>
     

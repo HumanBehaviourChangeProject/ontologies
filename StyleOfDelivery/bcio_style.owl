@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
@@ -43,6 +44,12 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_036000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036025 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025">
@@ -62,6 +69,12 @@
         <obo:IAO_0000115>An interpersonal behaviour that involves the transmission of information.</obo:IAO_0000115>
         <rdfs:label>human communication behaviour</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
     
 
 
@@ -343,7 +356,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044023">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112>Educate using ask-tell-ask rather than tell-ask-tell</obo:IAO_0000112>
+        <obo:IAO_0000112>Educate using “ask-tell-ask” rather than “tell-ask-tell”</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication which involves asking for approval before sharing knowledge and giving guidance.</obo:IAO_0000115>
         <rdfs:label>communication asking permission to provide information and advice</rdfs:label>
@@ -402,7 +415,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044029">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A communication in which the initiator attempts to elicit the recipients own thoughts and ideas about change rather than imposing the initiators own opinion.</obo:IAO_0000115>
+        <obo:IAO_0000115>A communication in which the initiator attempts to elicit the recipient’s own thoughts and ideas about change rather than imposing the initiator’s own opinion.</obo:IAO_0000115>
         <obo:IAO_0000118>evoking change talk in motivational interviewing</obo:IAO_0000118>
         <rdfs:label>communication evoking another&apos;s ideas about change</rdfs:label>
     </owl:Class>
@@ -589,7 +602,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044048">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-        <obo:IAO_0000112>staying silent</obo:IAO_0000112>
+        <obo:IAO_0000112>staying silent (where this is intended to give others the chance to speak)</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication in which the speaker purposely leaves gaps between or after their speech utterances.</obo:IAO_0000115>
         <rdfs:comment>Pauses may be deliberately left to provide opportunities for others to speak or reflect, or to demonstrate non-directiveness.</rdfs:comment>
@@ -1555,7 +1568,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050384">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A process involving the exchange of information between two or more participants</obo:IAO_0000115>
+        <obo:IAO_0000115>A process involving the transmission of information between two or more participants.</obo:IAO_0000115>
         <rdfs:comment>The participants in the communication process can be of a variety of types, e.g. a human talking to an automated chatbot system, two computer systems exchanging information, a person talking to a pet animal etc.</rdfs:comment>
         <rdfs:label>communication</rdfs:label>
     </owl:Class>

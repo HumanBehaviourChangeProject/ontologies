@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
@@ -57,6 +58,17 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010002 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000016"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A person who is the bearer of a behaviour change intervention source role.</obo:IAO_0000115>
@@ -97,7 +109,7 @@
         <obo:IAO_0000112>Chief Executive Officers</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role of source that manages, plans and coordinates the overall activities of enterprises, governments and other organisations.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 1</rdfs:isDefinedBy>
         <rdfs:label>manager</rdfs:label>
     </owl:Class>
@@ -110,7 +122,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010004"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role that works in knowledge building activities, applies scientific or artistic concepts and theories or teaches about the foregoing in a systematic manner.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2</rdfs:isDefinedBy>
         <rdfs:label>professional</rdfs:label>
     </owl:Class>
@@ -124,7 +136,7 @@
         <obo:IAO_0000112>Science Professional, Mathematician, Actuary, Statistician, Life Science Professional, Engineering Professional, Electrotechnology Engineer, Architect, Planner, Surveyor, Designer</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A professional that conducts research, improves or develops concepts, theories and operational methods or applies scientific knowledge.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 21</rdfs:isDefinedBy>
         <rdfs:label>science and engineering professional</rdfs:label>
     </owl:Class>
@@ -139,7 +151,7 @@
         <obo:IAO_0000112>Health professional</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A professional that improves or develops concepts, theories and operational method, and applied scientific knowledge relating to medicine, nursing, dentistry, veterinary medicine, pharmacy, and promotion of health.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 22</rdfs:isDefinedBy>
         <rdfs:label>health professional</rdfs:label>
     </owl:Class>
@@ -150,10 +162,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010009">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010008"/>
-        <obo:IAO_0000112>District medical doctor-therapist, family medical practitioner, general practitioner, medical doctor , medical officer , physician , primary health care physician, resident medical officer specializing in general practice</obo:IAO_0000112>
+        <obo:IAO_0000112>District medical doctor-therapist, family medical practitioner, general practitioner, medical doctor (general), medical officer (general), physician (general), primary health care physician, resident medical officer specializing in general practice</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that studies, diagnoses, treats and prevents illness, disease, injury and other physical and mental impairments in humans through the application of modern medicine. They plan, supervise and evaluate the implementation of care and treatment plans by other health care providers, and conduct medical education and research activities.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 221</rdfs:isDefinedBy>
         <rdfs:label>medical doctor</rdfs:label>
     </owl:Class>
@@ -167,7 +179,7 @@
         <obo:IAO_0000112>Primary care physician, family doctor, GP</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A medical doctor that diagnoses, treats and prevents illness, disease, injury and other physical and mental impairments and maintains general health in humans through application of modern medicine. They do not limit their practice to certain disease categories or methods of treatment, and may assume responsibility for the provision of continuing and comprehensive medical care to individuals, families and communities.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2211</rdfs:isDefinedBy>
         <rdfs:label>generalist medical practitioner</rdfs:label>
     </owl:Class>
@@ -178,10 +190,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010011">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010009"/>
-        <obo:IAO_0000112>Anaesthetist, Cardiologist, Emergency medicine specialist, Gynaecologist, Obstetrician, Ophthalmologist, Paediatrician, Pathologist, Preventive medicine specialist, Psychiatrist, Radiation oncologist, Radiologist, Resident medical officer in specialist training, Specialist medical practitioner , Specialist physician , Specialist physician , Surgeon</obo:IAO_0000112>
+        <obo:IAO_0000112>Anaesthetist, Cardiologist, Emergency medicine specialist, Gynaecologist, Obstetrician, Ophthalmologist, Paediatrician, Pathologist, Preventive medicine specialist, Psychiatrist, Radiation oncologist, Radiologist, Resident medical officer in specialist training, Specialist medical practitioner (public health), Specialist physician (internal medicine), Specialist physician (nuclear medicine), Surgeon</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A medical doctor that diagnoses, treats and prevents illness, disease, injury and other physical and mental impairments in humans, using specialized testing, diagnostic, medical, surgical, physical and psychiatric techniques through application of the principles and procedures of modern medicine. They specialize in certain disease categories, types of patient or methods of treatment and may conduct medical education and research in their chosen areas of specialization.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2212</rdfs:isDefinedBy>
         <rdfs:label>specialist medical practitioner</rdfs:label>
     </owl:Class>
@@ -194,7 +206,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010008"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that provides treatment and care services for people who are physically or mentally ill, disabled or infirm, and those with potential risks to health including before, during and after childbirth. They assume responsibility for the planning, management and evaluation of the care of patients, including the supervision of other health care workers, working autonomously or in teams with medical doctors and others in the practical application of preventive and curative measures.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 222</rdfs:isDefinedBy>
         <rdfs:label>nursing and midwifery professional</rdfs:label>
     </owl:Class>
@@ -208,7 +220,7 @@
         <obo:IAO_0000112>Clinical nurse consultant, District nurse, Nurse anaesthetist, Nurse educator, Nurse practitioner, Operating theatre nurse, Professional nurse, Public health nurse, Specialist nurse, Nursing Counsellor, Study Nurse</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that provides treatment, support and care services for people who are in need of nursing care due to the effects of ageing, injury, illness or other physical or mental impairment, or potential risks to health.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2221</rdfs:isDefinedBy>
         <rdfs:label>nursing professional</rdfs:label>
     </owl:Class>
@@ -222,7 +234,7 @@
         <obo:IAO_0000112>Midwife</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that plans, manages, provides and evaluates midwifery care services before, during and after pregnancy and childbirth. They provide delivery care for reducing health risks to women and newborn children, working autonomously or in teams with other health care providers.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2222</rdfs:isDefinedBy>
         <rdfs:label>midwifery professional</rdfs:label>
     </owl:Class>
@@ -236,7 +248,7 @@
         <obo:IAO_0000112>Acupuncturist, Ayurvedic practitioner,  Chinese herbal medicine practitioner, Homeopath, Naturopath, Unani practitioner</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that examines patients, prevents and treats illness, disease, injury and other physical and mental impairments and maintains general health in humans. They do this by applying knowledge, skills and practices acquired through extensive study of the theories, beliefs and experiences originating in specific cultures.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 223</rdfs:isDefinedBy>
         <rdfs:label>traditional and complementary medicine professional</rdfs:label>
     </owl:Class>
@@ -247,10 +259,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010016">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010008"/>
-        <obo:IAO_0000112>Advanced care paramedic, Clinical officer , Feldscher, Primary care paramedic, Surgical technician</obo:IAO_0000112>
+        <obo:IAO_0000112>Advanced care paramedic, Clinical officer (paramedical), Feldscher, Primary care paramedic, Surgical technician</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that provides advisory, diagnostic, curative and preventive medical services more limited in scope and complexity than those carried out by medical doctors. They work autonomously or with limited supervision of medical doctors, and apply advanced clinical procedures for treating and preventing diseases, injuries and other physical or mental impairments common to specific communities.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 224</rdfs:isDefinedBy>
         <rdfs:label>paramedical practitioner</rdfs:label>
     </owl:Class>
@@ -264,7 +276,7 @@
         <obo:IAO_0000112>Animal pathologist, Veterinarian, Veterinary epidemiologist, Veterinary intern, Veterinary surgeon</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that diagnoses, prevents and treats diseases, injuries and dysfunctions of animals.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 225</rdfs:isDefinedBy>
         <rdfs:label>veterinarian</rdfs:label>
     </owl:Class>
@@ -278,7 +290,7 @@
         <obo:IAO_0000112>Dental practitioner, Dental surgeon, Dentist, Endodontist, Oral and maxillofacial surgeon, Oral pathologist, Orthodontist, Paedodontist, Periodontist, Prosthodontist, Stomatologist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that diagnoses treats and prevents diseases, injuries and abnormalities of the teeth, mouth, jaws and associated tissues by applying the principles and procedures of modern dentistry.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2261</rdfs:isDefinedBy>
         <rdfs:label>dentist</rdfs:label>
     </owl:Class>
@@ -292,7 +304,7 @@
         <obo:IAO_0000112>Dispensing chemist, Hospital pharmacist, Industrial pharmacist, Retail pharmacist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that stores, preserves, compounds and dispenses medicinal products and counsel on the proper use and adverse effects of drugs and medicines following prescriptions issued by medical doctors and other health professionals.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2262</rdfs:isDefinedBy>
         <rdfs:label>pharmacist</rdfs:label>
     </owl:Class>
@@ -306,7 +318,7 @@
         <obo:IAO_0000112>Environmental health officer, Occupational health and safety adviser, Occupational hygienist, Radiation protection expert</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional that assesses, plans and implements programmes to recognize, monitor and control environmental factors that can potentially affect human health, to ensure safe and healthy working conditions and to prevent disease or injury caused by chemical, physical, radiological and biological agents or ergonomic factors.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2263</rdfs:isDefinedBy>
         <rdfs:label>environmental and occupational health and hygiene professional</rdfs:label>
     </owl:Class>
@@ -320,7 +332,7 @@
         <obo:IAO_0000112>Geriatric physical therapist, Manipulative therapist, Orthopaedic physical therapist, Paediatric physical therapist, Physical therapist, Physiotherapist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional  that assesses, plans and implements rehabilitative programmes that improve or restore human motor functions, maximize movement ability, relieve pain syndromes, and treat or prevent physical challenges associated with injuries, diseases and other impairments.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2264</rdfs:isDefinedBy>
         <rdfs:label>physiotherapist</rdfs:label>
     </owl:Class>
@@ -334,7 +346,7 @@
         <obo:IAO_0000112>Clinical dietician, Food service dietician, Nutritionist, Public health nutritionist, Sports nutritionist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional  that assesses, plans and implements programmes to enhance the impact of food and nutrition on human health.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2265</rdfs:isDefinedBy>
         <rdfs:label>dietician and nutritionist</rdfs:label>
     </owl:Class>
@@ -348,7 +360,7 @@
         <obo:IAO_0000112>Audiologist, Language therapist, Speech pathologist, Speech therapist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional  that evaluates, manages and treats physical disorders affecting human hearing, speech, communication and swallowing.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2266</rdfs:isDefinedBy>
         <rdfs:label>audiologist and speech therapist</rdfs:label>
     </owl:Class>
@@ -362,7 +374,7 @@
         <obo:IAO_0000112>Ophthalmic optician , Optometrist, Orthoptist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health professional  that provides diagnosis, management and treatment services for disorders of the eyes and visual system.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2267</rdfs:isDefinedBy>
         <rdfs:label>optometrist and ophthalmic optician</rdfs:label>
     </owl:Class>
@@ -376,7 +388,7 @@
         <obo:IAO_0000112>Education Methods Specialist, Other Language Teacher, Information Technology Teacher, Private Tutor, School Counsellor, Student Advisor</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A professional that teaches the theory and practice of one or more disciplines at different educational levels.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 23</rdfs:isDefinedBy>
         <rdfs:label>teaching professional</rdfs:label>
     </owl:Class>
@@ -390,7 +402,7 @@
         <obo:IAO_0000112>Higher education lecturer, Professor, University lecturer, University tutor</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A teaching professional that prepares and delivers lectures and conduct tutorials in one or more subjects within a prescribed course of study at a university or other higher educational institution. They conduct research, and prepare scholarly papers and books.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 231</rdfs:isDefinedBy>
         <rdfs:label>university and higher education teacher</rdfs:label>
     </owl:Class>
@@ -404,7 +416,7 @@
         <obo:IAO_0000112>Automotive technology instructor, Cosmetology instructor, Vocational education teacher</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A teaching professional that teaches or instructs vocational or occupational subjects in adult and further education institutions and to senior students in secondary schools and colleges.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 232</rdfs:isDefinedBy>
         <rdfs:label>vocational education teacher</rdfs:label>
     </owl:Class>
@@ -418,7 +430,7 @@
         <obo:IAO_0000112>Secondary school teacher, High school teacher</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A teaching professional that teaches one or more subjects at secondary education level.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 233</rdfs:isDefinedBy>
         <rdfs:label>secondary education teacher</rdfs:label>
     </owl:Class>
@@ -431,7 +443,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010025"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A teaching professional that teaches teach a range of subjects at the primary education level.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2341</rdfs:isDefinedBy>
         <rdfs:label>primary school teacher</rdfs:label>
     </owl:Class>
@@ -445,7 +457,7 @@
         <obo:IAO_0000112>Early childhood educator, Pre-school teacher</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A teaching professional that promotes the social, physical, and intellectual development of children below primary school age through the provision of educational and play activities.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2342</rdfs:isDefinedBy>
         <rdfs:label>early childhood educator</rdfs:label>
     </owl:Class>
@@ -459,7 +471,7 @@
         <obo:IAO_0000112>Learning disabilities special education teacher, Learning support teacher, Remedial teacher, Teacher of gifted children, Teacher of the hearing impaired, Teacher of the sight impaired</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A teaching professional that teaches children, young persons or adults with physical or intellectual special needs.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2352</rdfs:isDefinedBy>
         <rdfs:label>special needs teacher</rdfs:label>
     </owl:Class>
@@ -470,10 +482,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010032">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010025"/>
-        <obo:IAO_0000112>Guitar teacher , Piano teacher , Singing teacher , Violin teacher</obo:IAO_0000112>
+        <obo:IAO_0000112>Guitar teacher (private tuition), Piano teacher (private tuition), Singing teacher (private tuition), Violin teacher (private tuition)</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A teaching professional that teaches students in the practice, theory and performance of music in private or small group tuition or within mainstream educational institutions.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2354</rdfs:isDefinedBy>
         <rdfs:label>music teacher</rdfs:label>
     </owl:Class>
@@ -484,10 +496,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010033">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010025"/>
-        <obo:IAO_0000112>Dance teacher , Drama teacher , Painting teacher , Sculpture teacher</obo:IAO_0000112>
+        <obo:IAO_0000112>Dance teacher (private tuition), Drama teacher (private tuition), Painting teacher (private tuition), Sculpture teacher (private tuition)</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A teaching professional  that teaches students in the practice, theory and performance of dance, drama, visual and other arts  in private or small group tuition or within mainstream educational institutions.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000115>A teaching professional  that teaches students in the practice, theory and performance of dance, drama, visual and other arts (excluding music) in private or small group tuition or within mainstream educational institutions.</obo:IAO_0000115>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2355</rdfs:isDefinedBy>
         <rdfs:label>arts teacher</rdfs:label>
     </owl:Class>
@@ -500,7 +512,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010006"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A professional that conducts research, improves or develops concepts, theories and operational methods, or applies knowledge relating to the law, social or cultural studies.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 26</rdfs:isDefinedBy>
         <rdfs:label>legal, social and cultural professional</rdfs:label>
     </owl:Class>
@@ -514,7 +526,7 @@
         <obo:IAO_0000112>Lawyer, Judge, Coroner</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A legal, social and cultural professional that conducts research on legal problems, advises clients on legal aspects of problems, pleads cases or conducts prosecutions in courts of law, presides over judicial proceedings in courts of law and draft laws and regulations.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 261</rdfs:isDefinedBy>
         <rdfs:label>legal professional</rdfs:label>
     </owl:Class>
@@ -528,7 +540,7 @@
         <obo:IAO_0000112>Librarian, Archivist,  Curator</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A legal, social and cultural professional that develops and maintains collections of archives, libraries, museums, art galleries and similar establishments.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 262</rdfs:isDefinedBy>
         <rdfs:label>librarian, archivist and curator</rdfs:label>
     </owl:Class>
@@ -542,7 +554,7 @@
         <obo:IAO_0000112>Economist, Sociologist, Anthropologist, Philosopher, Historian, Political Scientist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A legal, social and cultural professional that conducts research, improves or develops concepts, theories and operational methods or applies knowledge relating to psychology, sociology, philosophy, politics, economics, sociology, anthropology, history and other social sciences, or provides social services to meet the needs of individuals and families in a community.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 263</rdfs:isDefinedBy>
         <rdfs:label>social professional</rdfs:label>
     </owl:Class>
@@ -556,7 +568,7 @@
         <obo:IAO_0000112>Clinical psychologist, Counselling psychologist, Educational psychologist, Forensic psychologist, Health psychologist, Neuropsychologist, Organizational psychologist, Psychotherapist, Sport and exercise psychologist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A social professional that studies the mental processes and behaviour of human beings as individuals or in groups, and applies this knowledge to promote personal, social, educational or occupational adjustment and development.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2634</rdfs:isDefinedBy>
         <rdfs:label>psychologist</rdfs:label>
     </owl:Class>
@@ -567,10 +579,10 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010039">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010037"/>
-        <obo:IAO_0000112>Counsellor, Addictions counsellor, Bereavement counsellor, Child and youth counsellor, District social welfare officer, Family counsellor, Marriage counsellor, Parole officer, Probation officer, Sexual assault counsellor, Social worker, Womens welfare organizer</obo:IAO_0000112>
+        <obo:IAO_0000112>Counsellor, Addictions counsellor, Bereavement counsellor, Child and youth counsellor, District social welfare officer, Family counsellor, Marriage counsellor, Parole officer, Probation officer, Sexual assault counsellor, Social worker, Women’s welfare organizer</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A social professional that provides advice and guidance to individuals, families, groups, communities and organizations in response to social and personal difficulties. They assist clients to develop skills and access resources and support services needed to respond to issues arising from unemployment, poverty, disability, addiction, criminal and delinquent behaviour, marital and other problems.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2635</rdfs:isDefinedBy>
         <rdfs:label>social work and counselling professional</rdfs:label>
     </owl:Class>
@@ -584,7 +596,7 @@
         <obo:IAO_0000112>Bonze, Imam, Minister of religion, Poojari, Priest, Rabbi</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A legal, social and cultural professional that functions  as a perpetuator of sacred traditions, practices and beliefs. They conduct religious services, celebrate or administer the rites of a religious faith or denomination, provide spiritual and moral guidance and perform other functions associated with the practice of a religion.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 2636</rdfs:isDefinedBy>
         <rdfs:label>religious professional</rdfs:label>
     </owl:Class>
@@ -598,7 +610,7 @@
         <obo:IAO_0000112>Author, Writer, Journalist, Translator, News anchor</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A legal, social and cultural professional that conceives and creates literary works, and interprets and communicates news and public affairs through the media.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 264</rdfs:isDefinedBy>
         <rdfs:label>author and journalist</rdfs:label>
     </owl:Class>
@@ -625,7 +637,7 @@
         <obo:IAO_0000112>Visual artist, Musician, Singer, Composer, Dancer, Choreographer, Director, Producer, Actor, Announcer on radio, television and other media</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A legal, social and cultural professional that communicates ideas, impressions and facts in a wide range of media to achieve particular effects, interprets a composition such as a musical score or a script to perform or direct the performance, and hosts the presentation of such performance and other media events.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 265</rdfs:isDefinedBy>
         <rdfs:label>creative and performing artist</rdfs:label>
     </owl:Class>
@@ -638,7 +650,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010006"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A professional that performs technical and related tasks connected with research and the application of scientific or artistic concepts and operational methods, and government or business regulations.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3</rdfs:isDefinedBy>
         <rdfs:label>technician and associate professional</rdfs:label>
     </owl:Class>
@@ -652,7 +664,7 @@
         <obo:IAO_0000112>Veterinary Technician</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A technician and associate professional that performs technical and practical tasks to support diagnosis and treatment of illness, disease, injuries and impairments in humans or animals, and supports the implementation of health care usually established by medical, veterinary, nursing and other health professionals.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 32</rdfs:isDefinedBy>
         <rdfs:label>health associate professional</rdfs:label>
     </owl:Class>
@@ -666,7 +678,7 @@
         <obo:IAO_0000112>Medical imaging and therapeutic equipment technician, Medical and Pathology laboratory technician, Pharmaceutical technician, Medical and dental prosthetic technician</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health associate professional that performs technical tasks to assist in diagnosis and treatment of illness, disease, injuries and impairments.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 321</rdfs:isDefinedBy>
         <rdfs:label>medical and pharmaceutical technician</rdfs:label>
     </owl:Class>
@@ -680,7 +692,7 @@
         <obo:IAO_0000112>Practice assistant, Quit Smoking Counsellor, Health educator, Dispensing Optician, Information Technician</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health associate professional that provides basic nursing and personal care for people who are physically or mentally ill, disabled or infirm, and for others in need of care due to potential risks to health including before, during and after childbirth. They generally work under the supervision of, and in support of, implementation of health care, treatment and referrals plans established by medical, nursing, midwifery and other health professionals.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 322</rdfs:isDefinedBy>
         <rdfs:label>nursing and midwifery associate professional</rdfs:label>
     </owl:Class>
@@ -694,7 +706,7 @@
         <obo:IAO_0000112>Assistant nurse, Associate professional nurse, Enrolled nurse, Practical nurse</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A nursing and midwifery associate professional that provides basic nursing and personal care for people in need of such care due to effects of ageing, illness, injury, or other physical or mental impairment. They generally work under the supervision of, and in support of, implementation of health care, treatment and referrals plans established by medical, nursing and other health professionals.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3221</rdfs:isDefinedBy>
         <rdfs:label>nursing associate professional</rdfs:label>
     </owl:Class>
@@ -708,7 +720,7 @@
         <obo:IAO_0000112>Assistant midwife, Traditional midwife</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A nursing and midwifery associate professional that provides basic health care and advice before, during and after pregnancy and childbirth. They implement care, treatment and referral plans usually established by medical, midwifery and other health professionals.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3222</rdfs:isDefinedBy>
         <rdfs:label>midwifery associate professional</rdfs:label>
     </owl:Class>
@@ -722,7 +734,7 @@
         <obo:IAO_0000112>Acupuncture technician, Ayurvedic technician, Bonesetter, Herbalist , Homeopathy technician, Scraping and cupping therapist, Village healer, Witch doctor</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health associate professional that prevents and treats human physical and mental illnesses, disorders and injuries using herbal and other therapies based on theories, beliefs and experiences originating in specific cultures. They administer treatments using traditional techniques and medicaments, either acting independently or according to therapeutic care plans established by a traditional medicine or other health professional.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 323</rdfs:isDefinedBy>
         <rdfs:label>traditional and complementary medicine associate professional</rdfs:label>
     </owl:Class>
@@ -736,7 +748,7 @@
         <obo:IAO_0000112>Dental assistant, Dental hygienist , Dental therapist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health associate professional that provides basic dental care services for the prevention and treatment of diseases and disorders of the teeth and mouth, according to care plans and procedures established by a dentist or other oral health professional.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3251</rdfs:isDefinedBy>
         <rdfs:label>dental assistant and therapist</rdfs:label>
     </owl:Class>
@@ -750,7 +762,7 @@
         <obo:IAO_0000112>Community health aide, Community health promoter, Community health worker, Village health worker, outreach worker, health worker</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health associate professional that provides health education, referral and follow-up, case management, basic preventive health care and home visiting services to specific communities. They provide support and assistance to individuals and families in navigating the health and social services system.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3253</rdfs:isDefinedBy>
         <rdfs:label>community health worker</rdfs:label>
     </owl:Class>
@@ -764,7 +776,7 @@
         <obo:IAO_0000112>Acupressure therapist, Electrotherapist, Hydrotherapist, Massage therapist, Physical rehabilitation technician, Physiotherapy technician, Shiatsu therapist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health associate professional that provides physical therapeutic treatments to patients in circumstances where functional movement is threatened by injury, disease or impairment. Therapies are usually provided according to rehabilitative plans established by a physiotherapist or other health professional.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3255</rdfs:isDefinedBy>
         <rdfs:label>physiotherapy technician and assistant</rdfs:label>
     </owl:Class>
@@ -778,7 +790,7 @@
         <obo:IAO_0000112>Clinical assistant, Medical assistant, Ophthalmic assistant</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health associate professional that performs basic clinical and administrative tasks to support patient care under the direct supervision of a medical practitioner or other health professional.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3256</rdfs:isDefinedBy>
         <rdfs:label>medical assistant</rdfs:label>
     </owl:Class>
@@ -793,7 +805,7 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health associate professional that investigates the implementation of rules and regulations relating to environmental factors that may affect human health, safety in the 
 workplace, and safety of processes for the production of goods and services. They may implement and evaluate programmes to restore or improve safety and sanitary conditions under the supervision of a health professional.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3257</rdfs:isDefinedBy>
         <rdfs:label>environmental and occupational health inspector and associate</rdfs:label>
     </owl:Class>
@@ -807,7 +819,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Ambulance officer, Ambulance paramedic, Emergency medical technician, Emergency paramedic</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A health associate professional that provides emergency health care to patients who are injured, sick, infirm or otherwise physically or mentally impaired prior to and during transport to medical facilities.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3258</rdfs:isDefinedBy>
         <rdfs:label>ambulance worker</rdfs:label>
     </owl:Class>
@@ -821,7 +833,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Financial and Mathematical associate professional, Sales and purchasing agent, Broker, Business Services Agent, Administrative and Specialized Secretary, Government regulatory associate professional, Medical secretary</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A technician and associate professional that performs mostly technical tasks connected with the practical application of knowledge relating to financial accounting and transaction matters, mathematical calculations, human resource development, selling and buying financial instruments, specialized secretarial tasks and enforcing or applying government rules.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 33</rdfs:isDefinedBy>
         <rdfs:label>business and administration associate professional</rdfs:label>
     </owl:Class>
@@ -832,10 +844,10 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010058">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010044"/>
-        <obo:IAO_0000112>Bailiff, Judges clerk, Conveyancing clerk, Court clerk, Justice of the peace, Law clerk, Legal assistant, Paralegal, Private detective, Title searcher</obo:IAO_0000112>
+        <obo:IAO_0000112>Bailiff, Judge’s clerk, Conveyancing clerk, Court clerk, Justice of the peace, Law clerk, Legal assistant, Paralegal, Private detective, Title searcher</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A technician and associate professional that performs support functions in courts of law or in law offices, provide services related to such legal matters as insurance contracts, the transferring of property and the granting of loans and other financial transactions, or conduct investigations for clients.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3411</rdfs:isDefinedBy>
         <rdfs:label>legal and related associate professional</rdfs:label>
     </owl:Class>
@@ -846,10 +858,10 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010059">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010044"/>
-        <obo:IAO_0000112>Community development worker, Community services worker, Crisis intervention worker, Disability services worker, Family services worker, Life skills instructor, Mental health support worker, Welfare support worker, Womens shelter supervisor, Youth services worker</obo:IAO_0000112>
+        <obo:IAO_0000112>Community development worker, Community services worker, Crisis intervention worker, Disability services worker, Family services worker, Life skills instructor, Mental health support worker, Welfare support worker, Women’s shelter supervisor, Youth services worker</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A technician and associate professional that implements social assistance programmes and community services and assist clients to deal with personal and social problems.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3412</rdfs:isDefinedBy>
         <rdfs:label>social work associate professional</rdfs:label>
     </owl:Class>
@@ -863,7 +875,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Faith healer, Lay preacher, Monk, Nun</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A technician and associate professional that provides support to ministers of religion or to a religious community, undertake religious works, preach and propagate the teachings of a particular religion and endeavour to improve well-being through the power of faith and spiritual advice.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3413</rdfs:isDefinedBy>
         <rdfs:label>religious associate professional</rdfs:label>
     </owl:Class>
@@ -877,7 +889,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>physical activity professional, exercise physiologist, exercise therapist, exercise specialist</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A technician and associate professional that prepares for and competes in sporting events for financial gain, trains amateur and professional sportsmen and women to enhance performance, promotes participation and standards in sport, organises and officiates sporting events, or provides instruction, training and supervision for various forms of exercise and other recreational activities.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 342</rdfs:isDefinedBy>
         <rdfs:label>sport and fitness worker</rdfs:label>
     </owl:Class>
@@ -891,7 +903,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Athlete, Bicycle racer, Boxer, Chess player , Footballer, Golfer, Hockey player, Jockey, Poker player, Racing driver, Skier, Tennis player, Wrestler</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A sport and fitness worker that participates in competitive sporting events. They train and compete, either individually or as part of a team, in their chosen sport.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3421</rdfs:isDefinedBy>
         <rdfs:label>athlete and sports player</rdfs:label>
     </owl:Class>
@@ -905,7 +917,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Referee, Ski instructor, Sports coach, Sports official, Swimming instructor</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A sport and fitness worker that works with amateur and professional sportspersons to enhance performance and encourage greater participation in sport, and organizes and officiates in sporting events according to established rules.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3422</rdfs:isDefinedBy>
         <rdfs:label>sports coach, instructor and official</rdfs:label>
     </owl:Class>
@@ -919,7 +931,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Aerobics instructor, Fitness instructor, Horse riding instructor, Outdoor adventure guide, Personal trainer, Sailing instructor, Underwater diving instructor</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A sport and fitness worker that leads, guides and instructs groups and individuals in recreational, fitness or outdoor adventure activities.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 3423</rdfs:isDefinedBy>
         <rdfs:label>fitness and recreation instructor and programme leader</rdfs:label>
     </owl:Class>
@@ -933,7 +945,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Photographer, Interior designers and decorator, Gallery, museum and library technician, Chef</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A technician and associate professional that combines creative skills and technical and cultural knowledge in creative media or food.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 343</rdfs:isDefinedBy>
         <rdfs:label>artistic, cultural and culinary associate professional</rdfs:label>
     </owl:Class>
@@ -947,7 +959,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Information and Communications Technology Operations and User Support Technician, Telecommunications and Broadcasting Technician</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A technician and associate professional that provides support for the day to day running of computer systems, communication systems and networks, broadcast images and sound, telecommunication signals on land, sea or in aircraft.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 35</rdfs:isDefinedBy>
         <rdfs:label>information and communications technician</rdfs:label>
     </owl:Class>
@@ -961,7 +973,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>General and Keyboard Clerk, customers Services Clerk, Numerical and Material Recording Clerk</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role that records, organizes, stores, computes and retrieves information, and performs a number of clerical duties in connection with money-handling operations, travel arrangements, requests for information, and appointments.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 4</rdfs:isDefinedBy>
         <rdfs:label>clerical support worker</rdfs:label>
     </owl:Class>
@@ -974,7 +986,7 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010004"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role that provides personal or protective services related to travel, house-keeping, catering, personal care, protection against fire and unlawful acts, or sells goods in retail or markets.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 5</rdfs:isDefinedBy>
         <rdfs:label>services and sales worker</rdfs:label>
     </owl:Class>
@@ -988,7 +1000,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Travel Attendant, Conductor, Guide, Cook, Waiter, Bartender, Hairdresser, Beautician, Housekeeping Supervisor, Astrologer, Fortune-teller, Valet, Undertaker, Embalmer, Pet Groomer, Animal Care Worker</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A services and sales worker that provides personal services related to travel, housekeeping, catering and hospitality, hairdressing and beauty treatment, animal care grooming and training, companionship and other services of a personal nature.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 51</rdfs:isDefinedBy>
         <rdfs:label>personal services worker</rdfs:label>
     </owl:Class>
@@ -1002,7 +1014,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Street Salesperson, Market Salesperson, Shop Salesperson, Cashier, Ticket Clerk, Model, Sales Demonstrator, Door-to-door Salesperson, Contact Centre Salesperson, Service Station Attendant, Food Service Counter Attendant</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A services and sales worker that demonstrates goods in wholesale or retail shops, at stalls and markets, door to door, via telephone or customer contact centres. They may record and accept payment for goods and services purchased, and may operate small retail outlets.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 52</rdfs:isDefinedBy>
         <rdfs:label>sales worker</rdfs:label>
     </owl:Class>
@@ -1016,7 +1028,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Personal carer</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A services and sales worker that provides care, supervision and assistance for children, patients and elderly, convalescent or disabled persons in institutional and residential settings.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 53</rdfs:isDefinedBy>
         <rdfs:label>personal care worker</rdfs:label>
     </owl:Class>
@@ -1030,7 +1042,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Babysitter, Child care worker, Creche ayah, Family day care worker, Nanny, Out of school hours care worker</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A personal care worker that provides care and supervision for children in non-domestic settings.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 5311</rdfs:isDefinedBy>
         <rdfs:label>child care worker</rdfs:label>
     </owl:Class>
@@ -1041,12 +1053,12 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010073">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010071"/>
-        <obo:IAO_0000112>Pre-school assistant, Teachers assistant</obo:IAO_0000112>
+        <obo:IAO_0000112>Pre-school assistant, Teacher’s assistant</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A personal care worker that performs non-teaching duties to assist teaching staff, and provides care and supervision for children in schools and pre-schools.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 5312</rdfs:isDefinedBy>
-        <rdfs:label>teachers aide</rdfs:label>
+        <rdfs:label>teachers’ aide</rdfs:label>
     </owl:Class>
     
 
@@ -1055,10 +1067,10 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010074">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010071"/>
-        <obo:IAO_0000112>Nursing aide , Patient care assistant, Psychiatric aid</obo:IAO_0000112>
+        <obo:IAO_0000112>Nursing aide (clinic or hospital), Patient care assistant, Psychiatric aid</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A personal care worker that provides direct personal care and assistance with activities of daily living to patients and residents in a variety of health care settings, working  in implementation of established care plans and practices, and under the direct supervision of medical, nursing or other health professionals or associate professionals.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 5321</rdfs:isDefinedBy>
         <rdfs:label>health care assistant</rdfs:label>
     </owl:Class>
@@ -1069,10 +1081,10 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010075">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010071"/>
-        <obo:IAO_0000112>Home birth assistant, Home care aide, Nursing aide , Personal care provider</obo:IAO_0000112>
+        <obo:IAO_0000112>Home birth assistant, Home care aide, Nursing aide (home), Personal care provider</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A personal care worker that provide routine personal care and assistance with activities of daily living to persons who are in need of such care due to effects of ageing, illness, injury, or other physical or mental conditions, in private homes and other independent residential settings.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 5322</rdfs:isDefinedBy>
         <rdfs:label>home-based personal care worker</rdfs:label>
     </owl:Class>
@@ -1086,7 +1098,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Firefighter, Police officer, Prison guard, Security guard, Offender manager</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A services and sales worker that protects individuals and property against fire and other hazards, maintain law and order and enforce laws and regulations.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 54</rdfs:isDefinedBy>
         <rdfs:label>protective services worker</rdfs:label>
     </owl:Class>
@@ -1100,7 +1112,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Market gardener, Crop grower, Animal Producer, Mixed Crop and Animal Producer, Forestry worker, Fishery worker, Hunter. Subsistence Crop Farmer, Subsistence Livestock Farmer</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role that grows and harvests plants or animals to provide food, shelter and income for themselves and their households.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 6</rdfs:isDefinedBy>
         <rdfs:label>skilled agricultural, forestry and fishery worker</rdfs:label>
     </owl:Class>
@@ -1114,7 +1126,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Building Trade Worker, Metal Workers, Machinery Worker, Handicraft Worker, Printing Worker, Electrical Equipment Installers and Repairer, Electronics and Telecommunications Installer and Repairer, Food Processing Worker, Woodworker, Tobacco Product Maker</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role that applies specific technical and practical knowledge and skills to construct and maintain buildings, machinery, equipment or tools, carries out printing work, and produces or processes foodstuffs, textiles and wooden, metal and other articles, including handicraft goods.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 7</rdfs:isDefinedBy>
         <rdfs:label>craft and related trades worker</rdfs:label>
     </owl:Class>
@@ -1128,7 +1140,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>Stationary Plant and Machine Operator, Driver, Mobile Plant Operator</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role that operates and monitors industrial and agricultural machinery and equipment on the spot or by remote control, or drives and operates trains, motor vehicles and mobile machinery and equipment.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 8</rdfs:isDefinedBy>
         <rdfs:label>plant and machine operator</rdfs:label>
     </owl:Class>
@@ -1141,7 +1153,7 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010004"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role that assembles products from component parts according to strict specifications and procedures.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 8</rdfs:isDefinedBy>
         <rdfs:label>assembler</rdfs:label>
     </owl:Class>
@@ -1152,10 +1164,10 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010081">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010004"/>
-        <obo:IAO_0000112>Cleaner, Labourer, Food Preparation Assistant, Street and Related Services Worker, Street Vendor , Refuse Worker</obo:IAO_0000112>
+        <obo:IAO_0000112>Cleaner, Labourer, Food Preparation Assistant, Street and Related Services Worker, Street Vendor (excluding Food), Refuse Worker</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role that involves the performance of simple and routine tasks which may require the use of hand-held tools and considerable physical effort.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 9</rdfs:isDefinedBy>
         <rdfs:label>elementary occupation</rdfs:label>
     </owl:Class>
@@ -1166,10 +1178,10 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010082">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010004"/>
-        <obo:IAO_0000112>Admiral, Air commodore, Air marshal, Airman, Brigadier , Bombardier, Captain , Captain , Captain , Colonel , Corporal,  Field marshal, Flight lieutenant , Flying officer , General , Gunner, Group captain, , Lieutenant , Major , Midshipman, Naval officer  , Navy commander, Officer cadet , Paratrooper, Rifleman, Sergeant , Second lieutenant , Seaman, Squadron leader, Sublieutenant , Wing commander</obo:IAO_0000112>
+        <obo:IAO_0000112>Admiral, Air commodore, Air marshal, Airman, Brigadier (army), Bombardier, Captain (air force), Captain (army), Captain (navy), Colonel (army), Corporal,  Field marshal, Flight lieutenant (air force), Flying officer (military), General (army), Gunner, Group captain, (air force), Lieutenant (army), Major (army), Midshipman, Naval officer (military) , Navy commander, Officer cadet (armed forces), Paratrooper, Rifleman, Sergeant (army), Second lieutenant (army), Seaman, Squadron leader, Sublieutenant (navy), Wing commander</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An occupational role that includes all jobs held by members of the armed forces.</obo:IAO_0000115>
-        <obo:IAO_0000119>International Standard Classification of Occupations</obo:IAO_0000119>
+        <obo:IAO_0000119>International Standard Classification of Occupations (ISCO)</obo:IAO_0000119>
         <rdfs:isDefinedBy>ISCO: 10</rdfs:isDefinedBy>
         <rdfs:label>armed forces occupation</rdfs:label>
     </owl:Class>
@@ -1424,7 +1436,7 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010104">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010094"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A relatedness between person source and the target population that is descried as matched to intervention recipients on the basis of peerness  age, social status, gender, shared experience, shared health status etc.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relatedness between person source and the target population that is descried as matched to intervention recipients on the basis of ‘peerness’ – age, social status, gender, shared experience, shared health status etc.</obo:IAO_0000115>
         <rdfs:label>peer</rdfs:label>
     </owl:Class>
     
@@ -1436,7 +1448,7 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010094"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A relatedness between person source and the target population that is a source who is known and working to deliver intervention in own community.</obo:IAO_0000115>
-        <rdfs:label>embedded in participants community</rdfs:label>
+        <rdfs:label>embedded in participants’ community</rdfs:label>
     </owl:Class>
     
 
@@ -1581,7 +1593,7 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010108"/>
         <obo:IAO_0000112>fluent, native</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A socio-demographic attribute of person source that is an individuals ability to speak or perform in the intervention language.</obo:IAO_0000115>
+        <obo:IAO_0000115>A socio-demographic attribute of person source that is an individual’s ability to speak or perform in the intervention language.</obo:IAO_0000115>
         <rdfs:label>language proficiency of person source</rdfs:label>
     </owl:Class>
     
@@ -1605,7 +1617,7 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010108"/>
         <obo:IAO_0000112>source is highly physically active</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A socio-demographic attribute of person source that is their amount or experience of the interventions target behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A socio-demographic attribute of person source that is their amount or experience of the intervention’s target behaviour.</obo:IAO_0000115>
         <rdfs:label>target behaviour of person source</rdfs:label>
     </owl:Class>
     
@@ -1643,7 +1655,7 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010121">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010120"/>
-        <obo:IAO_0000112>trained</obo:IAO_0000112>
+        <obo:IAO_0000112>trained (if unclear whether pre-existing or acquired)</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An expertise of person source that is knowledge or skills held in order to deliver the behaviour change intervention.</obo:IAO_0000115>
         <rdfs:label>knowledge or skill</rdfs:label>
@@ -1655,7 +1667,7 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010122">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010121"/>
-        <obo:IAO_0000112>Bachelors degree, certification, accredited, qualified</obo:IAO_0000112>
+        <obo:IAO_0000112>Bachelor’s degree, certification, accredited, qualified</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A knowledge or skill that is already possessed by the source which allows them to deliver the behaviour change intervention, including educational level and qualifications.</obo:IAO_0000115>
         <rdfs:label>pre-existing knowledge or skill</rdfs:label>
@@ -1668,7 +1680,6 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010123">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000112>The division of expertise into different disciplines or fields is complex and depends on historical, social and structural factors.</obo:IAO_0000112>
-        <obo:IAO_0000112>psychology, yoga, cognitive behavioural therapy, hypnotism</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute that is a field of knowledge or practice.</obo:IAO_0000115>
         <rdfs:label>expertise discipline</rdfs:label>
@@ -1747,7 +1758,7 @@ workplace, and safety of processes for the production of goods and services. The
         </rdfs:subClassOf>
         <obo:IAO_0000112>supervised</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A process in which a person source is formally provided, by an individual with appropriate expertise, with corrective and skill-enhancing feedback, regarding the person sources performance in delivering the intervention.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process in which a person source is formally provided, by an individual with appropriate expertise, with corrective and skill-enhancing feedback, regarding the person source’s performance in delivering the intervention.</obo:IAO_0000115>
         <rdfs:label>supervision of person source</rdfs:label>
     </owl:Class>
     
@@ -1859,6 +1870,17 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010139 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010139">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010138"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An organisation that is the bearer of a behaviour change intervention source role, such as voluntary, public or commercial organisations delivering a behaviour change intervention.</obo:IAO_0000115>
