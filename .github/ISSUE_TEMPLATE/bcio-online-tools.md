@@ -1,5 +1,5 @@
 ---
-name: BCIO tools
+name: BCIO online tools
 about: 'Report queries or bugs about BCIO tools: BCIOSearch, BCIOVisualise, Prediction
   Tool, Paper Authoring Tool'
 title: ''
