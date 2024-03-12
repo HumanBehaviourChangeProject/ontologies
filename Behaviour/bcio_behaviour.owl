@@ -48,12 +48,6 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
         <rdfs:comment> it is concerned with moving skeletal parts to which it is usually attached.&apos; (https://www.collinsdictionary.com/dictionary/english/striped-muscle)</rdfs:comment>
@@ -168,10 +162,10 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence (e.g., st
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036021 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036021">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000112>Expressive dancing, Singing, Playing Music</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An experience-related behaviour that involves consciously using some capability to create or shape an aspect of the environment to express an idea or emotion.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour that involves consciously using some capability to create or shape an aspect of the environment to express an idea or emotion.</obo:IAO_0000115>
         <rdfs:comment>An aspect of the environment includes both objects within it but also processes (e.g., music performance or dancing).</rdfs:comment>
         <rdfs:label>creative expressive behaviour</rdfs:label>
     </owl:Class>
@@ -253,10 +247,10 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence (e.g., st
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036030 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036030">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050438"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
         <obo:IAO_0000112>Copulating, Masturbating, Flirting, Having intercourse</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A life function-related behaviour that involves sexual arousal.</obo:IAO_0000115>
+        <obo:IAO_0000115>An experience-related behaviour that involves sexual arousal.</obo:IAO_0000115>
         <rdfs:comment>The classes &apos;reproductive behaviour&apos; and &apos;sexual behaviour&apos; have some instances in which they would overlap. For instance, a subclass of both of these classes would be &apos;reproductive sexual behaviour&apos;. Examples for &apos;reproductive sexual behaviour&apos; can be annotated by using the two classes: &apos;reproductive behaviour&apos; and &apos;sexual behaviour&apos;. There are also various examples in which the classes &apos;reproductive behaviour&apos; does not overlap with sexual behaviour. For instance, fertility preservation would be a reproductive behaviour but not a sexual behaviour. Similarly, various sexual behaviours do not have a reproductive function. For instance, performing oral sex may not have a reproductive function.</rdfs:comment>
         <rdfs:label>sexual behaviour</rdfs:label>
     </owl:Class>
@@ -291,10 +285,18 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence (e.g., st
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036034 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036034">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000112>Calling out, Talking, Shouting, Teaching, Messaging, Lying, Exaggerating, Threatening, Greeting, Advising, Instructing, Conversing, Lobbying, Demonstrating, Training, Meeting, Posting on social media, Self-disclosing, Answering, Coaching, Giving a speech, Discussing, Story-telling, Writing an article, Advertising</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An inter-personal behaviour that involves the transmission of information.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour that involves the transmission of information between two or more people.</obo:IAO_0000115>
         <rdfs:label>human communication behaviour</rdfs:label>
     </owl:Class>
     
@@ -442,9 +444,9 @@ The classes &apos;travel behaviour&apos; and &apos;locomotive behaviour&apos; ha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036061 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036061">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050439"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An object-using behaviour that involves ingesting material into the body.</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity-related behaviour that involves ingesting material into the body.</obo:IAO_0000115>
         <rdfs:label>consumption behaviour</rdfs:label>
     </owl:Class>
     
@@ -626,17 +628,6 @@ There can be different dimensions of nurturing, e.g., in some cases, nurturing c
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_036092 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A function that inheres in an animal and is realised in processes that enable the animal to survive and thrive.</obo:IAO_0000115>
-        <rdfs:label>animal function</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036100 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036100">
@@ -796,6 +787,17 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_042000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_042000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is an individual human behaviour or a population behaviour.</obo:IAO_0000115>
+        <rdfs:label>human behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
@@ -808,8 +810,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050209"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Individual human behaviour change that involves a person, who enacted a behaviour pattern until a specific timepoint, not performing this behaviour for a duration after that specific timepoint.</obo:IAO_0000115>
-        <obo:IAO_0000118> cessation of a behaviour pattern</obo:IAO_0000118>
-        <obo:IAO_0000118>behavioural cessation</obo:IAO_0000118>
+        <obo:IAO_0000118>cessation of a behaviour pattern</obo:IAO_0000118>
         <obo:IAO_0000232>behaviour change and process_part_of some (&apos;history&apos; and has_process_part some (&apos;behaviour pattern&apos; and before value t1) and has_process_part some ((not &apos;behaviour pattern&apos;) and after value t1 and before value t2))</obo:IAO_0000232>
         <rdfs:label>individual human behaviour pattern cessation</rdfs:label>
     </owl:Class>
@@ -920,6 +921,18 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A learning behaviour that involves improving a person&apos;s knowledge.</obo:IAO_0000115>
         <rdfs:label>knowledge development behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050300 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A specifically dependent continuant that inheres in a person.</obo:IAO_0000115>
+        <rdfs:comment>Attributes included under this header are age, immigration, social and economic conditions.</rdfs:comment>
+        <rdfs:label>personal attribute</rdfs:label>
     </owl:Class>
     
 
@@ -1187,9 +1200,12 @@ Prescribing medication can include advising and authorising to stop using a medi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050374 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050374">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050442"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A vocalisation behaviour showing an emotion such as mirth, joy, or scorn with a chuckle or explosive vocal sound.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour showing elation, amusement or scorn by means of facial expressions and repeated sharp exhalations.</obo:IAO_0000115>
+        <obo:IAO_0000119> 
+https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
+        <obo:IAO_0000119>Based on https://www.britannica.com/topic/humor#ref126128</obo:IAO_0000119>
         <rdfs:label>laughing</rdfs:label>
     </owl:Class>
     
@@ -1799,9 +1815,9 @@ Prescribing medication can include advising and authorising to stop using a medi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050442 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050442">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour using one&apos;s voice to produce sounds.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour involving vibration of the vocal chords.</obo:IAO_0000115>
         <rdfs:label>vocalisation behaviour</rdfs:label>
     </owl:Class>
     
@@ -1849,6 +1865,309 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A uniform process aggregate whose members are individual behaviour patterns of a population.</obo:IAO_0000115>
         <rdfs:label>population behaviour pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050449 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050449">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal interval during which a person is abstinent from a behaviour.</obo:IAO_0000115>
+        <rdfs:label>abstinence duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050450 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050450">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A time point that is the end of an abstinence period.</obo:IAO_0000115>
+        <rdfs:comment>We often refer to timepoints when we mean a specific time or some extended period (e.g., Monday). This class allows for the natural usage of a term while maintaining ontological coherence.</rdfs:comment>
+        <rdfs:label>abstinence end point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050451 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050451">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal attribute in which a person does not engage in a behaviour during a time period.</obo:IAO_0000115>
+        <rdfs:label>abstinence from a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050452 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050452">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A time point that is the start of an abstinence period.</obo:IAO_0000115>
+        <rdfs:comment>We often refer to timepoints when we mean a specific time or some extended period (e.g., Monday). This class allows for the natural usage of a term while maintaining ontological coherence.</rdfs:comment>
+        <rdfs:label>abstinence start point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050453 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050453">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A time point that is the end of an individual human behaviour.</obo:IAO_0000115>
+        <rdfs:comment>We often refer to timepoints when we mean a specific time or some extended period (e.g., Monday). This class allows for the natural usage of a term while maintaining ontological coherence.</rdfs:comment>
+        <rdfs:label>behaviour end point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050454 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050454">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A time point that is the start of an individual human behaviour.</obo:IAO_0000115>
+        <rdfs:comment>We often refer to timepoints when we mean a specific time or some extended period (e.g., Monday). This class allows for the natural usage of a term while maintaining ontological coherence.</rdfs:comment>
+        <rdfs:label>behaviour starting point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050455 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050455">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal interval within which an individual human behaviour occurs.</obo:IAO_0000115>
+        <rdfs:label>behavioural duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050456 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050456">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An expressive behaviour that involves tears, and facial expressions of distress.</obo:IAO_0000115>
+        <rdfs:label>crying</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050457 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that conveys a thought or feeling.</obo:IAO_0000115>
+        <rdfs:label>expressive behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050458 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050458">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An expressive behaviour that involves the muscles of the face.</obo:IAO_0000115>
+        <rdfs:comment>If facial expression behaviour is enacted when communicating with someone, please refer to the class labelled ‘non-linguistic communication behaviour using facial expression’ (BCIO:050425).</rdfs:comment>
+        <rdfs:label>facial expression behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050459 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050459">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An expressive behaviour involving a movement of the limbs, head or torso.</obo:IAO_0000115>
+        <rdfs:comment>If the gesticulatory behaviour is enacted when communicating with someone, please refer to the class labelled ‘non-linguistic communication behaviour using gesture’ (BCIO:036002).</rdfs:comment>
+        <rdfs:label>gesticulatory expressive behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050460 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050460">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036029"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036029"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A posture behaviour that is expressive.</obo:IAO_0000115>
+        <rdfs:comment>If postural behaviour is enacted when communicating with someone, please refer to the class labelled ‘non-linguistic communication behaviour using body language’ (BCIO:050424)</rdfs:comment>
+        <rdfs:label>postural expressive behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050461 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050461">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050442"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A vocalisation behaviour that expresses something using words.</obo:IAO_0000115>
+        <rdfs:comment>If talking is enacted when communicating with someone, please refer to the class labelled ‘linguistic communication behaviour’ (BCIO:050237)</rdfs:comment>
+        <rdfs:label>talking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050462 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050462">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050433"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Cognitive exertion expended on a behaviour that is high.</obo:IAO_0000115>
+        <rdfs:comment>High cognitive exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what high exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>high cognitive exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050463 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050463">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050434"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional management exertion expended on a behaviour that is high.</obo:IAO_0000115>
+        <rdfs:comment>High emotional management exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what high exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>high emotional management exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050464 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050464">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050431"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Mental exertion expended on a behaviour that is high.</obo:IAO_0000115>
+        <rdfs:comment>High mental exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what high exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>high mental exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050465 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050465">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050432"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Physical exertion expended on a behaviour that is high</obo:IAO_0000115>
+        <rdfs:comment>High physical exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what high exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>high physical exertion expended on behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050466 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050466">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050433"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Cognitive exertion expended on a behaviour that is low.</obo:IAO_0000115>
+        <rdfs:comment>Low cognitive exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what low exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>low cognitive exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050467 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050467">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050434"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional management exertion expended on a behaviour that is low.</obo:IAO_0000115>
+        <rdfs:comment>Low emotional management exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what low exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>low emotional management exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050468 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050468">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050431"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Mental exertion expended on a behaviour that is low.</obo:IAO_0000115>
+        <rdfs:comment>Low mental exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what low exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>low mental exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050469 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050469">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050432"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Physical exertion expended on a behaviour that is low.</obo:IAO_0000115>
+        <rdfs:comment>Low physical exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what low exertion means</rdfs:comment>
+        <rdfs:label>low physical exertion expended on behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050470 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050470">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050433"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Cognitive exertion expended on a behaviour that is medium.</obo:IAO_0000115>
+        <rdfs:comment>Moderate cognitive exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what moderate exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>moderate cognitive exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050471 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050471">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050434"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional management exertion expended on a behaviour that is medium.</obo:IAO_0000115>
+        <rdfs:comment>Moderate emotional management exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what moderate exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>moderate emotional management exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050472 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050472">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050431"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Mental exertion expended on a behaviour that is medium.</obo:IAO_0000115>
+        <rdfs:comment>Moderate mental exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what moderate exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>moderate mental exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050473 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050473">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050432"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Physical exertion expended on a behaviour that is medium.</obo:IAO_0000115>
+        <rdfs:comment>Moderate physical exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what moderate exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>moderate physical exertion expended on behaviour</rdfs:label>
     </owl:Class>
     
 
