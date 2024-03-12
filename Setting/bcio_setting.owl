@@ -33,12 +33,6 @@
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_026000 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026000"/>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_026001 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026001">
@@ -73,12 +67,6 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Features of a given location, such as social and economic characteristics.</obo:IAO_0000115>
         <rdfs:label>attribute of location</rdfs:label>
@@ -541,6 +529,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Methods of traveling from one place to another.</obo:IAO_0000115>
+        <obo:IAO_0000119>NCI Thesaurus OBO Edition</obo:IAO_0000119>
         <rdfs:label>transportation</rdfs:label>
     </owl:Class>
     
@@ -555,6 +544,7 @@
         <obo:IAO_0000112>bus</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Forms of transportation that run on fixed routes and are available to the public, usually for a set fare</obo:IAO_0000115>
+        <obo:IAO_0000119>NCI Thesaurus OBO Edition</obo:IAO_0000119>
         <rdfs:label>public transportation</rdfs:label>
     </owl:Class>
     
@@ -658,6 +648,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A place designed and staffed to house and treat individuals that need assistance with mental dysfunctions</obo:IAO_0000115>
+        <obo:IAO_0000119>NCI Thesaurus OBO Edition</obo:IAO_0000119>
         <rdfs:label>psychiatric facility</rdfs:label>
     </owl:Class>
     
@@ -669,6 +660,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof.</obo:IAO_0000115>
+        <obo:IAO_0000119>Basic Formal Ontology</obo:IAO_0000119>
         <rdfs:label>site</rdfs:label>
     </owl:Class>
     
@@ -680,6 +672,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An open way for the passage of vehicles, persons, or animals on land</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>road</rdfs:label>
     </owl:Class>
     
@@ -691,6 +684,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of wate</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>beach</rdfs:label>
     </owl:Class>
     
@@ -702,6 +696,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An area in which grasses (Graminae) are a significant component of the vegetation</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>grassland</rdfs:label>
     </owl:Class>
     
@@ -713,6 +708,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An area with a high density of trees. A small forest may be called a wood</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>forest</rdfs:label>
     </owl:Class>
     
@@ -725,6 +721,7 @@
         <obo:IAO_0000112>research lab</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A facility, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>research facility</rdfs:label>
     </owl:Class>
     
@@ -736,6 +733,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026046"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A bounded area of land, or water, usually in its natural or semi-natural (landscaped) state and set aside for some purpose, usually to do with recreation or conservation</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>park</rdfs:label>
     </owl:Class>
     
@@ -747,6 +745,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An area which is outside of a town, city, or urban area. Rural areas are primarily used for agriculture or pastoralism and may contain rural settlements</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>rural area</rdfs:label>
     </owl:Class>
     
@@ -758,6 +757,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>Incorporated populated place</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>urban area</rdfs:label>
     </owl:Class>
     
@@ -769,6 +769,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A reference to a place on the Earth, by its name or by its geographical location</obo:IAO_0000115>
+        <obo:IAO_0000119>Gazeteer Ontology</obo:IAO_0000119>
         <rdfs:label>geographic location</rdfs:label>
     </owl:Class>
     
@@ -780,6 +781,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An architectural structure that bears some function.</obo:IAO_0000115>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>facility</rdfs:label>
     </owl:Class>
     
@@ -791,6 +793,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A facility that is run by a hospital organization, such as emergency departments, outpatient clinics and rehabilitation and is the bearer of a hospital function</obo:IAO_0000115>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>hospital facility</rdfs:label>
     </owl:Class>
     
@@ -802,6 +805,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026022"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A facility that is run by a school organization and is the bearer of a school function</obo:IAO_0000115>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>school facility</rdfs:label>
     </owl:Class>
     
@@ -813,6 +817,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A facility that’s administered by a health care organisation for the purpose of providing health care to a patient population</obo:IAO_0000115>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>healthcare facility</rdfs:label>
     </owl:Class>
     
@@ -824,6 +829,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A health care facility that bears a function to provide healthcare to the sick or terminally ill</obo:IAO_0000115>
+        <obo:IAO_0000119> contacted ontology authors to add definition</obo:IAO_0000119>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>hospice facility</rdfs:label>
     </owl:Class>
     
@@ -835,6 +842,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A facility to assist in physical or addiction recovery</obo:IAO_0000115>
+        <obo:IAO_0000119> contacted ontology authors to add definition</obo:IAO_0000119>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>rehabilitation facility</rdfs:label>
     </owl:Class>
     
@@ -846,6 +855,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000063"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A health care facility that bears a function to provide emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance</obo:IAO_0000115>
+        <obo:IAO_0000119>OMRSE_00000114</obo:IAO_0000119>
         <rdfs:label>emergency department facility</rdfs:label>
     </owl:Class>
     
@@ -857,6 +867,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A facility that has at least one housing unit as part in which a person or persons live</obo:IAO_0000115>
+        <obo:IAO_0000119> contacted ontology authors to add definition</obo:IAO_0000119>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>residential facility</rdfs:label>
     </owl:Class>
     
@@ -868,6 +880,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A health care facility whose function is to store, prepare, dispense, and monitor the usage of pharmaceutical drugs among patients in a given area or encountered in a given health care provider organization</obo:IAO_0000115>
+        <obo:IAO_0000119>The Prescription of Drugs Ontology</obo:IAO_0000119>
         <rdfs:label>pharmacy facility</rdfs:label>
     </owl:Class>
 </rdf:RDF>

@@ -25,23 +25,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000008 -->
-
-    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -447,8 +430,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about the existence of a decrease from an initial reference point.</obo:IAO_0000115>
-        <obo:IAO_0000118> belief about loss</obo:IAO_0000118>
-        <obo:IAO_0000118>perceived loss</obo:IAO_0000118>
+        <obo:IAO_0000118>belief about loss</obo:IAO_0000118>
         <rdfs:comment>The perceived loss could be in anything internal or external, such as wealth or health.
 
 The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos; do not necessarily involve likelihood. Likelihoods relate to the future. However, &apos;belief about reduction&apos; might be about an existing loss.</rdfs:comment>
@@ -483,12 +465,6 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006306"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about how serious the harm associated with an outcome could be.</obo:IAO_0000115>
         <obo:IAO_0000118>belief about threat severity</obo:IAO_0000118>
@@ -525,8 +501,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about the extent to which one is free to choose whether to perform the behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118> belief about autonomy in performing behaviours</obo:IAO_0000118>
-        <obo:IAO_0000118>belief about voluntariness of behaviour</obo:IAO_0000118>
+        <obo:IAO_0000118>belief about autonomy in performing behaviours</obo:IAO_0000118>
         <rdfs:label>belief about choice over a behaviour</rdfs:label>
     </owl:Class>
     
@@ -608,14 +583,9 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006154"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about one&apos;s capabilities to organise and execute a behaviour and achieve the outcomes associated with this behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>self-efficacy</obo:IAO_0000118>
         <rdfs:comment>The phrase &apos;to organise&apos; refers to the ability to organise mental processes and sequences of actions.
 
 &apos;self-efficacy belief for a behaviour&apos; is part of &apos;self-efficacy belief for a behaviour and its associated outcomes&apos;. However, the latter also includes a belief about the outcomes associated with behaviour.</rdfs:comment>
@@ -995,7 +965,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006085 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006085">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A spatial quality that inheres in a bearer by virtue of its position relative to other entities.</obo:IAO_0000115>
         <rdfs:comment>An intervention could be used to rearrange objects in an environment, changing the location of a person relative to these objects and thereby increasing the likelihood of a behaviour.</rdfs:comment>
@@ -1668,12 +1638,6 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006152">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006154"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about one&apos;s capabilities and opportunities within an environmental system to perform a behaviour or achieve the outcomes resulting from a behaviour.</obo:IAO_0000115>
         <rdfs:label>belief about control over behaviour</rdfs:label>
@@ -1798,8 +1762,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006307"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Extrinsic motivation to gain or maintain social approval or a positive self-evaluation.</obo:IAO_0000115>
-        <obo:IAO_0000118> introjected regulation</obo:IAO_0000118>
-        <obo:IAO_0000118>introjected motivation</obo:IAO_0000118>
+        <obo:IAO_0000118>introjected regulation</obo:IAO_0000118>
         <rdfs:label>approval-based motivation</rdfs:label>
     </owl:Class>
     
@@ -1844,8 +1807,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006302"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Autonomous motivation due to the perceived value or importance of the behaviour to oneself.</obo:IAO_0000115>
-        <obo:IAO_0000118> identified regulation</obo:IAO_0000118>
-        <obo:IAO_0000118>identified motivation</obo:IAO_0000118>
+        <obo:IAO_0000118>identified regulation</obo:IAO_0000118>
         <rdfs:label>behavioural importance-based motivation</rdfs:label>
     </owl:Class>
     
@@ -1855,12 +1817,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006305">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006306"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about vulnerability to a threat.</obo:IAO_0000115>
         <obo:IAO_0000118>belief about susceptibility to a risk</obo:IAO_0000118>
@@ -1898,8 +1854,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006302"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Autonomous motivation due to a behaviour being perceived to satisfy a core psychological need.</obo:IAO_0000115>
-        <obo:IAO_0000118> integrated regulation</obo:IAO_0000118>
-        <obo:IAO_0000118>integrated motivation</obo:IAO_0000118>
+        <obo:IAO_0000118>integrated regulation</obo:IAO_0000118>
         <rdfs:label>fundamental need-based motivation</rdfs:label>
     </owl:Class>
     
@@ -1942,7 +1897,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036025 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050441"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An individual human behaviour that involves an interaction between two or more people.</obo:IAO_0000115>
         <rdfs:label>inter-personal behaviour</rdfs:label>
@@ -1953,17 +1908,19 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036034 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036034">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An inter-personal behaviour that involves the transmission of information.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour that involves the transmission of information between two or more people.</obo:IAO_0000115>
         <rdfs:label>human communication behaviour</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
     
 
 
@@ -2298,12 +2255,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050293">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a bodily disposition.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through bodily disposition’ and ‘bodily disposition’ is labelled as ‘through&apos;.
@@ -2320,12 +2271,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050294">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence occurs in a bodily process.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through bodily process’ and ‘bodily process’ is labelled as ‘through&apos;.
@@ -2342,12 +2287,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050295">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a cognitive representation.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through &apos;cognitive representation&apos; and cognitive representation&apos; is labelled as &apos;through&apos;.
@@ -2364,12 +2303,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050296">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects an environmental disposition.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through environmental disposition&apos; and ‘environmental disposition&apos; is labelled as &apos;through&apos;.
@@ -2386,12 +2319,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050297">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence shifts the location of people or objects.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through location&apos; and ‘location&apos; is labelled as &apos;through&apos;.
@@ -2408,12 +2335,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050298">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a material entity.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through material entity’ and ‘material entity’ is labelled as‘through’.
@@ -2430,12 +2351,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050299">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006081"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a personal role.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through personal role’ and ‘personal role’ is labelled as ‘through’.
@@ -2444,107 +2359,6 @@ The ‘through’ relationship is defined as: ‘A relation that holds between a
 
 In this definition, ‘change’ refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, ‘some change’ captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
         <rdfs:label>mechanism of action through personal role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050300 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050300">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A specifically dependent continuant that inheres in a person.</obo:IAO_0000115>
-        <obo:IAO_0000232>The population ontology individuals branch defines many personal attributes</obo:IAO_0000232>
-        <rdfs:comment>Includes everything that can be said about a person: the most general class under which all other qualities, dispositions, roles etc belong.</rdfs:comment>
-        <rdfs:label>personal attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050301 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050301">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition that inheres in a person.</obo:IAO_0000115>
-        <rdfs:label>personal disposition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050302 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050302">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A process attribute that is an attribute of a life process.</obo:IAO_0000115>
-        <rdfs:label>personal life attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050303 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050303">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A quality that inheres in a person.</obo:IAO_0000115>
-        <rdfs:label>personal quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050304 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050304">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>An affective process involving sensory experience of physiological stimuli.</obo:IAO_0000115>
-        <rdfs:label>bodily feeling</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050305 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050305">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A quality that inheres in some extended organism.</obo:IAO_0000115>
-        <rdfs:label>bodily quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050307 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050307">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050305"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A bodily quality that inheres in those structures of the extended organism that are essential for mental functioning.</obo:IAO_0000115>
-        <rdfs:label>mental quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050308 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050308">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</obo:IAO_0000115>
-        <rdfs:label>quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050310 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050310">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
-        <rdfs:label>representation</rdfs:label>
     </owl:Class>
     
 
@@ -2609,7 +2423,7 @@ In this definition, ‘change’ refers to change from what would have been the 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050321">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050322"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A goal interaction in which the goals a facilitatory.</obo:IAO_0000115>
+        <obo:IAO_0000115>A goal interaction in which the goals facilitate each other.</obo:IAO_0000115>
         <rdfs:label>goal facilitation</rdfs:label>
     </owl:Class>
     
@@ -2619,12 +2433,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050322">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An information content entity that is about the extent to which goals are compatible with each other.</obo:IAO_0000115>
         <rdfs:label>goal interaction</rdfs:label>
@@ -2695,6 +2503,14 @@ In this definition, ‘change’ refers to change from what would have been the 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050328 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050328">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006038"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050326"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A mental disposition that is an affective attitude or an evaluative belief about something.</obo:IAO_0000115>
@@ -2707,11 +2523,52 @@ In this definition, ‘change’ refers to change from what would have been the 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050329 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050329">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006147"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050327"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050328"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attitude in which the entity that is the attitude object is a behaviour.</obo:IAO_0000115>
         <obo:IAO_0000232>The class “attitude towards a behaviour” is logically defined as an “affective attitude towards a behaviour” or “evaluative belief about a behaviour”, as the term “attitude towards a behaviour” can be used to refer to either class.</obo:IAO_0000232>
         <rdfs:label>attitude towards a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050441 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050441">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that relates to the social environment.</obo:IAO_0000115>
+        <rdfs:label>socially-related behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050457 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that conveys a thought or feeling.</obo:IAO_0000115>
+        <rdfs:label>expressive behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</obo:IAO_0000115>
+        <rdfs:label>quality</rdfs:label>
     </owl:Class>
     
 
@@ -2881,9 +2738,7 @@ There is no intended sequence of the entities that are part of the emotion proce
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An affective process that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
-        <obo:IAO_0000118> hunger</obo:IAO_0000118>
-        <obo:IAO_0000118> pain</obo:IAO_0000118>
-        <obo:IAO_0000118>Feeling calm</obo:IAO_0000118>
+        <obo:IAO_0000118>pain</obo:IAO_0000118>
         <rdfs:comment>&apos;Subjective affective feeling can have greater or weaker physiological or mental components. The bodily process that are experienced will usually involve some mental process.
 
 Bodily sensation and the experiences of emotions (e.g., feeling calm) would both qualify as examples of &apos;subjective affective feeling&apos;.
@@ -3286,8 +3141,7 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000032"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>Surprise with a positive valence.</obo:IAO_0000115>
-        <obo:IAO_0000118> astonishment</obo:IAO_0000118>
-        <obo:IAO_0000118>wonder</obo:IAO_0000118>
+        <obo:IAO_0000118>astonishment</obo:IAO_0000118>
         <rdfs:label>positive surprise</rdfs:label>
     </owl:Class>
     
@@ -3412,10 +3266,21 @@ A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as men
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
+        <rdfs:label>representation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050310"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000030"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
         <rdfs:comment>The use of the phrase ‘an anatomical structure in the cognitive system’ in the formal definition means that a specific cognitive representation will depend on parts of the brain, rather than involving the whole brain.

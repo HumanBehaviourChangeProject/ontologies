@@ -766,6 +766,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Mode of delivery that involves application of typical elements of game playing  to other areas of activity, typically as an online marketing technique to encourage engagement with a product or service.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.lexico.com/en/definition/gamification</obo:IAO_0000119>
         <rdfs:comment>Includes point scoring, competition with others, and rules of play.</rdfs:comment>
         <rdfs:label>gamification mode of delivery</rdfs:label>
     </owl:Class>

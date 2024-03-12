@@ -211,7 +211,7 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT that advises the person to adopt more than one goal in a situation where the goals facilitate each other.</obo:IAO_0000115>
         <obo:IAO_0000118>goal facilitation</obo:IAO_0000118>
-        <rdfs:label>advise goal integration</rdfs:label>
+        <rdfs:label>advise goal integration BCT</rdfs:label>
     </owl:Class>
     
 

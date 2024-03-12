@@ -1457,12 +1457,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A count data item that is the number of providers that an individual participant in the intervention encounters.</obo:IAO_0000115>
         <rdfs:label>number of people delivering intervention to each participant</rdfs:label>
@@ -1474,12 +1468,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A count data item that is the total number of providers that are available and able to deliver the intervention.</obo:IAO_0000115>
         <rdfs:label>total number of people able to deliver intervention</rdfs:label>
@@ -1491,12 +1479,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A social or demographic characteristic of a human being who is the bearer of a person source role.</obo:IAO_0000115>
         <rdfs:label>socio demographic attribute of person source</rdfs:label>
@@ -1638,12 +1620,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A disposition that is an expert skill or knowledge held by the source delivering the behaviour change intervention.</obo:IAO_0000115>
         <rdfs:label>expertise of person source</rdfs:label>
@@ -1691,12 +1667,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010124">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010123"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010122"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>psychology, yoga, cognitive behavioural therapy, hypnotism</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>The expertise discipline in which the person source has acquired their pre-existing knowledge and skills.</obo:IAO_0000115>
@@ -1720,12 +1690,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010126">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010121"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>full-day, 6 years</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A knowledge or skill that is the duration of experience in related domain held by person source.</obo:IAO_0000115>
@@ -1750,12 +1714,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>supervised</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process in which a person source is formally provided, by an individual with appropriate expertise, with corrective and skill-enhancing feedback, regarding the person source’s performance in delivering the intervention.</obo:IAO_0000115>
@@ -1768,12 +1726,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>voluntary basis, volunteering</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process in which a person source delivers the intervention on a voluntary basis without formal compensation.</obo:IAO_0000115>
@@ -1786,12 +1738,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process in which a person source is paid or compensated for delivering the intervention.</obo:IAO_0000115>
         <rdfs:label>payment of person source</rdfs:label>
@@ -1893,12 +1839,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A member of the species Homo Sapiens.</obo:IAO_0000115>
         <rdfs:label>person</rdfs:label>
@@ -1910,12 +1850,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010138"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
         <rdfs:label>organisation</rdfs:label>
