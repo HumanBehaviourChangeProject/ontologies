@@ -64,9 +64,17 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036034 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036034">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An interpersonal behaviour that involves the transmission of information.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour that involves the transmission of information between two or more people.</obo:IAO_0000115>
         <rdfs:label>human communication behaviour</rdfs:label>
     </owl:Class>
     
@@ -118,12 +126,6 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044003">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000133"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute of a communication process.</obo:IAO_0000115>
         <rdfs:comment>Communication processes can have a variety of attributes, such as their speed, how they are delivered, what language they take place in and the tone of voice in which they occur.  All these types of attributes and more are captured by &quot;communication process attribute&quot;</rdfs:comment>
@@ -194,6 +196,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication involving one participant paying close attention to what is said by another, asking questions and reflecting as needed, in an attempt to fully understand what has been said.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ontology.apa.org/apaonto/termsonlyOUT (5).owl#Active_Listening</obo:IAO_0000119>
         <rdfs:label>active listening</rdfs:label>
     </owl:Class>
     
@@ -299,8 +302,7 @@
         <obo:IAO_0000112>Change for Life, Time to Change, NHS Smokefree</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication using a consistent style of text or graphics to identify and distinguish a product, service or intervention from other products, services or interventions.</obo:IAO_0000115>
-        <obo:IAO_0000118> brand identity</obo:IAO_0000118>
-        <obo:IAO_0000118>use of branding</obo:IAO_0000118>
+        <obo:IAO_0000118>brand identity</obo:IAO_0000118>
         <rdfs:label>branded communication</rdfs:label>
     </owl:Class>
     
@@ -312,6 +314,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication involving an extended exchange of utterances between an instigator and at least one other person.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C71323</obo:IAO_0000119>
         <rdfs:comment>An utterance is an uninterrupted stretch of speech or writing produced by an individual on a particular occasion. An utterance can range from a single word to a complete sentence.</rdfs:comment>
         <rdfs:label>discussion</rdfs:label>
     </owl:Class>
@@ -966,6 +969,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication style characterised by a sense of the initiator and recipient working together, the initiator showing sensitivity to the others&apos; needs, in order to obtain an outcome desired by all.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C73529</obo:IAO_0000119>
         <rdfs:label>collaborative communication style</rdfs:label>
     </owl:Class>
     
@@ -1277,6 +1281,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication style which aims to induce or urge the adoption of certain beliefs, theories or lines of action.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.bioontology.org/ontology/MESH/D010565</obo:IAO_0000119>
         <rdfs:label>persuasive communication style</rdfs:label>
     </owl:Class>
     
@@ -1456,6 +1461,7 @@
         <obo:IAO_0000112>arrangement of chairs in the room for a group intervention, amount of space between blocks of text in a leaflet, arrangement of sections of a website</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute of an object used in communication process, concerning how the object&apos;s components are arranged.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://id.loc.gov/ontologies/bibframe/Layout</obo:IAO_0000119>
         <rdfs:comment>the arrangement of components can be deliberately chosen to help communicate intervention content</rdfs:comment>
         <rdfs:label>object layout</rdfs:label>
     </owl:Class>
@@ -1535,6 +1541,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication style characterised by anger.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/MFOEM_000009</obo:IAO_0000119>
         <rdfs:label>angry communication style</rdfs:label>
     </owl:Class>
     
@@ -1569,6 +1576,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process involving the transmission of information between two or more participants.</obo:IAO_0000115>
+        <obo:IAO_0000119>NCIT:C16452</obo:IAO_0000119>
         <rdfs:comment>The participants in the communication process can be of a variety of types, e.g. a human talking to an automated chatbot system, two computer systems exchanging information, a person talking to a pet animal etc.</rdfs:comment>
         <rdfs:label>communication</rdfs:label>
     </owl:Class>
@@ -1663,6 +1671,17 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication style conveying information in a hurried way.</obo:IAO_0000115>
         <rdfs:label>rushed communication style</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050457 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that conveys a thought or feeling.</obo:IAO_0000115>
+        <rdfs:label>expressive behaviour</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
