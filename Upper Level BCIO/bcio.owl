@@ -16,7 +16,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2024-01-31"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2024-03-12"/>
         <terms:title>Behaviour Change Intervention Ontology</terms:title>
         <rdfs:comment>The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery, Style of Delivery, Source, Mechanisms of Action, Behaviour and Behaviour Change Techniques. Additional modules will be added soon.</rdfs:comment>
     </owl:Ontology>
@@ -551,7 +551,6 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
         <rdfs:label>database_cross_reference</rdfs:label>
-        <rdfs:label xml:lang="en">has database cross reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -722,6 +721,12 @@ WHERE {
     
 
 
+    <!-- https://w3id.org/sssom/mapping_justification -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
     <!-- https://www.wikidata.org/wiki/Property:P5191 -->
 
     <owl:AnnotationProperty rdf:about="https://www.wikidata.org/wiki/Property:P5191">
@@ -746,6 +751,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000001">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>A relation that holds between a study and the study sample for that study</obo:IAO_0000115>
         <rdfs:label>has study sample</rdfs:label>
     </owl:ObjectProperty>
     
@@ -755,6 +761,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000002">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>A relation that holds between a study and the study investigator for that study</obo:IAO_0000115>
         <rdfs:label>has study investigator</rdfs:label>
     </owl:ObjectProperty>
     
@@ -764,6 +771,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000003">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>A relation that holds between a behaviour change intervention delivery and the source who performs the delivery</obo:IAO_0000115>
         <rdfs:label>has BCI source</rdfs:label>
     </owl:ObjectProperty>
     
@@ -773,6 +781,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000004">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>A relation that holds between a behaviour change intervention scenario and the context of the scenario</obo:IAO_0000115>
         <rdfs:label>has BCI context</rdfs:label>
     </owl:ObjectProperty>
     
@@ -782,6 +791,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000005">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <obo:IAO_0000115>A relation that holds between an evaluation study and the scenario that it is evaluating</obo:IAO_0000115>
         <rdfs:label>evaluates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -791,6 +801,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000006">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <obo:IAO_0000115>A relation that holds between a comparative evaluation study and two or more scenarios that are being compared</obo:IAO_0000115>
         <rdfs:label>comparatively evaluates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -800,6 +811,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000007">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <obo:IAO_0000115>A relation that holds between an effect estimate and two outcome estimates</obo:IAO_0000115>
         <rdfs:label>difference between</rdfs:label>
     </owl:ObjectProperty>
     
@@ -808,7 +820,96 @@ WHERE {
     <!-- http://humanbehaviourchange.org/ontology/BCIOR_000008 -->
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000008">
+        <obo:IAO_0000115>A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x.</obo:IAO_0000115>
         <rdfs:label>through</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000009 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000009">
+        <obo:IAO_0000115>A relation that links abstinence from a behaviour to a temporal region during which this personal attribute is true</obo:IAO_0000115>
+        <rdfs:label>has abstinence period</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000010 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000010">
+        <obo:IAO_0000115>A relation that links an individual human behaviour to a behavioural attribute.</obo:IAO_0000115>
+        <rdfs:label>has behavioural attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000011 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000011">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+        <obo:IAO_0000115>Realises the human life function of an individual human behaviour.</obo:IAO_0000115>
+        <rdfs:label>serves behavioural function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000012 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000012">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002559"/>
+        <obo:IAO_0000115>Causally influenced by a cognitive representation of something the behaviour could bring about.</obo:IAO_0000115>
+        <rdfs:label>has behavioural goal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000013 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000013">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002506"/>
+        <obo:IAO_0000115>Causally relation between two entities in which a behaviour brings into existence, causes to occur, destroys, prevents from occurring, or changes an entity.</obo:IAO_0000115>
+        <rdfs:label>has behavioural outcome</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000014 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000014">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>Has participant that relates a behaviour to the person enacting the behaviour.</obo:IAO_0000115>
+        <rdfs:label>is enacted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000015 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000015">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>Has participant that relates a behaviour to a material entity that the person enacting the behaviour intends to enable or facilitate the behaviour.</obo:IAO_0000115>
+        <rdfs:label>uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000016 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000016">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>Has participant that relates a behaviour to another sentient being that accompanies the person enacting the behaviour.</obo:IAO_0000115>
+        <rdfs:label>has behavioural companion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000017 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000017">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000115>Has participant that relates the behaviour to an object that the person enacting the behaviour intends to influence.</obo:IAO_0000115>
+        <rdfs:label>has behavioural target</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -843,6 +944,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this year has part this day (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115>A core relation that holds between a whole and its part</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
@@ -865,6 +967,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000115>Inverse of realizes relation.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
@@ -884,6 +987,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this disease course realizes this disease</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this investigation realizes this investigator role</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this shattering realizes this fragility</obo:IAO_0000112>
+        <obo:IAO_0000115>To say that b realizes c at t is to assert that there is some material entity d and b is a process which has participant d at t and c is a disposition or role of which d is bearer_of at tand the type instantiated by b is correlated with the type instantiated by c.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
         <rdfs:comment>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -896,6 +1000,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
+        <obo:IAO_0000115>b occurs_in c =def b is a process and c is a material entity or immaterial entityand there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.and forall(t) if b exists_at t then c exists_at t and there exist spatial regions s and s’ where and b spatially_projects_onto s at tand c is occupies_spatial_region s’ at tand s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
         <rdfs:label>occurs in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -931,6 +1036,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] Mary’s 5th birthday occurrent_part_of Mary’s life</obo:IAO_0000112>
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] The process of a footballer’s heart beating once is an occurrent part but not a temporal_part of a game of football.</obo:IAO_0000112>
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] the first set of the tennis match occurrent_part_of the tennis match.</obo:IAO_0000112>
+        <obo:IAO_0000115>Inverse of occurrent_part_of which is defined as: b occurrent_part_of c =Def. b is a part of c and b and c are occurrents.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b has_occurrent_part c = Def. c occurrent_part_of b. (axiom label in BFO2 Reference: [007-001])</obo:IAO_0000115>
         <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
         <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO2 Reference: occurrent</obo:IAO_0000116>
@@ -960,6 +1066,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000119">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <obo:BFO_0000179>has-profile</obo:BFO_0000179>
+        <obo:IAO_0000115>Inverse of process_profile_of</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label>has process attribute</rdfs:label>
         <rdfs:label xml:lang="en">has profile</rdfs:label>
@@ -973,6 +1080,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <obo:BFO_0000179>profile-of</obo:BFO_0000179>
         <obo:BFO_0000180>processProfileOf</obo:BFO_0000180>
+        <obo:IAO_0000115>inverse of has_process_profile</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label>is process attribute of</rdfs:label>
         <rdfs:label xml:lang="en">process profile of</rdfs:label>
@@ -984,6 +1092,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000155">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+        <obo:IAO_0000115>p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects.</obo:IAO_0000115>
         <rdfs:label>occupies temporal region</rdfs:label>
     </owl:ObjectProperty>
     
@@ -996,6 +1105,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Is about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
 
 We will try to build it back up by elaborating the various subproperties that are more precisely defined.
@@ -1016,6 +1126,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000111 xml:lang="en">inheres in</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this fragility is a characteristic of this vase</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this red color is a characteristic of this apple</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
@@ -1033,6 +1144,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000111 xml:lang="en">bearer of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">Inverse of characteristic_of</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
@@ -1052,6 +1164,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000112 xml:lang="en">this blood clot participates in this blood coagulation</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this input material (or this output material) participates in this process</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this investigator participates in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
         <rdfs:label>participates in</rdfs:label>
@@ -1072,6 +1185,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
         <terms:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</terms:source>
+        <rdfs:label>has participant</rdfs:label>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1094,6 +1208,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000091">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <obo:IAO_0000115>A relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence</obo:IAO_0000115>
         <rdfs:label>has disposition</rdfs:label>
         <rdfs:label xml:lang="en">has disposition</rdfs:label>
@@ -1108,6 +1223,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my brain is located in my head</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this rat is located in this cage</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
@@ -1123,6 +1239,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://purl.obolibrary.org/obo/RO_0002092 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002092">
+        <obo:IAO_0000115>X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))</obo:IAO_0000115>
         <rdfs:label>happens during</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1148,6 +1265,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002223">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <obo:IAO_0000115>inverse of starts with</obo:IAO_0000115>
         <rdfs:label>starts</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1157,6 +1275,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002229">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <obo:IAO_0000115>inverse of ends with</obo:IAO_0000115>
         <rdfs:label>ends</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1167,6 +1286,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>P has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.</obo:IAO_0000115>
         <obo:IAO_0000115>p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>produces</obo:IAO_0000118>
@@ -1198,6 +1318,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+        <obo:IAO_0000115>Inverse of has output relation</obo:IAO_0000115>
         <obo:IAO_0000115>inverse of has output</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
@@ -1380,48 +1501,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_001000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000004"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_005000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_028000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_002000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_047000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process in which a BCI is applied in a given context, including BCI engagement and outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI scenario</obo:IAO_0000118>
@@ -1433,10 +1512,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_002000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_002000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_034000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_042000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Human behavior that is an intervention outcome.</obo:IAO_0000115>
-        <rdfs:label>outcome behaviour</rdfs:label>
+        <rdfs:label>behaviour change intervention outcome behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -1445,24 +1524,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_003000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_037000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_032000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>Involves use of products, services, activities, rules or environmental objects.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention that has the aim of influencing human behaviour.</obo:IAO_0000115>
@@ -1476,19 +1537,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_005000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_014000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112>Includes as part BCI population and BCI setting. Use of the word may conveys a non-zero probability given available information.</obo:IAO_0000112>
+        <obo:IAO_0000112>Includes as part BCI population and BCI setting. Use of the word ‘may’ conveys a non-zero probability given available information.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An aggregate of entities that are not dependent on the intervention but may influence the effect of a BCI on its outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI context</obo:IAO_0000118>
@@ -1503,9 +1552,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process that is causally active in the relationship between a BCI scenario and its outcome behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118> BCI MOA</obo:IAO_0000118>
-        <obo:IAO_0000118> MOA</obo:IAO_0000118>
-        <obo:IAO_0000118>BCI mechanism of action</obo:IAO_0000118>
+        <obo:IAO_0000118>BCI MOA</obo:IAO_0000118>
         <rdfs:label>behaviour change intervention mechanism of action</rdfs:label>
     </owl:Class>
     
@@ -1809,8 +1856,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about the existence of a decrease from an initial reference point.</obo:IAO_0000115>
-        <obo:IAO_0000118> belief about loss</obo:IAO_0000118>
-        <obo:IAO_0000118>perceived loss</obo:IAO_0000118>
+        <obo:IAO_0000118>belief about loss</obo:IAO_0000118>
         <rdfs:comment>The perceived loss could be in anything internal or external, such as wealth or health.
 
 The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos; do not necessarily involve likelihood. Likelihoods relate to the future. However, &apos;belief about reduction&apos; might be about an existing loss.</rdfs:comment>
@@ -1845,12 +1891,6 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006306"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about how serious the harm associated with an outcome could be.</obo:IAO_0000115>
         <obo:IAO_0000118>belief about threat severity</obo:IAO_0000118>
@@ -1887,8 +1927,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about the extent to which one is free to choose whether to perform the behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118> belief about autonomy in performing behaviours</obo:IAO_0000118>
-        <obo:IAO_0000118>belief about voluntariness of behaviour</obo:IAO_0000118>
+        <obo:IAO_0000118>belief about autonomy in performing behaviours</obo:IAO_0000118>
         <rdfs:label>belief about choice over a behaviour</rdfs:label>
     </owl:Class>
     
@@ -1970,14 +2009,9 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006154"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about one&apos;s capabilities to organise and execute a behaviour and achieve the outcomes associated with this behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>self-efficacy</obo:IAO_0000118>
         <rdfs:comment>The phrase &apos;to organise&apos; refers to the ability to organise mental processes and sequences of actions.
 
 &apos;self-efficacy belief for a behaviour&apos; is part of &apos;self-efficacy belief for a behaviour and its associated outcomes&apos;. However, the latter also includes a belief about the outcomes associated with behaviour.</rdfs:comment>
@@ -2357,7 +2391,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006085 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006085">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A spatial quality that inheres in a bearer by virtue of its position relative to other entities.</obo:IAO_0000115>
         <rdfs:comment>An intervention could be used to rearrange objects in an environment, changing the location of a person relative to these objects and thereby increasing the likelihood of a behaviour.</rdfs:comment>
@@ -3030,12 +3064,6 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006152">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006154"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about one&apos;s capabilities and opportunities within an environmental system to perform a behaviour or achieve the outcomes resulting from a behaviour.</obo:IAO_0000115>
         <rdfs:label>belief about control over behaviour</rdfs:label>
@@ -3160,8 +3188,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006307"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Extrinsic motivation to gain or maintain social approval or a positive self-evaluation.</obo:IAO_0000115>
-        <obo:IAO_0000118> introjected regulation</obo:IAO_0000118>
-        <obo:IAO_0000118>introjected motivation</obo:IAO_0000118>
+        <obo:IAO_0000118>introjected regulation</obo:IAO_0000118>
         <rdfs:label>approval-based motivation</rdfs:label>
     </owl:Class>
     
@@ -3206,8 +3233,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006302"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Autonomous motivation due to the perceived value or importance of the behaviour to oneself.</obo:IAO_0000115>
-        <obo:IAO_0000118> identified regulation</obo:IAO_0000118>
-        <obo:IAO_0000118>identified motivation</obo:IAO_0000118>
+        <obo:IAO_0000118>identified regulation</obo:IAO_0000118>
         <rdfs:label>behavioural importance-based motivation</rdfs:label>
     </owl:Class>
     
@@ -3217,12 +3243,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006305">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006306"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A belief about vulnerability to a threat.</obo:IAO_0000115>
         <obo:IAO_0000118>belief about susceptibility to a risk</obo:IAO_0000118>
@@ -3260,8 +3280,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006302"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Autonomous motivation due to a behaviour being perceived to satisfy a core psychological need.</obo:IAO_0000115>
-        <obo:IAO_0000118> integrated regulation</obo:IAO_0000118>
-        <obo:IAO_0000118>integrated motivation</obo:IAO_0000118>
+        <obo:IAO_0000118>integrated regulation</obo:IAO_0000118>
         <rdfs:label>fundamental need-based motivation</rdfs:label>
     </owl:Class>
     
@@ -3282,18 +3301,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_046000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_033000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_022000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>Consists of BCTs that can be classified using a BCT taxonomy.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention content that is part of a behaviour change intervention.</obo:IAO_0000115>
@@ -3481,7 +3488,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal directed BCT that advises the person to adopt more than one goal in a situation where the goals facilitate each other.</obo:IAO_0000115>
         <obo:IAO_0000118>goal facilitation</obo:IAO_0000118>
-        <rdfs:label>advise goal integration</rdfs:label>
+        <rdfs:label>advise goal integration BCT</rdfs:label>
     </owl:Class>
     
 
@@ -6467,30 +6474,6 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_045000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000003"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_009000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000119"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention delivery in which the intervention is a behaviour change intervention.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI delivery</obo:IAO_0000118>
@@ -7938,12 +7921,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A count data item that is the number of providers that an individual participant in the intervention encounters.</obo:IAO_0000115>
         <rdfs:label>number of people delivering intervention to each participant</rdfs:label>
@@ -7955,12 +7932,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A count data item that is the total number of providers that are available and able to deliver the intervention.</obo:IAO_0000115>
         <rdfs:label>total number of people able to deliver intervention</rdfs:label>
@@ -7972,12 +7943,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A social or demographic characteristic of a human being who is the bearer of a person source role.</obo:IAO_0000115>
         <rdfs:label>socio demographic attribute of person source</rdfs:label>
@@ -8119,12 +8084,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A disposition that is an expert skill or knowledge held by the source delivering the behaviour change intervention.</obo:IAO_0000115>
         <rdfs:label>expertise of person source</rdfs:label>
@@ -8172,12 +8131,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010124">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010123"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010122"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>psychology, yoga, cognitive behavioural therapy, hypnotism</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>The expertise discipline in which the person source has acquired their pre-existing knowledge and skills.</obo:IAO_0000115>
@@ -8201,12 +8154,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010126">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010121"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>full-day, 6 years</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A knowledge or skill that is the duration of experience in related domain held by person source.</obo:IAO_0000115>
@@ -8231,12 +8178,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>supervised</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process in which a person source is formally provided, by an individual with appropriate expertise, with corrective and skill-enhancing feedback, regarding the person source’s performance in delivering the intervention.</obo:IAO_0000115>
@@ -8249,12 +8190,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>voluntary basis, volunteering</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process in which a person source delivers the intervention on a voluntary basis without formal compensation.</obo:IAO_0000115>
@@ -8267,12 +8202,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process in which a person source is paid or compensated for delivering the intervention.</obo:IAO_0000115>
         <rdfs:label>payment of person source</rdfs:label>
@@ -8377,9 +8306,8 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute of a BCI delivery that is the physical or informational medium through which a BCI is provided.</obo:IAO_0000115>
-        <obo:IAO_0000118> BCI MOD</obo:IAO_0000118>
-        <obo:IAO_0000118> MOD</obo:IAO_0000118>
         <obo:IAO_0000118>BCI mode of delivery</obo:IAO_0000118>
+        <obo:IAO_0000118>MOD</obo:IAO_0000118>
         <rdfs:label>behaviour change intervention mode of delivery</rdfs:label>
     </owl:Class>
     
@@ -9106,6 +9034,7 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Mode of delivery that involves application of typical elements of game playing  to other areas of activity, typically as an online marketing technique to encourage engagement with a product or service.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.lexico.com/en/definition/gamification</obo:IAO_0000119>
         <rdfs:comment>Includes point scoring, competition with others, and rules of play.</rdfs:comment>
         <rdfs:label>gamification mode of delivery</rdfs:label>
     </owl:Class>
@@ -9141,18 +9070,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_014000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_029000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>Includes as parts social setting and physical setting.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An aggregate of entities that form the environment in which a BCI is provided.</obo:IAO_0000115>
@@ -9190,12 +9107,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_016000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_018000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000006"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_001000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>Comparison involves identifying differences between the entities in the scenarios.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A BCI evaluation study that involves comparison between two or more BCI scenarios to produce one or more BCI effect estimates.</obo:IAO_0000115>
@@ -9209,21 +9120,9 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_017000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_023000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000007"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_025000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_016000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112>This includes the following subclasses: 1) BCI effect estimate type -the type of statistic used to represent the difference , 2) BCI effect estimate value  the datum that represents the difference , 3)  BCI effect estimate uncertainty type  the type of statistic used to represent the range of uncertainty of the value , and 4) the BCI effect estimate uncertainty value  - the datum representing the uncertainty .</obo:IAO_0000112>
+        <obo:IAO_0000112>This includes the following subclasses: 1) BCI effect estimate type -the type of statistic used to represent the difference (e.g. odds ratio, mean difference), 2) BCI effect estimate value – the datum that represents the difference (e.g. 1.35), 3)  BCI effect estimate uncertainty type – the type of statistic used to represent the range of uncertainty of the value (e.g. 95% confidence interval see STATO), and 4) the BCI effect estimate uncertainty value  - the datum representing the uncertainty (e.g. 1.20-1.55).</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A BCI evaluation finding that characterises the difference between BCI outcome estimates of two BCI scenarios.</obo:IAO_0000115>
+        <obo:IAO_0000115>A behaviour change intervention evaluation finding that characterises the difference between BCI outcome estimates of two BCI scenarios.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI effect estimate</obo:IAO_0000118>
         <rdfs:label>behaviour change intervention effect estimate</rdfs:label>
     </owl:Class>
@@ -9234,30 +9133,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_018000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_038000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000001"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_031000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000002"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_030000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000005"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_001000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_024000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention evaluation study of a BCI scenario.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI evaluation study</obo:IAO_0000118>
@@ -9270,12 +9145,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_020000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_018000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An information content entity that is about the likelihood of the BCI evaluation finding misrepresenting the outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI evaluation study risk of bias or error</obo:IAO_0000118>
@@ -9288,12 +9157,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_021000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_018000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>Includes entities that stand in direct relation to the study e.g. authors, findings, funding, aims.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A report that is a description of a BCI evaluation study.</obo:IAO_0000115>
@@ -9322,12 +9185,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_023000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_035000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_018000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An evaluation finding that is the output of a BCI evaluation study.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI evaluation finding</obo:IAO_0000118>
@@ -9352,13 +9209,7 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_025000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_023000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_002000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112>This includes as subclasses 1) type of outcome estimate , 2) value of outcome estimate , 3) uncertainty estimate type , and 4) uncertainty estimate value .</obo:IAO_0000112>
+        <obo:IAO_0000112>This includes as subclasses 1) type of outcome estimate (e.g. mean, percentage), 2) value of outcome estimate (e.g. 1.5 cigs per day, 23%), 3) uncertainty estimate type (e.g. 95% CI), and 4) uncertainty estimate value (e.g. 12.0%-45.0%).</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A BCI evaluation finding that is about an outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI outcome estimate</obo:IAO_0000118>
@@ -9413,12 +9264,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Features of a given location, such as social and economic characteristics.</obo:IAO_0000115>
         <rdfs:label>attribute of location</rdfs:label>
@@ -9881,6 +9726,7 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Methods of traveling from one place to another.</obo:IAO_0000115>
+        <obo:IAO_0000119>NCI Thesaurus OBO Edition</obo:IAO_0000119>
         <rdfs:label>transportation</rdfs:label>
     </owl:Class>
     
@@ -9895,6 +9741,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>bus</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Forms of transportation that run on fixed routes and are available to the public, usually for a set fare</obo:IAO_0000115>
+        <obo:IAO_0000119>NCI Thesaurus OBO Edition</obo:IAO_0000119>
         <rdfs:label>public transportation</rdfs:label>
     </owl:Class>
     
@@ -9998,6 +9845,7 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A place designed and staffed to house and treat individuals that need assistance with mental dysfunctions</obo:IAO_0000115>
+        <obo:IAO_0000119>NCI Thesaurus OBO Edition</obo:IAO_0000119>
         <rdfs:label>psychiatric facility</rdfs:label>
     </owl:Class>
     
@@ -10007,12 +9855,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_027000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_001000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A report that describes a BCI scenario.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI scenario report</obo:IAO_0000118>
@@ -10049,7 +9891,7 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_030000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000112>What counts as substantively is subject to judgement. The level and nature of the contribution can be defined using the CReDiT taxonomy .</obo:IAO_0000112>
+        <obo:IAO_0000112>What counts as substantively is subject to judgement. The level and nature of the contribution can be defined using the CReDiT taxonomy (https://casrai.org/credit/).</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role played by a person that contributes substantively to production or reporting of a BCI evaluation study.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI study investigator</obo:IAO_0000118>
@@ -10074,11 +9916,11 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_032000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
-        <obo:IAO_0000112>Tailoring the dose of pharmacotherapy for smoking cessation to the prior level of nicotine dependence of the smoker  or to the smokers&apos; current strength of urges to smoke during a quit attempt .</obo:IAO_0000112>
+        <obo:IAO_0000112>Tailoring the dose of pharmacotherapy for smoking cessation to the prior level of nicotine dependence of the smoker (static) or to the smokers&apos; current strength of urges to smoke during a quit attempt (dynamic).</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A BCI attribute in which the content or delivery of a BCI for some member of the BCI population varies according to their characteristics or setting.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI tailoring</obo:IAO_0000118>
-        <rdfs:comment>Tailoring can be static , or dynamic (i.e., conducted one or more times after the intervention has started in a given case based on population or setting characteristics present at that time. Population and setting characteristics include the historical factors such as prior exposure to the intervention.</rdfs:comment>
+        <rdfs:comment>Tailoring can be static (i.e., conducted before intervention delivery in a case case), or dynamic (i.e., conducted one or more times after the intervention has started in a given case based on population or setting characteristics present at that time. Population and setting characteristics include the historical factors such as prior exposure to the intervention.</rdfs:comment>
         <rdfs:label>behaviour change intervention tailoring</rdfs:label>
     </owl:Class>
     
@@ -10125,12 +9967,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>Also referred to in definitions as human behaviour or just behaviour.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
@@ -10247,10 +10083,10 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence (e.g., st
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036021 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036021">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000112>Expressive dancing, Singing, Playing Music</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An experience-related behaviour that involves consciously using some capability to create or shape an aspect of the environment to express an idea or emotion.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour that involves consciously using some capability to create or shape an aspect of the environment to express an idea or emotion.</obo:IAO_0000115>
         <rdfs:comment>An aspect of the environment includes both objects within it but also processes (e.g., music performance or dancing).</rdfs:comment>
         <rdfs:label>creative expressive behaviour</rdfs:label>
     </owl:Class>
@@ -10334,10 +10170,10 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence (e.g., st
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036030 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036030">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050438"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
         <obo:IAO_0000112>Copulating, Masturbating, Flirting, Having intercourse</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A life function-related behaviour that involves sexual arousal.</obo:IAO_0000115>
+        <obo:IAO_0000115>An experience-related behaviour that involves sexual arousal.</obo:IAO_0000115>
         <rdfs:comment>The classes &apos;reproductive behaviour&apos; and &apos;sexual behaviour&apos; have some instances in which they would overlap. For instance, a subclass of both of these classes would be &apos;reproductive sexual behaviour&apos;. Examples for &apos;reproductive sexual behaviour&apos; can be annotated by using the two classes: &apos;reproductive behaviour&apos; and &apos;sexual behaviour&apos;. There are also various examples in which the classes &apos;reproductive behaviour&apos; does not overlap with sexual behaviour. For instance, fertility preservation would be a reproductive behaviour but not a sexual behaviour. Similarly, various sexual behaviours do not have a reproductive function. For instance, performing oral sex may not have a reproductive function.</rdfs:comment>
         <rdfs:label>sexual behaviour</rdfs:label>
     </owl:Class>
@@ -10372,11 +10208,18 @@ The term &apos;survive&apos; refers to continuing one&apos;s existence (e.g., st
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036034 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036034">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000112>Calling out, Talking, Shouting, Teaching, Messaging, Lying, Exaggerating, Threatening, Greeting, Advising, Instructing, Conversing, Lobbying, Demonstrating, Training, Meeting, Posting on social media, Self-disclosing, Answering, Coaching, Giving a speech, Discussing, Story-telling, Writing an article, Advertising</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An inter-personal behaviour that involves the transmission of information.</obo:IAO_0000115>
-        <obo:IAO_0000115>An interpersonal behaviour that involves the transmission of information.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour that involves the transmission of information between two or more people.</obo:IAO_0000115>
         <rdfs:label>human communication behaviour</rdfs:label>
     </owl:Class>
     
@@ -10524,9 +10367,9 @@ The classes &apos;travel behaviour&apos; and &apos;locomotive behaviour&apos; ha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036061 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036061">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050439"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An object-using behaviour that involves ingesting material into the body.</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity-related behaviour that involves ingesting material into the body.</obo:IAO_0000115>
         <rdfs:label>consumption behaviour</rdfs:label>
     </owl:Class>
     
@@ -10704,17 +10547,6 @@ There can be different dimensions of nurturing, e.g., in some cases, nurturing c
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A socially-related behaviour that aims to bring about or oppose political or social change.</obo:IAO_0000115>
         <rdfs:label>political behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_036092 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A function that inheres in an animal and is realised in processes that enable the animal to survive and thrive.</obo:IAO_0000115>
-        <rdfs:label>animal function</rdfs:label>
     </owl:Class>
     
 
@@ -10935,6 +10767,25 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_042000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_042000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_034000"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is an individual human behaviour or a population behaviour.</obo:IAO_0000115>
+        <rdfs:label>human behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000">
@@ -10989,12 +10840,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044003">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000133"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute of a communication process</obo:IAO_0000115>
         <obo:IAO_0000115>An attribute of a communication process.</obo:IAO_0000115>
@@ -11066,6 +10911,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication involving one participant paying close attention to what is said by another, asking questions and reflecting as needed, in an attempt to fully understand what has been said.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ontology.apa.org/apaonto/termsonlyOUT (5).owl#Active_Listening</obo:IAO_0000119>
         <rdfs:label>active listening</rdfs:label>
     </owl:Class>
     
@@ -11171,8 +11017,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000112>Change for Life, Time to Change, NHS Smokefree</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication using a consistent style of text or graphics to identify and distinguish a product, service or intervention from other products, services or interventions.</obo:IAO_0000115>
-        <obo:IAO_0000118> brand identity</obo:IAO_0000118>
-        <obo:IAO_0000118>use of branding</obo:IAO_0000118>
+        <obo:IAO_0000118>brand identity</obo:IAO_0000118>
         <rdfs:label>branded communication</rdfs:label>
     </owl:Class>
     
@@ -11184,6 +11029,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication involving an extended exchange of utterances between an instigator and at least one other person.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C71323</obo:IAO_0000119>
         <rdfs:comment>An utterance is an uninterrupted stretch of speech or writing produced by an individual on a particular occasion. An utterance can range from a single word to a complete sentence.</rdfs:comment>
         <rdfs:label>discussion</rdfs:label>
     </owl:Class>
@@ -11838,6 +11684,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication style characterised by a sense of the initiator and recipient working together, the initiator showing sensitivity to the others&apos; needs, in order to obtain an outcome desired by all.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C73529</obo:IAO_0000119>
         <rdfs:label>collaborative communication style</rdfs:label>
     </owl:Class>
     
@@ -12149,6 +11996,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication style which aims to induce or urge the adoption of certain beliefs, theories or lines of action.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.bioontology.org/ontology/MESH/D010565</obo:IAO_0000119>
         <rdfs:label>persuasive communication style</rdfs:label>
     </owl:Class>
     
@@ -12328,6 +12176,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000112>arrangement of chairs in the room for a group intervention, amount of space between blocks of text in a leaflet, arrangement of sections of a website</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute of an object used in communication process, concerning how the object&apos;s components are arranged.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://id.loc.gov/ontologies/bibframe/Layout</obo:IAO_0000119>
         <rdfs:comment>the arrangement of components can be deliberately chosen to help communicate intervention content</rdfs:comment>
         <rdfs:label>object layout</rdfs:label>
     </owl:Class>
@@ -12383,12 +12232,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_047000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_047001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>The aggregate of processes taking place at the same time as a behaviour change intervention.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI temporal context</obo:IAO_0000118>
@@ -12415,8 +12258,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050209"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Individual human behaviour change that involves a person, who enacted a behaviour pattern until a specific timepoint, not performing this behaviour for a duration after that specific timepoint.</obo:IAO_0000115>
-        <obo:IAO_0000118> cessation of a behaviour pattern</obo:IAO_0000118>
-        <obo:IAO_0000118>behavioural cessation</obo:IAO_0000118>
+        <obo:IAO_0000118>cessation of a behaviour pattern</obo:IAO_0000118>
         <obo:IAO_0000232>behaviour change and process_part_of some (&apos;history&apos; and has_process_part some (&apos;behaviour pattern&apos; and before value t1) and has_process_part some ((not &apos;behaviour pattern&apos;) and after value t1 and before value t2))</obo:IAO_0000232>
         <rdfs:label>individual human behaviour pattern cessation</rdfs:label>
     </owl:Class>
@@ -12840,12 +12682,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050293">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a bodily disposition.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through bodily disposition’ and ‘bodily disposition’ is labelled as ‘through&apos;.
@@ -12862,12 +12698,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050294">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence occurs in a bodily process.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through bodily process’ and ‘bodily process’ is labelled as ‘through&apos;.
@@ -12884,12 +12714,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050295">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a cognitive representation.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through &apos;cognitive representation&apos; and cognitive representation&apos; is labelled as &apos;through&apos;.
@@ -12906,12 +12730,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050296">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects an environmental disposition.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through environmental disposition&apos; and ‘environmental disposition&apos; is labelled as &apos;through&apos;.
@@ -12928,12 +12746,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050297">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence shifts the location of people or objects.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through location&apos; and ‘location&apos; is labelled as &apos;through&apos;.
@@ -12950,12 +12762,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050298">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a material entity.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through material entity’ and ‘material entity’ is labelled as‘through’.
@@ -12972,12 +12778,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050299">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006081"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Behaviour change intervention mechanism of action in which the causal influence affects a personal role.</obo:IAO_0000115>
         <rdfs:comment>The relation between ‘mechanism of action through personal role’ and ‘personal role’ is labelled as ‘through’.
@@ -12994,99 +12794,10 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050300">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A specifically dependent continuant that inheres in a person.</obo:IAO_0000115>
-        <obo:IAO_0000232>The population ontology individuals branch defines many personal attributes</obo:IAO_0000232>
-        <rdfs:comment>Includes everything that can be said about a person: the most general class under which all other qualities, dispositions, roles etc belong.</rdfs:comment>
+        <rdfs:comment>Attributes included under this header are age, immigration, social and economic conditions.</rdfs:comment>
         <rdfs:label>personal attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050301 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050301">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition that inheres in a person.</obo:IAO_0000115>
-        <rdfs:label>personal disposition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050302 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050302">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A process attribute that is an attribute of a life process.</obo:IAO_0000115>
-        <rdfs:label>personal life attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050303 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050303">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A quality that inheres in a person.</obo:IAO_0000115>
-        <rdfs:label>personal quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050304 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050304">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>An affective process involving sensory experience of physiological stimuli.</obo:IAO_0000115>
-        <rdfs:label>bodily feeling</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050305 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050305">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050308"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A quality that inheres in some extended organism.</obo:IAO_0000115>
-        <rdfs:label>bodily quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050307 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050307">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050305"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A bodily quality that inheres in those structures of the extended organism that are essential for mental functioning.</obo:IAO_0000115>
-        <rdfs:label>mental quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050308 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050308">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</obo:IAO_0000115>
-        <rdfs:label>quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050310 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050310">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
-        <rdfs:label>representation</rdfs:label>
     </owl:Class>
     
 
@@ -13174,7 +12885,7 @@ In this definition, ‘change’ refers to change from what would have been the 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050321">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050322"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A goal interaction in which the goals a facilitatory.</obo:IAO_0000115>
+        <obo:IAO_0000115>A goal interaction in which the goals facilitate each other.</obo:IAO_0000115>
         <rdfs:label>goal facilitation</rdfs:label>
     </owl:Class>
     
@@ -13184,12 +12895,6 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050322">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An information content entity that is about the extent to which goals are compatible with each other.</obo:IAO_0000115>
         <rdfs:label>goal interaction</rdfs:label>
@@ -13260,6 +12965,14 @@ In this definition, ‘change’ refers to change from what would have been the 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050328 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050328">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006038"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050326"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A mental disposition that is an affective attitude or an evaluative belief about something.</obo:IAO_0000115>
@@ -13272,6 +12985,14 @@ In this definition, ‘change’ refers to change from what would have been the 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050329 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050329">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006147"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050327"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050328"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attitude in which the entity that is the attitude object is a behaviour.</obo:IAO_0000115>
@@ -13785,10 +13506,13 @@ Prescribing medication can include advising and authorising to stop using a medi
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050374">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050442"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A vocalisation behaviour showing an emotion such as mirth, joy, or scorn with a chuckle or explosive vocal sound.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour showing elation, amusement or scorn by means of facial expressions and repeated sharp exhalations.</obo:IAO_0000115>
         <obo:IAO_0000115>An individual human behaviour showing an emotion such as mirth, joy, or scorn with a chuckle or explosive vocal sound.</obo:IAO_0000115>
+        <obo:IAO_0000119> 
+https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
+        <obo:IAO_0000119>Based on https://www.britannica.com/topic/humor#ref126128</obo:IAO_0000119>
         <rdfs:label>laughing</rdfs:label>
     </owl:Class>
     
@@ -13867,6 +13591,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_044004"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A communication style characterised by anger.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/MFOEM_000009</obo:IAO_0000119>
         <rdfs:label>angry communication style</rdfs:label>
     </owl:Class>
     
@@ -13901,6 +13626,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process involving the transmission of information between two or more participants.</obo:IAO_0000115>
+        <obo:IAO_0000119>NCIT:C16452</obo:IAO_0000119>
         <rdfs:comment>The participants in the communication process can be of a variety of types, e.g. a human talking to an automated chatbot system, two computer systems exchanging information, a person talking to a pet animal etc.</rdfs:comment>
         <rdfs:label>communication</rdfs:label>
     </owl:Class>
@@ -14558,9 +14284,9 @@ Prescribing medication can include advising and authorising to stop using a medi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050442 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050442">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour using one&apos;s voice to produce sounds.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour involving vibration of the vocal chords.</obo:IAO_0000115>
         <rdfs:label>vocalisation behaviour</rdfs:label>
     </owl:Class>
     
@@ -14632,6 +14358,310 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A uniform process aggregate whose members are individual behaviour patterns of a population.</obo:IAO_0000115>
         <rdfs:label>population behaviour pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050449 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050449">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal interval during which a person is abstinent from a behaviour.</obo:IAO_0000115>
+        <rdfs:label>abstinence duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050450 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050450">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A time point that is the end of an abstinence period.</obo:IAO_0000115>
+        <rdfs:comment>We often refer to timepoints when we mean a specific time or some extended period (e.g., Monday). This class allows for the natural usage of a term while maintaining ontological coherence.</rdfs:comment>
+        <rdfs:label>abstinence end point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050451 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050451">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal attribute in which a person does not engage in a behaviour during a time period.</obo:IAO_0000115>
+        <rdfs:label>abstinence from a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050452 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050452">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A time point that is the start of an abstinence period.</obo:IAO_0000115>
+        <rdfs:comment>We often refer to timepoints when we mean a specific time or some extended period (e.g., Monday). This class allows for the natural usage of a term while maintaining ontological coherence.</rdfs:comment>
+        <rdfs:label>abstinence start point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050453 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050453">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A time point that is the end of an individual human behaviour.</obo:IAO_0000115>
+        <rdfs:comment>We often refer to timepoints when we mean a specific time or some extended period (e.g., Monday). This class allows for the natural usage of a term while maintaining ontological coherence.</rdfs:comment>
+        <rdfs:label>behaviour end point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050454 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050454">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A time point that is the start of an individual human behaviour.</obo:IAO_0000115>
+        <rdfs:comment>We often refer to timepoints when we mean a specific time or some extended period (e.g., Monday). This class allows for the natural usage of a term while maintaining ontological coherence.</rdfs:comment>
+        <rdfs:label>behaviour starting point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050455 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050455">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal interval within which an individual human behaviour occurs.</obo:IAO_0000115>
+        <rdfs:label>behavioural duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050456 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050456">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An expressive behaviour that involves tears, and facial expressions of distress.</obo:IAO_0000115>
+        <rdfs:label>crying</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050457 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that conveys a thought or feeling.</obo:IAO_0000115>
+        <rdfs:label>expressive behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050458 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050458">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An expressive behaviour that involves the muscles of the face.</obo:IAO_0000115>
+        <rdfs:comment>If facial expression behaviour is enacted when communicating with someone, please refer to the class labelled ‘non-linguistic communication behaviour using facial expression’ (BCIO:050425).</rdfs:comment>
+        <rdfs:label>facial expression behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050459 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050459">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An expressive behaviour involving a movement of the limbs, head or torso.</obo:IAO_0000115>
+        <rdfs:comment>If the gesticulatory behaviour is enacted when communicating with someone, please refer to the class labelled ‘non-linguistic communication behaviour using gesture’ (BCIO:036002).</rdfs:comment>
+        <rdfs:label>gesticulatory expressive behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050460 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050460">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036029"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036029"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A posture behaviour that is expressive.</obo:IAO_0000115>
+        <rdfs:comment>If postural behaviour is enacted when communicating with someone, please refer to the class labelled ‘non-linguistic communication behaviour using body language’ (BCIO:050424)</rdfs:comment>
+        <rdfs:label>postural expressive behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050461 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050461">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050442"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A vocalisation behaviour that expresses something using words.</obo:IAO_0000115>
+        <rdfs:comment>If talking is enacted when communicating with someone, please refer to the class labelled ‘linguistic communication behaviour’ (BCIO:050237)</rdfs:comment>
+        <rdfs:label>talking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050462 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050462">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050433"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Cognitive exertion expended on a behaviour that is high.</obo:IAO_0000115>
+        <rdfs:comment>High cognitive exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what high exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>high cognitive exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050463 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050463">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050434"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional management exertion expended on a behaviour that is high.</obo:IAO_0000115>
+        <rdfs:comment>High emotional management exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what high exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>high emotional management exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050464 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050464">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050431"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Mental exertion expended on a behaviour that is high.</obo:IAO_0000115>
+        <rdfs:comment>High mental exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what high exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>high mental exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050465 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050465">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050432"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Physical exertion expended on a behaviour that is high</obo:IAO_0000115>
+        <rdfs:comment>High physical exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what high exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>high physical exertion expended on behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050466 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050466">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050433"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Cognitive exertion expended on a behaviour that is low.</obo:IAO_0000115>
+        <rdfs:comment>Low cognitive exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what low exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>low cognitive exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050467 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050467">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050434"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional management exertion expended on a behaviour that is low.</obo:IAO_0000115>
+        <rdfs:comment>Low emotional management exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what low exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>low emotional management exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050468 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050468">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050431"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Mental exertion expended on a behaviour that is low.</obo:IAO_0000115>
+        <rdfs:comment>Low mental exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what low exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>low mental exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050469 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050469">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050432"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Physical exertion expended on a behaviour that is low.</obo:IAO_0000115>
+        <rdfs:comment>Low physical exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what low exertion means</rdfs:comment>
+        <rdfs:label>low physical exertion expended on behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050470 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050470">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050433"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Cognitive exertion expended on a behaviour that is medium.</obo:IAO_0000115>
+        <rdfs:comment>Moderate cognitive exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what moderate exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>moderate cognitive exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050471 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050471">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050434"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional management exertion expended on a behaviour that is medium.</obo:IAO_0000115>
+        <rdfs:comment>Moderate emotional management exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what moderate exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>moderate emotional management exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050472 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050472">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050431"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Mental exertion expended on a behaviour that is medium.</obo:IAO_0000115>
+        <rdfs:comment>Moderate mental exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what moderate exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>moderate mental exertion expended on a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050473 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050473">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050432"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Physical exertion expended on a behaviour that is medium.</obo:IAO_0000115>
+        <rdfs:comment>Moderate physical exertion will mean different things depending on how this concept is operationalised. Therefore, when using this class, you would need to operationalise it for the relevant context (e.g., specify what moderate exertion means based on the measurement you use).</rdfs:comment>
+        <rdfs:label>moderate physical exertion expended on behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -14846,6 +14876,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000112 xml:lang="en">the interior of your mouth</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+        <obo:IAO_0000589>anatomical entity (BFO)</obo:IAO_0000589>
         <obo:IAO_0000601 xml:lang="en">For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])</obo:IAO_0000601>
         <obo:IAO_0000602>(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] </obo:IAO_0000602>
@@ -14896,7 +14927,50 @@ Prescribing medication can include advising and authorising to stop using a medi
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:BFO_0000179>s-region</obo:BFO_0000179>
+        <obo:BFO_0000180>SpatialRegion</obo:BFO_0000180>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Spatial regions do not participate in processes.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Spatial region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn&apos;t overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">spatial region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Spatial region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn&apos;t overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000002"/>
+        <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/035-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/036-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/036-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/035-001"/>
+    </owl:Axiom>
     
 
 
@@ -15100,11 +15174,14 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000112 xml:lang="en">the mass of this piece of gold.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the shape of your nose</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the shape of your nostril</obo:IAO_0000112>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</obo:IAO_0000600>
         <obo:IAO_0000601 xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</obo:IAO_0000601>
         <obo:IAO_0000602>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label>quality</rdfs:label>
         <rdfs:label xml:lang="en">quality</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15323,6 +15400,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000112 xml:lang="en">your left nostril (a fiat part – the opening – of your left nasal cavity)</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof.</obo:IAO_0000115>
+        <obo:IAO_0000119>Basic Formal Ontology</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])</obo:IAO_0000600>
         <obo:IAO_0000602>(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -15395,14 +15473,14 @@ Prescribing medication can include advising and authorising to stop using a medi
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/074-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/074-001"/>
     </owl:Axiom>
     
@@ -15663,54 +15741,6 @@ Prescribing medication can include advising and authorising to stop using a medi
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000062 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000408"/>
-        <obo:IAO_0000115>Place or area with clustered or scattered buildings and a permanent human population.</obo:IAO_0000115>
-        <oboInOwl:hasBroadSynonym>place</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref>FTT:1097</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FTT:33</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Geonames:P.PPL</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Geonames:P.PPLS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TGN:22201</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TGN:83002</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Populated_place</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>populated places</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>settlement</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>inhabited region</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>populated locality</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>ENVO:00000062</oboInOwl:id>
-        <rdfs:label>populated place</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Place or area with clustered or scattered buildings and a permanent human population.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:http://mapping.usgs.gov/www/ti/GNIS/gnis_users_guide_appendixc.html</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-        <owl:annotatedTarget>place</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>populated places</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Geonames:feature</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>settlement</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000064">
@@ -15719,6 +15749,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An open way for the passage of vehicles, persons, or animals on land</obo:IAO_0000115>
         <obo:IAO_0000115>An open way for the passage of vehicles, persons, or animals on land.</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <oboInOwl:hasDbXref>EcoLexicon:road</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:1058</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:1183</oboInOwl:hasDbXref>
@@ -15959,6 +15990,7 @@ Prescribing medication can include advising and authorising to stop using a medi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001813"/>
         <obo:IAO_0000115>A construction that has been assembled by deliberate human effort.</obo:IAO_0000115>
         <obo:IAO_0000116>&quot;constructed&quot; should probably be made something like a quality and this class obsoleted or filled only by inference</obo:IAO_0000116>
@@ -15982,6 +16014,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of wate</obo:IAO_0000115>
         <obo:IAO_0000115>A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of water.</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <oboInOwl:hasDbXref>EcoLexicon:beach</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EcoLexicon:to_beach</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:237</oboInOwl:hasDbXref>
@@ -16072,6 +16105,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An area in which grasses (Graminae) are a significant component of the vegetation</obo:IAO_0000115>
         <obo:IAO_0000115>An area in which grasses (Graminae) are a significant component of the vegetation.</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <oboInOwl:hasRelatedSynonym>grazing area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>herbaceous area</oboInOwl:hasRelatedSynonym>
         <rdfs:label>grassland</rdfs:label>
@@ -16145,7 +16179,6 @@ Prescribing medication can include advising and authorising to stop using a medi
         <oboInOwl:hasRelatedSynonym>taiga</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>thicket</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>thorn forest</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>tropical rain forest</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>wood</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>wooded area</oboInOwl:hasRelatedSynonym>
         <rdfs:label>woodland area</rdfs:label>
@@ -16345,26 +16378,8 @@ Prescribing medication can include advising and authorising to stop using a medi
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>tropical rain forest</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>wood</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ADL:FTT</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>wood</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Getty:TGN</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>wood</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
@@ -16383,6 +16398,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An area with a high density of trees. A small forest may be called a wood</obo:IAO_0000115>
         <obo:IAO_0000115>An area with a high density of trees. A small forest may be called a wood.</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <oboInOwl:hasDbXref>EcoLexicon:forest</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:258</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:506</oboInOwl:hasDbXref>
@@ -16427,7 +16443,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001784"/>
-        <obo:IAO_0000115>A part of an astronomical body which is primarily composed of a continuous volume of solid material, shaped by one or more environmental processes.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A part of an astronomical body which is primarily composed of solid material.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:landform</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EcoLexicon:landforms</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:754</oboInOwl:hasDbXref>
@@ -16443,7 +16459,7 @@ Prescribing medication can include advising and authorising to stop using a medi
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000191"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A part of an astronomical body which is primarily composed of a continuous volume of solid material, shaped by one or more environmental processes.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A part of an astronomical body which is primarily composed of solid material.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Landform</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -16464,6 +16480,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A facility, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken</obo:IAO_0000115>
         <obo:IAO_0000115>A facility, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken.</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>research facility</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16483,6 +16500,7 @@ Prescribing medication can include advising and authorising to stop using a medi
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A bounded area of land, or water, usually in its natural or semi-natural (landscaped) state and set aside for some purpose, usually to do with recreation or conservation</obo:IAO_0000115>
         <obo:IAO_0000115>A bounded area of land, or water, usually in its natural or semi-natural (landscaped) state and set aside for some purpose, usually to do with recreation or conservation.</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>park</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16510,7 +16528,6 @@ Prescribing medication can include advising and authorising to stop using a medi
         <oboInOwl:hasDbXref>TGN:83040</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TGN:83043</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/City</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ENVO:00000856</oboInOwl:id>
         <rdfs:label>city</rdfs:label>
     </owl:Class>
@@ -16556,10 +16573,21 @@ The class &apos;environmental system&apos; relates to what is found in the physi
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000313 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000313">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <obo:IAO_0000115>An anthropogenic environment is an environmental system which is the product of human activity.</obo:IAO_0000115>
+        <rdfs:comment>Unsatisfactory definition here. Must consider the threshold that makes an environmental system anthropogenic.</rdfs:comment>
+        <rdfs:label>anthropogenic environment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000408 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000408">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
         <obo:IAO_0000115>A site which has its extent determined by the presence or influence of one or more components of an environmental system or the processes occurring therein.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>environmental area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
@@ -16586,7 +16614,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
     <!-- http://purl.obolibrary.org/obo/ENVO_01000658 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000658">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001829"/>
         <obo:IAO_0000115>A settlement with a high density of buildings and inhabitants.</obo:IAO_0000115>
         <obo:IAO_0000116>See also: http://www.ecotope.org/anthromes/v1/guide/urban/12_dense_settlements/default.aspx</obo:IAO_0000116>
         <rdfs:comment>The thresholds for what makes a settlment &quot;dense&quot; can be determined as needed. If there is a specific threshold that should be added to ENVO, please make a new class request.</rdfs:comment>
@@ -16603,6 +16631,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An area which is outside of a town, city, or urban area. Rural areas are primarily used for agriculture or pastoralism and may contain rural settlements</obo:IAO_0000115>
         <obo:IAO_0000115>An area which is outside of a town, city, or urban area. Rural areas are primarily used for agriculture or pastoralism and may contain rural settlements.</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:comment>A class created fro SDGIO. The definition of rural is highly varied, dealing with areas, settlements, and populations interchangeably. The &apos;rural&apos; classes in ENVO aim to clarify these differing definitions. See issue #272.</rdfs:comment>
         <rdfs:label>rural area</rdfs:label>
         <rdfs:label xml:lang="en">rural area</rdfs:label>
@@ -16619,10 +16648,14 @@ The class &apos;environmental system&apos; relates to what is found in the physi
     <!-- http://purl.obolibrary.org/obo/ENVO_01000813 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000813">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>A material part of an astronomical body.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Also note that some astronomical body parts (ABPs) may have fiat boundaries: if there&apos;s strong debate about where an ABP begins or ends (over and above fuzzy boundaries), with different official classifications setting different thresholds or limits, axiomatise the class with fiat boundaries of the appropriate dimension.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Note that material entities may have immaterial entities (e.g. sites) as parts.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This class includes material parts of astronomical bodies. Immaterial parts, such as magnetospheres, are represented as sites under the influence of magnetic fields.Please post countercases in the ENVO tracker for revision of this hierarchy if needed.</obo:IAO_0000116>
         <oboInOwl:inSubset>envoAstro</oboInOwl:inSubset>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:comment xml:lang="en">Material parts of astronomical bodies generally have boundaries formed by discontinuities in qualities, composition, or other physical characterisitcs. These boundaries are sometimes sharp, and sometimes diffuse, with different classification systems and communities declaring varying thresholds (e.g. for where a shoreline, forest, or other entity begins and ends). However, some boundaries are declared by fiat - that is, by arbitrary human convention or decree - particularly by regulatory or other authorities and communities of practice. The classes in this hierarchy attempt to offer generalisable definitions that allow multiple classfiication systems to map to and interoperate through. If desired, we can create classes that declare thresholds used by a given authority or community under the more generic ones, annotated with source information.</rdfs:comment>
         <rdfs:label xml:lang="en">astronomical body part</rdfs:label>
     </owl:Class>
     
@@ -16634,8 +16667,65 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>Incorporated populated place</obo:IAO_0000115>
+        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
         <rdfs:label>urban area</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <obo:IAO_0000115>An environmental system which is determined by a living organism.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>host-associated environment</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset>envoEmpo</oboInOwl:inSubset>
+        <oboInOwl:inSubset>envoOmics</oboInOwl:inSubset>
+        <rdfs:label xml:lang="en">environmental system determined by an organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001000"/>
+        <obo:IAO_0000115>An environmental system determined by an animal.</obo:IAO_0000115>
+        <obo:IAO_0000118>Animal</obo:IAO_0000118>
+        <oboInOwl:hasBroadSynonym>animal environment</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>Metazoan-associated environment</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset>envoEmpo</oboInOwl:inSubset>
+        <oboInOwl:inSubset>envoMeo</oboInOwl:inSubset>
+        <oboInOwl:inSubset>envoOmics</oboInOwl:inSubset>
+        <rdfs:label xml:lang="en">animal-associated environment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <owl:annotatedTarget>Animal</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/emp-ontology-empo/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+        <obo:IAO_0000115>An environmental system determined by part of a living or dead animal, or a whole small animal.</obo:IAO_0000115>
+        <obo:IAO_0000118>Animal corpus</obo:IAO_0000118>
+        <oboInOwl:inSubset>envoEmpo</oboInOwl:inSubset>
+        <oboInOwl:inSubset>envoMeo</oboInOwl:inSubset>
+        <oboInOwl:inSubset>envoOmics</oboInOwl:inSubset>
+        <rdfs:label xml:lang="en">environment associated with an animal part or small animal</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001055"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <owl:annotatedTarget>Animal corpus</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/emp-ontology-empo/</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -16645,7 +16735,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An environmental system which includes both living and non-living components.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>LTER:173</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>LTER:173</oboInOwl:hasDbXref>
         <rdfs:comment>This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.</rdfs:comment>
         <rdfs:label>ecosystem</rdfs:label>
         <rdfs:label xml:lang="en">ecosystem</rdfs:label>
@@ -16658,7 +16748,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>LTER:173</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://vocab.lternet.edu/vocab/vocab/index.php?tema=173&amp;/ecosystems</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -16669,6 +16759,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001199">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000408"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
         <obo:IAO_0000115>An environmental zone which is bounded by material parts of a land mass or the atmosphere or space adjacent to it.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">terrestrial environmental zone</rdfs:label>
     </owl:Class>
@@ -16743,6 +16834,34 @@ The class &apos;environmental system&apos; relates to what is found in the physi
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001828 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001828">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000313"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+        <obo:IAO_0000115 xml:lang="en">An ecosystem which is formed as a result of human activity or impact.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-07T16:56:05Z</dc:date>
+        <rdfs:label xml:lang="en">anthropised ecosystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001829 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001829">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001055"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001828"/>
+        <obo:IAO_0000115 xml:lang="en">An anthropised ecosystem which is determined by the presence of humans and their constructions.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-07T16:58:25Z</dc:date>
+        <rdfs:label xml:lang="en">human settlement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01001884 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001884">
@@ -16783,6 +16902,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A reference to a place on the Earth, by its name or by its geographical location</obo:IAO_0000115>
         <obo:IAO_0000115>A reference to a place on the Earth, by its name or by its geographical location.</obo:IAO_0000115>
+        <obo:IAO_0000119>Gazeteer Ontology</obo:IAO_0000119>
         <oboInOwl:hasAlternativeId>GAZ:00000467</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>geographic region {alternative name}</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>GAZ</oboInOwl:hasOBONamespace>
@@ -17079,9 +17199,7 @@ There is no intended sequence of the entities that are part of the emotion proce
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An affective process that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
-        <obo:IAO_0000118> hunger</obo:IAO_0000118>
-        <obo:IAO_0000118> pain</obo:IAO_0000118>
-        <obo:IAO_0000118>Feeling calm</obo:IAO_0000118>
+        <obo:IAO_0000118>pain</obo:IAO_0000118>
         <rdfs:comment>&apos;Subjective affective feeling can have greater or weaker physiological or mental components. The bodily process that are experienced will usually involve some mental process.
 
 Bodily sensation and the experiences of emotions (e.g., feeling calm) would both qualify as examples of &apos;subjective affective feeling&apos;.
@@ -17520,8 +17638,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000032"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>Surprise with a positive valence.</obo:IAO_0000115>
-        <obo:IAO_0000118> astonishment</obo:IAO_0000118>
-        <obo:IAO_0000118>wonder</obo:IAO_0000118>
+        <obo:IAO_0000118>astonishment</obo:IAO_0000118>
         <rdfs:label>positive surprise</rdfs:label>
     </owl:Class>
     
@@ -17590,12 +17707,6 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A member of the species Homo Sapiens.</obo:IAO_0000115>
         <obo:IAO_0000115>An extended organism that is a member of the species Homo sapiens.</obo:IAO_0000115>
@@ -17686,6 +17797,7 @@ A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as men
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:label>representation</rdfs:label>
@@ -17696,7 +17808,6 @@ A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as men
     <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050310"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000030"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
@@ -17862,12 +17973,6 @@ objectives is a planned process.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010138"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">organization</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -17949,6 +18054,10 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">An object aggregate consisting of an organism and all material entities located within the organism, overlapping the organism, or occupying sites formed in part by the organism.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=3</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2010-01-25T04:51:11Z</obo:IAO_0000232>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087</rdfs:comment>
         <rdfs:label>extended organism</rdfs:label>
     </owl:Class>
@@ -17979,6 +18088,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115>An architectural structure that bears some function.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An architectural structure that bears some function.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <rdfs:label>facility</rdfs:label>
         <rdfs:label xml:lang="en">facility</rdfs:label>
@@ -17995,6 +18105,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A health care facility that bears the function to provide acute and intensive healthcare services and that is run by a hospital organization and is the bearer of a hospital function.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>hospital facility</rdfs:label>
         <rdfs:label xml:lang="en">hospital facility</rdfs:label>
     </owl:Class>
@@ -18010,6 +18121,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115>A facility that is run by a school organization and is the bearer of a school function</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A facility that is run by a school organization and is the bearer of a school function.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>school facility</rdfs:label>
         <rdfs:label xml:lang="en">school facility</rdfs:label>
     </owl:Class>
@@ -18024,6 +18136,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115>A facility that’s administered by a health care organisation for the purpose of providing health care to a patient population</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <rdfs:label xml:lang="en">health care facility</rdfs:label>
         <rdfs:label>healthcare facility</rdfs:label>
@@ -18041,7 +18154,9 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Emma Norris</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <obo:IAO_0000119> contacted ontology authors to add definition</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">Human Behaviour Change Project</obo:IAO_0000119>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>hospice facility</rdfs:label>
         <rdfs:label xml:lang="en">hospice facility</rdfs:label>
     </owl:Class>
@@ -18059,7 +18174,9 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Emma Norris</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <obo:IAO_0000119> contacted ontology authors to add definition</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">Human Behaviour Change Project</obo:IAO_0000119>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>rehabilitation facility</rdfs:label>
         <rdfs:label xml:lang="en">rehabilitation facility</rdfs:label>
     </owl:Class>
@@ -18078,6 +18195,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Emma Norris</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Adapted from Human Behaviour Change Project</obo:IAO_0000119>
+        <obo:IAO_0000119>OMRSE_00000114</obo:IAO_0000119>
         <rdfs:label>emergency department facility</rdfs:label>
         <rdfs:label xml:lang="en">emergency department facility</rdfs:label>
     </owl:Class>
@@ -18104,7 +18222,9 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A facility that has at least one housing unit as part in which a person or persons live</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Emma Norris</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <obo:IAO_0000119> contacted ontology authors to add definition</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">Modified version of definition provided by Human Behaviour Change Project</obo:IAO_0000119>
+        <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>residential facility</rdfs:label>
         <rdfs:label xml:lang="en">residential facility</rdfs:label>
     </owl:Class>
@@ -18139,6 +18259,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115>A health care facility whose function is to store, prepare, dispense, and monitor the usage of pharmaceutical drugs among patients in a given area or encountered in a given health care provider organization</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A health care facility whose function is to store, prepare, dispense, and monitor the usage of pharmaceutical drugs among patients in a given area or encountered in a given health care provider organization.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Un établissement de santé qui a pour fonction d&apos;entreposer, préparer, distribuer et surveiller l&apos;utilisation des médicaments parmi les patients d&apos;une zone géographique donnée ou suivis dans une organisation de soin donnée.</obo:IAO_0000115>
+        <obo:IAO_0000119>The Prescription of Drugs Ontology</obo:IAO_0000119>
         <rdfs:label>pharmacy facility</rdfs:label>
         <rdfs:label xml:lang="en">pharmacy facility</rdfs:label>
         <rdfs:label xml:lang="fr">établissement de pharmacologie</rdfs:label>
@@ -18239,6 +18360,12 @@ An example for this class serving as a mechanism of action would be in an interv
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00007001</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>connected biological structure</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CARO:0000003</oboInOwl:hasDbXref>
@@ -18279,6 +18406,12 @@ An example for this class serving as a mechanism of action would be in an interv
         <owl:annotatedTarget>Anatomical entity that has mass.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00007016</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
     
 
 
@@ -18292,6 +18425,7 @@ An example for this class serving as a mechanism of action would be in an interv
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <oboInOwl:hasDbXref>AAO:0010841</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>AEO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BFO:0000004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BILA:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:6</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
@@ -18319,6 +18453,12 @@ An example for this class serving as a mechanism of action would be in an interv
         <owl:annotatedTarget>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:10000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
