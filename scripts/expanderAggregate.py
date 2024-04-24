@@ -55,7 +55,7 @@ def add_extra_values(header, row, aggregate, id_list):#, num):
         name = ""
         for key, cell in zip(header, row):
             if key == "Label":
-                extra_values[key] = agg + " " + str(cell.value)
+                extra_values[key] = f"[{cell.value}] {agg}"
                 name = str(cell.value)
             elif key == "Parent":
                 if agg == "aggregate":
@@ -96,7 +96,7 @@ if __name__ == '__main__':
     basename = str(Path(inputFileName).stem)
     suffix = str(Path(inputFileName).suffix)
     
-    wb = openpyxl.load_workbook(inputFileName) 
+    wb: openpyxl.Workbook = openpyxl.load_workbook(inputFileName)
     sheet = wb.active
     data = sheet.rows
     rows = []
@@ -113,7 +113,18 @@ if __name__ == '__main__':
             if key == "ID" and cell.value != None:
                 id_list.append(cell.value)
 
-    #copy original:
+    next_id = max(int(x.split(":")[-1]) for x in id_list) + 1
+    # Generate missing IDs
+    for row in sheet[2:sheet.max_row]:
+        for key, cell in zip(header, row):
+            if key == "ID" and cell.value is None:
+                cell.value = f"BCIO:{next_id:06}"
+                id_list.append(cell.value)
+                next_id += 1
+    wb.save(inputFileName)
+
+
+    # copy original:
     for row in sheet[2:sheet.max_row]:
         values = {}
         extra_rows = []
@@ -127,6 +138,7 @@ if __name__ == '__main__':
     for row in sheet[2:sheet.max_row]:
         values = {}
         extra_rows = []
+
         for key, cell in zip(header, row):
             values[key] = cell.value
             if key == "Aggregate" and cell.value != None and cell.value != "":
