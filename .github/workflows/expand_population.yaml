@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
       - name: Run conversion
-        run: python3 scripts/expanderAggregate.py.py -i "Population/BCIO_Population.xlsx"
+        run: python3 scripts/expanderAggregate.py -i "Population/BCIO_Population.xlsx"
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
           add: 'Population/BCIO_Population_Expanded.xlsx'
