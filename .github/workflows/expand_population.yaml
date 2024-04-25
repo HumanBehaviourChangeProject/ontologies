@@ -1,0 +1,28 @@
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "Population/BCIO_Population.xlsx"
+permissions:
+    contents: write
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    name: Expand population
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip' # caching pip dependencies
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+      - name: Run conversion
+        run: python3 scripts/expanderAggregate.py.py -i "Population/BCIO_Population.xlsx"
+      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+        with:
+          add: 'Population/BCIO_Population_Expanded.xlsx'
+          default_author: 'github_actions'
+          message: "Expanded population"
+          push: true
