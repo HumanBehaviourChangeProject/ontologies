@@ -1,14 +1,8 @@
-import os
 from pathlib import Path
-import re
 import openpyxl
 from openpyxl.styles import Font
-import csv
-import codecs
 import sys
 import argparse
-import subprocess
-import io
 
 
 
@@ -55,13 +49,18 @@ def add_extra_values(header, row, aggregate, id_list):#, num):
         name = ""
         for key, cell in zip(header, row):
             if key == "Label":
-                extra_values[key] = f"[{cell.value}] {agg}"
+                if agg == "aggregate":
+                    extra_values[key] = f"{cell.value} population statistic"
+                else:
+                    extra_values[key] = f"{agg} {cell.value} population statistic"
+
                 name = str(cell.value)
+
             elif key == "Parent":
                 if agg == "aggregate":
                     extra_values[key] = 'data item'
                 else: 
-                    extra_values[key] = "aggregate "+name 
+                    extra_values[key] = f"{name} population statistic"
             elif key == "ID": 
                 id_list, new_id = generate_unique_id(cell.value, id_list, i)
                 extra_values[key] = new_id 
