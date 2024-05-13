@@ -9,7 +9,6 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
@@ -44,12 +43,6 @@
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_036000 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036025 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025">
@@ -77,12 +70,6 @@
         <obo:IAO_0000115>An expressive behaviour that involves the transmission of information between two or more people.</obo:IAO_0000115>
         <rdfs:label>human communication behaviour</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
     
 
 
@@ -1494,7 +1481,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_045000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_045000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process by which intervention content is delivered.</obo:IAO_0000115>
         <rdfs:label>intervention delivery</rdfs:label>
@@ -1516,9 +1503,9 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050374 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050374">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour showing an emotion such as mirth, joy, or scorn with a chuckle or explosive vocal sound.</obo:IAO_0000115>
+        <obo:IAO_0000115>An expressive behaviour showing elation, amusement or scorn by means of facial expressions and repeated sharp exhalations.</obo:IAO_0000115>
         <rdfs:label>laughing</rdfs:label>
     </owl:Class>
     
@@ -1679,7 +1666,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An individual human behaviour that conveys a thought or feeling.</obo:IAO_0000115>
         <rdfs:label>expressive behaviour</rdfs:label>
     </owl:Class>
