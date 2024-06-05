@@ -6,6 +6,9 @@ on:
       - "Population/BCIO_Population.xlsx"
 permissions:
     contents: write
+concurrency:
+  group: "expand_population"
+  cancel-in-progress: true
 jobs:
   expand:
     runs-on: ubuntu-latest
