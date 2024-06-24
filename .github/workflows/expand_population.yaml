@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - master_disabled
     paths:
       - "Population/BCIO_Population.xlsx"
 permissions:

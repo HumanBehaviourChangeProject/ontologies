@@ -66,7 +66,9 @@ def add_extra_values(header, row, aggregate, id_list):#, num):
                 extra_values[key] = new_id 
             elif key == "Definition":
                 extra_values[key] = "The " + agg + " of " + name + " in a population."
-            elif key in ["Curation status","Sub-ontology"]:
+            elif key in ["Curation status"]:
+                extra_values[key] = str(cell.value) if cell.value != "External" else "Published"
+            elif key in ["Sub-ontology"]:
                 extra_values[key] = str(cell.value)
             elif key == "REL 'aggregate of'":
                 extra_values[key] = name
@@ -112,14 +114,14 @@ if __name__ == '__main__':
             if key == "ID" and cell.value != None:
                 id_list.append(cell.value)
 
-    next_id = max(int(x.split(":")[-1]) for x in id_list) + 1
-    # Generate missing IDs
-    for row in sheet[2:sheet.max_row]:
-        for key, cell in zip(header, row):
-            if key == "ID" and cell.value is None:
-                cell.value = f"BCIO:{next_id:06}"
-                id_list.append(cell.value)
-                next_id += 1
+    # next_id = max(int(x.split(":")[-1]) for x in id_list if x.split(":")[0] == 'BCIO') + 1
+    # # Generate missing IDs
+    # for row in sheet[2:sheet.max_row]:
+    #     for key, cell in zip(header, row):
+    #         if key == "ID" and cell.value is None:
+    #             cell.value = f"BCIO:{next_id:06}"
+    #             id_list.append(cell.value)
+    #             next_id += 1
     wb.save(inputFileName)
 
 
