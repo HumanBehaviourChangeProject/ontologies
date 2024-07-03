@@ -1,22 +1,24 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/bcio_setting.owl#"
-     xml:base="http://humanbehaviourchange.org/ontology/bcio_setting.owl"
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/temporary/bcio_setting.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/temporary/bcio_setting.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdg="http://purl.unep.org/sdg/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
-    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_setting.owl">
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/temporary/bcio_setting.owl">
+        <owl:imports rdf:resource="file:/tmp/tmpo2z9sazxonto-spread-ed-release-108/bcio_external.owl"/>
+        <owl:imports rdf:resource="file:/tmp/tmpo2z9sazxonto-spread-ed-release-108/bcio_upper_level.owl"/>
     </owl:Ontology>
     
 
@@ -66,6 +68,12 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Features of a given location, such as social and economic characteristics.</obo:IAO_0000115>
         <rdfs:label>attribute of location</rdfs:label>
@@ -650,12 +658,6 @@
         <obo:IAO_0000119>NCI Thesaurus OBO Edition</obo:IAO_0000119>
         <rdfs:label>psychiatric facility</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
     
 
 
