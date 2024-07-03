@@ -1,21 +1,23 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/bcio_upper.owl#"
-     xml:base="http://humanbehaviourchange.org/ontology/bcio_upper.owl"
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/temporary/bcio_upper.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/temporary/bcio_upper.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdg="http://purl.unep.org/sdg/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
-    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_upper.owl">
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/temporary/bcio_upper.owl">
+        <owl:imports rdf:resource="file:/tmp/tmpo2z9sazxonto-spread-ed-release-108/bcio_external.owl"/>
     </owl:Ontology>
     
 
@@ -35,6 +37,8 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000001">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000125"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_031000"/>
         <obo:IAO_0000115>A relation that holds between a study and the study sample for that study</obo:IAO_0000115>
         <rdfs:label>has study sample</rdfs:label>
     </owl:ObjectProperty>
@@ -45,6 +49,8 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000002">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000125"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_030000"/>
         <obo:IAO_0000115>A relation that holds between a study and the study investigator for that study</obo:IAO_0000115>
         <rdfs:label>has study investigator</rdfs:label>
     </owl:ObjectProperty>
@@ -55,6 +61,8 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000003">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008000"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010000"/>
         <obo:IAO_0000115>A relation that holds between a behaviour change intervention delivery and the source who performs the delivery</obo:IAO_0000115>
         <rdfs:label>has BCI source</rdfs:label>
     </owl:ObjectProperty>
@@ -65,28 +73,10 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000004">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_001000"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_005000"/>
         <obo:IAO_0000115>A relation that holds between a behaviour change intervention scenario and the context of the scenario</obo:IAO_0000115>
         <rdfs:label>has BCI context</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000005 -->
-
-    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000005">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <obo:IAO_0000115>A relation that holds between an evaluation study and the scenario that it is evaluating</obo:IAO_0000115>
-        <rdfs:label>evaluates</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000006 -->
-
-    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000006">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <obo:IAO_0000115>A relation that holds between a comparative evaluation study and two or more scenarios that are being compared</obo:IAO_0000115>
-        <rdfs:label>comparatively evaluates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -95,6 +85,8 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000007">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115>A relation that holds between an effect estimate and two outcome estimates</obo:IAO_0000115>
         <rdfs:label>difference between</rdfs:label>
     </owl:ObjectProperty>
@@ -104,7 +96,9 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIOR_000008 -->
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000008">
-        <obo:IAO_0000115>A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and  is influenced by a BCI or its context such that there is some change in entity x.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115>A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and is influenced by a BCI or its context such that there is some change in entity x.</obo:IAO_0000115>
         <rdfs:label>through</rdfs:label>
     </owl:ObjectProperty>
     
@@ -114,6 +108,8 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000009">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>A relation that links abstinence from a behaviour to a temporal region during which this personal attribute is true</obo:IAO_0000115>
         <rdfs:label>has abstinence period</rdfs:label>
     </owl:ObjectProperty>
@@ -123,6 +119,8 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIOR_000010 -->
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000010">
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000115>A relation that links an individual human behaviour to a behavioural attribute.</obo:IAO_0000115>
         <rdfs:label>has behavioural attribute</rdfs:label>
     </owl:ObjectProperty>
@@ -133,6 +131,8 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000011">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <obo:IAO_0000115>Realises the human life function of an individual human behaviour.</obo:IAO_0000115>
         <rdfs:label>serves behavioural function</rdfs:label>
     </owl:ObjectProperty>
@@ -143,18 +143,10 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000012">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002559"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
         <obo:IAO_0000115>Causally influenced by a cognitive representation of something the behaviour could bring about.</obo:IAO_0000115>
         <rdfs:label>has behavioural goal</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000013 -->
-
-    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000013">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002506"/>
-        <obo:IAO_0000115>Causally relation between two entities in which a behaviour brings into existence, causes to occur, destroys, prevents from occurring, or changes an entity.</obo:IAO_0000115>
-        <rdfs:label>has behavioural outcome</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -163,6 +155,8 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000014">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115>Has participant that relates a behaviour to the person enacting the behaviour.</obo:IAO_0000115>
         <rdfs:label>is enacted by</rdfs:label>
     </owl:ObjectProperty>
@@ -173,6 +167,8 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000015">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>Has participant that relates a behaviour to a material entity that the person enacting the behaviour intends to enable or facilitate the behaviour.</obo:IAO_0000115>
         <rdfs:label>uses</rdfs:label>
     </owl:ObjectProperty>
@@ -183,6 +179,8 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000016">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
         <obo:IAO_0000115>Has participant that relates a behaviour to another sentient being that accompanies the person enacting the behaviour.</obo:IAO_0000115>
         <rdfs:label>has behavioural companion</rdfs:label>
     </owl:ObjectProperty>
@@ -193,18 +191,10 @@
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000017">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115>Has participant that relates the behaviour to an object that the person enacting the behaviour intends to influence.</obo:IAO_0000115>
         <rdfs:label>has behavioural target</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-        <obo:IAO_0000115>A core relation that holds between a part and its whole</obo:IAO_0000115>
-        <rdfs:label>part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -232,15 +222,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
         <obo:IAO_0000115>To say that b realizes c at t is to assert that there is some material entity d and b is a process which has participant d at t and c is a disposition or role of which d is bearer_of at tand the type instantiated by b is correlated with the type instantiated by c.</obo:IAO_0000115>
         <rdfs:label>realises</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
-        <obo:IAO_0000115>b occurs_in c =def b is a process and c is a material entity or immaterial entityand there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.and forall(t) if b exists_at t then c exists_at t and there exist spatial regions s and s’ where and b spatially_projects_onto s at tand c is occupies_spatial_region s’ at tand s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
-        <rdfs:label>occurs in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -276,6 +257,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000155">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects.</obo:IAO_0000115>
         <rdfs:label>occupies temporal region</rdfs:label>
     </owl:ObjectProperty>
@@ -339,15 +322,11 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002092 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002092">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))</obo:IAO_0000115>
         <rdfs:label>happens during</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
     
 
 
@@ -355,6 +334,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002223">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <obo:IAO_0000115>inverse of starts with</obo:IAO_0000115>
         <rdfs:label>starts</rdfs:label>
     </owl:ObjectProperty>
@@ -365,6 +346,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002229">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <obo:IAO_0000115>inverse of ends with</obo:IAO_0000115>
         <rdfs:label>ends</rdfs:label>
     </owl:ObjectProperty>
@@ -389,19 +372,12 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002506 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002506">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
-        <rdfs:label>causal relation between entities</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002559 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002559">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002506"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:label>causally influenced by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -445,6 +421,18 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_003000">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_037000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_028000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_002000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112>Involves use of products, services, activities, rules or environmental objects.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention that has the aim of influencing human behaviour.</obo:IAO_0000115>
@@ -571,11 +559,21 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015095"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A human population who are exposed to a BCI.</obo:IAO_0000115>
+        <obo:IAO_0000115>An intervention population who are exposed to a behaviour change intervention.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI population</obo:IAO_0000118>
         <rdfs:label>behaviour change intervention population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015095 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015095">
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A human population who are exposed to an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention population</rdfs:label>
     </owl:Class>
     
 
@@ -787,7 +785,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_033000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A planned process that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;planned process&gt; that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change.</obo:IAO_0000115>
         <obo:IAO_0000118>BCT</obo:IAO_0000118>
         <rdfs:label>behaviour change technique</rdfs:label>
     </owl:Class>
@@ -881,7 +879,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_041000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An aggregate of people</obo:IAO_0000115>
+        <obo:IAO_0000115>An object aggregate that consists of two or more people.</obo:IAO_0000115>
         <rdfs:label>human population</rdfs:label>
     </owl:Class>
     
@@ -936,7 +934,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044003">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An attribute of a communication process</obo:IAO_0000115>
+        <obo:IAO_0000115>An attribute of a communication process.</obo:IAO_0000115>
         <rdfs:label>communication process attribute</rdfs:label>
     </owl:Class>
     
