@@ -1,22 +1,24 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/bcio_style.owl#"
-     xml:base="http://humanbehaviourchange.org/ontology/bcio_style.owl"
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/temporary/bcio_style.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/temporary/bcio_style.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdg="http://purl.unep.org/sdg/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
-    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_style.owl">
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/temporary/bcio_style.owl">
+        <owl:imports rdf:resource="file:/tmp/tmpo2z9sazxonto-spread-ed-release-108/bcio_external.owl"/>
+        <owl:imports rdf:resource="file:/tmp/tmpo2z9sazxonto-spread-ed-release-108/bcio_upper_level.owl"/>
     </owl:Ontology>
     
 
@@ -46,9 +48,9 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036025 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that involves an interaction between two or more people.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;socially-related behaviour&gt; that involves an interaction between two or more people.</obo:IAO_0000115>
         <rdfs:label>inter-personal behaviour</rdfs:label>
     </owl:Class>
     
@@ -113,6 +115,12 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_044003">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000133"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute of a communication process.</obo:IAO_0000115>
         <rdfs:comment>Communication processes can have a variety of attributes, such as their speed, how they are delivered, what language they take place in and the tone of voice in which they occur.  All these types of attributes and more are captured by &quot;communication process attribute&quot;</rdfs:comment>
