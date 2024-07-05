@@ -26,6 +26,47 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -131,7 +172,7 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011005"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Printed material mode of delivery that involves use of of a printed publication.</obo:IAO_0000115>
-        <rdfs:comment>Includes leaflets, brochures, newspapers, newsletter, booklets, mazazines, manuals or worksheets.</rdfs:comment>
+        <rdfs:comment>Includes leaflets, brochures, newspapers, newsletter, booklets, magazines, manuals or worksheets.</rdfs:comment>
         <rdfs:label>printed publication mode of delivery</rdfs:label>
     </owl:Class>
     
@@ -783,6 +824,12 @@
         <rdfs:comment>Includes art therapy, music therapy, dance and acting.</rdfs:comment>
         <rdfs:label>arts feature mode of delivery</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
 </rdf:RDF>
 
 

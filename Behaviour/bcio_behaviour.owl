@@ -26,6 +26,82 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000009 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000009"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000010 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -819,6 +895,12 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000115>A process that is an individual human behaviour or a population behaviour.</obo:IAO_0000115>
         <rdfs:label>human behaviour</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
     
 
 
@@ -2197,6 +2279,36 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
@@ -2205,6 +2317,30 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000115>A disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])</obo:IAO_0000115>
         <rdfs:label>function</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000032"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060"/>
 </rdf:RDF>
 
 

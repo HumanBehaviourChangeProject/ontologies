@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/bcio_population.owl#"
-     xml:base="http://humanbehaviourchange.org/ontology/bcio_population.owl"
+<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl#"
+     xml:base="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -16,11 +16,75 @@
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
-    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_population.owl">
+    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/..%2FMechanismOfAction/bcio_moa.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
     
 
 
@@ -77,6 +141,18 @@
         <obo:IAO_0000115>A person between 13 and 19 years of age.</obo:IAO_0000115>
         <rdfs:label>teenager</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006081 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006082 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006082"/>
     
 
 
@@ -655,7 +731,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002029"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050550"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
@@ -9282,6 +9358,64 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050550 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process wherein knowledge and skills is imparted.</obo:IAO_0000115>
+        <rdfs:label>education process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized.</obo:IAO_0000115>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
@@ -9293,6 +9427,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
@@ -9301,6 +9447,18 @@
         <obo:IAO_0000115>An extended organism that is a member of the species Homo sapiens.</obo:IAO_0000115>
         <rdfs:label>person</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000043"/>
     
 
 
@@ -9337,6 +9495,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
@@ -9345,6 +9509,18 @@
         <obo:IAO_0000115>A role which inheres in a person and is realized by being under the care of a physician or health care provider.</obo:IAO_0000115>
         <rdfs:label>patient role</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000087"/>
     
 
 
@@ -9367,17 +9543,6 @@
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An insured party role that inheres in a person who participates in the creation of the insurance contract and is eligible to receive benefits as specified by the insurance contract.</obo:IAO_0000115>
         <rdfs:label>policy holder role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00002029 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability.</obo:IAO_0000115>
-        <rdfs:label>education process</rdfs:label>
     </owl:Class>
     
 

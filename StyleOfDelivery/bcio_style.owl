@@ -26,6 +26,64 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000133 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000133"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -42,6 +100,12 @@
         <obo:IAO_0000115>An intervention delivery in which the intervention is a behaviour change intervention.</obo:IAO_0000115>
         <rdfs:label>behaviour change intervention delivery</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_036000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
     
 
 
@@ -72,6 +136,12 @@
         <obo:IAO_0000115>An expressive behaviour that involves the transmission of information between two or more people.</obo:IAO_0000115>
         <rdfs:label>human communication behaviour</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
     
 
 
@@ -1678,6 +1748,18 @@
         <obo:IAO_0000115>An individual human behaviour that conveys a thought or feeling.</obo:IAO_0000115>
         <rdfs:label>expressive behaviour</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
 </rdf:RDF>
 
 
