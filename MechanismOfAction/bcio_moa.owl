@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/bcio_moa.owl#"
-     xml:base="http://humanbehaviourchange.org/ontology/bcio_moa.owl"
+<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl#"
+     xml:base="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -16,10 +16,80 @@
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
-    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_moa.owl">
+    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000008 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
     
 
 
@@ -124,6 +194,12 @@
         <rdfs:comment>While &apos;addiction&apos; is a disposition relating to experience motivation to use a substance, &apos;substance dependence&apos; refers to &apos;disposition related to the impaired functioning in the absence of a substance&apos;.</rdfs:comment>
         <rdfs:label>substance dependence</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
     
 
 
@@ -1931,6 +2007,12 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050213 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050213">
@@ -2683,14 +2765,44 @@ In this definition, ‘change’ refers to change from what would have been the 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</obo:IAO_0000115>
+        <obo:IAO_0000115>A specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized.</obo:IAO_0000115>
         <rdfs:label>quality</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
     
 
 
@@ -2702,6 +2814,12 @@ In this definition, ‘change’ refers to change from what would have been the 
         <obo:IAO_0000115>An &lt;independent continuant&gt; that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
         <rdfs:label>material entity</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000144"/>
     
 
 
@@ -2796,6 +2914,12 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <obo:IAO_0000115>&lt;Learning&gt; that occurs through observing the behaviour of others.</obo:IAO_0000115>
         <rdfs:label>observational learning</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
     
 
 
@@ -3483,6 +3607,12 @@ For instance, having a musical ability is ordinarily an ability that is positive
         <rdfs:comment>Mental capabilities that are necessary to realise a behaviour are captured by the class ‘psychological behavioural capability’, which is a subclass of both ‘mental capability’ and ‘behavioural capability’.</rdfs:comment>
         <rdfs:label>mental capability</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000074"/>
     
 
 
