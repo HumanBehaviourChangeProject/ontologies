@@ -4,6 +4,7 @@ on:
       - master
     paths:
       - "Population/BCIO_Population.xlsx"
+  workflow_dispatch:
 permissions:
     contents: write
 concurrency:
