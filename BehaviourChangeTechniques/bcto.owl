@@ -3495,7 +3495,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050445">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal directed BCT&gt; that changes an existing goal for the behaviour to be achieved.</obo:IAO_0000115>
         <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving.</rdfs:comment>
         <rdfs:label>change behaviour goal BCT</rdfs:label>
@@ -3507,10 +3507,32 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050446">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007001"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal directed BCT&gt; that changes an existing goal for the outcome to be achieved.</obo:IAO_0000115>
         <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving.</rdfs:comment>
         <rdfs:label>change outcome goal BCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050559 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050559">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007177"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007178"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007179"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007180"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;increase awareness of consequences BCT&gt; that provides information about the negative consequences of performing or not performing the behaviour.</obo:IAO_0000115>
+        <rdfs:comment>Preferable to use the more specific child classes.</rdfs:comment>
+        <rdfs:label>inform about negative consequences BCT</rdfs:label>
     </owl:Class>
     
 
