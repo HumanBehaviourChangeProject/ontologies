@@ -75,10 +75,16 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_003000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_011000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute of a BCI delivery that is the physical or informational medium through which a BCI is provided.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI mode of delivery</obo:IAO_0000118>
@@ -827,9 +833,43 @@
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050315 -->
 
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050556 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050556">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011001"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Informational mode of delivery of radio broadcast, television, online press and printed press to a mass audience.</obo:IAO_0000115>
+        <rdfs:comment>This is a form of mass media.</rdfs:comment>
+        <rdfs:label>mass media mode of delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050557 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050557">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behaviour change intervention that is an awareness of other people’s thoughts, feelings and actions BCT delivered through a mass media mode of delivery.</obo:IAO_0000115>
+        <rdfs:label>social influence intervention through mass media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050558 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050558">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_011010"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Electronic mode of delivery of a newspaper or magazine.</obo:IAO_0000115>
+        <rdfs:label>online press mode of delivery</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

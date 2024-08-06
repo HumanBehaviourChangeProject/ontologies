@@ -1,0 +1,1119 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/Schedule/bcio_schedule.owl#"
+     xml:base="http://humanbehaviourchange.org/ontology/Schedule/bcio_schedule.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdg="http://purl.unep.org/sdg/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/"
+     xmlns:Property="https://www.wikidata.org/wiki/Property:"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
+    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/Schedule/bcio_schedule.owl">
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_003000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008000"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008500 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008500">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Includes the start and end of a BCI, its parts, and their organisation around relevant timepoints.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI attribute&gt; that is its temporal organisation</obo:IAO_0000115>
+        <rdfs:label>BCI schedule of delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008505 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> a presentation</obo:IAO_0000112>
+        <obo:IAO_0000112> group discussion</obo:IAO_0000112>
+        <obo:IAO_0000112> the first 6 weeks of the intervention</obo:IAO_0000112>
+        <obo:IAO_0000112> the last 4 weeks of the intervention</obo:IAO_0000112>
+        <obo:IAO_0000112>counselling sessions</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;planned process&gt; that is a part of a BCI.</obo:IAO_0000115>
+        <rdfs:label>BCI temporal part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008510 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008510">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008505"/>
+        <obo:IAO_0000112> An advertisement display.</obo:IAO_0000112>
+        <obo:IAO_0000112> An online chat session</obo:IAO_0000112>
+        <obo:IAO_0000112>A counselling session</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI temporal part&gt; that is an occasion in which a member of a BCI population comes into contact with a BCI.</obo:IAO_0000115>
+        <rdfs:label>BCI contact event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008515 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008510"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> 12</obo:IAO_0000112>
+        <obo:IAO_0000112> 6</obo:IAO_0000112>
+        <obo:IAO_0000112> twenty</obo:IAO_0000112>
+        <obo:IAO_0000112>one</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is the number of contact events in a BCI temporal part.</obo:IAO_0000115>
+        <rdfs:label>number of BCI contact events</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008525 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008510"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> 2 minutes</obo:IAO_0000112>
+        <obo:IAO_0000112> 30 minutes</obo:IAO_0000112>
+        <obo:IAO_0000112>1 hour</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; between the start and end of a BCI contact event.</obo:IAO_0000115>
+        <rdfs:label>BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008530 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008500"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> The smoking intervention started 2 weeks after participants were enrolled into an inpatient setting</obo:IAO_0000112>
+        <obo:IAO_0000112>A feedback call was scheduled to be delivered around 6 months after the birth of the baby</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal region&gt; against which a BCI  temporal part is referenced.</obo:IAO_0000115>
+        <obo:IAO_0000232>check relationships</obo:IAO_0000232>
+        <rdfs:label>temporal reference associated with the intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008535 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008535">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008500"/>
+        <obo:IAO_0000112>the length and regularity of sessions were consistent across the duration of the intervention, taking place for an hour each week</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI schedule of delivery&gt; in which the frequency and duration of Intervention temporal parts are uniform across the course of a BCI or BCI part.</obo:IAO_0000115>
+        <obo:IAO_0000232>relationship? is about schedule? or is a type of schedule?</obo:IAO_0000232>
+        <rdfs:label>regular intervention schedule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008540 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008540">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008500"/>
+        <obo:IAO_0000112> participants were free to access the app whenever they desired</obo:IAO_0000112>
+        <obo:IAO_0000112>telephone feedback sessions were more frequent during the first 6 weeks</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI schedule of delivery&gt; in which the frequency and duration of contact events change over the course of a temporal part or BCI.</obo:IAO_0000115>
+        <obo:IAO_0000232>relationship? is about schedule? or is a type of schedule?</obo:IAO_0000232>
+        <rdfs:label>irregular intervention schedule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008545 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008510"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> 12 hours</obo:IAO_0000112>
+        <obo:IAO_0000112>150 minutes</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; that is the total of intervention temporal parts within a behaviour change intervention.</obo:IAO_0000115>
+        <obo:IAO_0000232>&quot;is about&quot; contact events or &quot;is about&quot; duration of contact events?</obo:IAO_0000232>
+        <rdfs:label>total BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008560 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008560">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> 1 year</obo:IAO_0000112>
+        <obo:IAO_0000112> 2 months</obo:IAO_0000112>
+        <obo:IAO_0000112>6 weeks</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; between the start and end of a BCI.</obo:IAO_0000115>
+        <rdfs:label>BCI duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008565 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008565">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008505"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> 2 weeks</obo:IAO_0000112>
+        <obo:IAO_0000112>6 weeks</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; between the start and end of an intervention temporal part.</obo:IAO_0000115>
+        <rdfs:label>BCI temporal part duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008570 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008570">
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000232>entity added so duration of interval can be specified. not sure what parent/relationships should be</obo:IAO_0000232>
+        <rdfs:label>z) interval (remove)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008575 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008505"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> &quot;1 day&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;2 weeks&quot;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; between the end of one BCI temporal part and the beginning of a subsequent BCI temporal part.</obo:IAO_0000115>
+        <rdfs:label>interval between BCI temporal parts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008580 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008580">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008500"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> &quot;The PA advice started with a general introduction,
+followed by normative feedback, which related students’ PA
+levels to the PA guidelines.&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;After questionnaires were completed, feedback was selected
+out of a database with messages for each possible combination
+of answers.&quot;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI attribute&gt; that is the  temporal positioning of BCI temporal parts.</obo:IAO_0000115>
+        <rdfs:label>order of BCI temporal parts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008585 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008585">
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A part of a BCI schedule which is the relation a specified temporal part is in when it ends prior to the beginning of another temporal part or timepoint</obo:IAO_0000115>
+        <rdfs:label>r) before (to be removed and added to list of relations)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008590 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008590">
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A part of a BCI schedule which is the relation a specified temporal part is in when it starts following the end of another temporal part or timepoint</obo:IAO_0000115>
+        <rdfs:label>s) after (to be removed and added to list of relations)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008595 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008595">
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A part of a BCI schedule which is the relation a specified temporal part is in when it occurs whilst another temporal part or timepoint occurs</obo:IAO_0000115>
+        <rdfs:label>q) same time (remove - this is a relation like before and after)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008700 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008700">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008510"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112> daily</obo:IAO_0000112>
+        <obo:IAO_0000112> one a week</obo:IAO_0000112>
+        <obo:IAO_0000112>twice a week</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; about the number times a contact event occurs per unit of time.</obo:IAO_0000115>
+        <rdfs:label>BCI contact event frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008710 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008505"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Participants took part in 90 minutes of PA &quot;weekly&quot;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is how often intervention temporal parts occur within a BCI.</obo:IAO_0000115>
+        <rdfs:label>BCI temporal part frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050312 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050312">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal interval is a one-dimensional temporal region, namely that is self-connected (is without gaps or breaks).</obo:IAO_0000115>
+        <rdfs:label>temporal interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050315 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050495 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050495">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050504"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008545"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;total contact event duration statistic&gt; that is the average value calculated from a collection of total contact event durations.</obo:IAO_0000115>
+        <rdfs:label>mean total BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050496 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050496">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050903"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008700"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event frequency statistic&gt; that is the central value of a collection of  BCI contact event frequencies when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median BCI contact event frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050497 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050497">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008515"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event number statistic&gt; that is the central value of a collection of  BCI contact event numbers when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median BCI contact event number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050498 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050498">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050905"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008560"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI duration statistic&gt; that is the central value of a collection of BCI durations when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median BCI duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050499 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050499">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050504"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008545"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;total contact event duration statistic&gt; that is the central value of a collection of total contact event durations when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median total BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050500 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050500">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050903"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008700"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event frequency statistic&gt; that is the lowest value from a collection of BCI contact event frequencies.</obo:IAO_0000115>
+        <rdfs:label>minimum BCI contact event frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050501 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050501">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050905"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008560"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI duration statistic&gt; that is the lowest value from a collection of BCI durations.</obo:IAO_0000115>
+        <rdfs:label>minimum BCI duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050502 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050502">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008515"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event number statistic&gt; that is the lowest value from a collection of BCI contact event numbers.</obo:IAO_0000115>
+        <rdfs:label>minimum BCI contact event number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050503 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050503">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050504"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008545"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;total contact event duration statistic&gt; that is the lowest value from a collection of total contact event durations.</obo:IAO_0000115>
+        <rdfs:label>minimum total BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050504 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008545"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of total contact event durations.</obo:IAO_0000115>
+        <rdfs:label>total BCI contact event duration statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050505 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008525"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI contact event durations.</obo:IAO_0000115>
+        <rdfs:label>BCI contact event duration statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050506 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008565"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of intervention temporal part durations.</obo:IAO_0000115>
+        <rdfs:label>BCI temporal part duration statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050507 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050507">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050505"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008525"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event duration statistic&gt; that is the highest value from a collection of BCI contact event durations.</obo:IAO_0000115>
+        <rdfs:label>maximum BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050508 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050508">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050506"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008565"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI temporal part duration statistic&gt; that denotes the highest value from a collection of BCI temporal part durations.</obo:IAO_0000115>
+        <rdfs:label>maximum BCI temporal part duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050509 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050509">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050505"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008525"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event duration statistic&gt; that is the average value calculated from a collection of BCI contact event durations.</obo:IAO_0000115>
+        <rdfs:label>mean BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050510 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050510">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050506"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008565"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI temporal part duration statistic&gt; that is the average value calculated from a collection of BCI temporal part durations.</obo:IAO_0000115>
+        <rdfs:label>mean BCI temporal part duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050511 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050511">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050505"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008525"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event duration statistic&gt; that is the central value of a collection of BCI contact event durations when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050512 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050512">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050506"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008565"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI temporal part duration statistic&gt; that is the central value of a collection of BCI temporal part durations when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median BCI temporal part duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050513 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050513">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050505"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008525"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event duration statistic&gt; that is the lowest value from a collection of BCI contact event durations.</obo:IAO_0000115>
+        <rdfs:label>minimum BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050514 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050514">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050506"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008565"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI temporal part duration statistic&gt; that denotes the lowest value from a collection of BCI temporal part durations.</obo:IAO_0000115>
+        <rdfs:label>minimum BCI temporal part duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050515 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000112> 2 weeks</obo:IAO_0000112>
+        <obo:IAO_0000112>6 weeks</obo:IAO_0000112>
+        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item between the start and end of an intervention temporal part.</obo:IAO_0000115>
+        <rdfs:label>temporal part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050516 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050516">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI temporal part frequencies.</obo:IAO_0000115>
+        <rdfs:label>BCI temporal part frequency statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050517 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050517">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050516"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI temporal part frequency statistic&gt; that is the highest value from a collection of BCI temporal part frequencies.</obo:IAO_0000115>
+        <rdfs:label>maximum BCI temporal part frequency statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050518 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050518">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050516"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI temporal part frequency statistic&gt; that is the average value calculated from a collection of BCI temporal part frequencies.</obo:IAO_0000115>
+        <rdfs:label>mean BCI temporal part frequency statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050519 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050519">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050516"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI temporal part frequency statistic&gt; that is the central value of a collection of BCI temporal part frequencies when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median BCI temporal part frequency statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050520 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050520">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050516"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI temporal part frequency statistic&gt; that is the lowest value from a collection of BCI temporal part frequencies.</obo:IAO_0000115>
+        <rdfs:label>minimum BCI temporal part frequency statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050903 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050903">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008700"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI contact event frequencies.</obo:IAO_0000115>
+        <rdfs:label>BCI contact event frequency statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050904 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050904">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008515"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI contact event numbers.</obo:IAO_0000115>
+        <rdfs:label>BCI contact event number statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050905 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050905">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008560"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI durations.</obo:IAO_0000115>
+        <rdfs:label>BCI duration statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050906 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050906">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050903"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008700"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event frequency statistic&gt; that is the highest value from a collection of BCI contact event frequencies.</obo:IAO_0000115>
+        <rdfs:label>maximum BCI contact event frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050907 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050907">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008515"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event number statistic&gt; that is the highest value from a collection of BCI contact event numbers.</obo:IAO_0000115>
+        <rdfs:label>maximum BCI contact event number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050908 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050908">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050905"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008560"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI duration statistic&gt; that is the highest value from a collection of BCI durations.</obo:IAO_0000115>
+        <rdfs:label>maximum BCI duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050909 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050909">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050905"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008560"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI duration statistic&gt; that is the average value calculated from a collection of BCI durations.</obo:IAO_0000115>
+        <rdfs:label>mean BCI duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050910 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050910">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050504"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008545"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;total contact event duration statistic&gt; that is the highest value from a collection of total contact event durations.</obo:IAO_0000115>
+        <rdfs:label>maximum total BCI contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050911 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050911">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050903"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008700"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event frequency statistic&gt; that is the average value calculated from a collection of BCI contact event frequencies.</obo:IAO_0000115>
+        <rdfs:label>mean BCI contact event frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050912 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050912">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050904"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008515"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;BCI contact event number statistic&gt; that is the average value calculated from a collection of BCI contact event numbers.</obo:IAO_0000115>
+        <rdfs:label>mean BCI contact event number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A region of time.</obo:IAO_0000115>
+        <rdfs:label>one-dimensional temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A physical quality which inheres in a bearer by virtue of the number of the bearer&apos;s repetitive actions in a particular time.</obo:IAO_0000115>
+        <rdfs:label>frequency</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+

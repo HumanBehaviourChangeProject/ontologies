@@ -19,6 +19,7 @@
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl"/>
     </owl:Ontology>
     
 
@@ -93,9 +94,33 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000012 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000012"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000013 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000013"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000018 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000018"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066"/>
     
 
 
@@ -107,6 +132,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006099 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006099">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+        <obo:IAO_0000112>Social support from social network.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;inter-personal behaviour&gt; where a person exerts an influence on the behaviour of another.</obo:IAO_0000115>
+        <rdfs:label>social influence behaviour</rdfs:label>
+    </owl:Class>
     
 
 
@@ -648,7 +685,7 @@ The classes &apos;travel behaviour&apos; and &apos;locomotive behaviour&apos; ha
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036073">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An experience-related behaviour that involves taking defensive action in order to avoid stimuli judged as aversive by the person.</obo:IAO_0000115>
+        <obo:IAO_0000115>An experience-related behaviour that involves taking defensive action in order to avoid some stimulus judged to be aversive by the person.</obo:IAO_0000115>
         <rdfs:label>avoidance behaviour</rdfs:label>
     </owl:Class>
     
@@ -685,7 +722,7 @@ The classes &apos;travel behaviour&apos; and &apos;locomotive behaviour&apos; ha
         <obo:IAO_0000112>Engaging in community life, Engaging in civic involvement</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A social organisation behaviour that involves increasing a sense of being part of a social group or dyad.</obo:IAO_0000115>
-        <rdfs:label>affiliation behaviour</rdfs:label>
+        <rdfs:label>association behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -1339,7 +1376,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050377">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050378"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Inhaling consumption that that involves using an e-cigarette.</obo:IAO_0000115>
+        <obo:IAO_0000115>Inhaling consumption that involves using an e-cigarette.</obo:IAO_0000115>
         <rdfs:comment>E-cigarettes do not necessarily have to include nicotine but can involve inhaling flavourings or other chemicals.</rdfs:comment>
         <rdfs:label>e-cigarette use</rdfs:label>
     </owl:Class>
@@ -1505,7 +1542,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050399"/>
         <obo:IAO_0000112>Undergoing surgery</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Utilising healthcare that involves interacting with a health professional to improve or maintain aspects of one&apos;s health or wellbeing.</obo:IAO_0000115>
+        <obo:IAO_0000115>Utilising healthcare that involves engaging with a treatment regimen to improve or maintain aspects of one&apos;s health or wellbeing.</obo:IAO_0000115>
         <rdfs:label>participating in healthcare treatment</rdfs:label>
     </owl:Class>
     
@@ -2279,6 +2316,624 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050575 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050575">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050209"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;individual human behaviour change&gt; resulting from exposure to a group behavioural norm.</obo:IAO_0000115>
+        <rdfs:label>behaviour change through group norm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050801 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050801">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050404"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Participating in healthcare treatment in accordance with treatment instructions.</obo:IAO_0000115>
+        <rdfs:label>adherence to healthcare treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050802 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050802">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050818"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A goal-directed behaviour whose goal is to obtain the approval of another person.</obo:IAO_0000115>
+        <rdfs:label>approval seeking behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050803 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050803">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036084"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An association behaviour that involves increasing a sense of being part of a pro-social group.</obo:IAO_0000115>
+        <rdfs:label>association behaviour with a pro-social group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050804 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050804">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036107"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process aggregate whose members are behaviours causally linked to each other in a sequence.</obo:IAO_0000115>
+        <rdfs:comment>A behaviour chain can involve different behaviours, whereas a behaviour pattern can involve the same behaviour. Patterns are not necessarily causally linked.</rdfs:comment>
+        <rdfs:label>behaviour chain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050805 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050805">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036100"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour pattern that is continued.</obo:IAO_0000115>
+        <rdfs:comment>Behaviour is continued even if there are historical or current barriers to doing so.</rdfs:comment>
+        <rdfs:label>behaviour pattern maintenance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050806 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050806">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000018"/>
+                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An entity that is an outcome of behaviour.</obo:IAO_0000115>
+        <rdfs:label>behavioural consequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050807 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050807">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050825"/>
+        <obo:IAO_0000112> has participant &apos;carer&apos;</obo:IAO_0000112>
+        <obo:IAO_0000112>Although this is a socially-related behaviour and potentially, nurturing and harm prevention behaviours, it is classified under monitoring because that is what it always would be. has behavioural target &apos;child&apos;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A monitoring behaviour in which a carer gathers information about the activities of some child in their care.</obo:IAO_0000115>
+        <rdfs:label>carer monitoring of child behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050808 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050808">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_034000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population behaviour that is aimed at achieving a goal shared by members of that population.</obo:IAO_0000115>
+        <rdfs:label>collective behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050809 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050809">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000012"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050830"/>
+                                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050831"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that has the goal to reduce harm or discomfort.</obo:IAO_0000115>
+        <rdfs:label>coping behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050810 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050810">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036072"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An antisocial behaviour that is illegal in a jurisdiction.</obo:IAO_0000115>
+        <rdfs:label>criminal behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050811 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050811">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050834"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A regulatory behaviour in which cues that prompt a behaviour pattern are added, altered or removed.</obo:IAO_0000115>
+        <rdfs:label>cue management behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050812 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050812">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000191"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour within a residential facility.</obo:IAO_0000115>
+        <rdfs:label>domestic behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050813 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050813">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050814"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that is emotionally driven.</obo:IAO_0000115>
+        <rdfs:label>emotional behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050814 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050814">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
+                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050814"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural attribute in which the behaviour is caused by an emotion process.</obo:IAO_0000115>
+        <rdfs:label>emotionally driven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050815 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050815">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050457"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An expressive behaviour that conveys some emotion.</obo:IAO_0000115>
+        <rdfs:label>emotionally expressive behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050816 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050816">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036007"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An environmental system management behaviour that contributes to sustaining the ecosystem.</obo:IAO_0000115>
+        <rdfs:label>environmental sustainability behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050817 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050817">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050428"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural frequency about the number of times a person has enacted a behaviour per unit of time.</obo:IAO_0000115>
+        <rdfs:label>frequency of past behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050818 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050818">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000012"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that has a behavioural goal.</obo:IAO_0000115>
+        <rdfs:label>goal-directed behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050819 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050819">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000013"/>
+                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050820"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that has an outcome to prevent harm.</obo:IAO_0000115>
+        <rdfs:label>harm preventing behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050820 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050820">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural consequence in which harm is prevented.</obo:IAO_0000115>
+        <rdfs:label>harm prevention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050821 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050821">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050437"/>
+        <obo:IAO_0000112>Engaging in physical activity, eating a diet that limits salt, sugar and fat intake, eating a healthy diet, attending health screening</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A health-related behaviour that improves the person’s health.</obo:IAO_0000115>
+        <rdfs:comment>This class is for behaviour that promote positive health as well as protect against threats to health.</rdfs:comment>
+        <rdfs:label>health-promoting behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050822 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050822">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural attribute that is the extent to which one’s behaviour is believed to be consistent with one’s core, positive self-identity.</obo:IAO_0000115>
+        <rdfs:label>identity congruence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050823 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050823">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural consequence that involves an outcome relating to the environment system.</obo:IAO_0000115>
+        <rdfs:label>impact of behaviour on environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050824 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050824">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050291"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A knowledge development behaviour where the knowledge is about how to reduce or avoid a harmful behaviour.</obo:IAO_0000115>
+        <rdfs:label>knowledge acquisition about reducing harmful behaviours</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050825 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050825">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050291"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A knowledge development behaviour that involves gathering information over a period of time.</obo:IAO_0000115>
+        <rdfs:comment>This is often used in relation to regulatory behaviour, either oneself or others. &apos;Monitoring behaviour&apos; has part &apos;regulatory behaviour&apos;</rdfs:comment>
+        <rdfs:label>monitoring behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050826 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050826">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036086"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Nurture behaviour that is provided to a young person by someone in a parent role.</obo:IAO_0000115>
+        <rdfs:label>parenting behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050827 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050827">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that is the target of an intervention and has been previously enacted.</obo:IAO_0000115>
+        <rdfs:comment>This is a relational class (relates one behaviour to another).</rdfs:comment>
+        <rdfs:label>past occurrence of a target behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050828 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050828">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural consequence that is positively evaluated by an individual or a population.</obo:IAO_0000115>
+        <rdfs:label>positive behavioural consequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050829 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050829">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036035"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An economic behaviour in which the person gives money in exchange for a service or ownership of a product.</obo:IAO_0000115>
+        <rdfs:label>purchasing behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050830 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050830">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process in which physical or mental uneasiness or distress is reduced.</obo:IAO_0000115>
+        <rdfs:label>reducing discomfort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050831 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050831">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process in which damage or injury is reduced.</obo:IAO_0000115>
+        <rdfs:label>reducing harm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050832 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050832">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
+                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050833"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050833"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that is reflectively driven.</obo:IAO_0000115>
+        <rdfs:label>reflective behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050833 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050833">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural attribute in which the behaviour is caused by a reflective mental process.</obo:IAO_0000115>
+        <rdfs:label>reflectively driven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050834 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050834">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that involves monitoring and acting upon some parts of the person or their environment.</obo:IAO_0000115>
+        <rdfs:comment>Environment here includes the social and physical environment and includes behaviours involved in monitoring of others or self, action planning, and goal setting.</rdfs:comment>
+        <rdfs:label>regulatory behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050835 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050835">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural attribute that is the time, effort, financial cost, or aversiveness of enacting a behaviour.</obo:IAO_0000115>
+        <rdfs:label>response cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050836 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050836">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006099"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A social influence behaviour in which the person provides a positive stimulus contingent on another person’s behaviour.</obo:IAO_0000115>
+        <rdfs:label>rewarding behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050837 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050837">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036035"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An economic behaviour in which the person provides a service or ownership of a product in exchange for money.</obo:IAO_0000115>
+        <rdfs:label>selling behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050838 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050838">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human behaviour that occurs after the behaviour has been subject to extinction in operant learning.</obo:IAO_0000115>
+        <rdfs:label>spontaneous recovery behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050839 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050839">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process attribute that is the complexity of thought or behaviour required to achieve a goal.</obo:IAO_0000115>
+        <rdfs:label>task complexity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050840 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050840">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050818"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A goal-directed behaviour that has a goal to reduce threat.</obo:IAO_0000115>
+        <rdfs:comment>Reducing a threat involves trying to reduce the harm of something that may occur in the future.</rdfs:comment>
+        <rdfs:label>threat-reducing behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050841 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050841">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An experience-related behaviour that involves taking action to engage with some stimulus that is judged to be rewarding by the person.</obo:IAO_0000115>
+        <rdfs:label>approach behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050899 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050899">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050900"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A social behavioural consequence of some family member.</obo:IAO_0000115>
+        <rdfs:label>family behavioural consequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050900 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050900">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural consequence of a member of the person’s social environmental system.</obo:IAO_0000115>
+        <rdfs:label>social behavioural consequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050901 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050901">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050900"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A social behavioural consequence that is beyond the person’s family.</obo:IAO_0000115>
+        <rdfs:label>wider community behavioural consequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050902 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050902">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural attribute that is the level of convenience, ease or comfort of a behaviour.</obo:IAO_0000115>
+        <rdfs:label>behavioural ease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
@@ -2341,6 +2996,12 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000191 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000191"/>
 </rdf:RDF>
 
 

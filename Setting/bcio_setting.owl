@@ -116,7 +116,7 @@
         <obo:IAO_0000112> Town</obo:IAO_0000112>
         <obo:IAO_0000112>Region</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A geographical location within a country where the intervention takes place.</obo:IAO_0000115>
+        <obo:IAO_0000115>A geographical location within a country.</obo:IAO_0000115>
         <rdfs:label>within-country location</rdfs:label>
     </owl:Class>
     
