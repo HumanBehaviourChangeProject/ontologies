@@ -17,8 +17,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_style.owl">
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl"/>
     </owl:Ontology>
     
 
@@ -112,7 +114,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036025 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036025">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050441"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;socially-related behaviour&gt; that involves an interaction between two or more people.</obo:IAO_0000115>
         <rdfs:label>inter-personal behaviour</rdfs:label>
@@ -1740,6 +1742,12 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050441 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050441"/>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050457 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050457">
@@ -1751,9 +1759,71 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050552 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;process&gt; by which a communication is delivered.</obo:IAO_0000115>
+        <rdfs:label>communication channel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050553 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;person&gt; who receives a communication.</obo:IAO_0000115>
+        <rdfs:label>communication recipient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050554 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;material entity&gt; that originates a communication.</obo:IAO_0000115>
+        <rdfs:label>communication source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050555 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;information content entity&gt; transmitted from a communication source to a communication recipient.</obo:IAO_0000115>
+        <rdfs:label>communication message</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016"/>
     
 
 
