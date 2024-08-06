@@ -1762,9 +1762,10 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010123">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000112>The division of expertise into different disciplines or fields is complex and depends on historical, social and structural factors.</obo:IAO_0000112>
+        <obo:IAO_0000112>psychology, yoga, cognitive behavioural therapy, hypnotism</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An attribute that is a field of knowledge or practice.</obo:IAO_0000115>
+        <rdfs:comment>The division of expertise into different disciplines or fields is complex and depends on historical, social and structural factors.</rdfs:comment>
         <rdfs:label>expertise discipline</rdfs:label>
     </owl:Class>
     
@@ -1979,6 +1980,18 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A self-identity as having a particular gender, which may or may not correspond with sex assigned at birth.</obo:IAO_0000115>
         <rdfs:label>gender identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050842 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050842">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;person&gt; that influences a recipient by being perceived to be similar or admired.</obo:IAO_0000115>
+        <rdfs:comment>This class lies at the intersection between a person and their environment and is defined from the perspective of the person.</rdfs:comment>
+        <rdfs:label>role model for a person</rdfs:label>
     </owl:Class>
     
 
