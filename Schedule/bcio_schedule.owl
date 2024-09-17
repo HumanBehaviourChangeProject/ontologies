@@ -311,16 +311,6 @@
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_008570 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008570">
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000232>entity added so duration of interval can be specified. not sure what parent/relationships should be</obo:IAO_0000232>
-        <rdfs:label>z) interval (remove)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008575 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008575">
@@ -369,36 +359,6 @@ of answers.&quot;</obo:IAO_0000112>
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_008585 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008585">
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A part of a BCI schedule which is the relation a specified temporal part is in when it ends prior to the beginning of another temporal part or timepoint</obo:IAO_0000115>
-        <rdfs:label>r) before (to be removed and added to list of relations)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_008590 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008590">
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A part of a BCI schedule which is the relation a specified temporal part is in when it starts following the end of another temporal part or timepoint</obo:IAO_0000115>
-        <rdfs:label>s) after (to be removed and added to list of relations)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_008595 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008595">
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A part of a BCI schedule which is the relation a specified temporal part is in when it occurs whilst another temporal part or timepoint occurs</obo:IAO_0000115>
-        <rdfs:label>q) same time (remove - this is a relation like before and after)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008700 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008700">
@@ -433,17 +393,6 @@ of answers.&quot;</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;data item&gt; that is how often intervention temporal parts occur within a BCI.</obo:IAO_0000115>
         <rdfs:label>BCI temporal part frequency</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050312 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050312">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A temporal interval is a one-dimensional temporal region, namely that is self-connected (is without gaps or breaks).</obo:IAO_0000115>
-        <rdfs:label>temporal interval</rdfs:label>
     </owl:Class>
     
 
@@ -790,19 +739,6 @@ of answers.&quot;</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;BCI temporal part duration statistic&gt; that denotes the lowest value from a collection of BCI temporal part durations.</obo:IAO_0000115>
         <rdfs:label>minimum BCI temporal part duration</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050515 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050515">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-        <obo:IAO_0000112> 2 weeks</obo:IAO_0000112>
-        <obo:IAO_0000112>6 weeks</obo:IAO_0000112>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A data item between the start and end of an intervention temporal part.</obo:IAO_0000115>
-        <rdfs:label>temporal part</rdfs:label>
     </owl:Class>
     
 

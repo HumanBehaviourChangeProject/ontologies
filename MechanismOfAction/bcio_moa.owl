@@ -2055,18 +2055,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_036107 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036107"/>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_043000 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050213 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050213">
@@ -2385,12 +2373,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050267 -->
 
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050267">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036107"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A process aggregate whose member parts are of the same type.</obo:IAO_0000115>
-        <rdfs:label>uniform process aggregate</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050267"/>
     
 
 
@@ -2566,72 +2549,6 @@ In this definition, ‘change’ refers to change from what would have been the 
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A specifically dependent continuant that inheres in a person.</obo:IAO_0000115>
         <rdfs:label>personal attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050301 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050301">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition that inheres in a person.</obo:IAO_0000115>
-        <rdfs:label>personal disposition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050302 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050302">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A process attribute that is an attribute of a life process.</obo:IAO_0000115>
-        <rdfs:label>personal life attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050303 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050303">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A quality that inheres in a person.</obo:IAO_0000115>
-        <rdfs:label>personal quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050304 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050304">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>An affective process involving sensory experience of physiological stimuli.</obo:IAO_0000115>
-        <rdfs:label>bodily feeling</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050305 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050305">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A quality that inheres in some extended organism.</obo:IAO_0000115>
-        <rdfs:label>bodily quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050307 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050307">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000074"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A bodily quality that inheres in those structures of the extended organism that are essential for mental functioning.</obo:IAO_0000115>
-        <rdfs:label>mental quality</rdfs:label>
     </owl:Class>
     
 
@@ -3929,17 +3846,6 @@ In this definition, ‘change’ refers to change from what would have been the 
         <obo:IAO_0000115>An &lt;extrinsic motivation&gt; that derives from external rewards, punishments or pressure regarding a behaviour.</obo:IAO_0000115>
         <rdfs:comment>Pressure can include persuasion.</rdfs:comment>
         <rdfs:label>extrinsic social motivation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050657 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050657">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050900"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;social behavioural consequence&gt; of some family member.</obo:IAO_0000115>
-        <rdfs:label>family behavioural consequence</rdfs:label>
     </owl:Class>
     
 
@@ -5247,17 +5153,6 @@ In this definition, ‘change’ refers to change from what would have been the 
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050770 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050770">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;behavioural consequence&gt; of a member of the person’s social environmental system.</obo:IAO_0000115>
-        <rdfs:label>social behavioural consequence</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050771 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050771">
@@ -5553,17 +5448,6 @@ In this definition, ‘change’ refers to change from what would have been the 
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050797 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050797">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050900"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;social behavioural consequence&gt; that is beyond the person’s family.</obo:IAO_0000115>
-        <rdfs:label>wider community behavioural consequence</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050798 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050798">
@@ -5595,12 +5479,6 @@ In this definition, ‘change’ refers to change from what would have been the 
         <obo:IAO_0000115>&lt;Learning&gt; that occurs through observing the behaviour of others.</obo:IAO_0000115>
         <rdfs:label>observational learning</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050806 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
     
 
 
@@ -6115,12 +5993,6 @@ In this definition, ‘change’ refers to change from what would have been the 
         <obo:IAO_0000115>A &lt;belief&gt; about one&apos;s capabilities to organise and execute a process or achieve an outcome.</obo:IAO_0000115>
         <rdfs:label>self-efficacy belief</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050900 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050900"/>
     
 
 
@@ -7010,12 +6882,6 @@ For instance, having a musical ability is ordinarily an ability that is positive
         <rdfs:comment>Mental capabilities that are necessary to realise a behaviour are captured by the class ‘psychological behavioural capability’, which is a subclass of both ‘mental capability’ and ‘behavioural capability’.</rdfs:comment>
         <rdfs:label>mental capability</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000074 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000074"/>
     
 
 
