@@ -754,17 +754,6 @@ There can be different dimensions of nurturing, e.g., in some cases, nurturing c
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_036092 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <obo:IAO_0000114>Obsolete</obo:IAO_0000114>
-        <obo:IAO_0000115>A function that inheres in an animal and is realised in processes that enable the animal to survive and thrive.</obo:IAO_0000115>
-        <rdfs:label>animal function</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036100 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036100">
