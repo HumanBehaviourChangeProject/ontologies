@@ -1,3 +1,4 @@
 ID,NEW PARENT ID,Comment
 ID,SC %,
 GO:0008150,http://purl.obolibrary.org/obo/BFO_0000015,insert GO into BFO hierarchy
+SEPIO:0000004,http://purl.obolibrary.org/obo/OBI_0000011,"Remove confusion about planned process (https://github.com/HumanBehaviourChangeProject/ontologies/issues/847)"
