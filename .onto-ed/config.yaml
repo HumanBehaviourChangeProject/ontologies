@@ -1,0 +1,76 @@
+full_name: b-gehrke/ontologies
+id_digits: 7
+indexed_files:
+- Setting/bcio_setting.xlsx
+- ModeOfDelivery/bcio_mode_of_delivery.xlsx
+- Source/bcio_source.xlsx
+- MechanismOfAction/bcio_moa.xlsx
+- Behaviour/bcio_behaviour.xlsx
+- BehaviourChangeTechniques/bcto.xlsx
+- StyleOfDelivery/bcio_style.xlsx
+- Upper Level BCIO/inputs/.*\.xlsx
+main_branch: master
+prefixes:
+  ADDICTO: http://addictovocab.org/ADDICTO_
+  APOLLO_SV: http://purl.obolibrary.org/obo/APOLLO_SV_
+  BCIO: http://humanbehaviourchange.org/ontology/BCIO_
+  BFO: http://purl.obolibrary.org/obo/BFO_
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+  CHMO: http://purl.obolibrary.org/obo/CHMO_
+  CMO: http://purl.obolibrary.org/obo/CMO_
+  COB: http://purl.obolibrary.org/obo/COB_
+  DOID: http://purl.obolibrary.org/obo/DOID_
+  EFO: http://www.ebi.ac.uk/efo/EFO_
+  ENVO: http://purl.obolibrary.org/obo/ENVO_
+  ERO: http://purl.obolibrary.org/obo/ERO_
+  GAZ: http://purl.obolibrary.org/obo/GAZ_
+  GMHO: https://galenos.org.uk/ontologies/GMHO_
+  GO: http://purl.obolibrary.org/obo/GO_
+  GSSO: http://purl.obolibrary.org/obo/GSSO_
+  HP: http://purl.obolibrary.org/obo/HP_
+  IAO: http://purl.obolibrary.org/obo/IAO_
+  MF: http://purl.obolibrary.org/obo/MF_
+  MFOEM: http://purl.obolibrary.org/obo/MFOEM_
+  NCIT: http://purl.obolibrary.org/obo/NCIT_
+  OAE: http://purl.obolibrary.org/obo/OAE_
+  OBCS: http://purl.obolibrary.org/obo/OBCS_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  OGMS: http://purl.obolibrary.org/obo/OGMS_
+  OMIABIS: http://purl.obolibrary.org/obo/OMIABIS_
+  OMRSE: http://purl.obolibrary.org/obo/OMRSE_
+  OPMI: http://purl.obolibrary.org/obo/OPMI_
+  PATO: http://purl.obolibrary.org/obo/PATO_
+  PDRO: http://purl.obolibrary.org/obo/PDRO_
+  PO: http://purl.obolibrary.org/obo/PO_
+  PR: http://purl.obolibrary.org/obo/PR_
+  RO: http://purl.obolibrary.org/obo/RO_
+  SDGIO: http://purl.unep.org/sdg/SDGIO_
+  SEPIO: http://purl.obolibrary.org/obo/SEPIO_
+  SIO: http://semanticscience.org/resource/SIO_
+  STATO: http://purl.obolibrary.org/obo/STATO_
+  UBERON: http://purl.obolibrary.org/obo/UBERON_
+release_file: Upper%20Level%20BCIO/bcio.owl
+release_script_path: .onto-ed/release_script.json
+short_name: BCIO
+subontologies:
+  bcto:
+    excel_file: BehaviourChangeTechniques/bcto.xlsx
+    release_file: BehaviourChangeTechniques/bcto.owl
+  behaviour:
+    excel_file: Behaviour/bcio_behaviour.xlsx
+    release_file: Behaviour/bcio_behaviour.owl
+  moa:
+    excel_file: MechanismOfAction/bcio_moa.xlsx
+    release_file: MechanismOfAction/bcio_moa.owl
+  mode_of_delivery:
+    excel_file: ModeOfDelivery/bcio_mode_of_delivery.xlsx
+    release_file: ModeOfDelivery/bcio_mode_of_delivery.owl
+  setting:
+    excel_file: Setting/bcio_setting.xlsx
+    release_file: Setting/bcio_setting.owl
+  source:
+    excel_file: Source/bcio_source.xlsx
+    release_file: Source/bcio_source.owl
+  style:
+    excel_file: StyleOfDelivery/bcio_style.xlsx
+    release_file: StyleOfDelivery/bcio_style.owl
