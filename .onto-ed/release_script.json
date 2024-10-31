@@ -12,7 +12,8 @@
     "target": {
       "file": "Upper Level BCIO/bcio_external.owl",
       "iri": "http://humanbehaviourchange.org/ontology/bcio_external.owl",
-      "ontology_annotations": {}
+      "ontology_annotations": {},
+      "publish": true
     },
     "needs": [],
     "renameTermFile": "Upper Level BCIO/inputs/BCIO_External_Imports_New_Labels.csv",
@@ -56,7 +57,8 @@
         "ontology_annotations": {
           "dc:title": "Behaviour Change Intervention Ontology",
           "rdfs:comment": "The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery, Style of Delivery, Source, Mechanisms of Action, Behaviour and Behaviour Change Techniques. Additional modules will be added soon."
-        }
+        },
+        "publish": true
       },
       "needs": [],
       "renameTermFile": null,
@@ -72,7 +74,8 @@
       "target": {
         "file": "Behaviour/bcio_behaviour.owl",
         "iri": "http://humanbehaviourchange.org/ontology/bcio_behaviour.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [
         "bcio_population",
@@ -91,7 +94,8 @@
       "target": {
         "file": "MechanismOfAction/bcio_moa.owl",
         "iri": "http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [
         "bcio_behaviour",
@@ -111,7 +115,8 @@
       "target": {
         "file": "ModeOfDelivery/bcio_mode_of_delivery.owl",
         "iri": "http://humanbehaviourchange.org/ontology/bcio_mode_of_delivery.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [
         "upper"
@@ -129,7 +134,8 @@
       "target": {
         "file": "Population/bcio_population.owl",
         "iri": "http://humanbehaviourchange.org/ontology/Population/bcio_population.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [
         "upper"
@@ -147,7 +153,8 @@
       "target": {
         "file": "Schedule/bcio_schedule.owl",
         "iri": "http://humanbehaviourchange.org/ontology/Schedule/bcio_schedule.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [
         "upper"
@@ -165,7 +172,8 @@
       "target": {
         "file": "Setting/bcio_setting.owl",
         "iri": "http://humanbehaviourchange.org/ontology/bcio_setting.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [
         "upper"
@@ -183,7 +191,8 @@
       "target": {
         "file": "Source/bcio_source.owl",
         "iri": "http://humanbehaviourchange.org/ontology/bcio_source.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [
         "upper"
@@ -201,7 +210,8 @@
       "target": {
         "file": "StyleOfDelivery/bcio_style.owl",
         "iri": "http://humanbehaviourchange.org/ontology/bcio_style.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [
         "upper",
@@ -221,7 +231,8 @@
       "target": {
         "file": "BehaviourChangeTechniques/bcto.owl",
         "iri": "http://humanbehaviourchange.org/ontology/bcto.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [
         "upper"
@@ -261,7 +272,8 @@
       "target": {
         "file": "Upper Level BCIO/bcio_upper_level.owl",
         "iri": "http://humanbehaviourchange.org/ontology/bcio_upper_level.owl",
-        "ontology_annotations": {}
+        "ontology_annotations": {},
+        "publish": true
       },
       "needs": [],
       "renameTermFile": null,
@@ -287,6 +299,10 @@
     },
     {
       "name": "MERGE",
+      "args": {}
+    },
+    {
+      "name": "HIERARCHICAL_SPREADSHEETS",
       "args": {}
     },
     {
