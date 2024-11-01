@@ -303,7 +303,9 @@
     },
     {
       "name": "HIERARCHICAL_SPREADSHEETS",
-      "args": {}
+      "args": {
+        "included_files": "bcio_setting,bcio_mode_of_delivery,bcio_source,bcio_moa,bcio_behaviour,bcto,bcio_style,bcio_population"
+      }
     },
     {
       "name": "HUMAN_VERIFICATION",
