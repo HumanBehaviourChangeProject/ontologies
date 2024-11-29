@@ -229,6 +229,24 @@
       "renameTermFile": null,
       "addParentsFile": null
     },
+    "bcio_engagement": {
+      "sources": [
+        {
+          "file": "Engagement/BCIO_Engagement.xlsx",
+          "type": "classes"
+        }
+      ],
+      "target": {
+        "file": "Engagement/bcio_engagement.owl",
+        "iri": "http://humanbehaviourchange.org/ontology/bcio_engagement.owl",
+        "ontology_annotations": {}
+      },
+      "needs": [
+        "upper"
+      ],
+      "renameTermFile": null,
+      "addParentsFile": null
+    },
     "upper": {
       "sources": [
         {
@@ -287,7 +305,8 @@
           "bcio_behaviour",
           "bcto",
           "bcio_style",
-          "bcio_population"
+          "bcio_population",
+          "bcio_engagement"
         ]
       }
     },
