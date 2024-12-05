@@ -1021,8 +1021,8 @@ of answers.&quot;</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A region of time.</obo:IAO_0000115>
-        <rdfs:label>one-dimensional temporal region</rdfs:label>
+        <obo:IAO_0000115>A one-dimensional temporal region is a temporal region that is extended.</obo:IAO_0000115>
+        <rdfs:label>temporal interval</rdfs:label>
     </owl:Class>
     
 
