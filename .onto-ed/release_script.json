@@ -15,7 +15,7 @@
       "ontology_annotations": {}
     },
     "needs": [],
-    "renameTermFile": null,
+    "renameTermFile": "Upper Level BCIO/inputs/BCIO_External_Imports_New_Labels.csv",
     "addParentsFile": "Upper Level BCIO/inputs/BCIO_External_Imports_New_Parents.csv"
   },
   "files": {
