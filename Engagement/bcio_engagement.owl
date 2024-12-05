@@ -1,0 +1,1052 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://humanbehaviourchange.org/ontology/bcio_engagement.owl#"
+     xml:base="http://humanbehaviourchange.org/ontology/bcio_engagement.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdg="http://purl.unep.org/sdg/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/"
+     xmlns:Property="https://www.wikidata.org/wiki/Property:"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
+    <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_engagement.owl">
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_001000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_001000"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006110 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000008"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A cognitive process that creates a representation of the meaning and significance of a communication, object, event or situation.</obo:IAO_0000115>
+        <rdfs:label>comprehension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013000">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050916"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_001000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Participant engagement with intervention, where the intervention focuses on changing behaviour.</obo:IAO_0000115>
+        <rdfs:label>participant engagement with behaviour change intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013010 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013010">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013000"/>
+        <obo:IAO_0000112>Eye movements, body movements, meditation, attending an intervention session, using nicotine patches in a smoking cessation intervention, or online activity: attending, logging in, posting on a discussion board, reading content, mouse clicks, viewing, using tools, journaling</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Participant engagement with behaviour change intervention in which the engagement activity is a behaviour.</obo:IAO_0000115>
+        <rdfs:comment>This is distinguished from engagement that involves thought processes.</rdfs:comment>
+        <rdfs:label>behavioural BCI engagement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013015 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Number of: sessions attended, worksheets initiated, log ins, online posts, online responses. The amount of content viewed or the number of non-consecutive days an intervention was engaged with (e.g. the app was used on 20 days out of a possible 60 days).</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about the number of times behavioural BCI engagement occurs.</obo:IAO_0000115>
+        <rdfs:comment>Describes the total number of engagement events in a BCI (e.g., participants received 10 sessions face-to-face or by phone), or the number of engagement events related to part of a BCI (e.g., 10% of people participated in 6 face-to-face sessions and 4 phone sessions). 
+ 
+Depending on how “number of BCI engagements” is reported in interventions, it can be annotated with different data items, e.g. (1) minimum (e.g., all participants joined at least 1 session), (2) maximum (e.g., only 10% of participants attended 5 sessions), (3) mean (e.g., participants joined 4 sessions on average) or (4) median (e.g., the median number of sessions participants attended was 4).</rdfs:comment>
+        <rdfs:label>number of BCI engagement events</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013020 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Hourly, daily, weekly or monthly encounters.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about the number of times behavioural BCI engagement occurs within a unit of time.</obo:IAO_0000115>
+        <rdfs:comment>Describes the frequency of BCI engagement in a BCI (e.g., participants had weekly contact), or the frequency of engagement in part of a BCI (e.g., participants received face-to-face contact once a month). 
+ 
+The class “BCI engagement frequency” can be used to capture the frequency of different types of engagement, such as the frequency of engaging with social media or printed material. 
+ 
+Depending on how “BCI engagement frequency” is reported in interventions, it can be annotated with different data items, e.g. (1) minimum (e.g., all participants joined at least 1 session every week), (2) maximum (e.g., only 10% of participants attended 5 sessions every week), (3) mean (e.g., participants joined 4 sessions per week on average) or (4) median (e.g., the median number of sessions participants attended was 4 per week).</rdfs:comment>
+        <rdfs:label>behavioural BCI engagement frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013025 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>A 30-minute session, 1 hour spent &apos;logged in&apos;</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal interval between the start and end of a behavioural BCI engagement.</obo:IAO_0000115>
+        <rdfs:comment>The class “BCI engagement duration” can be used multiple times to capture the frequency of different types of engagements, such as the frequency of engaging with social media or printed material. 
+ 
+Depending on how “BCI engagement duration” is reported in interventions, it can be annotated with different data items, e.g. (1) minimum (e.g., all participants talked to the therapist for at least 10 minutes in each session, (2) maximum (e.g., participants talked to the therapist for up to 1 hour in each session, (3) mean (e.g., participants talked with the therapist for 45 minutes on average in each session) or (4) median (e.g., the median length of calls between participants and therapists was 42 minutes in each session).</rdfs:comment>
+        <rdfs:label>behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013030 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>90 minutes total app usage, 12 hours of counselling sessions</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal interval that is the sum of the duration of behavioural BCI engagements for a BCI.</obo:IAO_0000115>
+        <rdfs:comment>Describes the total duration of engagement in a BCI (e.g., all face-to-face sessions AND all telephone contacts), or the total duration of engagement in part of a BCI (e.g., all face-to-face sessions only). (A unit of time that describes the summed duration of all BCI engagement events.) 
+ 
+Depending on how “aggregate BCI engagement duration” is reported in interventions, it can be annotated with different data items, e.g. (1) minimum (e.g., all participants talked to the therapist for at least 50 minutes in total across the sessions, (2) maximum (e.g., participants talked to the therapist for up to 4.5 hours in total across the sessions, (3) mean (e.g., participants talked with the therapist, on average, for 3 hours in total across the sessions) or (4) median (e.g., the median length of time participants talked with therapists in all their session was 3 hours).</rdfs:comment>
+        <rdfs:label>aggregate behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013035 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The video content was accessed for 6 weeks, the classes were attended for 12 months.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal interval between the start of the first behavioural BCI engagement and the end of the last behavioural BCI engagement.</obo:IAO_0000115>
+        <rdfs:comment>Depending on how “BCI engagement period” is reported in interventions, it can be annotated with different data items, e.g. (1) minimum (e.g., all participants attended the classes for at least 2 weeks, (2) maximum (e.g., participants attended the classes for up to 6 weeks, (3) mean (e.g., participants attended classes for 4 weeks on average) or (4) median (e.g., the median length participants attended classes was 4 weeks).</rdfs:comment>
+        <rdfs:label>BCI engagement period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013040 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013040">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Participant engagement with behaviour change intervention in which the engagement activity is a cognitive process.</obo:IAO_0000115>
+        <rdfs:comment>Describes engagement which can be demonstrated through reviewing, understanding, learning or recalling the intervention content. Cognitive processes entail the act of directing the mind to see, listen or understand.</rdfs:comment>
+        <rdfs:label>cognitive BCI engagement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013045 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013045">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Paying attention to certain images or information within the intervention</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A cognitive BCI engagement that involves attending.</obo:IAO_0000115>
+        <rdfs:comment>“Attending” is defined as “The process whereby relevant aspects of our mental experience are focused on specific targets.”</rdfs:comment>
+        <rdfs:label>cognitive BCI engagement through attention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013050 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013050">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Comprehension of meaning, requirements or importance. Formal testing, providing feedback</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A cognitive BCI engagement that involves comprehension.</obo:IAO_0000115>
+        <rdfs:comment>“Comprehension” is defined as “A cognitive process that creates a representation of the meaning and significance of a communication, object, event or situation.”</rdfs:comment>
+        <rdfs:label>cognitive BCI engagement through comprehension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013055 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013055">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A cognitive BCI engagement that involves an appraisal process.</obo:IAO_0000115>
+        <rdfs:comment>“Appraisal process” is defined as “A mental process that gives rise to an appraisal.”</rdfs:comment>
+        <rdfs:label>cognitive BCI engagement through judging.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013060 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013060">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Enjoying or liking the intervention</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Participant engagement with behaviour change intervention in which the engagement activity is an emotion process.</obo:IAO_0000115>
+        <rdfs:comment>“Emotional BCI engagement” classes in the ontology are about how engagement is recorded or reported relevant to an individual’s response to the intervention content. Some interventions intend to elicit emotional responses as mechanisms of actions or outcomes, but these are not captured by the current class. 
+
+“Emotion process” is defined as “A mental process that is a synchronized aggregate of constituent mental processes including an appraisal process, which is valenced, has an object, and gives rise to an action tendency.”</rdfs:comment>
+        <rdfs:label>emotional BCI engagement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013065 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013065">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000218"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional BCI engagement that involves enjoyment.</obo:IAO_0000115>
+        <rdfs:comment>“Enjoyment” is defined as “A positive emotion that is about an ongoing experience and reflects that the experience is being appraised as pleasurable.”</rdfs:comment>
+        <rdfs:label>emotional BCI engagement through enjoyment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013070 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013070">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000169"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional BCI engagement that involves satisfaction.</obo:IAO_0000115>
+        <rdfs:comment>“Satisfaction” is defined as “An emotion that is experienced when one&apos;s wishes, expectations or needs are fulfilled.”</rdfs:comment>
+        <rdfs:label>emotional BCI engagement through satisfaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_013075 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013075">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional BCI engagement that involves interest.</obo:IAO_0000115>
+        <rdfs:comment>In the Emotion Ontology, “interest” is defined as “a positive emotion which motivates learning, exploration and curiosity. Feelings of interest are associated with the novelty and complexity of stimuli.” 
+ 
+“Emotional BCI engagement through interest” can have a cognitive component or be associated with “cognitive BCI engagement through attending” or “cognitive engagement through evaluation”, as emotion and cognitive processes are often related. For instance, participants rating the “informativeness” of an intervention would qualify as a “cognitive engagement through evaluation”. 
+ 
+The opposite of interest is boredom.</rdfs:comment>
+        <rdfs:label>emotional BCI engagement through interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015000"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_040000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050521 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050521">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about a collection of BCI engagement periods.</obo:IAO_0000115>
+        <rdfs:label>BCI engagement period statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050522 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about a collection of aggregate behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>aggregate behavioural BCI engagement duration statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050523 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about a collection of behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>behavioural BCI engagement duration statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050524 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about a collection of behavioural BCI engagement frequencies.</obo:IAO_0000115>
+        <rdfs:label>behavioural BCI engagement frequency statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050525 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about a collection of behavioural BCI engagement contact event numbers.</obo:IAO_0000115>
+        <rdfs:label>behavioural BCI engagement number statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050526 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050526">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional BCI engagement that involves fear.</obo:IAO_0000115>
+        <rdfs:comment>“Fear” is defined as “A negative emotion that is aversive and characterised by feelings of threat and impending doom, and by an urge to get out of the situation.”</rdfs:comment>
+        <rdfs:label>emotional BCI engagement through fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050527 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050527">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013060"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Emotional BCI engagement that involves mistrust.</obo:IAO_0000115>
+        <rdfs:comment>“Mistrust” is defined as “A negative emotion involving feelings of suspicion or doubt regarding the honesty, fairness, or abilities of an entity (e.g., person, object, or situation).”</rdfs:comment>
+        <rdfs:label>emotional BCI engagement through mistrust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050528 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050528">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050521"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The maximum period of intervention that participants engaged with.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A BCI engagement period statistic that is the highest value from a collection of BCI engagement periods.</obo:IAO_0000115>
+        <rdfs:label>maximum BCI engagement period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050529 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050529">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050522"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The maximum duration of all intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An aggregate behavioural BCI engagement duration statistic that is the highest value from a collection of aggregate behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>maximum aggregate behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050530 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050530">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050523"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The maximum duration of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement duration statistic that is the highest value from a collection of behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>maximum behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050531 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050531">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050524"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The maximum frequency of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement frequency statistic that is the highest value from a collection of behavioural BCI engagement frequencies.</obo:IAO_0000115>
+        <rdfs:label>maximum behavioural BCI engagement frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050532 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050532">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050525"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The maximum number of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement number statistic that is the highest value from a collection of behavioural BCI engagement numbers.</obo:IAO_0000115>
+        <rdfs:label>maximum behavioural BCI engagement number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050533 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050533">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050521"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The mean period of intervention  that participants engaged with.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A BCI engagement period statistic that is the average value calculated from a collection of BCI engagement periods.</obo:IAO_0000115>
+        <rdfs:label>mean BCI engagement period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050534 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050534">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050522"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The mean duration of all intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An aggregate behavioural BCI engagement duration statistic that is the average value calculated from a collection of aggregate behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>mean aggregate behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050535 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050535">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050523"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The mean duration of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement duration statistic that is the average value calculated from a collection of behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>mean behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050536 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050536">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050524"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The mean frequency of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement frequency statistic that is the average value calculated from a collection of behavioural BCI engagement frequencies.</obo:IAO_0000115>
+        <rdfs:label>mean behavioural BCI engagement frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050537 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050537">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050525"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The mean number of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement number statistic that is the average value calculated from a collection of behavioural BCI engagement numbers.</obo:IAO_0000115>
+        <rdfs:label>mean behavioural BCI engagement number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050538 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050538">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050521"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The median period of intervention that participants engaged with.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A BCI engagement period statistic that is the central value of a collection of BCI engagement periods.</obo:IAO_0000115>
+        <rdfs:label>median BCI engagement period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050539 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050539">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050522"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The median duration of all intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An aggregate behavioural BCI engagement duration statistic that is the central value of a collection of aggregate behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>median aggregate behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050540 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050540">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050523"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The median duration of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement duration statistic that is the central value of a collection of behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>median behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050541 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050541">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050524"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The median frequency of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement frequency statistic that is the central value of a collection of behavioural BCI engagement frequencies.</obo:IAO_0000115>
+        <rdfs:label>median behavioural BCI engagement frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050542 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050542">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050525"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The median number of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement number statistic that is the central value of a collection of behavioural BCI engagement numbers.</obo:IAO_0000115>
+        <rdfs:label>median behavioural BCI engagement number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050543 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050543">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050521"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The minimum period of intervention that participants engaged with.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A BCI engagement period statistic that is the lowest value from a collection of BCI engagement periods.</obo:IAO_0000115>
+        <rdfs:label>minimum BCI engagement period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050544 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050544">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050522"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The minimum duration of all intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An aggregate behavioural BCI engagement duration statistic that is the lowest value from a collection of aggregate behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>minimum aggregate behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050545 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050545">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050523"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The minimum duration of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement duration statistic that is the lowest value from a collection of behavioural BCI engagement durations.</obo:IAO_0000115>
+        <rdfs:label>minimum behavioural BCI engagement duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050546 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050546">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050524"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The minimum frequency of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement frequency statistic that is the lowest value from a collection of behavioural BCI engagement frequencies.</obo:IAO_0000115>
+        <rdfs:label>minimum behavioural BCI engagement frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050547 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050547">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050525"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_013010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The minimum number of intervention sessions attended by participants.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural BCI engagement number statistic that is the lowest value from a collection of behavioural BCI engagement numbers.</obo:IAO_0000115>
+        <rdfs:label>minimum behavioural BCI engagement number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050549 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000112>First engagement with an app (e.g., 2 weeks after app launch)</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A time point against which behavioural BCI engagement is referenced.</obo:IAO_0000115>
+        <rdfs:label>temporal reference point associated with behavioural BCI engagement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050916 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050916">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human activity that is performed by someone in an intervention population, prompted by this intervention and influences the effects of the intervention on its outcome.</obo:IAO_0000115>
+        <rdfs:label>participant engagement with intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A one-dimensional temporal region is a temporal region that is extended.</obo:IAO_0000115>
+        <rdfs:label>temporal interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>An affective process that is a synchronized aggregate of constituent mental processes, including an appraisal process, which is valenced, has an object, and gives rise to an action tendency.</obo:IAO_0000115>
+        <rdfs:label>emotion process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A negative emotion that is aversive and characterised by feelings of threat and impending doom, and by an urge to get out of the situation.</obo:IAO_0000115>
+        <rdfs:label>fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>Interest is a positive emotion which motivates learning, exploration and curiosity. Feelings of interest are associated with the novelty and complexity of stimuli</obo:IAO_0000115>
+        <rdfs:label>interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>An emotion that is experienced when one&apos;s wishes, expectations or needs are fulfilled.</obo:IAO_0000115>
+        <rdfs:label>satisfaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000218">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A positive emotion that is about an ongoing experience and reflects that the experience is being appraised as pleasurable</obo:IAO_0000115>
+        <rdfs:label>enjoyment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A negative emotion involving feelings of suspicion or doubt regarding the honesty, fairness, or abilities of an entity (e.g., person, object, or situation).</obo:IAO_0000115>
+        <rdfs:label>mistrust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A mental process during which information is evaluated, the outcome of which is a belief or opinion.</obo:IAO_0000115>
+        <rdfs:label>judging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A mental process that creates, modifies or has as participant some cognitive representation.</obo:IAO_0000115>
+        <rdfs:label>cognitive process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A mental process whereby relevant aspects of one&apos;s mental experience are focused on specific targets.</obo:IAO_0000115>
+        <rdfs:label>attending</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000020"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+

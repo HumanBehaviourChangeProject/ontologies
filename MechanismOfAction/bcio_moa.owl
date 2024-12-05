@@ -116,6 +116,8 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000241">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000112> &quot;beneficialness&quot; in the Rational Addiction Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Harmful Addiction&quot; in the Rational Addiction Model</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;disposition&gt; that is realised as a harm process.</obo:IAO_0000115>
         <rdfs:label>harmfulness</rdfs:label>
@@ -237,6 +239,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <obo:IAO_0000112>&quot;Institutions&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;environmental system&gt; that consists of people, their pets, social and cultural institutions and processes that influence the life of people and social groups.</obo:IAO_0000115>
         <rdfs:label>social environmental system</rdfs:label>
@@ -396,6 +399,13 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112> &quot;Behavioural Intention&quot; in the Ecological Model for Preventing Type 2 Diabetes</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Behavioural Intention&quot; in the Six-staged model of communication effects</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Goal intention&quot; in the Action Theory Model of Consumption</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intention to change&quot; in the Social Ecological Model of Behaviour Change</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intention&quot; in the Health Action Process Approach</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intention&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Implementation intentions&quot; in the Action Theory Model of Consumption</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to commit to enact or not enact a behaviour.</obo:IAO_0000115>
         <rdfs:comment>The term ‘plan’ can sometimes be used to refer to intention and sometimes for instructional plans.</rdfs:comment>
@@ -632,6 +642,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000112>&quot;Evaluations&quot; in the PRIME theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about whether a particular aspect of the world is positive or negative.</obo:IAO_0000115>
         <rdfs:comment>The class &apos;evaluative belief about the consequences of behaviour&apos; can be found as the subclass of &apos;belief about consequences of behaviour&apos;.</rdfs:comment>
@@ -749,6 +760,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>&quot;Behavioural decision&quot; in the Reflective Impulsive Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to represent one proposition as preferred from at least two.</obo:IAO_0000115>
         <rdfs:comment>Decision is defined as a &apos;mental disposition&apos;, a realisable entity, because a person requires a process to form, think about or reconsider a decision.</rdfs:comment>
@@ -772,6 +784,8 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
+        <obo:IAO_0000112> &quot;Goal frame&quot; in the Goal-Framing Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Goal&quot; in the Reflective Impulsive Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;cognitive representation&gt; of an end state towards which one is striving.</obo:IAO_0000115>
         <rdfs:label>goal</rdfs:label>
@@ -862,6 +876,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>&quot;Motivation to comply&quot; in the Action Theory Model of Consumption</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to act in accordance with the likely approval of others.</obo:IAO_0000115>
         <obo:IAO_0000118>motivation to comply</obo:IAO_0000118>
@@ -896,6 +911,8 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006062">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006060"/>
+        <obo:IAO_0000112> &quot;Physicality&quot; in the General Theory of Crime</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Risk-taking preference&quot; in the General Theory of Crime</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;motivational orientation towards types of outcomes&gt; in which motivation is guided by a focus on the presence or absence of positive outcomes.</obo:IAO_0000115>
         <rdfs:label>promotion focused motivational orientation</rdfs:label>
@@ -918,6 +935,9 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112> &quot;Coping&quot; in the Health Behaviour Internalisation Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Motives&quot; in the PRIME theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Preference&quot; in the Health Behaviour Internalisation Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; of a person to act to obtain or maintain a particular state due to this state’s importance to the person’s wellbeing.</obo:IAO_0000115>
         <rdfs:comment>Psychological needs can be satisfied or thwarted.</rdfs:comment>
@@ -974,6 +994,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006069">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006064"/>
+        <obo:IAO_0000112>&quot;Competence&quot; in the Health Behaviour Internalisation Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;psychological need&gt; to experience oneself as capable and effective.</obo:IAO_0000115>
         <obo:IAO_0000118>need for mastery</obo:IAO_0000118>
@@ -1094,6 +1115,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
+        <obo:IAO_0000112>&quot;Objective usability&quot; in the Technology Acceptance Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;environmental disposition&gt; that is required for or facilitates a behaviour.</obo:IAO_0000115>
         <rdfs:comment>The phrase ‘required for’ is used in the definition to specify that &apos;behavioural opportunity&apos; is a necessary condition for behaviour to occur. Although other MoAs will help bring behaviour about, there has to be a &apos;behavioural opportunity&apos; for behaviour to occur.
@@ -1149,6 +1171,8 @@ As &apos;financial behavioural opportunity&apos; will involve some physical mone
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006090">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006086"/>
+        <obo:IAO_0000112> &quot;Helping relationships&quot; in the Transtheoretical Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Supportive Environment&quot; in the Integrated Theoretical Model for Alcohol and Other Drug Abuse Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural opportunity&gt; that involves the social environmental system.</obo:IAO_0000115>
         <rdfs:label>social behavioural opportunity</rdfs:label>
@@ -1385,6 +1409,7 @@ As &apos;financial behavioural opportunity&apos; will involve some physical mone
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112>&quot;Social reaction path&quot; in the Prototype Willingness Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; that uses simple rules and associations learnt from experience to make judgements.</obo:IAO_0000115>
         <rdfs:label>heuristic process</rdfs:label>
@@ -1396,6 +1421,7 @@ As &apos;financial behavioural opportunity&apos; will involve some physical mone
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000006"/>
+        <obo:IAO_0000112>&quot;Reasoned Path&quot; in the Prototype Willingness Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Judging&gt; in which one or more propositions or behaviours are identified as preferred from a larger number.</obo:IAO_0000115>
         <rdfs:comment>The output of decision-making is a decision.</rdfs:comment>
@@ -1885,6 +1911,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006300">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006308"/>
+        <obo:IAO_0000112>&quot;Introjected regulation&quot; in the The Transcontextual Model of Motivation</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;need-based motivation&gt; related to gaining or maintaining social approval or a positive self-evaluation.</obo:IAO_0000115>
         <obo:IAO_0000118>introjected regulation</obo:IAO_0000118>
@@ -2292,6 +2319,8 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050234">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112> &quot;Impulses&quot; in the PRIME theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Spreading activation&quot; in the Reflective Impulsive Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; that is a pattern of neural activity in the brain that activates a behaviour.</obo:IAO_0000115>
         <rdfs:comment>More than one impulse can be present at one time. When impulses for competing behaviours exist, the strongest impulse controls the behaviour. Impulses are experienced as subjective urges when they cannot be immediately acted upon either because of competing impulses or inhibitory processes.</rdfs:comment>
@@ -2784,6 +2813,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050561">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050634"/>
+        <obo:IAO_0000112>&quot;Acquired drives&quot; in the Social Learning Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;drive process&gt; in which the physiological need is acquired through experience.</obo:IAO_0000115>
         <rdfs:label>acquired drive</rdfs:label>
@@ -2806,6 +2836,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050563">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006064"/>
+        <obo:IAO_0000112>&quot;Beauty&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;psychological need&gt; to experience beauty.</obo:IAO_0000115>
         <rdfs:label>aesthetic appreciation disposition</rdfs:label>
@@ -2829,6 +2860,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050565">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112>&quot;Density of social reinforcement&quot; in the Behavioural Ecological Model of AIDS Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;data item&gt; that is about the frequency and strength of social reinforcement that is experienced by the person.</obo:IAO_0000115>
         <rdfs:label>amount of social reinforcement for a behaviour</rdfs:label>
@@ -2840,6 +2872,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050566">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000028"/>
+        <obo:IAO_0000112>&quot;Computer anxiety&quot; in the Technology Acceptance Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Anxiety&gt; about the prospect of using a product of technology.</obo:IAO_0000115>
         <rdfs:comment>This is a fuzzy set but typically refers to use of computers and similar kinds of product.</rdfs:comment>
@@ -2852,6 +2885,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050567">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
+        <obo:IAO_0000112>“Status” in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;environmental disposition&gt; for a person to be valued by others.</obo:IAO_0000115>
         <rdfs:label>appreciation by others</rdfs:label>
@@ -2863,6 +2897,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050568">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050616"/>
+        <obo:IAO_0000112>&quot;Assertiveness and social skills&quot; in the Behavioural Ecological Model of AIDS Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;communication skill&gt; that is realised as the person expressing their views, needs or feelings whilst respecting those of others with whom they are communicating.</obo:IAO_0000115>
         <rdfs:label>assertiveness skill</rdfs:label>
@@ -2874,6 +2909,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050569">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
+        <obo:IAO_0000112>&quot;Assigned goals&quot; in the Goal Setting Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that has been set by another person.</obo:IAO_0000115>
         <rdfs:comment>This class refers to goals that a person may or may not accept for themselves.</rdfs:comment>
@@ -2886,6 +2922,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050570">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000018"/>
+        <obo:IAO_0000112>&quot;Locus of attention&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Attending&gt; where the target of attention is a goal.</obo:IAO_0000115>
         <rdfs:label>attending to a goal</rdfs:label>
@@ -2897,6 +2934,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050571">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000018"/>
+        <obo:IAO_0000112>&quot;Norm focus&quot; in the Focus Theory of Normative Conduct</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Attending&gt; in which the target of the attention is a social norm.</obo:IAO_0000115>
         <rdfs:comment>This class may be used to refer to any type of norm.</rdfs:comment>
@@ -2920,6 +2958,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050573">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006015"/>
+        <obo:IAO_0000112>&quot;Awareness of need&quot; in the Norm Activation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;awareness&gt; of a lack of resource available to another person or people relative to what they need or want.</obo:IAO_0000115>
         <rdfs:label>awareness of others’ need</rdfs:label>
@@ -2931,6 +2970,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050574">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
+        <obo:IAO_0000112>&quot;Background goals&quot; in the Goal-Framing Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that is not currently being pursued.</obo:IAO_0000115>
         <rdfs:label>background goal</rdfs:label>
@@ -2942,6 +2982,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050576">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006154"/>
+        <obo:IAO_0000112>&quot;Maintenance self-efficacy&quot; in the Health Action Process Approach</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;self-efficacy belief for a behaviour&gt; that continues a behaviour pattern.</obo:IAO_0000115>
         <rdfs:comment>Behaviour is continued even if there are historical or current barriers to doing so.</rdfs:comment>
@@ -2954,6 +2995,10 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050577">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000112> &quot;Barriers&quot; in the Model of Pro-Environmental Behavior</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Environmental Constraints&quot; in the Integrative Model of Behavioural Prediction</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Restraining forces&quot; in the Change Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Hassles&quot; in the Behavioural Ecological Model of AIDS Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;disposition&gt; that includes low capability, opportunity and motivation to enact a behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>‘low capability to enact a behaviour’ OR ‘low opportunity to enact a behaviour’ OR ‘motivational disposition not to enact a behaviour’</obo:IAO_0000118>
@@ -2967,6 +3012,11 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050578">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050783"/>
+        <obo:IAO_0000112>  &quot;Cues to action&quot; in the I-Change Model</obo:IAO_0000112>
+        <obo:IAO_0000112>  &quot;Trigger for change&quot; in the Social Ecological Model of Behaviour Change</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Cues to action&quot; in the Health Belief Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Cues&quot; in the  Social Learning Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Cues (associated with behaviour)&quot; in the Theory of Interpersonal Behavior</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;stimulus&gt; that prompts a behaviour or a behaviour pattern.</obo:IAO_0000115>
         <rdfs:comment>Find more specific internal stimulus classes under &apos;bodily behavioural cue&apos;.</rdfs:comment>
@@ -3001,6 +3051,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050581">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000112>&quot;Driving forces&quot; in the Change Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;disposition&gt; to have opportunity, motivation and capability or enact a behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>‘behavioural capability’ OR ‘behavioural opportunity’ OR ‘behavioural motivation disposition’</obo:IAO_0000118>
@@ -3024,6 +3075,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050583">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006086"/>
+        <obo:IAO_0000112>&quot;Accuracy of information&quot; in the Information-Motivation-Behavioural Skills Model of Adherence Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural opportunity&gt; that is realised by the provision of accurate information.</obo:IAO_0000115>
         <rdfs:label>behavioural opportunity through information</rdfs:label>
@@ -3035,6 +3087,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050584">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006154"/>
+        <obo:IAO_0000112>&quot;Recovery Self-Efficacy&quot; in the Health Action Process Approach</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;self-efficacy belief for a behaviour&gt; following a lapse in that behaviour</obo:IAO_0000115>
         <rdfs:label>behavioural recovery self-efficacy</rdfs:label>
@@ -3046,6 +3099,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050585">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006148"/>
+        <obo:IAO_0000112>&quot;Perception of need and responsibility&quot; in the Norm Activation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;evaluative belief about the consequences of behaviour&gt; reducing a need in some person.</obo:IAO_0000115>
         <rdfs:label>belief about a behaviour meeting a need</rdfs:label>
@@ -3069,6 +3123,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050587">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000112>&quot;Compatibility&quot; in the Diffusion of Innovations</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about how far a behaviour is congruent with one’s personal values.</obo:IAO_0000115>
         <rdfs:label>belief about conformity of behaviour to personal values</rdfs:label>
@@ -3080,6 +3135,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050588">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000112>&quot;Locus of control&quot; in the Pressure System Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about the extent to which the person has control over outcomes that are important to them.</obo:IAO_0000115>
         <rdfs:label>belief about control over valued outcomes</rdfs:label>
@@ -3091,6 +3147,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050589">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006017"/>
+        <obo:IAO_0000112>&quot;Perceived ease of use&quot; in the  Technology Acceptance Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about barriers to a behaviour&gt; in terms of level of effort required.</obo:IAO_0000115>
         <rdfs:label>belief about effort required for a behaviour</rdfs:label>
@@ -3102,6 +3159,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050590">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006021"/>
+        <obo:IAO_0000112>&quot;Anticipated emotions&quot; in the Action Theory Model of Consumption</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about consequences of goal attainment&gt; that focuses on the emotional response following that attainment.</obo:IAO_0000115>
         <rdfs:label>belief about emotional consequences of goal attainment</rdfs:label>
@@ -3113,6 +3171,9 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050591">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000112> &quot;Beliefs about incentives / barriers for health behaviour&quot; in the Systems Model of Behaviour Change</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Control belief&quot; in the Theory of Planned Behaviour</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Perception of external control&quot; in the Technology Acceptance Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about factors that could facilitate or enable a behaviour.</obo:IAO_0000115>
         <rdfs:label>belief about enablers of a behaviour</rdfs:label>
@@ -3124,6 +3185,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050592">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000112>&quot;Feasibility of goals&quot; in the Action Theory Model of Consumption</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about the extend to which goals are achievable.</obo:IAO_0000115>
         <rdfs:label>belief about goal attainment</rdfs:label>
@@ -3135,6 +3197,8 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050593">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000112> &quot;Socio-psychological condition&quot; in the Systems Model of Behaviour Change</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Subjective health status&quot; in the Information-Motivation-Behavioural Skills Model of Adherence Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about one’s health status.</obo:IAO_0000115>
         <rdfs:comment>This class covers belief about current health status. A person may have more than one such belief.
@@ -3160,6 +3224,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050595">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000112>&quot;Perception of health status&quot; in the Systems Model of Behaviour Change</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about one’s own health</obo:IAO_0000115>
         <rdfs:label>belief about own health</rdfs:label>
@@ -3171,6 +3236,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050596">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050597"/>
+        <obo:IAO_0000112>&quot;Beliefs about the undesirability of AIDS&quot; in the AIDS Risk Reduction Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about severity of health condition&gt; in terms of the outcomes of AIDS.</obo:IAO_0000115>
         <rdfs:label>belief about severity of AIDS</rdfs:label>
@@ -3182,6 +3248,9 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050597">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006030"/>
+        <obo:IAO_0000112> &quot;Perceived Severity&quot; in the Ecological Model for Preventing Type 2 Diabetes</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Perceived severity / severity of the problem&quot; in the Integrated Theoretical Model for Alcohol and Other Drug Abuse Prevention</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Belief about importance&quot; in the Pressure System Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about severity of an outcome&gt; relating to a health condition.</obo:IAO_0000115>
         <rdfs:label>belief about severity of health condition</rdfs:label>
@@ -3193,6 +3262,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050598">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006145"/>
+        <obo:IAO_0000112>&quot;Socio-psychological condition&quot; in the Systems Model of Behaviour Change</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about one’s social environment&gt; that focuses on people’s influences on each other.</obo:IAO_0000115>
         <rdfs:label>belief about social influence</rdfs:label>
@@ -3204,6 +3274,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050599">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050598"/>
+        <obo:IAO_0000112>&quot;Perception of social influence&quot; in the Systems Model of Behaviour Change</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about social influence&gt; in terms of the extent to which other people influence one’s behaviour.</obo:IAO_0000115>
         <rdfs:label>belief about social influence on oneself</rdfs:label>
@@ -3215,6 +3286,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050600">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006146"/>
+        <obo:IAO_0000112>&quot;Social norms&quot; in the Ecological Model for Preventing Type 2 Diabetes</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about social support&gt; for the person to enact a behaviour.</obo:IAO_0000115>
         <rdfs:label>belief about social support for a behaviour</rdfs:label>
@@ -3226,6 +3298,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050601">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000112>&quot;Complexity&quot; in the Diffusion of Innovations</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about the degree to which a task is complex and therefore difficult to perform.</obo:IAO_0000115>
         <rdfs:label>belief about task complexity</rdfs:label>
@@ -3249,6 +3322,10 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050603">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000112> &quot;Feedback sign&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Feedback-standard discrepancies&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Task-learning processes&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Task performance&quot; in the Goal Setting Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about the discrepancy between one’s current and target state.</obo:IAO_0000115>
         <rdfs:label>belief about the discrepancy between one’s current and target state</rdfs:label>
@@ -3283,6 +3360,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050606">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050218"/>
+        <obo:IAO_0000112>&quot;Perceived enjoyment&quot; in the Technology Acceptance Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about emotional consequences of behaviour&gt; where the emotions are positive.</obo:IAO_0000115>
         <rdfs:comment>Positive emotions are enjoyment, pleasure and satisfaction. The emotions are those of the person enacting the behaviour.</rdfs:comment>
@@ -3295,6 +3373,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050607">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050219"/>
+        <obo:IAO_0000112>&quot;Perceived efficacy&quot; in the Extended Parallel Processing Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about health consequences of behaviour&gt; in which the consequences are evaluated as positive.</obo:IAO_0000115>
         <obo:IAO_0000118>An evaluative belief about the positive consequences of a behaviour AND belief about the health consequences of a behaviour</obo:IAO_0000118>
@@ -3307,6 +3386,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050608">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006020"/>
+        <obo:IAO_0000112>&quot;Image&quot; in the Technology Acceptance Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about social consequences of behaviour&gt; where those consequences are evaluated positively.</obo:IAO_0000115>
         <rdfs:label>belief about the positive social consequences of a behaviour</rdfs:label>
@@ -3318,6 +3398,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050609">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050586"/>
+        <obo:IAO_0000112>&quot;Voluntariness&quot; in the Technology Acceptance Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about a behavioural rule&gt; that a behaviour must occur.</obo:IAO_0000115>
         <rdfs:comment>The two entities &apos;belief that a behaviour is compulsary&apos; and &apos;belief about choice over a behaviour&apos; are different. &apos;Belief about choice over a behaviour&apos; refers to whether a person believes that they are free to choose to perform or not perform a behaviour. This freedom might arise from a lack of opportunity or rules. &apos;Belief that a behaviour is compulsary&apos; is specifically about whether there are rules about the behaviour having to occur.</rdfs:comment>
@@ -3365,6 +3446,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050613">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
+        <obo:IAO_0000112>&quot;Biological system&quot; in the Self-Regulation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;system&gt; that consists of the parts of an organism and their interactions.</obo:IAO_0000115>
         <rdfs:label>bodily system</rdfs:label>
@@ -3376,6 +3458,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050614">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050615"/>
+        <obo:IAO_0000112>&quot;Behavioural options&quot; in the Integrated Theoretical Model for Alcohol and Other Drug Abuse Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;cognitive representation of one’s behaviour&gt; that the person could enact instead of one that they have enacted or are enacting.</obo:IAO_0000115>
         <rdfs:label>cognitive representation of an alternative behaviour</rdfs:label>
@@ -3387,6 +3470,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050615">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
+        <obo:IAO_0000112>“Immediate competing demands and preferences” in the Health Promotion Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;cognitive representation&gt; of a behaviour that the person is enacting or has enacted.</obo:IAO_0000115>
         <rdfs:label>cognitive representation of one’s behaviour</rdfs:label>
@@ -3410,6 +3494,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050617">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
+        <obo:IAO_0000112>&quot;Desirability&quot; in the Action Theory Model of Consumption</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; that involves a relative desirability of two or more entities.</obo:IAO_0000115>
         <rdfs:label>comparative desirability appraisal</rdfs:label>
@@ -3421,6 +3506,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050618">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000006"/>
+        <obo:IAO_0000112>&quot;Reassessment and redefinition of the situation&quot; in the Norm Activation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Judging&gt; that involves comparing aspects of entities.</obo:IAO_0000115>
         <rdfs:label>comparative evaluation process</rdfs:label>
@@ -3432,6 +3518,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050619">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050618"/>
+        <obo:IAO_0000112>&quot;Comparator&quot; in the Control Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;comparative evaluation process&gt; that compares the current situation with a standard or benchmark.</obo:IAO_0000115>
         <rdfs:label>comparison of current situation with a standard</rdfs:label>
@@ -3443,6 +3530,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050620">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050621"/>
+        <obo:IAO_0000112>&quot;Acquired rewards&quot; in the Social Learning Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;conditioned reinforcer&gt; that has acquired its reinforcing property by having been associated with a positive reinforcer.</obo:IAO_0000115>
         <rdfs:label>conditioned positive reinforcer</rdfs:label>
@@ -3454,6 +3542,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050621">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050756"/>
+        <obo:IAO_0000112>&quot;Conditioned reinforcer&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;reinforcer&gt; whose effect on behaviour results from being paired with another reinforcer</obo:IAO_0000115>
         <rdfs:label>conditioned reinforcer</rdfs:label>
@@ -3465,6 +3554,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050622">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
+        <obo:IAO_0000112>&quot;Freedom / control&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;environmental disposition&gt; that is the extent to which the person can control what happens to them.</obo:IAO_0000115>
         <rdfs:label>control over one’s life</rdfs:label>
@@ -3476,6 +3566,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050623">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006024"/>
+        <obo:IAO_0000112>&quot;Response efficacy&quot; in the Protection Motivation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about likelihood of consequences of a behaviour&gt; in terms of coping.</obo:IAO_0000115>
         <rdfs:label>coping efficacy belief</rdfs:label>
@@ -3487,6 +3578,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050624">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000027"/>
+        <obo:IAO_0000112>&quot;Coping planning&quot; in the Health Action Process Approach</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Planning&gt; that involves identifying and attempting to overcome barriers to enacting a behaviour.</obo:IAO_0000115>
         <rdfs:label>coping planning</rdfs:label>
@@ -3509,6 +3601,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050626">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000193"/>
+        <obo:IAO_0000112>“General beliefs / perceptions / personality” in the Integrated Theory of Drinking Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mood process&gt; that involves generally feeling sad or blunted and experiencing low motivation to engage with activities.</obo:IAO_0000115>
         <rdfs:label>depressed mood</rdfs:label>
@@ -3520,6 +3613,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050627">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>&quot;General beliefs / perceptions / personality&quot; in the Integrated Theory of Drinking Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to experience depressed mood.</obo:IAO_0000115>
         <rdfs:label>depressive disposition</rdfs:label>
@@ -3531,6 +3625,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050628">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050755"/>
+        <obo:IAO_0000112>&quot;Differential reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;reinforcement process&gt; in which the event following the behaviour only occurs in particular situations.</obo:IAO_0000115>
         <rdfs:comment>The situations could involve the presence of a stimulus (discriminative stimulus) that signals the contingency. A discriminative stimulus signals that a behaviour will be followed by a particular reinforcer.</rdfs:comment>
@@ -3543,6 +3638,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050629">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050783"/>
+        <obo:IAO_0000112>&quot;Cues from repertoire of cognitive and self-directive variables&quot; in the Self-Regulation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;stimulus&gt; that signals that a behaviour will be followed by a particular reinforcer.</obo:IAO_0000115>
         <rdfs:comment>Specific refers to an instance or subclass of something rather than anything in the general class. Particular refers to an instance or subclass of something rather than another instance or subclass of it.</rdfs:comment>
@@ -3555,6 +3651,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050630">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050572"/>
+        <obo:IAO_0000112>&quot;Attention to the self&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;attentional disposition&gt; to attend to one&apos;s goals.</obo:IAO_0000115>
         <rdfs:label>disposition to attend to one’s goals</rdfs:label>
@@ -3566,6 +3663,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050631">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006113"/>
+        <obo:IAO_0000112>&quot;Strategies for eliminating the feedback-standard gap&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;dissonance reduction process&gt; in which the perceived discrepancy is between the person’s perceived behaviour and a target behaviour</obo:IAO_0000115>
         <rdfs:label>dissonance reduction process for a behaviour</rdfs:label>
@@ -3610,6 +3708,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050635">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006001"/>
+        <obo:IAO_0000112>&quot;Economy&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social environmental system&gt; of production, resource allocation and distribution of goods and services within a society or a given geographic area.</obo:IAO_0000115>
         <rdfs:label>economic environmental system</rdfs:label>
@@ -3621,6 +3720,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050636">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050637"/>
+        <obo:IAO_0000112>&quot;Health-related values&quot; in the  Theory of Triadic Influence</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;egoistic personal value&gt; that involves regarding health as fundamentally important in life.</obo:IAO_0000115>
         <rdfs:label>egoistic personal health value</rdfs:label>
@@ -3632,6 +3732,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050637">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006063"/>
+        <obo:IAO_0000112>&quot;Egoistic personal value&quot; in the Value Belief Norm Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;personal value&gt; that involves regarding self-interest as fundamentally important in life.</obo:IAO_0000115>
         <rdfs:label>egoistic personal value</rdfs:label>
@@ -3643,6 +3744,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050638">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <obo:IAO_0000112>&quot;Emotions about self&quot; in the PRIME theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotion process&gt; that is about oneself.</obo:IAO_0000115>
         <rdfs:label>emotion about self</rdfs:label>
@@ -3665,6 +3767,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050640">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
+        <obo:IAO_0000112>&quot;Emotional Pros and Cons&quot; in the I-Change Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; of all the imagined consequences of an occurrence or state of affairs.</obo:IAO_0000115>
         <rdfs:label>emotional-relevance appraisal of possible consequences</rdfs:label>
@@ -3687,6 +3790,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050642">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050639"/>
+        <obo:IAO_0000112>&quot;Comfort&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional opportunity&gt; where the emotion is feeling comfortable.</obo:IAO_0000115>
         <rdfs:label>environmental opportunity for comfort</rdfs:label>
@@ -3698,6 +3802,8 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050643">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050639"/>
+        <obo:IAO_0000112> &quot;Pleasurability&quot; in the Social Ecological Model of Walking</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Pleasure / arousal&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional opportunity&gt; where the emotion is feeling pleasure.</obo:IAO_0000115>
         <rdfs:label>environmental opportunity for pleasure</rdfs:label>
@@ -3709,6 +3815,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050644">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050679"/>
+        <obo:IAO_0000112>&quot;Cognitive appraisal of efficacy information&quot; in the Self-Efficacy Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;information evaluation process&gt; about self-efficacy belief for a behaviour.</obo:IAO_0000115>
         <rdfs:label>evaluation of information about behavioural self-efficacy</rdfs:label>
@@ -3731,6 +3838,8 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050646">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050645"/>
+        <obo:IAO_0000112> &quot;Relevance of behaviour for Coping with Threat&quot; in the  Terror Management Health Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Retrospective evaluations&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;evaluative belief about the consequences of one’s behaviour&gt; that has been previously enacted.</obo:IAO_0000115>
         <rdfs:label>evaluative belief about the consequences of one’s past behaviour</rdfs:label>
@@ -3742,6 +3851,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050647">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006148"/>
+        <obo:IAO_0000112>&quot;Perceived barriers to action&quot; in the Health Promotion Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;evaluative belief about the consequences of behaviour&gt; in which those consequences are evaluated as negative.</obo:IAO_0000115>
         <rdfs:label>evaluative belief about the negative consequences of a behaviour</rdfs:label>
@@ -3753,6 +3863,15 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050648">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006148"/>
+        <obo:IAO_0000112>  &quot;Outcome Expectancies&quot; in the Social Action Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Outcome Expectancies&quot; in the Self-Efficacy Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Outcome Expectancies&quot; in the Social Action Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Outcome expectations&quot; in the Integrated Theoretical Model for Alcohol and Other Drug Abuse Prevention</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Perceived benefits of action&quot; in the Health Promotion Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Perceived usefulness&quot; in the  Technology Acceptance Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Response Efficacy&quot; in the AIDS Risk Reduction Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Response efficacy&quot; in the Extended Parallel Processing Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Benefits to others&quot; in the Theory of Normative Social Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;evaluative belief about the consequences of behaviour&gt; in which those consequences are evaluated as positive.</obo:IAO_0000115>
         <rdfs:label>evaluative belief about the positive consequences of a behaviour</rdfs:label>
@@ -3764,6 +3883,9 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050649">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050645"/>
+        <obo:IAO_0000112> &quot;Incentives&quot; in the Self-Efficacy Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Prospective evaluations&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Costs and benefits&quot; in the Norm Activation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;evaluative belief about the consequences of one’s behaviour&gt; in terms of all possible future consequences.</obo:IAO_0000115>
         <rdfs:label>evaluative belief about the possible future consequences of one’s behaviour</rdfs:label>
@@ -3775,6 +3897,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050650">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112>&quot;Persuasion&quot; in the Diffusion of Innovations</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; that results in the formation of an evaluative belief.</obo:IAO_0000115>
         <rdfs:comment>Judging&apos; differs from &apos;evaluative belief formation&apos; in that a person can judge something without evaluating it as postive or negative.</rdfs:comment>
@@ -3798,6 +3921,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050652">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050602"/>
+        <obo:IAO_0000112>“External attribution” in the Self-Regulation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about the cause of a behaviour&gt; where the cause is in the person’s environment.</obo:IAO_0000115>
         <rdfs:label>external attribution of a behaviour</rdfs:label>
@@ -3831,6 +3955,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050655">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050783"/>
+        <obo:IAO_0000112>&quot;Extrinsic rewards&quot; in the Protection Motivation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;stimulus&gt; by which the person experiences an externally-generated positive physical or psychological state subsequent to a response.</obo:IAO_0000115>
         <rdfs:label>extrinsic reward</rdfs:label>
@@ -3842,6 +3967,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050656">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006307"/>
+        <obo:IAO_0000112>&quot;Social motivation&quot; in the Information-Motivation-Behavioural Skills Model of Adherence Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;extrinsic motivation&gt; that derives from external rewards, punishments or pressure regarding a behaviour.</obo:IAO_0000115>
         <rdfs:comment>Pressure can include persuasion.</rdfs:comment>
@@ -3854,6 +3980,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050658">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006099"/>
+        <obo:IAO_0000112>&quot;Family influences&quot; in the Behavioural Ecological Model of AIDS Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social influence behaviour&gt; where some family member exerts an influence on the behaviour of another.</obo:IAO_0000115>
         <rdfs:label>family influence behaviour</rdfs:label>
@@ -3865,6 +3992,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050659">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <obo:IAO_0000112>&quot;Critical point&quot; in the Extended Parallel Processing Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily process&gt; that reduces fear without necessarily reducing the threat.</obo:IAO_0000115>
         <rdfs:label>fear reducing process</rdfs:label>
@@ -3888,6 +4016,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050661">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050663"/>
+        <obo:IAO_0000112>&quot;Result demonstrability&quot; in the  Technology Acceptance Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;feedback process to a person&gt; in which information about a behaviour is received by the person enacting the behaviour.</obo:IAO_0000115>
         <rdfs:label>feedback on behaviour</rdfs:label>
@@ -3899,6 +4028,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050662">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050705"/>
+        <obo:IAO_0000112>&quot;Meta-task processes&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental feedback process&gt; relating the behaviour to identity.</obo:IAO_0000115>
         <rdfs:label>feedback process related to identity</rdfs:label>
@@ -3921,6 +4051,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050664">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000112>&quot;Safety&quot; in the Social Ecological Model of Walking</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;subjective affective feeling&gt; that one is not exposed to harm or risk of harm.</obo:IAO_0000115>
         <rdfs:label>feeling safe</rdfs:label>
@@ -3932,6 +4063,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050665">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000112>&quot;Support / pressure&quot; in the I-Change Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;subjective affective feeling&gt; of pressure from other people to act, think or feel in a particular way.</obo:IAO_0000115>
         <rdfs:label>feeling social pressure</rdfs:label>
@@ -3943,6 +4075,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050666">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050621"/>
+        <obo:IAO_0000112>&quot;Generalised reinforcer&quot; in the  Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;conditioned reinforcer&gt; whose effect has been caused by pairing with multiple primary reinforcers.</obo:IAO_0000115>
         <rdfs:label>generalised reinforcer</rdfs:label>
@@ -3954,6 +4087,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050667">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>&quot;Generality&quot; in the Self-Efficacy Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to be self-efficacious across a wide range of situations and behaviours.</obo:IAO_0000115>
         <rdfs:label>generality of self-efficacy</rdfs:label>
@@ -3965,6 +4099,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050668">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
+        <obo:IAO_0000112>&quot;Gain&quot; in the Goal-Framing Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that concerns protecting or increasing the person’s resources.</obo:IAO_0000115>
         <rdfs:comment>This class is used for goals relating to personal resources that may be social, financial, material or psychological.</rdfs:comment>
@@ -3977,6 +4112,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050669">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050774"/>
+        <obo:IAO_0000112>&quot;Social beliefs&quot; in the Social Consensus Model of Health Education</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group attribute&gt; in which a majority of members of a group have the belief.</obo:IAO_0000115>
         <rdfs:comment>This is a fuzzy set and can only be used if operationalised.</rdfs:comment>
@@ -4002,6 +4138,15 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050671">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050774"/>
+        <obo:IAO_0000112> &quot;Actual norms&quot; in the Social Norms Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Group norms&quot; in the Social Influence Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Norms&quot; in the Social Change Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Smart norms&quot; in the Goal-Framing Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Social approval&quot; in the Theory of Normative Social Behaviour</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Social environment / consensus&quot; in the Social Consensus Model of Health Education</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Social norms&quot; in the Social Consensus Model of Health Education</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Standards of comfort, cleanliness and convenience&quot; in the Consumption as social practices</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Mutual agreement&quot; in the Social Influence Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group attribute&gt; in which members of the group share an evaluative belief of a behaviour.</obo:IAO_0000115>
         <rdfs:comment>A group could be a population.</rdfs:comment>
@@ -4014,6 +4159,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050672">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050416"/>
+        <obo:IAO_0000112>&quot;Mutual Accommodation&quot; in the Social Influence Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural disposition&gt; of members of a social group to enable each others’ engagement in group actions.</obo:IAO_0000115>
         <rdfs:label>group facilitation behaviour</rdfs:label>
@@ -4025,6 +4171,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050673">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050660"/>
+        <obo:IAO_0000112>&quot;Maladaptive response&quot; in the  Extended Parallel Processing Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;fear reduction mental process&gt; that has a negative outcome.</obo:IAO_0000115>
         <rdfs:comment>‘Negative’ is inherently subjective. It could mean a bad outcome for the person, the people or those around them, or society more generally.</rdfs:comment>
@@ -4091,6 +4238,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050677">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>&quot;Impulsivity&quot; in the General Theory of Crime</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to engage behaviour that has the attribute of impulsiveness.</obo:IAO_0000115>
         <rdfs:comment>This class links to the class ‘impulsiveness’ as a behavioural attribute.</rdfs:comment>
@@ -4103,6 +4251,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050678">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000006"/>
+        <obo:IAO_0000112>&quot;Rejecting the feedback&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Judging&gt; that devalues information or its relevance to a situation.’ Under judging.</obo:IAO_0000115>
         <rdfs:label>information devaluing</rdfs:label>
@@ -4125,6 +4274,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050680">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050634"/>
+        <obo:IAO_0000112>&quot;Innate drives&quot; in the Social Learning Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;drive process&gt;in which the physiological need is determined prenatally.</obo:IAO_0000115>
         <rdfs:label>innate drive</rdfs:label>
@@ -4139,6 +4289,7 @@ In this definition, ‘change’ refers to change from what would have been the 
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural intention&gt; to enact a behaviour with one or more others.</obo:IAO_0000115>
         <obo:IAO_0000118>behavioural intention&apos; has behaviour target &apos;collective behaviour&apos;</obo:IAO_0000118>
+        <rdfs:comment>&quot;Communication Structure&quot; in the Diffusion of Innovations</rdfs:comment>
         <rdfs:label>intention for collective behaviour</rdfs:label>
     </owl:Class>
     
@@ -4161,6 +4312,10 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050683">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006016"/>
+        <obo:IAO_0000112> &quot;Commitment&quot; in the  AIDS Risk Reduction Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Decided not to act&quot; in the Precaution Adoption Process Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Preparation&quot; in the  Transtheoretical Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Decided to act, Intention to enact a behaviour&quot; in the Precaution Adoption Process Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural intention&gt; to enact a behaviour.</obo:IAO_0000115>
         <rdfs:comment>This means intention to actively enact a behaviour (positive intention)</rdfs:comment>
@@ -4173,6 +4328,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050684">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050760"/>
+        <obo:IAO_0000112>&quot;Intermittent reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;schedule of reinforcement&gt; in which the event following the behaviour occurs on some but not all occasions.</obo:IAO_0000115>
         <rdfs:label>intermittent schedule of reinforcement</rdfs:label>
@@ -4217,6 +4373,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050688">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050783"/>
+        <obo:IAO_0000112>&quot;Intrinsic rewards&quot; in the Protection Motivation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;stimulus&gt; by which the person experiences an internally-generated positive physical or psychological state subsequent to a response.</obo:IAO_0000115>
         <rdfs:label>intrinsic reward</rdfs:label>
@@ -4228,6 +4385,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050689">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000006"/>
+        <obo:IAO_0000112>&quot;Attributional processes&quot; in the Self-Regulation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Judging&gt; that results in a belief about a causal relationship between two or more entities</obo:IAO_0000115>
         <rdfs:label>judging about causation</rdfs:label>
@@ -4251,6 +4409,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050691">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006052"/>
+        <obo:IAO_0000112>&quot;Task-relevant knowledge and strategies / Ability&quot; in the Goal Setting Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Knowledge&gt; about how to achieve a goal.</obo:IAO_0000115>
         <rdfs:label>knowledge regarding goal attainment</rdfs:label>
@@ -4262,6 +4421,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050692">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050698"/>
+        <obo:IAO_0000112>&quot;Legal availability&quot; in the Integrated Theory of Drinking Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;low opportunity to enact a behaviour&gt; resulting from legal restriction.</obo:IAO_0000115>
         <rdfs:label>legal behavioural constraint</rdfs:label>
@@ -4273,6 +4433,9 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050693">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006091"/>
+        <obo:IAO_0000112> &quot;Attachment (prosocial / antisocial)&quot; in the Social Development Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Commitment (prosocial / antisocial)&quot; in the Social Development Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Leisure time&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;temporal behavioural opportunity&gt; for recreational activities.</obo:IAO_0000115>
         <rdfs:label>leisure time</rdfs:label>
@@ -4284,6 +4447,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050694">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050754"/>
+        <obo:IAO_0000112>&quot;Syllogistic rules&quot; in the Reflective Impulsive Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Reflective reasoning&gt; in which rules of inference are applied to arrive at conclusions.</obo:IAO_0000115>
         <rdfs:label>logical reasoning</rdfs:label>
@@ -4301,6 +4465,7 @@ In this definition, ‘change’ refers to change from what would have been the 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050215"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>&quot;Resistance&quot; in the Pressure System Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;personal attribute&gt;in terms of behavioural capability being low.</obo:IAO_0000115>
         <rdfs:comment>This is a fuzzy set and can only be used if operationalised.</rdfs:comment>
@@ -4319,6 +4484,8 @@ In this definition, ‘change’ refers to change from what would have been the 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050716"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112> &quot;Amotivating aspect&quot; in the Self-Determination Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Precontemplation&quot; in the Health Behaviour Goal Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;personal attribute&gt; in terms of motivational disposition to change behaviour being low.</obo:IAO_0000115>
         <rdfs:comment>This is a fuzzy set and can only be used if operationalised.</rdfs:comment>
@@ -4337,6 +4504,10 @@ In this definition, ‘change’ refers to change from what would have been the 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006086"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112> &quot;Constraints on agency&quot; in the Social Ecological Model of Behaviour Change</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Environmental Pressures&quot; in the Integrated Theoretical Model for Alcohol and Other Drug Abuse Prevention</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Resistance&quot; in the Pressure System Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Controls Protection&quot; in the Problem Behaviour Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;personal attribute&gt; in terms of having low behavioural opportunity.</obo:IAO_0000115>
         <rdfs:comment>This is a fuzzy set and can only be used if operationalised.</rdfs:comment>
@@ -4349,6 +4520,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050699">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050698"/>
+        <obo:IAO_0000112>&quot;Goal difficulty&quot; in the Goal Setting Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Low opportunities to enact a behaviour&gt; that is goal-directed.</obo:IAO_0000115>
         <rdfs:label>low opportunity to enact a goal-directed behaviour</rdfs:label>
@@ -4360,6 +4532,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050700">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050698"/>
+        <obo:IAO_0000112>“Physical (constraints)” in the Social Ecological Model of Behaviour Change</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Low opportunity to enact a behaviour&gt; where the opportunity is physical.</obo:IAO_0000115>
         <obo:IAO_0000118>not ‘physical behavioural opportunity’</obo:IAO_0000118>
@@ -4378,6 +4551,7 @@ In this definition, ‘change’ refers to change from what would have been the 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050898"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>&quot;Amotivating aspect&quot; in the Self-Determination Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;personal attribute&gt; of self-efficacy belief that is low.</obo:IAO_0000115>
         <rdfs:comment>This is a fuzzy set and can only be used if operationalised.</rdfs:comment>
@@ -4390,6 +4564,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050702">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050698"/>
+        <obo:IAO_0000112>&quot;Social (constraints)&quot; in the Social Ecological Model of Behaviour Change</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Low opportunity to enact a behaviour&gt; where the opportunity is social.</obo:IAO_0000115>
         <obo:IAO_0000118>not ‘social behavioural opportunity’</obo:IAO_0000118>
@@ -4424,6 +4599,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050705">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050663"/>
+        <obo:IAO_0000112>&quot;Feedback intervention velocity&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;feedback process to a person&gt; which results from information about one’s behaviour.</obo:IAO_0000115>
         <rdfs:label>mental feedback process</rdfs:label>
@@ -4446,6 +4622,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050707">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>&quot;Misperceptions&quot; in the Social Norms Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; that is a discrepancy between a perceived descriptive behavioural norm and a group descriptive behavioural norm.</obo:IAO_0000115>
         <rdfs:label>misperception of descriptive behavioural norm</rdfs:label>
@@ -4457,6 +4634,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050708">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006063"/>
+        <obo:IAO_0000112>&quot;Values&quot; in the Model of Pro-Environmental Behavior</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;personal value&gt; that involves regarding certain principles of right and wrong as fundamentally important in life.</obo:IAO_0000115>
         <rdfs:label>moral personal value</rdfs:label>
@@ -4468,6 +4646,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050709">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050714"/>
+        <obo:IAO_0000112>&quot;Freezing&quot; in the Change Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;motivational disposition&gt; in which the person is motivated to maintain an established behavioural pattern.</obo:IAO_0000115>
         <rdfs:label>motivational disposition for behavioural maintenance</rdfs:label>
@@ -4490,6 +4669,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050711">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050713"/>
+        <obo:IAO_0000112>&quot;Protective motivation&quot; in the Extended Parallel Processing Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Motivation to reduce harm&gt; that may occur in the future.</obo:IAO_0000115>
         <rdfs:label>motivation to avert harm</rdfs:label>
@@ -4535,6 +4715,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050715">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050714"/>
+        <obo:IAO_0000112>&quot;Resistance&quot; in the Pressure System Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;motivational disposition&gt; not to change one’s behaviour pattern.</obo:IAO_0000115>
         <rdfs:label>motivational disposition not to change behaviour</rdfs:label>
@@ -4546,6 +4727,9 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050716">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050714"/>
+        <obo:IAO_0000112> &quot;Motivation&quot; in the &quot;Pressure System Model&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Unfreezing&quot; in the Change Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Contemplation&quot; in the Health Behaviour Goal Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;motivational disposition&gt; to change one’s behaviour pattern.</obo:IAO_0000115>
         <rdfs:label>motivational disposition to change behaviour</rdfs:label>
@@ -4568,6 +4752,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050718">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006064"/>
+        <obo:IAO_0000112>&quot;Need for faith In cultural worldview&quot; in the Terror Management Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;psychological need&gt; to hold a set of beliefs about the wider social environment.</obo:IAO_0000115>
         <rdfs:label>need to hold a world view</rdfs:label>
@@ -4590,6 +4775,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050720">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050722"/>
+        <obo:IAO_0000112>&quot;Negative punishment&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;negative reinforcer&gt; that decreases the likelihood of a preceding behaviour by cessation or non-occurrence of a rewarding event.</obo:IAO_0000115>
         <rdfs:label>negative punishing stimulus</rdfs:label>
@@ -4612,6 +4798,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050722">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050756"/>
+        <obo:IAO_0000112>&quot;Negative reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;reinforcer&gt; that decreases the likelihood of a preceding behaviour.</obo:IAO_0000115>
         <rdfs:comment>A reinforcer can be onset of a punishment or withdrawal of a reward.</rdfs:comment>
@@ -4624,6 +4811,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050723">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006001"/>
+        <obo:IAO_0000112>&quot;Negative membership group experiences&quot; in the General Theory of Deviant Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social environmental system&gt; that is aversive or harmful to the person.</obo:IAO_0000115>
         <rdfs:label>negative social environmental system</rdfs:label>
@@ -4635,6 +4823,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050724">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050616"/>
+        <obo:IAO_0000112>&quot;Negotiating AIDS prevention with partner&quot; in the Information-Motivation-Behavioural Skills</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;communication skill&gt; whose aim is to reach an agreement with another person or people through discussion.</obo:IAO_0000115>
         <rdfs:label>negotiating skill</rdfs:label>
@@ -4646,6 +4835,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050725">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112>&quot;Automatic processing&quot; in the Self-Regulation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; that does not involve conscious awareness.</obo:IAO_0000115>
         <obo:IAO_0000118>&quot;mental process&quot; not has process attribute &quot;consciousness&quot;</obo:IAO_0000118>
@@ -4658,6 +4848,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050726">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
+        <obo:IAO_0000112>&quot;Normative&quot; in the Goal-Framing Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that is consistent with a prevailing group norm.</obo:IAO_0000115>
         <rdfs:label>normative goal</rdfs:label>
@@ -4693,6 +4884,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050729">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006063"/>
+        <obo:IAO_0000112>“Openness to change values” in the Value Belief Norm Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;personal value&gt; that involves regarding exploration, curiosity and openness to change as fundamentally important in life.</obo:IAO_0000115>
         <rdfs:label>openness-to-change personal value</rdfs:label>
@@ -4704,6 +4896,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050730">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006099"/>
+        <obo:IAO_0000112>&quot;Peers&quot; in the Behavioural Ecological Model of AIDS Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social influence behaviour&gt; where some peer exerts an influence on the behaviour of another.</obo:IAO_0000115>
         <rdfs:label>peer influence behaviour</rdfs:label>
@@ -4741,6 +4934,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050733">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006089"/>
+        <obo:IAO_0000112>&quot;Spatial&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;physical behavioural opportunity&gt; that involves having access to a facility in which the behaviour can occur.</obo:IAO_0000115>
         <rdfs:label>physical access to a facility</rdfs:label>
@@ -4763,6 +4957,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050735">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006147"/>
+        <obo:IAO_0000112>&quot;Identified regulation&quot; in the The Transcontextual Model of Motivation</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;evaluative belief about a behaviour&gt; in which the behaviour is evaluated positively.</obo:IAO_0000115>
         <rdfs:label>positive evaluative belief about a behaviour</rdfs:label>
@@ -4774,6 +4969,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050736">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>&quot;Psychological health&quot; in the Information-Motivation-Behavioural Skills Model of Adherence Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; in which an individual is able to use their cognitive, emotional and behavioural capabilities in order to meet the demands of everyday life.</obo:IAO_0000115>
         <rdfs:label>positive mental health</rdfs:label>
@@ -4785,6 +4981,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050737">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050722"/>
+        <obo:IAO_0000112>&quot;Positive punishment&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;negative reinforcer&gt; that decreases the likelihood of a preceding behaviour by onset or continuation of an aversive event</obo:IAO_0000115>
         <rdfs:label>positive punishing stimulus</rdfs:label>
@@ -4807,6 +5004,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050739">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050756"/>
+        <obo:IAO_0000112>&quot;Reward&quot; in the Social Learning Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;reinforcer&gt; that increases the likelihood of a preceding behaviour.</obo:IAO_0000115>
         <rdfs:comment>A reinforcer can be onset of a reward or withdrawal of a punishment.</rdfs:comment>
@@ -4831,6 +5029,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050741">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050756"/>
+        <obo:IAO_0000112>&quot;Positive reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;reinforcer&gt; whose effect on behaviour is innately determined.</obo:IAO_0000115>
         <rdfs:label>primary reinforcer</rdfs:label>
@@ -4842,6 +5041,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050742">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050772"/>
+        <obo:IAO_0000112>&quot;Privacy&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;social environmental disposition&gt; that is realised as being protected from being observed or disturbed by other people.</obo:IAO_0000115>
         <rdfs:label>privacy</rdfs:label>
@@ -4865,6 +5065,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050744">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006096"/>
+        <obo:IAO_0000112>&quot;Problem solving&quot; in the Social Action Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal pursuit process&gt; in which some barrier has to be overcome.</obo:IAO_0000115>
         <rdfs:label>problem solving</rdfs:label>
@@ -4876,6 +5077,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050745">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
+        <obo:IAO_0000112>&quot;Propositional Representations&quot; in the Reflective Impulsive Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;cognitive representation&gt; in the form of symbols connected together with a syntactic structure.</obo:IAO_0000115>
         <rdfs:comment>Syntactic structures connect symbols together to create meaning.</rdfs:comment>
@@ -4888,6 +5090,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050746">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
+        <obo:IAO_0000112>&quot;Proximal goals&quot; in the Goal Setting Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that is about a scenario in the near future.</obo:IAO_0000115>
         <rdfs:label>proximal goal</rdfs:label>
@@ -4911,6 +5114,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050748">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112>&quot;Social Bonding&quot; in the Theory of Triadic Influence</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; by which a psychological attachment is formed or strengthened.</obo:IAO_0000115>
         <rdfs:label>psychological attachment formation</rdfs:label>
@@ -4922,6 +5126,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050749">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050748"/>
+        <obo:IAO_0000112>&quot;Social Bonding&quot; in the Social Development Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;psychological attachment formation&gt; to conventional society.</obo:IAO_0000115>
         <rdfs:label>psychological attachment formation to conventional society</rdfs:label>
@@ -4944,6 +5149,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050751">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050773"/>
+        <obo:IAO_0000112>&quot;Social relations&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social environmental system attribute&gt; that is the extent to which social relationships with other people are positive or negative.</obo:IAO_0000115>
         <rdfs:label>quality of social relationships</rdfs:label>
@@ -4955,6 +5161,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050752">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112>&quot;Self-reflective capability&quot; in the Social Cognitive Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; to analyse one’s experiences, thoughts or beliefs.</obo:IAO_0000115>
         <rdfs:label>reflective capability</rdfs:label>
@@ -4966,6 +5173,8 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050753">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112> &quot;Reflective system&quot; in the Reflective Impulsive Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Executive system&quot; in the CEOS Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; that involves conscious awareness.</obo:IAO_0000115>
         <obo:IAO_0000118>&quot;mental process&quot; has process attribute &quot;consciousness&quot;</obo:IAO_0000118>
@@ -5002,6 +5211,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050756">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050783"/>
+        <obo:IAO_0000112>&quot;Reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;stimulus&gt; that changes the likelihood of a preceding behaviour.</obo:IAO_0000115>
         <rdfs:label>reinforcer</rdfs:label>
@@ -5013,6 +5223,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050757">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050654"/>
+        <obo:IAO_0000112>&quot;Multiple schedules&quot; in the Behavioural Ecological Model of AIDS Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;external stimulus&gt; that causes memory retrieval.</obo:IAO_0000115>
         <rdfs:label>reminder stimulus</rdfs:label>
@@ -5024,6 +5235,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050758">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>&quot;Strength&quot; in the Self-Efficacy Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to be self-efficacious despite experiences of failure.</obo:IAO_0000115>
         <rdfs:label>resilience of self-efficacy</rdfs:label>
@@ -5035,6 +5247,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050759">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006072"/>
+        <obo:IAO_0000112>&quot;Risk prototypes&quot; in the Prototype Willingness Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;stereotype&gt; about people who are judged to be risk takers.</obo:IAO_0000115>
         <rdfs:label>risk-taker stereotype</rdfs:label>
@@ -5058,6 +5271,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050761">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006099"/>
+        <obo:IAO_0000112>&quot;Public schools&quot; in the Behavioural Ecological Model of AIDS Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social influence behaviour&gt; where part of the school’s social environment exerts an influence on the behaviour of another.</obo:IAO_0000115>
         <rdfs:label>school influence behaviour</rdfs:label>
@@ -5069,6 +5283,9 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050762">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006154"/>
+        <obo:IAO_0000112> &quot;Social self-efficacy&quot; in the I-Change Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Stress self-efficacy)&quot; in the  I-Change Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Routine self-efficacy&quot; in the I-Change Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;self-efficacy belief for a behaviour&gt; that is enacted as part of activities that are routine.</obo:IAO_0000115>
         <rdfs:label>self-efficacy belief for a behaviour during routine activities</rdfs:label>
@@ -5102,6 +5319,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050765">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050898"/>
+        <obo:IAO_0000112>&quot;Coping appraisal&quot; in the Protection Motivation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;self-efficacy belief&gt; that one can take actions to avoid, reduce, or remove a threat or its effects.</obo:IAO_0000115>
         <rdfs:label>self-efficacy belief for avoiding a threat</rdfs:label>
@@ -5113,6 +5331,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050766">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
+        <obo:IAO_0000112>&quot;Self-set goals&quot; in the Goal Setting Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that a person has set for themselves.</obo:IAO_0000115>
         <rdfs:label>self-initiated goal</rdfs:label>
@@ -5124,6 +5343,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050767">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006133"/>
+        <obo:IAO_0000112>&quot;Self Needs&quot; in the Health Behaviour Internalisation Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural motivation&gt; that arises from a person’s self-identity.</obo:IAO_0000115>
         <rdfs:label>self-motive</rdfs:label>
@@ -5146,6 +5366,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050769">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001087"/>
+        <obo:IAO_0000112>&quot;Similarity&quot; in the Theory of Normative Social Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social identity&gt; in which the representation is similarity between oneself and another person or group.</obo:IAO_0000115>
         <rdfs:label>similarity to other people</rdfs:label>
@@ -5157,6 +5378,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050771">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006074"/>
+        <obo:IAO_0000112>&quot;Intensity&quot; in the Differential Association Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Social embeddedness&gt; that involves attachment to a social group.</obo:IAO_0000115>
         <rdfs:label>social embeddedness in a social group</rdfs:label>
@@ -5213,6 +5435,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050776">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000021"/>
+        <obo:IAO_0000112>&quot;Social influence&quot; in the Integrated Theory of Health Behaviour Change</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;interpersonal process&gt; in which people’s thoughts, feelings or behaviours are influenced by other people.</obo:IAO_0000115>
         <rdfs:comment>If social influence processes are specific to behaviour, the entity “social influence behaviour” should be referred to.</rdfs:comment>
@@ -5225,6 +5448,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050777">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050772"/>
+        <obo:IAO_0000112>&quot;Social justice&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social environmental disposition&gt; that is how far members of a society experience fair and equitable resources, opportunities and privileges.</obo:IAO_0000115>
         <rdfs:label>social justice</rdfs:label>
@@ -5247,6 +5471,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050779">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
+        <obo:IAO_0000112>&quot;Social meanings&quot; in the Social Consensus Model of Health Education</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;cognitive representation&gt; about a behaviour that is shared by members of a social group.</obo:IAO_0000115>
         <rdfs:comment>This class includes the physical representation of the behaviour and also the meanings that members of a social group assign to it.</rdfs:comment>
@@ -5259,6 +5484,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050780">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050239"/>
+        <obo:IAO_0000112>&quot;Personal socialisation process&quot; in the Systems Model of Behaviour Change</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Learning&gt; about one’s social role.</obo:IAO_0000115>
         <rdfs:label>social role learning</rdfs:label>
@@ -5281,6 +5507,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050782">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
+        <obo:IAO_0000112>&quot;Stable or unstable living conditions&quot; in the Information-Motivation-Behavioural Skills Model of Adherence Behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;environmental disposition&gt; to have a stable and secure physical and social home environment.</obo:IAO_0000115>
         <rdfs:label>stability of living conditions</rdfs:label>
@@ -5305,6 +5532,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050784">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112>&quot;Impulsive system&quot; in the Reflective Impulsive Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; in which a stimulus strengthens a tendency for an impulse.</obo:IAO_0000115>
         <rdfs:comment>Stimulus-impulse association is part of operant learning processes.</rdfs:comment>
@@ -5317,6 +5545,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050785">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050706"/>
+        <obo:IAO_0000112>&quot;Strength of engagement / motivation&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process attribute&gt; that is the extent to which attentional resources are focused on a target.</obo:IAO_0000115>
         <rdfs:comment>Target refers to anything that can be attended to, whether it be an object, an attribute of an object, information or a process.</rdfs:comment>
@@ -5341,6 +5570,8 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050787">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006001"/>
+        <obo:IAO_0000112> &quot;Organisational support&quot; in the Social Ecological Model of Behaviour Change</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Supportive Environment&quot; in the Integrated Theoretical Model for Alcohol and Other Drug Abuse Prevention</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social environmental system&gt; that benefits the person’s thoughts, emotions or behaviours.</obo:IAO_0000115>
         <rdfs:comment>If you are interested in capturing to what extend a system is supportive rather than the system itself, then please refer to &quot;supportive social environmental disposition&quot;.</rdfs:comment>
@@ -5353,6 +5584,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050788">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006004"/>
+        <obo:IAO_0000112>&quot;Symbolising capability&quot; in the Social Cognitive Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental skill&gt; to be able to process information in the form of symbols.</obo:IAO_0000115>
         <rdfs:label>symbol processing skill</rdfs:label>
@@ -5364,6 +5596,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050789">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006086"/>
+        <obo:IAO_0000112>&quot;Technology&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural opportunity&gt; that involves the extend to which technology is available in the environmental system.</obo:IAO_0000115>
         <rdfs:label>technology availability</rdfs:label>
@@ -5375,6 +5608,8 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050790">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112> &quot;Time Preference&quot; in the Rational Addiction Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Time orientation (near / far-sighted)&quot; in the General Theory of Crime</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to appraise imagined future occurrences differently according to how far in the future they are judged to occur.</obo:IAO_0000115>
         <rdfs:label>temporal orientation</rdfs:label>
@@ -5386,6 +5621,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050791">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112>&quot;Threat appraisal&quot; in the Protection Motivation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;data item&gt; that is about belief about threat expressed as the likelihood of a potentially harmful occurrence weighted by the severity of the harm.</obo:IAO_0000115>
         <rdfs:label>threat appraisal</rdfs:label>
@@ -5397,6 +5633,8 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050792">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006063"/>
+        <obo:IAO_0000112> &quot;Belief (prosocial / antisocial)&quot; in the Social Development Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Traditional values&quot; in the Value Belief Norm Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;personal value&gt; that involves regarding long-standing social customs as fundamentally important in life.</obo:IAO_0000115>
         <rdfs:label>traditional personal value</rdfs:label>
@@ -5408,6 +5646,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050793">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>&quot;Rationality&quot; in the Rational Addiction Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to behave in a way that seeks to maximise the net positive consequences of behaviour.</obo:IAO_0000115>
         <rdfs:label>utility maximisation disposition</rdfs:label>
@@ -5430,6 +5669,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050795">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050728"/>
+        <obo:IAO_0000112>&quot;Vicarious learning capability&quot; in the Social Cognitive Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;observational learning capability&gt; through the feelings or actions of another person.</obo:IAO_0000115>
         <rdfs:label>vicarious learning capability</rdfs:label>
@@ -5441,6 +5681,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050796">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
+        <obo:IAO_0000112>&quot;Goal specificity&quot; in the Goal Setting Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that is specified in sufficient detail for it to be clear when the goal has been achieved.</obo:IAO_0000115>
         <rdfs:label>well-specified goal</rdfs:label>
@@ -5452,6 +5693,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050798">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
+        <obo:IAO_0000112>&quot;Innovators, early majority, early adopters, late majority, laggards&quot; in the Diffusion of Innovations</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily disposition&gt; to adopt new behaviours.</obo:IAO_0000115>
         <rdfs:comment>This is a dimension that can be subdivided into very high, high, medium, low and very low.</rdfs:comment>
@@ -5486,6 +5728,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050843">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000002"/>
+        <obo:IAO_0000112>&quot;Identified regulation&quot; in the Self-Determination Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal process&gt; in which the person comes to feel that they have a responsibility to change their behaviour.</obo:IAO_0000115>
         <rdfs:label>accepting responsibility for changing one’s behaviour</rdfs:label>
@@ -5497,6 +5740,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050844">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000027"/>
+        <obo:IAO_0000112>&quot;Action planning&quot; in the Health Action Process Approach</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Planning&gt; that has as a part some goal that is specified in terms of some behaviour and a time or place where the behaviour is to be enacted.</obo:IAO_0000115>
         <rdfs:label>action planning</rdfs:label>
@@ -5508,6 +5752,13 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050845">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
+        <obo:IAO_0000112>  &quot;Consequences&quot; in the Operant Conditioning</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Consequences of adoption&quot; in the Diffusion of Innovations</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Consequences&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Marginal Utility&quot; in the Rational Addiction Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Outcomes&quot; in the Risk as Feelings</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Pregnancy or disease outcomes&quot; in the Ecological Model of AIDS Prevention</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Health outcomes&quot; in the Information-Motivation-Behavioural Skills Model of Adherence</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal process&gt; that results in an appraisal of the consequence of some behaviour.</obo:IAO_0000115>
         <rdfs:label>behavioural consequence appraisal process</rdfs:label>
@@ -5519,6 +5770,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050846">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000112>&quot;Counter-conditioning&quot; in the Transtheoretical Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;individual human behaviour&gt; in which a person substitutes a more desired behaviour for a less desired behaviour.</obo:IAO_0000115>
         <rdfs:label>behavioural substitution</rdfs:label>
@@ -5530,6 +5782,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050847">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050669"/>
+        <obo:IAO_0000112>&quot;Pluralistic ignorance&quot; in the Social Norms Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;group belief&gt; in which members of a group falsely believe that their own beliefs and behaviours are unusual.</obo:IAO_0000115>
         <rdfs:label>belief in false minority</rdfs:label>
@@ -5541,6 +5794,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050848">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050867"/>
+        <obo:IAO_0000112>&quot;Generative capabilities&quot; in the Social Action Theory (Ewart)</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;imagination capability&gt; in which what is imagined are scenarios that could happen in the future.</obo:IAO_0000115>
         <rdfs:comment>Scenarios include possible, outcomes of behaviours, goals and actions to achieve them.</rdfs:comment>
@@ -5553,6 +5807,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050849">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050851"/>
+        <obo:IAO_0000112>&quot;Certainty effect&quot; in the Prospect Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;cognitive bias process&gt; that overweights an outcome that is judged to be certain compared with ones that are judged to be less than certain.</obo:IAO_0000115>
         <rdfs:label>certainty bias</rdfs:label>
@@ -5597,6 +5852,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050853">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050619"/>
+        <obo:IAO_0000112>&quot;Self-evaluation stage&quot; in the Self-Regulation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Comparison of current situation with a standard&gt; where the focus is on current behaviour.</obo:IAO_0000115>
         <rdfs:label>comparison of current behaviour with a standard</rdfs:label>
@@ -5642,6 +5898,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050857">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050855"/>
+        <obo:IAO_0000112>&quot;Denial of responsibility to respond&quot; in the Norm Activation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;denial belief&gt; that holds that the person has no responsibility to act to address a problem.</obo:IAO_0000115>
         <rdfs:label>denial belief about a responsibility to act</rdfs:label>
@@ -5664,6 +5921,8 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050859">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006079"/>
+        <obo:IAO_0000112> Program control&quot; in the Control Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Principle control</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;desired standard&gt; for a self-regulatory process that the person wishes to enact.</obo:IAO_0000115>
         <rdfs:label>desired self-regulatory standard</rdfs:label>
@@ -5675,6 +5934,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050860">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006079"/>
+        <obo:IAO_0000112>&quot;System control&quot; in the Control Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;desired standard&gt; for a self-identity that the person wishes to attain.</obo:IAO_0000115>
         <rdfs:label>desired standard for self-identity</rdfs:label>
@@ -5697,6 +5957,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050862">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112>&quot;Identification with messenger&quot; in the Six-staged model of communication effects</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; in which a person experiences another person’s perspective, thoughts and feelings.</obo:IAO_0000115>
         <rdfs:label>empathising</rdfs:label>
@@ -5730,6 +5991,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050865">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <obo:IAO_0000112>&quot;Goal Congruence&quot; in the Integrated Theory of Health Behaviour Change</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily process&gt; that reduces negative affect resulting from goal conflict.</obo:IAO_0000115>
         <rdfs:comment>This class refers to any behaviour, cognitive or emotional process that has the function of reducing goal conflict, including changing goals, and cognitive restructuring to make goals seem compatible.</rdfs:comment>
@@ -5742,6 +6004,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050866">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050881"/>
+        <obo:IAO_0000112>&quot;Self-reference&quot; in the Social Identity Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group process&gt; that results in development of some group identity.</obo:IAO_0000115>
         <rdfs:label>group identity development</rdfs:label>
@@ -5806,6 +6069,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050871">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006096"/>
+        <obo:IAO_0000112>&quot;Persistence&quot; in the Goal Setting Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal pursuit process&gt; that is maintained despite barriers.</obo:IAO_0000115>
         <rdfs:label>persistent goal pursuit process</rdfs:label>
@@ -5828,6 +6092,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050873">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050735"/>
+        <obo:IAO_0000112>&quot;Self-discovery&quot; in the Social Influence Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;positive evaluative belief about a behaviour&gt; that involves interacting with other people.</obo:IAO_0000115>
         <rdfs:label>positive evaluative belief about interacting with others</rdfs:label>
@@ -5839,6 +6104,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050874">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112>&quot;Consciousness raising&quot; in the Transtheoretical Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; that increases the accuracy of one’s cognitive representation of oneself through engaging with a problem.</obo:IAO_0000115>
         <rdfs:label>self-awareness process in relation to a problem</rdfs:label>
@@ -5850,6 +6116,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050875">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050876"/>
+        <obo:IAO_0000112>&quot;Self re-evaluation&quot; in the Transtheoretical Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;self-identity appraisal process&gt; that is informed by the person’s behaviour.</obo:IAO_0000115>
         <rdfs:label>self-identity appraisal informed by one’s behaviour</rdfs:label>
@@ -5872,6 +6139,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050877">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000035"/>
+        <obo:IAO_0000112>&quot;Social enhancement&quot; in the Social Influence Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Pleasure&gt; derived from receiving social approval</obo:IAO_0000115>
         <rdfs:label>social approval pleasure</rdfs:label>
@@ -5883,6 +6151,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050878">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006131"/>
+        <obo:IAO_0000112>&quot;Social categorisation&quot; in the Social Identity Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Mental categorising&gt; where what is being categorised are parts of the social environmental system.</obo:IAO_0000115>
         <rdfs:label>social categorising</rdfs:label>
@@ -5894,6 +6163,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050879">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000035"/>
+        <obo:IAO_0000112>&quot;Maintaining interpersonal connectivity&quot; in the Social Influence Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Pleasure&gt; derived from feeling emotionally connected to others.</obo:IAO_0000115>
         <rdfs:label>social connectedness pleasure</rdfs:label>
@@ -5905,6 +6175,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050880">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050845"/>
+        <obo:IAO_0000112>&quot;Environmental re-evaluation&quot; in the Transtheoretical Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural consequences appraisal process&gt; in which the consequence concerns the social environmental system.</obo:IAO_0000115>
         <rdfs:label>social consequence of behaviour appraisal process</rdfs:label>
@@ -5927,6 +6198,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050882">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000035"/>
+        <obo:IAO_0000112>&quot;Entertainment value&quot; in the Social Influence Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Pleasure&gt; derived from social interaction.</obo:IAO_0000115>
         <rdfs:label>social pleasure</rdfs:label>
@@ -5938,6 +6210,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050883">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050774"/>
+        <obo:IAO_0000112>&quot;Community priorities&quot; in the Social Ecological Model of Behaviour Change</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group attribute&gt; that is the extent to which its members positively evaluate an intervention.</obo:IAO_0000115>
         <rdfs:label>strength of group support for an intervention</rdfs:label>
@@ -5960,6 +6233,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050885">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006040"/>
+        <obo:IAO_0000112>&quot;False uniqueness&quot; in the Social Norms Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;perceived descriptive behavioural norm&gt; in which the prevalence of a behaviour is underestimated.</obo:IAO_0000115>
         <rdfs:comment>This is the belief of an individual.</rdfs:comment>
@@ -6000,6 +6274,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050913">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050772"/>
+        <obo:IAO_0000112>&quot;Safety&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social environmental disposition&gt; that is realised as being safe from harm.</obo:IAO_0000115>
         <rdfs:label>safety</rdfs:label>
@@ -6116,7 +6391,7 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050239"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A simple form of learning whereby the repeated presence of a stimulus leads to a change in the probability or strength of the response to that stimulus. There is no association of one type of stimulus with another, rather it is a generalized response to the environment.</obo:IAO_0000115>
-        <rdfs:label>non-associative learning</rdfs:label>
+        <rdfs:label>nonassociative learning</rdfs:label>
     </owl:Class>
     
 
@@ -6224,6 +6499,7 @@ There is no intended sequence of the entities that are part of the emotion proce
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
+        <obo:IAO_0000112>&quot;Wants&quot; in the PRIME theory</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;affective process&gt; that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
         <obo:IAO_0000118>pain</obo:IAO_0000118>
@@ -6359,6 +6635,7 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <obo:IAO_0000112>&quot;Pleasantness&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A positive emotion which is sought out and is associated with happiness and satisfaction.</obo:IAO_0000115>
         <obo:IAO_0000118>enjoyment</obo:IAO_0000118>
@@ -6613,7 +6890,7 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;subjective affective feeling&gt; in an organism S, involving two integrated levels: (a) activation of the nociceptive system and associated emotion generating brain components of S, and (b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.</obo:IAO_0000115>
-        <rdfs:label>pain</rdfs:label>
+        <rdfs:label>feeling of pain</rdfs:label>
     </owl:Class>
     
 
@@ -6624,7 +6901,7 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;subjective affective feeling&gt; that involves discomfort and is associated with a need to consume food.</obo:IAO_0000115>
-        <rdfs:label>hunger</rdfs:label>
+        <rdfs:label>feeling of hunger</rdfs:label>
     </owl:Class>
     
 
@@ -6656,6 +6933,7 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000212">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <obo:IAO_0000112>&quot;Stress&quot; in the Rational Addiction Model</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;emotion process&gt; is an emotion that has a negative valence.</obo:IAO_0000115>
         <rdfs:label>negative emotion</rdfs:label>
@@ -6866,6 +7144,7 @@ For instance, having a musical ability is ordinarily an ability that is positive
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112>&quot;Temptation&quot; in the Transtheoretical Model</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; that involves thinking about a state of affairs that is not yet the case together with a desire for that state of affairs to come about.</obo:IAO_0000115>
         <rdfs:label>wanting</rdfs:label>

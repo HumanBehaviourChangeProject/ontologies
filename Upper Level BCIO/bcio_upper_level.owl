@@ -286,7 +286,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>A core relation that holds between a part and its whole</obo:IAO_0000115>
-        <rdfs:label>part of</rdfs:label>
+        <rdfs:label>is part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -677,12 +677,12 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_013000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050916"/>
         <obo:IAO_0000112>Includes mental activities and behaviours.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Individual human activity that enables a BCI to influence the outcome behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>Participant engagement with intervention, where the intervention focuses on changing behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI engagement</obo:IAO_0000118>
-        <rdfs:label>behaviour change intervention engagement</rdfs:label>
+        <rdfs:label>participant engagement with behaviour change intervention</rdfs:label>
     </owl:Class>
     
 
@@ -1172,6 +1172,17 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A population whose behaviour is studied in a research study.</obo:IAO_0000115>
         <rdfs:label>research study sample</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050916 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050916">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An individual human activity that is performed by someone in an intervention population, prompted by this intervention and influences the effects of the intervention on its outcome.</obo:IAO_0000115>
+        <rdfs:label>participant engagement with intervention</rdfs:label>
     </owl:Class>
     
 

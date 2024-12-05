@@ -2055,7 +2055,7 @@ workplace, and safety of processes for the production of goods and services. The
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
-        <rdfs:label>organisation</rdfs:label>
+        <rdfs:label>organization</rdfs:label>
     </owl:Class>
     
 
