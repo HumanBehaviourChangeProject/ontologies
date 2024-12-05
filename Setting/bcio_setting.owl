@@ -193,7 +193,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026008">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An area on the edge of a large town or city where a proportion of those who work in the town or city live.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population and resource density that involves being on the edge of a large town or city where a proportion of those who work in the town or city live.</obo:IAO_0000115>
         <rdfs:label>suburban area</rdfs:label>
     </owl:Class>
     
@@ -719,6 +719,29 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050914 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050914">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A population and resource density that involves a high density of human population and of a built environment consisting of structures and infrastructure designed to support human habitation.</obo:IAO_0000115>
+        <obo:IAO_0000119>claude.ai</obo:IAO_0000119>
+        <rdfs:label>urban area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050915 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050915">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A population and resource density that involves being outside of an urban or suburban area and has a low density of population and buildings.</obo:IAO_0000115>
+        <rdfs:label>rural area</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
@@ -740,6 +763,12 @@
         <obo:IAO_0000119>Basic Formal Ontology</obo:IAO_0000119>
         <rdfs:label>site</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
     
 
 
@@ -780,7 +809,7 @@
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An area in which grasses (Graminae) are a significant component of the vegetation</obo:IAO_0000115>
         <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
-        <rdfs:label>grassland</rdfs:label>
+        <rdfs:label>grassland area</rdfs:label>
     </owl:Class>
     
 
@@ -792,7 +821,7 @@
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An area with a high density of trees. A small forest may be called a wood</obo:IAO_0000115>
         <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
-        <rdfs:label>forest</rdfs:label>
+        <rdfs:label>forest area</rdfs:label>
     </owl:Class>
     
 
@@ -822,30 +851,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000772 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000772">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>An area which is outside of a town, city, or urban area. Rural areas are primarily used for agriculture or pastoralism and may contain rural settlements</obo:IAO_0000115>
-        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
-        <rdfs:label>rural area</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000856 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000856">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026007"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>Incorporated populated place</obo:IAO_0000115>
-        <obo:IAO_0000119>Environment Ontology</obo:IAO_0000119>
-        <rdfs:label>urban area</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
@@ -858,10 +863,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A material entity that is a human made strcuture with firm connection between its foundation and the ground.</obo:IAO_0000115>
+        <rdfs:label>architectural structure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An architectural structure that bears some function.</obo:IAO_0000115>
         <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
@@ -901,7 +917,7 @@
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A facility that’s administered by a health care organisation for the purpose of providing health care to a patient population</obo:IAO_0000115>
         <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
-        <rdfs:label>healthcare facility</rdfs:label>
+        <rdfs:label>health care facility</rdfs:label>
     </owl:Class>
     
 
