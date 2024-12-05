@@ -9772,7 +9772,7 @@ For instance, having a musical ability is ordinarily an ability that is positive
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A personal attribute inhering in a person by virtue of that person not bearing a role realised in an employment process, but being eligible for and currently seeking paid work.</obo:IAO_0000115>
-        <rdfs:label>unemployed status</rdfs:label>
+        <rdfs:label>unemployed</rdfs:label>
     </owl:Class>
     
 
