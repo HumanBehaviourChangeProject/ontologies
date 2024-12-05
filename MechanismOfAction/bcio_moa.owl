@@ -7031,9 +7031,6 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily process&gt; that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.</obo:IAO_0000115>
-        <rdfs:comment>Mental processes can vary in the degree to which they involve consciousness.
-
-A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as mental processes occur within the body, specifically involving the brain.</rdfs:comment>
         <rdfs:label>mental process</rdfs:label>
     </owl:Class>
     
