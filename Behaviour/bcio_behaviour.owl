@@ -84,13 +84,36 @@
 
     <!-- http://humanbehaviourchange.org/ontology/BCIOR_000009 -->
 
-    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000009"/>
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000009">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050451"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050449"/>
+        <obo:IAO_0000115>A relation that links abstinence from a behaviour to a temporal region during which this personal attribute is true</obo:IAO_0000115>
+        <rdfs:label>has abstinence period</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://humanbehaviourchange.org/ontology/BCIOR_000010 -->
 
-    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000010">
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <obo:IAO_0000115>A relation that links an individual human behaviour to a behavioural attribute.</obo:IAO_0000115>
+        <rdfs:label>has behavioural attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000011 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000011">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036001"/>
+        <obo:IAO_0000115>Realises the human life function of an individual human behaviour.</obo:IAO_0000115>
+        <rdfs:label>serves behavioural function</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -103,6 +126,30 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIOR_000013 -->
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000013"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000014 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000014"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000015 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000015"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000016 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000016"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000017 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000017"/>
     
 
 
@@ -124,6 +171,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000155 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000155"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002092 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002092"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002223"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002229 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002229"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -135,6 +218,29 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006085 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A spatial &lt;quality&gt; that inheres in a bearer by virtue of its position relative to other entities.</obo:IAO_0000115>
+        <rdfs:comment>An intervention could be used to rearrange objects in an environment, changing the location of a person relative to these objects and thereby increasing the likelihood of a behaviour.</rdfs:comment>
+        <rdfs:label>location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006095 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006095">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050441"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;socially-related behaviour&gt; that is commonly enacted by people that are part of a social environmental system.</obo:IAO_0000115>
+        <rdfs:label>normative behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006099 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006099">
@@ -143,6 +249,17 @@
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;inter-personal behaviour&gt; where a person exerts an influence on the behaviour of another.</obo:IAO_0000115>
         <rdfs:label>social influence behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006158 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006158">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;experience-related behaviour&gt; that results from a learnt stimulus-behaviour co-occurrence.</obo:IAO_0000115>
+        <rdfs:label>habitual behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -170,8 +287,74 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000011"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000012"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000013"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000014"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000017"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000155"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002223"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002229"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
@@ -195,6 +378,12 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112>Learning function (e.g., knowledge development function and skill development function), knowledge or skill maintenance, protection of self, others and the environment, aesthetics function, bodily health function, spiritual function, social organisation function,, excretion function, nutrition function, reproductive function, respiration function,, rest function, travel function, thermoregulation function</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A function that inheres in a human being and is realised in processes that enable the human to survive and thrive.</obo:IAO_0000115>
@@ -1955,7 +2144,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050443">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that relates to some subjective experience of the behaving person.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;individual human behaviour&gt; that relates to something the person experiences.</obo:IAO_0000115>
         <rdfs:label>experience-related behaviour</rdfs:label>
     </owl:Class>
     
@@ -2312,6 +2501,17 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;individual human behaviour change&gt; resulting from exposure to a group behavioural norm.</obo:IAO_0000115>
         <rdfs:label>behaviour change through group norm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050672 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050672">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036025"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;inter-personal behaviour&gt; of a member of a social group that promotes engagement of members of the group in group behaviours.</obo:IAO_0000115>
+        <rdfs:label>group facilitation behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -2917,6 +3117,50 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050917 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050917">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A frequency of past bhaviour that is above a threshold.</obo:IAO_0000115>
+        <rdfs:label>high frequency of past behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050918 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050918">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A frequency of past behaviour that is below a threshold.</obo:IAO_0000115>
+        <rdfs:label>low frequency of past behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050919 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050919">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural consequence that is negatively evaluated by an individual or a population.</obo:IAO_0000115>
+        <rdfs:label>negative behavioural consequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050920 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050920">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050818"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A goal-directed behaviour whose goal is to search for and find opportunities that help meet needs or support attaining goals.</obo:IAO_0000115>
+        <rdfs:label>opportunity-seeking behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
@@ -2947,6 +3191,12 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
@@ -2970,9 +3220,27 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031"/>
     
 
 
