@@ -163,41 +163,6 @@
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000009 -->
-
-    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000009">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <obo:IAO_0000115>A relation that links abstinence from a behaviour to a temporal region during which this personal attribute is true</obo:IAO_0000115>
-        <rdfs:label>has abstinence period</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000010 -->
-
-    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000010">
-        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000115>A relation that links an individual human behaviour to a behavioural attribute.</obo:IAO_0000115>
-        <rdfs:label>has behavioural attribute</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000011 -->
-
-    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000011">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <obo:IAO_0000115>Realises the human life function of an individual human behaviour.</obo:IAO_0000115>
-        <rdfs:label>serves behavioural function</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIOR_000012 -->
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000012">
@@ -286,7 +251,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>A core relation that holds between a part and its whole</obo:IAO_0000115>
-        <rdfs:label>is part of</rdfs:label>
+        <rdfs:label>part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -303,8 +268,10 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>Inverse of realizes relation.</obo:IAO_0000115>
-        <rdfs:label>realised in</rdfs:label>
+        <rdfs:label>realized in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -321,8 +288,8 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
-        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:IAO_0000115>b occurs_in c =def b is a process and c is a material entity or immaterial entityand there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.and forall(t) if b exists_at t then c exists_at t and there exist spatial regions s and s’ where and b spatially_projects_onto s at tand c is occupies_spatial_region s’ at tand s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
         <rdfs:label>occurs in</rdfs:label>
     </owl:ObjectProperty>
@@ -437,8 +404,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002092 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002092">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))</obo:IAO_0000115>
         <rdfs:label>happens during</rdfs:label>
     </owl:ObjectProperty>
@@ -461,8 +428,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002223">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
-        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>inverse of starts with</obo:IAO_0000115>
         <rdfs:label>starts</rdfs:label>
     </owl:ObjectProperty>
@@ -473,8 +440,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002229">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
-        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>inverse of ends with</obo:IAO_0000115>
         <rdfs:label>ends</rdfs:label>
     </owl:ObjectProperty>
@@ -1199,6 +1166,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -1211,12 +1184,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
@@ -1226,18 +1193,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038"/>
     
 
 
