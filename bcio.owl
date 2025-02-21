@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-02-04"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-02-21"/>
         <terms:title>Behaviour Change Intervention Ontology</terms:title>
         <rdfs:comment>The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery, Style of Delivery, Source, Mechanisms of Action, Behaviour and Behaviour Change Techniques. Additional modules will be added soon.</rdfs:comment>
     </owl:Ontology>
@@ -1071,7 +1071,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:label>is part of</rdfs:label>
-        <rdfs:label>part of</rdfs:label>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1603,6 +1602,20 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000179 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000112>Dr Smith has a personal stake in the outcome of the clinical trial of the drug, varenicline, because he has shares in the company that produces the drug.</obo:IAO_0000112>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal attribute that involves an outcome of value to that person arising from a process.</obo:IAO_0000115>
+        <obo:IAO_0000232>This is derived from the idea of a stakeholder and is a generalisation of vested interest.</obo:IAO_0000232>
+        <rdfs:comment>Value here can be positive or negative. This definition refers to actual value rather than perceived value. The process that produces the outcome will often be an event such as reporting of the outcome of a clinical trial, or delivery of a verdict in a trial, or enactment of legislation.</rdfs:comment>
+        <rdfs:label>personal stake</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000241 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000241">
@@ -1698,6 +1711,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000456 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000456">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <obo:IAO_0000114>To Be Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>An action specification of a person or organisation that is realised as a set of rules and activities affecting people or organisations under its jurisdiction.</obo:IAO_0000115>
+        <rdfs:label>policy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000511 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000511">
@@ -1723,6 +1747,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000232>can a socially shared representtaion be said to be purely cognitive? I.e query parent entity?</obo:IAO_0000232>
         <rdfs:comment>An ongoing consideration regarding this class is whether a socially shared representation can be said to be purely cognitive.</rdfs:comment>
         <rdfs:label>group identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000750 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000750">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about the amount of money that has to be paid to purchase a product or service</obo:IAO_0000115>
+        <obo:IAO_0000118>cost</obo:IAO_0000118>
+        <rdfs:comment>Indicate currency and period of time, both must be defined.</rdfs:comment>
+        <rdfs:label>financial cost of a product or service</rdfs:label>
     </owl:Class>
     
 
@@ -1758,6 +1795,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001109 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001109">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000456"/>
+        <obo:IAO_0000114>To Be Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A policy that is applied by a public body.</obo:IAO_0000115>
+        <rdfs:label>public policy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0001127 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001127">
@@ -1765,6 +1813,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A subjective emotional feeling which consists of a strong wanting or wishing to have something or for something to happen.</obo:IAO_0000115>
         <rdfs:label>desire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001135 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001135">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050211"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A substance use behaviour pattern in which the substance used is alcohol.</obo:IAO_0000115>
+        <rdfs:label>alcohol consumption pattern</rdfs:label>
     </owl:Class>
     
 
@@ -1785,6 +1844,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001273 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001273">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001109"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A public policy that aims to improve the health of a population.</obo:IAO_0000115>
+        <rdfs:label>public health promotion policy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0001303 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001303">
@@ -1796,6 +1866,40 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>A process that produces a good or helpful outcome.</obo:IAO_0000115>
         <obo:IAO_0000118>benefit</obo:IAO_0000118>
         <rdfs:label>beneficial process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001317 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A bodily process in which a behavioural lapse results in relapse through negative emotions attributed by the person to the lapse.</obo:IAO_0000115>
+        <rdfs:label>abstinence violation effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001318 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A bodily process in which addiction strength is increased.</obo:IAO_0000115>
+        <rdfs:label>addiction development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001350 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001350">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050210"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A consumption behaviour pattern in which the behaviour is repeated in a session to an extent that is excessive.</obo:IAO_0000115>
+        <rdfs:comment>This is a very loosely defined class that is based on judgements about what constitutes &apos;excessive&apos; and a &apos;session&apos; and therefore must be operationalised and defined for a given behaviour and usage. The parent is a behaviour pattern because the entity involves more than one occurrence of the behaviour. This class is restricted to consumption behaviours such as eating, smoking, drinking and taking drugs.</rdfs:comment>
+        <rdfs:label>binge behaviour session</rdfs:label>
     </owl:Class>
     
 
@@ -20376,6 +20480,7 @@ There can be different dimensions of nurturing, e.g., in some cases, nurturing c
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036100">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050267"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A uniform process aggregate whose member parts are behaviours of the same type and in the same person.</obo:IAO_0000115>
         <obo:IAO_0000118>behaviour pattern</obo:IAO_0000118>
@@ -22121,6 +22226,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050210">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036100"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An individual human behaviour pattern that involves consumption behaviour.</obo:IAO_0000115>
         <rdfs:label>consumption behaviour pattern</rdfs:label>
@@ -22132,8 +22238,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050211">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050210"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A consumption behaviour pattern that involves substance use behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>substance use</obo:IAO_0000118>
         <rdfs:label>substance use behaviour pattern</rdfs:label>
     </owl:Class>
     
@@ -29243,7 +29351,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050917">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A frequency of past bhaviour that is above a threshold.</obo:IAO_0000115>
         <rdfs:label>high frequency of past behaviour</rdfs:label>
     </owl:Class>
@@ -29254,7 +29362,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050918">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A frequency of past behaviour that is below a threshold.</obo:IAO_0000115>
         <rdfs:label>low frequency of past behaviour</rdfs:label>
     </owl:Class>
@@ -29265,7 +29373,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050919">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behavioural consequence that is negatively evaluated by an individual or a population.</obo:IAO_0000115>
         <rdfs:label>negative behavioural consequence</rdfs:label>
     </owl:Class>
@@ -29276,7 +29384,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050920">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050818"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal-directed behaviour whose goal is to search for and find opportunities that help meet needs or support attaining goals.</obo:IAO_0000115>
         <rdfs:label>opportunity-seeking behaviour</rdfs:label>
     </owl:Class>
@@ -29287,7 +29395,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050921">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A data item that is about the rate at which a population changes their behaviour.</obo:IAO_0000115>
         <rdfs:label>behaviour change rate</rdfs:label>
     </owl:Class>
@@ -29298,7 +29406,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050922">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A person who has formed an intention to enact a specified behaviour, and has enacted that behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>actor</obo:IAO_0000118>
         <rdfs:comment>behaviour has to be specified
@@ -29312,7 +29420,7 @@ s. also behaviour enacter, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050923">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A person who has formed an intention to enact a specified behaviour, but has not acted on this intention.</obo:IAO_0000115>
         <rdfs:comment>behaviour has to be specified
 s. also behaviour enacter, behaviour intender</rdfs:comment>
@@ -29325,7 +29433,7 @@ s. also behaviour enacter, behaviour intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050924">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A person who has not formed an intention to enact a specified behaviour.</obo:IAO_0000115>
         <rdfs:comment>behaviour has to be specified
 s. also behaviour intender, behaviour non-intender</rdfs:comment>
@@ -29338,7 +29446,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050925">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050891"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group&gt; of two people who interact and influence each other.</obo:IAO_0000115>
         <obo:IAO_0000232>This definition is based on the work of Scholz et al (2025), as published here: https://osf.io/2364r/</obo:IAO_0000232>
         <rdfs:label>dyad</rdfs:label>
@@ -29350,7 +29458,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050926">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006015"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;awareness&gt; of the inevitable death of oneself and other people.</obo:IAO_0000115>
         <rdfs:label>awareness of mortality</rdfs:label>
     </owl:Class>
@@ -29361,7 +29469,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050927">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050215"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural capability&gt; or &lt;behavioural opportunity&gt; that affords control over one&apos;s behaviour.</obo:IAO_0000115>
         <rdfs:label>control over behaviour</rdfs:label>
     </owl:Class>
@@ -29372,7 +29480,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050928">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000026"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;fear&gt; of one&apos;s death.</obo:IAO_0000115>
         <rdfs:label>fear of death</rdfs:label>
     </owl:Class>
@@ -29383,7 +29491,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050929">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050930"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;monitoring process&gt; in which one observes others.</obo:IAO_0000115>
         <rdfs:label>monitoring of others</rdfs:label>
     </owl:Class>
@@ -29394,7 +29502,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050930">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; in which one observes to inform their own behaviour.</obo:IAO_0000115>
         <rdfs:label>monitoring process</rdfs:label>
     </owl:Class>
@@ -29405,7 +29513,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050931">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily process&gt; in which one prepares for future roles by adopting behaviours, norms or attitudes.</obo:IAO_0000115>
         <rdfs:label>preparation for social role</rdfs:label>
     </owl:Class>
@@ -29416,7 +29524,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050932">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050929"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;monitoring of others&gt; to align one&apos;s behaviours with perceived social norms.</obo:IAO_0000115>
         <rdfs:label>social norm monitoring</rdfs:label>
     </owl:Class>
@@ -29427,7 +29535,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050933">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050944"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Knowledge regarding one&apos;s environment&gt; pertaining to people, their pets, social and cultural institutions and processes that influence one&apos;s life</obo:IAO_0000115>
         <rdfs:label>Knowledge regarding social environment</rdfs:label>
     </owl:Class>
@@ -29438,7 +29546,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050934">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; which is an evaluation of how temporally close an occurence is.</obo:IAO_0000115>
         <rdfs:label>appraisal of immediacy</rdfs:label>
     </owl:Class>
@@ -29449,7 +29557,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050935">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;appraisal&gt; regarding one&apos;s social group memberships.</obo:IAO_0000115>
         <rdfs:label>appraisal of social identity</rdfs:label>
     </owl:Class>
@@ -29460,7 +29568,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050936">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006015"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;awareness&gt; of a standard or benchmark.</obo:IAO_0000115>
         <rdfs:label>awareness of standards</rdfs:label>
     </owl:Class>
@@ -29471,7 +29579,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050937">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; in which the end state is a behaviour or behavioural pattern.</obo:IAO_0000115>
         <rdfs:label>behavioural goal</rdfs:label>
     </owl:Class>
@@ -29482,7 +29590,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050938">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050774"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group attribute&gt; that is the extent to which decision-making and power is concentrated within a small subset of the members of that group, rather than being shared among all members.</obo:IAO_0000115>
         <rdfs:label>centralisation of decision-making</rdfs:label>
     </owl:Class>
@@ -29493,7 +29601,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050939">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that is set collaboratively between the person for which the goal is set and at least one other person.</obo:IAO_0000115>
         <obo:IAO_0000118>participative goal</obo:IAO_0000118>
         <rdfs:label>collaborative goal</rdfs:label>
@@ -29505,7 +29613,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050940">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental capability&gt; to generate new  ideas, solutions or actions.</obo:IAO_0000115>
         <rdfs:label>creative thinking</rdfs:label>
     </owl:Class>
@@ -29516,7 +29624,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050941">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that is about a scenario that is in the distant future.</obo:IAO_0000115>
         <rdfs:label>distal goal</rdfs:label>
     </owl:Class>
@@ -29527,7 +29635,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050942">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental capability&gt; to experience another person&apos;s perspective, thoughts and feelings.</obo:IAO_0000115>
         <rdfs:label>empathy</rdfs:label>
     </owl:Class>
@@ -29538,7 +29646,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050943">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050881"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group process&gt; in which one or more propositions or behaviours are identified as preferred from a larger number.</obo:IAO_0000115>
         <rdfs:label>group decision-making</rdfs:label>
     </owl:Class>
@@ -29549,7 +29657,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050944">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006052"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Knowledge&gt; regarding one&apos;s own environmental system.</obo:IAO_0000115>
         <rdfs:label>knowledge regarding one&apos;s environment</rdfs:label>
     </owl:Class>
@@ -29560,7 +29668,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050945">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that focuses on the acquisition of new skills or knowledge.</obo:IAO_0000115>
         <rdfs:label>learning goal</rdfs:label>
     </owl:Class>
@@ -29571,7 +29679,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050946">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050268"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;self-regulation process&gt; that involves mentally imagining performing a behaviour in a relevant context.</obo:IAO_0000115>
         <rdfs:label>mental rehearsal to guide and motivate behaviour</rdfs:label>
     </owl:Class>
@@ -29582,7 +29690,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050947">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006133"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural motivation&gt; to act contrary to likely approval of others.</obo:IAO_0000115>
         <obo:IAO_0000118>willingness to deviate</obo:IAO_0000118>
         <rdfs:label>motivation to deviate</rdfs:label>
@@ -29594,7 +29702,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050948">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050268"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;self-regulation process&gt; where individuals use internal dialogues to motivate or guide their behaviour.</obo:IAO_0000115>
         <rdfs:label>self-talk process</rdfs:label>
     </owl:Class>
@@ -29605,7 +29713,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050949">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006118"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social comparison process&gt; in which a person or group strives to be better than other people or groups.</obo:IAO_0000115>
         <rdfs:label>social competition process</rdfs:label>
     </owl:Class>
@@ -29616,7 +29724,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050950">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050239"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Learning&gt; that involves a social influence process.</obo:IAO_0000115>
         <rdfs:label>social learning</rdfs:label>
     </owl:Class>
@@ -29627,7 +29735,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050951">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050952"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;willingness to change behaviour&gt; regarding the cessation of behaviours.</obo:IAO_0000115>
         <rdfs:label>willingness to cease behaviour</rdfs:label>
     </owl:Class>
@@ -29638,7 +29746,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050952">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily disposition&gt; to change one&apos;s behaviour.</obo:IAO_0000115>
         <rdfs:label>willingness to change behaviour</rdfs:label>
     </owl:Class>
@@ -29649,7 +29757,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050953">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001127"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;desire&gt; for continued life of oneself.</obo:IAO_0000115>
         <rdfs:label>desire for continued life</rdfs:label>
     </owl:Class>
@@ -30544,11 +30652,14 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:BFO_0000179>gdc</obo:BFO_0000179>
         <obo:BFO_0000180>GenericallyDependentContinuant</obo:BFO_0000180>
+        <obo:IAO_0000111 xml:lang="en">generically dependent continuant</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the pdf file on your laptop, the pdf file that is a copy thereof on my laptop</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
         <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </obo:IAO_0000602>
+        <rdfs:comment xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
     </owl:Class>
@@ -31941,6 +32052,26 @@ The class &apos;environmental system&apos; relates to what is found in the physi
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0007613 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007613">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007611"/>
+        <obo:IAO_0000115>The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Memory</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0007613</oboInOwl:id>
+        <rdfs:label>memory</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007613"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0582227089</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
@@ -32188,6 +32319,23 @@ The class &apos;environmental system&apos; relates to what is found in the physi
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000112 xml:lang="en">Pour the contents of flask 1 into flask 2</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
+        <rdfs:label>action specification</rdfs:label>
+        <rdfs:label xml:lang="en">action specification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
@@ -32211,6 +32359,8 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
         <rdfs:label xml:lang="en">data item</rdfs:label>
     </owl:Class>
     
@@ -32223,6 +32373,8 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
@@ -32230,6 +32382,9 @@ JAR: A data item is an approximately justified approximately true approximate be
 Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label>information content entity</rdfs:label>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
     
@@ -32239,7 +32394,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">directive information entity</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
@@ -32247,6 +32405,8 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>directive information entity</rdfs:label>
         <rdfs:label xml:lang="en">directive information entity</rdfs:label>
     </owl:Class>
     
@@ -32971,6 +33131,16 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000203"/>
+        <obo:IAO_0000115>An emotional personality trait is a personality trait, a part of an overall personality, which predisposes the individual to repeated occurrences of a characteristic emotional process. </obo:IAO_0000115>
+        <rdfs:label xml:lang="en">emotional personality trait</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_000205 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000205">
@@ -33310,6 +33480,17 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000021"/>
+        <obo:IAO_0000115>A communication process is an interpersonal process that involves the transmission of information between two organisms.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">communication</rdfs:label>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/OMRSE_00000192</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
@@ -33446,6 +33627,27 @@ For instance, having a musical ability is ordinarily an ability that is positive
         <obo:IAO_0000115>A mental process that involves neuronal activity in response to a sensory stimuli but which is not the subject of consciousness.</obo:IAO_0000115>
         <rdfs:label>subliminal process</rdfs:label>
         <rdfs:label xml:lang="en">subliminal process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
+        <obo:IAO_0000115>A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person.</obo:IAO_0000115>
+        <rdfs:comment>Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time.</rdfs:comment>
+        <rdfs:label xml:lang="en">personality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
+        <obo:IAO_0000115>A personality trait is an individual disposition or predisposition that forms part of an overall personality and is realized in repeated occurrences of a specific mental process type or behavioural profile. </obo:IAO_0000115>
+        <rdfs:label xml:lang="en">personality trait</rdfs:label>
     </owl:Class>
     
 
@@ -33811,6 +34013,34 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:label>residential facility</rdfs:label>
         <rdfs:label xml:lang="en">residential facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000111 xml:lang="en">debt obligation</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Three Arrows Capital declared bankruptcy on July 1, 2022 after defaulting on a $665 million debt obligation owed to Voyager Digital.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that prescribes that something will be transferred from some human or organization that is the bearer of a duty holder role to another human or organization that is the bearer of a claimant role.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">debt obligation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000222"/>
+        <obo:IAO_0000111 xml:lang="en">money</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Todd does not have enough money to buy more plants at the horticultural club&apos;s poinsettia sale.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A debt obligation between two parties that has part a scalar value specification and whose concretizations indicate that their bearers can be used in a financial transaction or payment of debt, or as a measure of the value of some entity in a financial valuation process or prospective financial valuation process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">money</rdfs:label>
     </owl:Class>
     
 

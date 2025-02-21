@@ -6792,7 +6792,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050926">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006015"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;awareness&gt; of the inevitable death of oneself and other people.</obo:IAO_0000115>
         <rdfs:label>awareness of mortality</rdfs:label>
     </owl:Class>
@@ -6803,7 +6803,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050927">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050215"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural capability&gt; or &lt;behavioural opportunity&gt; that affords control over one&apos;s behaviour.</obo:IAO_0000115>
         <rdfs:label>control over behaviour</rdfs:label>
     </owl:Class>
@@ -6814,7 +6814,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050928">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000026"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;fear&gt; of one&apos;s death.</obo:IAO_0000115>
         <rdfs:label>fear of death</rdfs:label>
     </owl:Class>
@@ -6825,7 +6825,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050929">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050930"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;monitoring process&gt; in which one observes others.</obo:IAO_0000115>
         <rdfs:label>monitoring of others</rdfs:label>
     </owl:Class>
@@ -6836,7 +6836,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050930">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; in which one observes to inform their own behaviour.</obo:IAO_0000115>
         <rdfs:label>monitoring process</rdfs:label>
     </owl:Class>
@@ -6847,7 +6847,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050931">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily process&gt; in which one prepares for future roles by adopting behaviours, norms or attitudes.</obo:IAO_0000115>
         <rdfs:label>preparation for social role</rdfs:label>
     </owl:Class>
@@ -6858,7 +6858,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050932">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050929"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;monitoring of others&gt; to align one&apos;s behaviours with perceived social norms.</obo:IAO_0000115>
         <rdfs:label>social norm monitoring</rdfs:label>
     </owl:Class>
@@ -6869,7 +6869,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050933">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050944"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Knowledge regarding one&apos;s environment&gt; pertaining to people, their pets, social and cultural institutions and processes that influence one&apos;s life</obo:IAO_0000115>
         <rdfs:label>Knowledge regarding social environment</rdfs:label>
     </owl:Class>
@@ -6880,7 +6880,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050934">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; which is an evaluation of how temporally close an occurence is.</obo:IAO_0000115>
         <rdfs:label>appraisal of immediacy</rdfs:label>
     </owl:Class>
@@ -6891,7 +6891,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050935">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;appraisal&gt; regarding one&apos;s social group memberships.</obo:IAO_0000115>
         <rdfs:label>appraisal of social identity</rdfs:label>
     </owl:Class>
@@ -6902,7 +6902,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050936">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006015"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;awareness&gt; of a standard or benchmark.</obo:IAO_0000115>
         <rdfs:label>awareness of standards</rdfs:label>
     </owl:Class>
@@ -6913,7 +6913,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050937">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; in which the end state is a behaviour or behavioural pattern.</obo:IAO_0000115>
         <rdfs:label>behavioural goal</rdfs:label>
     </owl:Class>
@@ -6924,7 +6924,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050938">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050774"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group attribute&gt; that is the extent to which decision-making and power is concentrated within a small subset of the members of that group, rather than being shared among all members.</obo:IAO_0000115>
         <rdfs:label>centralisation of decision-making</rdfs:label>
     </owl:Class>
@@ -6935,7 +6935,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050939">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that is set collaboratively between the person for which the goal is set and at least one other person.</obo:IAO_0000115>
         <obo:IAO_0000118>participative goal</obo:IAO_0000118>
         <rdfs:label>collaborative goal</rdfs:label>
@@ -6947,7 +6947,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050940">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental capability&gt; to generate new  ideas, solutions or actions.</obo:IAO_0000115>
         <rdfs:label>creative thinking</rdfs:label>
     </owl:Class>
@@ -6958,7 +6958,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050941">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that is about a scenario that is in the distant future.</obo:IAO_0000115>
         <rdfs:label>distal goal</rdfs:label>
     </owl:Class>
@@ -6969,7 +6969,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050942">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental capability&gt; to experience another person&apos;s perspective, thoughts and feelings.</obo:IAO_0000115>
         <rdfs:label>empathy</rdfs:label>
     </owl:Class>
@@ -6980,7 +6980,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050943">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050881"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group process&gt; in which one or more propositions or behaviours are identified as preferred from a larger number.</obo:IAO_0000115>
         <rdfs:label>group decision-making</rdfs:label>
     </owl:Class>
@@ -6991,7 +6991,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050944">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006052"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Knowledge&gt; regarding one&apos;s own environmental system.</obo:IAO_0000115>
         <rdfs:label>knowledge regarding one&apos;s environment</rdfs:label>
     </owl:Class>
@@ -7002,7 +7002,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050945">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006049"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;goal&gt; that focuses on the acquisition of new skills or knowledge.</obo:IAO_0000115>
         <rdfs:label>learning goal</rdfs:label>
     </owl:Class>
@@ -7013,7 +7013,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050946">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050268"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;self-regulation process&gt; that involves mentally imagining performing a behaviour in a relevant context.</obo:IAO_0000115>
         <rdfs:label>mental rehearsal to guide and motivate behaviour</rdfs:label>
     </owl:Class>
@@ -7024,7 +7024,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050947">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006133"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural motivation&gt; to act contrary to likely approval of others.</obo:IAO_0000115>
         <obo:IAO_0000118>willingness to deviate</obo:IAO_0000118>
         <rdfs:label>motivation to deviate</rdfs:label>
@@ -7036,7 +7036,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050948">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050268"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;self-regulation process&gt; where individuals use internal dialogues to motivate or guide their behaviour.</obo:IAO_0000115>
         <rdfs:label>self-talk process</rdfs:label>
     </owl:Class>
@@ -7047,7 +7047,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050949">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006118"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social comparison process&gt; in which a person or group strives to be better than other people or groups.</obo:IAO_0000115>
         <rdfs:label>social competition process</rdfs:label>
     </owl:Class>
@@ -7058,7 +7058,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050950">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050239"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Learning&gt; that involves a social influence process.</obo:IAO_0000115>
         <rdfs:label>social learning</rdfs:label>
     </owl:Class>
@@ -7069,7 +7069,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050951">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050952"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;willingness to change behaviour&gt; regarding the cessation of behaviours.</obo:IAO_0000115>
         <rdfs:label>willingness to cease behaviour</rdfs:label>
     </owl:Class>
@@ -7080,7 +7080,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050952">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily disposition&gt; to change one&apos;s behaviour.</obo:IAO_0000115>
         <rdfs:label>willingness to change behaviour</rdfs:label>
     </owl:Class>
@@ -7091,7 +7091,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050953">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001127"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;desire&gt; for continued life of oneself.</obo:IAO_0000115>
         <rdfs:label>desire for continued life</rdfs:label>
     </owl:Class>
