@@ -3121,7 +3121,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050917">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A frequency of past bhaviour that is above a threshold.</obo:IAO_0000115>
         <rdfs:label>high frequency of past behaviour</rdfs:label>
     </owl:Class>
@@ -3132,7 +3132,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050918">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A frequency of past behaviour that is below a threshold.</obo:IAO_0000115>
         <rdfs:label>low frequency of past behaviour</rdfs:label>
     </owl:Class>
@@ -3143,7 +3143,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050919">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050806"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behavioural consequence that is negatively evaluated by an individual or a population.</obo:IAO_0000115>
         <rdfs:label>negative behavioural consequence</rdfs:label>
     </owl:Class>
@@ -3154,7 +3154,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050920">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050818"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A goal-directed behaviour whose goal is to search for and find opportunities that help meet needs or support attaining goals.</obo:IAO_0000115>
         <rdfs:label>opportunity-seeking behaviour</rdfs:label>
     </owl:Class>
