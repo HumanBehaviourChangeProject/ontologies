@@ -9562,7 +9562,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050921">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A data item that is about the rate at which a population changes their behaviour.</obo:IAO_0000115>
         <rdfs:label>behaviour change rate</rdfs:label>
     </owl:Class>
@@ -9573,7 +9573,7 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050922">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A person who has formed an intention to enact a specified behaviour, and has enacted that behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>actor</obo:IAO_0000118>
         <rdfs:comment>behaviour has to be specified
@@ -9587,7 +9587,7 @@ s. also behaviour enacter, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050923">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A person who has formed an intention to enact a specified behaviour, but has not acted on this intention.</obo:IAO_0000115>
         <rdfs:comment>behaviour has to be specified
 s. also behaviour enacter, behaviour intender</rdfs:comment>
@@ -9600,7 +9600,7 @@ s. also behaviour enacter, behaviour intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050924">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A person who has not formed an intention to enact a specified behaviour.</obo:IAO_0000115>
         <rdfs:comment>behaviour has to be specified
 s. also behaviour intender, behaviour non-intender</rdfs:comment>
@@ -9613,7 +9613,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050925">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050891"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social group&gt; of two people who interact and influence each other.</obo:IAO_0000115>
         <obo:IAO_0000232>This definition is based on the work of Scholz et al (2025), as published here: https://osf.io/2364r/</obo:IAO_0000232>
         <rdfs:label>dyad</rdfs:label>
