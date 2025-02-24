@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "Upper Level BCIO/BCIO_External_Imports*"
+  workflow_dispatch:
+permissions:
+    contents: write
+concurrency:
+  group: "expand_population"
+  cancel-in-progress: true
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    name: Expand population
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip' # caching pip dependencies
+      - name: Install dependencies
+        run: pip install git+https://github.com/ontology-tools/onto-spread-ed.git
+      - name: Build externals
+        run: ose externals build --out bcio_external.owl
+      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+        with:
+          add: 'bcio_external.owl'
+          default_author: 'github_actions'
+          message: "Built external imports"
+          push: true
