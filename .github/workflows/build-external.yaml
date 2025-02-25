@@ -11,9 +11,9 @@ concurrency:
   group: "build_external"
   cancel-in-progress: true
 jobs:
-  expand:
+  build:
     runs-on: ubuntu-latest
-    name: Expand population
+    name: Build externals
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
