@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: pip install git+https://github.com/ontology-tools/onto-spread-ed.git
       - name: Build externals
-        run: ose externals build --out bcio_external.owl
+        run: ose externals build
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
           add: 'bcio_external.owl'
