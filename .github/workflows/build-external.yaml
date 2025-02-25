@@ -3,7 +3,7 @@ on:
     branches:
       - master
     paths:
-      - "Upper Level BCIO/BCIO_External_Imports*"
+      - "Upper Level BCIO/inputs/BCIO_External_Imports*"
   workflow_dispatch:
 permissions:
     contents: write
