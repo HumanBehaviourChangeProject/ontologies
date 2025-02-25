@@ -69,6 +69,10 @@
         {
           "file": "Behaviour/bcio_behaviour.xlsx",
           "type": "classes"
+        },
+        {
+          "file": "Behaviour/bcio_behaviour_rels.xlsx",
+          "type": "relations"
         }
       ],
       "target": {
@@ -79,6 +83,25 @@
       },
       "needs": [
         "bcio_population",
+        "upper"
+      ],
+      "renameTermFile": null,
+      "addParentsFile": null
+    },
+    "bcio_engagement": {
+      "sources": [
+        {
+          "file": "Engagement/BCIO_Engagement.xlsx",
+          "type": "classes"
+        }
+      ],
+      "target": {
+        "file": "Engagement/bcio_engagement.owl",
+        "iri": "http://humanbehaviourchange.org/ontology/bcio_engagement.owl",
+        "ontology_annotations": {},
+        "publish": true
+      },
+      "needs": [
         "upper"
       ],
       "renameTermFile": null,
@@ -233,24 +256,6 @@
         "iri": "http://humanbehaviourchange.org/ontology/bcto.owl",
         "ontology_annotations": {},
         "publish": true
-      },
-      "needs": [
-        "upper"
-      ],
-      "renameTermFile": null,
-      "addParentsFile": null
-    },
-    "bcio_engagement": {
-      "sources": [
-        {
-          "file": "Engagement/BCIO_Engagement.xlsx",
-          "type": "classes"
-        }
-      ],
-      "target": {
-        "file": "Engagement/bcio_engagement.owl",
-        "iri": "http://humanbehaviourchange.org/ontology/bcio_engagement.owl",
-        "ontology_annotations": {}
       },
       "needs": [
         "upper"
