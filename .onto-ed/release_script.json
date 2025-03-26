@@ -1,7 +1,7 @@
 {
   "iri_prefix": "http://humanbehaviourchange.org/ontology/",
   "short_repository_name": "BCIO",
-  "full_repository_name": "b-gehrke/ontologies",
+  "full_repository_name": "HumanBehaviourChangeProject/ontologies",
   "external": {
     "sources": [
       {
@@ -10,8 +10,8 @@
       }
     ],
     "target": {
-      "file": "Upper Level BCIO/bcio_external.owl",
-      "iri": "http://humanbehaviourchange.org/ontology/bcio_external.owl",
+      "file": "Upper Level BCIO/bcio_external.owx",
+      "iri": "http://humanbehaviourchange.org/ontology/bcio_external.owx",
       "ontology_annotations": {},
       "publish": true
     },
@@ -292,7 +292,9 @@
     },
     {
       "name": "IMPORT_EXTERNAL",
-      "args": {}
+      "args": {
+        "use_existing_file": true
+      }
     },
     {
       "name": "VALIDATION",
