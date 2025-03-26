@@ -2,8 +2,10 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "Upper Level BCIO/inputs/BCIO_External_Imports*"
+    paths: 
+      - "Upper Level BCIO/inputs/BCIO_External_Imports.xlsx"
+      - "Upper Level BCIO/inputs/BCIO_External_Imports_New_Labels.csv"
+      - "Upper Level BCIO/inputs/BCIO_External_Imports_New_Parents.csv"
   workflow_dispatch:
 permissions:
     contents: write
@@ -22,7 +24,14 @@ jobs:
           cache: 'pip' # caching pip dependencies
       - name: Install dependencies
         run: pip install git+https://github.com/ontology-tools/onto-spread-ed.git
+      - name: Install ROBOT
+        run: |
+          curl -o /tmp/robot.jar -L https://github.com/ontodev/robot/releases/download/v1.9.7/robot.jar
+          curl -L https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > /tmp/robot
+          chmod +x /tmp/robot
       - name: Build externals
+        env:
+          ROBOT: /tmp/robot
         run: ose externals build -vvvvv
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
@@ -30,8 +39,3 @@ jobs:
           default_author: 'github_actions'
           message: "Built external imports"
           push: true
-      - uses: actions/upload-artifact@v4
-        with:
-          # A file, directory or wildcard pattern that describes what to upload
-          # Required.
-          path: .
