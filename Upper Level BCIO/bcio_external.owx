@@ -5498,11 +5498,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <Literal xml:lang="en">part of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000050</IRI>
-        <Literal>is part of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>http://purl.obolibrary.org/obo/BFO_0000050</IRI>
         <Literal>http://www.obofoundry.org/ro/#OBO_REL:part_of</Literal>
