@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_engagement.owl">
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owx"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
     
@@ -161,7 +161,7 @@
         <rdfs:comment>Describes the total number of engagement events in a BCI (e.g., participants received 10 sessions face-to-face or by phone), or the number of engagement events related to part of a BCI (e.g., 10% of people participated in 6 face-to-face sessions and 4 phone sessions). 
  
 Depending on how “number of BCI engagements” is reported in interventions, it can be annotated with different data items, e.g. (1) minimum (e.g., all participants joined at least 1 session), (2) maximum (e.g., only 10% of participants attended 5 sessions), (3) mean (e.g., participants joined 4 sessions on average) or (4) median (e.g., the median number of sessions participants attended was 4).</rdfs:comment>
-        <rdfs:label>number of BCI engagement events</rdfs:label>
+        <rdfs:label>number of behavioural BCI engagements</rdfs:label>
     </owl:Class>
     
 
@@ -313,13 +313,13 @@ Depending on how “aggregate BCI engagement duration” is reported in interven
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A cognitive BCI engagement that involves an appraisal process.</obo:IAO_0000115>
-        <rdfs:comment>“Appraisal process” is defined as “A mental process that gives rise to an appraisal.”</rdfs:comment>
-        <rdfs:label>cognitive BCI engagement through judging.</rdfs:label>
+        <rdfs:comment>“Judging” is defined as “A &lt;mental process&gt; during which information is evaluated, the outcome of which is a belief or opinion.”</rdfs:comment>
+        <rdfs:label>cognitive BCI engagement through judging</rdfs:label>
     </owl:Class>
     
 
@@ -944,12 +944,6 @@ The opposite of interest is boredom.</rdfs:comment>
         <obo:IAO_0000115>An affective process that is a synchronized aggregate of constituent mental processes, including an appraisal process, which is valenced, has an object, and gives rise to an action tendency.</obo:IAO_0000115>
         <rdfs:label>emotion process</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM_000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000002"/>
     
 
 
