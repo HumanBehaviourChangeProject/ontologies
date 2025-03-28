@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl">
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owx"/>
     </owl:Ontology>
     
 
@@ -251,7 +251,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>A core relation that holds between a part and its whole</obo:IAO_0000115>
-        <rdfs:label>is part of</rdfs:label>
+        <rdfs:label>part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -509,6 +509,12 @@
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_001000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_002000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process in which a BCI is applied in a given context, including BCI engagement and outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI scenario</obo:IAO_0000118>
@@ -619,7 +625,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000112>This includes individual people, groups of people, and organisations.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role played by a person, population or organisation that provides a BCI.</obo:IAO_0000115>
@@ -856,7 +862,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_030000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_030000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000112>What counts as substantively is subject to judgement. The level and nature of the contribution can be defined using the CReDiT taxonomy (https://casrai.org/credit/).</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role played by a person that contributes substantively to production or reporting of a BCI evaluation study.</obo:IAO_0000115>
@@ -1184,12 +1190,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
@@ -1205,6 +1205,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000144 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906"/>
     
 
 
