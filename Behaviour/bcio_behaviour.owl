@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl">
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owx"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl"/>
     </owl:Ontology>
@@ -218,6 +218,17 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_002000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_002000">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_042000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>Human behaviour that is an intervention outcome.</obo:IAO_0000115>
+        <rdfs:label>behaviour change intervention outcome behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006085 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006085">
@@ -235,7 +246,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006095">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050441"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An &lt;socially-related behaviour&gt; that is commonly enacted by people that are part of a social environmental system.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;socially-related behaviour&gt; that is commonly enacted by people that are part of a social environmental system.</obo:IAO_0000115>
         <rdfs:label>normative behaviour</rdfs:label>
     </owl:Class>
     
@@ -256,9 +267,9 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006158 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006158">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An &lt;experience-related behaviour&gt; that results from a learnt stimulus-behaviour co-occurrence.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;individual human behaviour&gt; that results from a learnt stimulus-behaviour co-occurrence.</obo:IAO_0000115>
         <rdfs:label>habitual behaviour</rdfs:label>
     </owl:Class>
     
@@ -2078,7 +2089,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050437">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that relates to health.</obo:IAO_0000115>
+        <obo:IAO_0000115>An individual human behaviour that relates to health of oneself or others.</obo:IAO_0000115>
         <rdfs:label>health-related behaviour</rdfs:label>
     </owl:Class>
     
@@ -2155,9 +2166,9 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050444">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A behavioural attribute that is to what extent the behaviour is a response to reflective motivation or thinking.</obo:IAO_0000115>
+        <obo:IAO_0000115>A behavioural attribute that is the degree to which the behaviour is under the control of reflective motivation.</obo:IAO_0000115>
         <rdfs:comment>This class is a dimension and involves any conscious thought processes that lead to a behaviour in some way, even if those processes are themselves influenced by emotional processes and biases.</rdfs:comment>
-        <rdfs:label>reflectiveness</rdfs:label>
+        <rdfs:label>behavioural reflectiveness</rdfs:label>
     </owl:Class>
     
 
@@ -2695,7 +2706,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050813 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050813">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
@@ -2703,7 +2714,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that is emotionally driven.</obo:IAO_0000115>
+        <obo:IAO_0000115>An experience-related behaviour that is caused by an emotion process.</obo:IAO_0000115>
         <rdfs:label>emotional behaviour</rdfs:label>
     </owl:Class>
     
@@ -2749,17 +2760,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An environmental system management behaviour that contributes to sustaining the ecosystem.</obo:IAO_0000115>
         <rdfs:label>environmental sustainability behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050817 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050817">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050428"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A behavioural frequency about the number of times a person has enacted a behaviour per unit of time.</obo:IAO_0000115>
-        <rdfs:label>frequency of past behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -2888,18 +2888,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050827 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050827">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that is the target of an intervention and has been previously enacted.</obo:IAO_0000115>
-        <rdfs:comment>This is a relational class (relates one behaviour to another).</rdfs:comment>
-        <rdfs:label>past occurrence of a target behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050828 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050828">
@@ -2966,7 +2954,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that is reflectively driven.</obo:IAO_0000115>
+        <obo:IAO_0000115>An individual human behaviour that is caused by a reflective mental process.</obo:IAO_0000115>
         <rdfs:label>reflective behaviour</rdfs:label>
     </owl:Class>
     
@@ -2975,10 +2963,10 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050833 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050833">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050444"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A behavioural attribute in which the behaviour is caused by a reflective mental process.</obo:IAO_0000115>
-        <rdfs:label>reflectively driven</rdfs:label>
+        <obo:IAO_0000115>Behavioural reflectiveness in which the behaviour is predominantly controlled by reflective motivation.</obo:IAO_0000115>
+        <rdfs:label>reflectively controlled</rdfs:label>
     </owl:Class>
     
 
@@ -2986,9 +2974,9 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050834 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050834">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that involves monitoring and acting upon some parts of the person or their environment.</obo:IAO_0000115>
+        <obo:IAO_0000115>An experience-related behaviour that involves monitoring and acting upon some parts of the person or their environment.</obo:IAO_0000115>
         <rdfs:comment>Environment here includes the social and physical environment and includes behaviours involved in monitoring of others or self, action planning, and goal setting.</rdfs:comment>
         <rdfs:label>regulatory behaviour</rdfs:label>
     </owl:Class>
@@ -3028,17 +3016,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050838 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050838">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that occurs after the behaviour has been subject to extinction in operant learning.</obo:IAO_0000115>
-        <rdfs:label>spontaneous recovery behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050839 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050839">
@@ -3069,6 +3046,17 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An experience-related behaviour that involves taking action to engage with some stimulus that is judged to be rewarding by the person.</obo:IAO_0000115>
         <rdfs:label>approach behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050846 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050846">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;individual human behaviour&gt; in which a person substitutes a more desired behaviour for a less desired behaviour.</obo:IAO_0000115>
+        <rdfs:label>behavioural substitution</rdfs:label>
     </owl:Class>
     
 
@@ -3113,28 +3101,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behavioural attribute that is the level of convenience, ease or comfort of a behaviour.</obo:IAO_0000115>
         <rdfs:label>behavioural ease</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050917 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050917">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A frequency of past bhaviour that is above a threshold.</obo:IAO_0000115>
-        <rdfs:label>high frequency of past behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050918 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050918">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A frequency of past behaviour that is below a threshold.</obo:IAO_0000115>
-        <rdfs:label>low frequency of past behaviour</rdfs:label>
     </owl:Class>
     
 
