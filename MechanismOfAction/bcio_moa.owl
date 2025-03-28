@@ -18,7 +18,7 @@
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl">
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl"/>
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owx"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl"/>
     </owl:Ontology>
@@ -1308,7 +1308,7 @@ orientation&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006081 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;role&gt; that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
         <rdfs:comment>A role can be assigned without being realised. A person realises a role by doing something.</rdfs:comment>
@@ -1491,7 +1491,7 @@ As &apos;financial behavioural opportunity&apos; will involve some physical mone
         <obo:IAO_0000112> &quot;Institutions / Corporate Interests / Media&quot; in the Ecological Model for Preventing Type 2 Diabetes</obo:IAO_0000112>
         <obo:IAO_0000112>&quot;System norms&quot; in the Diffusion of Innovations</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An &lt;socially-related behaviour&gt; that is commonly enacted by people that are part of a social environmental system.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;socially-related behaviour&gt; that is commonly enacted by people that are part of a social environmental system.</obo:IAO_0000115>
         <rdfs:comment>Normative behaviour can be an MoA or outcome depending on how &apos;normative behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; (definition: Human behavior that is an intervention outcome.), which would not be an MoA. When an intervention targets a normative behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</rdfs:comment>
         <rdfs:label>normative behaviour</rdfs:label>
     </owl:Class>
@@ -2240,11 +2240,11 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006158 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006158">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000112> &quot;Habit&quot; in the  Theory of Interpersonal Behavior</obo:IAO_0000112>
         <obo:IAO_0000112>&quot;Habits&quot; in the Motivation-Opportunities-Abilities</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An &lt;experience-related behaviour&gt; that results from a learnt stimulus-behaviour co-occurrence.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;individual human behaviour&gt; that results from a learnt stimulus-behaviour co-occurrence.</obo:IAO_0000115>
         <rdfs:comment>A learnt stimulus-behaviour co-occurrence can lead to activation or execution of a habitual behaviour.
 
 Habitual behaviour can be an MoA or outcome depending on how &apos;habitual behaviour&apos; is described in an intervention. The Behaviour Change-Intervention Ontology includes the class &apos;outcome behaviour&apos; (definition: Human behavior that is an intervention outcome.), which would not be an MoA. When an intervention targets a habitual behaviour to achieve an outcome behaviour, the former qualifies as an MoA.</rdfs:comment>
@@ -6222,6 +6222,18 @@ In this definition, ‘change’ refers to change from what would have been the 
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050838 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050838">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <obo:IAO_0000112>&quot;Spontaneous recovery&quot; in the Social Learning Theory</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;bodily process&gt; in which a previously learned and then extinguished stimulus-response association becomes as least partially re-established without new pairing with a reinforcer.</obo:IAO_0000115>
+        <rdfs:label>spontaneous recovery</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050843 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050843">
@@ -6871,7 +6883,7 @@ In this definition, ‘change’ refers to change from what would have been the 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050944"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Knowledge regarding one&apos;s environment&gt; pertaining to people, their pets, social and cultural institutions and processes that influence one&apos;s life</obo:IAO_0000115>
-        <rdfs:label>Knowledge regarding social environment</rdfs:label>
+        <rdfs:label>knowledge regarding social environment</rdfs:label>
     </owl:Class>
     
 
@@ -6892,7 +6904,7 @@ In this definition, ‘change’ refers to change from what would have been the 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050935">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An &lt;appraisal&gt; regarding one&apos;s social group memberships.</obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal&gt; regarding one&apos;s social group memberships.</obo:IAO_0000115>
         <rdfs:label>appraisal of social identity</rdfs:label>
     </owl:Class>
     
@@ -7126,7 +7138,7 @@ In this definition, ‘change’ refers to change from what would have been the 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050957"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;organisational attribute&gt; that is the strength and depth of formal authority relations between members of an organisation.</obo:IAO_0000115>
-        <rdfs:label>degree of organisational hierarchie</rdfs:label>
+        <rdfs:label>degree of organisational hierarchy</rdfs:label>
     </owl:Class>
     
 
@@ -7183,12 +7195,6 @@ In this definition, ‘change’ refers to change from what would have been the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
@@ -7203,6 +7209,12 @@ In this definition, ‘change’ refers to change from what would have been the 
     <!-- http://purl.obolibrary.org/obo/BFO_0000144 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906"/>
     
 
 

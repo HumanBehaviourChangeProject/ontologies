@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl">
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owx"/>
         <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"/>
     </owl:Ontology>
     
@@ -9222,6 +9222,17 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050428 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050428">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about the number of times a behaviour occurs in a time period.</obo:IAO_0000115>
+        <rdfs:label>behavioural frequency</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050474 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050474">
@@ -9467,6 +9478,28 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050817 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050817">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050428"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A behavioural frequency about the number of times a person has enacted a behaviour per unit of time.</obo:IAO_0000115>
+        <rdfs:label>frequency of past behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050827 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050827">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050481"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A past behaviour that is the target of an intervention.</obo:IAO_0000115>
+        <rdfs:label>past occurrence of a target behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050886 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050886">
@@ -9554,6 +9587,28 @@
         <obo:IAO_0000115>A &lt;personal attribute&gt; that, together with other attributes, characterises a person’s position in society.</obo:IAO_0000115>
         <rdfs:comment>This can include social history, current circumstances, age, gender identity, occupation, education level, socio-economic position (status or group), ethnicity, sexual orientation, disability</rdfs:comment>
         <rdfs:label>socio-demographic characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050917 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050917">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A frequency of past bhaviour that is above a threshold.</obo:IAO_0000115>
+        <rdfs:label>high frequency of past behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050918 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050918">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050817"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A frequency of past behaviour that is below a threshold.</obo:IAO_0000115>
+        <rdfs:label>low frequency of past behaviour</rdfs:label>
     </owl:Class>
     
 
