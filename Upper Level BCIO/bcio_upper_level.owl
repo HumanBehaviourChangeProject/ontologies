@@ -1154,7 +1154,7 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050916">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human activity that is performed by someone in an intervention population, prompted by this intervention and influences the effects of the intervention on its outcome.</obo:IAO_0000115>
+        <obo:IAO_0000115>An individual human activity of an intervention participant within one or more parts of the intervention.</obo:IAO_0000115>
         <rdfs:label>participant engagement with intervention</rdfs:label>
     </owl:Class>
     
