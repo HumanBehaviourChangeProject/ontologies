@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-03-28"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-05-01"/>
         <terms:title>Behaviour Change Intervention Ontology</terms:title>
         <rdfs:comment>The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery, Style of Delivery, Source, Mechanisms of Action, Behaviour and Behaviour Change Techniques. Additional modules will be added soon.</rdfs:comment>
     </owl:Ontology>
@@ -28078,17 +28078,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050799 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050799">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; of the extent to which something is good or beneficial.</obo:IAO_0000115>
-        <rdfs:label>appraisal of desirability</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050800 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050800">
@@ -29392,7 +29381,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050916">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_040000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human activity that is performed by someone in an intervention population, prompted by this intervention and influences the effects of the intervention on its outcome.</obo:IAO_0000115>
+        <obo:IAO_0000115>An individual human activity of an intervention participant within one or more parts of the intervention.</obo:IAO_0000115>
         <rdfs:label>participant engagement with intervention</rdfs:label>
     </owl:Class>
     
@@ -31236,11 +31225,13 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>A role is particular behaviour which a material entity may exhibit.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:50906</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>chemical realizable</rdfs:label>
         <rdfs:label>role</rdfs:label>
     </owl:Class>
     
@@ -32033,7 +32024,6 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/ENVO_00000469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <obo:IAO_0000112>research lab</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -32305,25 +32295,6 @@ The class &apos;environmental system&apos; relates to what is found in the physi
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_03501288 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03501288">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A material entity which has been designed to promote the accomplishment of one or more defined tasks.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-9578-0788"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-15T04:00:01.750Z</oboInOwl:creation_date>
-        <rdfs:comment>Facilities can be temporary or permanent constructions, ad hoc arrangements of material entities, or any other configuration of things that support the accomplishment of defined tasks or functions.</rdfs:comment>
-        <rdfs:label xml:lang="en">facility</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A material entity which has been designed to promote the accomplishment of one or more defined tasks.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://en.wiktionary.org/wiki/facility"/>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
@@ -32414,26 +32385,6 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <owl:annotatedTarget>The acquisition and processing of information and/or the storage and retrieval of this information over time.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:jid</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:8938125</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0007612 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007612">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007611"/>
-        <obo:IAO_0000115>Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>Wikipedia:Learning</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0007612</oboInOwl:id>
-        <rdfs:label>learning</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007612"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0582227089</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ISBN:0721662544</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -32531,7 +32482,6 @@ The class &apos;environmental system&apos; relates to what is found in the physi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0046958">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050239"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007612"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A simple form of learning whereby the repeated presence of a stimulus leads to a change in the probability or strength of the response to that stimulus. There is no association of one type of stimulus with another, rather it is a generalized response to the environment.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>unconditional response</oboInOwl:hasExactSynonym>
@@ -32653,7 +32603,6 @@ The class &apos;environmental system&apos; relates to what is found in the physi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098596">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050800"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
         <obo:IAO_0000112> &quot;Imitation&quot; in the Social Learning Theory</obo:IAO_0000112>
         <obo:IAO_0000112> &quot;Role modelling&quot; in the Six-staged Model of Communication Effects</obo:IAO_0000112>
         <obo:IAO_0000112>&quot;Copying&quot; in the Social Learning Theory</obo:IAO_0000112>
@@ -32674,29 +32623,6 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <owl:annotatedTarget>Learning in which new behaviors are acquired through imitation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Imitative_learning&amp;oldid=593192364</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0098597 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098597">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007612"/>
-        <obo:IAO_0000115>Learning that occurs through observing the behavior of others.</obo:IAO_0000115>
-        <oboInOwl:created_by>dos</oboInOwl:created_by>
-        <oboInOwl:creation_date>2014-04-10T11:07:10Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref>Wikipedia:Observational_learning</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0098597</oboInOwl:id>
-        <rdfs:comment>Observation here is used in a broad sense to include perception of the behavior of others via any form or combination of forms of sensory perception (visual, auditory etc). Observational learning is broader than imitative learning in that it does not require a duplication of the behavior exhibited by the model.</rdfs:comment>
-        <rdfs:label>observational learning</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Learning that occurs through observing the behavior of others.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Observational_learning&amp;oldid=603524137</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -33361,7 +33287,6 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     <!-- http://purl.obolibrary.org/obo/MFOEM_000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000085">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050799"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000226"/>
         <obo:IAO_0000112>&quot;Value of consequences&quot; in the Theory of Interpersonal Behavior</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -33871,17 +33796,6 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000021"/>
-        <obo:IAO_0000115>A communication process is an interpersonal process that involves the transmission of information between two organisms.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">communication</rdfs:label>
-        <rdfs:seeAlso>http://purl.obolibrary.org/obo/OMRSE_00000192</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
@@ -34280,22 +34194,10 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000092 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
-        <obo:IAO_0000115 xml:lang="en">A role that inheres in an organism that is able to receive benefits from an insurance policy. The role, if realized, is realized by receiving benefits that are covered by the insurance policy.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">insured party role</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000094">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015158"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000092"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An insured party role that inheres in a person who participates in the creation of the insurance contract and is eligible to receive benefits as specified by the insurance contract.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An insured party role that inheres in a person who participates in the creation of the insurance contract and is eligible to receive benefits as specified by the insurance contract.</obo:IAO_0000115>
