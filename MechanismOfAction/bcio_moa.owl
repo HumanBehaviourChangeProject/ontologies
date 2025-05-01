@@ -6200,17 +6200,6 @@ In this definition, ‘change’ refers to change from what would have been the 
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050799 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050799">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; of the extent to which something is good or beneficial.</obo:IAO_0000115>
-        <rdfs:label>appraisal of desirability</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050800 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050800">
@@ -7690,7 +7679,7 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
     <!-- http://purl.obolibrary.org/obo/MFOEM_000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000085">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050799"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000226"/>
         <obo:IAO_0000112>&quot;Value of consequences&quot; in the Theory of Interpersonal Behavior</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;appraisal of desirability&gt; that represents an evaluation of the desirability of the expected consequences of an event.</obo:IAO_0000115>
@@ -7855,6 +7844,12 @@ Distinguished from fear since it is triggered by a distal threat whereas fear is
         <obo:IAO_0000115>A &lt;emotion process&gt; is an emotion that has a negative valence.</obo:IAO_0000115>
         <rdfs:label>negative emotion</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000226"/>
     
 
 
