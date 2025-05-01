@@ -515,9 +515,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/MF_0000033"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/MF_0000040"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/MF_0000041"/>
     </Declaration>
     <Declaration>
@@ -1185,6 +1182,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/ENVO_03501288"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/ENVO_00000469"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/ENVO_00000562"/>
         <Class IRI="http://purl.obolibrary.org/obo/ENVO_00000002"/>
     </SubClassOf>
@@ -1603,10 +1604,6 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MF_0000033"/>
         <Class IRI="http://purl.obolibrary.org/obo/MF_0000032"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MF_0000040"/>
-        <Class IRI="http://purl.obolibrary.org/obo/MF_0000021"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MF_0000041"/>
@@ -11359,21 +11356,6 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/MF_0000033</IRI>
         <Literal xml:lang="en">mental disposition</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/MF_0000040</IRI>
-        <Literal>A communication process is an interpersonal process that involves the transmission of information between two organisms.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/MF_0000040</IRI>
-        <Literal xml:lang="en">communication</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>http://purl.obolibrary.org/obo/MF_0000040</IRI>
-        <Literal>http://purl.obolibrary.org/obo/OMRSE_00000192</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
