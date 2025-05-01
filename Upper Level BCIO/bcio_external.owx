@@ -248,9 +248,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/ENVO_01001886"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ENVO_03501288"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/GAZ_00000448"/>
     </Declaration>
     <Declaration>
@@ -261,9 +258,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007611"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0007612"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007613"/>
@@ -294,9 +288,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0098596"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0098597"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000007"/>
@@ -579,9 +570,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000076"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000092"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000094"/>
@@ -1179,10 +1167,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/ENVO_00000469"/>
-        <Class IRI="http://purl.obolibrary.org/obo/ENVO_03501288"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/ENVO_00000469"/>
         <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
     </SubClassOf>
     <SubClassOf>
@@ -1242,10 +1226,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/ENVO_00000191"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/ENVO_03501288"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0003008"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0032501"/>
     </SubClassOf>
@@ -1266,10 +1246,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/GO_0050890"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0007612"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0007611"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007613"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007611"/>
     </SubClassOf>
@@ -1284,10 +1260,6 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0032501"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0008150"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0046958"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0007612"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0046959"/>
@@ -1308,14 +1280,6 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0051705"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007610"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0098596"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0098597"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0098597"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0007612"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000007"/>
@@ -1692,14 +1656,6 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000076"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000092"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000094"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000092"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
@@ -7665,35 +7621,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <Literal xml:lang="en">landform</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <IRI>https://en.wiktionary.org/wiki/facility</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/ENVO_03501288</IRI>
-        <Literal xml:lang="en">A material entity which has been designed to promote the accomplishment of one or more defined tasks.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/ENVO_03501288</IRI>
-        <IRI>https://orcid.org/0000-0002-9578-0788</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/ENVO_03501288</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-15T04:00:01.750Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/ENVO_03501288</IRI>
-        <Literal>Facilities can be temporary or permanent constructions, ad hoc arrangements of material entities, or any other configuration of things that support the accomplishment of defined tasks or functions.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/ENVO_03501288</IRI>
-        <Literal xml:lang="en">facility</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GAZ_00000448</IRI>
         <Literal>A reference to a place on the Earth, by its name or by its geographical location.</Literal>
@@ -7896,39 +7823,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0007611</IRI>
         <Literal>learning or memory</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal>ISBN:0582227089</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal>ISBN:0721662544</Literal>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0007612</IRI>
-        <Literal>Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0007612</IRI>
-        <Literal>Wikipedia:Learning</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0007612</IRI>
-        <Literal>biological_process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0007612</IRI>
-        <Literal>GO:0007612</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0007612</IRI>
-        <Literal>learning</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -8424,54 +8318,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0098596</IRI>
         <Literal>imitative learning</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal>GOC:dos</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal>Wikipedia:Observational_learning&amp;oldid=603524137</Literal>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0098597</IRI>
-        <Literal>Learning that occurs through observing the behavior of others.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0098597</IRI>
-        <Literal>dos</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0098597</IRI>
-        <Literal>2014-04-10T11:07:10Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0098597</IRI>
-        <Literal>Wikipedia:Observational_learning</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0098597</IRI>
-        <Literal>biological_process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0098597</IRI>
-        <Literal>GO:0098597</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0098597</IRI>
-        <Literal>Observation here is used in a broad sense to include perception of the behavior of others via any form or combination of forms of sensory perception (visual, auditory etc). Observational learning is broader than imitative learning in that it does not require a duplication of the behavior exhibited by the model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0098597</IRI>
-        <Literal>observational learning</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -11932,21 +11778,6 @@ for now.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/OMRSE_00000076</IRI>
         <Literal xml:lang="en">household</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/OMRSE_00000092</IRI>
-        <Literal xml:lang="en">A role that inheres in an organism that is able to receive benefits from an insurance policy. The role, if realized, is realized by receiving benefits that are covered by the insurance policy.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/OMRSE_00000092</IRI>
-        <Literal xml:lang="en">Amanda Hicks</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OMRSE_00000092</IRI>
-        <Literal xml:lang="en">insured party role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
