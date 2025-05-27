@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-05-01"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-05-26"/>
         <terms:title>Behaviour Change Intervention Ontology</terms:title>
         <rdfs:comment>The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery, Style of Delivery, Source, Mechanisms of Action, Behaviour and Behaviour Change Techniques. Additional modules will be added soon.</rdfs:comment>
     </owl:Ontology>
@@ -1879,10 +1879,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001303">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;disposition&gt; that is realised as a benefit process.</obo:IAO_0000115>
         <obo:IAO_0000115>A process that produces a good or helpful outcome.</obo:IAO_0000115>
         <obo:IAO_0000118>benefit</obo:IAO_0000118>
         <rdfs:label>beneficial process</rdfs:label>
@@ -3083,7 +3080,6 @@ orientation&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;role&gt; that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
         <obo:IAO_0000115>A role that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
@@ -3599,12 +3595,12 @@ A conditioned stimulus is a stimulus that, through association with an unconditi
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006124 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006124">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006119"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050965"/>
         <obo:IAO_0000112>&quot;Generalisation&quot; in the Social Learning Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>&lt;Associative learning&gt; in which prior learning that an antecedent stimulus signals certain consequences of behaviour spreads to a stimulus that differs in certain aspects from the original antecedent stimulus.</obo:IAO_0000115>
+        <obo:IAO_0000115>&lt;Generalisation in learning&gt; concerning the antecedent stimulus.</obo:IAO_0000115>
         <rdfs:comment>The label &apos;Generalisation of target  behavior&apos; is used for a behaviour change technique (BCT) in the BCT Taxonomy v1 (Michie et al., 2013). The definition for this BCT reads as follows: &apos;Advise to perform the wanted behaviour,  which is already performed in a particular situation, in another situation.&apos; Therefore, the BCT is the advice to perform the behaviour, whereas the MoA is a learning process that occurs in the brain.</rdfs:comment>
-        <rdfs:label>generalisation in learning</rdfs:label>
+        <rdfs:label>stimulus generalisation in learning</rdfs:label>
     </owl:Class>
     
 
@@ -4117,9 +4113,9 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006303 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006303">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050964"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;belief&gt; about whether oneself or another person is obligated to take a certain course of action.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;belief about responsibility&gt; to take a particular action.</obo:IAO_0000115>
         <rdfs:label>belief about responsibility to act</rdfs:label>
     </owl:Class>
     
@@ -7403,7 +7399,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000112>This includes individual people, groups of people, and organisations.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role played by a person, population or organisation that provides a BCI.</obo:IAO_0000115>
@@ -7449,7 +7445,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010003 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in a person source.</obo:IAO_0000115>
         <rdfs:label>personal role of source</rdfs:label>
@@ -8573,7 +8569,6 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010084">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role which inheres in a person and is realised by being enrolled in an educational institution or a formal programme of professional training.</obo:IAO_0000115>
         <rdfs:label>student or trainee role</rdfs:label>
@@ -19778,7 +19773,7 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_030000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_030000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000112>What counts as substantively is subject to judgement. The level and nature of the contribution can be defined using the CReDiT taxonomy (https://casrai.org/credit/).</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role played by a person that contributes substantively to production or reporting of a BCI evaluation study.</obo:IAO_0000115>
@@ -29043,10 +29038,10 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050874 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050874">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050968"/>
         <obo:IAO_0000112>&quot;Consciousness raising&quot; in the Transtheoretical Model</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;mental process&gt; that increases the accuracy of one’s cognitive representation of oneself through engaging with a problem.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;self-awareness process&gt; that increases the accuracy of one’s cognitive representation of oneself through engaging with a problem.</obo:IAO_0000115>
         <rdfs:label>self-awareness process in relation to a problem</rdfs:label>
     </owl:Class>
     
@@ -29844,6 +29839,187 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;characteristic&gt; that inheres in an organisation.</obo:IAO_0000115>
         <rdfs:label>organisational attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050958 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050958">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;disposition&gt; that is realised as a benefit process.</obo:IAO_0000115>
+        <rdfs:label>beneficialness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050959 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050959">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;behavioural attribute&gt; that is a discrepancy between the person’s ability to perform a behaviour and their performance in a given scenario.</obo:IAO_0000115>
+        <rdfs:label>capability-performance gap</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050960 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050960">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;subjective affective feeling&gt; involving negative affect associated with a feeling of need.</obo:IAO_0000115>
+        <rdfs:label>feeling of need frustration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050961 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050961">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;behavioural attribute&gt; in which a behaviour is not under the control of some self-regulation process</obo:IAO_0000115>
+        <rdfs:label>Non self-regulated behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050962 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050962">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050965"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>&lt;Generalisation in learning&gt; concerning the behavioural response.</obo:IAO_0000115>
+        <rdfs:label>response generalisation in learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050963 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050963">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050964"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;belief about responsibility&gt;  about whether one should be accountable for the outcomes of an event.</obo:IAO_0000115>
+        <rdfs:label>belief about accountability for the consequences of an action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050964 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050964">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;belief&gt; about who should undertake or be accountable for a behaviour.</obo:IAO_0000115>
+        <rdfs:label>belief about responsibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050965 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050965">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006119"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>&lt;Associative learning&gt; in which prior learning that an antecedent stimulus signals certain consequences of a behaviour spreads to a stimulus or behaviour that differs from the original stimulus or behaviour.</obo:IAO_0000115>
+        <rdfs:label>generalisation in learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050966 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050966">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050746"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;proximal goal&gt; in which the end state is pleasure or relief from displeasure.</obo:IAO_0000115>
+        <obo:IAO_0000118>pleasure</obo:IAO_0000118>
+        <rdfs:label>hedonic goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050967 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050967">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050708"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;moral personal value&gt; concerning the well-being of the natural environment and biosphere.</obo:IAO_0000115>
+        <obo:IAO_0000118>biospheric value</obo:IAO_0000118>
+        <rdfs:label>pro-environmental personal value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050968 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050968">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050753"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;reflective mental process&gt; through which one becomes aware of and understands their bodily processes or dispositions and their consequences.</obo:IAO_0000115>
+        <rdfs:label>self-awareness process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050969 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050969">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006064"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>a &lt;psychological need&gt; to have access to sufficient amounts of space.</obo:IAO_0000115>
+        <rdfs:label>need for access to space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050970 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050970">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006064"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>a &lt;psychological need&gt; to be positively evaluated by others.</obo:IAO_0000115>
+        <rdfs:comment>If you are looking for appreciation by others, rather than the need for it, please consider using &lt;appreciation by others&gt;</rdfs:comment>
+        <rdfs:label>need for appreciation by others</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050971 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050971">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006064"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>a &lt;psychological need&gt; to experience the natural environment.</obo:IAO_0000115>
+        <rdfs:label>need for natural environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050972 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050972">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006064"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>a &lt;psychological need&gt; for &lt;privacy&gt;</obo:IAO_0000115>
+        <rdfs:comment>If you are looking for privacy, rather than the need for privacy, please consider using &lt;privacy&gt;</rdfs:comment>
+        <rdfs:label>need for privacy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050974 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050974">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006064"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>a &lt;psychological need&gt; for &lt;social justice&gt;</obo:IAO_0000115>
+        <rdfs:comment>If you are looking for social justice, rather than the need for social justice, please consider using &lt;social justice&gt;</rdfs:comment>
+        <rdfs:label>need for social justice</rdfs:label>
     </owl:Class>
     
 
