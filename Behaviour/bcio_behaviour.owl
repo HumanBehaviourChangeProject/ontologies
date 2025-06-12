@@ -159,6 +159,18 @@
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000019 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000019"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000020 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000020"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -192,18 +204,6 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002092 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002092"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002223"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002229 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002229"/>
     
 
 
@@ -340,6 +340,18 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000019"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000020"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006085"/>
             </owl:Restriction>
@@ -353,18 +365,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002223"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002229"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2063,6 +2063,17 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050434 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050434">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
+                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050814"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050431"/>
         <obo:IAO_0000112>Greeting customers cheerily when tired has high emotional management exertion expended on a behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
@@ -2723,17 +2734,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050814 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050814">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
-                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050814"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behavioural attribute in which the behaviour is caused by an emotion process.</obo:IAO_0000115>

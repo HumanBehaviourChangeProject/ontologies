@@ -8966,8 +8966,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015785">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of unemployed status in a population.</obo:IAO_0000115>
-        <rdfs:label>unemployed status population statistic</rdfs:label>
+        <obo:IAO_0000115>The aggregate of unemployed in a population.</obo:IAO_0000115>
+        <rdfs:label>unemployed population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -8977,8 +8977,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015786">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015785"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The percentage of unemployed status in a population.</obo:IAO_0000115>
-        <rdfs:label>percentage unemployed status population statistic</rdfs:label>
+        <obo:IAO_0000115>The percentage of unemployed in a population.</obo:IAO_0000115>
+        <rdfs:label>percentage unemployed population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -8988,8 +8988,8 @@
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015787">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015785"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The proportion of unemployed status in a population.</obo:IAO_0000115>
-        <rdfs:label>proportion unemployed status population statistic</rdfs:label>
+        <obo:IAO_0000115>The proportion of unemployed in a population.</obo:IAO_0000115>
+        <rdfs:label>proportion unemployed population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -9676,6 +9676,39 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050975 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050975">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;human population&gt; whose members are people with an intervention source role for a specified intervention.</obo:IAO_0000115>
+        <rdfs:label>people with intervention source role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050976 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050976">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item about the number of people in a population.</obo:IAO_0000115>
+        <rdfs:label>number of people in a population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050977 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050977">
+        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An employment status in which the person is not employed or self-employed, is looking for work and able to start in paid employment.</obo:IAO_0000115>
+        <rdfs:label>unemployed</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -9886,17 +9919,6 @@ For instance, having a musical ability is ordinarily an ability that is positive
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A personal attribute reflecting a person&apos;s economic and social position in relation to others, based on their income, education, or occupation.</obo:IAO_0000115>
         <rdfs:label>socioeconomic status</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010026 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010026">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A personal attribute inhering in a person by virtue of that person not bearing a role realised in an employment process, but being eligible for and currently seeking paid work.</obo:IAO_0000115>
-        <rdfs:label>unemployed status</rdfs:label>
     </owl:Class>
     
 
