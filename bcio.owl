@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-05-26"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-06-12"/>
         <terms:title>Behaviour Change Intervention Ontology</terms:title>
         <rdfs:comment>The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery, Style of Delivery, Source, Mechanisms of Action, Behaviour and Behaviour Change Techniques. Additional modules will be added soon.</rdfs:comment>
     </owl:Ontology>
@@ -1070,6 +1070,30 @@ WHERE {
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000019 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000019">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115>A relation between an occurrent x and a one-dimensional temporal entity such that the one-dimensional temporal entity designates the latest boundary of x&apos;s existence or manifestation.</obo:IAO_0000115>
+        <rdfs:label>has end time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000020 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000020">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115>A relation between an occurrent x and a one-dimensional temporal entity such that the one-dimensional temporal entity designates the earliest boundary of x&apos;s existence or manifestation.</obo:IAO_0000115>
+        <rdfs:label>has start time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
@@ -1454,30 +1478,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:comment>A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.</rdfs:comment>
         <rdfs:label xml:lang="en">temporally related to</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002223">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <obo:IAO_0000115>inverse of starts with</obo:IAO_0000115>
-        <rdfs:label>starts</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002229 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002229">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <obo:IAO_0000115>inverse of ends with</obo:IAO_0000115>
-        <rdfs:label>ends</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -18765,8 +18765,8 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015785">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of unemployed status in a population.</obo:IAO_0000115>
-        <rdfs:label>unemployed status population statistic</rdfs:label>
+        <obo:IAO_0000115>The aggregate of unemployed in a population.</obo:IAO_0000115>
+        <rdfs:label>unemployed population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -18776,8 +18776,8 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015786">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015785"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The percentage of unemployed status in a population.</obo:IAO_0000115>
-        <rdfs:label>percentage unemployed status population statistic</rdfs:label>
+        <obo:IAO_0000115>The percentage of unemployed in a population.</obo:IAO_0000115>
+        <rdfs:label>percentage unemployed population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -18787,8 +18787,8 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015787">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015785"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The proportion of unemployed status in a population.</obo:IAO_0000115>
-        <rdfs:label>proportion unemployed status population statistic</rdfs:label>
+        <obo:IAO_0000115>The proportion of unemployed in a population.</obo:IAO_0000115>
+        <rdfs:label>proportion unemployed population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -19899,6 +19899,18 @@ workplace, and safety of processes for the production of goods and services. The
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000019"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000020"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006085"/>
             </owl:Restriction>
@@ -19912,18 +19924,6 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002223"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002229"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -24295,6 +24295,17 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050434 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050434">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
+                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050814"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050431"/>
         <obo:IAO_0000112>Greeting customers cheerily when tired has high emotional management exertion expended on a behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
@@ -28280,17 +28291,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050814 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050814">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
-                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050814"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A behavioural attribute in which the behaviour is caused by an emotion process.</obo:IAO_0000115>
@@ -30020,6 +30020,39 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
         <obo:IAO_0000115>a &lt;psychological need&gt; for &lt;social justice&gt;</obo:IAO_0000115>
         <rdfs:comment>If you are looking for social justice, rather than the need for social justice, please consider using &lt;social justice&gt;</rdfs:comment>
         <rdfs:label>need for social justice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050975 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050975">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;human population&gt; whose members are people with an intervention source role for a specified intervention.</obo:IAO_0000115>
+        <rdfs:label>people with intervention source role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050976 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050976">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item about the number of people in a population.</obo:IAO_0000115>
+        <rdfs:label>number of people in a population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050977 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050977">
+        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An employment status in which the person is not employed or self-employed, is looking for work and able to start in paid employment.</obo:IAO_0000115>
+        <rdfs:label>unemployed</rdfs:label>
     </owl:Class>
     
 
@@ -34833,17 +34866,13 @@ An example for this class serving as a mechanism of action would be in an interv
     <!-- http://purl.unep.org/sdg/SDGIO_00010026 -->
 
     <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010026">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115 xml:lang="en">A person or population that is not employed, but eligible for and currently seeking employment.</obo:IAO_0000115>
-        <obo:IAO_0000115>A personal attribute inhering in a person by virtue of that person not bearing a role realised in an employment process, but being eligible for and currently seeking paid work.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Eventually a defined class, axiomitized using classes for employment status.
 https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
         <sdg:SDGIO_00000064>https://uneplive.unep.org/community/discussion/view/23255/employment</sdg:SDGIO_00000064>
         <rdfs:comment xml:lang="en">The criteria varies for deciding if a person who is not employed also qualifies as unemployed.</rdfs:comment>
         <rdfs:label xml:lang="en">unemployed</rdfs:label>
-        <rdfs:label>unemployed status</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.unep.org/sdg/SDGIO_00010026"/>
