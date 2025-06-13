@@ -526,6 +526,14 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_002000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_002000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_039000"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_042000"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_042000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>Human behaviour that is an intervention outcome.</obo:IAO_0000115>
