@@ -70,26 +70,39 @@ You can also find the scripts used to generate OWL files for each ontology [[scr
 You can report any issues with ontology files here: https://github.com/HumanBehaviourChangeProject/ontologies/labels 
 
 # How is the Behaviour Change Intervention Ontology (BCIO) being developed? 
-You can find methods used to develop the ontology on the Open Science Framework: https://osf.io/86m75/ 
-Papers for each ontology will be published on Wellcome Open Research and updated here when available. 
+You can find methods used to develop the ontology on the Open Science Framework: https://wellcomeopenresearch.org/articles/5-126
+Papers for each ontology will be published on Wellcome Open Research and updated here when available: https://wellcomeopenresearch.org/gateways/humanbehaviourchange/about 
 
 # Relevant resources 
-Michie, S. et al. (2017). The Human Behaviour-Change Project: harnessing the power of artificial intelligence and machine learning for evidence synthesis and interpretation. Implementation Science, 12(1), 121.  
+Michie, S. et al. (2017). The Human Behaviour-Change Project: harnessing the power of artificial intelligence and machine learning for evidence synthesis and interpretation. Implementation Science, 12(1), 121.
 
-Norris, Kelly & Michie. (2018). New AI system will help us discover the most effective behaviour change strategies. The Conversation. https://theconversation.com/new-ai-system-will-help-us-discover-the-most-effective-behaviour-change-strategies-100057  
-
-Norris, E., Finnerty, A. N., Hastings, J., Stokes, G., & Michie, S. (2019). A scoping review of ontologies related to human behaviour change. Nature Human Behaviour, 3(2), 164-172. 
-
-Project website: https://www.humanbehaviourchange.org/ 
-For more information, please contact humanbehaviourchange@ucl.ac.uk  
+Norris, E., Finnerty, A. N., Hastings, J., Stokes, G., & Michie, S. (2019). A scoping review of ontologies related to human behaviour change. Nature Human Behaviour, 3(2), 164-172.
 
 
+   * **Project website:** https://www.humanbehaviourchange.org/ 
+   
+   * **BCIO website:** https://www.bciontology.org/ 
+   
+   * **BCIOSearch website:** https://www.bciosearch.org/ 
+   
+   * **BCIOVisualise website:** https://bciovis.hbcptools.org/ 
+   
+   * **Ontology LookUp Service:** https://www.ebi.ac.uk/ols4/ontologies/bcio  
+   
+   For more information, please contact humanbehaviourchange@ucl.ac.uk
 
-GitHub contributors: 
-Janna Hastings, Ailbhe N. Finnerty, Emma Norris 
+# GitHub contributors 
+Janna Hastings, Björn Gehrke, Maya Braun, Robert West, Paulina Schenk, Ailbhe N. Finnerty, Emma Norris 
 
-Project Investigators: 
-Susan Michie, Pol Mac Aonghusa, James Thomas, Michael P. Kelly, Marie Johnston, John Shawe-Taylor, Robert West 
+# APRICOT and HBCP team members
+The HBCP and APRICOT project are collaborations between behavioural and computer scientists, ontologists and systems architects. Members of the APRICOT Project team are listed directly below.
 
-Ontology development team: 
-Ailbhe N. Finnerty, Emily Hayes, Candice Moore, Emma Norris, Alison J. Wright, Silje Zink 
+**APRICOT investigators:** Susan Michie, Janna Hastings, William Hogan, Marta Marques
+
+**APRICOT researchers:** Björn Gehrke, Carolina Silva, Colbie Reed, Maya Braun, Paulina Schenk
+
+**APRICOT consultants:** Robert West, Marie Johnston, Alex Rothman
+
+**APRICOT administrator:** Amelia Massoura
+
+The members of the Human Behaviour-Change Project can be found here: https://www.humanbehaviourchange.org/the-hbcp-team 
