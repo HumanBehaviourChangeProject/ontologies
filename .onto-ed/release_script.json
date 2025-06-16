@@ -319,7 +319,8 @@
           "bcio_behaviour",
           "bcto",
           "bcio_style",
-          "bcio_population"
+          "bcio_population",
+          "bcio_engagement"
         ]
       }
     },
