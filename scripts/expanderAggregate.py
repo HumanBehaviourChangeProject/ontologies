@@ -1,5 +1,6 @@
 from pathlib import Path
-from typing import Union, Optional
+from pprint import pprint
+from typing import Dict, Union, Optional
 
 import openpyxl
 from openpyxl.styles import Font
@@ -35,7 +36,7 @@ def new_id_str() -> str:
     return f"{PREFIX}:{str(new_id()).zfill(ID_WIDTH)}"
 
 
-def add_extra_values(header, row, aggregate):
+def add_extra_values(header, row, aggregate, parents: Dict[str, str]):
     aggregate = aggregate.lower()
     aggregate_list = aggregate.split(";")
     # add "aggregate" to beginning of aggregate_list
@@ -56,7 +57,10 @@ def add_extra_values(header, row, aggregate):
 
             elif key == "Parent":
                 if agg == "aggregate":
-                    extra_values[key] = 'data item'
+                    if name in parents:
+                        extra_values[key] = parents[name] + " population statistic"
+                    else:
+                        extra_values[key] = "population statistic"
                 else:
                     extra_values[key] = f"{name} population statistic"
             elif key == "ID":
@@ -120,6 +124,17 @@ if __name__ == '__main__':
         if any(values.values()):
             rows.append(values)
 
+    # build parents dict:
+    parents = {}
+    for row in sheet[2:sheet.max_row]:
+        values = {}
+        for key, cell in zip(header, row):
+            values[key] = cell.value.strip() if cell.value is not None else cell.value
+            if key == "Parent" and cell.value != None and cell.value != "":
+                parents[values["Label"]] = cell.value
+                
+    pprint(parents)
+
     for row in sheet[2:sheet.max_row]:
         values = {}
         extra_rows = []
@@ -127,7 +142,7 @@ if __name__ == '__main__':
         for key, cell in zip(header, row):
             values[key] = cell.value
             if key == "Aggregate" and cell.value != None and cell.value != "":
-                extra_rows = add_extra_values(header, row, cell.value)
+                extra_rows = add_extra_values(header, row, cell.value, parents)
 
         for extra_row in extra_rows:  # add to end of sheet
             rows.append(extra_row)
