@@ -133,7 +133,7 @@ if __name__ == '__main__':
         for key, cell in zip(header, row):
             values[key] = cell.value.strip() if cell.value is not None else cell.value
             if key == "Parent" and cell.value != None and cell.value != "":
-                parents[values["Label"]] = cell.value
+                parents[values["Label"]] = cell.value.strip()
 
     for row in sheet[2:sheet.max_row]:
         values = {}
