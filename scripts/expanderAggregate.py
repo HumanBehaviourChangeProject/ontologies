@@ -1,5 +1,4 @@
 from pathlib import Path
-from pprint import pprint
 from typing import Dict, Union, Optional
 
 import openpyxl
@@ -67,7 +66,10 @@ def add_extra_values(header, row, aggregate, parents: Dict[str, str]):
                 new_id = new_id_str()
                 extra_values[key] = new_id
             elif key == "Definition":
-                extra_values[key] = "The " + agg + " of " + name + " in a population."
+                if agg == "aggregate":
+                    extra_values[key] = f"A population statistic about {name}."
+                else:
+                    extra_values[key] = f"The {agg} of {name} in a population."
             elif key in ["Curation status"]:
                 extra_values[key] = str(cell.value) if cell.value != "External" else "Published"
             elif key in ["Sub-ontology"]:
@@ -132,8 +134,6 @@ if __name__ == '__main__':
             values[key] = cell.value.strip() if cell.value is not None else cell.value
             if key == "Parent" and cell.value != None and cell.value != "":
                 parents[values["Label"]] = cell.value
-                
-    pprint(parents)
 
     for row in sheet[2:sheet.max_row]:
         values = {}
