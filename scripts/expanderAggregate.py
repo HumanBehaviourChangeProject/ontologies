@@ -1,4 +1,5 @@
 from pathlib import Path
+from pprint import pprint
 from typing import Dict, Union, Optional
 
 import openpyxl
@@ -63,6 +64,8 @@ def add_extra_values(header, row, aggregate, parents: Dict[str, str]):
                         extra_values[key] = "population statistic"
                 else:
                     extra_values[key] = f"{name} population statistic"
+                
+                # pprint((key, agg, extra_values))
             elif key == "ID":
                 new_id = new_id_str()
                 extra_values[key] = new_id
@@ -135,7 +138,7 @@ if __name__ == '__main__':
         
     parents = {k: p for k, (p, _) in entries.items() if entries.get(p, ("", False))[1] == True}
     
-    # pprint(parents)
+    pprint(parents)
 
     # copy original:
     for row in sheet[2:sheet.max_row]:
@@ -153,6 +156,7 @@ if __name__ == '__main__':
             values[key] = cell.value
             if key == "Aggregate" and cell.value != None and cell.value != "":
                 extra_rows = add_extra_values(header, row, cell.value, parents)
+                # pprint(extra_rows)
 
         for extra_row in extra_rows:  # add to end of sheet
             rows.append(extra_row)
@@ -167,7 +171,8 @@ if __name__ == '__main__':
 
     for r in range(len(rows)):
         row = [v for v in rows[r].values()]
-        # print("got row", row)
+        
+        # pprint(row)
         for c in range(len(header)):
             # todo: why index out of bounds error here? Empty cells
             try:
@@ -175,7 +180,7 @@ if __name__ == '__main__':
                 save_sheet.cell(row=r + 2, column=c + 1).value = row[c]
             except:
                 pass
-                # print("row[c] not there")
+                # print(f"row[c] not there ({row}, {c})")
     # save:
     save_wb.save(pathpath + "/" + basename + "_Expanded.xlsx")
     print("success")
