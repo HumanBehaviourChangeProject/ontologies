@@ -56,8 +56,9 @@ def add_extra_values(header, row, aggregate, parents: Dict[str, str]):
 
             elif key == "Parent":
                 if agg == "aggregate":
-                    if name in parents:
-                        extra_values[key] = parents[name] + " population statistic"
+                    parent = parents.get(name, None)
+                    if parent is not None and parent != "":
+                        extra_values[key] = parent + " population statistic"
                     else:
                         extra_values[key] = "population statistic"
                 else:
@@ -117,6 +118,24 @@ if __name__ == '__main__':
             values[key] = cell.value
             if key == "ID" and cell.value != None:
                 register_id(cell.value)
+                
+    # build parents dict:
+    # label -> (parent, is aggregate)
+    entries: dict[str, tuple[str, str]] = {}
+    for row in sheet[2:sheet.max_row]:
+        values = dict(zip(header, [v.value for v in row]))
+        label = values["Label"].strip() if values["Label"] is not None else ""
+        if label == "":
+            continue
+        
+        entries[label] = (
+            values["Parent"].strip() if values["Parent"] is not None else "",
+            values["Aggregate"] is not None and values["Aggregate"].strip() != ""
+        )
+        
+    parents = {k: p for k, (p, _) in entries.items() if entries.get(p, ("", False))[1] == True}
+    
+    # pprint(parents)
 
     # copy original:
     for row in sheet[2:sheet.max_row]:
@@ -125,15 +144,6 @@ if __name__ == '__main__':
             values[key] = cell.value
         if any(values.values()):
             rows.append(values)
-
-    # build parents dict:
-    parents = {}
-    for row in sheet[2:sheet.max_row]:
-        values = {}
-        for key, cell in zip(header, row):
-            values[key] = cell.value.strip() if cell.value is not None else cell.value
-            if key == "Parent" and cell.value != None and cell.value != "":
-                parents[values["Label"]] = cell.value.strip()
 
     for row in sheet[2:sheet.max_row]:
         values = {}
