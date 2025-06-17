@@ -9,6 +9,8 @@ indexed_files:
 - BehaviourChangeTechniques/bcto.xlsx
 - StyleOfDelivery/bcio_style.xlsx
 - Upper Level BCIO/inputs/.*\.xlsx
+readonly_files:
+  "Population/BCIO_Population_Expanded.xlsx": "This file is generated automatically from BCIO_Population.xlsx"
 main_branch: master
 prefixes:
   ADDICTO: http://addictovocab.org/ADDICTO_
