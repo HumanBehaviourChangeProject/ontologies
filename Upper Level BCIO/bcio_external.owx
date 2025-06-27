@@ -9889,7 +9889,7 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/MFOEM_000002</IRI>
-        <Literal>emotional-relevance appraisal process</Literal>
+        <Literal>affective appraisal process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -9924,7 +9924,7 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/MFOEM_000005</IRI>
-        <Literal>emotional-relevance appraisal</Literal>
+        <Literal>affective apraisal</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -10453,7 +10453,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/MFOEM_000060</IRI>
-        <Literal>An emotional-relevance appraisal that represents an evaluation of whether an event was expected to occur.</Literal>
+        <Literal>An affective appraisal that represents an evaluation of whether an event was expected to occur.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10463,7 +10463,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/MFOEM_000061</IRI>
-        <Literal>An emotional-relevance appraisal that represents an evaluation of the pleasantness of an object or event.</Literal>
+        <Literal>An affective appraisal that represents an evaluation of the pleasantness of an object or event.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10478,7 +10478,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/MFOEM_000072</IRI>
-        <Literal>An emotional-relevance appraisal that represents an evaluation of whether an event or object is important to the person&apos;s goals or needs.</Literal>
+        <Literal>An affective appraisal that represents an evaluation of whether an event or object is important to the person&apos;s goals or needs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10493,7 +10493,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/MFOEM_000075</IRI>
-        <Literal>An emotional-relevance appraisal that represents an evaluation of who or what caused an event.</Literal>
+        <Literal>An affective appraisal that represents an evaluation of who or what caused an event.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10563,7 +10563,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/MFOEM_000091</IRI>
-        <Literal>An emotional-relevance appraisal which represents a judgement about how avoidable the expected consequences of an event will be.</Literal>
+        <Literal>An affective appraisal which represents a judgement about how avoidable the expected consequences of an event will be.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10573,7 +10573,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/MFOEM_000103</IRI>
-        <Literal>An emotional-relevance appraisal which represents an evaluation of how threatening an object or situation is.</Literal>
+        <Literal>An affective appraisal which represents an evaluation of how threatening an object or situation is.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/comment"/>
@@ -10815,7 +10815,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/MFOEM_000226</IRI>
-        <Literal>An emotional-relevance appraisal of the extent to which something is good or beneficial.</Literal>
+        <Literal>An affective appraisal of the extent to which something is good or beneficial.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11250,7 +11250,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/MF_0000043</IRI>
-        <Literal xml:lang="en">capability</Literal>
+        <Literal xml:lang="en">personal capability</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
