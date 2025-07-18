@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-06-13"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-07-18"/>
         <terms:title>Behaviour Change Intervention Ontology</terms:title>
         <rdfs:comment>The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery, Style of Delivery, Source, Mechanisms of Action, Behaviour and Behaviour Change Techniques. Additional modules will be added soon.</rdfs:comment>
     </owl:Ontology>
@@ -3088,6 +3088,7 @@ orientation&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;role&gt; that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
         <obo:IAO_0000115>A role that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
@@ -7407,7 +7408,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000112>This includes individual people, groups of people, and organisations.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role played by a person, population or organisation that provides a BCI.</obo:IAO_0000115>
@@ -7453,7 +7454,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010003 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in a person source.</obo:IAO_0000115>
         <rdfs:label>personal role of source</rdfs:label>
@@ -8577,6 +8578,7 @@ workplace, and safety of processes for the production of goods and services. The
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010084">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role which inheres in a person and is realised by being enrolled in an educational institution or a formal programme of professional training.</obo:IAO_0000115>
         <rdfs:label>student or trainee role</rdfs:label>
@@ -11013,9 +11015,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015081 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015481"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of ability to comprehend spoken intervention language in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about ability to comprehend spoken intervention language.</obo:IAO_0000115>
         <rdfs:label>ability to comprehend spoken intervention language population statistic</rdfs:label>
     </owl:Class>
     
@@ -11228,9 +11230,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015100 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015481"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of ability to read in intervention language in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about ability to read in intervention language.</obo:IAO_0000115>
         <rdfs:label>ability to read in intervention language population statistic</rdfs:label>
     </owl:Class>
     
@@ -11949,9 +11951,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015165 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015165">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015481"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of ability to speak in intervention language in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about ability to speak in intervention language.</obo:IAO_0000115>
         <rdfs:label>ability to speak in intervention language population statistic</rdfs:label>
     </owl:Class>
     
@@ -11982,9 +11984,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015168 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015168">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015481"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of ability to write in intervention language in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about ability to write in intervention language.</obo:IAO_0000115>
         <rdfs:label>ability to write in intervention language population statistic</rdfs:label>
     </owl:Class>
     
@@ -12015,9 +12017,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015171 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015171">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015390"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of achieved bachelor&apos;s degree or equivalent level in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about achieved bachelor&apos;s degree or equivalent level.</obo:IAO_0000115>
         <rdfs:label>achieved bachelor&apos;s degree or equivalent level population statistic</rdfs:label>
     </owl:Class>
     
@@ -12048,9 +12050,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015174 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015174">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015390"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of achieved doctoral or equivalent level education in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about achieved doctoral or equivalent level education.</obo:IAO_0000115>
         <rdfs:label>achieved doctoral or equivalent level education population statistic</rdfs:label>
     </owl:Class>
     
@@ -12081,9 +12083,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015177 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015177">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015390"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of achieved early childhood education in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about achieved early childhood education.</obo:IAO_0000115>
         <rdfs:label>achieved early childhood education population statistic</rdfs:label>
     </owl:Class>
     
@@ -12114,9 +12116,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015180 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015180">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015390"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of achieved lower secondary education in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about achieved lower secondary education.</obo:IAO_0000115>
         <rdfs:label>achieved lower secondary education population statistic</rdfs:label>
     </owl:Class>
     
@@ -12147,9 +12149,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015183 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015183">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015390"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of achieved master&apos;s or equivalent level in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about achieved master&apos;s or equivalent level.</obo:IAO_0000115>
         <rdfs:label>achieved master&apos;s or equivalent level population statistic</rdfs:label>
     </owl:Class>
     
@@ -12180,9 +12182,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015186 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015186">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015390"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of achieved primary education in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about achieved primary education.</obo:IAO_0000115>
         <rdfs:label>achieved primary education population statistic</rdfs:label>
     </owl:Class>
     
@@ -12213,9 +12215,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015189 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015189">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of achieved upper secondary education  in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about achieved upper secondary education .</obo:IAO_0000115>
         <rdfs:label>achieved upper secondary education  population statistic</rdfs:label>
     </owl:Class>
     
@@ -12246,9 +12248,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015192 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015192">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015210"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adoptive brother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adoptive brother.</obo:IAO_0000115>
         <rdfs:label>adoptive brother population statistic</rdfs:label>
     </owl:Class>
     
@@ -12279,9 +12281,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015195 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015195">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015273"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adoptive child in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adoptive child.</obo:IAO_0000115>
         <rdfs:label>adoptive child population statistic</rdfs:label>
     </owl:Class>
     
@@ -12312,9 +12314,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015198 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015198">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015195"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adoptive daughter in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adoptive daughter.</obo:IAO_0000115>
         <rdfs:label>adoptive daughter population statistic</rdfs:label>
     </owl:Class>
     
@@ -12345,9 +12347,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015201 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015201">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015207"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adoptive father in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adoptive father.</obo:IAO_0000115>
         <rdfs:label>adoptive father population statistic</rdfs:label>
     </owl:Class>
     
@@ -12378,9 +12380,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015204 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015204">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015207"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adoptive mother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adoptive mother.</obo:IAO_0000115>
         <rdfs:label>adoptive mother population statistic</rdfs:label>
     </owl:Class>
     
@@ -12411,9 +12413,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015207 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015207">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015575"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adoptive parent in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adoptive parent.</obo:IAO_0000115>
         <rdfs:label>adoptive parent population statistic</rdfs:label>
     </owl:Class>
     
@@ -12444,9 +12446,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015210 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015210">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015717"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adoptive sibling in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adoptive sibling.</obo:IAO_0000115>
         <rdfs:label>adoptive sibling population statistic</rdfs:label>
     </owl:Class>
     
@@ -12477,9 +12479,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015213 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015213">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015210"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adoptive sister in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adoptive sister.</obo:IAO_0000115>
         <rdfs:label>adoptive sister population statistic</rdfs:label>
     </owl:Class>
     
@@ -12510,9 +12512,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015216 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015216">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015195"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adoptive son in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adoptive son.</obo:IAO_0000115>
         <rdfs:label>adoptive son population statistic</rdfs:label>
     </owl:Class>
     
@@ -12543,9 +12545,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015219 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015219">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of adult in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about adult.</obo:IAO_0000115>
         <rdfs:label>adult population statistic</rdfs:label>
     </owl:Class>
     
@@ -12576,9 +12578,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015222 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015222">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015687"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of agreed rent-free occupier in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about agreed rent-free occupier.</obo:IAO_0000115>
         <rdfs:label>agreed rent-free occupier population statistic</rdfs:label>
     </owl:Class>
     
@@ -12609,9 +12611,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015225 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015225">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015714"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of asexual in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about asexual.</obo:IAO_0000115>
         <rdfs:label>asexual population statistic</rdfs:label>
     </owl:Class>
     
@@ -12642,9 +12644,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015228 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015228">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of aunt in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about aunt.</obo:IAO_0000115>
         <rdfs:label>aunt population statistic</rdfs:label>
     </owl:Class>
     
@@ -12675,9 +12677,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015231 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015231">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015252"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological brother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological brother.</obo:IAO_0000115>
         <rdfs:label>biological brother population statistic</rdfs:label>
     </owl:Class>
     
@@ -12708,9 +12710,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015234 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015234">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015273"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological child in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological child.</obo:IAO_0000115>
         <rdfs:label>biological child population statistic</rdfs:label>
     </owl:Class>
     
@@ -12741,9 +12743,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015237 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015237">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015234"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological daughter in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological daughter.</obo:IAO_0000115>
         <rdfs:label>biological daughter population statistic</rdfs:label>
     </owl:Class>
     
@@ -12774,9 +12776,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015240 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015240">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015246"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological father in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological father.</obo:IAO_0000115>
         <rdfs:label>biological father population statistic</rdfs:label>
     </owl:Class>
     
@@ -12807,9 +12809,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015243 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015243">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015246"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological mother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological mother.</obo:IAO_0000115>
         <rdfs:label>biological mother population statistic</rdfs:label>
     </owl:Class>
     
@@ -12840,9 +12842,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015246 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015246">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015575"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological parent in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological parent.</obo:IAO_0000115>
         <rdfs:label>biological parent population statistic</rdfs:label>
     </owl:Class>
     
@@ -12873,9 +12875,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015249 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015249">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological sex in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological sex.</obo:IAO_0000115>
         <rdfs:label>biological sex population statistic</rdfs:label>
     </owl:Class>
     
@@ -12906,9 +12908,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015252 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015252">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015717"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological sibling in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological sibling.</obo:IAO_0000115>
         <rdfs:label>biological sibling population statistic</rdfs:label>
     </owl:Class>
     
@@ -12939,9 +12941,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015255 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015255">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015252"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological sister in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological sister.</obo:IAO_0000115>
         <rdfs:label>biological sister population statistic</rdfs:label>
     </owl:Class>
     
@@ -12972,9 +12974,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015258 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015258">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015234"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological son in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological son.</obo:IAO_0000115>
         <rdfs:label>biological son population statistic</rdfs:label>
     </owl:Class>
     
@@ -13005,9 +13007,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015261 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015261">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015714"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of bisexual in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about bisexual.</obo:IAO_0000115>
         <rdfs:label>bisexual population statistic</rdfs:label>
     </owl:Class>
     
@@ -13038,9 +13040,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015264 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015264">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of caregiving role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about caregiving role.</obo:IAO_0000115>
         <rdfs:label>caregiving role population statistic</rdfs:label>
     </owl:Class>
     
@@ -13071,9 +13073,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015267 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015267">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of caste membership in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about caste membership.</obo:IAO_0000115>
         <rdfs:label>caste membership population statistic</rdfs:label>
     </owl:Class>
     
@@ -13104,9 +13106,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015270 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015270">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of child in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about child.</obo:IAO_0000115>
         <rdfs:label>child population statistic</rdfs:label>
     </owl:Class>
     
@@ -13137,9 +13139,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015273 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015273">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of child relation in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about child relation.</obo:IAO_0000115>
         <rdfs:label>child relation population statistic</rdfs:label>
     </owl:Class>
     
@@ -13170,9 +13172,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015276 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015276">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015360"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of cisgender in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about cisgender.</obo:IAO_0000115>
         <rdfs:label>cisgender population statistic</rdfs:label>
     </owl:Class>
     
@@ -13203,9 +13205,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015279 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015279">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of country of birth in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about country of birth.</obo:IAO_0000115>
         <rdfs:label>country of birth population statistic</rdfs:label>
     </owl:Class>
     
@@ -13236,9 +13238,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015282 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015282">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of cousin in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about cousin.</obo:IAO_0000115>
         <rdfs:label>cousin population statistic</rdfs:label>
     </owl:Class>
     
@@ -13269,9 +13271,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015285 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015285">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of disabled in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about disabled.</obo:IAO_0000115>
         <rdfs:label>disabled population statistic</rdfs:label>
     </owl:Class>
     
@@ -13302,9 +13304,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015288 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015288">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015318"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of discipline of current programme of study or training in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about discipline of current programme of study or training.</obo:IAO_0000115>
         <rdfs:label>discipline of current programme of study or training population statistic</rdfs:label>
     </owl:Class>
     
@@ -13335,9 +13337,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015291 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015291">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015318"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of discipline of highest level of formal educational qualification achieved in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about discipline of highest level of formal educational qualification achieved.</obo:IAO_0000115>
         <rdfs:label>discipline of highest level of formal educational qualification achieved population statistic</rdfs:label>
     </owl:Class>
     
@@ -13368,9 +13370,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015294 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015294">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015681"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of divorced or separated in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about divorced or separated.</obo:IAO_0000115>
         <rdfs:label>divorced or separated population statistic</rdfs:label>
     </owl:Class>
     
@@ -13401,9 +13403,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015297 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015297">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015387"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of doctoral student role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about doctoral student role.</obo:IAO_0000115>
         <rdfs:label>doctoral student role population statistic</rdfs:label>
     </owl:Class>
     
@@ -13434,9 +13436,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015300 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015300">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015312"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of employed in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about employed.</obo:IAO_0000115>
         <rdfs:label>employed population statistic</rdfs:label>
     </owl:Class>
     
@@ -13467,9 +13469,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015303 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015303">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015312"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of employed full time in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about employed full time.</obo:IAO_0000115>
         <rdfs:label>employed full time population statistic</rdfs:label>
     </owl:Class>
     
@@ -13500,9 +13502,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015306 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015306">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015312"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of employed in shift work in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about employed in shift work.</obo:IAO_0000115>
         <rdfs:label>employed in shift work population statistic</rdfs:label>
     </owl:Class>
     
@@ -13533,9 +13535,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015309 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015309">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015312"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of employed part time in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about employed part time.</obo:IAO_0000115>
         <rdfs:label>employed part time population statistic</rdfs:label>
     </owl:Class>
     
@@ -13566,9 +13568,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015312 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015312">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of employment status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about employment status.</obo:IAO_0000115>
         <rdfs:label>employment status population statistic</rdfs:label>
     </owl:Class>
     
@@ -13599,9 +13601,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015315 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015315">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of ethnic group membership in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about ethnic group membership.</obo:IAO_0000115>
         <rdfs:label>ethnic group membership population statistic</rdfs:label>
     </owl:Class>
     
@@ -13632,9 +13634,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015318 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015318">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of expertise discipline in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about expertise discipline.</obo:IAO_0000115>
         <rdfs:label>expertise discipline population statistic</rdfs:label>
     </owl:Class>
     
@@ -13665,9 +13667,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015321 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015321">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of family member in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about family member.</obo:IAO_0000115>
         <rdfs:label>family member population statistic</rdfs:label>
     </owl:Class>
     
@@ -13698,9 +13700,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015324 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015324">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015575"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of father in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about father.</obo:IAO_0000115>
         <rdfs:label>father population statistic</rdfs:label>
     </owl:Class>
     
@@ -13731,9 +13733,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015327 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015327">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015249"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of female biological sex in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about female biological sex.</obo:IAO_0000115>
         <rdfs:label>female biological sex population statistic</rdfs:label>
     </owl:Class>
     
@@ -13764,9 +13766,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015330 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015330">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015360"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of female gender in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about female gender.</obo:IAO_0000115>
         <rdfs:label>female gender population statistic</rdfs:label>
     </owl:Class>
     
@@ -13797,9 +13799,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015333 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015333">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015351"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of foster brother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about foster brother.</obo:IAO_0000115>
         <rdfs:label>foster brother population statistic</rdfs:label>
     </owl:Class>
     
@@ -13830,9 +13832,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015336 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015336">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015273"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of foster child in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about foster child.</obo:IAO_0000115>
         <rdfs:label>foster child population statistic</rdfs:label>
     </owl:Class>
     
@@ -13863,9 +13865,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015339 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015339">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015336"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of foster daughter in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about foster daughter.</obo:IAO_0000115>
         <rdfs:label>foster daughter population statistic</rdfs:label>
     </owl:Class>
     
@@ -13896,9 +13898,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015342 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015342">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015348"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of foster father in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about foster father.</obo:IAO_0000115>
         <rdfs:label>foster father population statistic</rdfs:label>
     </owl:Class>
     
@@ -13929,9 +13931,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015345 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015345">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015348"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of foster mother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about foster mother.</obo:IAO_0000115>
         <rdfs:label>foster mother population statistic</rdfs:label>
     </owl:Class>
     
@@ -13962,9 +13964,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015348 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015348">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015575"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of foster parent in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about foster parent.</obo:IAO_0000115>
         <rdfs:label>foster parent population statistic</rdfs:label>
     </owl:Class>
     
@@ -13995,9 +13997,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015351 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015351">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015717"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of foster sibling in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about foster sibling.</obo:IAO_0000115>
         <rdfs:label>foster sibling population statistic</rdfs:label>
     </owl:Class>
     
@@ -14028,9 +14030,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015354 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015354">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015351"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of foster sister in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about foster sister.</obo:IAO_0000115>
         <rdfs:label>foster sister population statistic</rdfs:label>
     </owl:Class>
     
@@ -14061,9 +14063,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015357 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015357">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015336"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of foster son in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about foster son.</obo:IAO_0000115>
         <rdfs:label>foster son population statistic</rdfs:label>
     </owl:Class>
     
@@ -14094,9 +14096,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015360 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015360">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of gender identity in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about gender identity.</obo:IAO_0000115>
         <rdfs:label>gender identity population statistic</rdfs:label>
     </owl:Class>
     
@@ -14127,9 +14129,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015363 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015363">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015387"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of graduate student role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about graduate student role.</obo:IAO_0000115>
         <rdfs:label>graduate student role population statistic</rdfs:label>
     </owl:Class>
     
@@ -14160,9 +14162,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015366 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015366">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015372"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of grandfather in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about grandfather.</obo:IAO_0000115>
         <rdfs:label>grandfather population statistic</rdfs:label>
     </owl:Class>
     
@@ -14193,9 +14195,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015369 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015369">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015372"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of grandmother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about grandmother.</obo:IAO_0000115>
         <rdfs:label>grandmother population statistic</rdfs:label>
     </owl:Class>
     
@@ -14226,9 +14228,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015372 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015372">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of grandparent in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about grandparent.</obo:IAO_0000115>
         <rdfs:label>grandparent population statistic</rdfs:label>
     </owl:Class>
     
@@ -14259,9 +14261,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015375 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015375">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of having enacted a behaviour in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about having enacted a behaviour.</obo:IAO_0000115>
         <rdfs:label>having enacted a behaviour population statistic</rdfs:label>
     </owl:Class>
     
@@ -14292,9 +14294,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015378 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015378">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015657"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of health insurance policy holder role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about health insurance policy holder role.</obo:IAO_0000115>
         <rdfs:label>health insurance policy holder role population statistic</rdfs:label>
     </owl:Class>
     
@@ -14325,9 +14327,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015381 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015381">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of health status attribute in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about health status attribute.</obo:IAO_0000115>
         <rdfs:label>health status attribute population statistic</rdfs:label>
     </owl:Class>
     
@@ -14358,9 +14360,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015384 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015384">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015714"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of heterosexual in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about heterosexual.</obo:IAO_0000115>
         <rdfs:label>heterosexual population statistic</rdfs:label>
     </owl:Class>
     
@@ -14391,9 +14393,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015387 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015387">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015761"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of higher education student role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about higher education student role.</obo:IAO_0000115>
         <rdfs:label>higher education student role population statistic</rdfs:label>
     </owl:Class>
     
@@ -14424,9 +14426,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015390 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015390">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of highest level of formal educational qualification achieved in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about highest level of formal educational qualification achieved.</obo:IAO_0000115>
         <rdfs:label>highest level of formal educational qualification achieved population statistic</rdfs:label>
     </owl:Class>
     
@@ -14457,9 +14459,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015393 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015393">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of history of exposure to an occupational hazard in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about history of exposure to an occupational hazard.</obo:IAO_0000115>
         <rdfs:label>history of exposure to an occupational hazard population statistic</rdfs:label>
     </owl:Class>
     
@@ -14490,9 +14492,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015396 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015396">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of history of exposure to childhood maltreatment in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about history of exposure to childhood maltreatment.</obo:IAO_0000115>
         <rdfs:label>history of exposure to childhood maltreatment population statistic</rdfs:label>
     </owl:Class>
     
@@ -14523,9 +14525,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015399 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015399">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of homeless person in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about homeless person.</obo:IAO_0000115>
         <rdfs:label>homeless person population statistic</rdfs:label>
     </owl:Class>
     
@@ -14556,9 +14558,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015402 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015402">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of homemaker status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about homemaker status.</obo:IAO_0000115>
         <rdfs:label>homemaker status population statistic</rdfs:label>
     </owl:Class>
     
@@ -14589,9 +14591,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015405 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015405">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015714"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of homosexual in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about homosexual.</obo:IAO_0000115>
         <rdfs:label>homosexual population statistic</rdfs:label>
     </owl:Class>
     
@@ -14622,9 +14624,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015408 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015408">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of household income in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about household income.</obo:IAO_0000115>
         <rdfs:label>household income population statistic</rdfs:label>
     </owl:Class>
     
@@ -14699,9 +14701,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015415 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015415">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of human age in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about human age.</obo:IAO_0000115>
         <rdfs:label>human age population statistic</rdfs:label>
     </owl:Class>
     
@@ -14754,9 +14756,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015420 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015420">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of immigrant in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about immigrant.</obo:IAO_0000115>
         <rdfs:label>immigrant population statistic</rdfs:label>
     </owl:Class>
     
@@ -14787,9 +14789,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015423 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015423">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015681"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of in a legal marriage or union in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about in a legal marriage or union.</obo:IAO_0000115>
         <rdfs:label>in a legal marriage or union population statistic</rdfs:label>
     </owl:Class>
     
@@ -14820,9 +14822,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015426 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015426">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015681"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of in a stable or common law relationship in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about in a stable or common law relationship.</obo:IAO_0000115>
         <rdfs:label>in a stable or common law relationship population statistic</rdfs:label>
     </owl:Class>
     
@@ -14853,9 +14855,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015429 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015429">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015312"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of in permanent employment in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about in permanent employment.</obo:IAO_0000115>
         <rdfs:label>in permanent employment population statistic</rdfs:label>
     </owl:Class>
     
@@ -14899,9 +14901,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015433 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015433">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015312"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of in short term or temporary employment with known conditions in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about in short term or temporary employment with known conditions.</obo:IAO_0000115>
         <rdfs:label>in short term or temporary employment with known conditions population statistic</rdfs:label>
     </owl:Class>
     
@@ -14932,9 +14934,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015436 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015436">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015312"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of in uncertain employment in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about in uncertain employment.</obo:IAO_0000115>
         <rdfs:label>in uncertain employment population statistic</rdfs:label>
     </owl:Class>
     
@@ -14965,9 +14967,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015439 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015439">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015452"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of income-related welfare benefit in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about income-related welfare benefit.</obo:IAO_0000115>
         <rdfs:label>income-related welfare benefit population statistic</rdfs:label>
     </owl:Class>
     
@@ -14998,9 +15000,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015442 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015442">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of independently wealthy status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about independently wealthy status.</obo:IAO_0000115>
         <rdfs:label>independently wealthy status population statistic</rdfs:label>
     </owl:Class>
     
@@ -15031,9 +15033,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015445 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015445">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of individual human behaviour in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about individual human behaviour.</obo:IAO_0000115>
         <rdfs:label>individual human behaviour population statistic</rdfs:label>
     </owl:Class>
     
@@ -15108,9 +15110,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015452 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015452">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of individual income in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about individual income.</obo:IAO_0000115>
         <rdfs:label>individual income population statistic</rdfs:label>
     </owl:Class>
     
@@ -15185,9 +15187,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015459 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015459">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of influencer role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about influencer role.</obo:IAO_0000115>
         <rdfs:label>influencer role population statistic</rdfs:label>
     </owl:Class>
     
@@ -15218,9 +15220,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015462 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015462">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015761"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of informal education student role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about informal education student role.</obo:IAO_0000115>
         <rdfs:label>informal education student role population statistic</rdfs:label>
     </owl:Class>
     
@@ -15251,9 +15253,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015465 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015465">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015588"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of inpatient role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about inpatient role.</obo:IAO_0000115>
         <rdfs:label>inpatient role population statistic</rdfs:label>
     </owl:Class>
     
@@ -15284,9 +15286,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015468 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015468">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of insured party role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about insured party role.</obo:IAO_0000115>
         <rdfs:label>insured party role population statistic</rdfs:label>
     </owl:Class>
     
@@ -15317,9 +15319,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015471 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015471">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of interpersonal role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about interpersonal role.</obo:IAO_0000115>
         <rdfs:label>interpersonal role population statistic</rdfs:label>
     </owl:Class>
     
@@ -15350,9 +15352,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015474 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015474">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015481"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of language proficiency in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about language proficiency.</obo:IAO_0000115>
         <rdfs:label>language proficiency population statistic</rdfs:label>
     </owl:Class>
     
@@ -15427,9 +15429,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015481 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015481">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015521"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of linguistic capability in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about linguistic capability.</obo:IAO_0000115>
         <rdfs:label>linguistic capability population statistic</rdfs:label>
     </owl:Class>
     
@@ -15504,9 +15506,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015488 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015488">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015285"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of long-term disabled in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about long-term disabled.</obo:IAO_0000115>
         <rdfs:label>long-term disabled population statistic</rdfs:label>
     </owl:Class>
     
@@ -15537,9 +15539,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015491 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015491">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015249"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of male biological sex in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about male biological sex.</obo:IAO_0000115>
         <rdfs:label>male biological sex population statistic</rdfs:label>
     </owl:Class>
     
@@ -15570,9 +15572,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015494 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015494">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015360"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of male gender in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about male gender.</obo:IAO_0000115>
         <rdfs:label>male gender population statistic</rdfs:label>
     </owl:Class>
     
@@ -15603,9 +15605,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015497 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015497">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015387"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of masters student role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about masters student role.</obo:IAO_0000115>
         <rdfs:label>masters student role population statistic</rdfs:label>
     </owl:Class>
     
@@ -15636,9 +15638,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015500 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015500">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015381"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of medication use status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about medication use status.</obo:IAO_0000115>
         <rdfs:label>medication use status population statistic</rdfs:label>
     </owl:Class>
     
@@ -15669,9 +15671,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015503 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015503">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of member of a multi-person household in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about member of a multi-person household.</obo:IAO_0000115>
         <rdfs:label>member of a multi-person household population statistic</rdfs:label>
     </owl:Class>
     
@@ -15702,9 +15704,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015506 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015506">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015503"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of member of a multi-person household all related in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about member of a multi-person household all related.</obo:IAO_0000115>
         <rdfs:label>member of a multi-person household all related population statistic</rdfs:label>
     </owl:Class>
     
@@ -15735,9 +15737,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015509 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015509">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015503"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of member of a multi-person household not related in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about member of a multi-person household not related.</obo:IAO_0000115>
         <rdfs:label>member of a multi-person household not related population statistic</rdfs:label>
     </owl:Class>
     
@@ -15768,9 +15770,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015512 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015512">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015503"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of member of a multi-person household some related in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about member of a multi-person household some related.</obo:IAO_0000115>
         <rdfs:label>member of a multi-person household some related population statistic</rdfs:label>
     </owl:Class>
     
@@ -15801,9 +15803,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015515 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015515">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015503"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of member of a multi-person multi-generational household in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about member of a multi-person multi-generational household.</obo:IAO_0000115>
         <rdfs:label>member of a multi-person multi-generational household population statistic</rdfs:label>
     </owl:Class>
     
@@ -15834,9 +15836,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015518 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015518">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of member of a one person household in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about member of a one person household.</obo:IAO_0000115>
         <rdfs:label>member of a one person household population statistic</rdfs:label>
     </owl:Class>
     
@@ -15867,9 +15869,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015521 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015521">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of mental capability in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about mental capability.</obo:IAO_0000115>
         <rdfs:label>mental capability population statistic</rdfs:label>
     </owl:Class>
     
@@ -15944,9 +15946,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015528 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015528">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015575"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of mother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about mother.</obo:IAO_0000115>
         <rdfs:label>mother population statistic</rdfs:label>
     </owl:Class>
     
@@ -15977,9 +15979,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015531 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015531">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of nephew in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about nephew.</obo:IAO_0000115>
         <rdfs:label>nephew population statistic</rdfs:label>
     </owl:Class>
     
@@ -16010,9 +16012,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015534 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015534">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of niece in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about niece.</obo:IAO_0000115>
         <rdfs:label>niece population statistic</rdfs:label>
     </owl:Class>
     
@@ -16043,9 +16045,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015537 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015537">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of non-gendered identity in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about non-gendered identity.</obo:IAO_0000115>
         <rdfs:label>non-gendered identity population statistic</rdfs:label>
     </owl:Class>
     
@@ -16076,9 +16078,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015540 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015540">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015360"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of nonbinary gender in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about nonbinary gender.</obo:IAO_0000115>
         <rdfs:label>nonbinary gender population statistic</rdfs:label>
     </owl:Class>
     
@@ -16109,9 +16111,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015543 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015543">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of not seeking employment in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about not seeking employment.</obo:IAO_0000115>
         <rdfs:label>not seeking employment population statistic</rdfs:label>
     </owl:Class>
     
@@ -16142,9 +16144,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015546 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015546">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of not working for health reasons in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about not working for health reasons.</obo:IAO_0000115>
         <rdfs:label>not working for health reasons population statistic</rdfs:label>
     </owl:Class>
     
@@ -16175,9 +16177,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015549 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015549">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of number of years in education completed in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about number of years in education completed.</obo:IAO_0000115>
         <rdfs:label>number of years in education completed population statistic</rdfs:label>
     </owl:Class>
     
@@ -16230,9 +16232,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015554 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015554">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of occupational role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about occupational role.</obo:IAO_0000115>
         <rdfs:label>occupational role population statistic</rdfs:label>
     </owl:Class>
     
@@ -16263,9 +16265,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015557 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015557">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of occupier of employer-provided housing in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about occupier of employer-provided housing.</obo:IAO_0000115>
         <rdfs:label>occupier of employer-provided housing population statistic</rdfs:label>
     </owl:Class>
     
@@ -16296,9 +16298,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015560 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015560">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of organisational role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about organisational role.</obo:IAO_0000115>
         <rdfs:label>organisational role population statistic</rdfs:label>
     </owl:Class>
     
@@ -16329,9 +16331,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015563 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015563">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015714"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of other sexual orientation in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about other sexual orientation.</obo:IAO_0000115>
         <rdfs:label>other sexual orientation population statistic</rdfs:label>
     </owl:Class>
     
@@ -16362,9 +16364,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015566 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015566">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015588"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of outpatient role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about outpatient role.</obo:IAO_0000115>
         <rdfs:label>outpatient role population statistic</rdfs:label>
     </owl:Class>
     
@@ -16395,9 +16397,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015569 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015569">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of owner in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about owner.</obo:IAO_0000115>
         <rdfs:label>owner population statistic</rdfs:label>
     </owl:Class>
     
@@ -16428,9 +16430,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015572 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015572">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of owner-occupier in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about owner-occupier.</obo:IAO_0000115>
         <rdfs:label>owner-occupier population statistic</rdfs:label>
     </owl:Class>
     
@@ -16461,9 +16463,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015575 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015575">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of parent in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about parent.</obo:IAO_0000115>
         <rdfs:label>parent population statistic</rdfs:label>
     </owl:Class>
     
@@ -16494,9 +16496,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015578 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015578">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015471"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of parental role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about parental role.</obo:IAO_0000115>
         <rdfs:label>parental role population statistic</rdfs:label>
     </owl:Class>
     
@@ -16527,9 +16529,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015581 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015581">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of past behaviour  in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about past behaviour .</obo:IAO_0000115>
         <rdfs:label>past behaviour  population statistic</rdfs:label>
     </owl:Class>
     
@@ -16604,9 +16606,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015588 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015588">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of patient role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about patient role.</obo:IAO_0000115>
         <rdfs:label>patient role population statistic</rdfs:label>
     </owl:Class>
     
@@ -16637,9 +16639,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015591 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015591">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of personal history of behavioural lapse in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about personal history of behavioural lapse.</obo:IAO_0000115>
         <rdfs:label>personal history of behavioural lapse population statistic</rdfs:label>
     </owl:Class>
     
@@ -16714,9 +16716,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015598 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015598">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of personal history of events that influence behaviour  in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about personal history of events that influence behaviour .</obo:IAO_0000115>
         <rdfs:label>personal history of events that influence behaviour  population statistic</rdfs:label>
     </owl:Class>
     
@@ -16791,9 +16793,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015605 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015605">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of personal history of intervention exposure for the same outcome in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about personal history of intervention exposure for the same outcome.</obo:IAO_0000115>
         <rdfs:label>personal history of intervention exposure for the same outcome population statistic</rdfs:label>
     </owl:Class>
     
@@ -16868,9 +16870,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015612 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015612">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of personal history of intervention exposure for the same outcome behaviour in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about personal history of intervention exposure for the same outcome behaviour.</obo:IAO_0000115>
         <rdfs:label>personal history of intervention exposure for the same outcome behaviour population statistic</rdfs:label>
     </owl:Class>
     
@@ -16945,9 +16947,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015619 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015619">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of personal history of same intervention exposure in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about personal history of same intervention exposure.</obo:IAO_0000115>
         <rdfs:label>personal history of same intervention exposure population statistic</rdfs:label>
     </owl:Class>
     
@@ -17022,9 +17024,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015626 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015626">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of personal history part of intervention exposure in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about personal history part of intervention exposure.</obo:IAO_0000115>
         <rdfs:label>personal history part of intervention exposure population statistic</rdfs:label>
     </owl:Class>
     
@@ -17099,9 +17101,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015633 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015633">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of personal psychological attribute in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about personal psychological attribute.</obo:IAO_0000115>
         <rdfs:label>personal psychological attribute population statistic</rdfs:label>
     </owl:Class>
     
@@ -17176,9 +17178,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015640 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015640">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of personal vulnerability in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about personal vulnerability.</obo:IAO_0000115>
         <rdfs:label>personal vulnerability population statistic</rdfs:label>
     </owl:Class>
     
@@ -17253,9 +17255,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015647 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015647">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015640"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of personal vulnerability to harmful behaviour in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about personal vulnerability to harmful behaviour.</obo:IAO_0000115>
         <rdfs:label>personal vulnerability to harmful behaviour population statistic</rdfs:label>
     </owl:Class>
     
@@ -17330,9 +17332,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015654 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015654">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of place of residence in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about place of residence.</obo:IAO_0000115>
         <rdfs:label>place of residence population statistic</rdfs:label>
     </owl:Class>
     
@@ -17363,9 +17365,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015657 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015657">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015468"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of policy holder role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about policy holder role.</obo:IAO_0000115>
         <rdfs:label>policy holder role population statistic</rdfs:label>
     </owl:Class>
     
@@ -17396,9 +17398,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015660 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015660">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015761"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of preschool student role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about preschool student role.</obo:IAO_0000115>
         <rdfs:label>preschool student role population statistic</rdfs:label>
     </owl:Class>
     
@@ -17429,9 +17431,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015663 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015663">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of protective factor for harmful behaviour in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about protective factor for harmful behaviour.</obo:IAO_0000115>
         <rdfs:label>protective factor for harmful behaviour population statistic</rdfs:label>
     </owl:Class>
     
@@ -17506,9 +17508,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015670 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015670">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of quantity of valuable material resource owned in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about quantity of valuable material resource owned.</obo:IAO_0000115>
         <rdfs:label>quantity of valuable material resource owned population statistic</rdfs:label>
     </owl:Class>
     
@@ -17561,9 +17563,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015675 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015675">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015714"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of queer in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about queer.</obo:IAO_0000115>
         <rdfs:label>queer population statistic</rdfs:label>
     </owl:Class>
     
@@ -17594,9 +17596,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015678 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015678">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of questioning sexual orientation in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about questioning sexual orientation.</obo:IAO_0000115>
         <rdfs:label>questioning sexual orientation population statistic</rdfs:label>
     </owl:Class>
     
@@ -17627,9 +17629,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015681 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015681">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of relationship status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about relationship status.</obo:IAO_0000115>
         <rdfs:label>relationship status population statistic</rdfs:label>
     </owl:Class>
     
@@ -17660,9 +17662,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015684 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015684">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of religious group membership in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about religious group membership.</obo:IAO_0000115>
         <rdfs:label>religious group membership population statistic</rdfs:label>
     </owl:Class>
     
@@ -17693,9 +17695,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015687 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015687">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of rent-free occupier in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about rent-free occupier.</obo:IAO_0000115>
         <rdfs:label>rent-free occupier population statistic</rdfs:label>
     </owl:Class>
     
@@ -17726,9 +17728,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015690 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015690">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015687"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of rent-free occupier without owner&apos;s permission in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about rent-free occupier without owner&apos;s permission.</obo:IAO_0000115>
         <rdfs:label>rent-free occupier without owner&apos;s permission population statistic</rdfs:label>
     </owl:Class>
     
@@ -17759,9 +17761,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015693 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015693">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of renter in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about renter.</obo:IAO_0000115>
         <rdfs:label>renter population statistic</rdfs:label>
     </owl:Class>
     
@@ -17792,9 +17794,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015696 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015696">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015693"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of renter of housing from a social provider in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about renter of housing from a social provider.</obo:IAO_0000115>
         <rdfs:label>renter of housing from a social provider population statistic</rdfs:label>
     </owl:Class>
     
@@ -17825,9 +17827,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015699 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015699">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015569"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of residential facility owner in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about residential facility owner.</obo:IAO_0000115>
         <rdfs:label>residential facility owner population statistic</rdfs:label>
     </owl:Class>
     
@@ -17858,9 +17860,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015702 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015702">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of retired status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about retired status.</obo:IAO_0000115>
         <rdfs:label>retired status population statistic</rdfs:label>
     </owl:Class>
     
@@ -17891,9 +17893,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015705 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015705">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015761"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of school student role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about school student role.</obo:IAO_0000115>
         <rdfs:label>school student role population statistic</rdfs:label>
     </owl:Class>
     
@@ -17924,9 +17926,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015708 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015708">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of second generation immigrant in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about second generation immigrant.</obo:IAO_0000115>
         <rdfs:label>second generation immigrant population statistic</rdfs:label>
     </owl:Class>
     
@@ -17957,9 +17959,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015711 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015711">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015312"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of self employed status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about self employed status.</obo:IAO_0000115>
         <rdfs:label>self employed status population statistic</rdfs:label>
     </owl:Class>
     
@@ -17990,9 +17992,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015714 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015714">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of sexual orientation in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about sexual orientation.</obo:IAO_0000115>
         <rdfs:label>sexual orientation population statistic</rdfs:label>
     </owl:Class>
     
@@ -18023,9 +18025,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015717 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015717">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of sibling in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about sibling.</obo:IAO_0000115>
         <rdfs:label>sibling population statistic</rdfs:label>
     </owl:Class>
     
@@ -18056,9 +18058,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015720 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015720">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015681"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of single in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about single.</obo:IAO_0000115>
         <rdfs:label>single population statistic</rdfs:label>
     </owl:Class>
     
@@ -18089,9 +18091,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015723 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015723">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of socioeconomic status category in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about socioeconomic status category.</obo:IAO_0000115>
         <rdfs:label>socioeconomic status category population statistic</rdfs:label>
     </owl:Class>
     
@@ -18122,9 +18124,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015726 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015726">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of socioeconomic status score in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about socioeconomic status score.</obo:IAO_0000115>
         <rdfs:label>socioeconomic status score population statistic</rdfs:label>
     </owl:Class>
     
@@ -18177,9 +18179,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015731 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015731">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of stay at home parent or guardian status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about stay at home parent or guardian status.</obo:IAO_0000115>
         <rdfs:label>stay at home parent or guardian status population statistic</rdfs:label>
     </owl:Class>
     
@@ -18210,9 +18212,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015734 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015734">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015575"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of step-parent in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about step-parent.</obo:IAO_0000115>
         <rdfs:label>step-parent population statistic</rdfs:label>
     </owl:Class>
     
@@ -18243,9 +18245,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015737 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015737">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015717"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of step-sibling in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about step-sibling.</obo:IAO_0000115>
         <rdfs:label>step-sibling population statistic</rdfs:label>
     </owl:Class>
     
@@ -18276,9 +18278,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015740 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015740">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015737"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of stepbrother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about stepbrother.</obo:IAO_0000115>
         <rdfs:label>stepbrother population statistic</rdfs:label>
     </owl:Class>
     
@@ -18309,9 +18311,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015743 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015743">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015273"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of stepchild in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about stepchild.</obo:IAO_0000115>
         <rdfs:label>stepchild population statistic</rdfs:label>
     </owl:Class>
     
@@ -18342,9 +18344,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015746 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015746">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015743"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of stepdaughter in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about stepdaughter.</obo:IAO_0000115>
         <rdfs:label>stepdaughter population statistic</rdfs:label>
     </owl:Class>
     
@@ -18375,9 +18377,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015749 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015749">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015734"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of stepfather in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about stepfather.</obo:IAO_0000115>
         <rdfs:label>stepfather population statistic</rdfs:label>
     </owl:Class>
     
@@ -18408,9 +18410,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015752 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015752">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015734"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of stepmother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about stepmother.</obo:IAO_0000115>
         <rdfs:label>stepmother population statistic</rdfs:label>
     </owl:Class>
     
@@ -18441,9 +18443,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015755 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015755">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015737"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of stepsister in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about stepsister.</obo:IAO_0000115>
         <rdfs:label>stepsister population statistic</rdfs:label>
     </owl:Class>
     
@@ -18474,9 +18476,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015758 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015758">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015743"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of stepson in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about stepson.</obo:IAO_0000115>
         <rdfs:label>stepson population statistic</rdfs:label>
     </owl:Class>
     
@@ -18507,9 +18509,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015761 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015761">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of student or trainee role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about student or trainee role.</obo:IAO_0000115>
         <rdfs:label>student or trainee role population statistic</rdfs:label>
     </owl:Class>
     
@@ -18540,9 +18542,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015764 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015764">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of teenager in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about teenager.</obo:IAO_0000115>
         <rdfs:label>teenager population statistic</rdfs:label>
     </owl:Class>
     
@@ -18573,9 +18575,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015767 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015767">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015360"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of transgender in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about transgender.</obo:IAO_0000115>
         <rdfs:label>transgender population statistic</rdfs:label>
     </owl:Class>
     
@@ -18606,9 +18608,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015770 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015770">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015717"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of twin in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about twin.</obo:IAO_0000115>
         <rdfs:label>twin population statistic</rdfs:label>
     </owl:Class>
     
@@ -18639,9 +18641,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015773 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015773">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of unawareness of a behaviour in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about unawareness of a behaviour.</obo:IAO_0000115>
         <rdfs:label>unawareness of a behaviour population statistic</rdfs:label>
     </owl:Class>
     
@@ -18672,9 +18674,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015776 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015776">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of uncle in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about uncle.</obo:IAO_0000115>
         <rdfs:label>uncle population statistic</rdfs:label>
     </owl:Class>
     
@@ -18705,9 +18707,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015779 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015779">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of undecidedness about enacting a behaviour in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about undecidedness about enacting a behaviour.</obo:IAO_0000115>
         <rdfs:label>undecidedness about enacting a behaviour population statistic</rdfs:label>
     </owl:Class>
     
@@ -18738,9 +18740,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015782 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015782">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015387"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of undergraduate student role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about undergraduate student role.</obo:IAO_0000115>
         <rdfs:label>undergraduate student role population statistic</rdfs:label>
     </owl:Class>
     
@@ -18771,9 +18773,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015785 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015785">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015312"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of unemployed in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about unemployed.</obo:IAO_0000115>
         <rdfs:label>unemployed population statistic</rdfs:label>
     </owl:Class>
     
@@ -18804,9 +18806,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015788 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015788">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of unpaid carer for an adult status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about unpaid carer for an adult status.</obo:IAO_0000115>
         <rdfs:label>unpaid carer for an adult status population statistic</rdfs:label>
     </owl:Class>
     
@@ -18837,9 +18839,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015791 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015791">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of value of valuable material resource owned in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about value of valuable material resource owned.</obo:IAO_0000115>
         <rdfs:label>value of valuable material resource owned population statistic</rdfs:label>
     </owl:Class>
     
@@ -18892,9 +18894,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015796 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015796">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015761"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of vocational training student or trainee role in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about vocational training student or trainee role.</obo:IAO_0000115>
         <rdfs:label>vocational training student or trainee role population statistic</rdfs:label>
     </owl:Class>
     
@@ -18925,9 +18927,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015799 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015799">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of voluntary worker status in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about voluntary worker status.</obo:IAO_0000115>
         <rdfs:label>voluntary worker status population statistic</rdfs:label>
     </owl:Class>
     
@@ -18958,9 +18960,9 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015802 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015802">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015681"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of widowed in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about widowed.</obo:IAO_0000115>
         <rdfs:label>widowed population statistic</rdfs:label>
     </owl:Class>
     
@@ -19781,7 +19783,7 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_030000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_030000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000112>What counts as substantively is subject to judgement. The level and nature of the contribution can be defined using the CReDiT taxonomy (https://casrai.org/credit/).</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role played by a person that contributes substantively to production or reporting of a BCI evaluation study.</obo:IAO_0000115>
@@ -29023,7 +29025,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050872 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050872">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006038"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050897"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;evaluative belief about achieving a goal&gt; in which the goal attainment is evaluated positively.</obo:IAO_0000115>
         <rdfs:label>positive evaluative belief about achieving a goal</rdfs:label>
@@ -29811,7 +29813,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050954">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006006"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural self-regulation capability&gt; concerning substituting a more desired behaviour for a less desired behaviour.</obo:IAO_0000115>
         <rdfs:label>behavioural substitution capability</rdfs:label>
     </owl:Class>
@@ -29822,7 +29824,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050955">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050747"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;psychological attachment&gt; that is between a caregiver and the care recipient.</obo:IAO_0000115>
         <rdfs:label>attachment to a caregiver</rdfs:label>
     </owl:Class>
@@ -29833,7 +29835,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050956">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050957"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;organisational attribute&gt; that is the strength and depth of formal authority relations between members of an organisation.</obo:IAO_0000115>
         <rdfs:label>degree of organisational hierarchy</rdfs:label>
     </owl:Class>
@@ -29844,7 +29846,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050957">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;characteristic&gt; that inheres in an organisation.</obo:IAO_0000115>
         <rdfs:label>organisational attribute</rdfs:label>
     </owl:Class>
@@ -29866,7 +29868,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050959">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural attribute&gt; that is a discrepancy between the person’s ability to perform a behaviour and their performance in a given scenario.</obo:IAO_0000115>
         <rdfs:label>capability-performance gap</rdfs:label>
     </owl:Class>
@@ -29877,7 +29879,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050960">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;subjective affective feeling&gt; involving negative affect associated with a feeling of need.</obo:IAO_0000115>
         <rdfs:label>feeling of need frustration</rdfs:label>
     </owl:Class>
@@ -29890,7 +29892,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural attribute&gt; in which a behaviour is not under the control of some self-regulation process</obo:IAO_0000115>
-        <rdfs:label>Non self-regulated behaviour</rdfs:label>
+        <rdfs:label>Non self-regulated behavioural attribute</rdfs:label>
     </owl:Class>
     
 
@@ -29899,7 +29901,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050962">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050965"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Generalisation in learning&gt; concerning the behavioural response.</obo:IAO_0000115>
         <rdfs:label>response generalisation in learning</rdfs:label>
     </owl:Class>
@@ -29910,7 +29912,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050963">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050964"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about responsibility&gt;  about whether one should be accountable for the outcomes of an event.</obo:IAO_0000115>
         <rdfs:label>belief about accountability for the consequences of an action</rdfs:label>
     </owl:Class>
@@ -29921,7 +29923,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050964">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about who should undertake or be accountable for a behaviour.</obo:IAO_0000115>
         <rdfs:label>belief about responsibility</rdfs:label>
     </owl:Class>
@@ -29932,7 +29934,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050965">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006119"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Associative learning&gt; in which prior learning that an antecedent stimulus signals certain consequences of a behaviour spreads to a stimulus or behaviour that differs from the original stimulus or behaviour.</obo:IAO_0000115>
         <rdfs:label>generalisation in learning</rdfs:label>
     </owl:Class>
@@ -29943,7 +29945,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050966">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050746"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;proximal goal&gt; in which the end state is pleasure or relief from displeasure.</obo:IAO_0000115>
         <obo:IAO_0000118>pleasure</obo:IAO_0000118>
         <rdfs:label>hedonic goal</rdfs:label>
@@ -29955,7 +29957,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050967">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050708"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;moral personal value&gt; concerning the well-being of the natural environment and biosphere.</obo:IAO_0000115>
         <obo:IAO_0000118>biospheric value</obo:IAO_0000118>
         <rdfs:label>pro-environmental personal value</rdfs:label>
@@ -29967,7 +29969,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050968">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050753"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;reflective mental process&gt; through which one becomes aware of and understands their bodily processes or dispositions and their consequences.</obo:IAO_0000115>
         <rdfs:label>self-awareness process</rdfs:label>
     </owl:Class>
@@ -30061,6 +30063,19 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status in which the person is not employed or self-employed, is looking for work and able to start in paid employment.</obo:IAO_0000115>
         <rdfs:label>unemployed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050978 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050978">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112>Percentage of highly educated individuals in a population. 
+Mean age in a population.</obo:IAO_0000112>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about the number or extent of something in a population.</obo:IAO_0000115>
+        <rdfs:label>population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -33074,6 +33089,7 @@ Valence refers to the &apos;the subjective value of an event, object, person, or
         <obo:IAO_0000115>A &lt;mental process&gt; that gives rise to an appraisal.</obo:IAO_0000115>
         <obo:IAO_0000115>A mental process that gives rise to an appraisal.</obo:IAO_0000115>
         <obo:MFOEM_000010>appraising</obo:MFOEM_000010>
+        <rdfs:label>affective appraisal process</rdfs:label>
         <rdfs:label>emotional-relevance appraisal process</rdfs:label>
     </owl:Class>
     
@@ -33106,6 +33122,7 @@ For instance, a stimulus (the image of a tiger) can produce different emotion pr
 There is no intended sequence of the entities that are part of the emotion process (e.g., an appraisal does not necessarily precede a physiological process part of the emotion process).</rdfs:comment>
         <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to the self. Appraisal captures the ‘aboutness’ of an emotion process. For example, a stimulus such as an image of a tiger can produce different emotion processes depending on how the relevance of this stimulus is evaluated. If the image of a tiger was on TV, this would likely not be evaluated as dangerous. However, an image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, an appraisal of the dangerouness of the tiger would be part of the emotion process &apos;fear&apos;.</rdfs:comment>
         <rdfs:comment>There is no rigid sequence of the entities that are part of the emotion process -- an appraisal does not necessarily precede a physiological process part of the emotion process.</rdfs:comment>
+        <rdfs:label>affective apraisal</rdfs:label>
         <rdfs:label>emotional-relevance appraisal</rdfs:label>
     </owl:Class>
     
@@ -33416,7 +33433,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; that represents an evaluation of whether an event was expected to occur.</obo:IAO_0000115>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of whether an event was expected to occur.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of whether an event was expected to occur.</obo:IAO_0000115>
         <rdfs:label>appraisal of expectedness</rdfs:label>
     </owl:Class>
     
@@ -33428,7 +33445,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; that represents an evaluation of the pleasantness of an object or event.</obo:IAO_0000115>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of the pleasantness of an object or event.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of the pleasantness of an object or event.</obo:IAO_0000115>
         <rdfs:comment>GRID questionnaire distinguishes between appraisal of pleasantness FOR SELF and appraisal of pleasantness FOR SOME OTHER.  So far we have defined appraisal as evaluation of relevance FOR SELF, thus, we only include one appraisal of pleasantness (for the time being), although we may expand this later -- although I suspect that all or most of the appraisal types would have to be so qualified. </rdfs:comment>
         <rdfs:label>appraisal of pleasantness</rdfs:label>
     </owl:Class>
@@ -33442,7 +33459,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
         <obo:IAO_0000112>&quot;Relevance to goals&quot; in the Self-Regulation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; that represents an evaluation of whether an event or object is important to the person&apos;s goals or needs.</obo:IAO_0000115>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of whether an event or object is important to the person&apos;s goals or needs.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of whether an event or object is important to the person&apos;s goals or needs.</obo:IAO_0000115>
         <rdfs:comment>Like pleasantness, the GRID questionnaire distinguishes between evaluations of goal importance/relevance for SELF and for an OTHER. </rdfs:comment>
         <rdfs:label>appraisal of goal importance</rdfs:label>
     </owl:Class>
@@ -33456,7 +33473,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
         <obo:IAO_0000112>&quot;Tiers of influence&quot; in the Theory of Triadic Influence</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; that represents an evaluation of who or what caused an event.</obo:IAO_0000115>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of who or what caused an event.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of who or what caused an event.</obo:IAO_0000115>
         <rdfs:label>appraisal of causal agency</rdfs:label>
     </owl:Class>
     
@@ -33521,7 +33538,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; which represents a judgement about how avoidable the expected consequences of an event will be.</obo:IAO_0000115>
-        <obo:IAO_0000115>An emotional-relevance appraisal which represents a judgement about how avoidable the expected consequences of an event will be.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal which represents a judgement about how avoidable the expected consequences of an event will be.</obo:IAO_0000115>
         <rdfs:label>appraisal of avoidability of consequences</rdfs:label>
     </owl:Class>
     
@@ -33533,7 +33550,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;emotional-relevance appraisal&gt; which represents an evaluation of how threatening an object or situation is.</obo:IAO_0000115>
-        <obo:IAO_0000115>An emotional-relevance appraisal which represents an evaluation of how threatening an object or situation is.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal which represents an evaluation of how threatening an object or situation is.</obo:IAO_0000115>
         <obo:comment>Dangerousness or level of threat may refer to physical, emotional or social dangers or threats.</obo:comment>
         <rdfs:comment>Dangerousness or level of threat may refer to physical, emotional or social dangers or threats.</rdfs:comment>
         <rdfs:label>appraisal of dangerousness</rdfs:label>
@@ -33736,7 +33753,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000226">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal of the extent to which something is good or beneficial.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal of the extent to which something is good or beneficial.</obo:IAO_0000115>
         <rdfs:label>appraisal of desirability</rdfs:label>
     </owl:Class>
     
@@ -34059,8 +34076,8 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
 For instance, having a musical ability is ordinarily an ability that is positive for a person (e.g., they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits.</rdfs:comment>
         <rdfs:comment>The phrase &apos;ordinarily brings benefits to an organism or group of organism&apos; is used to explain that capabilities normally provide a benefit. For exampoe, having a musical ability is usually an ability that is positive for a person (e.g., they enjoy playing music, they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits.</rdfs:comment>
-        <rdfs:label xml:lang="en">capability</rdfs:label>
         <rdfs:label>personal capability</rdfs:label>
+        <rdfs:label xml:lang="en">personal capability</rdfs:label>
     </owl:Class>
     
 

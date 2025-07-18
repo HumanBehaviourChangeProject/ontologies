@@ -1297,7 +1297,7 @@ orientation&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006081 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;role&gt; that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
         <rdfs:comment>A role can be assigned without being realised. A person realises a role by doing something.</rdfs:comment>
@@ -6580,7 +6580,7 @@ In this definition, ‘change’ refers to change from what would have been the 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050872 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050872">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006038"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050897"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;evaluative belief about achieving a goal&gt; in which the goal attainment is evaluated positively.</obo:IAO_0000115>
         <rdfs:label>positive evaluative belief about achieving a goal</rdfs:label>
@@ -7098,7 +7098,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050954">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006006"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural self-regulation capability&gt; concerning substituting a more desired behaviour for a less desired behaviour.</obo:IAO_0000115>
         <rdfs:label>behavioural substitution capability</rdfs:label>
     </owl:Class>
@@ -7109,7 +7109,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050955">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050747"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;psychological attachment&gt; that is between a caregiver and the care recipient.</obo:IAO_0000115>
         <rdfs:label>attachment to a caregiver</rdfs:label>
     </owl:Class>
@@ -7120,7 +7120,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050956">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050957"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;organisational attribute&gt; that is the strength and depth of formal authority relations between members of an organisation.</obo:IAO_0000115>
         <rdfs:label>degree of organisational hierarchy</rdfs:label>
     </owl:Class>
@@ -7131,7 +7131,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050957">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;characteristic&gt; that inheres in an organisation.</obo:IAO_0000115>
         <rdfs:label>organisational attribute</rdfs:label>
     </owl:Class>
@@ -7153,7 +7153,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050959">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural attribute&gt; that is a discrepancy between the person’s ability to perform a behaviour and their performance in a given scenario.</obo:IAO_0000115>
         <rdfs:label>capability-performance gap</rdfs:label>
     </owl:Class>
@@ -7164,7 +7164,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050960">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;subjective affective feeling&gt; involving negative affect associated with a feeling of need.</obo:IAO_0000115>
         <rdfs:label>feeling of need frustration</rdfs:label>
     </owl:Class>
@@ -7177,7 +7177,7 @@ In this definition, ‘change’ refers to change from what would have been the 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050435"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;behavioural attribute&gt; in which a behaviour is not under the control of some self-regulation process</obo:IAO_0000115>
-        <rdfs:label>Non self-regulated behaviour</rdfs:label>
+        <rdfs:label>Non self-regulated behavioural attribute</rdfs:label>
     </owl:Class>
     
 
@@ -7186,7 +7186,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050962">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050965"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Generalisation in learning&gt; concerning the behavioural response.</obo:IAO_0000115>
         <rdfs:label>response generalisation in learning</rdfs:label>
     </owl:Class>
@@ -7197,7 +7197,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050963">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050964"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief about responsibility&gt;  about whether one should be accountable for the outcomes of an event.</obo:IAO_0000115>
         <rdfs:label>belief about accountability for the consequences of an action</rdfs:label>
     </owl:Class>
@@ -7208,7 +7208,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050964">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;belief&gt; about who should undertake or be accountable for a behaviour.</obo:IAO_0000115>
         <rdfs:label>belief about responsibility</rdfs:label>
     </owl:Class>
@@ -7219,7 +7219,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050965">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006119"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Associative learning&gt; in which prior learning that an antecedent stimulus signals certain consequences of a behaviour spreads to a stimulus or behaviour that differs from the original stimulus or behaviour.</obo:IAO_0000115>
         <rdfs:label>generalisation in learning</rdfs:label>
     </owl:Class>
@@ -7230,7 +7230,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050966">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050746"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;proximal goal&gt; in which the end state is pleasure or relief from displeasure.</obo:IAO_0000115>
         <obo:IAO_0000118>pleasure</obo:IAO_0000118>
         <rdfs:label>hedonic goal</rdfs:label>
@@ -7242,7 +7242,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050967">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050708"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;moral personal value&gt; concerning the well-being of the natural environment and biosphere.</obo:IAO_0000115>
         <obo:IAO_0000118>biospheric value</obo:IAO_0000118>
         <rdfs:label>pro-environmental personal value</rdfs:label>
@@ -7254,7 +7254,7 @@ In this definition, ‘change’ refers to change from what would have been the 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050968">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050753"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;reflective mental process&gt; through which one becomes aware of and understands their bodily processes or dispositions and their consequences.</obo:IAO_0000115>
         <rdfs:label>self-awareness process</rdfs:label>
     </owl:Class>
@@ -7360,12 +7360,6 @@ In this definition, ‘change’ refers to change from what would have been the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
@@ -7380,6 +7374,12 @@ In this definition, ‘change’ refers to change from what would have been the 
     <!-- http://purl.obolibrary.org/obo/BFO_0000144 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906"/>
     
 
 
