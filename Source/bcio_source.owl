@@ -119,7 +119,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role played by a person, population or organisation that provides a BCI.</obo:IAO_0000115>
         <rdfs:label>behaviour change intervention source</rdfs:label>
@@ -163,7 +163,7 @@
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010003 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in a person source.</obo:IAO_0000115>
         <rdfs:label>personal role of source</rdfs:label>
@@ -1286,7 +1286,7 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010084 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010084">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role which inheres in a person and is realised by being enrolled in an educational institution or a formal programme of professional training.</obo:IAO_0000115>
         <rdfs:label>student or trainee role</rdfs:label>
@@ -2014,15 +2014,15 @@ workplace, and safety of processes for the production of goods and services. The
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906"/>
     
 
 
