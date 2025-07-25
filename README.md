@@ -6,8 +6,11 @@ The overall aim of these projects is to automate evidence searching, synthesis a
 
 Here you will find files of completed ontologies within the overarching BCIO. To date, the ontology files that have been released and are maintained include: 
 
-* **Upper-Level BCIO:** Includes files for the Behaviour Change Intervention Ontology (BCIO) and its upper-level structure.
+* **The BCIO (with all lower-level ontologies)**
   * **bcio.owl:** The BCIO classes and relations in OWL format.
+    
+* **Upper-Level BCIO:** Includes files for the Behaviour Change Intervention Ontology (BCIO) and its upper-level structure.
+
   * **bcio_external.owl:** The classes imported from external ontologies into the BCIO in OWL format.
   * **bcio_relations.owl:** The relations in the BCIO in OWL format.
   * **bcio_upper_level.owl:** The upper-level classes and their relations in the BCIO in OWL format.
@@ -64,21 +67,17 @@ Here you will find files of completed ontologies within the overarching BCIO. To
   * **bcio_style.xlsx:** Spreadsheet with the Intervention Style of Delivery Ontology classes and their relations.
 
 
+In addition, the file for ‘onto-ed’ captures a script for OntoSpreadEd, an open-access ontology editor with GitHub integration, useful particularly for non-technical ontology developers. 
 You can also find the scripts used to generate OWL files for each ontology [[scripts folder]](https://github.com/HumanBehaviourChangeProject/ontologies/tree/master/scripts). 
 
 # Issue tracking 
 You can report any issues with ontology files here: https://github.com/HumanBehaviourChangeProject/ontologies/labels 
 
 # How is the Behaviour Change Intervention Ontology (BCIO) being developed? 
-You can find methods used to develop the ontology on the Open Science Framework: https://wellcomeopenresearch.org/articles/5-126
+You can find methods used to develop the ontology in the following paper: https://wellcomeopenresearch.org/articles/5-126
 Papers for each ontology will be published on Wellcome Open Research and updated here when available: https://wellcomeopenresearch.org/gateways/humanbehaviourchange/about 
 
 # Relevant resources 
-Michie, S. et al. (2017). The Human Behaviour-Change Project: harnessing the power of artificial intelligence and machine learning for evidence synthesis and interpretation. Implementation Science, 12(1), 121.
-
-Norris, E., Finnerty, A. N., Hastings, J., Stokes, G., & Michie, S. (2019). A scoping review of ontologies related to human behaviour change. Nature Human Behaviour, 3(2), 164-172.
-
-
    * **Project website:** https://www.humanbehaviourchange.org/ 
    
    * **BCIO website:** https://www.bciontology.org/ 
@@ -92,7 +91,7 @@ Norris, E., Finnerty, A. N., Hastings, J., Stokes, G., & Michie, S. (2019). A sc
    For more information, please contact humanbehaviourchange@ucl.ac.uk
 
 # GitHub contributors 
-Janna Hastings, Björn Gehrke, Maya Braun, Robert West, Paulina Schenk, Ailbhe N. Finnerty, Emma Norris 
+Janna Hastings, Björn Gehrke, Maya Braun, Robert West, Paulina Schenk, Ailbhe N. Finnerty, Emma Norris, Colbie Reed
 
 # APRICOT and HBCP team members
 The HBCP and APRICOT project are collaborations between behavioural and computer scientists, ontologists and systems architects. Members of the APRICOT Project team are listed directly below.
