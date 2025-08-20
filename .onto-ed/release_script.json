@@ -320,7 +320,8 @@
           "bcto",
           "bcio_style",
           "bcio_population",
-          "bcio_engagement"
+          "bcio_engagement",
+          "bcio_schedule"
         ]
       }
     },
@@ -341,7 +342,8 @@
           "bcto",
           "bcio_style",
           "bcio_population",
-          "bcio_engagement"
+          "bcio_engagement",
+          "bcio_schedule"
         ]
       }
     },
