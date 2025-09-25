@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_upper_level.owl">
-        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owx"/>
+        <owl:imports rdf:resource="http://humanbehaviourchange.org/ontology/bcio_external.owl"/>
     </owl:Ontology>
     
 
@@ -508,7 +508,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000179 -->
 
     <rdf:Description rdf:about="http://addictovocab.org/ADDICTO_0000179">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
     </rdf:Description>
     
 
@@ -1580,14 +1580,6 @@
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
     </rdf:Description>
     
 
