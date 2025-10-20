@@ -34,29 +34,29 @@ class Aggregate(Enum):
 
 def get_aggregate_definition(statistic: str, aggregate: Aggregate, kind: Kind) -> str:
     definition = {
-        (Aggregate.MEAN, Kind.NUMBER): f"A {statistic} population statistic that is the mean number of {statistic} in the population.",
-        (Aggregate.MINIMUM, Kind.NUMBER): f"A {statistic} population statistic that is the minimum number of {statistic} in the population.",
-        (Aggregate.MAXIMUM, Kind.NUMBER): f"A {statistic} population statistic that is the maximum number of {statistic} in the population.",
-        (Aggregate.MEDIAN, Kind.NUMBER): f"A {statistic} population statistic that is the median number of {statistic} in the population.",
+        (Aggregate.MEAN, Kind.NUMBER): f"A(n) {statistic} population statistic that is the mean number of {statistic} in the population.",
+        (Aggregate.MINIMUM, Kind.NUMBER): f"A(n) {statistic} population statistic that is the minimum number of {statistic} in the population.",
+        (Aggregate.MAXIMUM, Kind.NUMBER): f"A(n) {statistic} population statistic that is the maximum number of {statistic} in the population.",
+        (Aggregate.MEDIAN, Kind.NUMBER): f"A(n) {statistic} population statistic that is the median number of {statistic} in the population.",
         
-        (Aggregate.MEAN, Kind.VALUE): f"A {statistic} population statistic that is the mean value of {statistic} in the population.",
-        (Aggregate.MINIMUM, Kind.VALUE): f"A {statistic} population statistic that is the minimum value of {statistic} in the population.",
-        (Aggregate.MAXIMUM, Kind.VALUE): f"A {statistic} population statistic that is the maximum value of {statistic} in the population.",
-        (Aggregate.MEDIAN, Kind.VALUE): f"A {statistic} population statistic that is the median value of {statistic} in the population.",
-        (Aggregate.PERCENTAGE, Kind.VALUE): f"A {statistic} population statistic that is the percentage value of {statistic} in the population.",
-        (Aggregate.PROPORTION, Kind.VALUE): f"A {statistic} population statistic that is the proportion of individuals having a {statistic} in the population.",
+        (Aggregate.MEAN, Kind.VALUE): f"A(n) {statistic} population statistic that is the mean value of {statistic} in the population.",
+        (Aggregate.MINIMUM, Kind.VALUE): f"A(n) {statistic} population statistic that is the minimum value of {statistic} in the population.",
+        (Aggregate.MAXIMUM, Kind.VALUE): f"A(n) {statistic} population statistic that is the maximum value of {statistic} in the population.",
+        (Aggregate.MEDIAN, Kind.VALUE): f"A(n) {statistic} population statistic that is the median value of {statistic} in the population.",
+        (Aggregate.PERCENTAGE, Kind.VALUE): f"A(n) {statistic} population statistic that is the percentage value of {statistic} in the population.",
+        (Aggregate.PROPORTION, Kind.VALUE): f"A(n) {statistic} population statistic that is the proportion of individuals having a {statistic} in the population.",
         
-        (Aggregate.PERCENTAGE, Kind.PEOPLE): f"A {statistic} population statistic that is the percentage of people that are a {statistic} in the population.",
-        (Aggregate.PROPORTION, Kind.PEOPLE): f"A {statistic} population statistic that is the proportion of people that are a {statistic} in the population.",
+        (Aggregate.PERCENTAGE, Kind.PEOPLE): f"A(n) {statistic} population statistic that is the percentage of people that are a {statistic} in the population.",
+        (Aggregate.PROPORTION, Kind.PEOPLE): f"A(n) {statistic} population statistic that is the proportion of people that are a {statistic} in the population.",
         
-        (Aggregate.PERCENTAGE, Kind.ATTRIBUTES): f"A {statistic} population statistic that is the percentage of people that are {statistic} in the population.",
-        (Aggregate.PROPORTION, Kind.ATTRIBUTES): f"A {statistic} population statistic that is the proportion of people that are {statistic} in the population.",
+        (Aggregate.PERCENTAGE, Kind.ATTRIBUTES): f"A(n) {statistic} population statistic that is the percentage of people that are {statistic} in the population.",
+        (Aggregate.PROPORTION, Kind.ATTRIBUTES): f"A(n) {statistic} population statistic that is the proportion of people that are {statistic} in the population.",
         
-        (Aggregate.PERCENTAGE, Kind.ROLES): f"A {statistic} population statistic that is the percentage of people that have a {statistic} in the population.",
-        (Aggregate.PROPORTION, Kind.ROLES): f"A {statistic} population statistic that is the proportion of people that have a {statistic} in the population.",
+        (Aggregate.PERCENTAGE, Kind.ROLES): f"A(n) {statistic} population statistic that is the percentage of people that have a {statistic} in the population.",
+        (Aggregate.PROPORTION, Kind.ROLES): f"A(n) {statistic} population statistic that is the proportion of people that have a {statistic} in the population.",
         
-        (Aggregate.PERCENTAGE, Kind.PAST_BEHAVIOUR): f"A {statistic} population statistic that is the percentage of people that have {statistic} in the population.",
-        (Aggregate.PROPORTION, Kind.PAST_BEHAVIOUR): f"A {statistic} population statistic that is the proportion of people that have {statistic} in the population.",
+        (Aggregate.PERCENTAGE, Kind.PAST_BEHAVIOUR): f"A(n) {statistic} population statistic that is the percentage of people that have {statistic} in the population.",
+        (Aggregate.PROPORTION, Kind.PAST_BEHAVIOUR): f"A(n) {statistic} population statistic that is the proportion of people that have {statistic} in the population.",
 
     }.get((aggregate, kind))
     
