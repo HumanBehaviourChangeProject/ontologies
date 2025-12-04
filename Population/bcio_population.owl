@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl/2025-11-07"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl/2025-12-04"/>
     </owl:Ontology>
     
 
@@ -11359,10 +11359,10 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_039000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_039000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000112>Includes individual human behaviour, mental activity and physiological activity. Also includes undesirable outcomes, such as treatment side effects, and unintended negative consequences of the intervention.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A process that is influenced by an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000115>An entity that is influenced by an intervention</obo:IAO_0000115>
         <rdfs:label>intervention outcome</rdfs:label>
     </owl:Class>
     
