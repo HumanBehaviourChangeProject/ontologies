@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2025-11-07"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2025-12-04"/>
     </owl:Ontology>
     
 
@@ -13556,6 +13556,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An aggregate of individual human behaviours of members of a population.</obo:IAO_0000115>
         <obo:IAO_0000118>human behaviour</obo:IAO_0000118>
+        <rdfs:comment>The class human behaviour [BCIO:042000] has been made obsolete. If you want to refer to the behaviour of an individual, refer to individual human behaviour . If you want to refer to the behaviour of a group, refer to population behaviour.</rdfs:comment>
         <rdfs:label>population behaviour</rdfs:label>
     </owl:Class>
     
@@ -13656,7 +13657,9 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <obo:IAO_0000115>A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
         <obo:IAO_0000118>human behaviour</obo:IAO_0000118>
         <rdfs:comment> it is concerned with moving skeletal parts to which it is usually attached.&apos; (https://www.collinsdictionary.com/dictionary/english/striped-muscle)</rdfs:comment>
-        <rdfs:comment>Striated muscles referred to in the definition do not ordinarily involve cardiac muscles.
+        <rdfs:comment>The class human behaviour [BCIO:042000] has been made obsolete. If you want to refer to the behaviour of an individual, refer to individual human behaviour . If you want to refer to the behaviour of a group, refer to population behaviour.
+
+Striated muscles referred to in the definition do not ordinarily involve cardiac muscles.
 
 Behaviours are usually in response to an internal or external stimuli.
 
@@ -14431,10 +14434,10 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_039000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_039000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000112>Includes individual human behaviour, mental activity and physiological activity. Also includes undesirable outcomes, such as treatment side effects, and unintended negative consequences of the intervention.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A process that is influenced by an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000115>An entity that is influenced by an intervention</obo:IAO_0000115>
         <rdfs:label>intervention outcome</rdfs:label>
     </owl:Class>
     
@@ -25544,12 +25547,18 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily disposition&gt; whose realization ordinarily brings benefits to an organism or group of organisms, where &quot;ordinarily&quot; means within a typical range or context.</obo:IAO_0000115>
         <obo:IAO_0000115>A bodily disposition whose realization ordinarily brings benefits to an organism or group of organisms, where &quot;ordinarily&quot; means within a typical range or context.</obo:IAO_0000115>
+        <obo:IAO_0000118>ability</obo:IAO_0000118>
         <obo:IAO_0000118>personal capability</obo:IAO_0000118>
         <obo:IAO_0000119>https://github.com/NCOR-US/Capabilities/wiki/The-Account-of-Capabilities</obo:IAO_0000119>
         <rdfs:comment>Note that, as discussed in https://philpapers.org/archive/MERMC.pdf, both organisms and artifacts can bear capabilities. However, this capability class is just applicable to organismal capabilities (as a subclass of &apos;bodily disposition&apos;) and the definition has been amended from that of the definition source accordingly.</rdfs:comment>
         <rdfs:comment>The phrase &apos;ordinarily brings benefits to an organism or group of organism&apos; is used to explain that capabilities normally provide a benefit. 
 
 For instance, having a musical ability is ordinarily an ability that is positive for a person (e.g., they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits.</rdfs:comment>
+        <rdfs:comment>The phrase &apos;ordinarily brings benefits to an organism or group of organism&apos; is used to explain that capabilities normally provide a benefit. 
+
+For instance, having a musical ability is ordinarily an ability that is positive for a person (e.g., they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits.
+
+Ability and capability are sometimes used interchangeably. In some cases, one is used to describe inherent potential while the other is used to described momentary ability. However, as these differences are not applied consistently, we use these labels as synonyms.</rdfs:comment>
         <rdfs:comment>The phrase &apos;ordinarily brings benefits to an organism or group of organism&apos; is used to explain that capabilities normally provide a benefit. For exampoe, having a musical ability is usually an ability that is positive for a person (e.g., they enjoy playing music, they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits.</rdfs:comment>
         <rdfs:label>personal capability</rdfs:label>
         <rdfs:label xml:lang="en">personal capability</rdfs:label>
