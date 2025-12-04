@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl/2025-11-07"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl/2025-12-04"/>
     </owl:Ontology>
     
 
@@ -11342,6 +11342,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An aggregate of individual human behaviours of members of a population.</obo:IAO_0000115>
         <obo:IAO_0000118>human behaviour</obo:IAO_0000118>
+        <rdfs:comment>The class human behaviour [BCIO:042000] has been made obsolete. If you want to refer to the behaviour of an individual, refer to individual human behaviour . If you want to refer to the behaviour of a group, refer to population behaviour.</rdfs:comment>
         <rdfs:label>population behaviour</rdfs:label>
     </owl:Class>
     
@@ -11441,7 +11442,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
         <obo:IAO_0000118>human behaviour</obo:IAO_0000118>
         <rdfs:comment> it is concerned with moving skeletal parts to which it is usually attached.&apos; (https://www.collinsdictionary.com/dictionary/english/striped-muscle)</rdfs:comment>
-        <rdfs:comment>Striated muscles referred to in the definition do not ordinarily involve cardiac muscles.
+        <rdfs:comment>The class human behaviour [BCIO:042000] has been made obsolete. If you want to refer to the behaviour of an individual, refer to individual human behaviour . If you want to refer to the behaviour of a group, refer to population behaviour.
+
+Striated muscles referred to in the definition do not ordinarily involve cardiac muscles.
 
 Behaviours are usually in response to an internal or external stimuli.
 
@@ -12211,10 +12214,10 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_039000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_039000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000112>Includes individual human behaviour, mental activity and physiological activity. Also includes undesirable outcomes, such as treatment side effects, and unintended negative consequences of the intervention.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A process that is influenced by an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000115>An entity that is influenced by an intervention</obo:IAO_0000115>
         <rdfs:label>intervention outcome</rdfs:label>
     </owl:Class>
     
