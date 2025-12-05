@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl/2025-12-04"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl/2025-12-05"/>
     </owl:Ontology>
     
 

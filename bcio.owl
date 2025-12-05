@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-12-04"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl/2025-12-05"/>
         <terms:title>Behaviour Change Intervention Ontology</terms:title>
         <rdfs:comment>The Behaviour Change Intervention Ontology (BCIO) is an ontology for all aspects of human behaviour change interventions and their evaluation. It is being developed as a part of the Human Behaviour Change Project (http://www.humanbehaviourchange.org). The BCIO is developed across several modules. This ontology file contains the merged version of the BCIO, encompassing the upper level and the modules for Setting, Mode of Delivery, Style of Delivery, Source, Mechanisms of Action, Behaviour and Behaviour Change Techniques. Additional modules will be added soon.</rdfs:comment>
     </owl:Ontology>
