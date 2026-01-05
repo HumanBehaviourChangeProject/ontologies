@@ -356,6 +356,7 @@
     "ADDICTO": "http://addictovocab.org/ADDICTO_",
     "BCIO": "http://humanbehaviourchange.org/ontology/BCIO_",
     "BCIOR": "http://humanbehaviourchange.org/ontology/BCIOR_",
-    "SDGIO": "http://purl.unep.org/sdg/SDGIO_"
+    "SDGIO": "http://purl.unep.org/sdg/SDGIO_",
+    "GMHO": "https://galenos.org.uk/ontologies/GMHO_"
   }
 }
