@@ -42,4 +42,4 @@ Table version of **Intervention Setting Ontology in the published paper** can be
  
 **GitHub contributors**: Janna Hastings, Ailbhe N. Finnerty, Emma Norris 
 
-**Intervention Setting Ontology development team**: Emma Norris, Marta M. Marques, Ailbhe N. Finnerty, Alison J Wright, Robert West, Janna Hastings, Poppy Williams, Rachel. N. Carey, Michael P Kelly, Marie Johnston, Susan Michie 
+**Intervention Setting Ontology development team**: Emma Norris, Marta M. Marques, Ailbhe N. Finnerty, Alison J Wright, Robert West, Janna Hastings, Poppy Williams, Rachel. N. Carey, Michael P Kelly, Marie Johnston, Susan Michie
