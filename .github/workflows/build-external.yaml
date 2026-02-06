@@ -23,7 +23,7 @@ jobs:
           python-version: '3.10'
           cache: 'pip' # caching pip dependencies
       - name: Install dependencies
-        run: pip install git+https://github.com/ontology-tools/onto-spread-ed.git
+        run: pip install ose-cli
       - name: Install ROBOT
         run: |
           curl -o /tmp/robot.jar -L https://github.com/ontodev/robot/releases/download/v1.9.7/robot.jar
