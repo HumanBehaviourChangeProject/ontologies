@@ -9,10 +9,12 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
+     xmlns:metadata="http://data.bioontology.org/metadata/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_external.owl">
@@ -30,6 +32,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://data.bioontology.org/metadata/treeView -->
+
+    <owl:AnnotationProperty rdf:about="http://data.bioontology.org/metadata/treeView"/>
     
 
 
@@ -297,11 +305,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <obo:IAO_0000111>term tracker item</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">term tracker item</obo:IAO_0000111>
+        <obo:IAO_0000112>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <oboInOwl:hasDbXref>IAO:0000233</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
@@ -310,6 +323,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>term_tracker_item</oboInOwl:shorthand>
+        <rdfs:comment>The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
         <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
         <rdfs:label>term tracker item</rdfs:label>
         <rdfs:label xml:lang="en">term tracker item</rdfs:label>
@@ -611,6 +625,7 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
         <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000115>An alternative label for a given entity such as a commonly used abbreviation or synonym. </obo:IAO_0000115>
         <obo:IAO_0000115>Exact synonym.</obo:IAO_0000115>
         <obo:IAO_0000115>Fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
         <obo:IAO_0000115>Synonym of the term.</obo:IAO_0000115>
@@ -812,6 +827,12 @@ WHERE {
         <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
         <rdfs:label>see also</rdfs:label>
     </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
     
 
 
@@ -1179,6 +1200,24 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>consumes</obo:IAO_0000118>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_input</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
@@ -1483,13 +1522,14 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://addictovocab.org/ADDICTO_0001140 -->
+    <!-- http://addictovocab.org/ADDICTO_0001212 -->
 
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001140">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
-        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A personal attribute that is the strength of motivation experienced to engage in the behaviour to which the person is addicted.</obo:IAO_0000115>
-        <rdfs:label>addiction strength</rdfs:label>
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A bodily disposition which is realised as impaired functioning following reduction or termination of use of a psychoactive substance as a result of long-term physiological adaptation to that substance.</obo:IAO_0000115>
+        <rdfs:comment>This is distinguished from addiction. The two are often correlated but distinct. Dependence is a disposition to experience impaired functioning, which includes withdrawal symptoms, while addiction is a disposition to experience powerful motivation. The motivation can, but need not be caused by impaired functioning.</rdfs:comment>
+        <rdfs:label>substance dependence</rdfs:label>
     </owl:Class>
     
 
@@ -4030,13 +4070,21 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
+        <metadata:treeView rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>A reference to a place on the Earth, by its name or by its geographical location.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GAZ:00000467</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>geographic region {alternative name}</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GAZ:00000448</oboInOwl:id>
         <rdfs:label>geographic location</rdfs:label>
+        <skos:notation>GAZ:00000448</skos:notation>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A reference to a place on the Earth, by its name or by its geographical location.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MA:ma</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -4062,45 +4110,17 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <obo:IAO_0000115>The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <oboInOwl:created_by>jl</oboInOwl:created_by>
-        <oboInOwl:creation_date>2012-09-20T14:06:08Z</oboInOwl:creation_date>
-        <oboInOwl:hasAlternativeId>GO:0023032</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>GO:0044708</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>GO:0044709</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>Wikipedia:Behavior</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>behavioral response to stimulus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>behaviour</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>behavioural response to stimulus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>single-organism behavior</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>GO:0007610</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_agr"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
-        <rdfs:comment>1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
-2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).</rdfs:comment>
         <rdfs:label>behavior</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:ems</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ISBN:0395448956</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:20160973</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0007611 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007611">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
         <obo:IAO_0000115>The acquisition and processing of information and/or the storage and retrieval of this information over time.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
@@ -4113,26 +4133,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedTarget>The acquisition and processing of information and/or the storage and retrieval of this information over time.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:jid</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:8938125</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0007613 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007613">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007611"/>
-        <obo:IAO_0000115>The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>Wikipedia:Memory</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0007613</oboInOwl:id>
-        <rdfs:label>memory</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007613"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ISBN:0582227089</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4323,6 +4323,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/GO_0098596 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
         <obo:IAO_0000115>Learning in which new behaviors are acquired through imitation.</obo:IAO_0000115>
         <oboInOwl:created_by>dos</oboInOwl:created_by>
         <oboInOwl:creation_date>2014-04-10T11:00:39Z</oboInOwl:creation_date>
@@ -4338,6 +4339,28 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedTarget>Learning in which new behaviors are acquired through imitation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Imitative_learning&amp;oldid=593192364</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098597">
+        <obo:IAO_0000115>Learning that occurs through observing the behavior of others.</obo:IAO_0000115>
+        <oboInOwl:created_by>dos</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-04-10T11:07:10Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>Wikipedia:Observational_learning</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0098597</oboInOwl:id>
+        <rdfs:comment>Observation here is used in a broad sense to include perception of the behavior of others via any form or combination of forms of sensory perception (visual, auditory etc). Observational learning is broader than imitative learning in that it does not require a duplication of the behavior exhibited by the model.</rdfs:comment>
+        <rdfs:label>observational learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Learning that occurs through observing the behavior of others.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Observational_learning&amp;oldid=603524137</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4579,7 +4602,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000115>A cognitive representation of the emotional relevance of an object or event to the organism.</obo:IAO_0000115>
         <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to the self. Appraisal captures the ‘aboutness’ of an emotion process. For example, a stimulus such as an image of a tiger can produce different emotion processes depending on how the relevance of this stimulus is evaluated. If the image of a tiger was on TV, this would likely not be evaluated as dangerous. However, an image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, an appraisal of the dangerouness of the tiger would be part of the emotion process &apos;fear&apos;.</rdfs:comment>
         <rdfs:comment>There is no rigid sequence of the entities that are part of the emotion process -- an appraisal does not necessarily precede a physiological process part of the emotion process.</rdfs:comment>
-        <rdfs:label>affective apraisal</rdfs:label>
+        <rdfs:label>affective appraisal</rdfs:label>
     </owl:Class>
     
 
@@ -6105,6 +6128,54 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115>A quality inhering in a person by virtue of that person bearing a role realised in an employment process.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">employment status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000006 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An occurrent that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
+        <rdfs:comment>This entity includes time periods, events, etc.</rdfs:comment>
+        <rdfs:label>temporal context of process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000253 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000253">
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process context in which the process is an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
+        <rdfs:label>intervention context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000254 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000254">
+        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000006"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal context of a process where the process is the intervention.</obo:IAO_0000115>
+        <obo:IAO_0000119>BCIO:047000</obo:IAO_0000119>
+        <rdfs:label>intervention temporal context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://galenos.org.uk/ontologies/GMHO_0000268 -->
+
+    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An entity that includes the material and temporal contexts that are not part of but may influence the outcome of a process.</obo:IAO_0000115>
+        <rdfs:label>process context</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
