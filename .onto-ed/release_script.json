@@ -343,8 +343,7 @@
           "bcio_behaviour",
           "bcio_engagement"
         ],
-        "title": "Behaviour Change Intervention Ontology (BCIO) data extraction template",
-        "description": "This document provides a template to annotate intervention evaluation reports according to the Behaviour Change Intervention Ontology (BCIO), developed as part of the Human Behaviour-Change Project.",
+        "intro_sheet": "BCIO_Data_extraction_template_intro.xlsx",
         "sheets": {
           "bcio_mode_of_delivery": { "name": "Mode of Delivery Ontology", "color": "4472C4" },
           "bcio_population": { "name": "Intervention Population Ontology", "color": "ED7D31" },
