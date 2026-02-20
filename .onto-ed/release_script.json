@@ -330,6 +330,37 @@
       }
     },
     {
+      "name": "ANNOTATION_SHEETS",
+      "args": {
+        "included_files": [
+          "bcio_mode_of_delivery",
+          "bcio_population",
+          "bcio_setting",
+          "bcio_source",
+          "bcio_moa",
+          "bcto",
+          "bcio_style",
+          "bcio_behaviour",
+          "bcio_engagement"
+        ],
+        "title": "Behaviour Change Intervention Ontology (BCIO) data extraction template",
+        "description": "This document provides a template to annotate intervention evaluation reports according to the Behaviour Change Intervention Ontology (BCIO), developed as part of the Human Behaviour-Change Project.",
+        "sheets": {
+          "bcio_mode_of_delivery": { "name": "Mode of Delivery Ontology", "color": "4472C4" },
+          "bcio_population": { "name": "Intervention Population Ontology", "color": "ED7D31" },
+          "bcio_setting": { "name": "Intervention Setting Ontology", "color": "A5A5A5" },
+          "bcio_source": { "name": "Intervention Source Ontology", "color": "FFC000" },
+          "bcio_moa": { "name": "Mechanism of Action Ontology", "color": "FF66CC" },
+          "bcto": { "name": "BCT Ontology", "color": "5B9BD5" },
+          "bcio_style": { "name": "Style of Delivery Ontology", "color": "7030A0" },
+          "bcio_behaviour": { "name": "Human Behaviour Ontology", "color": "0066FF" },
+          "bcio_engagement": { "name": "Engagement", "color": "70AD47" }
+        },
+        "arms": ["Intervention", "Comparator"],
+        "annotation_columns": ["Entity present", "Evidence"]
+      }
+    },
+    {
       "name": "HUMAN_VERIFICATION",
       "args": {}
     },
