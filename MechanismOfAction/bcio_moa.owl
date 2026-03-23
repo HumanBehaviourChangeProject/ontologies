@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2026-03-19"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2026-03-23"/>
     </owl:Ontology>
     
 
@@ -16275,18 +16275,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050434 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050434">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
-                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050814"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050431"/>
         <obo:IAO_0000112>Greeting customers cheerily when tired has high emotional management exertion expended on a behaviour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
@@ -20135,7 +20123,17 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050813 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050813">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050434"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000010"/>
+                        <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050814"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050443"/>
         <rdfs:subClassOf>
             <owl:Restriction>
