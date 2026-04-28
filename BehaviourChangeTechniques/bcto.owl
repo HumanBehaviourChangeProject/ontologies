@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcto.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcto.owl/2026-03-23"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcto.owl/2026-04-28"/>
     </owl:Ontology>
     
 
@@ -6095,7 +6095,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050981">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007151"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;directly restructure the physical environment BCT&gt; that creates a more negative sensory experience while engaging in the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;directly restructure the physical environment BCT&gt; that creates a more positive sensory experience while engaging in the behaviour.</obo:IAO_0000115>
         <rdfs:label>create a more pleasant environment for behaviour BCT</rdfs:label>
     </owl:Class>
     
@@ -6271,7 +6271,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050998">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007151"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;directly restructure the physical environment BCT&gt; that creates a more positive sensory experience while engaging in the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;directly restructure the physical environment BCT&gt; that creates a more negative sensory experience while engaging in the behaviour.</obo:IAO_0000115>
         <rdfs:label>create a less pleasant environment for behaviour BCT</rdfs:label>
     </owl:Class>
     
