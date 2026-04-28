@@ -4323,6 +4323,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/GO_0098596 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
         <obo:IAO_0000115>Learning in which new behaviors are acquired through imitation.</obo:IAO_0000115>
         <oboInOwl:created_by>dos</oboInOwl:created_by>
         <oboInOwl:creation_date>2014-04-10T11:00:39Z</oboInOwl:creation_date>
@@ -4338,6 +4339,28 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedTarget>Learning in which new behaviors are acquired through imitation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Imitative_learning&amp;oldid=593192364</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098597">
+        <obo:IAO_0000115>Learning that occurs through observing the behavior of others.</obo:IAO_0000115>
+        <oboInOwl:created_by>dos</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-04-10T11:07:10Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>Wikipedia:Observational_learning</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0098597</oboInOwl:id>
+        <rdfs:comment>Observation here is used in a broad sense to include perception of the behavior of others via any form or combination of forms of sensory perception (visual, auditory etc). Observational learning is broader than imitative learning in that it does not require a duplication of the behavior exhibited by the model.</rdfs:comment>
+        <rdfs:label>observational learning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Learning that occurs through observing the behavior of others.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Observational_learning&amp;oldid=603524137</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
