@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcto.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcto.owl/2026-04-28"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcto.owl/2026-06-16"/>
     </owl:Ontology>
     
 
@@ -2029,9 +2029,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007004 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007004">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007002"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007003"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;goal setting BCT&gt; that involves the intervention source agreeing with the person on a behavioural goal.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;set behaviour goal BCT&gt; that involves the intervention source agreeing with the person on a behavioural goal.</obo:IAO_0000115>
         <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving.</rdfs:comment>
         <rdfs:label>agree behaviour goal BCT</rdfs:label>
     </owl:Class>
@@ -2055,9 +2055,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_007006 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_007006">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007002"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007005"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;goal setting BCT&gt; that involves the intervention source agreeing with the person on a goal which is a positive outcome of performing the behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;set outcome goal BCT&gt; that involves the intervention source agreeing with the person on a goal which is a positive outcome of performing the behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>objective setting</obo:IAO_0000118>
         <rdfs:comment>A goal is a cognitive representation of an end state towards which one is striving.</rdfs:comment>
         <rdfs:label>agree outcome goal BCT</rdfs:label>
@@ -2773,7 +2773,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007072"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;awareness of other people&apos;s thoughts, feelings and actions BCT&gt; that increases awareness of whether others will like, approve, dislike, or disapprove of the behaviour.</obo:IAO_0000115>
-        <rdfs:label>increase awareness of others approval BCT</rdfs:label>
+        <rdfs:label>increase awareness of others appraisal of the behaviour BCT</rdfs:label>
     </owl:Class>
     
 
@@ -3365,7 +3365,8 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that adds objects to the person&apos;s physical surroundings.</obo:IAO_0000115>
-        <rdfs:comment>Provision of information (e.g. written, verbal, visual) in a booklet or leaflet is insufficient. If this is accompanied by social support, also code &apos;social support BCT&apos; or one of its child classes. If the environment is changed beyond the addition of objects, also code &apos;directly restructure the physical environment BCT&apos; and/or &apos;indirectly restructure the physical environment BCT&apos;.</rdfs:comment>
+        <rdfs:comment>Provision of information (e.g. written, verbal, visual) in a booklet or leaflet is insufficient. If this is accompanied by social support, also code &apos;social support BCT&apos; or one of its child classes. If the environment is changed beyond the addition of objects, also code &apos;directly restructure the physical environment BCT&apos; and/or &apos;indirectly restructure the physical environment BCT&apos;.
+Objects include fixed structures such as fences, as well as equipment, digital devices and interactive displays. This BCT includes removing &apos;virtual&apos; buttons or other interactive elements on digital devices.</rdfs:comment>
         <rdfs:label>add objects to the environment BCT</rdfs:label>
     </owl:Class>
     
@@ -5482,7 +5483,7 @@ Example 2: Introducing safe cycle routes in residential neighbourhood to increas
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A data item that is the output of an intervention evaluation study.</obo:IAO_0000115>
-        <rdfs:label>evaluation finding</rdfs:label>
+        <rdfs:label>intervention evaluation finding</rdfs:label>
     </owl:Class>
     
 
@@ -6206,6 +6207,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that modifies objects in the person’s physical surroundings.</obo:IAO_0000115>
+        <rdfs:comment>Objects include fixed structures such as fences, as well as equipment, digital devices and interactive displays. Modifying includes changing the position, size and accessibility of object, and includes modifying &apos;virtual&apos; buttons or other interactive elements on digital devices.</rdfs:comment>
         <rdfs:label>modify objects in the environment BCT</rdfs:label>
     </owl:Class>
     
@@ -6250,6 +6252,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that removes objects from the person’s physical surroundings.</obo:IAO_0000115>
+        <rdfs:comment>Objects include fixed structures such as fences, as well as equipment, digital devices and interactive displays. This BCT includes removing &apos;virtual&apos; buttons or other interactive elements on digital devices.</rdfs:comment>
         <rdfs:label>remove objects from the environment BCT</rdfs:label>
     </owl:Class>
     
@@ -6273,6 +6276,28 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;directly restructure the physical environment BCT&gt; that creates a more negative sensory experience while engaging in the behaviour.</obo:IAO_0000115>
         <rdfs:label>create a less pleasant environment for behaviour BCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051007 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051007">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007074"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;increase awareness of others appraisal of the behaviour BCT&gt; that increases awareness of whether others will dislike or disapprove of the behaviour.</obo:IAO_0000115>
+        <rdfs:label>increase awareness of others disapproval BCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051016 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051016">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007074"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;increase awareness of others appraisal of the behaviour BCT&gt; that increases awareness of whether others will like or approve of the behaviour.</obo:IAO_0000115>
+        <rdfs:label>increase awareness of others approval BCT</rdfs:label>
     </owl:Class>
     
 
@@ -8602,7 +8627,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/GO_0098596 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098596">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
         <obo:IAO_0000115>Learning in which new behaviors are acquired through imitation.</obo:IAO_0000115>
         <oboInOwl:created_by>dos</oboInOwl:created_by>
         <oboInOwl:creation_date>2014-04-10T11:00:39Z</oboInOwl:creation_date>
@@ -8618,28 +8642,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedTarget>Learning in which new behaviors are acquired through imitation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Imitative_learning&amp;oldid=593192364</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0098597 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098597">
-        <obo:IAO_0000115>Learning that occurs through observing the behavior of others.</obo:IAO_0000115>
-        <oboInOwl:created_by>dos</oboInOwl:created_by>
-        <oboInOwl:creation_date>2014-04-10T11:07:10Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref>Wikipedia:Observational_learning</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0098597</oboInOwl:id>
-        <rdfs:comment>Observation here is used in a broad sense to include perception of the behavior of others via any form or combination of forms of sensory perception (visual, auditory etc). Observational learning is broader than imitative learning in that it does not require a duplication of the behavior exhibited by the model.</rdfs:comment>
-        <rdfs:label>observational learning</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Learning that occurs through observing the behavior of others.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Observational_learning&amp;oldid=603524137</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
