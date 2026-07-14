@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/Schedule/bcio_schedule.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/Schedule/bcio_schedule.owl/2026-04-28"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/Schedule/bcio_schedule.owl/2026-06-16"/>
     </owl:Ontology>
     
 
@@ -2054,7 +2054,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008510 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008510">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008505"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000155"/>
@@ -2065,7 +2065,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000112> An online chat session</obo:IAO_0000112>
         <obo:IAO_0000112>A counselling session</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI temporal part&gt; that is an occasion in which a member of a BCI population comes into contact with a BCI.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;intervention contact event&gt; that is an occasion in which a member of a BCI population comes into contact with a BCI.</obo:IAO_0000115>
         <rdfs:label>BCI contact event</rdfs:label>
     </owl:Class>
     
@@ -2074,7 +2074,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008515 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008515">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -2086,7 +2086,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000112> twenty</obo:IAO_0000112>
         <obo:IAO_0000112>one</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;data item&gt; that is the number of contact events in a BCI temporal part.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;number of intervention contact events&gt; that is the number of contact events in a BCI temporal part.</obo:IAO_0000115>
         <rdfs:label>number of BCI contact events</rdfs:label>
     </owl:Class>
     
@@ -2095,12 +2095,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008525 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008525">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051018"/>
         <obo:IAO_0000112> 2 minutes</obo:IAO_0000112>
         <obo:IAO_0000112> 30 minutes</obo:IAO_0000112>
         <obo:IAO_0000112>1 hour</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;temporal interval&gt; between the start and end of a BCI contact event.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;intervention contact event duration&gt; between the start and end of a BCI contact event.</obo:IAO_0000115>
         <rdfs:label>BCI contact event duration</rdfs:label>
     </owl:Class>
     
@@ -2109,7 +2109,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008530 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008530">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2119,9 +2119,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000112> The smoking intervention started 2 weeks after participants were enrolled into an inpatient setting</obo:IAO_0000112>
         <obo:IAO_0000112>A feedback call was scheduled to be delivered around 6 months after the birth of the baby</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;temporal region&gt; against which a BCI  temporal part is referenced.</obo:IAO_0000115>
-        <obo:IAO_0000232>check relationships</obo:IAO_0000232>
-        <rdfs:label>temporal reference associated with the intervention</rdfs:label>
+        <obo:IAO_0000115>A &lt;temporal reference associated with the intervention&gt; against which a BCI  temporal part is referenced.</obo:IAO_0000115>
+        <rdfs:label>temporal reference associated with the BCI</rdfs:label>
     </owl:Class>
     
 
@@ -2129,12 +2128,11 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008535 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008535">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008500"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051014"/>
         <obo:IAO_0000112>the length and regularity of sessions were consistent across the duration of the intervention, taking place for an hour each week</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI schedule of delivery&gt; in which the frequency and duration of Intervention temporal parts are uniform across the course of a BCI or BCI part.</obo:IAO_0000115>
-        <obo:IAO_0000232>relationship? is about schedule? or is a type of schedule?</obo:IAO_0000232>
-        <rdfs:label>regular intervention schedule</rdfs:label>
+        <obo:IAO_0000115>A &lt;regular intervention schedule&gt; in which the frequency and duration of Intervention temporal parts are uniform across the course of an intervention or intervention part.</obo:IAO_0000115>
+        <rdfs:label>regular BCI schedule</rdfs:label>
     </owl:Class>
     
 
@@ -2142,12 +2140,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008540 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008540">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008500"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051013"/>
         <obo:IAO_0000112> participants were free to access the app whenever they desired</obo:IAO_0000112>
         <obo:IAO_0000112>telephone feedback sessions were more frequent during the first 6 weeks</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI schedule of delivery&gt; in which the frequency and duration of contact events change over the course of a temporal part or BCI.</obo:IAO_0000115>
-        <rdfs:label>irregular intervention schedule</rdfs:label>
+        <obo:IAO_0000115>An &lt;irregular intervention schedule&gt; in which the frequency and duration of contact events change over the course of a temporal part or intervention.</obo:IAO_0000115>
+        <rdfs:label>irregular BCI schedule</rdfs:label>
     </owl:Class>
     
 
@@ -2155,7 +2153,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008545 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008545">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -2165,7 +2163,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000112> 12 hours</obo:IAO_0000112>
         <obo:IAO_0000112>150 minutes</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;temporal interval&gt; that is the total of intervention temporal parts within a behaviour change intervention.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;total intervention contact event duration&gt; that is the total of intervention temporal parts within a behaviour change intervention.</obo:IAO_0000115>
         <obo:IAO_0000232>&quot;is about&quot; contact events or &quot;is about&quot; duration of contact events?</obo:IAO_0000232>
         <rdfs:label>total BCI contact event duration</rdfs:label>
     </owl:Class>
@@ -2175,12 +2173,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008560 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008560">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051002"/>
         <obo:IAO_0000112> 1 year</obo:IAO_0000112>
         <obo:IAO_0000112> 2 months</obo:IAO_0000112>
         <obo:IAO_0000112>6 weeks</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;temporal interval&gt; between the start and end of a BCI.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;intervention duration&gt; between the start and end of a BCI.</obo:IAO_0000115>
         <rdfs:label>BCI duration</rdfs:label>
     </owl:Class>
     
@@ -2189,11 +2187,11 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008565 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008565">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051003"/>
         <obo:IAO_0000112> 2 weeks</obo:IAO_0000112>
         <obo:IAO_0000112>6 weeks</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;temporal interval&gt; between the start and end of an intervention temporal part.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;intervention temporal part duration&gt; between the start and end of a behaviour change intervention temporal part.</obo:IAO_0000115>
         <rdfs:label>BCI temporal part duration</rdfs:label>
     </owl:Class>
     
@@ -2202,7 +2200,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008575 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008575">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -2212,7 +2210,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000112> &quot;1 day&quot;</obo:IAO_0000112>
         <obo:IAO_0000112>&quot;2 weeks&quot;</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;temporal interval&gt; between the end of one BCI temporal part and the beginning of a subsequent BCI temporal part.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;interval between intervention temporal parts&gt; between the end of one BCI temporal part and the beginning of a subsequent BCI temporal part.</obo:IAO_0000115>
         <rdfs:label>interval between BCI temporal parts</rdfs:label>
     </owl:Class>
     
@@ -2221,7 +2219,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008580 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008580">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050315"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -2235,7 +2233,7 @@ levels to the PA guidelines.&quot;</obo:IAO_0000112>
 out of a database with messages for each possible combination
 of answers.&quot;</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI attribute&gt; that is the  temporal positioning of BCI temporal parts.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;order of intervention temporal parts&gt; that is the  temporal positioning of BCI temporal parts.</obo:IAO_0000115>
         <rdfs:label>order of BCI temporal parts</rdfs:label>
     </owl:Class>
     
@@ -2244,7 +2242,7 @@ of answers.&quot;</obo:IAO_0000112>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008700 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008700">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -2255,7 +2253,7 @@ of answers.&quot;</obo:IAO_0000112>
         <obo:IAO_0000112> one a week</obo:IAO_0000112>
         <obo:IAO_0000112>twice a week</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;data item&gt; about the number times a contact event occurs per unit of time.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;intervention contact event frequency&gt; about the number times a BCI contact event occurs per unit of time.</obo:IAO_0000115>
         <rdfs:label>BCI contact event frequency</rdfs:label>
     </owl:Class>
     
@@ -2264,7 +2262,7 @@ of answers.&quot;</obo:IAO_0000112>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_008710 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008710">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -2273,7 +2271,7 @@ of answers.&quot;</obo:IAO_0000112>
         </rdfs:subClassOf>
         <obo:IAO_0000112>Participants took part in 90 minutes of PA &quot;weekly&quot;</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;data item&gt; that is how often intervention temporal parts occur within a BCI.</obo:IAO_0000115>
+        <obo:IAO_0000115>An &lt;intervention temporal part frequency&gt; that is how often intervention temporal parts occur within a BCI.</obo:IAO_0000115>
         <rdfs:label>BCI temporal part frequency</rdfs:label>
     </owl:Class>
     
@@ -2598,7 +2596,7 @@ of answers.&quot;</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A data item that is the output of an intervention evaluation study.</obo:IAO_0000115>
-        <rdfs:label>evaluation finding</rdfs:label>
+        <rdfs:label>intervention evaluation finding</rdfs:label>
     </owl:Class>
     
 
@@ -2891,9 +2889,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050495">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050504"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;total contact event duration statistic&gt; that is the average value calculated from a collection of total contact event durations.</obo:IAO_0000115>
-        <rdfs:label>mean total BCI contact event duration</rdfs:label>
+        <obo:IAO_0000115>A &lt;total intervention contact event duration statistic&gt; that is the average value calculated from a collection of total contact event durations.</obo:IAO_0000115>
+        <rdfs:label>mean total intervention contact event duration</rdfs:label>
     </owl:Class>
     
 
@@ -2902,9 +2901,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050496">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050903"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event frequency statistic&gt; that is the central value of a collection of  BCI contact event frequencies when they are arranged in ascending order.</obo:IAO_0000115>
-        <rdfs:label>median BCI contact event frequency</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event frequency statistic&gt; that is the central value of a collection of  intervention contact event frequencies when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median intervention contact event frequency</rdfs:label>
     </owl:Class>
     
 
@@ -2913,9 +2913,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050497">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050904"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event number statistic&gt; that is the central value of a collection of  BCI contact event numbers when they are arranged in ascending order.</obo:IAO_0000115>
-        <rdfs:label>median BCI contact event number</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event number statistic&gt; that is the central value of a collection of  intervention contact event numbers when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median intervention contact event number</rdfs:label>
     </owl:Class>
     
 
@@ -2924,9 +2925,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050498">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050905"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI duration statistic&gt; that is the central value of a collection of BCI durations when they are arranged in ascending order.</obo:IAO_0000115>
-        <rdfs:label>median BCI duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention duration statistic&gt; that is the central value of a collection of intervention durations when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median intervention duration</rdfs:label>
     </owl:Class>
     
 
@@ -2935,9 +2937,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050499">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050504"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;total contact event duration statistic&gt; that is the central value of a collection of total contact event durations when they are arranged in ascending order.</obo:IAO_0000115>
-        <rdfs:label>median total BCI contact event duration</rdfs:label>
+        <obo:IAO_0000115>A &lt;total intervention contact event duration statistic&gt; that is the central value of a collection of total contact event durations when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median total intervention contact event duration</rdfs:label>
     </owl:Class>
     
 
@@ -2946,9 +2949,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050500">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050903"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event frequency statistic&gt; that is the lowest value from a collection of BCI contact event frequencies.</obo:IAO_0000115>
-        <rdfs:label>minimum BCI contact event frequency</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event frequency statistic&gt; that is the lowest value from a collection of intervention contact event frequencies.</obo:IAO_0000115>
+        <rdfs:label>minimum intervention contact event frequency</rdfs:label>
     </owl:Class>
     
 
@@ -2957,9 +2961,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050501">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050905"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI duration statistic&gt; that is the lowest value from a collection of BCI durations.</obo:IAO_0000115>
-        <rdfs:label>minimum BCI duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention duration statistic&gt; that is the lowest value from a collection of intervention durations.</obo:IAO_0000115>
+        <rdfs:label>minimum intervention duration</rdfs:label>
     </owl:Class>
     
 
@@ -2968,9 +2973,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050502">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050904"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event number statistic&gt; that is the lowest value from a collection of BCI contact event numbers.</obo:IAO_0000115>
-        <rdfs:label>minimum BCI contact event number</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event number statistic&gt; that is the lowest value from a collection of intervention contact event numbers.</obo:IAO_0000115>
+        <rdfs:label>minimum intervention contact event number</rdfs:label>
     </owl:Class>
     
 
@@ -2979,9 +2985,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050503">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050504"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;total contact event duration statistic&gt; that is the lowest value from a collection of total contact event durations.</obo:IAO_0000115>
-        <rdfs:label>minimum total BCI contact event duration</rdfs:label>
+        <obo:IAO_0000115>A &lt;total intervention contact event duration statistic&gt; that is the lowest value from a collection of total contact event durations.</obo:IAO_0000115>
+        <rdfs:label>minimum total intervention contact event duration</rdfs:label>
     </owl:Class>
     
 
@@ -2996,9 +3003,10 @@ This class is intended to include behaviours that can usefully be characterised 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008545"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of total contact event durations.</obo:IAO_0000115>
-        <rdfs:label>total BCI contact event duration statistic</rdfs:label>
+        <rdfs:label>total intervention contact event duration statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3013,9 +3021,10 @@ This class is intended to include behaviours that can usefully be characterised 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008525"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI contact event durations.</obo:IAO_0000115>
-        <rdfs:label>BCI contact event duration statistic</rdfs:label>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of intervention contact event durations.</obo:IAO_0000115>
+        <rdfs:label>intervention contact event duration statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3030,9 +3039,10 @@ This class is intended to include behaviours that can usefully be characterised 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008565"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of intervention temporal part durations.</obo:IAO_0000115>
-        <rdfs:label>BCI temporal part duration statistic</rdfs:label>
+        <rdfs:label>intervention temporal part duration statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3041,9 +3051,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050507">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050505"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event duration statistic&gt; that is the highest value from a collection of BCI contact event durations.</obo:IAO_0000115>
-        <rdfs:label>maximum BCI contact event duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event duration statistic&gt; that is the highest value from a collection of intervention contact event durations.</obo:IAO_0000115>
+        <rdfs:label>maximum intervention contact event duration</rdfs:label>
     </owl:Class>
     
 
@@ -3052,9 +3063,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050508">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050506"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI temporal part duration statistic&gt; that denotes the highest value from a collection of BCI temporal part durations.</obo:IAO_0000115>
-        <rdfs:label>maximum BCI temporal part duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention temporal part duration statistic&gt; that denotes the highest value from a collection of intervention temporal part durations.</obo:IAO_0000115>
+        <rdfs:label>maximum intervention temporal part duration</rdfs:label>
     </owl:Class>
     
 
@@ -3063,9 +3075,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050509">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050505"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event duration statistic&gt; that is the average value calculated from a collection of BCI contact event durations.</obo:IAO_0000115>
-        <rdfs:label>mean BCI contact event duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event duration statistic&gt; that is the average value calculated from a collection of intervention contact event durations.</obo:IAO_0000115>
+        <rdfs:label>mean intervention contact event duration</rdfs:label>
     </owl:Class>
     
 
@@ -3074,9 +3087,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050510">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050506"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI temporal part duration statistic&gt; that is the average value calculated from a collection of BCI temporal part durations.</obo:IAO_0000115>
-        <rdfs:label>mean BCI temporal part duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention temporal part duration statistic&gt; that is the average value calculated from a collection of intervention temporal part durations.</obo:IAO_0000115>
+        <rdfs:label>mean intervention temporal part duration</rdfs:label>
     </owl:Class>
     
 
@@ -3085,9 +3099,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050511">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050505"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event duration statistic&gt; that is the central value of a collection of BCI contact event durations when they are arranged in ascending order.</obo:IAO_0000115>
-        <rdfs:label>median BCI contact event duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event duration statistic&gt; that is the central value of a collection of intervention contact event durations when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median intervention contact event duration</rdfs:label>
     </owl:Class>
     
 
@@ -3096,9 +3111,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050512">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050506"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI temporal part duration statistic&gt; that is the central value of a collection of BCI temporal part durations when they are arranged in ascending order.</obo:IAO_0000115>
-        <rdfs:label>median BCI temporal part duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention temporal part duration statistic&gt; that is the central value of a collection of intervention temporal part durations when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median intervention temporal part duration</rdfs:label>
     </owl:Class>
     
 
@@ -3107,9 +3123,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050513">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050505"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event duration statistic&gt; that is the lowest value from a collection of BCI contact event durations.</obo:IAO_0000115>
-        <rdfs:label>minimum BCI contact event duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event duration statistic&gt; that is the lowest value from a collection of intervention contact event durations.</obo:IAO_0000115>
+        <rdfs:label>minimum intervention contact event duration</rdfs:label>
     </owl:Class>
     
 
@@ -3118,9 +3135,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050514">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050506"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI temporal part duration statistic&gt; that denotes the lowest value from a collection of BCI temporal part durations.</obo:IAO_0000115>
-        <rdfs:label>minimum BCI temporal part duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention temporal part duration statistic&gt; that denotes the lowest value from a collection of intervention temporal part durations.</obo:IAO_0000115>
+        <rdfs:label>minimum intervention temporal part duration</rdfs:label>
     </owl:Class>
     
 
@@ -3135,9 +3153,10 @@ This class is intended to include behaviours that can usefully be characterised 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008710"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI temporal part frequencies.</obo:IAO_0000115>
-        <rdfs:label>BCI temporal part frequency statistic</rdfs:label>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of intervention temporal part frequencies.</obo:IAO_0000115>
+        <rdfs:label>intervention temporal part frequency statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3146,9 +3165,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050517">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050516"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI temporal part frequency statistic&gt; that is the highest value from a collection of BCI temporal part frequencies.</obo:IAO_0000115>
-        <rdfs:label>maximum BCI temporal part frequency statistic</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention temporal part frequency statistic&gt; that is the highest value from a collection of intervention temporal part frequencies.</obo:IAO_0000115>
+        <rdfs:label>maximum intervention temporal part frequency statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3157,9 +3177,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050518">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050516"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI temporal part frequency statistic&gt; that is the average value calculated from a collection of BCI temporal part frequencies.</obo:IAO_0000115>
-        <rdfs:label>mean BCI temporal part frequency statistic</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention temporal part frequency statistic&gt; that is the average value calculated from a collection of intervention temporal part frequencies.</obo:IAO_0000115>
+        <rdfs:label>mean intervention temporal part frequency statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3168,9 +3189,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050519">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050516"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI temporal part frequency statistic&gt; that is the central value of a collection of BCI temporal part frequencies when they are arranged in ascending order.</obo:IAO_0000115>
-        <rdfs:label>median BCI temporal part frequency statistic</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention temporal part frequency statistic&gt; that is the central value of a collection of intervention temporal part frequencies when they are arranged in ascending order.</obo:IAO_0000115>
+        <rdfs:label>median intervention temporal part frequency statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3179,9 +3201,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050520">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050516"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI temporal part frequency statistic&gt; that is the lowest value from a collection of BCI temporal part frequencies.</obo:IAO_0000115>
-        <rdfs:label>minimum BCI temporal part frequency statistic</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention temporal part frequency statistic&gt; that is the lowest value from a collection of intervention temporal part frequencies.</obo:IAO_0000115>
+        <rdfs:label>minimum intervention temporal part frequency statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3207,9 +3230,10 @@ This class is intended to include behaviours that can usefully be characterised 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008700"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI contact event frequencies.</obo:IAO_0000115>
-        <rdfs:label>BCI contact event frequency statistic</rdfs:label>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of intervention contact event frequencies.</obo:IAO_0000115>
+        <rdfs:label>intervention contact event frequency statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3224,9 +3248,10 @@ This class is intended to include behaviours that can usefully be characterised 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008515"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI contact event numbers.</obo:IAO_0000115>
-        <rdfs:label>BCI contact event number statistic</rdfs:label>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of intervention contact event numbers.</obo:IAO_0000115>
+        <rdfs:label>intervention contact event number statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3241,9 +3266,10 @@ This class is intended to include behaviours that can usefully be characterised 
                 <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_008560"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of BCI durations.</obo:IAO_0000115>
-        <rdfs:label>BCI duration statistic</rdfs:label>
+        <obo:IAO_0000115>A &lt;data item&gt; that is about a collection of intervention durations.</obo:IAO_0000115>
+        <rdfs:label>intervention duration statistic</rdfs:label>
     </owl:Class>
     
 
@@ -3252,9 +3278,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050906">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050903"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event frequency statistic&gt; that is the highest value from a collection of BCI contact event frequencies.</obo:IAO_0000115>
-        <rdfs:label>maximum BCI contact event frequency</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event frequency statistic&gt; that is the highest value from a collection of intervention contact event frequencies.</obo:IAO_0000115>
+        <rdfs:label>maximum intervention contact event frequency</rdfs:label>
     </owl:Class>
     
 
@@ -3263,9 +3290,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050907">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050904"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event number statistic&gt; that is the highest value from a collection of BCI contact event numbers.</obo:IAO_0000115>
-        <rdfs:label>maximum BCI contact event number</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event number statistic&gt; that is the highest value from a collection of intervention contact event numbers.</obo:IAO_0000115>
+        <rdfs:label>maximum intervention contact event number</rdfs:label>
     </owl:Class>
     
 
@@ -3274,9 +3302,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050908">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050905"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI duration statistic&gt; that is the highest value from a collection of BCI durations.</obo:IAO_0000115>
-        <rdfs:label>maximum BCI duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention duration statistic&gt; that is the highest value from a collection of intervention durations.</obo:IAO_0000115>
+        <rdfs:label>maximum intervention duration</rdfs:label>
     </owl:Class>
     
 
@@ -3285,9 +3314,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050909">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050905"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI duration statistic&gt; that is the average value calculated from a collection of BCI durations.</obo:IAO_0000115>
-        <rdfs:label>mean BCI duration</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention duration statistic&gt; that is the average value calculated from a collection of intervention durations.</obo:IAO_0000115>
+        <rdfs:label>mean intervention duration</rdfs:label>
     </owl:Class>
     
 
@@ -3296,9 +3326,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050910">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050504"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;total contact event duration statistic&gt; that is the highest value from a collection of total contact event durations.</obo:IAO_0000115>
-        <rdfs:label>maximum total BCI contact event duration</rdfs:label>
+        <obo:IAO_0000115>A &lt;total intervention contact event duration statistic&gt; that is the highest value from a collection of total contact event durations.</obo:IAO_0000115>
+        <rdfs:label>maximum total intervention contact event duration</rdfs:label>
     </owl:Class>
     
 
@@ -3307,9 +3338,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050911">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050903"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event frequency statistic&gt; that is the average value calculated from a collection of BCI contact event frequencies.</obo:IAO_0000115>
-        <rdfs:label>mean BCI contact event frequency</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event frequency statistic&gt; that is the average value calculated from a collection of intervention contact event frequencies.</obo:IAO_0000115>
+        <rdfs:label>mean intervention contact event frequency</rdfs:label>
     </owl:Class>
     
 
@@ -3318,9 +3350,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050912">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050904"/>
+        <obo:IAO_0000112>This class was previously specific to behaviour change interventions, but was expanded to be relevant to other types of interventions, allowing it to be applied more broadly. It can still be used for behaviour change interventions in the same way as before.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;BCI contact event number statistic&gt; that is the average value calculated from a collection of BCI contact event numbers.</obo:IAO_0000115>
-        <rdfs:label>mean BCI contact event number</rdfs:label>
+        <obo:IAO_0000115>An &lt;intervention contact event number statistic&gt; that is the average value calculated from a collection of intervention contact event numbers.</obo:IAO_0000115>
+        <rdfs:label>mean intervention contact event number</rdfs:label>
     </owl:Class>
     
 
@@ -3332,6 +3365,188 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An individual human activity of an intervention participant within one or more parts of the intervention.</obo:IAO_0000115>
         <rdfs:label>participant engagement with intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051001 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; about the number times an intervention contact event occurs per unit of time.</obo:IAO_0000115>
+        <rdfs:label>intervention contact event frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051002 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; between the start and end of an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051003 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; between the start and end of an intervention temporal part.</obo:IAO_0000115>
+        <rdfs:label>intervention temporal part duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051004 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112>This is useful when grouping contact events together to the schedule of an intervention. For example, authors may describe participants as taking part in 90 minutes of physical activity weekly. These 90 minutes could be split across several contact events, however together these contact events form an intervention part which occurs weekly.</obo:IAO_0000112>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is how often intervention temporal parts occur within an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention temporal part frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051005 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;data item&gt; that is the number of contact events in an intervention temporal part.</obo:IAO_0000115>
+        <rdfs:label>number of intervention contact events</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051006 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; that is the total of intervention temporal parts within an intervention.</obo:IAO_0000115>
+        <rdfs:label>total intervention contact event duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051008 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;planned process&gt; that is a part of an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention temporal part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051009 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051009">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051008"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;intervention temporal part&gt; that is an occasion in which a member of an intervention population comes into contact with an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention contact event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051010 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051010">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;process attribute&gt; whose bearer is an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051011 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051011">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051010"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;intervention attribute&gt; that is its temporal organisation.</obo:IAO_0000115>
+        <rdfs:label>intervention schedule of delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051012 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051012">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051010"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;intervention attribute&gt; that is the  temporal positioning of intervention temporal parts.</obo:IAO_0000115>
+        <rdfs:label>order of intervention temporal parts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051013 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051013">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051011"/>
+        <obo:IAO_0000112> participants were free to access the app whenever they desired</obo:IAO_0000112>
+        <obo:IAO_0000112>telephone feedback sessions were more frequent during the first 6 weeks</obo:IAO_0000112>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;intervention schedule of delivery&gt; in which the frequency and duration of contact events change over the course of a temporal part or intervention.</obo:IAO_0000115>
+        <rdfs:label>irregular intervention schedule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051014 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051014">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051011"/>
+        <obo:IAO_0000112>the length and regularity of sessions were consistent across the duration of the intervention, taking place for an hour each week</obo:IAO_0000112>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;intervention schedule of delivery&gt; in which the frequency and duration of intervention temporal parts are uniform across the course of an intervention or intervention part.</obo:IAO_0000115>
+        <rdfs:label>regular intervention schedule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051015 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000112> The smoking intervention started 2 weeks after participants were enrolled into an inpatient setting</obo:IAO_0000112>
+        <obo:IAO_0000112>A feedback call was scheduled to be delivered around 6 months after the birth of the baby</obo:IAO_0000112>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal region&gt; against which an intervention  temporal part is referenced.</obo:IAO_0000115>
+        <rdfs:label>temporal reference associated with the intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051017 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; between the end of one intervention temporal part and the beginning of a subsequent intervention temporal part.</obo:IAO_0000115>
+        <rdfs:label>interval between intervention temporal parts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051018 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;temporal interval&gt; between the start and end of an intervention contact event.</obo:IAO_0000115>
+        <rdfs:label>intervention contact event duration</rdfs:label>
     </owl:Class>
     
 
@@ -5664,7 +5879,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/GO_0098596 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098596">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
         <obo:IAO_0000115>Learning in which new behaviors are acquired through imitation.</obo:IAO_0000115>
         <oboInOwl:created_by>dos</oboInOwl:created_by>
         <oboInOwl:creation_date>2014-04-10T11:00:39Z</oboInOwl:creation_date>
@@ -5680,28 +5894,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedTarget>Learning in which new behaviors are acquired through imitation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Imitative_learning&amp;oldid=593192364</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0098597 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098597">
-        <obo:IAO_0000115>Learning that occurs through observing the behavior of others.</obo:IAO_0000115>
-        <oboInOwl:created_by>dos</oboInOwl:created_by>
-        <oboInOwl:creation_date>2014-04-10T11:07:10Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref>Wikipedia:Observational_learning</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0098597</oboInOwl:id>
-        <rdfs:comment>Observation here is used in a broad sense to include perception of the behavior of others via any form or combination of forms of sensory perception (visual, auditory etc). Observational learning is broader than imitative learning in that it does not require a duplication of the behavior exhibited by the model.</rdfs:comment>
-        <rdfs:label>observational learning</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Learning that occurs through observing the behavior of others.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Observational_learning&amp;oldid=603524137</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
