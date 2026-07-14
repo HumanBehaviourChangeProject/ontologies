@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2026-04-28"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2026-06-16"/>
     </owl:Ontology>
     
 
@@ -2590,7 +2590,7 @@ The classes &apos;belief about gain&apos; and &apos;belief about reduction&apos;
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006039 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006145"/>
         <obo:IAO_0000112> &quot;Favourable / Unfavourable Definitions of Legal Codes&quot; in the Differential Association Theory</obo:IAO_0000112>
         <obo:IAO_0000112> &quot;Norms / Rules of behaviour&quot; in the Theory of Interpersonal Behavior</obo:IAO_0000112>
         <obo:IAO_0000112> &quot;Perceived Norms &quot; in the Integrative Model of Behavioural Prediction</obo:IAO_0000112>
@@ -4787,7 +4787,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015028 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015028">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010028"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An owner of a residential facility.</obo:IAO_0000115>
         <rdfs:label>residential facility owner</rdfs:label>
@@ -5086,7 +5086,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015052 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015052">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050999"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status realised by an individual being engaged in an activity or service for wages or salary.</obo:IAO_0000115>
         <rdfs:label>employed</rdfs:label>
@@ -5097,7 +5097,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015053 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015053">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050999"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status realised by an individual working a standard number of hours defined as full-time by their employer.</obo:IAO_0000115>
         <rdfs:label>employed full time</rdfs:label>
@@ -5108,7 +5108,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015054 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015054">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050999"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status realised by an individual whose working hours involving less than the standard or customary working time.</obo:IAO_0000115>
         <rdfs:label>employed part time</rdfs:label>
@@ -5119,7 +5119,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015055 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015055">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050999"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status realised by an individual working for a company or other organisation without a pre-determined end date, with security of employment and known working conditions.</obo:IAO_0000115>
         <rdfs:label>in permanent employment</rdfs:label>
@@ -5130,7 +5130,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015056 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015056">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050999"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status realised by an individual working for a company or other organisation in a position that is of a known, fixed duration with security of employment for that duration and certain working conditions.</obo:IAO_0000115>
         <rdfs:label>in short term or temporary employment with known conditions</rdfs:label>
@@ -5141,7 +5141,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015057 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015057">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050999"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status realised by an individual working for a company or other organisation in a position with uncertain duration or hours with unknown or low security of working conditions or pay.</obo:IAO_0000115>
         <rdfs:label>in uncertain employment</rdfs:label>
@@ -5152,7 +5152,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015058 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015058">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050999"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status realised by a person earning income directly from customers, clients, or other organisations rather than as a specified salary or wages from an employer.</obo:IAO_0000115>
         <rdfs:comment>employment status where the person is their own employer</rdfs:comment>
@@ -5164,7 +5164,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015059 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015059">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050999"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status realised by an individual working for recurring periods in which different groups of workers do the same jobs in relay.</obo:IAO_0000115>
         <rdfs:label>employed in shift work</rdfs:label>
@@ -13619,7 +13619,7 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A data item that is the output of an intervention evaluation study.</obo:IAO_0000115>
-        <rdfs:label>evaluation finding</rdfs:label>
+        <rdfs:label>intervention evaluation finding</rdfs:label>
     </owl:Class>
     
 
@@ -21863,7 +21863,7 @@ s. also behaviour intender, behaviour non-intender</rdfs:comment>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050977 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050977">
-        <rdfs:subClassOf rdf:resource="http://purl.unep.org/sdg/SDGIO_00010029"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050999"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An employment status in which the person is not employed or self-employed, is looking for work and able to start in paid employment.</obo:IAO_0000115>
         <rdfs:label>unemployed</rdfs:label>
@@ -21924,6 +21924,32 @@ The ‘through’ relationship is defined as: ‘A relation that holds between a
 
 In this definition, ‘change’ refers to change from what would have been the case rather than change from an existing state of affairs. This is to capture the fact that mechanisms of action can act to sustain a current state of affairs, for example preventing smoking uptake. In the definition, ‘some change’ captures changes in salience, change in valence, or being added, increased, decreased, manifested/realised, created, started, stopped or altered rate.</rdfs:comment>
         <rdfs:label>mechanism of action through stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050999 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A quality inhering in a person by virtue of that person bearing a role realised in an employment process.</obo:IAO_0000115>
+        <rdfs:comment>An employment process is a  planned process wherein an employee performs actions that are formally or informally specified by an employer in return for remuneration.
+
+This class&apos;s definition is reused from SDGIO. As the ontology is no longer maintained a separate ID for this class was generated. However, the ID of the original class is included as a crossreference.</rdfs:comment>
+        <rdfs:label>employment status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A person or organization that participates in an ownership process wherein they realize their role as owner by exercising their right to use, sell, rent, or gift an object.</obo:IAO_0000115>
+        <rdfs:comment>This class&apos;s definition is reused from SDGIO. As the ontology is no longer maintained a separate ID for this class was generated. However, the ID of the original class is included as a crossreference.</rdfs:comment>
+        <rdfs:label>owner</rdfs:label>
     </owl:Class>
     
 
@@ -24306,7 +24332,6 @@ The class &apos;environmental system&apos; relates to what is found in the physi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098596">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050800"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
         <obo:IAO_0000112> &quot;Imitation&quot; in the Social Learning Theory</obo:IAO_0000112>
         <obo:IAO_0000112> &quot;Role modelling&quot; in the Six-staged Model of Communication Effects</obo:IAO_0000112>
         <obo:IAO_0000112>&quot;Copying&quot; in the Social Learning Theory</obo:IAO_0000112>
@@ -24327,28 +24352,6 @@ The class &apos;environmental system&apos; relates to what is found in the physi
         <owl:annotatedTarget>Learning in which new behaviors are acquired through imitation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Imitative_learning&amp;oldid=593192364</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0098597 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098597">
-        <obo:IAO_0000115>Learning that occurs through observing the behavior of others.</obo:IAO_0000115>
-        <oboInOwl:created_by>dos</oboInOwl:created_by>
-        <oboInOwl:creation_date>2014-04-10T11:07:10Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref>Wikipedia:Observational_learning</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0098597</oboInOwl:id>
-        <rdfs:comment>Observation here is used in a broad sense to include perception of the behavior of others via any form or combination of forms of sensory perception (visual, auditory etc). Observational learning is broader than imitative learning in that it does not require a duplication of the behavior exhibited by the model.</rdfs:comment>
-        <rdfs:label>observational learning</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0098597"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Learning that occurs through observing the behavior of others.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Observational_learning&amp;oldid=603524137</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -26364,10 +26367,7 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A person or organization that participates in an ownership process wherein they realize their role as owner by exercising their right to use, sell, rent, or gift an object.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A person or organization that participates in an ownership process wherein they realize their role as owner by exercising their right to use, sell, rent, or gift an object.</obo:IAO_0000115>
-        <rdfs:label>owner</rdfs:label>
         <rdfs:label xml:lang="en">owner</rdfs:label>
     </owl:Class>
     
@@ -26377,10 +26377,7 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A quality inhering in a person by virtue of that person bearing a role realised in an employment process.</obo:IAO_0000115>
-        <rdfs:comment>An employment process is a  planned process wherein an employee performs actions that are formally or informally specified by an employer in return for remuneration</rdfs:comment>
-        <rdfs:label>employment status</rdfs:label>
         <rdfs:label xml:lang="en">employment status</rdfs:label>
     </owl:Class>
     
