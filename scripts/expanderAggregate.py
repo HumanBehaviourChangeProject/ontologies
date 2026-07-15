@@ -214,8 +214,8 @@ if __name__ == '__main__':
 
             for key, cell in zip(header, row):
                 values[key] = cell.value
-                if key == "Aggregate" and cell.value != None and cell.value != "":
-                    kind = Kind(row[kind_index].value.strip()) if kind_index is not None else None
+                if key == "Aggregate" and cell.value is not None and cell.value.strip() != "":
+                    kind = Kind(row[kind_index].value.strip()) if kind_index is not None and row[kind_index].value is not None and row[kind_index].value.strip() != "" else None
                     
                     if kind is None:
                         print("No kind found for row:", row)
