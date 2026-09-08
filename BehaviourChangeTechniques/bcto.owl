@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcto.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcto.owl/2026-08-06"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcto.owl/2026-09-08"/>
     </owl:Ontology>
     
 
@@ -1085,7 +1085,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000021">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:range rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A relationship that specifies the context in which a process happens.</obo:IAO_0000115>
         <rdfs:label>has context</rdfs:label>
@@ -2017,7 +2017,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_005000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_005000">
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000253"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051025"/>
         <obo:IAO_0000112>Includes as part BCI population and BCI setting. Use of the word ‘may’ conveys a non-zero probability given available information.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention context in which the process is a behaviour change intervention.</obo:IAO_0000115>
@@ -5256,6 +5256,39 @@ Objects include fixed structures such as fences, as well as equipment, digital d
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_010003 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A role that inheres in a person source.</obo:IAO_0000115>
+        <rdfs:label>personal role of source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_010004 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010004">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010003"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal role of source that is realised by doing a specified type of work or working in a specified way.</obo:IAO_0000115>
+        <rdfs:label>occupational role of source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_010083 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010083">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010004"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A occupational role played by a person that contributes substantively to production or reporting of a research study.</obo:IAO_0000115>
+        <rdfs:label>researcher role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_011000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_011000">
@@ -5360,7 +5393,7 @@ Objects include fixed structures such as fences, as well as equipment, digital d
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_020000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An information content entity that is about the likelihood of the intervention evaluation finding misrepresenting the outcome behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that is about the likelihood of the intervention evaluation finding misrepresenting the intervention outcome.</obo:IAO_0000115>
         <obo:IAO_0000118>intervention evaluation study risk of bias or error</obo:IAO_0000118>
         <rdfs:label>intervention evaluation study risk of bias or error</rdfs:label>
     </owl:Class>
@@ -5483,7 +5516,7 @@ Objects include fixed structures such as fences, as well as equipment, digital d
     <!-- http://humanbehaviourchange.org/ontology/BCIO_030000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_030000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010083"/>
         <obo:IAO_0000112>What counts as substantively is subject to judgement. The level and nature of the contribution can be defined using the CReDiT taxonomy (https://casrai.org/credit/).</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A researcher role played by a person that contributes substantively to production or reporting of a BCI evaluation study.</obo:IAO_0000115>
@@ -5738,7 +5771,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_047000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_047000">
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000254"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051026"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>The intervention temporal context where the process is the behaviour change intervention</obo:IAO_0000115>
         <obo:IAO_0000118>BCI temporal context</obo:IAO_0000118>
@@ -6398,6 +6431,72 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;increase awareness of behaviour BCT&gt; that presents the behaviour as something the person can decide to do or not, or as one of a set of options.</obo:IAO_0000115>
         <rdfs:label>present behaviour as a choice BCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051025 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051025">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process context in which the process is an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051026 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051026">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051028"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal context of a process where the process is the intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention temporal context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051027 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051027">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051028"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051029"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An entity that includes the material and temporal contexts that are not part of but may influence the outcome of a process.</obo:IAO_0000115>
+        <rdfs:label>process context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051028 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051028">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An occurrent that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
+        <rdfs:comment>This entity includes time periods, events, etc.</rdfs:comment>
+        <rdfs:label>temporal context of process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051029 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051029">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A material entity that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
+        <rdfs:label>material context of process</rdfs:label>
     </owl:Class>
     
 
@@ -7361,6 +7460,12 @@ This class is intended to include behaviours that can usefully be characterised 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/019-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/020-002"/>
@@ -7388,12 +7493,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/020-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/019-002"/>
     </owl:Axiom>
     
 
@@ -10530,7 +10629,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000253">
         <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process context in which the process is an intervention.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
@@ -10543,8 +10641,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000254">
         <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000006"/>
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000253"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A temporal context of a process where the process is the intervention.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:047000</obo:IAO_0000119>
@@ -10557,7 +10653,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000268">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>An entity that includes the material and temporal contexts that are not part of but may influence the outcome of a process.</obo:IAO_0000115>
         <rdfs:label>process context</rdfs:label>
