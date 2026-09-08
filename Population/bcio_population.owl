@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl/2026-08-06"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/Population/bcio_population.owl/2026-09-08"/>
     </owl:Ontology>
     
 
@@ -1085,7 +1085,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000021">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:range rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A relationship that specifies the context in which a process happens.</obo:IAO_0000115>
         <rdfs:label>has context</rdfs:label>
@@ -2024,7 +2024,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_005000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_005000">
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000253"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051025"/>
         <obo:IAO_0000112>Includes as part BCI population and BCI setting. Use of the word ‘may’ conveys a non-zero probability given available information.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention context in which the process is a behaviour change intervention.</obo:IAO_0000115>
@@ -2121,6 +2121,39 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_010003 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A role that inheres in a person source.</obo:IAO_0000115>
+        <rdfs:label>personal role of source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_010004 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010004">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010003"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal role of source that is realised by doing a specified type of work or working in a specified way.</obo:IAO_0000115>
+        <rdfs:label>occupational role of source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_010083 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010083">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010004"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A occupational role played by a person that contributes substantively to production or reporting of a research study.</obo:IAO_0000115>
+        <rdfs:label>researcher role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010084 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010084">
@@ -2137,7 +2170,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010085">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010084"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A student or trainee that is currently learning in a non-institutional setting.</obo:IAO_0000115>
+        <obo:IAO_0000115>A student or trainee role that is currently learning in a non-institutional setting.</obo:IAO_0000115>
         <rdfs:label>informal education student role</rdfs:label>
     </owl:Class>
     
@@ -2619,17 +2652,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015026 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015026">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A personal attribute reflecting a benefit the person receives  derived from their capital or labour, usually measured in money.</obo:IAO_0000115>
-        <rdfs:label>individual income</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015028 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015028">
@@ -2799,7 +2821,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050550"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
@@ -4019,7 +4041,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
         <obo:IAO_0000112>low motivation to quit,  low self efficacy for physical activity, negative attitudes to healthy eating, contemplation stage of change, low numeracy</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An attribute reflecting a person&apos;s mental dispositions, mental processes or capabilities.</obo:IAO_0000115>
+        <obo:IAO_0000115>A personal attribute reflecting a person&apos;s mental dispositions, mental processes or capabilities.</obo:IAO_0000115>
         <rdfs:label>personal psychological attribute</rdfs:label>
     </owl:Class>
     
@@ -7126,83 +7148,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A(n) individual human behaviour population statistic that is the proportion of individuals having a individual human behaviour in the population.</obo:IAO_0000115>
         <rdfs:label>proportion individual human behaviour population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015452 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015452">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A population statistic about individual income.</obo:IAO_0000115>
-        <rdfs:label>individual income population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015453 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015453">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015452"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A(n) individual income population statistic that is the mean value of individual income in the population.</obo:IAO_0000115>
-        <rdfs:label>mean individual income population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015454 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015454">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015452"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A(n) individual income population statistic that is the minimum value of individual income in the population.</obo:IAO_0000115>
-        <rdfs:label>minimum individual income population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015455 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015455">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015452"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A(n) individual income population statistic that is the maximum value of individual income in the population.</obo:IAO_0000115>
-        <rdfs:label>maximum individual income population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015456 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015456">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015452"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A(n) individual income population statistic that is the median value of individual income in the population.</obo:IAO_0000115>
-        <rdfs:label>median individual income population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015457 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015457">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015452"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A(n) individual income population statistic that is the percentage value of individual income in the population.</obo:IAO_0000115>
-        <rdfs:label>percentage individual income population statistic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_015458 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015458">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015452"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A(n) individual income population statistic that is the proportion of individuals having a individual income in the population.</obo:IAO_0000115>
-        <rdfs:label>proportion individual income population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -11244,6 +11189,347 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015857 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015857">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about leadership role.</obo:IAO_0000115>
+        <rdfs:label>leadership role population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015858 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015858">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015857"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) leadership role population statistic that is the percentage of people that have a leadership role in the population.</obo:IAO_0000115>
+        <rdfs:label>percentage leadership role population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015859 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015859">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015857"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) leadership role population statistic that is the proportion of people that have a leadership role in the population.</obo:IAO_0000115>
+        <rdfs:label>proportion leadership role population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015860 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015860">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015881"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about government assistance income data item.</obo:IAO_0000115>
+        <rdfs:label>government assistance income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015861 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015861">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015860"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) government assistance income data item population statistic that is the mean value of government assistance income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>mean government assistance income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015862 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015862">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015860"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) government assistance income data item population statistic that is the minimum value of government assistance income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>minimum government assistance income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015863 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015863">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015860"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) government assistance income data item population statistic that is the maximum value of government assistance income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>maximum government assistance income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015864 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015864">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015860"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) government assistance income data item population statistic that is the median value of government assistance income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>median government assistance income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015865 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015865">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015860"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) government assistance income data item population statistic that is the percentage value of government assistance income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>percentage government assistance income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015866 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015866">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015860"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) government assistance income data item population statistic that is the proportion of individuals having a government assistance income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>proportion government assistance income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015867 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015867">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015881"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about household income.</obo:IAO_0000115>
+        <rdfs:label>household income population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015868 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015868">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015867"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) household income population statistic that is the mean value of household income in the population.</obo:IAO_0000115>
+        <rdfs:label>mean household income population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015869 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015869">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015867"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) household income population statistic that is the minimum value of household income in the population.</obo:IAO_0000115>
+        <rdfs:label>minimum household income population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015870 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015870">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015867"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) household income population statistic that is the maximum value of household income in the population.</obo:IAO_0000115>
+        <rdfs:label>maximum household income population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015871 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015871">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015867"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) household income population statistic that is the median value of household income in the population.</obo:IAO_0000115>
+        <rdfs:label>median household income population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015872 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015872">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015867"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) household income population statistic that is the percentage value of household income in the population.</obo:IAO_0000115>
+        <rdfs:label>percentage household income population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015873 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015873">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015867"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) household income population statistic that is the proportion of individuals having a household income in the population.</obo:IAO_0000115>
+        <rdfs:label>proportion household income population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015874 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015874">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015881"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about individual person income data item.</obo:IAO_0000115>
+        <rdfs:label>individual person income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015875 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015875">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015874"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) individual person income data item population statistic that is the mean value of individual person income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>mean individual person income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015876 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015876">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015874"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) individual person income data item population statistic that is the minimum value of individual person income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>minimum individual person income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015877 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015877">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015874"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) individual person income data item population statistic that is the maximum value of individual person income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>maximum individual person income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015878 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015878">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015874"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) individual person income data item population statistic that is the median value of individual person income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>median individual person income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015879 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015879">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015874"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) individual person income data item population statistic that is the percentage value of individual person income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>percentage individual person income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015880 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015880">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015874"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) individual person income data item population statistic that is the proportion of individuals having a individual person income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>proportion individual person income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015881 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015881">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about monetary human income data item.</obo:IAO_0000115>
+        <rdfs:label>monetary human income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015882 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015882">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015881"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) monetary human income data item population statistic that is the mean value of monetary human income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>mean monetary human income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015883 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015883">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015881"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) monetary human income data item population statistic that is the minimum value of monetary human income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>minimum monetary human income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015884 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015884">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015881"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) monetary human income data item population statistic that is the maximum value of monetary human income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>maximum monetary human income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015885 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015885">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015881"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) monetary human income data item population statistic that is the median value of monetary human income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>median monetary human income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015886 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015886">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015881"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) monetary human income data item population statistic that is the percentage value of monetary human income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>percentage monetary human income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015887 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015887">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015881"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A(n) monetary human income data item population statistic that is the proportion of individuals having a monetary human income data item in the population.</obo:IAO_0000115>
+        <rdfs:label>proportion monetary human income data item population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_016000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_016000">
@@ -11287,7 +11573,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_020000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An information content entity that is about the likelihood of the intervention evaluation finding misrepresenting the outcome behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that is about the likelihood of the intervention evaluation finding misrepresenting the intervention outcome.</obo:IAO_0000115>
         <obo:IAO_0000118>intervention evaluation study risk of bias or error</obo:IAO_0000118>
         <rdfs:label>intervention evaluation study risk of bias or error</rdfs:label>
     </owl:Class>
@@ -11410,7 +11696,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_030000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_030000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010083"/>
         <obo:IAO_0000112>What counts as substantively is subject to judgement. The level and nature of the contribution can be defined using the CReDiT taxonomy (https://casrai.org/credit/).</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A researcher role played by a person that contributes substantively to production or reporting of a BCI evaluation study.</obo:IAO_0000115>
@@ -11666,7 +11952,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_047000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_047000">
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000254"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051026"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>The intervention temporal context where the process is the behaviour change intervention</obo:IAO_0000115>
         <obo:IAO_0000118>BCI temporal context</obo:IAO_0000118>
@@ -12006,17 +12292,6 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050550 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050550">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A planned process wherein knowledge and skills is imparted.</obo:IAO_0000115>
-        <rdfs:label>education process</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050551 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050551">
@@ -12327,6 +12602,72 @@ This class&apos;s definition is reused from SDGIO. As the ontology is no longer 
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A personal attribute reflecting a person&apos;s economic and social position in relation to others</obo:IAO_0000115>
         <rdfs:label>socioeconomic position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051025 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051025">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process context in which the process is an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051026 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051026">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051028"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal context of a process where the process is the intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention temporal context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051027 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051027">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051028"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051029"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An entity that includes the material and temporal contexts that are not part of but may influence the outcome of a process.</obo:IAO_0000115>
+        <rdfs:label>process context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051028 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051028">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An occurrent that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
+        <rdfs:comment>This entity includes time periods, events, etc.</rdfs:comment>
+        <rdfs:label>temporal context of process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051029 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051029">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A material entity that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
+        <rdfs:label>material context of process</rdfs:label>
     </owl:Class>
     
 
@@ -13212,14 +13553,14 @@ This class&apos;s definition is reused from SDGIO. As the ontology is no longer 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] </owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/064-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/064-001"/>
     </owl:Axiom>
     
@@ -16148,6 +16489,61 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002061"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A monetary human income data item that is the sum of earnings of one, individual human being.</obo:IAO_0000115>
+        <rdfs:label>individual person income data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002061"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A monetary personal income data item that is about solely the income an individual receives from a governmental organization through a program designed to provide low or no-income individuals with money to offset at least some costs of housing, food, or other necessities.</obo:IAO_0000115>
+        <rdfs:label>government assistance income data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000929 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000929">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002061"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A monetary human income data item that is about the sum of earnings for all the persons in a household.</obo:IAO_0000115>
+        <rdfs:label>household income</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process with an active participant who acquires mental representations of information content entities, which had no previous mental representation in the cognitive system, and through repeated use or application of these information content entities either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) &quot;improves&quot; an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative.</obo:IAO_0000115>
+        <rdfs:label>education process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about the sum of earnings for some person(s) from various forms of payment or profits.</obo:IAO_0000115>
+        <rdfs:label>monetary human income data item</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00002072 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002072">
@@ -16503,7 +16899,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000253">
         <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process context in which the process is an intervention.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
@@ -16516,8 +16911,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000254">
         <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000006"/>
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000253"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A temporal context of a process where the process is the intervention.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:047000</obo:IAO_0000119>
@@ -16530,7 +16923,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000268">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>An entity that includes the material and temporal contexts that are not part of but may influence the outcome of a process.</obo:IAO_0000115>
         <rdfs:label>process context</rdfs:label>
