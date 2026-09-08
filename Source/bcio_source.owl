@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_source.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_source.owl/2026-08-06"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_source.owl/2026-09-08"/>
     </owl:Ontology>
     
 
@@ -1085,7 +1085,7 @@ WHERE {
 
     <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000021">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:range rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
+        <rdfs:range rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A relationship that specifies the context in which a process happens.</obo:IAO_0000115>
         <rdfs:label>has context</rdfs:label>
@@ -2017,7 +2017,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_005000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_005000">
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000253"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051025"/>
         <obo:IAO_0000112>Includes as part BCI population and BCI setting. Use of the word ‘may’ conveys a non-zero probability given available information.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An intervention context in which the process is a behaviour change intervention.</obo:IAO_0000115>
@@ -2035,6 +2035,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>A process that is causally active in the relationship between a BCI scenario and its outcome behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>BCI MOA</obo:IAO_0000118>
         <rdfs:label>behaviour change intervention mechanism of action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006081 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A role that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
+        <rdfs:comment>A role can be assigned without being realised. A person realises a role by doing something.</rdfs:comment>
+        <rdfs:label>personal role</rdfs:label>
     </owl:Class>
     
 
@@ -3241,8 +3253,8 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010004"/>
         <obo:IAO_0000112>researcher, research assistant, investigator</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A occupational role played by a person that contributes substantively to production or reporting of a research study</obo:IAO_0000115>
-        <rdfs:label>researcher</rdfs:label>
+        <obo:IAO_0000115>A occupational role played by a person that contributes substantively to production or reporting of a research study.</obo:IAO_0000115>
+        <rdfs:label>researcher role</rdfs:label>
     </owl:Class>
     
 
@@ -3263,7 +3275,7 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010085">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010084"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A student or trainee that is currently learning in a non-institutional setting.</obo:IAO_0000115>
+        <obo:IAO_0000115>A student or trainee role that is currently learning in a non-institutional setting.</obo:IAO_0000115>
         <rdfs:label>informal education student role</rdfs:label>
     </owl:Class>
     
@@ -3698,26 +3710,14 @@ workplace, and safety of processes for the production of goods and services. The
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_010121 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010121">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010120"/>
-        <obo:IAO_0000112>trained (if unclear whether pre-existing or acquired)</obo:IAO_0000112>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An expertise of person source that is knowledge or skills held in order to deliver the behaviour change intervention.</obo:IAO_0000115>
-        <rdfs:label>knowledge or skill</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010122 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010122">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010121"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010120"/>
         <obo:IAO_0000112>Bachelor’s degree, certification, accredited, qualified</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A knowledge or skill that is already possessed by the source which allows them to deliver the behaviour change intervention, including educational level and qualifications.</obo:IAO_0000115>
-        <rdfs:label>pre-existing knowledge or skill</rdfs:label>
+        <obo:IAO_0000115>An expertise of person source that is already possessed by the source which allows them to deliver the intervention, including educational level and qualifications.</obo:IAO_0000115>
+        <rdfs:label>pre-existing expertise</rdfs:label>
     </owl:Class>
     
 
@@ -3748,7 +3748,7 @@ workplace, and safety of processes for the production of goods and services. The
         <obo:IAO_0000112>psychology, yoga, cognitive behavioural therapy, hypnotism</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>The expertise discipline in which the person source has acquired their pre-existing knowledge and skills.</obo:IAO_0000115>
-        <rdfs:label>discipline of pre-existing knowledge or skill</rdfs:label>
+        <rdfs:label>discipline of pre-existing expertise</rdfs:label>
     </owl:Class>
     
 
@@ -3756,10 +3756,10 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010125 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010125">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010121"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010120"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A knowledge or skill that is additional knowledge or skills supplied to the source to allow them to deliver the behaviour change intervention, including educational level and qualifications.</obo:IAO_0000115>
-        <rdfs:label>acquired knowledge or skill</rdfs:label>
+        <obo:IAO_0000115>An expertise of person source that is additional knowledge or skills supplied to the source to allow them to deliver the intervention, including educational level and qualifications.</obo:IAO_0000115>
+        <rdfs:label>acquired expertise</rdfs:label>
     </owl:Class>
     
 
@@ -3771,25 +3771,13 @@ workplace, and safety of processes for the production of goods and services. The
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010121"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010120"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>full-day, 6 years</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A knowledge or skill that is the duration of experience in related domain held by person source.</obo:IAO_0000115>
         <rdfs:label>amount of experience</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_010127 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010127">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_010122"/>
-        <obo:IAO_0000112>member of British Psychological Society</obo:IAO_0000112>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A pre-existing knowledge or skill that is recognised through affiliation to a formal group or organisation.</obo:IAO_0000115>
-        <rdfs:label>affiliation to a formal group or organisation</rdfs:label>
     </owl:Class>
     
 
@@ -4052,7 +4040,7 @@ workplace, and safety of processes for the production of goods and services. The
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_020000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An information content entity that is about the likelihood of the intervention evaluation finding misrepresenting the outcome behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that is about the likelihood of the intervention evaluation finding misrepresenting the intervention outcome.</obo:IAO_0000115>
         <obo:IAO_0000118>intervention evaluation study risk of bias or error</obo:IAO_0000118>
         <rdfs:label>intervention evaluation study risk of bias or error</rdfs:label>
     </owl:Class>
@@ -4430,7 +4418,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_047000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_047000">
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000254"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051026"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>The intervention temporal context where the process is the behaviour change intervention</obo:IAO_0000115>
         <obo:IAO_0000118>BCI temporal context</obo:IAO_0000118>
@@ -4571,6 +4559,83 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;process attribute&gt; whose bearer is an intervention.</obo:IAO_0000115>
         <rdfs:label>intervention attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051024 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051024">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006081"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal role that inheres in a human being by virtue of formal recognition of their competence by a professional or regulatory body.</obo:IAO_0000115>
+        <rdfs:label>certified professional role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051025 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051025">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process context in which the process is an intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051026 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051026">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051028"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal context of a process where the process is the intervention.</obo:IAO_0000115>
+        <rdfs:label>intervention temporal context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051027 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051027">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051028"/>
+                    <rdf:Description rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051029"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An entity that includes the material and temporal contexts that are not part of but may influence the outcome of a process.</obo:IAO_0000115>
+        <rdfs:label>process context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051028 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051028">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An occurrent that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
+        <rdfs:comment>This entity includes time periods, events, etc.</rdfs:comment>
+        <rdfs:label>temporal context of process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051029 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051029">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A material entity that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
+        <rdfs:label>material context of process</rdfs:label>
     </owl:Class>
     
 
@@ -5294,18 +5359,6 @@ This class is intended to include behaviours that can usefully be characterised 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/025-004"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/025-004"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget>An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000011"/>
@@ -5321,6 +5374,18 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <owl:annotatedTarget>ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, &apos;A Theory of Granular Partitions&apos;, in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158.</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000300"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/025-004"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/025-004"/>
     </owl:Axiom>
     
 
@@ -8712,7 +8777,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000253">
         <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process context in which the process is an intervention.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
@@ -8725,8 +8789,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000254">
         <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000006"/>
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000253"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A temporal context of a process where the process is the intervention.</obo:IAO_0000115>
         <obo:IAO_0000119>BCIO:047000</obo:IAO_0000119>
@@ -8739,7 +8801,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000268">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>An entity that includes the material and temporal contexts that are not part of but may influence the outcome of a process.</obo:IAO_0000115>
         <rdfs:label>process context</rdfs:label>
