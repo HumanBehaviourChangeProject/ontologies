@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl/2026-09-08"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_behaviour.owl/2026-09-11"/>
     </owl:Ontology>
     
 
@@ -2238,9 +2238,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_010084 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010084">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006081"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A role which inheres in a person and is realised by being enrolled in an educational institution or a formal programme of professional training.</obo:IAO_0000115>
+        <obo:IAO_0000115>A personal role which inheres in a person and is realised by being enrolled in an educational institution or a formal programme of professional training.</obo:IAO_0000115>
         <rdfs:label>student or trainee role</rdfs:label>
     </owl:Class>
     
@@ -3297,9 +3297,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015077 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015077">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006081"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A role which inheres in a person and is realised by the person assuming responsibility for the physical and emotional needs of another who has difficulties with self care.</obo:IAO_0000115>
+        <obo:IAO_0000115>A personal role which inheres in a person and is realised by the person assuming responsibility for the physical and emotional needs of another who has difficulties with self care.</obo:IAO_0000115>
         <rdfs:label>caregiving role</rdfs:label>
     </owl:Class>
     
