@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcio_source.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_source.owl/2026-09-11"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcio_source.owl/2026-09-29"/>
     </owl:Ontology>
     
 
@@ -132,6 +132,7 @@
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000111>textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115>English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115>The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
@@ -305,16 +306,13 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
-        <obo:IAO_0000111>term tracker item</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">term tracker item</obo:IAO_0000111>
-        <obo:IAO_0000112>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the URL for an ontology term tracker issue, such as https://github.com/monarch-initiative/mondo/issues/7588</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115>An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A URL for a request or discussion of an ontology term.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <oboInOwl:hasDbXref>IAO:0000233</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
@@ -323,7 +321,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>term_tracker_item</oboInOwl:shorthand>
-        <rdfs:comment>The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
         <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
         <rdfs:label>term tracker item</rdfs:label>
         <rdfs:label xml:lang="en">term tracker item</rdfs:label>
@@ -548,6 +545,18 @@ WHERE {
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
@@ -615,6 +624,7 @@ WHERE {
         <obo:IAO_0000115>An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</terms:created>
         <rdfs:label>database_cross_reference</rdfs:label>
         <rdfs:label>has cross-reference</rdfs:label>
     </owl:AnnotationProperty>
@@ -624,8 +634,8 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <obo:IAO_0000115>A property representing a fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
         <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
-        <obo:IAO_0000115>An alternative label for a given entity such as a commonly used abbreviation or synonym. </obo:IAO_0000115>
         <obo:IAO_0000115>Exact synonym.</obo:IAO_0000115>
         <obo:IAO_0000115>Fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
         <obo:IAO_0000115>Synonym of the term.</obo:IAO_0000115>
@@ -680,7 +690,12 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has related synonym</rdfs:label>
         <rdfs:label>has_related_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</rdfs:seeAlso>
     </owl:AnnotationProperty>
     
 
@@ -850,6 +865,23 @@ WHERE {
         <owlready_ontology:python_name xml:lang="en">derived_from</owlready_ontology:python_name>
         <rdfs:label xml:lang="en">derived from</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -1190,12 +1222,21 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002086"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000111 xml:lang="en">preceded by</obo:IAO_0000111>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">is preceded by</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">preceded_by</obo:IAO_0000118>
+        <terms:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</terms:source>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label>preceded by</rdfs:label>
+        <rdfs:label xml:lang="en">preceded by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1206,9 +1247,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000111 xml:lang="en">precedes</obo:IAO_0000111>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label>precedes</rdfs:label>
+        <rdfs:label xml:lang="en">precedes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1475,6 +1520,18 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <terms:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</terms:source>
         <rdfs:label>located in</rdfs:label>
         <rdfs:label xml:lang="en">located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002086">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:comment xml:lang="en">X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)</rdfs:comment>
+        <rdfs:label xml:lang="en">ends after</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1954,7 +2011,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://humanbehaviourchange.org/ontology/BCIO_001000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_001000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
@@ -4124,6 +4181,17 @@ workplace, and safety of processes for the production of goods and services. The
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_026022 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_026022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A facility in which formal education is provided to a student population.</obo:IAO_0000115>
+        <rdfs:label>educational facility</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_027000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_027000">
@@ -4202,7 +4270,7 @@ workplace, and safety of processes for the production of goods and services. The
     <!-- http://humanbehaviourchange.org/ontology/BCIO_033000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_033000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;planned process&gt; that is the smallest part of BCI content that is observable, replicable and on its own has the potential to bring about behaviour change.</obo:IAO_0000115>
         <obo:IAO_0000118>BCT</obo:IAO_0000118>
@@ -4292,7 +4360,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_037000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_037000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000112>Examples of interventions are putting health warnings on cigarette packets, providing free stop smoking services and banning smoking in public places.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process that has the aim of influencing an outcome.</obo:IAO_0000115>
@@ -4396,7 +4464,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_045000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_045000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process by which intervention content is delivered.</obo:IAO_0000115>
         <rdfs:label>intervention delivery</rdfs:label>
@@ -4407,7 +4475,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://humanbehaviourchange.org/ontology/BCIO_046000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_046000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process that is part of an intervention and is intended to be causally active in influencing the intervention outcome.</obo:IAO_0000115>
         <rdfs:label>intervention content</rdfs:label>
@@ -5478,6 +5546,12 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000112 xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/dron.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obib.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </obo:IAO_0000602>
         <rdfs:comment xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -5711,61 +5785,19 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000000 -->
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
-        <obo:IAO_0000115 xml:lang="en">An astrononmical body part which delimited by physical discontinuities with its surroundings.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Geographic_feature</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>macroscopic spatial feature</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/envo#envoPolar"/>
-        <rdfs:comment>This class is being depopulated and will be filled only with inferred subclasses. Please do not use this for direct annotation, favouring instead a more descriptive subclass.</rdfs:comment>
-        <rdfs:label>geographic feature</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000000"/>
-        <obo:IAO_0000115>An anthropogenic geographic feature is a geographic feature resulting from the influence of human beings on nature.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>FTT:78</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TGN:50001</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym>man-made feature</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>manmade feature</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>anthropogenic geographic feature</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An anthropogenic geographic feature is a geographic feature resulting from the influence of human beings on nature.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ORCID:0000-0002-4366-3088</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-        <obo:IAO_0000115>A construction which enables the movement of humans, their animals or their vehicles.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>FTT:83</oboInOwl:hasDbXref>
-        <rdfs:label>transport feature</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000010"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A construction which enables the movement of humans, their animals or their vehicles.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MA:ma</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ENVO_00000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001272"/>
         <obo:IAO_0000115>An open way for the passage of vehicles, persons, or animals on land.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:road</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:1058</oboInOwl:hasDbXref>
@@ -6004,29 +6036,9 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000070 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000070">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001813"/>
-        <obo:IAO_0000115>A construction that has been assembled by deliberate human effort.</obo:IAO_0000115>
-        <obo:IAO_0000116>&quot;constructed&quot; should probably be made something like a quality and this class obsoleted or filled only by inference</obo:IAO_0000116>
-        <oboInOwl:hasExactSynonym>constructed feature</oboInOwl:hasExactSynonym>
-        <rdfs:comment xml:lang="en">Some human constructions (such as the extra-planetary probes built for the Voyager missions) exist outside of Earth&apos;s (or any other astrononomical body&apos;s) technosphere, and are thus not astronomical body parts. Assertions regarding whether a construction is part of the technosphere of an astronomical body (e.g. Earth) should be made at the instance level, if needed / useful for the application case.</rdfs:comment>
-        <rdfs:label>human construction</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A construction that has been assembled by deliberate human effort.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MA:ma</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00000091 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000091">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001884"/>
         <obo:IAO_0000115>A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of water.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:beach</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EcoLexicon:to_beach</oboInOwl:hasDbXref>
@@ -6116,7 +6128,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/ENVO_00000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001305"/>
         <obo:IAO_0000115>An area in which grasses (Graminae) are a significant component of the vegetation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>grazing area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>herbaceous area</oboInOwl:hasRelatedSynonym>
@@ -6143,269 +6154,9 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000109 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000109">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001305"/>
-        <obo:IAO_0000115>Land having a cover of trees, shrubs, or both.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>FTT:1083</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FTT:505</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FTT:506</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FTT:719</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FTT:774</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Geonames:V.GRVPN</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>LTER:503</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SWEETRealm:Break</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SWEETRealm:Scrub</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TGN:21631</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TGN:21632</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TGN:21641</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Woodland</oboInOwl:hasDbXref>
-        <oboInOwl:hasNarrowSynonym>brigalow</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>pine grove</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasRelatedSynonym>caatinga</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>chanaral</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>coniferous forest</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>copse</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>deciduous forest</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>equatorial forest</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>equatorial rain forest</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>garique</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>grove</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>jungle</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>mallee scrub</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>monsoon forest</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>moor</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>mott</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>motte</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>mulga</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>mulga scrub</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>rain forest</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>reforested area</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>sagebrush</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>scrub</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>shrub</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>silva</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>stand</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>taiga</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>thicket</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>thorn forest</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>wood</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>wooded area</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605014"/>
-        <rdfs:label>woodland area</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Land having a cover of trees, shrubs, or both.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <owl:annotatedTarget>brigalow</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <owl:annotatedTarget>pine grove</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Geonames:feature</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>caatinga</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>chanaral</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>coniferous forest</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>copse</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>deciduous forest</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>equatorial forest</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>equatorial rain forest</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>garique</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>grove</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ADL:FTT</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>grove</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>jungle</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Getty:TGN</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>jungle</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>mallee scrub</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>monsoon forest</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>moor</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>motte</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>mulga</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>mulga scrub</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>rain forest</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ADL:FTT</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>rain forest</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Getty:TGN</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>reforested area</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>sagebrush</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>scrub</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>shrub</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>silva</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>stand</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>taiga</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>thicket</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>thorn forest</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>wood</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Getty:TGN</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>wooded area</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00000111 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000111">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000109"/>
         <obo:IAO_0000115>An area with a high density of trees. A small forest may be called a wood.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:forest</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:258</oboInOwl:hasDbXref>
@@ -6445,41 +6196,10 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000191 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000191">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001784"/>
-        <obo:IAO_0000115 xml:lang="en">A part of an astronomical body which is primarily composed of solid material.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>EcoLexicon:landform</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>EcoLexicon:landforms</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FTT:754</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FTT:96</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SWEETRealm:Landform</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TGN:21400</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TGN:21401</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym>geological feature</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>landform</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>physiographic feature</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>solid astronomical body part</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000191"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A part of an astronomical body which is primarily composed of solid material.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Landform</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000191"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>geological feature</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ADL:FTT</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00000469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <obo:IAO_0000115>A facility which supports the undertaking of scientific research or measurements.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605023"/>
@@ -6498,7 +6218,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/ENVO_00000562 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000562">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000002"/>
         <obo:IAO_0000115>A bounded area of land, or water, usually in its natural or semi-natural (landscaped) state and set aside for some purpose, usually to do with recreation or conservation.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605014"/>
         <rdfs:label>park</rdfs:label>
@@ -6557,22 +6276,6 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000813 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000813">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A material part of an astronomical body.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Also note that some astronomical body parts (ABPs) may have fiat boundaries: if there&apos;s strong debate about where an ABP begins or ends (over and above fuzzy boundaries), with different official classifications setting different thresholds or limits, axiomatise the class with fiat boundaries of the appropriate dimension.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Note that material entities may have immaterial entities (e.g. sites) as parts.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">This class includes material parts of astronomical bodies. Immaterial parts, such as magnetospheres, are represented as sites under the influence of magnetic fields.Please post countercases in the ENVO tracker for revision of this hierarchy if needed.</obo:IAO_0000116>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/envo#envoAstro"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/envo#envoPolar"/>
-        <rdfs:comment xml:lang="en">Material parts of astronomical bodies generally have boundaries formed by discontinuities in qualities, composition, or other physical characterisitcs. These boundaries are sometimes sharp, and sometimes diffuse, with different classification systems and communities declaring varying thresholds (e.g. for where a shoreline, forest, or other entity begins and ends). However, some boundaries are declared by fiat - that is, by arbitrary human convention or decree - particularly by regulatory or other authorities and communities of practice. The classes in this hierarchy attempt to offer generalisable definitions that allow multiple classfiication systems to map to and interoperate through. If desired, we can create classes that declare thresholds used by a given authority or community under the more generic ones, annotated with source information.</rdfs:comment>
-        <rdfs:label xml:lang="en">astronomical body part</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01001110 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001110">
@@ -6597,114 +6300,21 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001199 -->
+    <!-- http://purl.obolibrary.org/obo/ENVO_03501288 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001199">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000408"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
-        <obo:IAO_0000115>An environmental zone which is bounded by material parts of a land mass or the atmosphere or space adjacent to it.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">terrestrial environmental zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001272 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001272">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000010"/>
-        <obo:IAO_0000115>A construction which comprises a durable surface layer overlying a solid surface intended to sustain vehicular or foot traffic.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">constructed pavement</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001272"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A construction which comprises a durable surface layer overlying a solid surface intended to sustain vehicular or foot traffic.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Road_surface</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001305 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001305">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001199"/>
-        <obo:IAO_0000115>A vegetated area is a geographic feature which has ground cover dominated by plant communities.</obo:IAO_0000115>
-        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/envo#envoPolar"/>
-        <rdfs:label>vegetated area</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001784 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001784">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
-        <obo:IAO_0000115 xml:lang="en">A part of an astronomical body which is composed of a continuous medium bearing liquid, gaseous, and solid material in variable quantities.</obo:IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-17T08:36:00Z</dc:date>
-        <rdfs:label xml:lang="en">compound astronomical body part</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001784"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A part of an astronomical body which is composed of a continuous medium bearing liquid, gaseous, and solid material in variable quantities.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Landform</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001813 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001813">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03501288">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A material entity which has been assembled through the intentional, instinctual, or deliberately programmed efforts of an organism or machine.</obo:IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-29T14:50:34Z</dc:date>
-        <oboInOwl:hasBroadSynonym>assembled material entity</oboInOwl:hasBroadSynonym>
-        <rdfs:comment>Constructions differ from manufactured products in that they are the output of individual and tailored projects, rather than repetitive processes.</rdfs:comment>
-        <rdfs:label xml:lang="en">construction</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity which has been designed to promote the accomplishment of one or more defined tasks.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-9578-0788"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-15T04:00:01.750Z</oboInOwl:creation_date>
+        <rdfs:comment>Facilities can be temporary or permanent constructions, ad hoc arrangements of material entities, or any other configuration of things that support the accomplishment of defined tasks or functions.</rdfs:comment>
+        <rdfs:label xml:lang="en">facility</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001813"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget>Constructions differ from manufactured products in that they are the output of individual and tailored projects, rather than repetitive processes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://ascpro0.ascweb.org/archives/cd/2009/paper/CERT136002009.pdf"/>
-        <oboInOwl:hasDbXref rdf:resource="https://alsyedconstruction.com/is-construction-a-manufacturing-industry/#comparing-construction-and-manufacturing"/>
-        <oboInOwl:hasDbXref rdf:resource="https://www.autodesk.com/design-make/articles/manufacturing-and-construction"/>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001884 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001884">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001886"/>
-        <obo:IAO_0000115 xml:lang="en">A landform which occurs on the surface of an astronomical body.</obo:IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-15T09:16:23Z</dc:date>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">geographic feature</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>The usage of &quot;surface&quot; here aligns with that of planetary surface: in contact with the atmosphere or space. The extent of the &quot;surface&quot; can vary. For rocky planets like Earth, astrogeologists consider the crust as the surface.</rdfs:comment>
-        <rdfs:label xml:lang="en">surface landform</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001886 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001886">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000191"/>
-        <obo:IAO_0000115 xml:lang="en">A solid astronomical body part which has been formed from and is composed primarily of the matter of that astronomical body.</obo:IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-15T09:40:37Z</dc:date>
-        <rdfs:comment xml:lang="en">Landforms may be natural or anthropogenic. This term has often has loose usage when referencing entities which are either subterranean or submerged below water bodies. In some cases, oceans themselves are considered landforms. Here, we have provided subclasses to resolve this ambiguity, but place oceans and other water bodies elsewhere.In later revisions, this hiearchy is likely to be reordered based on the formation processes of the entities within it.</rdfs:comment>
-        <rdfs:label xml:lang="en">landform</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001886"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A solid astronomical body part which has been formed from and is composed primarily of the matter of that astronomical body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Landform"/>
+        <owl:annotatedTarget xml:lang="en">A material entity which has been designed to promote the accomplishment of one or more defined tasks.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wiktionary.org/wiki/facility"/>
     </owl:Axiom>
     
 
@@ -7005,10 +6615,12 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">data entity</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
@@ -7024,8 +6636,10 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data item</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label xml:lang="en">data entity</rdfs:label>
         <rdfs:label xml:lang="en">data item</rdfs:label>
     </owl:Class>
     
@@ -7047,8 +6661,14 @@ JAR: A data item is an approximately justified approximately true approximate be
 Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/dron.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ico.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obib.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>information content entity</rdfs:label>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
@@ -8096,17 +7716,6 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000111>planned process</obo:IAO_0000111>
-        <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
-        <obo:IAO_0000116>&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
-        <obo:IAO_0000116>We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
-objectives is a planned process.</obo:IAO_0000116>
-        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
-        <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
-        <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
         <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
@@ -8115,7 +7724,7 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000111>patient role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">a hospitalized person; a person with controlled diabetes; the patient&apos;s role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -8192,10 +7801,12 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">plan</obo:IAO_0000111>
         <obo:IAO_0000112>The plan of researcher X to perform an experiment according to a protocol.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115 xml:lang="en">A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.</obo:IAO_0000115>
         <obo:IAO_0000116>This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the &apos;plan specification&apos;, and &apos;planned process&apos; class, as we want to avoid to get deep into discussions of &apos;intend&apos; etc.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">AR, BP, JM, MC, PRS</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">branch derived</obo:IAO_0000119>
+        <rdfs:label>plan</rdfs:label>
         <rdfs:label xml:lang="en">plan</rdfs:label>
     </owl:Class>
     
@@ -8230,15 +7841,6 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000232>creation date: 2010-01-25T04:51:11Z</obo:IAO_0000232>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087</rdfs:comment>
         <rdfs:label>extended organism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label xml:lang="en">material entity role</rdfs:label>
     </owl:Class>
     
 
@@ -8285,9 +7887,10 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-        <obo:IAO_0000115 xml:lang="en">A facility that is run by a school organization and is the bearer of a school function.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_026022"/>
+        <obo:IAO_0000115 xml:lang="en">An educational facility that is run by a school organization and is the bearer of a school function.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-9881-1017"/>
         <rdfs:label xml:lang="en">school facility</rdfs:label>
     </owl:Class>
     
@@ -8299,6 +7902,7 @@ for now.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit&apos;s residence function.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:resource="obo:PCO_0000024"/>
         <rdfs:comment>Note in OMRSE it is the housing unit, not the people living there, that are the bearers of a &quot;residence function&quot;.  Note the distinction between being a residence and a resident.</rdfs:comment>
         <rdfs:comment>Note that it is not possible in OWL 2, at least that we have yet found, to say that the housing unit in which the process occurs is the same one that is the bearer of the residence function (that the process realizes).</rdfs:comment>
         <rdfs:label xml:lang="en">household</rdfs:label>
@@ -8306,9 +7910,21 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in an organism that is able to receive benefits from an insurance policy. The role, if realized, is realized by receiving benefits that are covered by the insurance policy.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">insured party role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000092"/>
         <obo:IAO_0000115 xml:lang="en">An insured party role that inheres in a person who participates in the creation of the insurance contract and is eligible to receive benefits as specified by the insurance contract.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">policy holder role</rdfs:label>
@@ -8320,8 +7936,10 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+        <obo:IAO_0000115 xml:lang="en">A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare facility</oboInOwl:hasExactSynonym>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <rdfs:label xml:lang="en">health care facility</rdfs:label>
     </owl:Class>
@@ -8374,7 +7992,12 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 xml:lang="en">a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care facility that also bears a residence function and thus is one in which the patients are also residents of the facility.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">long-term health care facility</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">long-term healthcare facility</obo:IAO_0000118>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <oboInOwl:hasExactSynonym xml:lang="en">community living healthcare facility</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">community living health care facility</rdfs:label>
     </owl:Class>
     
@@ -8422,10 +8045,89 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002061"/>
+        <obo:IAO_0000115 xml:lang="en">A monetary human income data item that is the sum of earnings of one, individual human being.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/mcwdsi/OMRSE/issues/343"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-30T21:43:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-9881-1017"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">individual human income data item</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">individual income data item</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">individual person income data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002061"/>
+        <obo:IAO_0000115 xml:lang="en">A monetary personal income data item that is about solely the income an individual receives from a governmental organization through a program designed to provide low or no-income individuals with money to offset at least some costs of housing, food, or other necessities.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6378-1703"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-9881-1017"/>
+        <rdfs:comment xml:lang="en">It excludes employment income for government employees.</rdfs:comment>
+        <rdfs:label xml:lang="en">government assistance income data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000929 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000929">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002061"/>
+        <obo:IAO_0000115 xml:lang="en">A monetary human income data item that is about the sum of earnings for all the persons in a household.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">household income data item</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">household income</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <obo:IAO_0000111 xml:lang="en">educating</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A planned process with an active participant who acquires mental representations of information content entities, which had no previous mental representation in the cognitive system, and through repeated use or application of these information content entities either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) &quot;improves&quot; an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">learning process</obo:IAO_0000118>
+        <obo:IAO_0000600 xml:lang="en">An act of acquiring new information and repeatedly applying that information to develop a new skill, improve an existing skill, and/or losing a skill at doing something &quot;bad&quot;.</obo:IAO_0000600>
+        <rdfs:comment xml:lang="en">An interesting question is whether there must be another participant who is the &quot;educator&quot;.  Some might object that many people are &quot;self taught&quot;.  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one&apos;s sensory systems (vision, proprioception, auditory, etc.).
+
+On the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow &quot;plays a role&quot; in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The loss of a &quot;bad&quot; capability is something like losing a bad golf swing and replacing it with a good one.  Also a capability to disrupt the classroom might be something an educating process diminishes possibly to the point of &quot;removal&quot; in a student.
+
+This addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating.</rdfs:comment>
+        <rdfs:label xml:lang="en">education process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112 xml:lang="en">Examples of monetary forms of payment include: wages, salary, or tips; interest generated by capital; dividends earned; lottery, game, or contest monetary winnings; alimony; royalties; trusts; pensions; receipt of rental payments; unemployment payments; social security payments; worker&apos;s compensation; social security payments; or profit from entrepreneurial activities.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A data item that is about the sum of earnings for some person(s) from various forms of payment or profits.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
+        <oboInOwl:hasExactSynonym xml:lang="en">monetary personal income data item</oboInOwl:hasExactSynonym>
+        <rdfs:comment xml:lang="en">Changing label to use word &apos;human&apos; in place of &apos;personal&apos;. Users were concerned that &apos;personal&apos; made it seem like the income of a single person, rather than one or more persons, per the definition. However, we are keeping the original label as a synonym.</rdfs:comment>
+        <rdfs:comment xml:lang="en">We use the phrase ‘some person’ in the definition because this class can be about an individual&apos;s or a household&apos;s earnings. Similarly, we use &apos;personal income&apos; in the label because the term is typically restricted to individuals and households. This class is also restricted to being about monetary forms of income.</rdfs:comment>
+        <rdfs:label xml:lang="en">monetary human income data item</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00002072 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002072">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115 xml:lang="en">A role that inheres in some entity that is realized in a social act.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -8435,9 +8137,22 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPMI_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>information associated with an individual</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.oic.qld.gov.au/guidelines/for-government/access-and-amendment/introduction-to-the-acts/what-is-personal-information</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">personal information</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPMI_0000121 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPMI_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000093"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPMI_0000326"/>
         <obo:IAO_0000115>The personal information that indicates an individual&apos;s or his/her family&apos;s economic and social position in relation to others, based on income, education, and occupation.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -8756,54 +8471,6 @@ https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115>A quality inhering in a person by virtue of that person bearing a role realised in an employment process.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">employment status</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://galenos.org.uk/ontologies/GMHO_0000006 -->
-
-    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An occurrent that is not dependent on a process but may influence the effect of the process on its outcome.</obo:IAO_0000115>
-        <rdfs:comment>This entity includes time periods, events, etc.</rdfs:comment>
-        <rdfs:label>temporal context of process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://galenos.org.uk/ontologies/GMHO_0000253 -->
-
-    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000253">
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000268"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A process context in which the process is an intervention.</obo:IAO_0000115>
-        <obo:IAO_0000119>BCIO:005000</obo:IAO_0000119>
-        <rdfs:label>intervention context</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://galenos.org.uk/ontologies/GMHO_0000254 -->
-
-    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000254">
-        <rdfs:subClassOf rdf:resource="https://galenos.org.uk/ontologies/GMHO_0000006"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A temporal context of a process where the process is the intervention.</obo:IAO_0000115>
-        <obo:IAO_0000119>BCIO:047000</obo:IAO_0000119>
-        <rdfs:label>intervention temporal context</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://galenos.org.uk/ontologies/GMHO_0000268 -->
-
-    <owl:Class rdf:about="https://galenos.org.uk/ontologies/GMHO_0000268">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>An entity that includes the material and temporal contexts that are not part of but may influence the outcome of a process.</obo:IAO_0000115>
-        <rdfs:label>process context</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
