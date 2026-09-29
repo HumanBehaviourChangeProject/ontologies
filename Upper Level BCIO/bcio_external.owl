@@ -563,15 +563,6 @@ WHERE {
     
 
 
-    <!-- http://purl.unep.org/sdg/SDGIO_00000064 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.unep.org/sdg/SDGIO_00000064">
-        <obo:IAO_0000115>A URL referencing the page or thread where class is being or has been discussed in a Community of Practice hosted on the Environment Live portal by UN Environment and GEO.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">has COP discussion thread</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.unep.org/sdg/SDGIO_00010069 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.unep.org/sdg/SDGIO_00010069">
@@ -5087,10 +5078,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     
 
 
@@ -5776,64 +5764,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <owl:annotatedTarget>UMLS:C1515976</owl:annotatedTarget>
         <oboInOwl:source>ncithesaurus:Anatomic_Structure_System_or_Substance</oboInOwl:source>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010001 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process wherein knowledge and skill is imparted.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">https://github.com/SDG-InterfaceOntology/sdgio/issues/36</obo:IAO_0000116>
-        <oboInOwl:hasExactSynonym>education</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">education process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.unep.org/sdg/SDGIO_00010001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A planned process wherein knowledge and skill is imparted.</owl:annotatedTarget>
-        <rdfs:comment>Adapted from: http://purl.bioontology.org/ontology/SNOMEDCT/409073007</rdfs:comment>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010026 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A person or population that is not employed, but eligible for and currently seeking employment.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Eventually a defined class, axiomitized using classes for employment status.
-https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
-        <sdg:SDGIO_00000064>https://uneplive.unep.org/community/discussion/view/23255/employment</sdg:SDGIO_00000064>
-        <rdfs:comment xml:lang="en">The criteria varies for deciding if a person who is not employed also qualifies as unemployed.</rdfs:comment>
-        <rdfs:label xml:lang="en">unemployed</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.unep.org/sdg/SDGIO_00010026"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A person or population that is not employed, but eligible for and currently seeking employment.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://stats.oecd.org/glossary/detail.asp?ID=2791</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010028 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A person or organization that participates in an ownership process wherein they realize their role as owner by exercising their right to use, sell, rent, or gift an object.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">owner</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010029 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115>A quality inhering in a person by virtue of that person bearing a role realised in an employment process.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">employment status</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 
