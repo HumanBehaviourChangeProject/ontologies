@@ -520,6 +520,18 @@ WHERE {
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
@@ -594,6 +606,14 @@ WHERE {
         <owl:annotatedTarget>ID of merged class.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://www.geneontology.org/formats/oboInOwl#hasAlternativeId</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -2693,6 +2713,16 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">fiat object</rdfs:label>
+        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
@@ -3141,7 +3171,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/ENVO_00000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>An open way for the passage of vehicles, persons, or animals on land.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:road</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:1058</oboInOwl:hasDbXref>
@@ -3383,7 +3412,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/ENVO_00000091 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000091">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of water.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:beach</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EcoLexicon:to_beach</oboInOwl:hasDbXref>
@@ -3473,7 +3501,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/ENVO_00000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>An area in which grasses (Graminae) are a significant component of the vegetation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>grazing area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>herbaceous area</oboInOwl:hasRelatedSynonym>
@@ -3503,7 +3530,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/ENVO_00000111 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000111">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>An area with a high density of trees. A small forest may be called a wood.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:forest</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:258</oboInOwl:hasDbXref>
@@ -3546,15 +3572,25 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/ENVO_00000469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+        <obo:IAO_0000115>A facility which supports the undertaking of scientific research or measurements.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605023"/>
+        <rdfs:label>research facility</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000469"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A facility which supports the undertaking of scientific research or measurements.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
+        <oboInOwl:hasDbXref>MA:ma</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ENVO_00000562 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000562">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>A bounded area of land, or water, usually in its natural or semi-natural (landscaped) state and set aside for some purpose, usually to do with recreation or conservation.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ENVO_03605014"/>
         <rdfs:label>park</rdfs:label>
@@ -3564,6 +3600,94 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A bounded area of land, or water, usually in its natural or semi-natural (landscaped) state and set aside for some purpose, usually to do with recreation or conservation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Park</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
+        <obo:IAO_0000115>A system which has the disposition to environ one or more material entities.</obo:IAO_0000115>
+        <oboInOwl:creation_date>2013-09-23T16:04:08Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>EcoLexicon:environment</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>environment</oboInOwl:hasExactSynonym>
+        <rdfs:comment>In ENVO&apos;s alignment with the Basic Formal Ontology, this class is being considered as a subclass of a proposed BFO class &quot;system&quot;. The relation &quot;environed_by&quot; is also under development. Roughly, a system which includes a material entity (at least partially) within its site and causally influences that entity may be considered to environ it. Following the completion of this alignment, this class&apos; definition and the definitions of its subclasses will be revised.</rdfs:comment>
+        <rdfs:label>environmental system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A system which has the disposition to environ one or more material entities.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>DOI:10.1186/2041-1480-4-43</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000408 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000408">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <obo:IAO_0000115>A site which has its extent determined by the presence or influence of one or more components of an environmental system or the processes occurring therein.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>environmental area</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/envo#envoPolar"/>
+        <rdfs:comment>Formerly, this class was an experimental class and a subclass of &quot;environmental feature&quot;. It is now aligned to BFO. The class was not obsoleted as the core semantics maintained their stability through its transition.</rdfs:comment>
+        <rdfs:label>environmental zone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000452 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000452">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115>A disposition which is realised by an environmental system or system parts thereof.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:comment>This class and its subclasses are experimental and are being developed with NCEAS use cases in mind.</rdfs:comment>
+        <rdfs:label>environmental disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <obo:IAO_0000115>An environmental system which includes both living and non-living components.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>LTER:173</oboInOwl:hasDbXref>
+        <rdfs:comment>This class will be primarily filled by inference, any environmental system which necessarily includes living parts should be autoclassified here.</rdfs:comment>
+        <rdfs:label xml:lang="en">ecosystem</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An environmental system which includes both living and non-living components.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Ecosystem</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>LTER:173</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://vocab.lternet.edu/vocab/vocab/index.php?tema=173&amp;/ecosystems</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03501288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03501288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity which has been designed to promote the accomplishment of one or more defined tasks.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-9578-0788"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-15T04:00:01.750Z</oboInOwl:creation_date>
+        <rdfs:comment>Facilities can be temporary or permanent constructions, ad hoc arrangements of material entities, or any other configuration of things that support the accomplishment of defined tasks or functions.</rdfs:comment>
+        <rdfs:label xml:lang="en">facility</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A material entity which has been designed to promote the accomplishment of one or more defined tasks.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wiktionary.org/wiki/facility"/>
     </owl:Axiom>
     
 
@@ -4970,10 +5094,28 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000111>patient role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">a hospitalized person; a person with controlled diabetes; the patient&apos;s role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a role which inheres in a person and is realized by the process of being under the care of a physician or health care provider</obo:IAO_0000115>
+        <obo:IAO_0000116>See also OMRSE:00000011 &apos;patient role&apos;</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">GROUP:Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000118>patient</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">CDISC definition:  patient. Person under a physician&apos;s care for a particular disease or condition. NOTE: A subject in a clinical trial is not necessarily a patient, but a patient in a clinical trial is a subject. See also subject, trial subject, healthy volunteer. Often used interchangeably</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">patient role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000111 xml:lang="en">organization</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -5012,6 +5154,22 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000119>GROUP: OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organization</rdfs:label>
         <rdfs:label>organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000111 xml:lang="en">plan</obo:IAO_0000111>
+        <obo:IAO_0000112>The plan of researcher X to perform an experiment according to a protocol.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.</obo:IAO_0000115>
+        <obo:IAO_0000116>This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the &apos;plan specification&apos;, and &apos;planned process&apos; class, as we want to avoid to get deep into discussions of &apos;intend&apos; etc.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">AR, BP, JM, MC, PRS</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">branch derived</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">plan</rdfs:label>
     </owl:Class>
     
 
@@ -5417,6 +5575,19 @@ This addition to the definition notwithstanding, we do not intend to incorporate
         <obo:IAO_0000115 xml:lang="fr">Une entité de contenu informationnel qui spécifie les quantités minimum et maximum de médicament ou d’ingrédient actif dans une administration de dose.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">dose range specification</rdfs:label>
         <rdfs:label xml:lang="fr">spécification d’intervalle de dose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material entity consisting of multiple components that are causally integrated.</obo:IAO_0000115>
+        <obo:IAO_0000116>May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000119>
+        <rdfs:label>system</rdfs:label>
     </owl:Class>
     
 
