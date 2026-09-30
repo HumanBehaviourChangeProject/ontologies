@@ -5583,6 +5583,7 @@ This addition to the definition notwithstanding, we do not intend to incorporate
     <!-- http://purl.obolibrary.org/obo/SEPIO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A planned process executed in the performance of scientific research wherein systematic investigations are performed to establish facts and reach new conclusions about phenomena in the world.</obo:IAO_0000115>
         <rdfs:comment>Data generation process are typically experimental studies or observations, but can include any process generating information used to evaluate a claim.  This is an organizational class that groups more specific types of such processes that are most commonly used in generating data used as evidence to support claims. These processes produce informational artifacts such as measured  data values, derived statistical calculations and confidence measures, or statements representing summaries or conclusions drawn from such data.</rdfs:comment>
@@ -5594,7 +5595,7 @@ This addition to the definition notwithstanding, we do not intend to incorporate
     <!-- http://purl.obolibrary.org/obo/SEPIO_0000125 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000125">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>A planned process that executes some study design or protocol to generate scientific data that is interpreted to test or generate a hypothesis.</obo:IAO_0000115>
         <obo:SEPIO_0000061>Explore the classification of study types here as a possibility to implement in SEPIO. 
 https://mcw.libguides.com/evidencebased/studies
