@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2026-09-29"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2026-11-10"/>
     </owl:Ontology>
     
 
@@ -560,15 +560,6 @@ WHERE {
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00000064 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.unep.org/sdg/SDGIO_00000064">
-        <obo:IAO_0000115>A URL referencing the page or thread where class is being or has been discussed in a Community of Practice hosted on the Environment Live portal by UN Environment and GEO.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">has COP discussion thread</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 
@@ -4670,19 +4661,6 @@ Habitual behaviour can be an MoA or outcome depending on how &apos;habitual beha
         <obo:IAO_0000115>An attribute of a BCI delivery that is the physical or informational medium through which a BCI is provided.</obo:IAO_0000115>
         <obo:IAO_0000118>MOD</obo:IAO_0000118>
         <rdfs:label>behaviour change intervention mode of delivery</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_013000 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050916"/>
-        <obo:IAO_0000112>Includes mental activities and behaviours.</obo:IAO_0000112>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Participant engagement with intervention, where the intervention focuses on changing behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118>BCI engagement</obo:IAO_0000118>
-        <rdfs:label>participant engagement with behaviour change intervention</rdfs:label>
     </owl:Class>
     
 
@@ -18211,30 +18189,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050620 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050620">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050621"/>
-        <obo:IAO_0000112>&quot;Acquired rewards&quot; in the Social Learning Theory</obo:IAO_0000112>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;conditioned reinforcer&gt; that has acquired its reinforcing property by having been associated with a positive reinforcer.</obo:IAO_0000115>
-        <rdfs:label>conditioned positive reinforcer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050621 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050621">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050756"/>
-        <obo:IAO_0000112>&quot;Conditioned reinforcer&quot; in the Operant Conditioning</obo:IAO_0000112>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;reinforcer&gt; whose effect on behaviour results from being paired with another reinforcer</obo:IAO_0000115>
-        <rdfs:label>conditioned reinforcer</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050622 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050622">
@@ -18312,8 +18266,8 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050755"/>
         <obo:IAO_0000112>&quot;Differential reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;reinforcement process&gt; in which the event following the behaviour only occurs in particular situations.</obo:IAO_0000115>
-        <rdfs:comment>The situations could involve the presence of a stimulus (discriminative stimulus) that signals the contingency. A discriminative stimulus signals that a behaviour will be followed by a particular reinforcer.</rdfs:comment>
+        <obo:IAO_0000115>A &lt;behavioural contingency process&gt; in which the event following the behaviour only occurs in particular situations.</obo:IAO_0000115>
+        <rdfs:comment>The situations could involve the presence of a stimulus (discriminative stimulus) that signals the contingency. A discriminative stimulus signals that a behaviour will be followed by a particular contingent stimulus.</rdfs:comment>
         <rdfs:label>differential reinforcement</rdfs:label>
     </owl:Class>
     
@@ -18325,7 +18279,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050783"/>
         <obo:IAO_0000112>&quot;Cues from repertoire of cognitive and self-directive variables&quot; in the Self-Regulation Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;stimulus&gt; that signals that a behaviour will be followed by a particular reinforcer.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;stimulus&gt; that signals that a behaviour will be followed by a particular contingent stimulus.</obo:IAO_0000115>
         <rdfs:comment>Specific refers to an instance or subclass of something rather than anything in the general class. Particular refers to an instance or subclass of something rather than another instance or subclass of it.</rdfs:comment>
         <rdfs:label>discriminative stimulus</rdfs:label>
     </owl:Class>
@@ -18758,18 +18712,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;subjective affective feeling&gt; of pressure from other people to act, think or feel in a particular way.</obo:IAO_0000115>
         <rdfs:label>feeling social pressure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050666 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050666">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050621"/>
-        <obo:IAO_0000112>&quot;Generalised reinforcer&quot; in the  Operant Conditioning</obo:IAO_0000112>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;conditioned reinforcer&gt; whose effect has been caused by pairing with multiple primary reinforcers.</obo:IAO_0000115>
-        <rdfs:label>generalised reinforcer</rdfs:label>
     </owl:Class>
     
 
@@ -19279,9 +19221,15 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050703">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;behaviour change intervention mechanism of action&gt; in which the causal influence occurs in a reinforcement process.</obo:IAO_0000115>
-        <rdfs:label>mechanism of action through reinforcement process</rdfs:label>
+        <obo:IAO_0000115>A &lt;behaviour change intervention mechanism of action&gt; in which the causal influence occurs in a behavioural contingency process.</obo:IAO_0000115>
+        <rdfs:label>mechanism of action through behavioural contingency process</rdfs:label>
     </owl:Class>
     
 
@@ -19477,7 +19425,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050722"/>
         <obo:IAO_0000112>&quot;Negative punishment&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;negative reinforcer&gt; that decreases the likelihood of a preceding behaviour by cessation or non-occurrence of a rewarding event.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;punishing stimulus&gt; that decreases the likelihood of a preceding behaviour by its termination or avoidance.</obo:IAO_0000115>
         <rdfs:label>negative punishing stimulus</rdfs:label>
     </owl:Class>
     
@@ -19486,9 +19434,9 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050721 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050721">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050755"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051034"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;reinforcement process&gt; in which the likelihood of behaviour is increased it being followed by termination or avoidance of a negatively appraised behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;reinforcement process&gt; in which the likelihood of behaviour is increased by it being followed by termination or avoidance of a stimulus.</obo:IAO_0000115>
         <rdfs:label>negative reinforcement process</rdfs:label>
     </owl:Class>
     
@@ -19500,9 +19448,9 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050756"/>
         <obo:IAO_0000112>&quot;Negative reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;reinforcer&gt; that decreases the likelihood of a preceding behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;contingent stimulus&gt; that decreases the likelihood that a behaviour that precedes it will be repeated subsequently.</obo:IAO_0000115>
         <rdfs:comment>A reinforcer can be onset of a punishment or withdrawal of a reward.</rdfs:comment>
-        <rdfs:label>negative reinforcer</rdfs:label>
+        <rdfs:label>punishing stimulus</rdfs:label>
     </owl:Class>
     
 
@@ -19687,7 +19635,7 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050722"/>
         <obo:IAO_0000112>&quot;Positive punishment&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;negative reinforcer&gt; that decreases the likelihood of a preceding behaviour by onset or continuation of an aversive event</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;punishing stimulus&gt; that decreases the likelihood of a preceding behaviour by its onset or continuation.</obo:IAO_0000115>
         <rdfs:label>positive punishing stimulus</rdfs:label>
     </owl:Class>
     
@@ -19696,9 +19644,9 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050738 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050738">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050755"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051034"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;reinforcement process&gt; in which the likelihood of a behaviour is increased by it being followed by a positively appraised event.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;reinforcement process&gt; in which the likelihood of a behaviour is increased by it being followed by a stimulus.</obo:IAO_0000115>
         <rdfs:label>positive reinforcement process</rdfs:label>
     </owl:Class>
     
@@ -19711,9 +19659,9 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000112> &quot;Positive reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000112>&quot;Reward&quot; in the Social Learning Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;reinforcer&gt; that increases the likelihood of a preceding behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A &lt;contingent stimulus&gt; that increases the likelihood that a behaviour that precedes it will be repeated subsequently.</obo:IAO_0000115>
         <rdfs:comment>A reinforcer can be onset of a reward or withdrawal of a punishment.</rdfs:comment>
-        <rdfs:label>positive reinforcer</rdfs:label>
+        <rdfs:label>reinforcer</rdfs:label>
     </owl:Class>
     
 
@@ -19726,19 +19674,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000115>A &lt;social environmental system&gt; that is enjoyable, satisfying or beneficial to the person.</obo:IAO_0000115>
         <rdfs:comment>A positive social environmental system can also be supportive.</rdfs:comment>
         <rdfs:label>positive social environmental system</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050741 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050741">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050756"/>
-        <obo:IAO_0000112> &quot;Innate rewards&quot; in the Social Learning Theory</obo:IAO_0000112>
-        <obo:IAO_0000112>&quot;Positive reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;reinforcer&gt; whose effect on behaviour is innately determined.</obo:IAO_0000115>
-        <rdfs:label>primary reinforcer</rdfs:label>
     </owl:Class>
     
 
@@ -19908,9 +19843,9 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050755">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;process&gt; in which a behaviour is followed by an event that alters the likelihood of occurrence of the behaviour.</obo:IAO_0000115>
-        <rdfs:comment>If interested in more specific classes, see self-regulation and reinforcement learning</rdfs:comment>
-        <rdfs:label>reinforcement process</rdfs:label>
+        <obo:IAO_0000115>A &lt;process&gt; in which a behaviour is followed by an event that alters the subsequent likelihood of occurrence of the behaviour.</obo:IAO_0000115>
+        <rdfs:comment>If interested in more specific classes, see self-regulation process and associative learning</rdfs:comment>
+        <rdfs:label>behavioural contingency process</rdfs:label>
     </owl:Class>
     
 
@@ -19923,8 +19858,8 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000112> &quot;Reward&quot; in the Social Learning Theory</obo:IAO_0000112>
         <obo:IAO_0000112>&quot;Reinforcement&quot; in the Operant Conditioning</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;stimulus&gt; that changes the likelihood of a preceding behaviour.</obo:IAO_0000115>
-        <rdfs:label>reinforcer</rdfs:label>
+        <obo:IAO_0000115>A &lt;stimulus&gt;  whose occurrence, termination or avoidance changes the likelihood that a behaviour which precedes it will be repeated subsequently.</obo:IAO_0000115>
+        <rdfs:label>contingent stimulus</rdfs:label>
     </owl:Class>
     
 
@@ -20169,17 +20104,6 @@ https://www.merriam-webster.com/dictionary/laugh</obo:IAO_0000119>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;social environmental disposition&gt; that is how far members of a society experience fair and equitable resources, opportunities and privileges.</obo:IAO_0000115>
         <rdfs:label>social justice</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050778 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050778">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050755"/>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A &lt;reinforcement process&gt; in which a behaviour is followed by a social event that alters the likelihood of the behaviour.</obo:IAO_0000115>
-        <rdfs:label>social reinforcement process for a behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -22404,7 +22328,7 @@ In this definition, ‘change’ refers to change from what would have been the 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://humanbehaviourchange.org/ontology/BCIOR_000008"/>
-                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050688"/>
+                <owl:someValuesFrom rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
@@ -22585,6 +22509,183 @@ This class&apos;s definition is reused from SDGIO. As the ontology is no longer 
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>&lt;Health literacy&gt; concerning mental health.</obo:IAO_0000115>
         <rdfs:label>mental health literacy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051033 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051033">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050755"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;behavioural contingency process&gt; in which a behaviour is followed by a stimulus that decreases the likelihood of occurrence of the behaviour.</obo:IAO_0000115>
+        <rdfs:label>punishment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051034 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051034">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050755"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;behavioural contingency process&gt; in which a behaviour is followed by a stimulus that increases the likelihood of occurrence of the behaviour.</obo:IAO_0000115>
+        <rdfs:label>reinforcement process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051035 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051035">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051033"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;punishment process&gt; in which the likelihood of a behaviour is decreased by it being followed by termination or avoidance of a stimulus.</obo:IAO_0000115>
+        <rdfs:label>negative punishment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051036 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051036">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050739"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;reinforcer&gt; that increases the likelihood that a behaviour that precedes its termination or avoidance will be repeated subsequently.</obo:IAO_0000115>
+        <rdfs:label>negative reinforcer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051037 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051037">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051033"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;punishment process&gt; in which the likelihood of a behaviour is decreased by it being followed by a stimulus.</obo:IAO_0000115>
+        <rdfs:label>positive punishment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051038 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051038">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050739"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;reinforcer&gt; that increases the likelihood that a behaviour that precedes it will be repeated subsequently.</obo:IAO_0000115>
+        <rdfs:label>positive reinforcer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051039 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051039">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050722"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;punishing stimulus&gt; whose effect on behaviour derives from the animal’s genotype rather than being learned by association with another stimulus.</obo:IAO_0000115>
+        <rdfs:label>primary punishing stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051040 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051040">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050739"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;reinforcer&gt; whose effect on behaviour derives from the animal’s genotype rather than being learned by association with another stimulus.</obo:IAO_0000115>
+        <rdfs:label>primary reinforcer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051041 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051041">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051033"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;punishment process&gt; in which the likelihood of a behaviour is increased by it being followed by a social stimulus.</obo:IAO_0000115>
+        <rdfs:label>social punishment for a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051042 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051042">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051034"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;reinforcement process&gt; in which the likelihood of a behaviour is increased by it being followed by a social stimulus.</obo:IAO_0000115>
+        <rdfs:label>social reinforcement for a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051043 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051043">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050722"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;conditioned stimulus&gt; whose effect on behaviour results from having been associated with another punishing stimulus.</obo:IAO_0000115>
+        <rdfs:label>conditioned punishing stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051044 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051044">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050739"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;reinforcer&gt; that has acquired its reinforcing property by having been associated with a reinforcer.</obo:IAO_0000115>
+        <rdfs:label>conditioned reinforcer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051045 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051045">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051043"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;conditioned punishing stimulus&gt; whose effect has been caused by pairing being associated with with multiple different primary reinforcers punishing stimulus.</obo:IAO_0000115>
+        <rdfs:label>generalised  punishing stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051046 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051046">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_051044"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;conditioned reinforcer&gt; whose effect has been caused by being associated with multiple different reinforcers.</obo:IAO_0000115>
+        <rdfs:label>generalised reinforcer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051047 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000041"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;belief&gt; regarding one&apos;s knowledge about an aspect of the world.</obo:IAO_0000115>
+        <rdfs:label>belief about one&apos;s knowledge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_051048 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051048">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050898"/>
+        <obo:IAO_0000112>self-efficacy beliefs for specific mental processes (e.g., decision making) can be coded through double annotation using the current class &quot;self-efficacy belief for mental process&quot; and the class for the relevant mental process, e.g., &quot;decision-making&quot;.</obo:IAO_0000112>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;self-efficacy belief&gt; to organise and execute a mental process.</obo:IAO_0000115>
+        <rdfs:label>self-efficacy belief for mental process</rdfs:label>
     </owl:Class>
     
 
@@ -25877,10 +25978,7 @@ Ability and capability are sometimes used interchangeably. In some cases, one is
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     
 
 
@@ -26271,7 +26369,6 @@ for now.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000111 xml:lang="en">educating</obo:IAO_0000111>
         <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A planned process with an active participant who acquires mental representations of information content entities, which had no previous mental representation in the cognitive system, and through repeated use or application of these information content entities either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) &quot;improves&quot; an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A planned process with an active participant who acquires mental representations of information content entities, which had no previous mental representation in the cognitive system, and through repeated use or application of these information content entities either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) &quot;improves&quot; an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">learning process</obo:IAO_0000118>
@@ -26418,9 +26515,12 @@ This addition to the definition notwithstanding, we do not intend to incorporate
     <!-- http://purl.obolibrary.org/obo/SEPIO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process executed in the performance of scientific research wherein systematic investigations are performed to establish facts and reach new conclusions about phenomena in the world.</obo:IAO_0000115>
         <rdfs:comment>Data generation process are typically experimental studies or observations, but can include any process generating information used to evaluate a claim.  This is an organizational class that groups more specific types of such processes that are most commonly used in generating data used as evidence to support claims. These processes produce informational artifacts such as measured  data values, derived statistical calculations and confidence measures, or statements representing summaries or conclusions drawn from such data.</rdfs:comment>
+        <rdfs:label>research activity</rdfs:label>
         <rdfs:label xml:lang="en">research activity</rdfs:label>
     </owl:Class>
     
@@ -26606,64 +26706,6 @@ An example for this class serving as a mechanism of action would be in an interv
         <owl:annotatedTarget>UMLS:C1515976</owl:annotatedTarget>
         <oboInOwl:source>ncithesaurus:Anatomic_Structure_System_or_Substance</oboInOwl:source>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010001 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process wherein knowledge and skill is imparted.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">https://github.com/SDG-InterfaceOntology/sdgio/issues/36</obo:IAO_0000116>
-        <oboInOwl:hasExactSynonym>education</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">education process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.unep.org/sdg/SDGIO_00010001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A planned process wherein knowledge and skill is imparted.</owl:annotatedTarget>
-        <rdfs:comment>Adapted from: http://purl.bioontology.org/ontology/SNOMEDCT/409073007</rdfs:comment>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010026 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A person or population that is not employed, but eligible for and currently seeking employment.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Eventually a defined class, axiomitized using classes for employment status.
-https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
-        <sdg:SDGIO_00000064>https://uneplive.unep.org/community/discussion/view/23255/employment</sdg:SDGIO_00000064>
-        <rdfs:comment xml:lang="en">The criteria varies for deciding if a person who is not employed also qualifies as unemployed.</rdfs:comment>
-        <rdfs:label xml:lang="en">unemployed</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.unep.org/sdg/SDGIO_00010026"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A person or population that is not employed, but eligible for and currently seeking employment.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://stats.oecd.org/glossary/detail.asp?ID=2791</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010028 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A person or organization that participates in an ownership process wherein they realize their role as owner by exercising their right to use, sell, rent, or gift an object.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">owner</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010029 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115>A quality inhering in a person by virtue of that person bearing a role realised in an employment process.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">employment status</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 
