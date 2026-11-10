@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://humanbehaviourchange.org/ontology/bcto.owl">
-        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcto.owl/2026-09-29"/>
+        <owl:versionIRI rdf:resource="http://humanbehaviourchange.org/ontology/bcto.owl/2026-11-10"/>
     </owl:Ontology>
     
 
@@ -560,15 +560,6 @@ WHERE {
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00000064 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.unep.org/sdg/SDGIO_00000064">
-        <obo:IAO_0000115>A URL referencing the page or thread where class is being or has been discussed in a Community of Practice hosted on the Environment Live portal by UN Environment and GEO.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">has COP discussion thread</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 
@@ -5358,19 +5349,6 @@ Objects include fixed structures such as fences, as well as equipment, digital d
     
 
 
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_013000 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_013000">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050916"/>
-        <obo:IAO_0000112>Includes mental activities and behaviours.</obo:IAO_0000112>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>Participant engagement with intervention, where the intervention focuses on changing behaviour.</obo:IAO_0000115>
-        <obo:IAO_0000118>BCI engagement</obo:IAO_0000118>
-        <rdfs:label>participant engagement with behaviour change intervention</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_014000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_014000">
@@ -6262,7 +6240,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050981">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007151"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;directly restructure the physical environment BCT&gt; that creates a more positive sensory experience while engaging in the behaviour.</obo:IAO_0000115>
         <rdfs:label>create a more pleasant environment for behaviour BCT</rdfs:label>
     </owl:Class>
@@ -6273,7 +6251,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050982">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050349"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the social environment BCT&gt; that involves creating or amending a social rule regarding the behaviour.</obo:IAO_0000115>
         <rdfs:label>create social rule BCT</rdfs:label>
     </owl:Class>
@@ -6284,7 +6262,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050983">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050349"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the social environment BCT&gt; that involves decreasing exposure of the person to other people doing the behaviour.</obo:IAO_0000115>
         <rdfs:label>decrease exposure to people doing the behaviour BCT</rdfs:label>
     </owl:Class>
@@ -6295,7 +6273,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050984">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that increases the financial cost of the behaviour relative to the person’s access to financial resources.</obo:IAO_0000115>
         <rdfs:label>decrease financial affordability BCT</rdfs:label>
     </owl:Class>
@@ -6306,7 +6284,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050985">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that reduces practical obstacles and distance to spaces where the behaviour is performed.</obo:IAO_0000115>
         <rdfs:label>facilitate access to spaces where behaviour is performed BCT</rdfs:label>
     </owl:Class>
@@ -6317,7 +6295,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050986">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that increases practical obstacles and distance to spaces where the behaviour is performed.</obo:IAO_0000115>
         <rdfs:label>impede access to spaces where behaviour is performed BCT</rdfs:label>
     </owl:Class>
@@ -6328,7 +6306,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050987">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050349"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the social environment BCT&gt; that involves increasing exposure of the person to other people doing the behaviour.</obo:IAO_0000115>
         <rdfs:label>increase exposure to people doing the behaviour BCT</rdfs:label>
     </owl:Class>
@@ -6339,7 +6317,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050988">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that reduces the financial cost of the behaviour relative to the person’s access to financial resources.</obo:IAO_0000115>
         <rdfs:label>increase financial affordability BCT</rdfs:label>
     </owl:Class>
@@ -6350,7 +6328,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050989">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007072"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;awareness of other peoples thoughts, feelings and actions BCT&gt; that involves increasing the salience of a social rule concerning the behaviour.</obo:IAO_0000115>
         <rdfs:label>increase salience of social rule BCT</rdfs:label>
     </owl:Class>
@@ -6361,7 +6339,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050990">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007072"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;awareness of other peoples thoughts, feelings and actions BCT&gt; that involves informing the person about a social rule regarding the behaviour.</obo:IAO_0000115>
         <rdfs:label>inform about social rule BCT</rdfs:label>
     </owl:Class>
@@ -6372,7 +6350,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050991">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that modifies objects in the person’s physical surroundings.</obo:IAO_0000115>
         <rdfs:comment>Objects include fixed structures such as fences, as well as equipment, digital devices and interactive displays. Modifying includes changing the position, size and accessibility of object, and includes modifying &apos;virtual&apos; buttons or other interactive elements on digital devices.</rdfs:comment>
         <rdfs:label>modify objects in the environment BCT</rdfs:label>
@@ -6384,7 +6362,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050992">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007173"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;increase awareness of behaviour BCT&gt; that advises, reminds or directs the person to do the behaviour without delay.</obo:IAO_0000115>
         <rdfs:label>prompt immediate action BCT</rdfs:label>
     </owl:Class>
@@ -6395,7 +6373,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050993">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that allocates a period of time to do the behaviour without competing with other behaviours.</obo:IAO_0000115>
         <rdfs:label>protect time to perform behaviour BCT</rdfs:label>
     </owl:Class>
@@ -6406,7 +6384,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050994">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that reduces the amount of time required for the behaviour to be undertaken.</obo:IAO_0000115>
         <rdfs:label>reduce time needed to perform behaviour BCT</rdfs:label>
     </owl:Class>
@@ -6417,7 +6395,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050995">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050348"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;restructure the physical environment BCT&gt; that removes objects from the person’s physical surroundings.</obo:IAO_0000115>
         <rdfs:comment>Objects include fixed structures such as fences, as well as equipment, digital devices and interactive displays. This BCT includes removing &apos;virtual&apos; buttons or other interactive elements on digital devices.</rdfs:comment>
         <rdfs:label>remove objects from the environment BCT</rdfs:label>
@@ -6429,7 +6407,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050997">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007062"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;increase awareness of consequences BCT&gt; that provides information about the positive consequences of performing or not performing the behaviour.</obo:IAO_0000115>
         <rdfs:label>Inform about positive consequences BCT</rdfs:label>
     </owl:Class>
@@ -6440,7 +6418,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050998">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007151"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;directly restructure the physical environment BCT&gt; that creates a more negative sensory experience while engaging in the behaviour.</obo:IAO_0000115>
         <rdfs:label>create a less pleasant environment for behaviour BCT</rdfs:label>
     </owl:Class>
@@ -6451,7 +6429,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051007">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007074"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;increase awareness of others appraisal of the behaviour BCT&gt; that increases awareness of whether others will dislike or disapprove of the behaviour.</obo:IAO_0000115>
         <rdfs:label>increase awareness of others disapproval BCT</rdfs:label>
     </owl:Class>
@@ -6473,7 +6451,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051016">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007074"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;increase awareness of others appraisal of the behaviour BCT&gt; that increases awareness of whether others will like or approve of the behaviour.</obo:IAO_0000115>
         <rdfs:label>increase awareness of others approval BCT</rdfs:label>
     </owl:Class>
@@ -6485,7 +6463,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051019">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007072"/>
         <obo:IAO_0000112>dynamic norms messaging</obo:IAO_0000112>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;awareness of other peoples thoughts, feelings and actions BCT&gt; that increases awareness of changes in what other people think, do or feel.</obo:IAO_0000115>
         <rdfs:label>awareness of change of other peoples thoughts, feelings and actions BCT</rdfs:label>
     </owl:Class>
@@ -6496,7 +6474,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_051020">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_007173"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;increase awareness of behaviour BCT&gt; that presents the behaviour as something the person can decide to do or not, or as one of a set of options.</obo:IAO_0000115>
         <rdfs:label>present behaviour as a choice BCT</rdfs:label>
     </owl:Class>
@@ -9575,10 +9553,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     
 
 
@@ -10085,9 +10060,12 @@ This addition to the definition notwithstanding, we do not intend to incorporate
     <!-- http://purl.obolibrary.org/obo/SEPIO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A planned process executed in the performance of scientific research wherein systematic investigations are performed to establish facts and reach new conclusions about phenomena in the world.</obo:IAO_0000115>
         <rdfs:comment>Data generation process are typically experimental studies or observations, but can include any process generating information used to evaluate a claim.  This is an organizational class that groups more specific types of such processes that are most commonly used in generating data used as evidence to support claims. These processes produce informational artifacts such as measured  data values, derived statistical calculations and confidence measures, or statements representing summaries or conclusions drawn from such data.</rdfs:comment>
+        <rdfs:label>research activity</rdfs:label>
         <rdfs:label xml:lang="en">research activity</rdfs:label>
     </owl:Class>
     
@@ -10266,64 +10244,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <owl:annotatedTarget>UMLS:C1515976</owl:annotatedTarget>
         <oboInOwl:source>ncithesaurus:Anatomic_Structure_System_or_Substance</oboInOwl:source>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010001 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process wherein knowledge and skill is imparted.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">https://github.com/SDG-InterfaceOntology/sdgio/issues/36</obo:IAO_0000116>
-        <oboInOwl:hasExactSynonym>education</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">education process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.unep.org/sdg/SDGIO_00010001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A planned process wherein knowledge and skill is imparted.</owl:annotatedTarget>
-        <rdfs:comment>Adapted from: http://purl.bioontology.org/ontology/SNOMEDCT/409073007</rdfs:comment>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010026 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A person or population that is not employed, but eligible for and currently seeking employment.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Eventually a defined class, axiomitized using classes for employment status.
-https://github.com/SDG-InterfaceOntology/sdgio/issues/37</obo:IAO_0000116>
-        <sdg:SDGIO_00000064>https://uneplive.unep.org/community/discussion/view/23255/employment</sdg:SDGIO_00000064>
-        <rdfs:comment xml:lang="en">The criteria varies for deciding if a person who is not employed also qualifies as unemployed.</rdfs:comment>
-        <rdfs:label xml:lang="en">unemployed</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.unep.org/sdg/SDGIO_00010026"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A person or population that is not employed, but eligible for and currently seeking employment.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://stats.oecd.org/glossary/detail.asp?ID=2791</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010028 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A person or organization that participates in an ownership process wherein they realize their role as owner by exercising their right to use, sell, rent, or gift an object.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">owner</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.unep.org/sdg/SDGIO_00010029 -->
-
-    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115>A quality inhering in a person by virtue of that person bearing a role realised in an employment process.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">employment status</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 
