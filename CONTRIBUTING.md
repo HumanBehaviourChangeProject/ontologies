@@ -2,9 +2,25 @@
 
 
 **Call details**
-BCIO Development meetings take place every last Tuesday of each month, 10:00 CT / 16:00 GMT / 17:00 CET. The meetings are open to the public. In the meetings, we will go over open issues from the GitHub issue tracker and attempt to find solutions. The meeting takes 1 hour.
+BCIO Development meetings take place every second Monday of each month, 10:00 CT / 16:00 GMT / 17:00 CET. The meetings are open to the public. In the meetings, we will go over open issues from the GitHub issue tracker and attempt to find solutions. The meeting takes 1 hour.
 
-Zoom: https://uzh.zoom.us/j/61093036677?pwd=NMuqCQCxFbkqlKXfby3IM4d5e4dSaq.1    
+Remaining meeting dates in 2026:
+- 7 Dec 2026 
+Meeting dates in 2027:
+- 11 Jan 2027
+- 8 Feb 2027
+- 15 Mar 2027
+- 12 Apr 2027
+- 10 May 2027
+- 14 June 2027
+- 12 July 2027
+- 9 Aug 2027
+- 13 Sep 2027
+- 11 Oct 2027
+- 8 Nov 2027
+- 13 Dec 2027
+
+Teams: https://teams.microsoft.com/meet/3165270404436663?p=JWzLzPNqDXYV84O8VA  
 Agenda: https://cryptpad.fr/doc/#/2/doc/edit/fceT7KN7D69+AMxiexGfi6SC/ 
 Issue Tracker: https://github.com/HumanBehaviourChangeProject/ontologies/issues
 
